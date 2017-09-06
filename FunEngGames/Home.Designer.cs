@@ -39,7 +39,7 @@
             this.pictureBox1.BackgroundImage = global::FunEngGames.Properties.Resources.b1;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(313, 445);
+            this.pictureBox1.Location = new System.Drawing.Point(314, 443);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(320, 89);
             this.pictureBox1.TabIndex = 0;
