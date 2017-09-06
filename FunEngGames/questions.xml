@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<Questions>
+	<spelling>
+		<pic>1.png</pic>
+		<answer>Airplane</answer>
+	</spelling>
+	
+	<spelling>
+		<pic>2.png</pic>
+		<answer>Car</answer>
+	</spelling>
+	
+	<spelling>
+		<pic>3.png</pic>
+		<answer>Train</answer>
+	</spelling>	
+	
+	<spelling>
+		<pic>4.png</pic>
+		<answer>Cloud</answer>
+	</spelling>
+		
+	<spelling>
+		<pic>5.png</pic>
+		<answer>Table</answer>
+	</spelling>
+		
+	<spelling>
+		<pic>6.png</pic>
+		<answer>Chair</answer>
+	</spelling>
+</Questions>
