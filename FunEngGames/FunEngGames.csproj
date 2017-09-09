@@ -198,6 +198,7 @@
     <Content Include="Images\6.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\answers.png" />
     <None Include="Resources\homonymsTitle1.png" />
     <None Include="Resources\homonymsTitle.png" />
     <None Include="Resources\def2.png" />

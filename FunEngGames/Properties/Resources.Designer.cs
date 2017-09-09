@@ -63,6 +63,16 @@ namespace FunEngGames.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap answers {
+            get {
+                object obj = ResourceManager.GetObject("answers", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap b1 {
             get {
                 object obj = ResourceManager.GetObject("b1", resourceCulture);
