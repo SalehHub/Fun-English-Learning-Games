@@ -76,6 +76,12 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="homonyms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homonyms.Designer.cs">
+      <DependentUpon>homonyms.cs</DependentUpon>
+    </Compile>
     <Compile Include="mainLevels.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homonyms.resx">
+      <DependentUpon>homonyms.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainLevels.resx">
       <DependentUpon>mainLevels.cs</DependentUpon>
@@ -189,6 +198,10 @@
     <Content Include="Images\6.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\homonymsTitle1.png" />
+    <None Include="Resources\homonymsTitle.png" />
+    <None Include="Resources\def2.png" />
+    <None Include="Resources\def1.png" />
     <None Include="Resources\spellingTitle3.png" />
     <None Include="Resources\Screen Shot 2017-09-02 at 8.02.44 PM.png" />
     <None Include="Resources\S&amp;AMainTitle.png" />

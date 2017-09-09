@@ -78,6 +78,7 @@
             this.picHomonyms.Size = new System.Drawing.Size(338, 282);
             this.picHomonyms.TabIndex = 2;
             this.picHomonyms.TabStop = false;
+            this.picHomonyms.Click += new System.EventHandler(this.picHomonyms_Click);
             this.picHomonyms.MouseLeave += new System.EventHandler(this.picSentences_MouseLeave);
             this.picHomonyms.MouseHover += new System.EventHandler(this.picSentences_MouseHover);
             // 

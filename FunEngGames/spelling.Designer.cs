@@ -215,7 +215,7 @@
             // 
             this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImage = global::FunEngGames.Properties.Resources.spellingTitle3;
+            this.pictureBox4.BackgroundImage = global::FunEngGames.Properties.Resources.spellingTitle;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox4.Location = new System.Drawing.Point(154, 12);
             this.pictureBox4.Name = "pictureBox4";

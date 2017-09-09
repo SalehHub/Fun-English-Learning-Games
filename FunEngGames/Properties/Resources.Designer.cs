@@ -133,6 +133,26 @@ namespace FunEngGames.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap def1 {
+            get {
+                object obj = ResourceManager.GetObject("def1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap def2 {
+            get {
+                object obj = ResourceManager.GetObject("def2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap HomonomysPic {
             get {
                 object obj = ResourceManager.GetObject("HomonomysPic", resourceCulture);
@@ -146,6 +166,16 @@ namespace FunEngGames.Properties {
         internal static System.Drawing.Bitmap HomonomysPicHover {
             get {
                 object obj = ResourceManager.GetObject("HomonomysPicHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap homonymsTitle {
+            get {
+                object obj = ResourceManager.GetObject("homonymsTitle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -266,16 +296,6 @@ namespace FunEngGames.Properties {
         internal static System.Drawing.Bitmap spellingTitle {
             get {
                 object obj = ResourceManager.GetObject("spellingTitle", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap spellingTitle3 {
-            get {
-                object obj = ResourceManager.GetObject("spellingTitle3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
