@@ -131,7 +131,8 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel1.ColumnCount = 4;
@@ -164,9 +165,12 @@
             // 
             this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.comboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(412, 4);
+            this.comboBox1.MaxDropDownItems = 4;
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(226, 39);
             this.comboBox1.TabIndex = 0;
@@ -212,7 +216,7 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(4, 46);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(401, 31);
+            this.label2.Size = new System.Drawing.Size(401, 41);
             this.label2.TabIndex = 4;
             this.label2.Text = "label2";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -224,7 +228,7 @@
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(4, 91);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(401, 31);
+            this.label3.Size = new System.Drawing.Size(401, 41);
             this.label3.TabIndex = 5;
             this.label3.Text = "label3";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -236,7 +240,7 @@
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(704, 1);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(402, 31);
+            this.label4.Size = new System.Drawing.Size(402, 42);
             this.label4.TabIndex = 6;
             this.label4.Text = "label4";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -248,7 +252,7 @@
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(704, 46);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(402, 31);
+            this.label5.Size = new System.Drawing.Size(402, 42);
             this.label5.TabIndex = 7;
             this.label5.Text = "label5";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -260,7 +264,7 @@
             this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(704, 91);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(402, 31);
+            this.label6.Size = new System.Drawing.Size(402, 41);
             this.label6.TabIndex = 8;
             this.label6.Text = "label6";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -270,9 +274,9 @@
             this.lblAns1.AutoSize = true;
             this.lblAns1.Location = new System.Drawing.Point(521, 489);
             this.lblAns1.Name = "lblAns1";
-            this.lblAns1.Size = new System.Drawing.Size(46, 17);
+            this.lblAns1.Size = new System.Drawing.Size(54, 17);
             this.lblAns1.TabIndex = 21;
-            this.lblAns1.Text = "label7";
+            this.lblAns1.Text = "lblAns1";
             this.lblAns1.Visible = false;
             // 
             // lblAns2
@@ -280,9 +284,9 @@
             this.lblAns2.AutoSize = true;
             this.lblAns2.Location = new System.Drawing.Point(521, 519);
             this.lblAns2.Name = "lblAns2";
-            this.lblAns2.Size = new System.Drawing.Size(46, 17);
+            this.lblAns2.Size = new System.Drawing.Size(54, 17);
             this.lblAns2.TabIndex = 22;
-            this.lblAns2.Text = "label8";
+            this.lblAns2.Text = "lblAns2";
             this.lblAns2.Visible = false;
             // 
             // lblAns3
@@ -290,9 +294,9 @@
             this.lblAns3.AutoSize = true;
             this.lblAns3.Location = new System.Drawing.Point(521, 552);
             this.lblAns3.Name = "lblAns3";
-            this.lblAns3.Size = new System.Drawing.Size(46, 17);
+            this.lblAns3.Size = new System.Drawing.Size(54, 17);
             this.lblAns3.TabIndex = 23;
-            this.lblAns3.Text = "label9";
+            this.lblAns3.Text = "lblAns3";
             this.lblAns3.Visible = false;
             // 
             // picAns1
