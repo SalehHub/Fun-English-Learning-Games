@@ -103,6 +103,8 @@
             this.picCheckAnswers.TabIndex = 17;
             this.picCheckAnswers.TabStop = false;
             this.picCheckAnswers.Click += new System.EventHandler(this.picCheckAnswers_Click);
+            this.picCheckAnswers.MouseLeave += new System.EventHandler(this.picCheckAnswers_MouseLeave);
+            this.picCheckAnswers.MouseHover += new System.EventHandler(this.picCheckAnswers_MouseHover);
             // 
             // pictureBox1
             // 
@@ -307,7 +309,7 @@
             // lblAns1
             // 
             this.lblAns1.AutoSize = true;
-            this.lblAns1.Location = new System.Drawing.Point(521, 489);
+            this.lblAns1.Location = new System.Drawing.Point(191, 495);
             this.lblAns1.Name = "lblAns1";
             this.lblAns1.Size = new System.Drawing.Size(54, 17);
             this.lblAns1.TabIndex = 21;
@@ -317,7 +319,7 @@
             // lblAns2
             // 
             this.lblAns2.AutoSize = true;
-            this.lblAns2.Location = new System.Drawing.Point(521, 519);
+            this.lblAns2.Location = new System.Drawing.Point(191, 525);
             this.lblAns2.Name = "lblAns2";
             this.lblAns2.Size = new System.Drawing.Size(54, 17);
             this.lblAns2.TabIndex = 22;
@@ -327,7 +329,7 @@
             // lblAns3
             // 
             this.lblAns3.AutoSize = true;
-            this.lblAns3.Location = new System.Drawing.Point(521, 552);
+            this.lblAns3.Location = new System.Drawing.Point(191, 558);
             this.lblAns3.Name = "lblAns3";
             this.lblAns3.Size = new System.Drawing.Size(54, 17);
             this.lblAns3.TabIndex = 23;

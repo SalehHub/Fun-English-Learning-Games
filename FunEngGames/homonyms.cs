@@ -166,5 +166,15 @@ namespace FunEngGames
                 picAns3.BackgroundImage = Properties.Resources.cross;
             }
         }
+
+        private void picCheckAnswers_MouseHover(object sender, EventArgs e)
+        {
+            picCheckAnswers.BackgroundImage = Properties.Resources.checkYourAswers_hover;
+        }
+
+        private void picCheckAnswers_MouseLeave(object sender, EventArgs e)
+        {
+            picCheckAnswers.BackgroundImage = Properties.Resources.checkYourAswers;
+        }
     }
 }
