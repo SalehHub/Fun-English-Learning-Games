@@ -36,7 +36,10 @@ namespace FunEngGames
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-
+            S_A S_A = new S_A();
+            S_A.mainLevelsForm = this;
+            this.Hide();
+            S_A.Show();
         }
 
         private void mainLevels_FormClosed(object sender, FormClosedEventArgs e)

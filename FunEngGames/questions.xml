@@ -33,6 +33,8 @@
 	
 	
 	
+	
+	
 	<homonyms>
 		<def1>Quick or speedy</def1>
 		<def2>To abstain from food</def2>
@@ -86,5 +88,44 @@
 		<def2>To avoid, evade, or dodge</def2>
 		<answer>Duck</answer>
 	</homonyms>
+	
+	
+	
+	
+	
+	
+	<synonyms>
+		<word>Beautiful</word>
+		<synonym>Pretty</synonym>
+	</synonyms>
+		
+	<synonyms>
+		<word>Begin</word>
+		<synonym>Start</synonym>
+	</synonyms>
+		
+	<synonyms>
+		<word>Bright</word>
+		<synonym>Shining</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Decide</word>
+		<synonym>Determine</synonym>
+	</synonyms>
+	
+			
+	<synonyms>
+		<word>Quiet</word>
+		<synonym>Silent</synonym>
+	</synonyms>
+	
+			
+	<synonyms>
+		<word>Wrong</word>
+		<synonym>Incorrect</synonym>
+	</synonyms>
+	
+	
 	
 </Questions>

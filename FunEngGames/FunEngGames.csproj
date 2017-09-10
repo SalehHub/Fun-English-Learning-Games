@@ -96,6 +96,12 @@
     <Compile Include="spelling.Designer.cs">
       <DependentUpon>spelling.cs</DependentUpon>
     </Compile>
+    <Compile Include="S_A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="S_A.Designer.cs">
+      <DependentUpon>S_A.cs</DependentUpon>
+    </Compile>
     <Compile Include="wordsLevels.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </Compile>
     <EmbeddedResource Include="spelling.resx">
       <DependentUpon>spelling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="S_A.resx">
+      <DependentUpon>S_A.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="wordsLevels.resx">
       <DependentUpon>wordsLevels.cs</DependentUpon>
@@ -198,6 +207,7 @@
     <Content Include="Images\6.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\S_ATitle.png" />
     <None Include="Resources\answers.png" />
     <None Include="Resources\homonymsTitle1.png" />
     <None Include="Resources\homonymsTitle.png" />
