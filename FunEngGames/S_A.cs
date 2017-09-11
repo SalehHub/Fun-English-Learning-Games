@@ -74,7 +74,7 @@ namespace FunEngGames
                 XmlNodeList nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/synonyms");
 
 
-                string word = "", synonym = "", ans = "";
+                string word = "", synonym = "";
                 //foreach (XmlNode node in nodeList)
 
                 NewNumber(nodeList.Count);
@@ -144,7 +144,7 @@ namespace FunEngGames
                 XmlNodeList nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/antonyms");
 
 
-                string word = "", antonym = "", ans = "";
+                string word = "", antonym = "";
                 //foreach (XmlNode node in nodeList)
 
                 NewNumber(nodeList.Count);
