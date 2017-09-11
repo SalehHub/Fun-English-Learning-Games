@@ -128,4 +128,39 @@
 	
 	
 	
+	
+	
+	
+	<antonyms>
+		<word>Fiction</word>
+		<antonym>Fact</antonym>
+	</antonyms>	
+	
+	<antonyms>
+		<word>Throw</word>
+		<antonym>Catch</antonym>
+	</antonyms>	
+	
+	<antonyms>
+		<word>Love</word>
+		<antonym>Hate</antonym>
+	</antonyms>	
+	
+	<antonyms>
+		<word>Smooth</word>
+		<antonym>Rough</antonym>
+	</antonyms>	
+	
+	<antonyms>
+		<word>Fast</word>
+		<antonym>Slow</antonym>
+	</antonyms>	
+	
+	<antonyms>
+		<word>Near</word>
+		<antonym>Remote</antonym>
+	</antonyms>
+	
+	
+	
 </Questions>

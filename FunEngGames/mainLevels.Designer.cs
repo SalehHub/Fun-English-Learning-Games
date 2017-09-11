@@ -54,7 +54,7 @@
             this.picWords.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.picWords.BackColor = System.Drawing.Color.Transparent;
             this.picWords.BackgroundImage = global::FunEngGames.Properties.Resources.wordsTitle;
-            this.picWords.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picWords.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picWords.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picWords.Location = new System.Drawing.Point(103, 143);
             this.picWords.Name = "picWords";
@@ -70,9 +70,9 @@
             this.picSentences.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.picSentences.BackColor = System.Drawing.Color.Transparent;
             this.picSentences.BackgroundImage = global::FunEngGames.Properties.Resources.sentencesTitle;
-            this.picSentences.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picSentences.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picSentences.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picSentences.Location = new System.Drawing.Point(648, 143);
+            this.picSentences.Location = new System.Drawing.Point(867, 143);
             this.picSentences.Name = "picSentences";
             this.picSentences.Size = new System.Drawing.Size(243, 333);
             this.picSentences.TabIndex = 2;
@@ -85,9 +85,9 @@
             this.picPhrases.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picPhrases.BackColor = System.Drawing.Color.Transparent;
             this.picPhrases.BackgroundImage = global::FunEngGames.Properties.Resources.phrasesTitle;
-            this.picPhrases.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picPhrases.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picPhrases.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picPhrases.Location = new System.Drawing.Point(375, 143);
+            this.picPhrases.Location = new System.Drawing.Point(485, 143);
             this.picPhrases.Name = "picPhrases";
             this.picPhrases.Size = new System.Drawing.Size(243, 333);
             this.picPhrases.TabIndex = 3;
@@ -102,9 +102,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Green;
-            this.label1.Location = new System.Drawing.Point(40, 9);
+            this.label1.Location = new System.Drawing.Point(40, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(918, 75);
+            this.label1.Size = new System.Drawing.Size(1137, 75);
             this.label1.TabIndex = 4;
             this.label1.Text = "Select a level !";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -143,7 +143,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Teal;
-            this.label5.Location = new System.Drawing.Point(400, 508);
+            this.label5.Location = new System.Drawing.Point(510, 508);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(192, 32);
             this.label5.TabIndex = 10;
@@ -157,7 +157,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Teal;
-            this.label7.Location = new System.Drawing.Point(662, 508);
+            this.label7.Location = new System.Drawing.Point(881, 508);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(214, 32);
             this.label7.TabIndex = 12;
@@ -169,7 +169,7 @@
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = global::FunEngGames.Properties.Resources.result;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(103, 543);
             this.panel1.Name = "panel1";
@@ -181,9 +181,9 @@
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.BackgroundImage = global::FunEngGames.Properties.Resources.result;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Location = new System.Drawing.Point(375, 543);
+            this.panel2.Location = new System.Drawing.Point(485, 543);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(243, 65);
             this.panel2.TabIndex = 15;
@@ -206,9 +206,9 @@
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.BackgroundImage = global::FunEngGames.Properties.Resources.result;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel3.Controls.Add(this.label6);
-            this.panel3.Location = new System.Drawing.Point(648, 543);
+            this.panel3.Location = new System.Drawing.Point(867, 543);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(243, 65);
             this.panel3.TabIndex = 16;
@@ -232,7 +232,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FunEngGames.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1001, 673);
+            this.ClientSize = new System.Drawing.Size(1220, 673);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -243,7 +243,7 @@
             this.Controls.Add(this.picPhrases);
             this.Controls.Add(this.picSentences);
             this.Controls.Add(this.picWords);
-            this.MinimumSize = new System.Drawing.Size(1019, 720);
+            this.MinimumSize = new System.Drawing.Size(1238, 720);
             this.Name = "mainLevels";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
