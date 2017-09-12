@@ -247,7 +247,7 @@
             this.Name = "mainLevels";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Main Levels";
+            this.Text = "Fun English Learning Games: Main Levels";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.mainLevels_FormClosed);
             this.Load += new System.EventHandler(this.mainLevels_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picWords)).EndInit();

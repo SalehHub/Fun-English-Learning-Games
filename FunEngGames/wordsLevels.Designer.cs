@@ -249,7 +249,7 @@
             this.Name = "wordsLevel";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Words Levels";
+            this.Text = "Fun English Learning Games: Words Levels";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.mainLevels_FormClosed);
             this.Load += new System.EventHandler(this.mainLevels_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picSpelling)).EndInit();

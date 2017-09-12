@@ -371,7 +371,7 @@
             this.Name = "homonyms";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Homonyms";
+            this.Text = "Fun English Learning Games: Homonyms";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.homonyms_FormClosed);
             this.Load += new System.EventHandler(this.homonyms_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

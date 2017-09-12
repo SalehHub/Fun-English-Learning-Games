@@ -112,12 +112,16 @@ namespace FunEngGames
                 lblW3.Text = "3- " + word;
 
 
+                //comboBox1.Tag = synonyms[0];
+                //comboBox2.Tag = synonyms[1];
+                //comboBox3.Tag = synonyms[2];
+
                 lblAns1.Text = synonyms[0];
                 lblAns2.Text = synonyms[1];
                 lblAns3.Text = synonyms[2];
 
-
                 Shuffle(synonyms);
+                //comboBox1.Items.Add("A-"); comboBox1.Items.Add("B-"); comboBox1.Items.Add("C-");
                 comboBox1.Items.Add("A- " + synonyms[0]); comboBox1.Items.Add("B- " + synonyms[1]); comboBox1.Items.Add("C- " + synonyms[2]);
                 comboBox2.Items.Add("A- " + synonyms[0]); comboBox2.Items.Add("B- " + synonyms[1]); comboBox2.Items.Add("C- " + synonyms[2]);
                 comboBox3.Items.Add("A- " + synonyms[0]); comboBox3.Items.Add("B- " + synonyms[1]); comboBox3.Items.Add("C- " + synonyms[2]);
@@ -127,7 +131,6 @@ namespace FunEngGames
                 lblS1.Text = "A- " + synonyms[0];
                 lblS2.Text = "B- " + synonyms[1];
                 lblS3.Text = "C- " + synonyms[2];
-
 
 
             }
@@ -187,6 +190,7 @@ namespace FunEngGames
                 lblAns6.Text = antonyms[2];
 
 
+
                 Shuffle(antonyms);
                 comboBox4.Items.Add("A- " + antonyms[0]); comboBox4.Items.Add("B- " + antonyms[1]); comboBox4.Items.Add("C- " + antonyms[2]);
                 comboBox5.Items.Add("A- " + antonyms[0]); comboBox5.Items.Add("B- " + antonyms[1]); comboBox5.Items.Add("C- " + antonyms[2]);
@@ -224,7 +228,7 @@ namespace FunEngGames
 
         private void picCheckAnswers_Click(object sender, EventArgs e)
         {
-            //synonyms check
+            //Synonyms check
             if (comboBox1.Text.Trim().ToLower().Contains(lblAns1.Text.Trim().ToLower()))
             {
                 picAns1.BackgroundImage = Properties.Resources.check;
@@ -263,7 +267,7 @@ namespace FunEngGames
 
 
 
-            //antonyms check
+            //Antonyms check
             if (comboBox4.Text.Trim().ToLower().Contains(lblAns4.Text.Trim().ToLower()))
             {
                 picAns4.BackgroundImage = Properties.Resources.check;

@@ -74,7 +74,7 @@
             this.label1.ForeColor = System.Drawing.Color.Green;
             this.label1.Location = new System.Drawing.Point(60, 243);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1012, 197);
+            this.label1.Size = new System.Drawing.Size(1012, 216);
             this.label1.TabIndex = 2;
             this.label1.Text = "Do you like learning English and having fun?\r\nYou’re in the right place \r\nTo begi" +
     "n, just click Start!";
@@ -93,7 +93,7 @@
             this.Name = "Home";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Home";
+            this.Text = "Fun English Learning Games";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

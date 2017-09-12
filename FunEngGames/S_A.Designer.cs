@@ -47,15 +47,15 @@
             this.lblW3 = new System.Windows.Forms.Label();
             this.lblS2 = new System.Windows.Forms.Label();
             this.lblS3 = new System.Windows.Forms.Label();
-            this.picAns1 = new System.Windows.Forms.PictureBox();
-            this.picAns2 = new System.Windows.Forms.PictureBox();
-            this.picAns3 = new System.Windows.Forms.PictureBox();
             this.lblW4 = new System.Windows.Forms.Label();
             this.lblW5 = new System.Windows.Forms.Label();
             this.lblW6 = new System.Windows.Forms.Label();
             this.lblA1 = new System.Windows.Forms.Label();
             this.lblA2 = new System.Windows.Forms.Label();
             this.lblA3 = new System.Windows.Forms.Label();
+            this.picAns1 = new System.Windows.Forms.PictureBox();
+            this.picAns2 = new System.Windows.Forms.PictureBox();
+            this.picAns3 = new System.Windows.Forms.PictureBox();
             this.picAns4 = new System.Windows.Forms.PictureBox();
             this.picAns5 = new System.Windows.Forms.PictureBox();
             this.picAns6 = new System.Windows.Forms.PictureBox();
@@ -82,8 +82,8 @@
             this.lbltitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbltitle.BackColor = System.Drawing.Color.Transparent;
-            this.lbltitle.Font = new System.Drawing.Font("Impact", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltitle.Location = new System.Drawing.Point(12, 129);
+            this.lbltitle.Font = new System.Drawing.Font("Impact", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltitle.Location = new System.Drawing.Point(12, 161);
             this.lbltitle.Name = "lbltitle";
             this.lbltitle.Size = new System.Drawing.Size(1312, 62);
             this.lbltitle.TabIndex = 19;
@@ -114,9 +114,9 @@
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.BackgroundImage = global::FunEngGames.Properties.Resources.S_ATitle;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox4.Location = new System.Drawing.Point(167, 9);
+            this.pictureBox4.Location = new System.Drawing.Point(115, 9);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(1003, 126);
+            this.pictureBox4.Size = new System.Drawing.Size(1107, 146);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 18;
             this.pictureBox4.TabStop = false;
@@ -126,13 +126,12 @@
             this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label1, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 194);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 266);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -146,9 +145,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.Font = new System.Drawing.Font("Impact", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Maroon;
-            this.label2.Location = new System.Drawing.Point(4, 1);
+            this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(648, 78);
+            this.label2.Size = new System.Drawing.Size(650, 80);
             this.label2.TabIndex = 1;
             this.label2.Text = "Synonyms";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -160,9 +159,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.Font = new System.Drawing.Font("Impact", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(659, 1);
+            this.label1.Location = new System.Drawing.Point(659, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(649, 78);
+            this.label1.Size = new System.Drawing.Size(650, 80);
             this.label1.TabIndex = 0;
             this.label1.Text = "Antonyms";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -176,13 +175,12 @@
             this.tableLayoutPanel2.ColumnCount = 8;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.Controls.Add(this.lblS1, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.comboBox1, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.comboBox4, 5, 0);
@@ -207,7 +205,7 @@
             this.tableLayoutPanel2.Controls.Add(this.picAns4, 4, 0);
             this.tableLayoutPanel2.Controls.Add(this.picAns5, 4, 1);
             this.tableLayoutPanel2.Controls.Add(this.picAns6, 4, 2);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 305);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 353);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -219,7 +217,7 @@
             // lblS1
             // 
             this.lblS1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblS1.Location = new System.Drawing.Point(452, 1);
+            this.lblS1.Location = new System.Drawing.Point(454, 1);
             this.lblS1.Name = "lblS1";
             this.lblS1.Size = new System.Drawing.Size(177, 45);
             this.lblS1.TabIndex = 10;
@@ -238,7 +236,7 @@
             this.comboBox1.MaxDropDownItems = 4;
             this.comboBox1.MaxLength = 1;
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(177, 39);
+            this.comboBox1.Size = new System.Drawing.Size(202, 39);
             this.comboBox1.TabIndex = 1;
             // 
             // comboBox4
@@ -249,10 +247,10 @@
             this.comboBox4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBox4.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(716, 4);
+            this.comboBox4.Location = new System.Drawing.Point(695, 4);
             this.comboBox4.MaxDropDownItems = 4;
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(177, 39);
+            this.comboBox4.Size = new System.Drawing.Size(206, 39);
             this.comboBox4.TabIndex = 4;
             // 
             // comboBox3
@@ -263,11 +261,11 @@
             this.comboBox3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBox3.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(61, 96);
+            this.comboBox3.Location = new System.Drawing.Point(61, 98);
             this.comboBox3.MaxDropDownItems = 4;
             this.comboBox3.MaxLength = 1;
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(177, 39);
+            this.comboBox3.Size = new System.Drawing.Size(202, 39);
             this.comboBox3.TabIndex = 3;
             // 
             // comboBox2
@@ -278,11 +276,11 @@
             this.comboBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBox2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(61, 50);
+            this.comboBox2.Location = new System.Drawing.Point(61, 51);
             this.comboBox2.MaxDropDownItems = 4;
             this.comboBox2.MaxLength = 1;
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(177, 39);
+            this.comboBox2.Size = new System.Drawing.Size(202, 39);
             this.comboBox2.TabIndex = 2;
             // 
             // comboBox5
@@ -293,10 +291,10 @@
             this.comboBox5.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBox5.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(716, 50);
+            this.comboBox5.Location = new System.Drawing.Point(695, 51);
             this.comboBox5.MaxDropDownItems = 4;
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(177, 39);
+            this.comboBox5.Size = new System.Drawing.Size(206, 39);
             this.comboBox5.TabIndex = 5;
             // 
             // comboBox6
@@ -307,16 +305,16 @@
             this.comboBox6.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBox6.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(716, 96);
+            this.comboBox6.Location = new System.Drawing.Point(695, 98);
             this.comboBox6.MaxDropDownItems = 4;
             this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(177, 39);
+            this.comboBox6.Size = new System.Drawing.Size(206, 39);
             this.comboBox6.TabIndex = 6;
             // 
             // lblW1
             // 
             this.lblW1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblW1.Location = new System.Drawing.Point(245, 1);
+            this.lblW1.Location = new System.Drawing.Point(270, 1);
             this.lblW1.Name = "lblW1";
             this.lblW1.Size = new System.Drawing.Size(177, 45);
             this.lblW1.TabIndex = 7;
@@ -326,7 +324,7 @@
             // lblW2
             // 
             this.lblW2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblW2.Location = new System.Drawing.Point(245, 47);
+            this.lblW2.Location = new System.Drawing.Point(270, 48);
             this.lblW2.Name = "lblW2";
             this.lblW2.Size = new System.Drawing.Size(177, 45);
             this.lblW2.TabIndex = 8;
@@ -336,9 +334,9 @@
             // lblW3
             // 
             this.lblW3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblW3.Location = new System.Drawing.Point(245, 93);
+            this.lblW3.Location = new System.Drawing.Point(270, 95);
             this.lblW3.Name = "lblW3";
-            this.lblW3.Size = new System.Drawing.Size(177, 48);
+            this.lblW3.Size = new System.Drawing.Size(177, 46);
             this.lblW3.TabIndex = 9;
             this.lblW3.Text = "label3";
             this.lblW3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -346,7 +344,7 @@
             // lblS2
             // 
             this.lblS2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblS2.Location = new System.Drawing.Point(452, 47);
+            this.lblS2.Location = new System.Drawing.Point(454, 48);
             this.lblS2.Name = "lblS2";
             this.lblS2.Size = new System.Drawing.Size(177, 45);
             this.lblS2.TabIndex = 11;
@@ -356,12 +354,72 @@
             // lblS3
             // 
             this.lblS3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblS3.Location = new System.Drawing.Point(452, 93);
+            this.lblS3.Location = new System.Drawing.Point(454, 95);
             this.lblS3.Name = "lblS3";
-            this.lblS3.Size = new System.Drawing.Size(177, 48);
+            this.lblS3.Size = new System.Drawing.Size(177, 46);
             this.lblS3.TabIndex = 12;
             this.lblS3.Text = "label3";
             this.lblS3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblW4
+            // 
+            this.lblW4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblW4.Location = new System.Drawing.Point(908, 1);
+            this.lblW4.Name = "lblW4";
+            this.lblW4.Size = new System.Drawing.Size(177, 45);
+            this.lblW4.TabIndex = 16;
+            this.lblW4.Text = "label3";
+            this.lblW4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblW5
+            // 
+            this.lblW5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblW5.Location = new System.Drawing.Point(908, 48);
+            this.lblW5.Name = "lblW5";
+            this.lblW5.Size = new System.Drawing.Size(177, 45);
+            this.lblW5.TabIndex = 17;
+            this.lblW5.Text = "label3";
+            this.lblW5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblW6
+            // 
+            this.lblW6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblW6.Location = new System.Drawing.Point(908, 95);
+            this.lblW6.Name = "lblW6";
+            this.lblW6.Size = new System.Drawing.Size(177, 46);
+            this.lblW6.TabIndex = 18;
+            this.lblW6.Text = "label3";
+            this.lblW6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblA1
+            // 
+            this.lblA1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblA1.Location = new System.Drawing.Point(1092, 1);
+            this.lblA1.Name = "lblA1";
+            this.lblA1.Size = new System.Drawing.Size(233, 45);
+            this.lblA1.TabIndex = 19;
+            this.lblA1.Text = "label3";
+            this.lblA1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblA2
+            // 
+            this.lblA2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblA2.Location = new System.Drawing.Point(1092, 48);
+            this.lblA2.Name = "lblA2";
+            this.lblA2.Size = new System.Drawing.Size(233, 45);
+            this.lblA2.TabIndex = 20;
+            this.lblA2.Text = "label3";
+            this.lblA2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblA3
+            // 
+            this.lblA3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblA3.Location = new System.Drawing.Point(1092, 95);
+            this.lblA3.Name = "lblA3";
+            this.lblA3.Size = new System.Drawing.Size(233, 46);
+            this.lblA3.TabIndex = 21;
+            this.lblA3.Text = "label3";
+            this.lblA3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // picAns1
             // 
@@ -378,7 +436,7 @@
             // 
             this.picAns2.BackColor = System.Drawing.Color.Transparent;
             this.picAns2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picAns2.Location = new System.Drawing.Point(4, 50);
+            this.picAns2.Location = new System.Drawing.Point(4, 51);
             this.picAns2.Name = "picAns2";
             this.picAns2.Size = new System.Drawing.Size(50, 38);
             this.picAns2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -389,78 +447,18 @@
             // 
             this.picAns3.BackColor = System.Drawing.Color.Transparent;
             this.picAns3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picAns3.Location = new System.Drawing.Point(4, 96);
+            this.picAns3.Location = new System.Drawing.Point(4, 98);
             this.picAns3.Name = "picAns3";
             this.picAns3.Size = new System.Drawing.Size(50, 38);
             this.picAns3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picAns3.TabIndex = 15;
             this.picAns3.TabStop = false;
             // 
-            // lblW4
-            // 
-            this.lblW4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblW4.Location = new System.Drawing.Point(900, 1);
-            this.lblW4.Name = "lblW4";
-            this.lblW4.Size = new System.Drawing.Size(177, 45);
-            this.lblW4.TabIndex = 16;
-            this.lblW4.Text = "label3";
-            this.lblW4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblW5
-            // 
-            this.lblW5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblW5.Location = new System.Drawing.Point(900, 47);
-            this.lblW5.Name = "lblW5";
-            this.lblW5.Size = new System.Drawing.Size(177, 45);
-            this.lblW5.TabIndex = 17;
-            this.lblW5.Text = "label3";
-            this.lblW5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblW6
-            // 
-            this.lblW6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblW6.Location = new System.Drawing.Point(900, 93);
-            this.lblW6.Name = "lblW6";
-            this.lblW6.Size = new System.Drawing.Size(177, 48);
-            this.lblW6.TabIndex = 18;
-            this.lblW6.Text = "label3";
-            this.lblW6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblA1
-            // 
-            this.lblA1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblA1.Location = new System.Drawing.Point(1107, 1);
-            this.lblA1.Name = "lblA1";
-            this.lblA1.Size = new System.Drawing.Size(177, 45);
-            this.lblA1.TabIndex = 19;
-            this.lblA1.Text = "label3";
-            this.lblA1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblA2
-            // 
-            this.lblA2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblA2.Location = new System.Drawing.Point(1107, 47);
-            this.lblA2.Name = "lblA2";
-            this.lblA2.Size = new System.Drawing.Size(177, 45);
-            this.lblA2.TabIndex = 20;
-            this.lblA2.Text = "label3";
-            this.lblA2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblA3
-            // 
-            this.lblA3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblA3.Location = new System.Drawing.Point(1107, 93);
-            this.lblA3.Name = "lblA3";
-            this.lblA3.Size = new System.Drawing.Size(177, 48);
-            this.lblA3.TabIndex = 21;
-            this.lblA3.Text = "label3";
-            this.lblA3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // picAns4
             // 
             this.picAns4.BackColor = System.Drawing.Color.Transparent;
             this.picAns4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picAns4.Location = new System.Drawing.Point(659, 4);
+            this.picAns4.Location = new System.Drawing.Point(638, 4);
             this.picAns4.Name = "picAns4";
             this.picAns4.Size = new System.Drawing.Size(50, 38);
             this.picAns4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -471,7 +469,7 @@
             // 
             this.picAns5.BackColor = System.Drawing.Color.Transparent;
             this.picAns5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picAns5.Location = new System.Drawing.Point(659, 50);
+            this.picAns5.Location = new System.Drawing.Point(638, 51);
             this.picAns5.Name = "picAns5";
             this.picAns5.Size = new System.Drawing.Size(50, 38);
             this.picAns5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -482,7 +480,7 @@
             // 
             this.picAns6.BackColor = System.Drawing.Color.Transparent;
             this.picAns6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picAns6.Location = new System.Drawing.Point(659, 96);
+            this.picAns6.Location = new System.Drawing.Point(638, 98);
             this.picAns6.Name = "picAns6";
             this.picAns6.Size = new System.Drawing.Size(50, 38);
             this.picAns6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -492,7 +490,7 @@
             // lblAns1
             // 
             this.lblAns1.AutoSize = true;
-            this.lblAns1.Location = new System.Drawing.Point(21, 500);
+            this.lblAns1.Location = new System.Drawing.Point(26, 512);
             this.lblAns1.Name = "lblAns1";
             this.lblAns1.Size = new System.Drawing.Size(46, 17);
             this.lblAns1.TabIndex = 23;
@@ -502,7 +500,7 @@
             // lblAns2
             // 
             this.lblAns2.AutoSize = true;
-            this.lblAns2.Location = new System.Drawing.Point(21, 537);
+            this.lblAns2.Location = new System.Drawing.Point(26, 549);
             this.lblAns2.Name = "lblAns2";
             this.lblAns2.Size = new System.Drawing.Size(46, 17);
             this.lblAns2.TabIndex = 24;
@@ -512,7 +510,7 @@
             // lblAns3
             // 
             this.lblAns3.AutoSize = true;
-            this.lblAns3.Location = new System.Drawing.Point(21, 573);
+            this.lblAns3.Location = new System.Drawing.Point(26, 585);
             this.lblAns3.Name = "lblAns3";
             this.lblAns3.Size = new System.Drawing.Size(46, 17);
             this.lblAns3.TabIndex = 25;
@@ -522,7 +520,7 @@
             // lblAns6
             // 
             this.lblAns6.AutoSize = true;
-            this.lblAns6.Location = new System.Drawing.Point(830, 573);
+            this.lblAns6.Location = new System.Drawing.Point(835, 585);
             this.lblAns6.Name = "lblAns6";
             this.lblAns6.Size = new System.Drawing.Size(46, 17);
             this.lblAns6.TabIndex = 28;
@@ -532,7 +530,7 @@
             // lblAns5
             // 
             this.lblAns5.AutoSize = true;
-            this.lblAns5.Location = new System.Drawing.Point(830, 537);
+            this.lblAns5.Location = new System.Drawing.Point(835, 549);
             this.lblAns5.Name = "lblAns5";
             this.lblAns5.Size = new System.Drawing.Size(46, 17);
             this.lblAns5.TabIndex = 27;
@@ -542,7 +540,7 @@
             // lblAns4
             // 
             this.lblAns4.AutoSize = true;
-            this.lblAns4.Location = new System.Drawing.Point(830, 500);
+            this.lblAns4.Location = new System.Drawing.Point(835, 512);
             this.lblAns4.Name = "lblAns4";
             this.lblAns4.Size = new System.Drawing.Size(46, 17);
             this.lblAns4.TabIndex = 26;
@@ -570,7 +568,7 @@
             this.Name = "S_A";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Synonyms & Antonyms";
+            this.Text = "Fun English Learning Games: Synonyms & Antonyms";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.S_A_FormClosed);
             this.Load += new System.EventHandler(this.S_A_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picCheckAnswers)).EndInit();
