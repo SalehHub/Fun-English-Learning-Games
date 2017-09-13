@@ -63,6 +63,16 @@ namespace FunEngGames.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _lock {
+            get {
+                object obj = ResourceManager.GetObject("lock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap answers {
             get {
                 object obj = ResourceManager.GetObject("answers", resourceCulture);
@@ -106,6 +116,26 @@ namespace FunEngGames.Properties {
         internal static System.Drawing.Bitmap check {
             get {
                 object obj = ResourceManager.GetObject("check", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap checkYourAswer {
+            get {
+                object obj = ResourceManager.GetObject("checkYourAswer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap checkYourAswer_hover {
+            get {
+                object obj = ResourceManager.GetObject("checkYourAswer_hover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

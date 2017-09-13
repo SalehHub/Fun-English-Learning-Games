@@ -207,6 +207,9 @@
     <Content Include="Images\6.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\lock.png" />
+    <None Include="Resources\checkYourAswer_hover.png" />
+    <None Include="Resources\checkYourAswer.png" />
     <None Include="Resources\Gametitle.png" />
     <None Include="Resources\S_ATitle.png" />
     <None Include="Resources\answers.png" />

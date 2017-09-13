@@ -490,7 +490,7 @@
             // lblAns1
             // 
             this.lblAns1.AutoSize = true;
-            this.lblAns1.Location = new System.Drawing.Point(26, 512);
+            this.lblAns1.Location = new System.Drawing.Point(132, 512);
             this.lblAns1.Name = "lblAns1";
             this.lblAns1.Size = new System.Drawing.Size(46, 17);
             this.lblAns1.TabIndex = 23;
@@ -500,7 +500,7 @@
             // lblAns2
             // 
             this.lblAns2.AutoSize = true;
-            this.lblAns2.Location = new System.Drawing.Point(26, 549);
+            this.lblAns2.Location = new System.Drawing.Point(132, 549);
             this.lblAns2.Name = "lblAns2";
             this.lblAns2.Size = new System.Drawing.Size(46, 17);
             this.lblAns2.TabIndex = 24;
@@ -510,7 +510,7 @@
             // lblAns3
             // 
             this.lblAns3.AutoSize = true;
-            this.lblAns3.Location = new System.Drawing.Point(26, 585);
+            this.lblAns3.Location = new System.Drawing.Point(132, 585);
             this.lblAns3.Name = "lblAns3";
             this.lblAns3.Size = new System.Drawing.Size(46, 17);
             this.lblAns3.TabIndex = 25;
@@ -520,7 +520,7 @@
             // lblAns6
             // 
             this.lblAns6.AutoSize = true;
-            this.lblAns6.Location = new System.Drawing.Point(835, 585);
+            this.lblAns6.Location = new System.Drawing.Point(794, 585);
             this.lblAns6.Name = "lblAns6";
             this.lblAns6.Size = new System.Drawing.Size(46, 17);
             this.lblAns6.TabIndex = 28;
@@ -530,7 +530,7 @@
             // lblAns5
             // 
             this.lblAns5.AutoSize = true;
-            this.lblAns5.Location = new System.Drawing.Point(835, 549);
+            this.lblAns5.Location = new System.Drawing.Point(794, 549);
             this.lblAns5.Name = "lblAns5";
             this.lblAns5.Size = new System.Drawing.Size(46, 17);
             this.lblAns5.TabIndex = 27;
@@ -540,7 +540,7 @@
             // lblAns4
             // 
             this.lblAns4.AutoSize = true;
-            this.lblAns4.Location = new System.Drawing.Point(835, 512);
+            this.lblAns4.Location = new System.Drawing.Point(794, 512);
             this.lblAns4.Name = "lblAns4";
             this.lblAns4.Size = new System.Drawing.Size(46, 17);
             this.lblAns4.TabIndex = 26;
