@@ -270,7 +270,7 @@ namespace FunEngGames
 
                         if (question == 4)
                         {
-                            lblFeedback.Text = "Good job! Keep up the good work in the next level"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Green;
+                            lblFeedback.Text = "Great job! Keep up the good work in the next level"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Green;
                             button3.Text = "Go to the next level >";
                         }
 

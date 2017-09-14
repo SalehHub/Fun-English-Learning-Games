@@ -38,10 +38,16 @@ namespace FunEngGames
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            /*
             S_A S_A = new S_A();
             S_A.mainLevelsForm = this;
             this.Hide();
             S_A.Show();
+            */
+            SynonymsLesson SynonymsLesson = new SynonymsLesson();
+            SynonymsLesson.mainLevelsForm = this;
+            this.Hide();
+            SynonymsLesson.Show();
         }
 
         private void mainLevels_FormClosed(object sender, FormClosedEventArgs e)

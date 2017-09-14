@@ -102,6 +102,12 @@
     <Compile Include="spellingLesson.Designer.cs">
       <DependentUpon>spellingLesson.cs</DependentUpon>
     </Compile>
+    <Compile Include="SynonymsLesson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SynonymsLesson.Designer.cs">
+      <DependentUpon>SynonymsLesson.cs</DependentUpon>
+    </Compile>
     <Compile Include="S_A.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="spellingLesson.resx">
       <DependentUpon>spellingLesson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SynonymsLesson.resx">
+      <DependentUpon>SynonymsLesson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="S_A.resx">
       <DependentUpon>S_A.cs</DependentUpon>
