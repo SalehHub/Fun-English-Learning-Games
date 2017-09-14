@@ -41,6 +41,11 @@ namespace FunEngGames
 
         private void homonyms_Load(object sender, EventArgs e)
         {
+            // Ensure WaitOnLoad is false.
+            pictureBox5.WaitOnLoad = false;
+
+            // Load the image asynchronously.
+            pictureBox5.LoadAsync(@"https://media.giphy.com/media/Bn6djQ6MgEWZi/giphy.gif");
 
             try
             {

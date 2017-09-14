@@ -41,12 +41,17 @@
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lbltitle = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picWords)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSentences)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPhrases)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // picWords
@@ -56,7 +61,7 @@
             this.picWords.BackgroundImage = global::FunEngGames.Properties.Resources.wordsTitle;
             this.picWords.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picWords.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picWords.Location = new System.Drawing.Point(103, 143);
+            this.picWords.Location = new System.Drawing.Point(103, 153);
             this.picWords.Name = "picWords";
             this.picWords.Size = new System.Drawing.Size(243, 333);
             this.picWords.TabIndex = 1;
@@ -72,7 +77,7 @@
             this.picSentences.BackgroundImage = global::FunEngGames.Properties.Resources.sentencesTitle;
             this.picSentences.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picSentences.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picSentences.Location = new System.Drawing.Point(867, 143);
+            this.picSentences.Location = new System.Drawing.Point(865, 153);
             this.picSentences.Name = "picSentences";
             this.picSentences.Size = new System.Drawing.Size(243, 333);
             this.picSentences.TabIndex = 2;
@@ -87,7 +92,7 @@
             this.picPhrases.BackgroundImage = global::FunEngGames.Properties.Resources.phrasesTitle;
             this.picPhrases.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picPhrases.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picPhrases.Location = new System.Drawing.Point(485, 143);
+            this.picPhrases.Location = new System.Drawing.Point(484, 153);
             this.picPhrases.Name = "picPhrases";
             this.picPhrases.Size = new System.Drawing.Size(243, 333);
             this.picPhrases.TabIndex = 3;
@@ -100,13 +105,13 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Impact", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Impact", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Green;
-            this.label1.Location = new System.Drawing.Point(40, 17);
+            this.label1.Location = new System.Drawing.Point(42, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1137, 75);
+            this.label1.Size = new System.Drawing.Size(1137, 65);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Select a level !";
+            this.label1.Text = "Main levels";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
@@ -143,7 +148,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Teal;
-            this.label5.Location = new System.Drawing.Point(510, 508);
+            this.label5.Location = new System.Drawing.Point(500, 508);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(192, 32);
             this.label5.TabIndex = 10;
@@ -157,7 +162,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Teal;
-            this.label7.Location = new System.Drawing.Point(881, 508);
+            this.label7.Location = new System.Drawing.Point(879, 508);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(214, 32);
             this.label7.TabIndex = 12;
@@ -183,7 +188,7 @@
             this.panel2.BackgroundImage = global::FunEngGames.Properties.Resources.result;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Location = new System.Drawing.Point(485, 543);
+            this.panel2.Location = new System.Drawing.Point(484, 543);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(243, 65);
             this.panel2.TabIndex = 15;
@@ -208,7 +213,7 @@
             this.panel3.BackgroundImage = global::FunEngGames.Properties.Resources.result;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel3.Controls.Add(this.label6);
-            this.panel3.Location = new System.Drawing.Point(867, 543);
+            this.panel3.Location = new System.Drawing.Point(865, 543);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(243, 65);
             this.panel3.TabIndex = 16;
@@ -226,6 +231,45 @@
             this.label6.Text = "0";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.BackgroundImage = global::FunEngGames.Properties.Resources._lock;
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox6.Location = new System.Drawing.Point(581, 614);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(48, 46);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 23;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::FunEngGames.Properties.Resources._lock;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(962, 615);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 46);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 24;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lbltitle
+            // 
+            this.lbltitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbltitle.BackColor = System.Drawing.Color.Transparent;
+            this.lbltitle.Font = new System.Drawing.Font("Impact", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltitle.Location = new System.Drawing.Point(51, 84);
+            this.lbltitle.Name = "lbltitle";
+            this.lbltitle.Size = new System.Drawing.Size(1119, 58);
+            this.lbltitle.TabIndex = 25;
+            this.lbltitle.Text = "Play the Words level to unlock Phrases and Sentences levels";
+            this.lbltitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // mainLevels
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -233,6 +277,9 @@
             this.BackgroundImage = global::FunEngGames.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1220, 673);
+            this.Controls.Add(this.lbltitle);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -256,6 +303,8 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -276,5 +325,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lbltitle;
     }
 }

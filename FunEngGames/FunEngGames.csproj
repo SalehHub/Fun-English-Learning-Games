@@ -94,6 +94,12 @@
     <Compile Include="homonyms.Designer.cs">
       <DependentUpon>homonyms.cs</DependentUpon>
     </Compile>
+    <Compile Include="HomonymsLesson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomonymsLesson.Designer.cs">
+      <DependentUpon>HomonymsLesson.cs</DependentUpon>
+    </Compile>
     <Compile Include="mainLevels.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="homonyms.resx">
       <DependentUpon>homonyms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomonymsLesson.resx">
+      <DependentUpon>HomonymsLesson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainLevels.resx">
       <DependentUpon>mainLevels.cs</DependentUpon>

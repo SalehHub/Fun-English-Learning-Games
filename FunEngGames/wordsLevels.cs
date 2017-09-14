@@ -82,10 +82,16 @@ namespace FunEngGames
 
         private void picHomonyms_Click(object sender, EventArgs e)
         {
+            /*
             homonyms homonyms = new homonyms();
             homonyms.mainLevelsForm = this;
             this.Hide();
             homonyms.Show();
+            */
+            HomonymsLesson HomonymsLesson = new HomonymsLesson();
+            HomonymsLesson.mainLevelsForm = this;
+            this.Hide();
+            HomonymsLesson.Show();
         }
     }
 }

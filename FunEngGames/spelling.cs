@@ -212,10 +212,16 @@ namespace FunEngGames
                 }
                 else if (button3.Text == "Go to the next level >")
                 {
+                    /*
                     Synonyms S_A = new Synonyms();
                     S_A.mainLevelsForm = mainLevelsForm;
                     this.Hide();
                     S_A.Show();
+                    */
+                    SynonymsLesson SynonymsLesson = new SynonymsLesson();
+                    SynonymsLesson.mainLevelsForm = mainLevelsForm;
+                    this.Hide();
+                    SynonymsLesson.Show();
                 }
                 else if (button3.Text == "Next Question")
                 {

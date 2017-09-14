@@ -47,7 +47,6 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -56,6 +55,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.lblCorrectAns = new System.Windows.Forms.Label();
             this.lblFeedback = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -65,8 +65,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.picCheckAnswers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -268,7 +268,7 @@
             this.lblAttempts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblAttempts.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAttempts.ForeColor = System.Drawing.Color.Black;
-            this.lblAttempts.Location = new System.Drawing.Point(938, 294);
+            this.lblAttempts.Location = new System.Drawing.Point(938, 296);
             this.lblAttempts.Name = "lblAttempts";
             this.lblAttempts.Size = new System.Drawing.Size(36, 36);
             this.lblAttempts.TabIndex = 18;
@@ -311,19 +311,6 @@
             this.button2.TabIndex = 21;
             this.button2.Text = "Second hint";
             this.button2.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.BackgroundImage = global::FunEngGames.Properties.Resources._lock;
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox6.Location = new System.Drawing.Point(811, 539);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(48, 46);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 22;
-            this.pictureBox6.TabStop = false;
             // 
             // label5
             // 
@@ -369,9 +356,9 @@
             this.lblPoints.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblPoints.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPoints.ForeColor = System.Drawing.Color.Black;
-            this.lblPoints.Location = new System.Drawing.Point(66, 283);
+            this.lblPoints.Location = new System.Drawing.Point(71, 285);
             this.lblPoints.Name = "lblPoints";
-            this.lblPoints.Size = new System.Drawing.Size(66, 53);
+            this.lblPoints.Size = new System.Drawing.Size(58, 49);
             this.lblPoints.TabIndex = 25;
             this.lblPoints.Text = "0";
             this.lblPoints.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -432,6 +419,20 @@
             this.lblFeedback.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblFeedback.Visible = false;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.BackgroundImage = global::FunEngGames.Properties.Resources._lock;
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox6.Location = new System.Drawing.Point(811, 539);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(48, 46);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 22;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Visible = false;
+            // 
             // spelling
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -484,8 +485,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.picCheckAnswers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -512,7 +513,6 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
@@ -521,5 +521,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label lblCorrectAns;
         private System.Windows.Forms.Label lblFeedback;
+        private System.Windows.Forms.PictureBox pictureBox6;
     }
 }
