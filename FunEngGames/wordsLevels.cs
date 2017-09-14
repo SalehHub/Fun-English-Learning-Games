@@ -24,14 +24,16 @@ namespace FunEngGames
 
         private void picSpelling_Click(object sender, EventArgs e)
         {
-            //spelling s = new spelling();
-            //s.Show();
-            //Hide();
-
+            /*
             spelling spelling = new spelling();
             spelling.mainLevelsForm = this;
             this.Hide();
             spelling.Show();
+            */
+            spellingLesson spellingLesson = new spellingLesson();
+            spellingLesson.mainLevelsForm = this;
+            this.Hide();
+            spellingLesson.Show();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)

@@ -55,6 +55,7 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.lblCorrectAns = new System.Windows.Forms.Label();
+            this.lblFeedback = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -146,18 +147,19 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(517, 611);
+            this.label1.Location = new System.Drawing.Point(996, 671);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 17);
             this.label1.TabIndex = 6;
             this.label1.Text = "label1";
+            this.label1.Visible = false;
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(151, 570);
+            this.label2.Location = new System.Drawing.Point(104, 455);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 17);
             this.label2.TabIndex = 7;
@@ -168,7 +170,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(82, 568);
+            this.label3.Location = new System.Drawing.Point(35, 453);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 17);
             this.label3.TabIndex = 8;
@@ -179,7 +181,7 @@
             // 
             this.picAns3.BackColor = System.Drawing.Color.Transparent;
             this.picAns3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picAns3.Location = new System.Drawing.Point(65, 604);
+            this.picAns3.Location = new System.Drawing.Point(18, 489);
             this.picAns3.Name = "picAns3";
             this.picAns3.Size = new System.Drawing.Size(63, 46);
             this.picAns3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -192,7 +194,7 @@
             this.picAns2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.picAns2.BackColor = System.Drawing.Color.Transparent;
             this.picAns2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picAns2.Location = new System.Drawing.Point(134, 599);
+            this.picAns2.Location = new System.Drawing.Point(87, 484);
             this.picAns2.Name = "picAns2";
             this.picAns2.Size = new System.Drawing.Size(63, 51);
             this.picAns2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -221,7 +223,7 @@
             this.picCheckAnswers.BackgroundImage = global::FunEngGames.Properties.Resources.checkYourAswer;
             this.picCheckAnswers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picCheckAnswers.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picCheckAnswers.Location = new System.Drawing.Point(12, 364);
+            this.picCheckAnswers.Location = new System.Drawing.Point(17, 568);
             this.picCheckAnswers.Name = "picCheckAnswers";
             this.picCheckAnswers.Size = new System.Drawing.Size(125, 45);
             this.picCheckAnswers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -264,9 +266,9 @@
             this.lblAttempts.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAttempts.BackColor = System.Drawing.Color.Transparent;
             this.lblAttempts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblAttempts.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAttempts.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAttempts.ForeColor = System.Drawing.Color.Black;
-            this.lblAttempts.Location = new System.Drawing.Point(964, 278);
+            this.lblAttempts.Location = new System.Drawing.Point(938, 294);
             this.lblAttempts.Name = "lblAttempts";
             this.lblAttempts.Size = new System.Drawing.Size(36, 36);
             this.lblAttempts.TabIndex = 18;
@@ -281,9 +283,9 @@
             this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.ImageLocation = "Images\\\\circle.gif";
-            this.pictureBox5.Location = new System.Drawing.Point(917, 233);
+            this.pictureBox5.Location = new System.Drawing.Point(867, 233);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(125, 125);
+            this.pictureBox5.Size = new System.Drawing.Size(175, 153);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 19;
             this.pictureBox5.TabStop = false;
@@ -316,7 +318,7 @@
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.BackgroundImage = global::FunEngGames.Properties.Resources._lock;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox6.Location = new System.Drawing.Point(811, 509);
+            this.pictureBox6.Location = new System.Drawing.Point(811, 539);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(48, 46);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -342,9 +344,9 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(917, 201);
+            this.label6.Location = new System.Drawing.Point(867, 201);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(125, 29);
+            this.label6.Size = new System.Drawing.Size(175, 29);
             this.label6.TabIndex = 24;
             this.label6.Text = "Attempts";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -356,7 +358,7 @@
             this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(12, 201);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(125, 29);
+            this.label7.Size = new System.Drawing.Size(175, 29);
             this.label7.TabIndex = 27;
             this.label7.Text = "Points";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -365,11 +367,11 @@
             // 
             this.lblPoints.BackColor = System.Drawing.Color.Transparent;
             this.lblPoints.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblPoints.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPoints.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPoints.ForeColor = System.Drawing.Color.Black;
-            this.lblPoints.Location = new System.Drawing.Point(58, 277);
+            this.lblPoints.Location = new System.Drawing.Point(66, 283);
             this.lblPoints.Name = "lblPoints";
-            this.lblPoints.Size = new System.Drawing.Size(36, 36);
+            this.lblPoints.Size = new System.Drawing.Size(66, 53);
             this.lblPoints.TabIndex = 25;
             this.lblPoints.Text = "0";
             this.lblPoints.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -377,13 +379,13 @@
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox7.ImageLocation = "Images\\\\circle.gif";
             this.pictureBox7.Location = new System.Drawing.Point(12, 233);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(125, 125);
+            this.pictureBox7.Size = new System.Drawing.Size(175, 153);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 26;
             this.pictureBox7.TabStop = false;
@@ -411,9 +413,24 @@
             this.lblCorrectAns.Name = "lblCorrectAns";
             this.lblCorrectAns.Size = new System.Drawing.Size(555, 29);
             this.lblCorrectAns.TabIndex = 29;
-            this.lblCorrectAns.Text = "Correct answer is chair";
+            this.lblCorrectAns.Text = "Correct answer is ";
             this.lblCorrectAns.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblCorrectAns.Visible = false;
+            // 
+            // lblFeedback
+            // 
+            this.lblFeedback.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblFeedback.BackColor = System.Drawing.Color.Transparent;
+            this.lblFeedback.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFeedback.ForeColor = System.Drawing.Color.Green;
+            this.lblFeedback.Location = new System.Drawing.Point(12, 616);
+            this.lblFeedback.Name = "lblFeedback";
+            this.lblFeedback.Size = new System.Drawing.Size(1030, 29);
+            this.lblFeedback.TabIndex = 30;
+            this.lblFeedback.Text = "Good job! Keep up the good work";
+            this.lblFeedback.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblFeedback.Visible = false;
             // 
             // spelling
             // 
@@ -422,10 +439,11 @@
             this.BackgroundImage = global::FunEngGames.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1054, 715);
+            this.Controls.Add(this.lblPoints);
+            this.Controls.Add(this.lblFeedback);
             this.Controls.Add(this.lblCorrectAns);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.lblPoints);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -502,5 +520,6 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label lblCorrectAns;
+        private System.Windows.Forms.Label lblFeedback;
     }
 }

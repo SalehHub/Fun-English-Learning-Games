@@ -22,6 +22,10 @@ namespace FunEngGames
         public string pic2 = "", ans2 = "";
         public string pic3 = "", ans3 = "";
         public int question=1;
+        public int hints = 2;
+        public int attempts = 3;
+        public int points = 0;
+
 
         public Random a = new Random();
         public List<int> randomList = new List<int>();
@@ -185,6 +189,8 @@ namespace FunEngGames
         {
             try
             {
+                lblFeedback.Visible = false;
+
                 if (button3.Text == "Start this level again")
                 {
 
@@ -192,7 +198,10 @@ namespace FunEngGames
                     randomList.Clear();
                     question = 1;
                     lblPoints.Text = "0";
+
                     lblAttempts.Text = "3";
+                    attempts = 3;
+
                     picAns1.Visible = false;
 
                     button3.Text = "Check your answer";
@@ -230,6 +239,7 @@ namespace FunEngGames
                     picAns1.Visible = false;
 
                     lblAttempts.Text = "3";
+                    attempts = 3;
 
                     textBox1.Text = "Type your answer here...";
 
@@ -246,40 +256,55 @@ namespace FunEngGames
 
                     picAns1.Visible = true;
 
-                    if (textBox1.Text.Trim().ToLower() == label1.Text.Trim().ToLower())
+  /*correct*/       if (textBox1.Text.Trim().ToLower() == label1.Text.Trim().ToLower())
                     {
                         question++;
 
                         picAns1.BackgroundImage = Properties.Resources.check;
 
+                        lblFeedback.Text = "Good job! Keep up the good work";lblFeedback.Visible = true;lblFeedback.ForeColor = Color.Green;
                         button3.Text = "Next Question";
-                        lblPoints.Text = (int.Parse(lblPoints.Text) + 3).ToString();
+
+                        points += hints + attempts;
+/*calculate points*/    lblPoints.Text = points.ToString();//(int.Parse(lblPoints.Text) + 3).ToString();
 
                         if (question == 4)
                         {
+                            lblFeedback.Text = "Good job! Keep up the good work in the next level"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Green;
                             button3.Text = "Go to the next level >";
                         }
 
 
                     }
-                    else
+/*incorrect*/         else
                     {
-                        lblAttempts.Text = (int.Parse(lblAttempts.Text) - 1).ToString();
+                       
+                        attempts--;
+                        lblAttempts.Text = attempts.ToString();
 
-                        if (lblAttempts.Text == "0" && question<3)
+                        if (attempts == 0 && question < 3)
                         {
                             question++;
                             lblCorrectAns.Visible = true;
+                            picAns1.Visible = false;
                             lblCorrectAns.Text = "The correct answer is " + label1.Text;
+
+                            lblFeedback.Text = "Sorry this is not a correct answer try again in the next question.";
+                            lblFeedback.Visible = true;
+                            lblFeedback.ForeColor = Color.Red;
+
                             button3.Text = "Next Question";
 
                         }
-                        else if (lblAttempts.Text == "0" && question == 3)
+                        else if (attempts == 0 && question == 3)
                         {
                             button3.Text = "Start this level again";
                         }
                         else
                         {
+                            lblFeedback.Text = "Sorry this is not a correct answer try again.";
+                            lblFeedback.Visible = true;
+                            lblFeedback.ForeColor = Color.Red;
 
                             picAns1.BackgroundImage = Properties.Resources.cross;
                             button3.Text = "Try Again";
