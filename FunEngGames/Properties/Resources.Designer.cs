@@ -83,6 +83,16 @@ namespace FunEngGames.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap antonymsTitle {
+            get {
+                object obj = ResourceManager.GetObject("antonymsTitle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap b1 {
             get {
                 object obj = ResourceManager.GetObject("b1", resourceCulture);
@@ -356,6 +366,16 @@ namespace FunEngGames.Properties {
         internal static System.Drawing.Bitmap spellingTitle {
             get {
                 object obj = ResourceManager.GetObject("spellingTitle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap synonymsTitle {
+            get {
+                object obj = ResourceManager.GetObject("synonymsTitle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

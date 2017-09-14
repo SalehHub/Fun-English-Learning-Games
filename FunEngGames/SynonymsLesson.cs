@@ -38,7 +38,7 @@ namespace FunEngGames
 
         private void button1_Click(object sender, EventArgs e)
         {
-            S_A S_A = new S_A();
+            Synonyms S_A = new Synonyms();
             S_A.mainLevelsForm = this.mainLevelsForm;
             this.Hide();
             S_A.Show();

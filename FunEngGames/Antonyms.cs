@@ -11,9 +11,9 @@ using System.Xml;
 
 namespace FunEngGames
 {
-    public partial class S_A : Form
+    public partial class Antonyms : Form
     {
-        public S_A()
+        public Antonyms()
         {
             InitializeComponent();
         }
@@ -63,84 +63,13 @@ namespace FunEngGames
         {
 
             xmlDoc.Load("questions.xml");
-            this.Synonyms();
-            this.Antonyms();
+            //this.Synonyms();
+            this.GenAntonyms();
         }
 
-        public void Synonyms()
-        {
-            try
-            {
-                XmlNodeList nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/synonyms");
+       
 
-
-                string word = "", synonym = "";
-                //foreach (XmlNode node in nodeList)
-
-                NewNumber(nodeList.Count);
-                int random = randomList.Last();
-
-                word = nodeList[random].SelectSingleNode("word").InnerText;
-                synonym = nodeList[random].SelectSingleNode("synonym").InnerText;
-                synonyms.Add(synonym);
-                lblW1.Text = "1- " + word;
-
-
-
-
-
-
-                NewNumber(nodeList.Count);
-                random = randomList.Last();
-
-                word = nodeList[random].SelectSingleNode("word").InnerText;
-                synonym = nodeList[random].SelectSingleNode("synonym").InnerText;
-                synonyms.Add(synonym);
-                lblW2.Text = "2- " + word;
-
-
-
-
-
-
-                NewNumber(nodeList.Count);
-                random = randomList.Last();
-
-                word = nodeList[random].SelectSingleNode("word").InnerText;
-                synonym = nodeList[random].SelectSingleNode("synonym").InnerText;
-                synonyms.Add(synonym);
-                lblW3.Text = "3- " + word;
-
-
-                //comboBox1.Tag = synonyms[0];
-                //comboBox2.Tag = synonyms[1];
-                //comboBox3.Tag = synonyms[2];
-
-                lblAns1.Text = synonyms[0];
-                lblAns2.Text = synonyms[1];
-                lblAns3.Text = synonyms[2];
-
-                Shuffle(synonyms);
-                //comboBox1.Items.Add("A-"); comboBox1.Items.Add("B-"); comboBox1.Items.Add("C-");
-                comboBox1.Items.Add("A- " + synonyms[0]); comboBox1.Items.Add("B- " + synonyms[1]); comboBox1.Items.Add("C- " + synonyms[2]);
-                comboBox2.Items.Add("A- " + synonyms[0]); comboBox2.Items.Add("B- " + synonyms[1]); comboBox2.Items.Add("C- " + synonyms[2]);
-                comboBox3.Items.Add("A- " + synonyms[0]); comboBox3.Items.Add("B- " + synonyms[1]); comboBox3.Items.Add("C- " + synonyms[2]);
-
-
-                // Shuffle(synonyms);
-                lblS1.Text = "A- " + synonyms[0];
-                lblS2.Text = "B- " + synonyms[1];
-                lblS3.Text = "C- " + synonyms[2];
-
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        public void Antonyms() {
+        public void GenAntonyms() {
 
             try
             {
@@ -228,43 +157,7 @@ namespace FunEngGames
 
         private void picCheckAnswers_Click(object sender, EventArgs e)
         {
-            //Synonyms check
-            if (comboBox1.Text.Trim().ToLower().Contains(lblAns1.Text.Trim().ToLower()))
-            {
-                picAns1.BackgroundImage = Properties.Resources.check;
-            }
-            else
-            {
-                picAns1.BackgroundImage = Properties.Resources.cross;
-            }
-
-
-
-
-            if (comboBox2.Text.Trim().ToLower().Contains(lblAns2.Text.Trim().ToLower()))
-            {
-                picAns2.BackgroundImage = Properties.Resources.check;
-            }
-            else
-            {
-                picAns2.BackgroundImage = Properties.Resources.cross;
-            }
-
-
-
-
-            if (comboBox3.Text.Trim().ToLower().Contains(lblAns3.Text.Trim().ToLower()))
-            {
-                picAns3.BackgroundImage = Properties.Resources.check;
-            }
-            else
-            {
-                picAns3.BackgroundImage = Properties.Resources.cross;
-            }
-
-
-
-
+           
 
 
             //Antonyms check

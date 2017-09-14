@@ -212,7 +212,7 @@ namespace FunEngGames
                 }
                 else if (button3.Text == "Go to the next level >")
                 {
-                    S_A S_A = new S_A();
+                    Synonyms S_A = new Synonyms();
                     S_A.mainLevelsForm = mainLevelsForm;
                     this.Hide();
                     S_A.Show();

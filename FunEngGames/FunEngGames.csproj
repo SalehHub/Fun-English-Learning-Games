@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Antonyms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Antonyms.designer.cs">
+      <DependentUpon>Antonyms.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,11 +114,11 @@
     <Compile Include="SynonymsLesson.Designer.cs">
       <DependentUpon>SynonymsLesson.cs</DependentUpon>
     </Compile>
-    <Compile Include="S_A.cs">
+    <Compile Include="Synonyms.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="S_A.Designer.cs">
-      <DependentUpon>S_A.cs</DependentUpon>
+    <Compile Include="Synonyms.Designer.cs">
+      <DependentUpon>Synonyms.cs</DependentUpon>
     </Compile>
     <Compile Include="wordsLevels.cs">
       <SubType>Form</SubType>
@@ -120,6 +126,9 @@
     <Compile Include="wordsLevels.Designer.cs">
       <DependentUpon>wordsLevels.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Antonyms.resx">
+      <DependentUpon>Antonyms.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,8 +160,8 @@
     <EmbeddedResource Include="SynonymsLesson.resx">
       <DependentUpon>SynonymsLesson.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="S_A.resx">
-      <DependentUpon>S_A.cs</DependentUpon>
+    <EmbeddedResource Include="Synonyms.resx">
+      <DependentUpon>Synonyms.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="wordsLevels.resx">
       <DependentUpon>wordsLevels.cs</DependentUpon>
@@ -225,6 +234,8 @@
     <Content Include="Images\6.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\synonymsTitle.png" />
+    <None Include="Resources\antonymsTitle.png" />
     <None Include="Resources\lock.png" />
     <None Include="Resources\checkYourAswer_hover.png" />
     <None Include="Resources\checkYourAswer.png" />
