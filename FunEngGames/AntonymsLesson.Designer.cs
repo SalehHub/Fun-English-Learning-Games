@@ -1,6 +1,6 @@
 ﻿namespace FunEngGames
 {
-    partial class SynonymsLesson
+    partial class AntonymsLesson
     {
         /// <summary>
         /// Required designer variable.
@@ -75,7 +75,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(1017, 31);
             this.label2.TabIndex = 18;
-            this.label2.Text = "Memorize these words and learn their synonyms";
+            this.label2.Text = "Memorize these words and learn their antonyms";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
@@ -89,7 +89,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(964, 47);
             this.label1.TabIndex = 17;
-            this.label1.Text = "Words and synonyms you may see in the game";
+            this.label1.Text = "Words and antonyms you may see in the game";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button1
@@ -100,7 +100,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(356, 78);
             this.button1.TabIndex = 16;
-            this.button1.Text = "Start the Synonyms Level";
+            this.button1.Text = "Start the Antonyms Level";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -150,7 +150,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(356, 47);
             this.label5.TabIndex = 33;
-            this.label5.Text = "Synonym";
+            this.label5.Text = "Antonyms";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
@@ -323,7 +323,7 @@
             this.textBox12.TabIndex = 32;
             this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // SynonymsLesson
+            // AntonymsLesson
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -335,9 +335,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Name = "SynonymsLesson";
+            this.Name = "AntonymsLesson";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Fun English Learning Games: Synonyms";
+            this.Text = "Fun English Learning Games: Antonyms";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SynonymsLesson_FormClosed);
             this.Load += new System.EventHandler(this.SynonymsLesson_Load);
             this.tableLayoutPanel1.ResumeLayout(false);

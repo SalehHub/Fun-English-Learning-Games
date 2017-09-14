@@ -47,6 +47,7 @@
             this.lblAns1 = new System.Windows.Forms.Label();
             this.lblAns2 = new System.Windows.Forms.Label();
             this.lblAns3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picCheckAnswers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
@@ -63,7 +64,7 @@
             this.lbltitle.Font = new System.Drawing.Font("Impact", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltitle.Location = new System.Drawing.Point(12, 161);
             this.lbltitle.Name = "lbltitle";
-            this.lbltitle.Size = new System.Drawing.Size(1312, 62);
+            this.lbltitle.Size = new System.Drawing.Size(1136, 62);
             this.lbltitle.TabIndex = 19;
             this.lbltitle.Text = "Choose the right synonyms answer using the drop-down list ";
             this.lbltitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -75,7 +76,7 @@
             this.picCheckAnswers.BackgroundImage = global::FunEngGames.Properties.Resources.checkYourAswers;
             this.picCheckAnswers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picCheckAnswers.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picCheckAnswers.Location = new System.Drawing.Point(512, 622);
+            this.picCheckAnswers.Location = new System.Drawing.Point(422, 622);
             this.picCheckAnswers.Name = "picCheckAnswers";
             this.picCheckAnswers.Size = new System.Drawing.Size(317, 88);
             this.picCheckAnswers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -94,7 +95,7 @@
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox4.Location = new System.Drawing.Point(115, 9);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(1107, 146);
+            this.pictureBox4.Size = new System.Drawing.Size(931, 146);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 18;
             this.pictureBox4.TabStop = false;
@@ -126,13 +127,13 @@
             this.tableLayoutPanel2.Controls.Add(this.picAns2, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.picAns3, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.lblW1, 2, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(300, 315);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(236, 315);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(736, 142);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(688, 142);
             this.tableLayoutPanel2.TabIndex = 22;
             // 
             // lblS1
@@ -303,13 +304,24 @@
             this.lblAns3.Text = "label3";
             this.lblAns3.Visible = false;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(810, 622);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(124, 71);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Synonyms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FunEngGames.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1336, 720);
+            this.ClientSize = new System.Drawing.Size(1160, 720);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblAns3);
             this.Controls.Add(this.lblAns2);
             this.Controls.Add(this.lblAns1);
@@ -355,5 +367,6 @@
         private System.Windows.Forms.PictureBox picAns1;
         private System.Windows.Forms.PictureBox picAns2;
         private System.Windows.Forms.PictureBox picAns3;
+        private System.Windows.Forms.Button button1;
     }
 }

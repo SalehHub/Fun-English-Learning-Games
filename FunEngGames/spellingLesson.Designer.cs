@@ -423,6 +423,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "spellingLesson";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fun English Learning Games: Spelling";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.spellingLesson_FormClosed);
             this.Load += new System.EventHandler(this.spellingLesson_Load);

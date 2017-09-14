@@ -46,7 +46,13 @@ namespace FunEngGames
 
         private void S_A_FormClosed(object sender, FormClosedEventArgs e)
         {
-            this.mainLevelsForm.Show();
+            try
+            {
+                this.mainLevelsForm.Show();
+            }catch(Exception ex)
+            {
+
+            }
         }
 
         private void picCheckAnswers_MouseHover(object sender, EventArgs e)
@@ -197,6 +203,14 @@ namespace FunEngGames
 
 
            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AntonymsLesson antonymsLesson = new AntonymsLesson();
+            antonymsLesson.mainLevelsForm = this.mainLevelsForm;
+            this.Hide();
+            antonymsLesson.Show();
         }
     }
 }
