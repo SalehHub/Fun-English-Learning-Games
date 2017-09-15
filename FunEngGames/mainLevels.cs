@@ -63,5 +63,13 @@ namespace FunEngGames
         {
             //pictureBox1.ImageLocation = "Images\\circle.gif";
         }
+
+        private void picPhrases_Click(object sender, EventArgs e)
+        {
+            phrasesLevel phrasesLevel = new phrasesLevel();
+            phrasesLevel.mainLevelsForm = this;
+            this.Hide();
+            phrasesLevel.Show();
+        }
     }
 }

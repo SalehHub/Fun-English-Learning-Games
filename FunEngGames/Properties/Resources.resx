@@ -160,6 +160,9 @@
   <data name="lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="synonymsTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\synonymsTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="S_AMainPicHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\S&amp;ATitleHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -172,8 +175,14 @@
   <data name="homonymsTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\homonymsTitle1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="idiomsTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\idiomsTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="checkYourAswer_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\checkYourAswer_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="phrasesMainTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\phrasesMainTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="checkYourAswers" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\checkYourAswers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -189,6 +198,9 @@
   </data>
   <data name="check" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="antonymsTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\antonymsTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="S_ATitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\S_ATitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,6 +220,9 @@
   <data name="result" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\result.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="posTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\posTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="checkYourAswers_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\checkYourAswers_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -217,10 +232,10 @@
   <data name="HomonomysPicHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HomonomysTitleHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="antonymsTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\antonymsTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="posTitleHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\posTitleHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="synonymsTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\synonymsTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="idiomsTitleHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\idiomsTitleHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

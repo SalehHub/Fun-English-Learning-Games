@@ -243,9 +243,39 @@ namespace FunEngGames.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap idiomsTitle {
+            get {
+                object obj = ResourceManager.GetObject("idiomsTitle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap idiomsTitleHover {
+            get {
+                object obj = ResourceManager.GetObject("idiomsTitleHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mainScreen {
             get {
                 object obj = ResourceManager.GetObject("mainScreen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap phrasesMainTitle {
+            get {
+                object obj = ResourceManager.GetObject("phrasesMainTitle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -266,6 +296,26 @@ namespace FunEngGames.Properties {
         internal static System.Drawing.Bitmap phrasesTitleHover {
             get {
                 object obj = ResourceManager.GetObject("phrasesTitleHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap posTitle {
+            get {
+                object obj = ResourceManager.GetObject("posTitle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap posTitleHover {
+            get {
+                object obj = ResourceManager.GetObject("posTitleHover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

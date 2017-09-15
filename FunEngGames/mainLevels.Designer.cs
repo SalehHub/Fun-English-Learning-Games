@@ -97,6 +97,7 @@
             this.picPhrases.Size = new System.Drawing.Size(243, 333);
             this.picPhrases.TabIndex = 3;
             this.picPhrases.TabStop = false;
+            this.picPhrases.Click += new System.EventHandler(this.picPhrases_Click);
             this.picPhrases.MouseLeave += new System.EventHandler(this.picPhrases_MouseLeave);
             this.picPhrases.MouseHover += new System.EventHandler(this.picPhrases_MouseHover);
             // 
