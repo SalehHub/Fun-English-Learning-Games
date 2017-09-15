@@ -42,10 +42,10 @@ namespace FunEngGames
             this.Hide();
             spelling.Show();
             */
-            spellingLesson spellingLesson = new spellingLesson();
-            //spellingLesson.mainLevelsForm = this;
+            POSLesson POSLesson = new POSLesson();
+            POSLesson.mainLevelsForm = this;
             this.Hide();
-            spellingLesson.Show();
+            POSLesson.Show();
         }
 
         private void mainLevels_FormClosed(object sender, FormClosedEventArgs e)
@@ -61,10 +61,10 @@ namespace FunEngGames
             this.Hide();
             homonyms.Show();
             */
-            HomonymsLesson HomonymsLesson = new HomonymsLesson();
-            //HomonymsLesson.mainLevelsForm = this;
+            IdiomsLesson IdiomsLesson = new IdiomsLesson();
+            IdiomsLesson.mainLevelsForm = this;
             this.Hide();
-            HomonymsLesson.Show();
+            IdiomsLesson.Show();
         }
 
     }

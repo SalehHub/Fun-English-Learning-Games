@@ -100,6 +100,12 @@
     <Compile Include="HomonymsLesson.Designer.cs">
       <DependentUpon>HomonymsLesson.cs</DependentUpon>
     </Compile>
+    <Compile Include="IdiomsLesson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IdiomsLesson.Designer.cs">
+      <DependentUpon>IdiomsLesson.cs</DependentUpon>
+    </Compile>
     <Compile Include="mainLevels.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,12 @@
     </Compile>
     <Compile Include="phrasesLevel.Designer.cs">
       <DependentUpon>phrasesLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POSLesson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POSLesson.Designer.cs">
+      <DependentUpon>POSLesson.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -162,11 +174,17 @@
     <EmbeddedResource Include="HomonymsLesson.resx">
       <DependentUpon>HomonymsLesson.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="IdiomsLesson.resx">
+      <DependentUpon>IdiomsLesson.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mainLevels.resx">
       <DependentUpon>mainLevels.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="phrasesLevel.resx">
       <DependentUpon>phrasesLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POSLesson.resx">
+      <DependentUpon>POSLesson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
