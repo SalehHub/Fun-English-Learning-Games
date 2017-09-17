@@ -75,5 +75,13 @@ namespace FunEngGames
             t3.Text = nodeList[randomList.Last()].SelectSingleNode("answer").InnerText;
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            POS POS = new POS();
+            POS.mainLevelsForm = this.mainLevelsForm;
+            this.Hide();
+            POS.Show();
+        }
     }
 }

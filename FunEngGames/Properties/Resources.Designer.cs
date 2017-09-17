@@ -243,6 +243,16 @@ namespace FunEngGames.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap IdiomslevelTitle {
+            get {
+                object obj = ResourceManager.GetObject("IdiomslevelTitle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap idiomsTitle {
             get {
                 object obj = ResourceManager.GetObject("idiomsTitle", resourceCulture);
@@ -296,6 +306,16 @@ namespace FunEngGames.Properties {
         internal static System.Drawing.Bitmap phrasesTitleHover {
             get {
                 object obj = ResourceManager.GetObject("phrasesTitleHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap POSlevelTitle {
+            get {
+                object obj = ResourceManager.GetObject("POSlevelTitle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

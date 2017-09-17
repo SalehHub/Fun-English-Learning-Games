@@ -162,8 +162,6 @@ namespace FunEngGames
 
         private void picCheckAnswers_Click(object sender, EventArgs e)
         {
-           
-
 
             //Antonyms check
             if (comboBox4.Text.Trim().ToLower().Contains(lblAns4.Text.Trim().ToLower()))

@@ -100,6 +100,12 @@
     <Compile Include="HomonymsLesson.Designer.cs">
       <DependentUpon>HomonymsLesson.cs</DependentUpon>
     </Compile>
+    <Compile Include="Idioms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Idioms.Designer.cs">
+      <DependentUpon>Idioms.cs</DependentUpon>
+    </Compile>
     <Compile Include="IdiomsLesson.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,12 @@
     </Compile>
     <Compile Include="phrasesLevel.Designer.cs">
       <DependentUpon>phrasesLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POS.Designer.cs">
+      <DependentUpon>POS.cs</DependentUpon>
     </Compile>
     <Compile Include="POSLesson.cs">
       <SubType>Form</SubType>
@@ -174,6 +186,9 @@
     <EmbeddedResource Include="HomonymsLesson.resx">
       <DependentUpon>HomonymsLesson.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Idioms.resx">
+      <DependentUpon>Idioms.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IdiomsLesson.resx">
       <DependentUpon>IdiomsLesson.cs</DependentUpon>
     </EmbeddedResource>
@@ -182,6 +197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="phrasesLevel.resx">
       <DependentUpon>phrasesLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POS.resx">
+      <DependentUpon>POS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="POSLesson.resx">
       <DependentUpon>POSLesson.cs</DependentUpon>
@@ -279,6 +297,8 @@
     <Content Include="Images\6.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\POSlevelTitle.png" />
+    <None Include="Resources\IdiomslevelTitle.png" />
     <None Include="Resources\idiomsTitleHover.png" />
     <None Include="Resources\posTitleHover.png" />
     <None Include="Resources\idiomsTitle.png" />

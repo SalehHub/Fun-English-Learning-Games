@@ -85,5 +85,13 @@ namespace FunEngGames
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Idioms Idioms = new Idioms();
+            Idioms.mainLevelsForm = this.mainLevelsForm;
+            this.Hide();
+            Idioms.Show();
+        }
     }
 }
