@@ -168,6 +168,12 @@
     <Compile Include="wordsLevels.Designer.cs">
       <DependentUpon>wordsLevels.cs</DependentUpon>
     </Compile>
+    <Compile Include="_storyline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_storyline.Designer.cs">
+      <DependentUpon>_storyline.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Antonyms.resx">
       <DependentUpon>Antonyms.cs</DependentUpon>
     </EmbeddedResource>
@@ -228,6 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="wordsLevels.resx">
       <DependentUpon>wordsLevels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_storyline.resx">
+      <DependentUpon>_storyline.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -297,6 +306,10 @@
     <Content Include="Images\6.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\sl4.png" />
+    <None Include="Resources\sl2.png" />
+    <None Include="Resources\sl3.png" />
+    <None Include="Resources\sl1.png" />
     <None Include="Resources\POSlevelTitle.png" />
     <None Include="Resources\IdiomslevelTitle.png" />
     <None Include="Resources\idiomsTitleHover.png" />

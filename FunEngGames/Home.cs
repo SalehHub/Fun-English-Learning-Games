@@ -32,6 +32,10 @@ namespace FunEngGames
             mainLevels ml = new mainLevels();
             ml.Show();
             this.Hide();
+
+            _storyline m2 = new _storyline();
+            m2.Show();
+            this.Hide();
         }
 
         private void label2_Click(object sender, EventArgs e)

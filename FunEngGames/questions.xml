@@ -6,6 +6,8 @@
 	<spelling>
 		<pic>1.png</pic>
 		<answer>Airplane</answer>
+		<hint1></hint1>
+		<hint2></hint2>
 	</spelling>
 	
 	<spelling>
@@ -101,11 +103,11 @@
 		<answer>Press</answer>
 	</homonyms>
 	
-	<homonyms>
-		<def1>A web-footed swimming bird</def1>
-		<def2>To avoid, evade, or dodge</def2>
-		<answer>Duck</answer>
-	</homonyms>
+<homonyms>
+	<def1>A web-footed swimming bird</def1>
+	<def2>To avoid, evade, or dodge</def2>
+	<answer>Duck</answer>
+</homonyms>
 	
 	
 	
@@ -193,10 +195,11 @@
 		<antonym>Slow</antonym>
 	</antonyms>	
 	
-	<antonyms>
-		<word>Near</word>
-		<antonym>Remote</antonym>
-	</antonyms>
+<antonyms>
+	<word>Near</word>
+	<antonym>Remote</antonym>
+	<hint>Far is another antonym for the word youer looking for</hint>
+</antonyms>
 
   <antonyms>
     <word>Guilty</word>
@@ -218,11 +221,11 @@
   
   <!--Part of speech questions-->
   
-  <partOfSpeech>
+<partOfSpeech>
 	<sentence>I bought a beautiful dress at the mall</sentence>
 	<word>beautiful</word>
 	<answer>Adjective</answer>
-  </partOfSpeech>  
+</partOfSpeech>  
   
   <partOfSpeech>
 	<sentence>What did she ask you to do?</sentence>
@@ -284,10 +287,10 @@
   
   
   <!-- Idioms questions-->
-  <idioms>
+<idioms>
 	<idiom>A bitter pill</idiom>
 	<meaning>A situation or information that is unpleasant but must be accepted</meaning>
-  </idioms>
+</idioms>
 	  
   <idioms>
 	<idiom>All ears</idiom>
@@ -357,7 +360,11 @@
   <idioms>
 	<idiom>A hot potato</idiom>
 	<meaning>Something that is difficult or dangerous to deal with</meaning>
+  </idioms>	
+  
+  <idioms>
+	<idiom>Cry over spilt milk</idiom>
+	<meaning>When you complain about a loss from the past</meaning>
   </idioms>
 
-	
 </Questions>
