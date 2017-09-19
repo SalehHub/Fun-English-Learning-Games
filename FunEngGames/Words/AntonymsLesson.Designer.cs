@@ -429,8 +429,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Name = "AntonymsLesson";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Fun English Learning Games: Antonyms";
+            this.Text = "Fun English Learning Games: Words - Antonyms lesson";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SynonymsLesson_FormClosed);
             this.Load += new System.EventHandler(this.SynonymsLesson_Load);
             this.tableLayoutPanel1.ResumeLayout(false);

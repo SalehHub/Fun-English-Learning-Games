@@ -94,11 +94,11 @@
     <Compile Include="1_Home.Designer.cs">
       <DependentUpon>1_Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Words\homonyms.cs">
+    <Compile Include="Words\Homonyms.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Words\homonyms.Designer.cs">
-      <DependentUpon>homonyms.cs</DependentUpon>
+    <Compile Include="Words\Homonyms.Designer.cs">
+      <DependentUpon>Homonyms.cs</DependentUpon>
     </Compile>
     <Compile Include="Words\HomonymsLesson.cs">
       <SubType>Form</SubType>
@@ -162,17 +162,17 @@
     <Compile Include="Sentences\sentenceLevels.designer.cs">
       <DependentUpon>sentenceLevels.cs</DependentUpon>
     </Compile>
-    <Compile Include="Words\spelling.cs">
+    <Compile Include="Words\Spelling.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Words\spelling.Designer.cs">
-      <DependentUpon>spelling.cs</DependentUpon>
+    <Compile Include="Words\Spelling.Designer.cs">
+      <DependentUpon>Spelling.cs</DependentUpon>
     </Compile>
-    <Compile Include="Words\spellingLesson.cs">
+    <Compile Include="Words\SpellingLesson.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Words\spellingLesson.Designer.cs">
-      <DependentUpon>spellingLesson.cs</DependentUpon>
+    <Compile Include="Words\SpellingLesson.Designer.cs">
+      <DependentUpon>SpellingLesson.cs</DependentUpon>
     </Compile>
     <Compile Include="Sentences\SS.cs">
       <SubType>Form</SubType>
@@ -192,11 +192,11 @@
     <Compile Include="Words\Synonyms.Designer.cs">
       <DependentUpon>Synonyms.cs</DependentUpon>
     </Compile>
-    <Compile Include="Words\wordsLevels.cs">
+    <Compile Include="Words\WordsLevels.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Words\wordsLevels.Designer.cs">
-      <DependentUpon>wordsLevels.cs</DependentUpon>
+    <Compile Include="Words\WordsLevels.Designer.cs">
+      <DependentUpon>WordsLevels.cs</DependentUpon>
     </Compile>
     <Compile Include="2_Storyline.cs">
       <SubType>Form</SubType>
@@ -219,8 +219,8 @@
     <EmbeddedResource Include="1_Home.resx">
       <DependentUpon>1_Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Words\homonyms.resx">
-      <DependentUpon>homonyms.cs</DependentUpon>
+    <EmbeddedResource Include="Words\Homonyms.resx">
+      <DependentUpon>Homonyms.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Words\HomonymsLesson.resx">
       <DependentUpon>HomonymsLesson.cs</DependentUpon>
@@ -262,11 +262,11 @@
     <EmbeddedResource Include="Sentences\sentenceLevels.resx">
       <DependentUpon>sentenceLevels.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Words\spelling.resx">
-      <DependentUpon>spelling.cs</DependentUpon>
+    <EmbeddedResource Include="Words\Spelling.resx">
+      <DependentUpon>Spelling.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Words\spellingLesson.resx">
-      <DependentUpon>spellingLesson.cs</DependentUpon>
+    <EmbeddedResource Include="Words\SpellingLesson.resx">
+      <DependentUpon>SpellingLesson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sentences\SS.resx">
       <DependentUpon>SS.cs</DependentUpon>
@@ -277,8 +277,8 @@
     <EmbeddedResource Include="Words\Synonyms.resx">
       <DependentUpon>Synonyms.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Words\wordsLevels.resx">
-      <DependentUpon>wordsLevels.cs</DependentUpon>
+    <EmbeddedResource Include="Words\WordsLevels.resx">
+      <DependentUpon>WordsLevels.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="2_Storyline.resx">
       <DependentUpon>2_Storyline.cs</DependentUpon>

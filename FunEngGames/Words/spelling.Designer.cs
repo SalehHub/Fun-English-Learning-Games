@@ -473,7 +473,7 @@
             this.Name = "spelling";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Fun English Learning Games: Spelling";
+            this.Text = "Fun English Learning Games: Words - Spelling level";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.spelling_FormClosed);
             this.Load += new System.EventHandler(this.spelling_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

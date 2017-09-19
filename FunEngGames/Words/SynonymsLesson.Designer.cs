@@ -33,7 +33,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBox17 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -47,11 +50,8 @@
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -154,6 +154,19 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(723, 408);
             this.tableLayoutPanel1.TabIndex = 20;
             // 
+            // textBox17
+            // 
+            this.textBox17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox17.Enabled = false;
+            this.textBox17.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox17.Location = new System.Drawing.Point(3, 370);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(355, 34);
+            this.textBox17.TabIndex = 38;
+            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // label5
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -167,6 +180,32 @@
             this.label5.TabIndex = 33;
             this.label5.Text = "Synonym";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox14.Enabled = false;
+            this.textBox14.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox14.Location = new System.Drawing.Point(364, 290);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(356, 34);
+            this.textBox14.TabIndex = 35;
+            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox13
+            // 
+            this.textBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox13.Enabled = false;
+            this.textBox13.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox13.Location = new System.Drawing.Point(3, 290);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(355, 34);
+            this.textBox13.TabIndex = 34;
+            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
             // 
@@ -338,32 +377,6 @@
             this.textBox12.TabIndex = 32;
             this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox13
-            // 
-            this.textBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox13.Enabled = false;
-            this.textBox13.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(3, 290);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(355, 34);
-            this.textBox13.TabIndex = 34;
-            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox14
-            // 
-            this.textBox14.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox14.Enabled = false;
-            this.textBox14.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(364, 290);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(356, 34);
-            this.textBox14.TabIndex = 35;
-            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // textBox15
             // 
             this.textBox15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -389,19 +402,6 @@
             this.textBox16.Size = new System.Drawing.Size(356, 34);
             this.textBox16.TabIndex = 37;
             this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox17
-            // 
-            this.textBox17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox17.Enabled = false;
-            this.textBox17.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox17.Location = new System.Drawing.Point(3, 370);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(355, 34);
-            this.textBox17.TabIndex = 38;
-            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox18
             // 
@@ -430,7 +430,7 @@
             this.Controls.Add(this.button1);
             this.Name = "SynonymsLesson";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Fun English Learning Games: Synonyms";
+            this.Text = "Fun English Learning Games: Words - Synonyms lesson";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SynonymsLesson_FormClosed);
             this.Load += new System.EventHandler(this.SynonymsLesson_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
