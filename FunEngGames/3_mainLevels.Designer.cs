@@ -93,7 +93,7 @@
             this.picPhrases.BackgroundImage = global::FunEngGames.Properties.Resources.phrasesTitle;
             this.picPhrases.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picPhrases.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picPhrases.Location = new System.Drawing.Point(484, 153);
+            this.picPhrases.Location = new System.Drawing.Point(489, 153);
             this.picPhrases.Name = "picPhrases";
             this.picPhrases.Size = new System.Drawing.Size(243, 333);
             this.picPhrases.TabIndex = 3;
@@ -150,7 +150,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Teal;
-            this.label5.Location = new System.Drawing.Point(500, 508);
+            this.label5.Location = new System.Drawing.Point(514, 508);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(192, 32);
             this.label5.TabIndex = 10;
@@ -190,7 +190,7 @@
             this.panel2.BackgroundImage = global::FunEngGames.Properties.Resources.result;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Location = new System.Drawing.Point(484, 543);
+            this.panel2.Location = new System.Drawing.Point(489, 543);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(243, 65);
             this.panel2.TabIndex = 15;
@@ -239,7 +239,7 @@
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.BackgroundImage = global::FunEngGames.Properties.Resources._lock;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox6.Location = new System.Drawing.Point(581, 614);
+            this.pictureBox6.Location = new System.Drawing.Point(586, 614);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(48, 46);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

@@ -1,6 +1,6 @@
 ﻿namespace FunEngGames
 {
-    partial class Form1
+    partial class testForm
     {
         /// <summary>
         /// Required designer variable.

@@ -1,6 +1,6 @@
 ﻿namespace FunEngGames
 {
-    partial class LevelUP
+    partial class _levelUP
     {
         /// <summary>
         /// Required designer variable.

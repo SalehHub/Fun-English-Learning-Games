@@ -37,7 +37,7 @@ namespace FunEngGames
             m2.Show();
             this.Hide();
 
-            LevelUP LevelUP = new LevelUP();
+            _levelUP LevelUP = new _levelUP();
             LevelUP.Show();
             this.Hide();
         }

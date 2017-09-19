@@ -64,189 +64,189 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Antonyms.cs">
+    <Compile Include="Words\Antonyms.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Antonyms.designer.cs">
+    <Compile Include="Words\Antonyms.designer.cs">
       <DependentUpon>Antonyms.cs</DependentUpon>
     </Compile>
-    <Compile Include="AntonymsLesson.cs">
+    <Compile Include="Words\AntonymsLesson.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AntonymsLesson.designer.cs">
+    <Compile Include="Words\AntonymsLesson.designer.cs">
       <DependentUpon>AntonymsLesson.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="testForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="testForm.Designer.cs">
+      <DependentUpon>testForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Grammar.cs">
+    <Compile Include="Sentences\Grammar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Grammar.designer.cs">
+    <Compile Include="Sentences\Grammar.designer.cs">
       <DependentUpon>Grammar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Home.cs">
+    <Compile Include="1_Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home.Designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
+    <Compile Include="1_Home.Designer.cs">
+      <DependentUpon>1_Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="homonyms.cs">
+    <Compile Include="Words\homonyms.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="homonyms.Designer.cs">
+    <Compile Include="Words\homonyms.Designer.cs">
       <DependentUpon>homonyms.cs</DependentUpon>
     </Compile>
-    <Compile Include="HomonymsLesson.cs">
+    <Compile Include="Words\HomonymsLesson.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HomonymsLesson.Designer.cs">
+    <Compile Include="Words\HomonymsLesson.Designer.cs">
       <DependentUpon>HomonymsLesson.cs</DependentUpon>
     </Compile>
-    <Compile Include="Idioms.cs">
+    <Compile Include="Phrases\Idioms.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Idioms.Designer.cs">
+    <Compile Include="Phrases\Idioms.Designer.cs">
       <DependentUpon>Idioms.cs</DependentUpon>
     </Compile>
-    <Compile Include="IdiomsLesson.cs">
+    <Compile Include="Phrases\IdiomsLesson.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IdiomsLesson.Designer.cs">
+    <Compile Include="Phrases\IdiomsLesson.Designer.cs">
       <DependentUpon>IdiomsLesson.cs</DependentUpon>
     </Compile>
-    <Compile Include="LevelUP.cs">
+    <Compile Include="_levelUP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LevelUP.Designer.cs">
-      <DependentUpon>LevelUP.cs</DependentUpon>
+    <Compile Include="_levelUP.Designer.cs">
+      <DependentUpon>_levelUP.cs</DependentUpon>
     </Compile>
-    <Compile Include="mainLevels.cs">
+    <Compile Include="3_mainLevels.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mainLevels.Designer.cs">
-      <DependentUpon>mainLevels.cs</DependentUpon>
+    <Compile Include="3_mainLevels.Designer.cs">
+      <DependentUpon>3_mainLevels.cs</DependentUpon>
     </Compile>
-    <Compile Include="PC.cs">
+    <Compile Include="Sentences\PC.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PC.designer.cs">
+    <Compile Include="Sentences\PC.designer.cs">
       <DependentUpon>PC.cs</DependentUpon>
     </Compile>
-    <Compile Include="phrasesLevel.cs">
+    <Compile Include="Phrases\phrasesLevel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="phrasesLevel.Designer.cs">
+    <Compile Include="Phrases\phrasesLevel.Designer.cs">
       <DependentUpon>phrasesLevel.cs</DependentUpon>
     </Compile>
-    <Compile Include="POS.cs">
+    <Compile Include="Phrases\POS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="POS.Designer.cs">
+    <Compile Include="Phrases\POS.Designer.cs">
       <DependentUpon>POS.cs</DependentUpon>
     </Compile>
-    <Compile Include="POSLesson.cs">
+    <Compile Include="Phrases\POSLesson.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="POSLesson.Designer.cs">
+    <Compile Include="Phrases\POSLesson.Designer.cs">
       <DependentUpon>POSLesson.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="sentenceLevels.cs">
+    <Compile Include="Sentences\sentenceLevels.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="sentenceLevels.designer.cs">
+    <Compile Include="Sentences\sentenceLevels.designer.cs">
       <DependentUpon>sentenceLevels.cs</DependentUpon>
     </Compile>
-    <Compile Include="spelling.cs">
+    <Compile Include="Words\spelling.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="spelling.Designer.cs">
+    <Compile Include="Words\spelling.Designer.cs">
       <DependentUpon>spelling.cs</DependentUpon>
     </Compile>
-    <Compile Include="spellingLesson.cs">
+    <Compile Include="Words\spellingLesson.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="spellingLesson.Designer.cs">
+    <Compile Include="Words\spellingLesson.Designer.cs">
       <DependentUpon>spellingLesson.cs</DependentUpon>
     </Compile>
-    <Compile Include="SS.cs">
+    <Compile Include="Sentences\SS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SS.designer.cs">
+    <Compile Include="Sentences\SS.designer.cs">
       <DependentUpon>SS.cs</DependentUpon>
     </Compile>
-    <Compile Include="SynonymsLesson.cs">
+    <Compile Include="Words\SynonymsLesson.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SynonymsLesson.Designer.cs">
+    <Compile Include="Words\SynonymsLesson.Designer.cs">
       <DependentUpon>SynonymsLesson.cs</DependentUpon>
     </Compile>
-    <Compile Include="Synonyms.cs">
+    <Compile Include="Words\Synonyms.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Synonyms.Designer.cs">
+    <Compile Include="Words\Synonyms.Designer.cs">
       <DependentUpon>Synonyms.cs</DependentUpon>
     </Compile>
-    <Compile Include="wordsLevels.cs">
+    <Compile Include="Words\wordsLevels.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="wordsLevels.Designer.cs">
+    <Compile Include="Words\wordsLevels.Designer.cs">
       <DependentUpon>wordsLevels.cs</DependentUpon>
     </Compile>
-    <Compile Include="_storyline.cs">
+    <Compile Include="2_Storyline.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="_storyline.Designer.cs">
-      <DependentUpon>_storyline.cs</DependentUpon>
+    <Compile Include="2_Storyline.Designer.cs">
+      <DependentUpon>2_Storyline.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Antonyms.resx">
+    <EmbeddedResource Include="Words\Antonyms.resx">
       <DependentUpon>Antonyms.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AntonymsLesson.resx">
+    <EmbeddedResource Include="Words\AntonymsLesson.resx">
       <DependentUpon>AntonymsLesson.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="testForm.resx">
+      <DependentUpon>testForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Grammar.resx">
+    <EmbeddedResource Include="Sentences\Grammar.resx">
       <DependentUpon>Grammar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
+    <EmbeddedResource Include="1_Home.resx">
+      <DependentUpon>1_Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="homonyms.resx">
+    <EmbeddedResource Include="Words\homonyms.resx">
       <DependentUpon>homonyms.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HomonymsLesson.resx">
+    <EmbeddedResource Include="Words\HomonymsLesson.resx">
       <DependentUpon>HomonymsLesson.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Idioms.resx">
+    <EmbeddedResource Include="Phrases\Idioms.resx">
       <DependentUpon>Idioms.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IdiomsLesson.resx">
+    <EmbeddedResource Include="Phrases\IdiomsLesson.resx">
       <DependentUpon>IdiomsLesson.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LevelUP.resx">
-      <DependentUpon>LevelUP.cs</DependentUpon>
+    <EmbeddedResource Include="_levelUP.resx">
+      <DependentUpon>_levelUP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mainLevels.resx">
-      <DependentUpon>mainLevels.cs</DependentUpon>
+    <EmbeddedResource Include="3_mainLevels.resx">
+      <DependentUpon>3_mainLevels.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PC.resx">
+    <EmbeddedResource Include="Sentences\PC.resx">
       <DependentUpon>PC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="phrasesLevel.resx">
+    <EmbeddedResource Include="Phrases\phrasesLevel.resx">
       <DependentUpon>phrasesLevel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="POS.resx">
+    <EmbeddedResource Include="Phrases\POS.resx">
       <DependentUpon>POS.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="POSLesson.resx">
+    <EmbeddedResource Include="Phrases\POSLesson.resx">
       <DependentUpon>POSLesson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -259,29 +259,29 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="sentenceLevels.resx">
+    <EmbeddedResource Include="Sentences\sentenceLevels.resx">
       <DependentUpon>sentenceLevels.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="spelling.resx">
+    <EmbeddedResource Include="Words\spelling.resx">
       <DependentUpon>spelling.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="spellingLesson.resx">
+    <EmbeddedResource Include="Words\spellingLesson.resx">
       <DependentUpon>spellingLesson.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SS.resx">
+    <EmbeddedResource Include="Sentences\SS.resx">
       <DependentUpon>SS.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SynonymsLesson.resx">
+    <EmbeddedResource Include="Words\SynonymsLesson.resx">
       <DependentUpon>SynonymsLesson.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Synonyms.resx">
+    <EmbeddedResource Include="Words\Synonyms.resx">
       <DependentUpon>Synonyms.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="wordsLevels.resx">
+    <EmbeddedResource Include="Words\wordsLevels.resx">
       <DependentUpon>wordsLevels.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="_storyline.resx">
-      <DependentUpon>_storyline.cs</DependentUpon>
+    <EmbeddedResource Include="2_Storyline.resx">
+      <DependentUpon>2_Storyline.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -439,6 +439,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

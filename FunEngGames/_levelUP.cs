@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FunEngGames
 {
-    public partial class LevelUP : Form
+    public partial class _levelUP : Form
     {
-        public LevelUP()
+        public _levelUP()
         {
             InitializeComponent();
         }
