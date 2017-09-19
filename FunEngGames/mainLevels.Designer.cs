@@ -82,6 +82,7 @@
             this.picSentences.Size = new System.Drawing.Size(243, 333);
             this.picSentences.TabIndex = 2;
             this.picSentences.TabStop = false;
+            this.picSentences.Click += new System.EventHandler(this.picSentences_Click);
             this.picSentences.MouseLeave += new System.EventHandler(this.picSentences_MouseLeave);
             this.picSentences.MouseHover += new System.EventHandler(this.picSentences_MouseHover);
             // 

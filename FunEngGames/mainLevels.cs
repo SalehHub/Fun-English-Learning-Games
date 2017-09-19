@@ -71,5 +71,13 @@ namespace FunEngGames
             this.Hide();
             phrasesLevel.Show();
         }
+
+        private void picSentences_Click(object sender, EventArgs e)
+        {
+            sentenceLevels sentenceLevels = new sentenceLevels();
+            sentenceLevels.mainLevelsForm = this;
+            this.Hide();
+            sentenceLevels.Show();
+        }
     }
 }
