@@ -64,16 +64,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Words\Antonyms.cs">
+    <Compile Include="1_Words\Antonyms.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Words\Antonyms.designer.cs">
+    <Compile Include="1_Words\Antonyms.designer.cs">
       <DependentUpon>Antonyms.cs</DependentUpon>
     </Compile>
-    <Compile Include="Words\AntonymsLesson.cs">
+    <Compile Include="1_Words\AntonymsLesson.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Words\AntonymsLesson.designer.cs">
+    <Compile Include="1_Words\AntonymsLesson.designer.cs">
       <DependentUpon>AntonymsLesson.cs</DependentUpon>
     </Compile>
     <Compile Include="testForm.cs">
@@ -82,10 +82,10 @@
     <Compile Include="testForm.Designer.cs">
       <DependentUpon>testForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sentences\Grammar.cs">
+    <Compile Include="3_Sentences\Grammar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sentences\Grammar.designer.cs">
+    <Compile Include="3_Sentences\Grammar.designer.cs">
       <DependentUpon>Grammar.cs</DependentUpon>
     </Compile>
     <Compile Include="1_Home.cs">
@@ -94,34 +94,34 @@
     <Compile Include="1_Home.Designer.cs">
       <DependentUpon>1_Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Words\Homonyms.cs">
+    <Compile Include="1_Words\Homonyms.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Words\Homonyms.Designer.cs">
+    <Compile Include="1_Words\Homonyms.Designer.cs">
       <DependentUpon>Homonyms.cs</DependentUpon>
     </Compile>
-    <Compile Include="Words\HomonymsLesson.cs">
+    <Compile Include="1_Words\HomonymsLesson.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Words\HomonymsLesson.Designer.cs">
+    <Compile Include="1_Words\HomonymsLesson.Designer.cs">
       <DependentUpon>HomonymsLesson.cs</DependentUpon>
     </Compile>
-    <Compile Include="Phrases\Idioms.cs">
+    <Compile Include="2_Phrases\Idioms.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Phrases\Idioms.Designer.cs">
+    <Compile Include="2_Phrases\Idioms.Designer.cs">
       <DependentUpon>Idioms.cs</DependentUpon>
     </Compile>
-    <Compile Include="Phrases\IdiomsLesson.cs">
+    <Compile Include="2_Phrases\IdiomsLesson.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Phrases\IdiomsLesson.Designer.cs">
+    <Compile Include="2_Phrases\IdiomsLesson.Designer.cs">
       <DependentUpon>IdiomsLesson.cs</DependentUpon>
     </Compile>
-    <Compile Include="_levelUP.cs">
+    <Compile Include="1_Words\_levelUP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="_levelUP.Designer.cs">
+    <Compile Include="1_Words\_levelUP.Designer.cs">
       <DependentUpon>_levelUP.cs</DependentUpon>
     </Compile>
     <Compile Include="3_mainLevels.cs">
@@ -130,72 +130,72 @@
     <Compile Include="3_mainLevels.Designer.cs">
       <DependentUpon>3_mainLevels.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sentences\PC.cs">
+    <Compile Include="3_Sentences\PC.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sentences\PC.designer.cs">
+    <Compile Include="3_Sentences\PC.designer.cs">
       <DependentUpon>PC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Phrases\phrasesLevel.cs">
+    <Compile Include="2_Phrases\phrasesLevel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Phrases\phrasesLevel.Designer.cs">
+    <Compile Include="2_Phrases\phrasesLevel.Designer.cs">
       <DependentUpon>phrasesLevel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Phrases\POS.cs">
+    <Compile Include="2_Phrases\POS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Phrases\POS.Designer.cs">
+    <Compile Include="2_Phrases\POS.Designer.cs">
       <DependentUpon>POS.cs</DependentUpon>
     </Compile>
-    <Compile Include="Phrases\POSLesson.cs">
+    <Compile Include="2_Phrases\POSLesson.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Phrases\POSLesson.Designer.cs">
+    <Compile Include="2_Phrases\POSLesson.Designer.cs">
       <DependentUpon>POSLesson.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sentences\sentenceLevels.cs">
+    <Compile Include="3_Sentences\sentenceLevels.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sentences\sentenceLevels.designer.cs">
+    <Compile Include="3_Sentences\sentenceLevels.designer.cs">
       <DependentUpon>sentenceLevels.cs</DependentUpon>
     </Compile>
-    <Compile Include="Words\Spelling.cs">
+    <Compile Include="1_Words\Spelling.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Words\Spelling.Designer.cs">
+    <Compile Include="1_Words\Spelling.Designer.cs">
       <DependentUpon>Spelling.cs</DependentUpon>
     </Compile>
-    <Compile Include="Words\SpellingLesson.cs">
+    <Compile Include="1_Words\SpellingLesson.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Words\SpellingLesson.Designer.cs">
+    <Compile Include="1_Words\SpellingLesson.Designer.cs">
       <DependentUpon>SpellingLesson.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sentences\SS.cs">
+    <Compile Include="3_Sentences\SS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sentences\SS.designer.cs">
+    <Compile Include="3_Sentences\SS.designer.cs">
       <DependentUpon>SS.cs</DependentUpon>
     </Compile>
-    <Compile Include="Words\SynonymsLesson.cs">
+    <Compile Include="1_Words\SynonymsLesson.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Words\SynonymsLesson.Designer.cs">
+    <Compile Include="1_Words\SynonymsLesson.Designer.cs">
       <DependentUpon>SynonymsLesson.cs</DependentUpon>
     </Compile>
-    <Compile Include="Words\Synonyms.cs">
+    <Compile Include="1_Words\Synonyms.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Words\Synonyms.Designer.cs">
+    <Compile Include="1_Words\Synonyms.Designer.cs">
       <DependentUpon>Synonyms.cs</DependentUpon>
     </Compile>
-    <Compile Include="Words\WordsLevels.cs">
+    <Compile Include="1_Words\WordsLevels.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Words\WordsLevels.Designer.cs">
+    <Compile Include="1_Words\WordsLevels.Designer.cs">
       <DependentUpon>WordsLevels.cs</DependentUpon>
     </Compile>
     <Compile Include="2_Storyline.cs">
@@ -204,49 +204,49 @@
     <Compile Include="2_Storyline.Designer.cs">
       <DependentUpon>2_Storyline.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Words\Antonyms.resx">
+    <EmbeddedResource Include="1_Words\Antonyms.resx">
       <DependentUpon>Antonyms.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Words\AntonymsLesson.resx">
+    <EmbeddedResource Include="1_Words\AntonymsLesson.resx">
       <DependentUpon>AntonymsLesson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="testForm.resx">
       <DependentUpon>testForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sentences\Grammar.resx">
+    <EmbeddedResource Include="3_Sentences\Grammar.resx">
       <DependentUpon>Grammar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="1_Home.resx">
       <DependentUpon>1_Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Words\Homonyms.resx">
+    <EmbeddedResource Include="1_Words\Homonyms.resx">
       <DependentUpon>Homonyms.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Words\HomonymsLesson.resx">
+    <EmbeddedResource Include="1_Words\HomonymsLesson.resx">
       <DependentUpon>HomonymsLesson.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Phrases\Idioms.resx">
+    <EmbeddedResource Include="2_Phrases\Idioms.resx">
       <DependentUpon>Idioms.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Phrases\IdiomsLesson.resx">
+    <EmbeddedResource Include="2_Phrases\IdiomsLesson.resx">
       <DependentUpon>IdiomsLesson.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="_levelUP.resx">
+    <EmbeddedResource Include="1_Words\_levelUP.resx">
       <DependentUpon>_levelUP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="3_mainLevels.resx">
       <DependentUpon>3_mainLevels.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sentences\PC.resx">
+    <EmbeddedResource Include="3_Sentences\PC.resx">
       <DependentUpon>PC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Phrases\phrasesLevel.resx">
+    <EmbeddedResource Include="2_Phrases\phrasesLevel.resx">
       <DependentUpon>phrasesLevel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Phrases\POS.resx">
+    <EmbeddedResource Include="2_Phrases\POS.resx">
       <DependentUpon>POS.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Phrases\POSLesson.resx">
+    <EmbeddedResource Include="2_Phrases\POSLesson.resx">
       <DependentUpon>POSLesson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -259,25 +259,25 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Sentences\sentenceLevels.resx">
+    <EmbeddedResource Include="3_Sentences\sentenceLevels.resx">
       <DependentUpon>sentenceLevels.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Words\Spelling.resx">
+    <EmbeddedResource Include="1_Words\Spelling.resx">
       <DependentUpon>Spelling.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Words\SpellingLesson.resx">
+    <EmbeddedResource Include="1_Words\SpellingLesson.resx">
       <DependentUpon>SpellingLesson.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sentences\SS.resx">
+    <EmbeddedResource Include="3_Sentences\SS.resx">
       <DependentUpon>SS.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Words\SynonymsLesson.resx">
+    <EmbeddedResource Include="1_Words\SynonymsLesson.resx">
       <DependentUpon>SynonymsLesson.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Words\Synonyms.resx">
+    <EmbeddedResource Include="1_Words\Synonyms.resx">
       <DependentUpon>Synonyms.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Words\WordsLevels.resx">
+    <EmbeddedResource Include="1_Words\WordsLevels.resx">
       <DependentUpon>WordsLevels.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="2_Storyline.resx">
@@ -334,6 +334,36 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\10.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\11.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\12.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\13.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\14.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\15.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\17.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\18.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\19.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\2.png">
