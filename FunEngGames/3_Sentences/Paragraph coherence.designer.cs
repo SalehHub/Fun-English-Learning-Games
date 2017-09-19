@@ -354,6 +354,7 @@
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label9);
             this.Name = "PC";
+            this.ShowIcon = false;
             this.Text = "Fun English Learning Games: Paragraph coherence";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.POS_FormClosed);
             this.Load += new System.EventHandler(this.POS_Load);

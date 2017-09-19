@@ -130,11 +130,11 @@
     <Compile Include="3_mainLevels.Designer.cs">
       <DependentUpon>3_mainLevels.cs</DependentUpon>
     </Compile>
-    <Compile Include="3_Sentences\PC.cs">
+    <Compile Include="3_Sentences\Paragraph coherence.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="3_Sentences\PC.designer.cs">
-      <DependentUpon>PC.cs</DependentUpon>
+    <Compile Include="3_Sentences\Paragraph coherence.designer.cs">
+      <DependentUpon>Paragraph coherence.cs</DependentUpon>
     </Compile>
     <Compile Include="2_Phrases\phrasesLevel.cs">
       <SubType>Form</SubType>
@@ -156,11 +156,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="3_Sentences\sentenceLevels.cs">
+    <Compile Include="3_Sentences\SentenceLevels.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="3_Sentences\sentenceLevels.designer.cs">
-      <DependentUpon>sentenceLevels.cs</DependentUpon>
+    <Compile Include="3_Sentences\SentenceLevels.designer.cs">
+      <DependentUpon>SentenceLevels.cs</DependentUpon>
     </Compile>
     <Compile Include="1_Words\Spelling.cs">
       <SubType>Form</SubType>
@@ -174,11 +174,11 @@
     <Compile Include="1_Words\SpellingLesson.Designer.cs">
       <DependentUpon>SpellingLesson.cs</DependentUpon>
     </Compile>
-    <Compile Include="3_Sentences\SS.cs">
+    <Compile Include="3_Sentences\Sentence structure.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="3_Sentences\SS.designer.cs">
-      <DependentUpon>SS.cs</DependentUpon>
+    <Compile Include="3_Sentences\Sentence structure.designer.cs">
+      <DependentUpon>Sentence structure.cs</DependentUpon>
     </Compile>
     <Compile Include="1_Words\SynonymsLesson.cs">
       <SubType>Form</SubType>
@@ -237,8 +237,8 @@
     <EmbeddedResource Include="3_mainLevels.resx">
       <DependentUpon>3_mainLevels.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="3_Sentences\PC.resx">
-      <DependentUpon>PC.cs</DependentUpon>
+    <EmbeddedResource Include="3_Sentences\Paragraph coherence.resx">
+      <DependentUpon>Paragraph coherence.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="2_Phrases\phrasesLevel.resx">
       <DependentUpon>phrasesLevel.cs</DependentUpon>
@@ -259,8 +259,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="3_Sentences\sentenceLevels.resx">
-      <DependentUpon>sentenceLevels.cs</DependentUpon>
+    <EmbeddedResource Include="3_Sentences\SentenceLevels.resx">
+      <DependentUpon>SentenceLevels.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="1_Words\Spelling.resx">
       <DependentUpon>Spelling.cs</DependentUpon>
@@ -268,8 +268,8 @@
     <EmbeddedResource Include="1_Words\SpellingLesson.resx">
       <DependentUpon>SpellingLesson.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="3_Sentences\SS.resx">
-      <DependentUpon>SS.cs</DependentUpon>
+    <EmbeddedResource Include="3_Sentences\Sentence structure.resx">
+      <DependentUpon>Sentence structure.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="1_Words\SynonymsLesson.resx">
       <DependentUpon>SynonymsLesson.cs</DependentUpon>
