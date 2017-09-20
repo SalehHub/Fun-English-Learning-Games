@@ -34,12 +34,12 @@ namespace FunEngGames
             this.Hide();
 
             _storyline m2 = new _storyline();
-            m2.Show();
-            this.Hide();
+           // m2.Show();
+           // this.Hide();
 
             _levelUP LevelUP = new _levelUP();
-            LevelUP.Show();
-            this.Hide();
+           // LevelUP.Show();
+           // this.Hide();
         }
 
         private void label2_Click(object sender, EventArgs e)

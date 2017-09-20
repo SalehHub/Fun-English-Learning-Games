@@ -21,6 +21,13 @@ namespace FunEngGames
         public Random a = new Random();
         public List<int> randomList = new List<int>();
         public wordsLevel mainLevelsForm;
+        XmlDocument xmlDoc = new XmlDocument();
+        public XmlNodeList nodeList;
+
+        public int page = 0;
+        public int lastPage = 0;
+        public int lastNode = 0;
+
 
         int MyNumber = 0;
         private void NewNumber(int max)
@@ -59,19 +66,20 @@ namespace FunEngGames
         private void SynonymsLesson_Load(object sender, EventArgs e)
         {
 
-            XmlDocument xmlDoc = new XmlDocument();
-            xmlDoc.Load("questions.xml");
-            XmlNodeList nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/synonyms");
 
-            GenSynonym(textBox1,    textBox2,   nodeList);//1
-            GenSynonym(textBox3,    textBox4,   nodeList);//2
-            GenSynonym(textBox5,    textBox6,   nodeList);//3
-            GenSynonym(textBox7,    textBox8,   nodeList);//4
-            GenSynonym(textBox9,    textBox10,  nodeList);//5
-            GenSynonym(textBox11,   textBox12,  nodeList);//6
-            GenSynonym(textBox13,   textBox14,  nodeList);//7
-            GenSynonym(textBox15,   textBox16,  nodeList);//8
-            GenSynonym(textBox17,   textBox18,  nodeList);//9
+
+
+            xmlDoc.Load("questions.xml");
+            nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/synonyms");
+
+            lastPage = nodeList.Count / 9;
+
+
+            dataGridView1.Rows.Clear();
+            GenerateSynonyms(lastNode);
+            page++;
+            lblPages.Text = "Page " + page + " out of " + lastPage;
+            //lastNode = 9;
 
             /*
             NewNumber(nodeList.Count);
@@ -122,11 +130,94 @@ namespace FunEngGames
         }
 
 
-        public void GenSynonym( TextBox t1,TextBox t2, XmlNodeList nodeList)
+
+        public void GenerateSynonyms(int start) {
+
+            GenSynonym(start, textBox1, textBox2);//1
+            GenSynonym(start+1, textBox3, textBox4);//2
+            GenSynonym(start +2, textBox5, textBox6);//3
+            GenSynonym(start +3 ,textBox7, textBox8);//4
+            GenSynonym(start +4, textBox9, textBox10);//5
+            GenSynonym(start +5, textBox11, textBox12);//6
+            GenSynonym(start +6, textBox13, textBox14);//7
+            GenSynonym(start +7, textBox15, textBox16);//8
+            GenSynonym(start +8, textBox17, textBox18);//9
+
+        }
+
+
+        public void GenSynonym(int start, TextBox t1,TextBox t2)
         {
-            NewNumber(nodeList.Count);
-            t1.Text = nodeList[randomList.Last()].SelectSingleNode("word").InnerText;
-            t2.Text = nodeList[randomList.Last()].SelectSingleNode("synonym").InnerText;
+            //NewNumber(nodeList.Count);
+            dataGridView1.Rows.Add(UppercaseFirst(nodeList[start].SelectSingleNode("word").InnerText), UppercaseFirst(nodeList[start].SelectSingleNode("synonym").InnerText));
+
+            //t1.Text = UppercaseFirst(nodeList[start].SelectSingleNode("word").InnerText);
+            //t2.Text = UppercaseFirst(nodeList[start].SelectSingleNode("synonym").InnerText);
+        }
+
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            page++;            lastNode += 9;
+            dataGridView1.Rows.Clear();
+
+            GenerateSynonyms(lastNode);
+
+
+            if (page == lastPage)
+            {
+
+                btnNext.Enabled = false;
+
+            }else
+            {
+            }
+
+            btnPrevious.Enabled = true;
+
+            lblPages.Text = "Page " + page + " out of " + lastPage + " l=" + lastNode;
+
+
+        }
+
+        private void btnPrevious_Click(object sender, EventArgs e)
+        {
+            page--;
+            lastNode -= 9;
+            dataGridView1.Rows.Clear();
+
+            GenerateSynonyms(lastNode);
+
+            if (page < lastPage)
+            {
+
+                btnNext.Enabled = true;
+                //lastNode -= 9;
+
+            }
+
+            if (page == 1)
+            {
+                btnPrevious.Enabled = false;
+            }else
+            {
+
+                //lastNode -= 9;
+
+            }
+            lblPages.Text = "Page " + page + " out of " + lastPage + " l=" + lastNode;
+        }
+
+
+        static string UppercaseFirst(string s)
+        {
+            // Check for empty string.
+            if (string.IsNullOrEmpty(s))
+            {
+                return string.Empty;
+            }
+            // Return char and concat substring.
+            return char.ToUpper(s[0]) + s.Substring(1);
         }
 
     }

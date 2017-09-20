@@ -28,6 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -53,7 +58,14 @@
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.textBox18 = new System.Windows.Forms.TextBox();
+            this.lblPages = new System.Windows.Forms.Label();
+            this.btnPrevious = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Word = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Synonym = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -63,9 +75,9 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(49, 566);
+            this.label3.Location = new System.Drawing.Point(49, 581);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(968, 31);
+            this.label3.Size = new System.Drawing.Size(990, 31);
             this.label3.TabIndex = 19;
             this.label3.Text = "Click this button to start the Synonyms level if you think you are ready";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -79,7 +91,7 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(25, 67);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1017, 31);
+            this.label2.Size = new System.Drawing.Size(1039, 31);
             this.label2.TabIndex = 18;
             this.label2.Text = "Memorize these words and learn their synonyms";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -93,7 +105,7 @@
             this.label1.ForeColor = System.Drawing.Color.SeaGreen;
             this.label1.Location = new System.Drawing.Point(51, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(964, 47);
+            this.label1.Size = new System.Drawing.Size(986, 47);
             this.label1.TabIndex = 17;
             this.label1.Text = "Words and synonyms you may see in the game";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -102,9 +114,9 @@
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(355, 600);
+            this.button1.Location = new System.Drawing.Point(366, 615);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(356, 78);
+            this.button1.Size = new System.Drawing.Size(356, 68);
             this.button1.TabIndex = 16;
             this.button1.Text = "Start the Synonyms Level";
             this.button1.UseVisualStyleBackColor = true;
@@ -138,7 +150,7 @@
             this.tableLayoutPanel1.Controls.Add(this.textBox15, 0, 8);
             this.tableLayoutPanel1.Controls.Add(this.textBox16, 1, 8);
             this.tableLayoutPanel1.Controls.Add(this.textBox18, 1, 9);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(172, 118);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(943, 101);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 10;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -151,8 +163,9 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(723, 408);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(745, 408);
             this.tableLayoutPanel1.TabIndex = 20;
+            this.tableLayoutPanel1.Visible = false;
             // 
             // textBox17
             // 
@@ -163,7 +176,7 @@
             this.textBox17.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox17.Location = new System.Drawing.Point(3, 370);
             this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(355, 34);
+            this.textBox17.Size = new System.Drawing.Size(366, 34);
             this.textBox17.TabIndex = 38;
             this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -174,9 +187,9 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label5.Location = new System.Drawing.Point(364, 0);
+            this.label5.Location = new System.Drawing.Point(375, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(356, 47);
+            this.label5.Size = new System.Drawing.Size(367, 47);
             this.label5.TabIndex = 33;
             this.label5.Text = "Synonym";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -188,9 +201,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox14.Enabled = false;
             this.textBox14.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(364, 290);
+            this.textBox14.Location = new System.Drawing.Point(375, 290);
             this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(356, 34);
+            this.textBox14.Size = new System.Drawing.Size(367, 34);
             this.textBox14.TabIndex = 35;
             this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -203,7 +216,7 @@
             this.textBox13.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox13.Location = new System.Drawing.Point(3, 290);
             this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(355, 34);
+            this.textBox13.Size = new System.Drawing.Size(366, 34);
             this.textBox13.TabIndex = 34;
             this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -216,7 +229,7 @@
             this.label4.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label4.Location = new System.Drawing.Point(3, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(355, 47);
+            this.label4.Size = new System.Drawing.Size(366, 47);
             this.label4.TabIndex = 21;
             this.label4.Text = "Word";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -230,7 +243,7 @@
             this.textBox1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(3, 50);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(355, 34);
+            this.textBox1.Size = new System.Drawing.Size(366, 34);
             this.textBox1.TabIndex = 21;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -241,9 +254,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox2.Enabled = false;
             this.textBox2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(364, 50);
+            this.textBox2.Location = new System.Drawing.Point(375, 50);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(356, 34);
+            this.textBox2.Size = new System.Drawing.Size(367, 34);
             this.textBox2.TabIndex = 22;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -256,7 +269,7 @@
             this.textBox3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(3, 90);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(355, 34);
+            this.textBox3.Size = new System.Drawing.Size(366, 34);
             this.textBox3.TabIndex = 23;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -267,9 +280,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox4.Enabled = false;
             this.textBox4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(364, 90);
+            this.textBox4.Location = new System.Drawing.Point(375, 90);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(356, 34);
+            this.textBox4.Size = new System.Drawing.Size(367, 34);
             this.textBox4.TabIndex = 24;
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -282,7 +295,7 @@
             this.textBox5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.Location = new System.Drawing.Point(3, 130);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(355, 34);
+            this.textBox5.Size = new System.Drawing.Size(366, 34);
             this.textBox5.TabIndex = 25;
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -293,9 +306,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox6.Enabled = false;
             this.textBox6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(364, 130);
+            this.textBox6.Location = new System.Drawing.Point(375, 130);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(356, 34);
+            this.textBox6.Size = new System.Drawing.Size(367, 34);
             this.textBox6.TabIndex = 26;
             this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -308,7 +321,7 @@
             this.textBox7.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox7.Location = new System.Drawing.Point(3, 170);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(355, 34);
+            this.textBox7.Size = new System.Drawing.Size(366, 34);
             this.textBox7.TabIndex = 27;
             this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -319,9 +332,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox8.Enabled = false;
             this.textBox8.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(364, 170);
+            this.textBox8.Location = new System.Drawing.Point(375, 170);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(356, 34);
+            this.textBox8.Size = new System.Drawing.Size(367, 34);
             this.textBox8.TabIndex = 28;
             this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -334,7 +347,7 @@
             this.textBox9.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox9.Location = new System.Drawing.Point(3, 210);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(355, 34);
+            this.textBox9.Size = new System.Drawing.Size(366, 34);
             this.textBox9.TabIndex = 29;
             this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -345,9 +358,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox10.Enabled = false;
             this.textBox10.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(364, 210);
+            this.textBox10.Location = new System.Drawing.Point(375, 210);
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(356, 34);
+            this.textBox10.Size = new System.Drawing.Size(367, 34);
             this.textBox10.TabIndex = 30;
             this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -360,7 +373,7 @@
             this.textBox11.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox11.Location = new System.Drawing.Point(3, 250);
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(355, 34);
+            this.textBox11.Size = new System.Drawing.Size(366, 34);
             this.textBox11.TabIndex = 31;
             this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -371,9 +384,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox12.Enabled = false;
             this.textBox12.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(364, 250);
+            this.textBox12.Location = new System.Drawing.Point(375, 250);
             this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(356, 34);
+            this.textBox12.Size = new System.Drawing.Size(367, 34);
             this.textBox12.TabIndex = 32;
             this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -386,7 +399,7 @@
             this.textBox15.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox15.Location = new System.Drawing.Point(3, 330);
             this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(355, 34);
+            this.textBox15.Size = new System.Drawing.Size(366, 34);
             this.textBox15.TabIndex = 36;
             this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -397,9 +410,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox16.Enabled = false;
             this.textBox16.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox16.Location = new System.Drawing.Point(364, 330);
+            this.textBox16.Location = new System.Drawing.Point(375, 330);
             this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(356, 34);
+            this.textBox16.Size = new System.Drawing.Size(367, 34);
             this.textBox16.TabIndex = 37;
             this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -410,11 +423,128 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox18.Enabled = false;
             this.textBox18.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox18.Location = new System.Drawing.Point(364, 370);
+            this.textBox18.Location = new System.Drawing.Point(375, 370);
             this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(356, 34);
+            this.textBox18.Size = new System.Drawing.Size(367, 34);
             this.textBox18.TabIndex = 39;
             this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblPages
+            // 
+            this.lblPages.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPages.BackColor = System.Drawing.Color.Transparent;
+            this.lblPages.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPages.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lblPages.Location = new System.Drawing.Point(330, 518);
+            this.lblPages.Name = "lblPages";
+            this.lblPages.Size = new System.Drawing.Size(429, 31);
+            this.lblPages.TabIndex = 23;
+            this.lblPages.Text = "Page 1 out of 3";
+            this.lblPages.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnPrevious
+            // 
+            this.btnPrevious.Enabled = false;
+            this.btnPrevious.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrevious.ForeColor = System.Drawing.Color.DarkGreen;
+            this.btnPrevious.Location = new System.Drawing.Point(172, 511);
+            this.btnPrevious.Name = "btnPrevious";
+            this.btnPrevious.Size = new System.Drawing.Size(142, 44);
+            this.btnPrevious.TabIndex = 22;
+            this.btnPrevious.Text = "<< Previous";
+            this.btnPrevious.UseVisualStyleBackColor = true;
+            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
+            // 
+            // btnNext
+            // 
+            this.btnNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNext.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.ForeColor = System.Drawing.Color.DarkGreen;
+            this.btnNext.Location = new System.Drawing.Point(775, 511);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(142, 44);
+            this.btnNext.TabIndex = 21;
+            this.btnNext.Text = "Next >>";
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Impact", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle17.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Word,
+            this.Synonym});
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle18.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle18;
+            this.dataGridView1.EnableHeadersVisualStyles = false;
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridView1.Location = new System.Drawing.Point(172, 101);
+            this.dataGridView1.MultiSelect = false;
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle19;
+            this.dataGridView1.RowHeadersVisible = false;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle20;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dataGridView1.ShowEditingIcon = false;
+            this.dataGridView1.Size = new System.Drawing.Size(745, 404);
+            this.dataGridView1.TabIndex = 24;
+            // 
+            // Word
+            // 
+            this.Word.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Word.HeaderText = "Word";
+            this.Word.Name = "Word";
+            this.Word.ReadOnly = true;
+            // 
+            // Synonym
+            // 
+            this.Synonym.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Synonym.HeaderText = "Synonym";
+            this.Synonym.Name = "Synonym";
+            this.Synonym.ReadOnly = true;
             // 
             // SynonymsLesson
             // 
@@ -422,19 +552,25 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FunEngGames.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1067, 690);
+            this.ClientSize = new System.Drawing.Size(1089, 690);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.lblPages);
+            this.Controls.Add(this.btnPrevious);
+            this.Controls.Add(this.btnNext);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Name = "SynonymsLesson";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fun English Learning Games: Words - Synonyms lesson";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SynonymsLesson_FormClosed);
             this.Load += new System.EventHandler(this.SynonymsLesson_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -466,5 +602,11 @@
         private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.Label lblPages;
+        private System.Windows.Forms.Button btnPrevious;
+        private System.Windows.Forms.Button btnNext;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Word;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Synonym;
     }
 }

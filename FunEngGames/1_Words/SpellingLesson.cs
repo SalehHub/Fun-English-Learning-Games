@@ -64,6 +64,8 @@ namespace FunEngGames
             page++;
             lastPage = nodeList.Count / 9;
 
+
+            lblPages.Text = "Page "+page+" out of "+lastPage;
             //MessageBox.Show(lastPage.ToString());
 
         }
@@ -86,66 +88,66 @@ namespace FunEngGames
             switch (page)
             {
                 case 1:
-                    NewNumber(nodeList.Count);
-                    int random = randomList.Last();
+                    //NewNumber(nodeList.Count);
+                    //int random= randomList.Last();
 
                     picAns1.Image = Image.FromFile(@"Images\" + nodeList[0].SelectSingleNode("pic").InnerText);
                     textBox1.Text = nodeList[0].SelectSingleNode("answer").InnerText;
 
 
 
-                    NewNumber(nodeList.Count);
-                    random = randomList.Last();
+                    //NewNumber(nodeList.Count);
+                    //random= randomList.Last();
 
                     pictureBox1.Image = Image.FromFile(@"Images\" + nodeList[1].SelectSingleNode("pic").InnerText);
                     textBox2.Text = nodeList[1].SelectSingleNode("answer").InnerText;
 
 
-                    NewNumber(nodeList.Count);
-                    random = randomList.Last();
+                    //NewNumber(nodeList.Count);
+                    //random= randomList.Last();
 
                     pictureBox2.Image = Image.FromFile(@"Images\" + nodeList[2].SelectSingleNode("pic").InnerText);
                     textBox3.Text = nodeList[2].SelectSingleNode("answer").InnerText;
 
 
-                    NewNumber(nodeList.Count);
-                    random = randomList.Last();
+                    //NewNumber(nodeList.Count);
+                    //random= randomList.Last();
 
                     pictureBox3.Image = Image.FromFile(@"Images\" + nodeList[3].SelectSingleNode("pic").InnerText);
                     textBox4.Text = nodeList[3].SelectSingleNode("answer").InnerText;
 
 
-                    NewNumber(nodeList.Count);
-                    random = randomList.Last();
+                    //NewNumber(nodeList.Count);
+                    //random= randomList.Last();
 
                     pictureBox4.Image = Image.FromFile(@"Images\" + nodeList[4].SelectSingleNode("pic").InnerText);
                     textBox5.Text = nodeList[4].SelectSingleNode("answer").InnerText;
 
 
-                    NewNumber(nodeList.Count);
-                    random = randomList.Last();
+                    //NewNumber(nodeList.Count);
+                    //random= randomList.Last();
 
                     pictureBox5.Image = Image.FromFile(@"Images\" + nodeList[5].SelectSingleNode("pic").InnerText);
                     textBox6.Text = nodeList[5].SelectSingleNode("answer").InnerText;
 
 
-                    NewNumber(nodeList.Count);
-                    random = randomList.Last();
+                    //NewNumber(nodeList.Count);
+                    //random= randomList.Last();
 
                     pictureBox6.Image = Image.FromFile(@"Images\" + nodeList[6].SelectSingleNode("pic").InnerText);
                     textBox7.Text = nodeList[6].SelectSingleNode("answer").InnerText;
 
 
 
-                    NewNumber(nodeList.Count);
-                    random = randomList.Last();
+                    //NewNumber(nodeList.Count);
+                    //random= randomList.Last();
 
                     pictureBox7.Image = Image.FromFile(@"Images\" + nodeList[7].SelectSingleNode("pic").InnerText);
                     textBox8.Text = nodeList[7].SelectSingleNode("answer").InnerText;
 
 
-                    NewNumber(nodeList.Count);
-                    random = randomList.Last();
+                    //NewNumber(nodeList.Count);
+                    //random= randomList.Last();
 
                     pictureBox8.Image = Image.FromFile(@"Images\" + nodeList[8].SelectSingleNode("pic").InnerText);
                     textBox9.Text = nodeList[8].SelectSingleNode("answer").InnerText;
@@ -153,66 +155,66 @@ namespace FunEngGames
                     break;
 
                 case 2:
-                    NewNumber(nodeList.Count);
-                    random = randomList.Last();
+                    //NewNumber(nodeList.Count);
+                    //random= randomList.Last();
 
                     picAns1.Image = Image.FromFile(@"Images\" + nodeList[9].SelectSingleNode("pic").InnerText);
                     textBox1.Text = nodeList[9].SelectSingleNode("answer").InnerText;
 
 
 
-                    NewNumber(nodeList.Count);
-                    random = randomList.Last();
+                    //NewNumber(nodeList.Count);
+                    //random= randomList.Last();
 
                     pictureBox1.Image = Image.FromFile(@"Images\" + nodeList[10].SelectSingleNode("pic").InnerText);
                     textBox2.Text = nodeList[10].SelectSingleNode("answer").InnerText;
 
 
-                    NewNumber(nodeList.Count);
-                    random = randomList.Last();
+                    //NewNumber(nodeList.Count);
+                    //random= randomList.Last();
 
                     pictureBox2.Image = Image.FromFile(@"Images\" + nodeList[11].SelectSingleNode("pic").InnerText);
                     textBox3.Text = nodeList[11].SelectSingleNode("answer").InnerText;
 
 
-                    NewNumber(nodeList.Count);
-                    random = randomList.Last();
+                    //NewNumber(nodeList.Count);
+                    //random= randomList.Last();
 
                     pictureBox3.Image = Image.FromFile(@"Images\" + nodeList[12].SelectSingleNode("pic").InnerText);
                     textBox4.Text = nodeList[12].SelectSingleNode("answer").InnerText;
 
 
-                    NewNumber(nodeList.Count);
-                    random = randomList.Last();
+                    //NewNumber(nodeList.Count);
+                    //random= randomList.Last();
 
                     pictureBox4.Image = Image.FromFile(@"Images\" + nodeList[13].SelectSingleNode("pic").InnerText);
                     textBox5.Text = nodeList[13].SelectSingleNode("answer").InnerText;
 
 
-                    NewNumber(nodeList.Count);
-                    random = randomList.Last();
+                    //NewNumber(nodeList.Count);
+                    //random= randomList.Last();
 
                     pictureBox5.Image = Image.FromFile(@"Images\" + nodeList[14].SelectSingleNode("pic").InnerText);
                     textBox6.Text = nodeList[14].SelectSingleNode("answer").InnerText;
 
 
-                    NewNumber(nodeList.Count);
-                    random = randomList.Last();
+                    //NewNumber(nodeList.Count);
+                    //random= randomList.Last();
 
                     pictureBox6.Image = Image.FromFile(@"Images\" + nodeList[15].SelectSingleNode("pic").InnerText);
                     textBox7.Text = nodeList[15].SelectSingleNode("answer").InnerText;
 
 
 
-                    NewNumber(nodeList.Count);
-                    random = randomList.Last();
+                    //NewNumber(nodeList.Count);
+                    //random= randomList.Last();
 
                     pictureBox7.Image = Image.FromFile(@"Images\" + nodeList[16].SelectSingleNode("pic").InnerText);
                     textBox8.Text = nodeList[16].SelectSingleNode("answer").InnerText;
 
 
-                    NewNumber(nodeList.Count);
-                    random = randomList.Last();
+                    //NewNumber(nodeList.Count);
+                    //random= randomList.Last();
 
                     pictureBox8.Image = Image.FromFile(@"Images\" + nodeList[17].SelectSingleNode("pic").InnerText);
                     textBox9.Text = nodeList[17].SelectSingleNode("answer").InnerText;
@@ -220,66 +222,66 @@ namespace FunEngGames
                     break;
 
                 case 3:
-                    NewNumber(nodeList.Count);
-                    random = randomList.Last();
+                    //NewNumber(nodeList.Count);
+                    //random= randomList.Last();
 
                     picAns1.Image = Image.FromFile(@"Images\" + nodeList[18].SelectSingleNode("pic").InnerText);
                     textBox1.Text = nodeList[18].SelectSingleNode("answer").InnerText;
 
 
 
-                    NewNumber(nodeList.Count);
-                    random = randomList.Last();
+                    //NewNumber(nodeList.Count);
+                    //random= randomList.Last();
 
                     pictureBox1.Image = Image.FromFile(@"Images\" + nodeList[19].SelectSingleNode("pic").InnerText);
                     textBox2.Text = nodeList[19].SelectSingleNode("answer").InnerText;
 
 
-                    NewNumber(nodeList.Count);
-                    random = randomList.Last();
+                    //NewNumber(nodeList.Count);
+                    //random= randomList.Last();
 
                     pictureBox2.Image = Image.FromFile(@"Images\" + nodeList[20].SelectSingleNode("pic").InnerText);
                     textBox3.Text = nodeList[20].SelectSingleNode("answer").InnerText;
 
 
-                    NewNumber(nodeList.Count);
-                    random = randomList.Last();
+                    //NewNumber(nodeList.Count);
+                    //random= randomList.Last();
 
                     pictureBox3.Image = Image.FromFile(@"Images\" + nodeList[21].SelectSingleNode("pic").InnerText);
                     textBox4.Text = nodeList[21].SelectSingleNode("answer").InnerText;
 
 
-                    NewNumber(nodeList.Count);
-                    random = randomList.Last();
+                    //NewNumber(nodeList.Count);
+                    //random= randomList.Last();
 
                     pictureBox4.Image = Image.FromFile(@"Images\" + nodeList[22].SelectSingleNode("pic").InnerText);
                     textBox5.Text = nodeList[22].SelectSingleNode("answer").InnerText;
 
 
-                    NewNumber(nodeList.Count);
-                    random = randomList.Last();
+                    //NewNumber(nodeList.Count);
+                    //random= randomList.Last();
 
                     pictureBox5.Image = Image.FromFile(@"Images\" + nodeList[23].SelectSingleNode("pic").InnerText);
                     textBox6.Text = nodeList[23].SelectSingleNode("answer").InnerText;
 
 
-                    NewNumber(nodeList.Count);
-                    random = randomList.Last();
+                    //NewNumber(nodeList.Count);
+                    //random= randomList.Last();
 
                     pictureBox6.Image = Image.FromFile(@"Images\" + nodeList[24].SelectSingleNode("pic").InnerText);
                     textBox7.Text = nodeList[24].SelectSingleNode("answer").InnerText;
 
 
 
-                    NewNumber(nodeList.Count);
-                    random = randomList.Last();
+                    //NewNumber(nodeList.Count);
+                    //random= randomList.Last();
 
                     pictureBox7.Image = Image.FromFile(@"Images\" + nodeList[25].SelectSingleNode("pic").InnerText);
                     textBox8.Text = nodeList[25].SelectSingleNode("answer").InnerText;
 
 
-                    NewNumber(nodeList.Count);
-                    random = randomList.Last();
+                    //NewNumber(nodeList.Count);
+                    //random= randomList.Last();
 
                     pictureBox8.Image = Image.FromFile(@"Images\" + nodeList[26].SelectSingleNode("pic").InnerText);
                     textBox9.Text = nodeList[26].SelectSingleNode("answer").InnerText;
@@ -310,6 +312,9 @@ namespace FunEngGames
 
             btnPrevious.Enabled = true;
 
+            lblPages.Text = "Page " + page + " out of " + lastPage;
+
+
         }
 
         private void btnPrevious_Click(object sender, EventArgs e)
@@ -328,7 +333,7 @@ namespace FunEngGames
             {
                 btnPrevious.Enabled = false;
             }
-
+            lblPages.Text = "Page " + page + " out of " + lastPage;
         }
     }
 }

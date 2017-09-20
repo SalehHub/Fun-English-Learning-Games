@@ -160,65 +160,7 @@
 		<answer>Carrot</answer>
 	</spelling>		
 		
-	
-	<!--Homonyms questions-->
 
-	<homonyms>
-		<def1>Quick or speedy</def1>
-		<def2>To abstain from food</def2>
-		<answer>Fast</answer>
-	</homonyms>
-		
-	<homonyms>
-		<def1>To make ready or prepare</def1>
-		<def2>A man being married</def2>
-		<answer>Groom</answer>
-	</homonyms>
-	
-	<homonyms>
-		<def1>A financial institution</def1>
-		<def2>The edge of a river</def2>
-		<answer>Bank</answer>
-	</homonyms>
-		
-	<homonyms>
-		<def1>Difficult or challenging</def1>
-		<def2>Not soft</def2>
-		<answer>Hard</answer>
-	</homonyms>
-		
-	<homonyms>
-		<def1>A monarch, emperor, potentate	</def1>
-		<def2>Tool for measuring length</def2>
-		<answer>Ruler</answer>
-	</homonyms>
-	
-	<homonyms>
-		<def1>A command or a mandate</def1>
-		<def2>Succession or sequence</def2>
-		<answer>Order</answer>
-	</homonyms>	
-		
-	<homonyms>
-		<def1>To stumble</def1>
-		<def2>A vacation</def2>
-		<answer>Trip</answer>
-	</homonyms>	
-			
-	<homonyms>
-		<def1>Reporters or newspapers</def1>
-		<def2>To bear down or squeeze</def2>
-		<answer>Press</answer>
-	</homonyms>
-	
-<homonyms>
-	<def1>A web-footed swimming bird</def1>
-	<def2>To avoid, evade, or dodge</def2>
-	<answer>Duck</answer>
-</homonyms>
-	
-	
-	
 	
 	
 	<!--Synonyms questions-->
@@ -271,6 +213,69 @@
     <word>Worth</word>
     <synonym>Value</synonym>
   </synonyms>
+	
+
+
+
+	<synonyms>
+		<word>Help </word>
+		<synonym>assist</synonym>
+	</synonyms>
+		
+	
+	<synonyms>
+		<word>Mark </word>
+		<synonym>tag</synonym>
+	</synonyms>
+		
+	
+	<synonyms>
+		<word>Plan </word>
+		<synonym>scheme</synonym>
+	</synonyms>
+		
+	
+	<synonyms>
+		<word>Show </word>
+		<synonym>display</synonym>
+	</synonyms>
+		
+	
+	<synonyms>
+		<word>Destroy </word>
+		<synonym>ruin</synonym>
+	</synonyms>
+		
+	
+	<synonyms>
+		<word>Break </word>
+		<synonym>smash</synonym>
+	</synonyms>
+		
+	
+	<synonyms>
+		<word>Keep </word>
+		<synonym>hold</synonym>
+	</synonyms>
+		
+	
+	<synonyms>
+		<word>Get </word>
+		<synonym>obtain</synonym>
+	</synonyms>
+		
+	
+	<synonyms>
+		<word>Hurry </word>
+		<synonym>rush</synonym>
+	</synonyms>
+		
+	
+	<synonyms>
+		<word>Many</word>
+		<synonym>Few</synonym>
+	</synonyms>
+
 	
 	
 	
@@ -325,6 +330,62 @@
   </antonyms>
   
   
+  
+  	<!--Homonyms questions-->
+
+	<homonyms>
+		<def1>Quick or speedy</def1>
+		<def2>To abstain from food</def2>
+		<answer>Fast</answer>
+	</homonyms>
+		
+	<homonyms>
+		<def1>To make ready or prepare</def1>
+		<def2>A man being married</def2>
+		<answer>Groom</answer>
+	</homonyms>
+	
+	<homonyms>
+		<def1>A financial institution</def1>
+		<def2>The edge of a river</def2>
+		<answer>Bank</answer>
+	</homonyms>
+		
+	<homonyms>
+		<def1>Difficult or challenging</def1>
+		<def2>Not soft</def2>
+		<answer>Hard</answer>
+	</homonyms>
+		
+	<homonyms>
+		<def1>A monarch, emperor, potentate	</def1>
+		<def2>Tool for measuring length</def2>
+		<answer>Ruler</answer>
+	</homonyms>
+	
+	<homonyms>
+		<def1>A command or a mandate</def1>
+		<def2>Succession or sequence</def2>
+		<answer>Order</answer>
+	</homonyms>	
+		
+	<homonyms>
+		<def1>To stumble</def1>
+		<def2>A vacation</def2>
+		<answer>Trip</answer>
+	</homonyms>	
+			
+	<homonyms>
+		<def1>Reporters or newspapers</def1>
+		<def2>To bear down or squeeze</def2>
+		<answer>Press</answer>
+	</homonyms>
+	
+<homonyms>
+	<def1>A web-footed swimming bird</def1>
+	<def2>To avoid, evade, or dodge</def2>
+	<answer>Duck</answer>
+</homonyms>
   
   
   <!--Part of speech questions-->

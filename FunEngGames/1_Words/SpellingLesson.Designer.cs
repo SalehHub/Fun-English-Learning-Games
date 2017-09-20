@@ -53,6 +53,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPrevious = new System.Windows.Forms.Button();
+            this.lblPages = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picAns1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -360,9 +361,9 @@
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(397, 780);
+            this.button1.Location = new System.Drawing.Point(397, 757);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(299, 68);
+            this.button1.Size = new System.Drawing.Size(299, 56);
             this.button1.TabIndex = 12;
             this.button1.Text = "Start the spelling level";
             this.button1.UseVisualStyleBackColor = true;
@@ -402,9 +403,9 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(8, 746);
+            this.label3.Location = new System.Drawing.Point(9, 726);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(1075, 31);
             this.label3.TabIndex = 15;
@@ -437,13 +438,28 @@
             this.btnPrevious.UseVisualStyleBackColor = true;
             this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
             // 
+            // lblPages
+            // 
+            this.lblPages.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPages.BackColor = System.Drawing.Color.Transparent;
+            this.lblPages.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPages.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lblPages.Location = new System.Drawing.Point(166, 681);
+            this.lblPages.Name = "lblPages";
+            this.lblPages.Size = new System.Drawing.Size(761, 31);
+            this.lblPages.TabIndex = 18;
+            this.lblPages.Text = "Page 1 out of 3";
+            this.lblPages.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // spellingLesson
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FunEngGames.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1099, 852);
+            this.ClientSize = new System.Drawing.Size(1099, 819);
+            this.Controls.Add(this.lblPages);
             this.Controls.Add(this.btnPrevious);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.label3);
@@ -499,5 +515,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnPrevious;
+        private System.Windows.Forms.Label lblPages;
     }
 }
