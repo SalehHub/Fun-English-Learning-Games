@@ -1,9 +1,12 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -158,7 +161,8 @@ namespace FunEngGames
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            page++;            lastNode += 9;
+            page++;
+            lastNode += 9;
             dataGridView1.Rows.Clear();
 
             GenerateSynonyms(lastNode);
@@ -220,5 +224,87 @@ namespace FunEngGames
             return char.ToUpper(s[0]) + s.Substring(1);
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            string json = (GET("https://api.datamuse.com/words?rel_syn=good&max=5"));
+
+
+            var words = JsonConvert.DeserializeObject <List<Word>>(json);
+
+            string w="";
+            foreach( var s in words)
+            {
+
+                
+                w = w + "\n" + UppercaseFirst(s.word)+"\n";
+            }
+
+
+            MessageBox.Show(w);
+
+
+
+            // MessageBox.Show(GET("https://api.datamuse.com/words?rel_syn=good&max=5"));
+        }
+
+
+        public string GET(string url)
+        {
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            try
+            {
+                WebResponse response = request.GetResponse();
+                using (Stream responseStream = response.GetResponseStream())
+                {
+                    StreamReader reader = new StreamReader(responseStream, Encoding.UTF8);
+                    return reader.ReadToEnd();
+                }
+            }
+            catch (WebException ex)
+            {
+                WebResponse errorResponse = ex.Response;
+                using (Stream responseStream = errorResponse.GetResponseStream())
+                {
+                    StreamReader reader = new StreamReader(responseStream, Encoding.GetEncoding("utf-8"));
+                    String errorText = reader.ReadToEnd();
+                    // log errorText
+                }
+                throw;
+            }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                var senderGrid = (DataGridView)sender;
+
+                if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
+                {
+
+                    //MessageBox.Show(e.RowIndex.ToString()+ senderGrid.Rows[e.RowIndex].Cells[0].Value);
+
+                    string json = GET("https://api.datamuse.com/words?rel_syn=" + senderGrid.Rows[e.RowIndex].Cells[0].Value.ToString().Trim() + "&max=5");
+                    //MessageBox.Show(json+ "https://api.datamuse.com/words?rel_syn=" + senderGrid.Rows[e.RowIndex].Cells[0].Value.ToString().Trim() + "&max=5");
+
+                   var words = JsonConvert.DeserializeObject<List<Word>>(json);
+
+                    string w = "";
+                    foreach (var s in words)
+                    {
+                        if (s.word.Trim().ToLower() != senderGrid.Rows[e.RowIndex].Cells[1].Value.ToString().Trim().ToLower()) {
+                            w = w + "\n" + UppercaseFirst(s.word) + "\n";
+                        }
+                    }
+
+
+                    MessageBox.Show(w);
+                }
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
