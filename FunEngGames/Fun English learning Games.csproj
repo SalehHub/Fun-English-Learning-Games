@@ -51,6 +51,10 @@
     <StartupObject>FunEngGames.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NAudio, Version=1.8.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.1.8.3\lib\net35\NAudio.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
@@ -80,6 +84,7 @@
     <Compile Include="1_Words\AntonymsLesson.designer.cs">
       <DependentUpon>AntonymsLesson.cs</DependentUpon>
     </Compile>
+    <Compile Include="CommonFunctions.cs" />
     <Compile Include="testForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,7 +213,7 @@
     <Compile Include="2_Storyline.Designer.cs">
       <DependentUpon>2_Storyline.cs</DependentUpon>
     </Compile>
-    <Compile Include="word.cs" />
+    <Compile Include="WordRoot.cs" />
     <EmbeddedResource Include="1_Words\Antonyms.resx">
       <DependentUpon>Antonyms.cs</DependentUpon>
     </EmbeddedResource>

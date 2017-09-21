@@ -1,14 +1,5 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 
@@ -26,6 +17,8 @@ namespace FunEngGames
         public wordsLevel mainLevelsForm;
         XmlDocument xmlDoc = new XmlDocument();
         public XmlNodeList nodeList;
+
+        CommonFunctions CommonFunctions = new CommonFunctions();
 
         public int page = 0;
         public int lastPage = 0;
@@ -152,7 +145,7 @@ namespace FunEngGames
         public void GenSynonym(int start, TextBox t1,TextBox t2)
         {
             //NewNumber(nodeList.Count);
-            dataGridView1.Rows.Add(UppercaseFirst(nodeList[start].SelectSingleNode("word").InnerText), UppercaseFirst(nodeList[start].SelectSingleNode("synonym").InnerText));
+            dataGridView1.Rows.Add(CommonFunctions.UppercaseFirst(nodeList[start].SelectSingleNode("word").InnerText), CommonFunctions.UppercaseFirst(nodeList[start].SelectSingleNode("synonym").InnerText));
 
             //t1.Text = UppercaseFirst(nodeList[start].SelectSingleNode("word").InnerText);
             //t2.Text = UppercaseFirst(nodeList[start].SelectSingleNode("synonym").InnerText);
@@ -213,98 +206,58 @@ namespace FunEngGames
         }
 
 
-        static string UppercaseFirst(string s)
-        {
-            // Check for empty string.
-            if (string.IsNullOrEmpty(s))
-            {
-                return string.Empty;
-            }
-            // Return char and concat substring.
-            return char.ToUpper(s[0]) + s.Substring(1);
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-            string json = (GET("https://api.datamuse.com/words?rel_syn=good&max=5"));
-
-
-            var words = JsonConvert.DeserializeObject <List<Word>>(json);
-
-            string w="";
-            foreach( var s in words)
-            {
-
-                
-                w = w + "\n" + UppercaseFirst(s.word)+"\n";
-            }
-
-
-            MessageBox.Show(w);
 
 
 
-            // MessageBox.Show(GET("https://api.datamuse.com/words?rel_syn=good&max=5"));
-        }
 
 
-        public string GET(string url)
-        {
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
-            try
-            {
-                WebResponse response = request.GetResponse();
-                using (Stream responseStream = response.GetResponseStream())
-                {
-                    StreamReader reader = new StreamReader(responseStream, Encoding.UTF8);
-                    return reader.ReadToEnd();
-                }
-            }
-            catch (WebException ex)
-            {
-                WebResponse errorResponse = ex.Response;
-                using (Stream responseStream = errorResponse.GetResponseStream())
-                {
-                    StreamReader reader = new StreamReader(responseStream, Encoding.GetEncoding("utf-8"));
-                    String errorText = reader.ReadToEnd();
-                    // log errorText
-                }
-                throw;
-            }
-        }
+
+
+
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             try
             {
+                
                 var senderGrid = (DataGridView)sender;
-
+                /*
                 if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
                 {
-
-                    //MessageBox.Show(e.RowIndex.ToString()+ senderGrid.Rows[e.RowIndex].Cells[0].Value);
-
                     string json = GET("https://api.datamuse.com/words?rel_syn=" + senderGrid.Rows[e.RowIndex].Cells[0].Value.ToString().Trim() + "&max=5");
-                    //MessageBox.Show(json+ "https://api.datamuse.com/words?rel_syn=" + senderGrid.Rows[e.RowIndex].Cells[0].Value.ToString().Trim() + "&max=5");
-
-                   var words = JsonConvert.DeserializeObject<List<Word>>(json);
+                    var words = JsonConvert.DeserializeObject<List<Word>>(json);
 
                     string w = "";
                     foreach (var s in words)
                     {
                         if (s.word.Trim().ToLower() != senderGrid.Rows[e.RowIndex].Cells[1].Value.ToString().Trim().ToLower()) {
-                            w = w + "\n" + UppercaseFirst(s.word) + "\n";
+                            w = w  + UppercaseFirst(s.word) + "\n\n";
                         }
                     }
 
-
-                    MessageBox.Show(w);
+                    MessageBox.Show(w,"Other synonyms for: "+senderGrid.Rows[e.RowIndex].Cells[0].Value.ToString());
                 }
-            }catch(Exception ex)
+                */
+
+
+                if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
+                {
+                    CommonFunctions.GenerateMoreInfo(senderGrid, e, "synonyms");
+
+                }
+                else if (e.RowIndex >= 0 && e.ColumnIndex>=0)
+                {
+                   CommonFunctions.Pronounce(senderGrid.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString().Trim().ToLower());
+                }
+
+            }
+            catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+
         }
+
+
     }
 }

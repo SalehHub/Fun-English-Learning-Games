@@ -114,7 +114,7 @@
 		
 	<spelling>
 		<pic>20.png</pic>
-		<answer>Hear</answer>
+		<answer>heart</answer>
 	</spelling>	
 			
 		
@@ -214,9 +214,7 @@
     <synonym>Value</synonym>
   </synonyms>
 	
-
-
-
+	
 	<synonyms>
 		<word>Help </word>
 		<synonym>assist</synonym>
@@ -276,7 +274,146 @@
 		<synonym>Few</synonym>
 	</synonyms>
 
+	<synonyms>
+		<word>Afraid</word>
+		<synonym>scared</synonym>
+	</synonyms>
 	
+	<synonyms>
+		<word>Big</word>
+		<synonym>large</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Garbage</word>
+		<synonym>trash</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Happy</word>
+		<synonym>joyful</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Hide</word>
+		<synonym>cover</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Idea</word>
+		<synonym>thought</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Listen</word>
+		<synonym>hear</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Little</word>
+		<synonym>small</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Look</word>
+		<synonym>see</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Mad</word>
+		<synonym>angry</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Rest</word>
+		<synonym>relax</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Sniff</word>
+		<synonym>smell</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Strange</word>
+		<synonym>odd</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>True</word>
+		<synonym>correct</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Under</word>
+		<synonym>below</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Yell</word>
+		<synonym>shout</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Jog</word>
+		<synonym>run</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Quiet</word>
+		<synonym>calm</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>abandon</word>
+		<synonym>discard</synonym>
+	</synonyms>	
+	
+	<synonyms>
+		<word>avoid</word>
+		<synonym>ignore</synonym>
+	</synonyms>
+	
+		
+	<synonyms>
+		<word>blend</word>
+		<synonym>combine</synonym>
+	</synonyms>
+	
+		
+	<synonyms>
+		<word>brilliant</word>
+		<synonym>clever</synonym>
+	</synonyms>
+	
+		
+	<synonyms>
+		<word>craving</word>
+		<synonym>desire</synonym>
+	</synonyms>
+	
+		
+	<synonyms>
+		<word>dare</word>
+		<synonym>challenge</synonym>
+	</synonyms>
+	
+		
+	<synonyms>
+		<word>estimate</word>
+		<synonym>predict</synonym>
+	</synonyms>	
+		
+	<synonyms>
+		<word>feud</word>
+		<synonym>argument</synonym>
+	</synonyms>
+	
+		
+	<synonyms>
+		<word>filth</word>
+		<synonym>dirt</synonym>
+	</synonyms>
 	
 	
 	
@@ -306,29 +443,212 @@
 	<antonyms>
 		<word>Fast</word>
 		<antonym>Slow</antonym>
+	</antonyms>		
+	
+	
+	<antonyms>
+		<word>absent </word>
+		<antonym>present</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>accept </word>
+		<antonym>decline</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>admit </word>
+		<antonym>deny</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>advantage </word>
+		<antonym>disadvantage</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>agree </word>
+		<antonym>disagree</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>alive </word>
+		<antonym>dead</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>all </word>
+		<antonym>none</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>always </word>
+		<antonym>never</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>ancient </word>
+		<antonym>modern</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>apart </word>
+		<antonym>together</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>arrive </word>
+		<antonym>depart</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>artificial </word>
+		<antonym>natural</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>awake </word>
+		<antonym>asleep</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>backward </word>
+		<antonym>forward</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>before </word>
+		<antonym>after</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>below </word>
+		<antonym>above</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>bottom </word>
+		<antonym>top</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>bitter </word>
+		<antonym>sweet</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>borrow </word>
+		<antonym>lend</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>broad </word>
+		<antonym>narrow</antonym>
 	</antonyms>	
 	
-<antonyms>
-	<word>Near</word>
-	<antonym>Remote</antonym>
-	<hint>Far is another antonym for the word youer looking for</hint>
-</antonyms>
+	<antonyms>
+		<word>Near</word>
+		<antonym>Remote</antonym>
+		<hint>Far is another antonym for the word you're looking for</hint>
+	</antonyms>
 
-  <antonyms>
-    <word>Guilty</word>
-    <antonym>Innocent</antonym>
-  </antonyms>
+	  <antonyms>
+		<word>Guilty</word>
+		<antonym>Innocent</antonym>
+	  </antonyms>
 
-  <antonyms>
-    <word>Negative</word>
-    <antonym>Positive</antonym>
-  </antonyms>
+	  <antonyms>
+		<word>Negative</word>
+		<antonym>Positive</antonym>
+	  </antonyms>
 
-  <antonyms>
-    <word>Fake</word>
-    <antonym>Real</antonym>
-  </antonyms>
+	  <antonyms>
+		<word>Fake</word>
+		<antonym>Real</antonym>
+	  </antonyms>
   
+  	
+	<antonyms>
+		<word>careful </word>
+		<antonym>careless</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>cheap </word>
+		<antonym>expensive</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>dangerous </word>
+		<antonym>safe</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>decrease </word>
+		<antonym>increase</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>empty </word>
+		<antonym>full</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>enter </word>
+		<antonym>exit</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>even </word>
+		<antonym>odd</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>external </word>
+		<antonym>internal</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>forget </word>
+		<antonym>remember</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>give </word>
+		<antonym>receive</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>guest </word>
+		<antonym>host</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>horizontal </word>
+		<antonym>vertical</antonym>
+	</antonyms>	
+	
+		
+	<antonyms>
+		<word>join</word>
+		<antonym>separate</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>knowledge </word>
+		<antonym>ignorance</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>laugh </word>
+		<antonym>cry</antonym>
+	</antonyms>	
+		
+	<antonyms>
+		<word>long </word>
+		<antonym>short</antonym>
+	</antonyms>	
+	
   
   
   	<!--Homonyms questions-->
