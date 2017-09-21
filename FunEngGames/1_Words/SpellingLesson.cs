@@ -62,7 +62,7 @@ namespace FunEngGames
         {
 
             //XmlDocument xmlDoc = new XmlDocument();
-            xmlDoc.Load("questions.xml");
+            xmlDoc.Load("spelling.xml");
             nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/spelling");
             GenerateWords(0);
             page++;

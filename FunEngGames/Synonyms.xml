@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<Questions>
+
+<!--Synonyms questions-->
+
+	<synonyms>
+		<word>Beautiful</word>
+		<synonym>Pretty</synonym>
+	</synonyms>
+		
+	<synonyms>
+		<word>Begin</word>
+		<synonym>Start</synonym>
+	</synonyms>
+		
+	<synonyms>
+		<word>Bright</word>
+		<synonym>Shining</synonym>
+	</synonyms>
+
+  <synonyms>
+    <word>Decide</word>
+    <synonym>Determine</synonym>
+  </synonyms>
+
+
+  <synonyms>
+    <word>Quiet</word>
+    <synonym>Silent</synonym>
+  </synonyms>
+
+
+  <synonyms>
+    <word>Wrong</word>
+    <synonym>Incorrect</synonym>
+  </synonyms>
+  
+  <synonyms>
+    <word>Informal</word>
+    <synonym>Casual</synonym>
+  </synonyms>
+
+
+  <synonyms>
+    <word>Necessary</word>
+    <synonym>Required</synonym>
+  </synonyms>
+
+
+  <synonyms>
+    <word>Worth</word>
+    <synonym>Value</synonym>
+  </synonyms>
+	
+	
+	<synonyms>
+		<word>Help </word>
+		<synonym>assist</synonym>
+	</synonyms>
+		
+	
+	<synonyms>
+		<word>Mark </word>
+		<synonym>tag</synonym>
+	</synonyms>
+		
+	
+	<synonyms>
+		<word>Plan </word>
+		<synonym>scheme</synonym>
+	</synonyms>
+		
+	
+	<synonyms>
+		<word>Show </word>
+		<synonym>display</synonym>
+	</synonyms>
+		
+	
+	<synonyms>
+		<word>Destroy </word>
+		<synonym>ruin</synonym>
+	</synonyms>
+		
+	
+	<synonyms>
+		<word>Break </word>
+		<synonym>smash</synonym>
+	</synonyms>
+		
+	
+	<synonyms>
+		<word>Keep </word>
+		<synonym>hold</synonym>
+	</synonyms>
+		
+	
+	<synonyms>
+		<word>Get </word>
+		<synonym>obtain</synonym>
+	</synonyms>
+		
+	
+	<synonyms>
+		<word>Hurry </word>
+		<synonym>rush</synonym>
+	</synonyms>
+		
+	
+	<synonyms>
+		<word>Many</word>
+		<synonym>Few</synonym>
+	</synonyms>
+
+	<synonyms>
+		<word>Afraid</word>
+		<synonym>scared</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Big</word>
+		<synonym>large</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Garbage</word>
+		<synonym>trash</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Happy</word>
+		<synonym>joyful</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Hide</word>
+		<synonym>cover</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Idea</word>
+		<synonym>thought</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Listen</word>
+		<synonym>hear</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Little</word>
+		<synonym>small</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Look</word>
+		<synonym>see</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Mad</word>
+		<synonym>angry</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Rest</word>
+		<synonym>relax</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Sniff</word>
+		<synonym>smell</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Strange</word>
+		<synonym>odd</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>True</word>
+		<synonym>correct</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Under</word>
+		<synonym>below</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Yell</word>
+		<synonym>shout</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Jog</word>
+		<synonym>run</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>Quiet</word>
+		<synonym>calm</synonym>
+	</synonyms>
+	
+	<synonyms>
+		<word>abandon</word>
+		<synonym>discard</synonym>
+	</synonyms>	
+	
+	<synonyms>
+		<word>avoid</word>
+		<synonym>ignore</synonym>
+	</synonyms>
+	
+		
+	<synonyms>
+		<word>blend</word>
+		<synonym>combine</synonym>
+	</synonyms>
+	
+		
+	<synonyms>
+		<word>brilliant</word>
+		<synonym>clever</synonym>
+	</synonyms>
+	
+		
+	<synonyms>
+		<word>craving</word>
+		<synonym>desire</synonym>
+	</synonyms>
+	
+		
+	<synonyms>
+		<word>dare</word>
+		<synonym>challenge</synonym>
+	</synonyms>
+	
+		
+	<synonyms>
+		<word>estimate</word>
+		<synonym>predict</synonym>
+	</synonyms>	
+		
+	<synonyms>
+		<word>feud</word>
+		<synonym>argument</synonym>
+	</synonyms>
+	
+		
+	<synonyms>
+		<word>filth</word>
+		<synonym>dirt</synonym>
+	</synonyms>		
+	
+</Questions>

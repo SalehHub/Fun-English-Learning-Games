@@ -19,9 +19,9 @@ namespace FunEngGames
 
             req = (HttpWebRequest)HttpWebRequest.Create(url);
 
-            //These are not network credentials, just custom headers
-            req.Headers.Add("app_id", "");
-            req.Headers.Add("app_key", "");
+            //put your Oxford app_id and app_key here
+            req.Headers.Add("app_id", "8f414221");
+            req.Headers.Add("app_key", "bde66019e18fd00ed1cd2befaa18d625");
 
             req.Method = WebRequestMethods.Http.Get;
             req.Accept = "application/json";
@@ -106,11 +106,11 @@ namespace FunEngGames
 
 
 
-        public void GenerateMoreInfo(DataGridView senderGrid, DataGridViewCellEventArgs e, string category)
+        public void GenerateMoreInfo(string word, string category)
         {
             try
             {
-                string json2 = GET2("https://od-api.oxforddictionaries.com:443/api/v1/entries/en/" + senderGrid.Rows[e.RowIndex].Cells[0].Value.ToString().Trim().ToLower() + "/synonyms;antonyms");// + category);
+                string json2 = GET2("https://od-api.oxforddictionaries.com:443/api/v1/entries/en/" + word.Trim().ToLower() + "/synonyms;antonyms");// + category);
 
 
                 var words = JsonConvert.DeserializeObject<WordObject>(json2);
@@ -124,21 +124,21 @@ namespace FunEngGames
 
                         foreach (Synonym text in words.results[0].lexicalEntries[0].entries[0].senses[0].subsenses[0].synonyms)
                         {
-                            s = s + UppercaseFirst(text.text) + "\n\t";
+                            s = s + UppercaseFirst(text.text) + "\r\n";
                         }
                     }
-                    else if (words.results[0].lexicalEntries[0].entries[0].senses != null && words.results[0].lexicalEntries[0].entries[0].senses[0].synonyms != null)
+                     if (words.results[0].lexicalEntries[0].entries[0].senses != null && words.results[0].lexicalEntries[0].entries[0].senses[0].synonyms != null)
 
                     {
                         foreach (Synonym text in words.results[0].lexicalEntries[0].entries[0].senses[0].synonyms)
                         {
-                            s = s + UppercaseFirst(text.text) + "\n\t";
+                            s = s + UppercaseFirst(text.text) + "\r\n";
                         }
 
 
                     }
 
-                if (s.Trim() != "") { s = "Synonyms:\n\t" + s; }
+                //if (s.Trim() != "") { s = "Synonyms:\n\t" + s; }
 
                 // }
                 // else
@@ -151,24 +151,24 @@ namespace FunEngGames
                     {
                         foreach (Antonym text in words.results[0].lexicalEntries[0].entries[0].senses[0].subsenses[0].antonyms)
                         {
-                            a = a + UppercaseFirst(text.text) + "\n\t";
+                            a = a + UppercaseFirst(text.text) + "\r\n";
                         }
                     }
-                    else if (words.results[0].lexicalEntries[0].entries[0].senses != null && words.results[0].lexicalEntries[0].entries[0].senses[0].antonyms != null)
+                     if (words.results[0].lexicalEntries[0].entries[0].senses != null && words.results[0].lexicalEntries[0].entries[0].senses[0].antonyms != null)
 
                     {
                         foreach (Antonym2 text in words.results[0].lexicalEntries[0].entries[0].senses[0].antonyms)
                         {
-                            a = a + UppercaseFirst(text.text) + "\n\t";
+                            a = a + UppercaseFirst(text.text) + "\r\n";
                         }
                     }
 
-                if (a.Trim() != "") { a = "\rAntonyms:\n\t" + a; }
+                //if (a.Trim() != "") { a = "\rAntonyms:\n\t" + a; }
 
                 // }
 
 
-                string json22 = GET2("https://od-api.oxforddictionaries.com:443/api/v1/entries/en/" + senderGrid.Rows[e.RowIndex].Cells[0].Value.ToString().Trim().ToLower());
+                string json22 = GET2("https://od-api.oxforddictionaries.com:443/api/v1/entries/en/" + word.Trim().ToLower());
 
 
                 var wordss = JsonConvert.DeserializeObject<WordObject>(json22);
@@ -181,13 +181,14 @@ namespace FunEngGames
                 if (wordss.results[0].lexicalEntries[0].entries[0].senses[0].examples != null)
                 {
                     exa = wordss.results[0].lexicalEntries[0].entries[0].senses[0].examples[0].text;
-                    w += "\nDefinitions:\n" + UppercaseFirst(def) + "\n\tExample: " + UppercaseFirst(exa) + "\n\n";
+                    w += "\r\n" + UppercaseFirst(def) + "\r\n\tExample: " + UppercaseFirst(exa) + "\r\n\r\n";
 
                 }
                 else{
-                    w += "\nDefinitions:\n" + UppercaseFirst(def) + "\n\n";
+                    w += "\n\n" + UppercaseFirst(def) + "\r\n\n";
 
                 }
+
 
                // w += "\nDefinitions:\n " + UppercaseFirst(def) + "\n\tExample: " + UppercaseFirst(exa) + "\n\n";
                 if (wordss.results[0].lexicalEntries[0].entries[0].senses[0].subsenses != null)
@@ -196,16 +197,24 @@ namespace FunEngGames
                     {
                         if (text.definitions != null)
                         {
-                            w = w + UppercaseFirst(text.definitions[0]) + "\n\t";
+                            w = w + "----------------------\r\n"+ UppercaseFirst(text.definitions[0]) + "\r\n\t";
                         }
                         if (text.examples != null)
                         {
-                            w += "Example: " + UppercaseFirst(text.examples[0].text) + "\n\n";
+                            w += "Example: " + UppercaseFirst(text.examples[0].text) + "\r\n\r\n";
                         }
                     }
                 }
 
-                MessageBox.Show(s+a+w, "More information for: " + senderGrid.Rows[e.RowIndex].Cells[0].Value.ToString());
+                //MessageBox.Show(s+a+w, "More information for: " + word.ToString());
+
+                MoreInfo MoreInfo = new MoreInfo();
+                MoreInfo.Text = "Fun English Learning Games: More information for: " + word.ToString();
+                MoreInfo.lblWord.Text = word.ToString();
+                MoreInfo.txtSyn.Text = s.Trim(); ;
+                MoreInfo.txtAnt.Text = a.Trim();
+                MoreInfo.txtDef.Text = w.Trim(); ;
+                MoreInfo.ShowDialog();
 
 
             }

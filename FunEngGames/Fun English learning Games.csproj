@@ -85,6 +85,12 @@
       <DependentUpon>AntonymsLesson.cs</DependentUpon>
     </Compile>
     <Compile Include="CommonFunctions.cs" />
+    <Compile Include="MoreInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoreInfo.Designer.cs">
+      <DependentUpon>MoreInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="testForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -220,6 +226,9 @@
     <EmbeddedResource Include="1_Words\AntonymsLesson.resx">
       <DependentUpon>AntonymsLesson.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MoreInfo.resx">
+      <DependentUpon>MoreInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="testForm.resx">
       <DependentUpon>testForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -344,6 +353,12 @@
     <None Include="Resources\Screen Shot 2017-09-02 at 12.23.10 AM.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Antonyms.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Homonyms.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -418,6 +433,12 @@
     </Content>
     <Content Include="Images\6.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Spelling.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Synonyms.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\sl7.png" />
     <None Include="Resources\sl6.png" />

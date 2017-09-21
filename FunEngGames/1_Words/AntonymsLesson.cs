@@ -63,7 +63,7 @@ namespace FunEngGames
 
         private void SynonymsLesson_Load(object sender, EventArgs e)
         {
-            xmlDoc.Load("questions.xml");
+            xmlDoc.Load("antonyms.xml");
             nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/antonyms");
 
             lastPage = nodeList.Count / 9;
@@ -229,7 +229,7 @@ namespace FunEngGames
 
             if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
             {
-                CommonFunctions.GenerateMoreInfo(senderGrid, e, "antonyms");
+                CommonFunctions.GenerateMoreInfo(senderGrid.Rows[e.RowIndex].Cells[0].Value.ToString(),  "antonyms");
             }
             else if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
             {

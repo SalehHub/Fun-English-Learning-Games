@@ -75,7 +75,7 @@ namespace FunEngGames
                 pictureBox5.LoadAsync(@"https://media.giphy.com/media/Bn6djQ6MgEWZi/giphy.gif");
 
                 XmlDocument xmlDoc = new XmlDocument();
-                xmlDoc.Load("questions.xml");
+                xmlDoc.Load("spelling.xml");
                 XmlNodeList nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/spelling");
 
                 /*

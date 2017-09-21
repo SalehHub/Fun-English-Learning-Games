@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<Questions>
+
+	<!--Spellings questions-->
+
+	<spelling>
+		<pic>1.png</pic>
+		<answer>Airplane</answer>
+		<hint1></hint1>
+		<hint2></hint2>
+	</spelling>
+	
+	<spelling>
+		<pic>2.png</pic>
+		<answer>Car</answer>
+	</spelling>
+	
+	<spelling>
+		<pic>3.png</pic>
+		<answer>Train</answer>
+	</spelling>	
+	
+	<spelling>
+		<pic>4.png</pic>
+		<answer>Cloud</answer>
+	</spelling>
+		
+	<spelling>
+		<pic>5.png</pic>
+		<answer>Table</answer>
+	</spelling>
+		
+	<spelling>
+		<pic>6.png</pic>
+		<answer>Chair</answer>
+	</spelling>
+	
+	<spelling>
+		<pic>7.png</pic>
+		<answer>Tree</answer>
+	</spelling>
+	
+	<spelling>
+		<pic>8.png</pic>
+		<answer>Hat</answer>
+	</spelling>
+	
+	<spelling>
+		<pic>9.png</pic>
+		<answer>Cat</answer>
+	</spelling>
+	
+	
+	<spelling>
+		<pic>10.png</pic>
+		<answer>Fish</answer>
+	</spelling>
+	
+	
+		
+	<spelling>
+		<pic>11.png</pic>
+		<answer>Lion</answer>
+	</spelling>	
+	
+		
+	<spelling>
+		<pic>12.png</pic>
+		<answer>Apple</answer>
+	</spelling>	
+	
+		
+	<spelling>
+		<pic>13.png</pic>
+		<answer>Dog</answer>
+	</spelling>	
+	
+		
+	<spelling>
+		<pic>14.png</pic>
+		<answer>Computer</answer>
+	</spelling>	
+		
+		
+	<spelling>
+		<pic>15.png</pic>
+		<answer>Ring</answer>
+	</spelling>
+		
+		
+	<spelling>
+		<pic>16.png</pic>
+		<answer>Snake</answer>
+	</spelling>
+	
+			
+		
+	<spelling>
+		<pic>17.png</pic>
+		<answer>Bird</answer>
+	</spelling>	
+			
+		
+	<spelling>
+		<pic>18.png</pic>
+		<answer>Baby</answer>
+	</spelling>		
+	
+	<spelling>
+		<pic>19.png</pic>
+		<answer>Scissor</answer>
+	</spelling>	
+			
+		
+	<spelling>
+		<pic>20.png</pic>
+		<answer>heart</answer>
+	</spelling>	
+			
+		
+	<spelling>
+		<pic>21.png</pic>
+		<answer>Fan</answer>
+	</spelling>		
+	
+	<spelling>
+		<pic>22.png</pic>
+		<answer>Butterfly</answer>
+	</spelling>	
+			
+		
+	<spelling>
+		<pic>23.png</pic>
+		<answer>Orange</answer>
+	</spelling>	
+			
+		
+	<spelling>
+		<pic>24.png</pic>
+		<answer>Ballon</answer>
+	</spelling>		
+	
+	<spelling>
+		<pic>25.png</pic>
+		<answer>Door</answer>
+	</spelling>			
+		
+	<spelling>
+		<pic>26.png</pic>
+		<answer>House</answer>
+	</spelling>		
+	
+	<spelling>
+		<pic>27.png</pic>
+		<answer>Frog</answer>
+	</spelling>
+	
+	<spelling>
+		<pic>28.png</pic>
+		<answer>Carrot</answer>
+	</spelling>		
+	
+</Questions>

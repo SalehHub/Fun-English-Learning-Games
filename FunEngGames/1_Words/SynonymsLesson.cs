@@ -65,7 +65,7 @@ namespace FunEngGames
 
 
 
-            xmlDoc.Load("questions.xml");
+            xmlDoc.Load("synonyms.xml");
             nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/synonyms");
 
             lastPage = nodeList.Count / 9;
@@ -242,7 +242,7 @@ namespace FunEngGames
 
                 if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
                 {
-                    CommonFunctions.GenerateMoreInfo(senderGrid, e, "synonyms");
+                    CommonFunctions.GenerateMoreInfo(senderGrid.Rows[e.RowIndex].Cells[0].Value.ToString(),  "synonyms");
 
                 }
                 else if (e.RowIndex >= 0 && e.ColumnIndex>=0)
