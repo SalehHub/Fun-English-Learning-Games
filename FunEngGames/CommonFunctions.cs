@@ -13,11 +13,6 @@ namespace FunEngGames
     class CommonFunctions
     {
 
-
-
-
-
-
         public string GET2(string url)
         {
             HttpWebRequest req = null;
