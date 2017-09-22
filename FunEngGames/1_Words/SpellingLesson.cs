@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Speech.Synthesis;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -60,8 +61,26 @@ namespace FunEngGames
             Spelling.Show();
         }
 
+        public IEnumerable<Control> GetSelfAndChildrenRecursive(Control parent)
+        {
+            List<Control> controls = new List<Control>();
+
+            foreach (Control child in parent.Controls)
+            {
+                controls.AddRange(GetSelfAndChildrenRecursive(child));
+            }
+
+            controls.Add(parent);
+
+            return controls;
+        }
+
         private void spellingLesson_Load(object sender, EventArgs e)
         {
+            Cursor cur = new Cursor(Properties.Resources.audio.Handle);
+            //pictureBox1.Cursor = cur;
+
+            GetSelfAndChildrenRecursive(this).OfType<PictureBox>().ToList().ForEach(b => b.Cursor = cur);
 
             //XmlDocument xmlDoc = new XmlDocument();
             xmlDoc.Load("spelling.xml");
@@ -70,17 +89,14 @@ namespace FunEngGames
             page++;
             lastPage = nodeList.Count / 9;
 
-
             lblPages.Text = "Page "+page+" out of "+lastPage;
-            //MessageBox.Show(lastPage.ToString());
-
         }
 
         private void spellingLesson_FormClosed(object sender, FormClosedEventArgs e)
         {
             try
             {
-                this.mainLevelsForm.Show();
+                this.wordLevelsForm.Show();
             }
             catch (Exception ex)
             {

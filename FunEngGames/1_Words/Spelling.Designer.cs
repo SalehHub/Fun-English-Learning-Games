@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.components = new System.ComponentModel.Container();
+            this.picWord = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtAnswer = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.lblAnswer = new System.Windows.Forms.Label();
@@ -39,7 +40,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.picAns3 = new System.Windows.Forms.PictureBox();
             this.picAns2 = new System.Windows.Forms.PictureBox();
-            this.picAns1 = new System.Windows.Forms.PictureBox();
+            this.picFeedback = new System.Windows.Forms.PictureBox();
             this.picCheckAnswers = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -52,18 +53,19 @@
             this.label7 = new System.Windows.Forms.Label();
             this.lblPoints = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnCheckAnswer = new System.Windows.Forms.Button();
             this.lblCorrectAns = new System.Windows.Forms.Label();
             this.lblFeedback = new System.Windows.Forms.Label();
             this.picLock = new System.Windows.Forms.PictureBox();
             this.lblFirstHint = new System.Windows.Forms.Label();
             this.lblSecondHint = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.picWord)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAns3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAns2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAns1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFeedback)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCheckAnswers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -71,18 +73,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.picLock)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // picWord
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(250, 233);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(555, 230);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.picWord.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.picWord.BackColor = System.Drawing.Color.Transparent;
+            this.picWord.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picWord.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picWord.Location = new System.Drawing.Point(250, 233);
+            this.picWord.Name = "picWord";
+            this.picWord.Size = new System.Drawing.Size(555, 230);
+            this.picWord.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picWord.TabIndex = 0;
+            this.picWord.TabStop = false;
+            this.picWord.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -90,7 +93,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Location = new System.Drawing.Point(952, 21);
+            this.pictureBox2.Location = new System.Drawing.Point(952, 1);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(78, 80);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -103,7 +106,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 21);
+            this.pictureBox3.Location = new System.Drawing.Point(12, 1);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(78, 80);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -111,23 +114,23 @@
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Visible = false;
             // 
-            // textBox1
+            // txtAnswer
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(250, 469);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(555, 34);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
-            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
+            this.txtAnswer.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtAnswer.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAnswer.Location = new System.Drawing.Point(250, 469);
+            this.txtAnswer.Name = "txtAnswer";
+            this.txtAnswer.Size = new System.Drawing.Size(555, 34);
+            this.txtAnswer.TabIndex = 3;
+            this.txtAnswer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtAnswer.Enter += new System.EventHandler(this.txtAnswer_Enter);
+            this.txtAnswer.Leave += new System.EventHandler(this.txtAnswer_Leave);
             // 
             // textBox2
             // 
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(952, 125);
+            this.textBox2.Location = new System.Drawing.Point(952, 87);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(78, 39);
             this.textBox2.TabIndex = 1;
@@ -137,7 +140,7 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(12, 125);
+            this.textBox3.Location = new System.Drawing.Point(12, 87);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(78, 39);
             this.textBox3.TabIndex = 5;
@@ -149,11 +152,11 @@
             this.lblAnswer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAnswer.AutoSize = true;
             this.lblAnswer.BackColor = System.Drawing.Color.Transparent;
-            this.lblAnswer.Location = new System.Drawing.Point(996, 671);
+            this.lblAnswer.Location = new System.Drawing.Point(855, 598);
             this.lblAnswer.Name = "lblAnswer";
-            this.lblAnswer.Size = new System.Drawing.Size(46, 17);
+            this.lblAnswer.Size = new System.Drawing.Size(148, 17);
             this.lblAnswer.TabIndex = 6;
-            this.lblAnswer.Text = "label1";
+            this.lblAnswer.Text = "correct answer hidden";
             this.lblAnswer.Visible = false;
             // 
             // label2
@@ -183,9 +186,9 @@
             // 
             this.picAns3.BackColor = System.Drawing.Color.Transparent;
             this.picAns3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picAns3.Location = new System.Drawing.Point(18, 489);
+            this.picAns3.Location = new System.Drawing.Point(18, 484);
             this.picAns3.Name = "picAns3";
-            this.picAns3.Size = new System.Drawing.Size(63, 46);
+            this.picAns3.Size = new System.Drawing.Size(63, 51);
             this.picAns3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picAns3.TabIndex = 11;
             this.picAns3.TabStop = false;
@@ -204,18 +207,18 @@
             this.picAns2.TabStop = false;
             this.picAns2.Visible = false;
             // 
-            // picAns1
+            // picFeedback
             // 
-            this.picAns1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.picAns1.BackColor = System.Drawing.Color.Transparent;
-            this.picAns1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picAns1.Location = new System.Drawing.Point(333, 674);
-            this.picAns1.Name = "picAns1";
-            this.picAns1.Size = new System.Drawing.Size(63, 53);
-            this.picAns1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAns1.TabIndex = 9;
-            this.picAns1.TabStop = false;
-            this.picAns1.Visible = false;
+            this.picFeedback.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.picFeedback.BackColor = System.Drawing.Color.Transparent;
+            this.picFeedback.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picFeedback.Location = new System.Drawing.Point(333, 674);
+            this.picFeedback.Name = "picFeedback";
+            this.picFeedback.Size = new System.Drawing.Size(63, 53);
+            this.picFeedback.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picFeedback.TabIndex = 9;
+            this.picFeedback.TabStop = false;
+            this.picFeedback.Visible = false;
             // 
             // picCheckAnswers
             // 
@@ -224,9 +227,9 @@
             this.picCheckAnswers.BackgroundImage = global::FunEngGames.Properties.Resources.checkYourAswer;
             this.picCheckAnswers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picCheckAnswers.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picCheckAnswers.Location = new System.Drawing.Point(17, 587);
+            this.picCheckAnswers.Location = new System.Drawing.Point(18, 541);
             this.picCheckAnswers.Name = "picCheckAnswers";
-            this.picCheckAnswers.Size = new System.Drawing.Size(125, 45);
+            this.picCheckAnswers.Size = new System.Drawing.Size(132, 45);
             this.picCheckAnswers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picCheckAnswers.TabIndex = 12;
             this.picCheckAnswers.TabStop = false;
@@ -380,17 +383,17 @@
             this.pictureBox7.TabIndex = 26;
             this.pictureBox7.TabStop = false;
             // 
-            // button3
+            // btnCheckAnswer
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(398, 674);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(258, 53);
-            this.button3.TabIndex = 28;
-            this.button3.Text = "Check your answer";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnCheckAnswer.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnCheckAnswer.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckAnswer.Location = new System.Drawing.Point(398, 674);
+            this.btnCheckAnswer.Name = "btnCheckAnswer";
+            this.btnCheckAnswer.Size = new System.Drawing.Size(258, 53);
+            this.btnCheckAnswer.TabIndex = 28;
+            this.btnCheckAnswer.Text = "Check your answer";
+            this.btnCheckAnswer.UseVisualStyleBackColor = true;
+            this.btnCheckAnswer.Click += new System.EventHandler(this.btnCheckAnswer_Click);
             // 
             // lblCorrectAns
             // 
@@ -414,9 +417,9 @@
             this.lblFeedback.BackColor = System.Drawing.Color.Transparent;
             this.lblFeedback.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFeedback.ForeColor = System.Drawing.Color.Green;
-            this.lblFeedback.Location = new System.Drawing.Point(253, 634);
+            this.lblFeedback.Location = new System.Drawing.Point(170, 634);
             this.lblFeedback.Name = "lblFeedback";
-            this.lblFeedback.Size = new System.Drawing.Size(549, 29);
+            this.lblFeedback.Size = new System.Drawing.Size(715, 29);
             this.lblFeedback.TabIndex = 30;
             this.lblFeedback.Text = "Good job! Keep up the good work";
             this.lblFeedback.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -468,6 +471,11 @@
             this.lblSecondHint.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblSecondHint.Visible = false;
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 3000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Spelling
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -475,12 +483,10 @@
             this.BackgroundImage = global::FunEngGames.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1054, 734);
-            this.Controls.Add(this.lblSecondHint);
-            this.Controls.Add(this.lblFirstHint);
             this.Controls.Add(this.lblPoints);
             this.Controls.Add(this.lblFeedback);
             this.Controls.Add(this.lblCorrectAns);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnCheckAnswer);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.label6);
@@ -495,16 +501,18 @@
             this.Controls.Add(this.picCheckAnswers);
             this.Controls.Add(this.picAns3);
             this.Controls.Add(this.picAns2);
-            this.Controls.Add(this.picAns1);
+            this.Controls.Add(this.picFeedback);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblAnswer);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtAnswer);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picWord);
+            this.Controls.Add(this.lblFirstHint);
+            this.Controls.Add(this.lblSecondHint);
             this.DoubleBuffered = true;
             this.MinimumSize = new System.Drawing.Size(1072, 747);
             this.Name = "Spelling";
@@ -513,12 +521,12 @@
             this.Text = "Fun English Learning Games: Words - Spelling level";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.spelling_FormClosed);
             this.Load += new System.EventHandler(this.spelling_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picWord)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAns3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAns2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAns1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFeedback)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCheckAnswers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -531,10 +539,10 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picWord;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtAnswer;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label lblAnswer;
@@ -542,7 +550,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox picAns3;
         private System.Windows.Forms.PictureBox picAns2;
-        private System.Windows.Forms.PictureBox picAns1;
+        private System.Windows.Forms.PictureBox picFeedback;
         private System.Windows.Forms.PictureBox picCheckAnswers;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label4;
@@ -555,11 +563,12 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lblPoints;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnCheckAnswer;
         private System.Windows.Forms.Label lblCorrectAns;
         private System.Windows.Forms.Label lblFeedback;
         private System.Windows.Forms.PictureBox picLock;
         private System.Windows.Forms.Label lblFirstHint;
         private System.Windows.Forms.Label lblSecondHint;
+        private System.Windows.Forms.Timer timer1;
     }
 }

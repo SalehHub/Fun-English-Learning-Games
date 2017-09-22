@@ -214,10 +214,9 @@ namespace FunEngGames
                 //hide antonyms column
                 if (a.Trim() == "")
                 {
-
-                    MoreInfo.lblAntTitle.Visible = false;
-                    MoreInfo.lblAntonyms.Visible = false;
-                    MoreInfo.txtAnt.Visible = false;
+                    MoreInfo.lblAntTitle.Visible    = false;
+                    MoreInfo.lblAntonyms.Visible    = false;
+                    MoreInfo.txtAnt.Visible         = false;
                 }
 
                 MoreInfo.Text = "Fun English Learning Games: More information for: " + word.ToString();
@@ -237,7 +236,7 @@ namespace FunEngGames
 
 
 
-        //Pronounce specific word
+        //Pronounce specific word using Oxford api
         public void Pronounce2(string word)
         {
             try
@@ -261,7 +260,7 @@ namespace FunEngGames
         }
 
 
-
+        //Pronounce specific word using SpeechSynthesizer class
         public void Pronounce(string word)
         {
             Random rnd = new Random();

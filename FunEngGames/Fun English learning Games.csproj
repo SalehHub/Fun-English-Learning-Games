@@ -435,6 +435,7 @@
     <Content Include="Images\6.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Images\audio.ico" />
     <Content Include="Spelling.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
