@@ -249,7 +249,7 @@ namespace FunEngGames
             {
                 CommonFunctions.GenerateMoreInfo(senderGrid.Rows[e.RowIndex].Cells[1].Value.ToString(), "antonyms");
             }
-            else if (e.RowIndex >= 0 && e.ColumnIndex >= 0 && e.ColumnIndex==1)
+            else if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
             {
                 CommonFunctions.Pronounce(senderGrid.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString().Trim().ToLower());
 

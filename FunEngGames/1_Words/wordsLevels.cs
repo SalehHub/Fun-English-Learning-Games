@@ -5,7 +5,8 @@ namespace FunEngGames
 {
     public partial class wordsLevel : Form
     {
-        public Form mainLevelsForm;
+        public mainLevels mainLevelsForm;
+        public int spellingPoints = 0;
 
         public wordsLevel()
         {
@@ -31,7 +32,8 @@ namespace FunEngGames
             spelling.Show();
             */
             spellingLesson spellingLesson = new spellingLesson();
-            spellingLesson.mainLevelsForm = this;
+            spellingLesson.wordLevelsForm = this;
+            spellingLesson.mainLevelsForm = this.mainLevelsForm;
             this.Hide();
             spellingLesson.Show();
         }

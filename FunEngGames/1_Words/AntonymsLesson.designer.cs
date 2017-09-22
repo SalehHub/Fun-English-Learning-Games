@@ -60,12 +60,12 @@
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lblPages = new System.Windows.Forms.Label();
-            this.btnPrevious = new System.Windows.Forms.Button();
-            this.btnNext = new System.Windows.Forms.Button();
             this.Word = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Synonym = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.lblPages = new System.Windows.Forms.Label();
+            this.btnPrevious = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -95,7 +95,8 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(1017, 31);
             this.label2.TabIndex = 18;
-            this.label2.Text = "Memorize these words and learn their antonyms";
+            this.label2.Text = "Memorize these words and learn their antonyms, click on any word to hear its pron" +
+    "unciation";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
@@ -497,6 +498,33 @@
             this.dataGridView1.TabIndex = 28;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // Word
+            // 
+            this.Word.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Word.HeaderText = "Word";
+            this.Word.Name = "Word";
+            this.Word.ReadOnly = true;
+            // 
+            // Synonym
+            // 
+            this.Synonym.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Synonym.HeaderText = "Antonym";
+            this.Synonym.Name = "Synonym";
+            this.Synonym.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Column1.HeaderText = "More";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Text = "More";
+            this.Column1.UseColumnTextForButtonValue = true;
+            this.Column1.Width = 87;
+            // 
             // lblPages
             // 
             this.lblPages.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -537,33 +565,6 @@
             this.btnNext.Text = "Next >>";
             this.btnNext.UseVisualStyleBackColor = true;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
-            // 
-            // Word
-            // 
-            this.Word.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Word.HeaderText = "Word";
-            this.Word.Name = "Word";
-            this.Word.ReadOnly = true;
-            // 
-            // Synonym
-            // 
-            this.Synonym.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Synonym.HeaderText = "Antonym";
-            this.Synonym.Name = "Synonym";
-            this.Synonym.ReadOnly = true;
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Column1.HeaderText = "More";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Text = "More";
-            this.Column1.UseColumnTextForButtonValue = true;
-            this.Column1.Width = 87;
             // 
             // AntonymsLesson
             // 

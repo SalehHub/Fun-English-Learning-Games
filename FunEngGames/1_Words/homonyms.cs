@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Speech.Synthesis;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -39,6 +40,10 @@ namespace FunEngGames
             }
         }
 
+
+
+
+
         private void homonyms_Load(object sender, EventArgs e)
         {
             // Ensure WaitOnLoad is false.
@@ -51,7 +56,7 @@ namespace FunEngGames
             {
 
                 XmlDocument xmlDoc = new XmlDocument();
-                xmlDoc.Load("questions.xml");
+                xmlDoc.Load("homonyms.xml");
                 XmlNodeList nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/homonyms");
 
 
@@ -180,6 +185,11 @@ namespace FunEngGames
         private void picCheckAnswers_MouseLeave(object sender, EventArgs e)
         {
             picCheckAnswers.BackgroundImage = Properties.Resources.checkYourAswers;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            //speech(label1.Text);
         }
     }
 }

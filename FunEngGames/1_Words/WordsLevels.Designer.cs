@@ -32,7 +32,7 @@
             this.picHomonyms = new System.Windows.Forms.PictureBox();
             this.picSA = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblSpellingRes = new System.Windows.Forms.Label();
+            this.lblSpellingPoints = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -116,18 +116,18 @@
             this.label2.Text = "Spelling Points";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblSpellingRes
+            // lblSpellingPoints
             // 
-            this.lblSpellingRes.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblSpellingRes.BackColor = System.Drawing.Color.Transparent;
-            this.lblSpellingRes.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSpellingRes.ForeColor = System.Drawing.Color.Black;
-            this.lblSpellingRes.Location = new System.Drawing.Point(37, 8);
-            this.lblSpellingRes.Name = "lblSpellingRes";
-            this.lblSpellingRes.Size = new System.Drawing.Size(171, 37);
-            this.lblSpellingRes.TabIndex = 9;
-            this.lblSpellingRes.Text = "0";
-            this.lblSpellingRes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSpellingPoints.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblSpellingPoints.BackColor = System.Drawing.Color.Transparent;
+            this.lblSpellingPoints.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSpellingPoints.ForeColor = System.Drawing.Color.Black;
+            this.lblSpellingPoints.Location = new System.Drawing.Point(37, 8);
+            this.lblSpellingPoints.Name = "lblSpellingPoints";
+            this.lblSpellingPoints.Size = new System.Drawing.Size(171, 37);
+            this.lblSpellingPoints.TabIndex = 9;
+            this.lblSpellingPoints.Text = "0";
+            this.lblSpellingPoints.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
@@ -163,7 +163,7 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = global::FunEngGames.Properties.Resources.result;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.lblSpellingRes);
+            this.panel1.Controls.Add(this.lblSpellingPoints);
             this.panel1.Location = new System.Drawing.Point(106, 524);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(243, 65);
@@ -308,12 +308,12 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lblSpellingRes;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox2;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Label label6;
+        public System.Windows.Forms.Label lblSpellingPoints;
     }
 }

@@ -5,6 +5,7 @@ using Newtonsoft.Json;
 using System;
 using System.IO;
 using System.Net;
+using System.Speech.Synthesis;
 using System.Text;
 using System.Windows.Forms;
 
@@ -209,6 +210,16 @@ namespace FunEngGames
                 //MessageBox.Show(s+a+w, "More information for: " + word.ToString());
 
                 MoreInfo MoreInfo = new MoreInfo();
+
+                //hide antonyms column
+                if (a.Trim() == "")
+                {
+
+                    MoreInfo.lblAntTitle.Visible = false;
+                    MoreInfo.lblAntonyms.Visible = false;
+                    MoreInfo.txtAnt.Visible = false;
+                }
+
                 MoreInfo.Text = "Fun English Learning Games: More information for: " + word.ToString();
                 MoreInfo.lblWord.Text = word.ToString();
                 MoreInfo.txtSyn.Text = s.Trim(); ;
@@ -227,7 +238,7 @@ namespace FunEngGames
 
 
         //Pronounce specific word
-        public void Pronounce(string word)
+        public void Pronounce2(string word)
         {
             try
             {
@@ -249,6 +260,74 @@ namespace FunEngGames
             }
         }
 
+
+
+        public void Pronounce(string word)
+        {
+            Random rnd = new Random();
+            int rand = rnd.Next(11);
+
+            SpeechSynthesizer synthesizer = new SpeechSynthesizer();
+
+            if (rand == 0)
+            {
+                synthesizer.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Adult); // to change VoiceGender and VoiceAge check out those links below
+            }
+            if (rand == 1)
+            {
+                synthesizer.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Child); // to change VoiceGender and VoiceAge check out those links below
+            }
+            if (rand == 2)
+            {
+                synthesizer.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Senior); // to change VoiceGender and VoiceAge check out those links below
+            }
+            if (rand == 3)
+            {
+                synthesizer.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Teen); // to change VoiceGender and VoiceAge check out those links below
+            }
+            if (rand == 4)
+            {
+                synthesizer.SelectVoiceByHints(VoiceGender.Male, VoiceAge.Adult); // to change VoiceGender and VoiceAge check out those links below
+            }
+            if (rand == 5)
+            {
+                synthesizer.SelectVoiceByHints(VoiceGender.Male, VoiceAge.Child); // to change VoiceGender and VoiceAge check out those links below
+            }
+            if (rand == 6)
+            {
+                synthesizer.SelectVoiceByHints(VoiceGender.Male, VoiceAge.Senior); // to change VoiceGender and VoiceAge check out those links below
+            }
+            if (rand == 7)
+            {
+                synthesizer.SelectVoiceByHints(VoiceGender.Male, VoiceAge.Teen); // to change VoiceGender and VoiceAge check out those links below
+            }
+            if (rand == 8)
+            {
+                synthesizer.SelectVoiceByHints(VoiceGender.Neutral, VoiceAge.Adult); // to change VoiceGender and VoiceAge check out those links below
+            }
+            if (rand == 9)
+            {
+                synthesizer.SelectVoiceByHints(VoiceGender.Neutral, VoiceAge.Child); // to change VoiceGender and VoiceAge check out those links below
+            }
+            if (rand == 10)
+            {
+                synthesizer.SelectVoiceByHints(VoiceGender.Neutral, VoiceAge.Senior); // to change VoiceGender and VoiceAge check out those links below
+            }
+            if (rand == 11)
+            {
+                synthesizer.SelectVoiceByHints(VoiceGender.Neutral, VoiceAge.Teen); // to change VoiceGender and VoiceAge check out those links below
+            }
+
+            synthesizer.Volume = 100;  // 0...100
+            synthesizer.Rate = -2;     // -10...10
+
+            // Synchronous
+            //synthesizer.Speak(word);
+
+            // Asynchronous
+            synthesizer.SpeakAsync(word);
+
+        }
 
 
         public string UppercaseFirst(string s)

@@ -107,7 +107,8 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(1211, 31);
             this.label2.TabIndex = 22;
-            this.label2.Text = "Memorize these words and learn their different definitions";
+            this.label2.Text = "Memorize these words and learn their different definitions, click on any word to " +
+    "hear its pronunciation";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1

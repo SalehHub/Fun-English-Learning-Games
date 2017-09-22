@@ -33,7 +33,7 @@
             this.picPhrases = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblSpellingPoints = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -130,18 +130,18 @@
             this.label2.Text = "Words Points";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label3
+            // lblSpellingPoints
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(37, 8);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(171, 37);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "0";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSpellingPoints.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblSpellingPoints.BackColor = System.Drawing.Color.Transparent;
+            this.lblSpellingPoints.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSpellingPoints.ForeColor = System.Drawing.Color.Black;
+            this.lblSpellingPoints.Location = new System.Drawing.Point(37, 8);
+            this.lblSpellingPoints.Name = "lblSpellingPoints";
+            this.lblSpellingPoints.Size = new System.Drawing.Size(171, 37);
+            this.lblSpellingPoints.TabIndex = 9;
+            this.lblSpellingPoints.Text = "0";
+            this.lblSpellingPoints.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
@@ -177,7 +177,7 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = global::FunEngGames.Properties.Resources.result;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.lblSpellingPoints);
             this.panel1.Location = new System.Drawing.Point(103, 543);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(243, 65);
@@ -299,6 +299,7 @@
             this.Text = "Fun English Learning Games: Main Levels";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.mainLevels_FormClosed);
             this.Load += new System.EventHandler(this.mainLevels_Load);
+            this.Shown += new System.EventHandler(this.mainLevels_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.picWords)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSentences)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPhrases)).EndInit();
@@ -319,16 +320,16 @@
         private System.Windows.Forms.PictureBox picPhrases;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbltitle;
+        public System.Windows.Forms.Label lblSpellingPoints;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Label label6;
     }
 }

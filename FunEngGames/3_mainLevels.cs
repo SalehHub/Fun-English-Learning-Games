@@ -10,6 +10,10 @@ namespace FunEngGames
             InitializeComponent();
         }
 
+
+        public int spellingPoints = 0;
+
+
         private void picWords_MouseHover(object sender, EventArgs e)
         {
             picWords.BackgroundImage = Properties.Resources.wordsTitleHover;
@@ -62,6 +66,8 @@ namespace FunEngGames
         private void mainLevels_Load(object sender, EventArgs e)
         {
             //pictureBox1.ImageLocation = "Images\\circle.gif";
+            lblSpellingPoints.Text = this.spellingPoints.ToString();
+
         }
 
         private void picPhrases_Click(object sender, EventArgs e)
@@ -78,6 +84,11 @@ namespace FunEngGames
             sentenceLevels.mainLevelsForm = this;
             this.Hide();
             sentenceLevels.Show();
+        }
+
+        private void mainLevels_Shown(object sender, EventArgs e)
+        {
+            lblSpellingPoints.Text = this.spellingPoints.ToString();
         }
     }
 }

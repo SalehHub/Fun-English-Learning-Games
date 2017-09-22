@@ -22,7 +22,8 @@ namespace FunEngGames
 
         public Random a = new Random();
         public List<int> randomList = new List<int>();
-        public wordsLevel mainLevelsForm;
+        public wordsLevel wordLevelsForm;
+        public mainLevels mainLevelsForm;
 
         public XmlDocument xmlDoc = new XmlDocument();
         public XmlNodeList nodeList;
@@ -53,6 +54,7 @@ namespace FunEngGames
         private void button1_Click(object sender, EventArgs e)
         {
             Spelling Spelling = new Spelling();
+            Spelling.wordLevelsForm = this.wordLevelsForm;
             Spelling.mainLevelsForm = this.mainLevelsForm;
             this.Hide();
             Spelling.Show();

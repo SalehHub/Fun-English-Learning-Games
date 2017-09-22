@@ -17,7 +17,9 @@ namespace FunEngGames
         }
 
 
-        public wordsLevel mainLevelsForm;
+        public wordsLevel wordLevelsForm;
+        public mainLevels mainLevelsForm;
+
         public string pic1 = "", ans1 = "";
         public string pic2 = "", ans2 = "";
         public string pic3 = "", ans3 = "";
@@ -26,6 +28,7 @@ namespace FunEngGames
         public int attempts = 3;
         public int points = 0;
 
+        CommonFunctions CommonFunctions = new CommonFunctions();
 
         public Random a = new Random();
         public List<int> randomList = new List<int>();
@@ -105,7 +108,7 @@ namespace FunEngGames
                 ans1 = nodeList[random].SelectSingleNode("answer").InnerText;
 
                 pictureBox1.Image = Image.FromFile(@"Images\" + pic1);
-                label1.Text = ans1;
+                lblAnswer.Text = ans1;
 
 
                 NewNumber(nodeList.Count);
@@ -135,7 +138,7 @@ namespace FunEngGames
         private void picCheckAnswers_Click(object sender, EventArgs e)
         {
             lblAttempts.Text = (int.Parse(lblAttempts.Text)-1).ToString();
-            if (textBox1.Text.Trim().ToLower() == label1.Text.Trim().ToLower())
+            if (textBox1.Text.Trim().ToLower() == lblAnswer.Text.Trim().ToLower())
             {
                 picAns1.BackgroundImage = Properties.Resources.check;
                 picAns1.Left = pictureBox1.Left;
@@ -197,7 +200,11 @@ namespace FunEngGames
                     spelling_Load(sender, e);
                     randomList.Clear();
                     question = 1;
+
+                    points = 0;
                     lblPoints.Text = "0";
+
+                    hints = 0;
 
                     lblAttempts.Text = "3";
                     attempts = 3;
@@ -219,13 +226,25 @@ namespace FunEngGames
                     S_A.Show();
                     */
                     SynonymsLesson SynonymsLesson = new SynonymsLesson();
-                    SynonymsLesson.mainLevelsForm = mainLevelsForm;
+                    SynonymsLesson.mainLevelsForm = wordLevelsForm;
                     this.Hide();
                     SynonymsLesson.Show();
                 }
                 else if (button3.Text == "Next Question")
                 {
                     button3.Text = "Check your answer";
+
+
+                    //reset hints buttons
+                    lblFirstHint.Visible = false;
+                    btnFirstHint.Visible = true;
+                    picLock.Visible = true;
+                    btnSecondHint.Enabled = false;
+                    lblSecondHint.Visible = false;
+                    btnSecondHint.Visible = true;
+                    hints = 2;
+
+
 
                     // question++;
 
@@ -235,12 +254,12 @@ namespace FunEngGames
                     if (question == 2)
                     {
                         pictureBox1.Image = Image.FromFile(@"Images\" + pic2);
-                        label1.Text = ans2;
+                        lblAnswer.Text = ans2;
                     }
                     else if (question == 3)
                     {
                         pictureBox1.Image = Image.FromFile(@"Images\" + pic3);
-                        label1.Text = ans3;
+                        lblAnswer.Text = ans3;
                     }
                     picAns1.Visible = false;
 
@@ -262,7 +281,7 @@ namespace FunEngGames
 
                     picAns1.Visible = true;
 
-  /*correct*/       if (textBox1.Text.Trim().ToLower() == label1.Text.Trim().ToLower())
+  /*correct*/       if (textBox1.Text.Trim().ToLower() == lblAnswer.Text.Trim().ToLower())
                     {
                         question++;
 
@@ -273,10 +292,13 @@ namespace FunEngGames
 
                         points += hints + attempts;
 /*calculate points*/    lblPoints.Text = points.ToString();//(int.Parse(lblPoints.Text) + 3).ToString();
+                        SavePoints();
+
 
                         if (question == 4)
                         {
                             lblFeedback.Text = "Great job! Keep up the good work in the next level"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Green;
+                            
                             button3.Text = "Go to the next level >";
                         }
 
@@ -293,7 +315,7 @@ namespace FunEngGames
                             question++;
                             lblCorrectAns.Visible = true;
                             picAns1.Visible = false;
-                            lblCorrectAns.Text = "The correct answer is " + label1.Text;
+                            lblCorrectAns.Text = "The correct answer is " + lblAnswer.Text;
 
                             lblFeedback.Text = "Sorry this is not a correct answer try again in the next question.";
                             lblFeedback.Visible = true;
@@ -329,6 +351,24 @@ namespace FunEngGames
             picCheckAnswers.BackgroundImage = Properties.Resources.checkYourAswer_hover;
         }
 
+        private void btnFirstHint_Click(object sender, EventArgs e)
+        {
+            lblFirstHint.Text = "First hint:" + "The number of letters in this word = " + lblAnswer.Text.Length;
+            lblFirstHint.Visible = true;
+            btnFirstHint.Visible = false;
+            picLock.Visible = false;
+            btnSecondHint.Enabled = true;
+            hints--;
+        }
+
+        private void btnSecondHint_Click(object sender, EventArgs e)
+        {
+            lblSecondHint.Text="Second hint: The word start with "+ CommonFunctions.UppercaseFirst(lblAnswer.Text.Substring(0, 1))+" and ends with "+ CommonFunctions.UppercaseFirst(lblAnswer.Text.Substring(lblAnswer.Text.Length - 1, 1));
+            lblSecondHint.Visible = true;
+            btnSecondHint.Visible = false;
+            hints--;
+        }
+
         private void picCheckAnswers_MouseLeave(object sender, EventArgs e)
         {
             picCheckAnswers.BackgroundImage = Properties.Resources.checkYourAswer;
@@ -338,11 +378,22 @@ namespace FunEngGames
         {
             try
             {
-                this.mainLevelsForm.Show();
+                this.wordLevelsForm.Show();
+
             }catch(Exception ex)
             {
                 
             }
+        }
+
+
+        public void SavePoints()
+        {
+            this.mainLevelsForm.spellingPoints = points;
+            this.wordLevelsForm.spellingPoints = points;
+
+            this.wordLevelsForm.lblSpellingPoints.Text = points.ToString();
+            this.mainLevelsForm.lblSpellingPoints.Text = points.ToString();
         }
 
     }

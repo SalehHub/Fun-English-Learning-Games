@@ -95,7 +95,8 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(1039, 31);
             this.label2.TabIndex = 18;
-            this.label2.Text = "Memorize these words and learn their synonyms";
+            this.label2.Text = "Memorize these words and learn their synonyms, click on any word to hear its pron" +
+    "unciation";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
