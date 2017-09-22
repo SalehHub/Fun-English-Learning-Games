@@ -40,7 +40,7 @@ namespace FunEngGames
         private void IdiomsLesson_Load(object sender, EventArgs e)
         {
             XmlDocument xmlDoc = new XmlDocument();
-            xmlDoc.Load("questions.xml");
+            xmlDoc.Load("XML/questions.xml");
             XmlNodeList nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/idioms");
 
             GenIdiom(label1,label2, nodeList);

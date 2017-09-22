@@ -74,7 +74,7 @@ namespace FunEngGames
             pictureBox5.LoadAsync(@"https://media.giphy.com/media/Bn6djQ6MgEWZi/giphy.gif");
 
 
-            xmlDoc.Load("synonyms.xml");
+            xmlDoc.Load("XML/synonyms.xml");
             this.GenerateSynonyms();
         }
 

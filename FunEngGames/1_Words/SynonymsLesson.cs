@@ -65,7 +65,7 @@ namespace FunEngGames
 
 
 
-            xmlDoc.Load("synonyms.xml");
+            xmlDoc.Load("XML/synonyms.xml");
             nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/synonyms");
 
             lastPage = nodeList.Count / 9;

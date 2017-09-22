@@ -22,6 +22,8 @@ namespace FunEngGames
         public Random a = new Random();
         public List<int> randomList = new List<int>();
         public phrasesLevel mainLevelsForm;
+        XmlDocument xmlDoc = new XmlDocument();
+        XmlNodeList nodeList;
 
         int MyNumber = 0;
         private void NewNumber(int max)
@@ -39,13 +41,12 @@ namespace FunEngGames
 
         private void POSLesson_Load(object sender, EventArgs e)
         {
-            XmlDocument xmlDoc = new XmlDocument();
-            xmlDoc.Load("questions.xml");
-            XmlNodeList nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/partOfSpeech");
+            xmlDoc.Load("XML/questions.xml");
+            nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/partOfSpeech");
 
-            GenPOS(textBox1, textBox2, textBox3, nodeList);
-            GenPOS(textBox4, textBox5, textBox6, nodeList);
-            GenPOS(textBox7, textBox8, textBox9, nodeList);
+            GenPOS(textBox1,  textBox2,  textBox3,  nodeList);
+            GenPOS(textBox4,  textBox5,  textBox6,  nodeList);
+            GenPOS(textBox7,  textBox8,  textBox9,  nodeList);
             GenPOS(textBox10, textBox11, textBox12, nodeList);
             GenPOS(textBox13, textBox14, textBox15, nodeList);
             GenPOS(textBox16, textBox17, textBox18, nodeList);

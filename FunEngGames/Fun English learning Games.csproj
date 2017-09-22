@@ -86,10 +86,10 @@
       <DependentUpon>AntonymsLesson.cs</DependentUpon>
     </Compile>
     <Compile Include="CommonFunctions.cs" />
-    <Compile Include="MoreInfo.cs">
+    <Compile Include="1_Words\MoreInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MoreInfo.Designer.cs">
+    <Compile Include="1_Words\MoreInfo.Designer.cs">
       <DependentUpon>MoreInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="testForm.cs">
@@ -152,23 +152,23 @@
     <Compile Include="3_Sentences\Paragraph coherence.designer.cs">
       <DependentUpon>Paragraph coherence.cs</DependentUpon>
     </Compile>
-    <Compile Include="2_Phrases\phrasesLevel.cs">
+    <Compile Include="2_Phrases\PhrasesLevels.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="2_Phrases\phrasesLevel.Designer.cs">
-      <DependentUpon>phrasesLevel.cs</DependentUpon>
+    <Compile Include="2_Phrases\PhrasesLevels.Designer.cs">
+      <DependentUpon>PhrasesLevels.cs</DependentUpon>
     </Compile>
-    <Compile Include="2_Phrases\POS.cs">
+    <Compile Include="2_Phrases\PartOfSpeech.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="2_Phrases\POS.Designer.cs">
-      <DependentUpon>POS.cs</DependentUpon>
+    <Compile Include="2_Phrases\PartOfSpeech.Designer.cs">
+      <DependentUpon>PartOfSpeech.cs</DependentUpon>
     </Compile>
-    <Compile Include="2_Phrases\POSLesson.cs">
+    <Compile Include="2_Phrases\PartOfSpeechLesson.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="2_Phrases\POSLesson.Designer.cs">
-      <DependentUpon>POSLesson.cs</DependentUpon>
+    <Compile Include="2_Phrases\PartOfSpeechLesson.Designer.cs">
+      <DependentUpon>PartOfSpeechLesson.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -227,7 +227,7 @@
     <EmbeddedResource Include="1_Words\AntonymsLesson.resx">
       <DependentUpon>AntonymsLesson.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MoreInfo.resx">
+    <EmbeddedResource Include="1_Words\MoreInfo.resx">
       <DependentUpon>MoreInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="testForm.resx">
@@ -260,14 +260,14 @@
     <EmbeddedResource Include="3_Sentences\Paragraph coherence.resx">
       <DependentUpon>Paragraph coherence.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="2_Phrases\phrasesLevel.resx">
-      <DependentUpon>phrasesLevel.cs</DependentUpon>
+    <EmbeddedResource Include="2_Phrases\PhrasesLevels.resx">
+      <DependentUpon>PhrasesLevels.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="2_Phrases\POS.resx">
-      <DependentUpon>POS.cs</DependentUpon>
+    <EmbeddedResource Include="2_Phrases\PartOfSpeech.resx">
+      <DependentUpon>PartOfSpeech.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="2_Phrases\POSLesson.resx">
-      <DependentUpon>POSLesson.cs</DependentUpon>
+    <EmbeddedResource Include="2_Phrases\PartOfSpeechLesson.resx">
+      <DependentUpon>PartOfSpeechLesson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -354,10 +354,10 @@
     <None Include="Resources\Screen Shot 2017-09-02 at 12.23.10 AM.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Antonyms.xml">
+    <Content Include="XML\Antonyms.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Homonyms.xml">
+    <Content Include="XML\Homonyms.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\1.png">
@@ -436,10 +436,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Images\audio.ico" />
-    <Content Include="Spelling.xml">
+    <Content Include="XML\Spelling.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Synonyms.xml">
+    <Content Include="XML\Synonyms.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\sl7.png" />
@@ -514,7 +514,7 @@
     <Content Include="Images\circle.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="questions.xml">
+    <Content Include="XML\questions.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

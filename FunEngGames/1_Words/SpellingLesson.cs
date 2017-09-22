@@ -77,19 +77,26 @@ namespace FunEngGames
 
         private void spellingLesson_Load(object sender, EventArgs e)
         {
-            Cursor cur = new Cursor(Properties.Resources.audio.Handle);
-            //pictureBox1.Cursor = cur;
+            try
+            {
+                Cursor cur = new Cursor(Properties.Resources.audio.Handle);
+                //pictureBox1.Cursor = cur;
 
-            GetSelfAndChildrenRecursive(this).OfType<PictureBox>().ToList().ForEach(b => b.Cursor = cur);
+                GetSelfAndChildrenRecursive(this).OfType<PictureBox>().ToList().ForEach(b => b.Cursor = cur);
 
-            //XmlDocument xmlDoc = new XmlDocument();
-            xmlDoc.Load("spelling.xml");
-            nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/spelling");
-            GenerateWords(0);
-            page++;
-            lastPage = nodeList.Count / 9;
+                //XmlDocument xmlDoc = new XmlDocument();
+                xmlDoc.Load("XML/spelling.xml");
+                nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/spelling");
+                GenerateWords(0);
+                page++;
+                lastPage = nodeList.Count / 9;
 
-            lblPages.Text = "Page "+page+" out of "+lastPage;
+                lblPages.Text = "Page " + page + " out of " + lastPage;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void spellingLesson_FormClosed(object sender, FormClosedEventArgs e)

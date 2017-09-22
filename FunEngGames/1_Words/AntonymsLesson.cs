@@ -63,7 +63,7 @@ namespace FunEngGames
 
         private void SynonymsLesson_Load(object sender, EventArgs e)
         {
-            xmlDoc.Load("antonyms.xml");
+            xmlDoc.Load("XML/antonyms.xml");
             nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/antonyms");
 
             lastPage = nodeList.Count / 9;

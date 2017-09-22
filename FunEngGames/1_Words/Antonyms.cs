@@ -67,7 +67,7 @@ namespace FunEngGames
             // Load the image asynchronously.
             pictureBox5.LoadAsync(@"https://media.giphy.com/media/Bn6djQ6MgEWZi/giphy.gif");
 
-            xmlDoc.Load("antonyms.xml");
+            xmlDoc.Load("XML/antonyms.xml");
             //this.Synonyms();
             this.GenAntonyms();
         }

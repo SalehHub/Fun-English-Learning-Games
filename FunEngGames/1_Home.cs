@@ -66,10 +66,16 @@ namespace FunEngGames
 
         private void Home_Load(object sender, EventArgs e)
         {
-            SpeechSynthesizer synthesizer = new SpeechSynthesizer();
-            synthesizer.Volume = 1;  // 0...100
-            synthesizer.Rate = -2;     // -10...10
-            synthesizer.Speak("test word");
+            try
+            {
+                SpeechSynthesizer synthesizer = new SpeechSynthesizer();
+                synthesizer.Volume = 1;  // 0...100
+                synthesizer.Rate = -2;     // -10...10
+                synthesizer.Speak("test word");
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
