@@ -13,7 +13,8 @@ namespace FunEngGames
 {
     class CommonFunctions
     {
-
+        
+        //Get json from Oxford api
         public string GET2(string url)
         {
             HttpWebRequest req = null;
@@ -39,7 +40,7 @@ namespace FunEngGames
 
 
 
-
+        //Paly online mp3 file
         public static void PlayMp3FromUrl(string url)
         {
             using (Stream ms = new MemoryStream())
@@ -77,7 +78,7 @@ namespace FunEngGames
 
 
 
-
+        //Get url content 
         public string GET(string url)
         {
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
@@ -106,7 +107,7 @@ namespace FunEngGames
 
 
 
-
+        //Genterate synonyms, antonyms and defintions with example to a give word using Oxford api
         public void GenerateMoreInfo(string word, string category)
         {
             try
@@ -334,7 +335,7 @@ namespace FunEngGames
             }
 }
 
-
+        //Change the first letter of a word or a sentense to uppercase
         public string UppercaseFirst(string s)
         {
             // Check for empty string.
