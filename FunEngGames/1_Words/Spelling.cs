@@ -387,6 +387,9 @@ namespace FunEngGames
             picCheckAnswers.BackgroundImage = Properties.Resources.checkYourAswer_hover;
         }
 
+
+
+        //First hint function
         private void btnFirstHint_Click(object sender, EventArgs e)
         {
             lblFirstHint.Text = "First hint:" + "The number of letters in this word = " + lblAnswer.Text.Length;
@@ -397,6 +400,8 @@ namespace FunEngGames
             hints--;
         }
 
+
+        //Second hint function
         private void btnSecondHint_Click(object sender, EventArgs e)
         {
             lblSecondHint.Text="Second hint: The word start with "+ CommonFunctions.UppercaseFirst(lblAnswer.Text.Substring(0, 1))+" and ends with "+ CommonFunctions.UppercaseFirst(lblAnswer.Text.Substring(lblAnswer.Text.Length - 1, 1));
