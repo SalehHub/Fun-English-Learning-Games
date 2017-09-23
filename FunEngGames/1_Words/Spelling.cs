@@ -57,13 +57,16 @@ namespace FunEngGames
                 }
         }
 
+
+
         public void AddText()
         {
             if (String.IsNullOrWhiteSpace(txtAnswer.Text)) { 
                 txtAnswer.Text = "Type your answer here...";
             }
-
         }
+
+
 
         private void spelling_Load(object sender, EventArgs e)
         {

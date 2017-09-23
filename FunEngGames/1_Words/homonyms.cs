@@ -56,7 +56,7 @@ namespace FunEngGames
             {
 
                 XmlDocument xmlDoc = new XmlDocument();
-                xmlDoc.Load("homonyms.xml");
+                xmlDoc.Load("XML/homonyms.xml");
                 XmlNodeList nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/homonyms");
 
 

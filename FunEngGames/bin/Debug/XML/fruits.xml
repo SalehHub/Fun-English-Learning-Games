@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<Questions>
+
+	<!--Spellings questions-->
+
+	<spelling>
+		<pic>1.png</pic>
+		<answer>Aireeeplane</answer>
+		<hint1></hint1>
+		<hint2></hint2>
+	</spelling>
+	
+	<spelling>
+		<pic>2.png</pic>
+		<answer>Caeer</answer>
+	</spelling>
+	
+	<spelling>
+		<pic>3.png</pic>
+		<answer>Trrrrain</answer>
+	</spelling>	
+	
+	<spelling>
+		<pic>4.png</pic>
+		<answer>Clrroud</answer>
+	</spelling>
+		
+	<spelling>
+		<pic>5.png</pic>
+		<answer>Trrable</answer>
+	</spelling>
+
+	
+	
+	
+	
+</Questions>

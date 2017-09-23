@@ -97,7 +97,6 @@
     "ep, Ronish Panjwani, Tony Ouyang \r\nCS6340 Advanced Software Engineering \r\nSt. Ma" +
     "ry\'s University\r\nFall 2017";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // button1
             // 
@@ -108,7 +107,6 @@
             this.button1.Text = "hidden:just for test";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Visible = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Home
             // 
