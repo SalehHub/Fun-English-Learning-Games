@@ -79,19 +79,32 @@ namespace FunEngGames
         {
             try
             {
+                xmlDoc.Load("XML/spelling.xml");
+                /*
+                //Change the cursor for each picture to an audio icon
                 Cursor cur = new Cursor(Properties.Resources.audio.Handle);
-                //pictureBox1.Cursor = cur;
-
                 GetSelfAndChildrenRecursive(this).OfType<PictureBox>().ToList().ForEach(b => b.Cursor = cur);
 
-                //XmlDocument xmlDoc = new XmlDocument();
-                xmlDoc.Load("XML/spelling.xml");
+                //load XML file
+                
                 nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/spelling");
-                GenerateWords(0);
-                page++;
-                lastPage = nodeList.Count / 9;
 
+                GenerateWords(0);
+
+                page++;
+                lastPage = nodeList.Count / 6;
+                if (lastPage == 0) { lastPage = 1; }
                 lblPages.Text = "Page " + page + " out of " + lastPage;
+
+                if (lastPage > 1)
+                {
+                    btnNext.Enabled = true;
+                }else
+                {
+                    btnNext.Enabled = false;
+                }
+                */
+                loadCategory("animals");
             }
             catch (Exception ex)
             {
@@ -112,11 +125,19 @@ namespace FunEngGames
         }
 
 
-        public void GenerateWord(PictureBox p, TextBox t,int next)
+        public void GenerateWord(PictureBox p, TextBox t, int next)
         {
-            p.Image = Image.FromFile(@"Images\" + nodeList[next].SelectSingleNode("pic").InnerText);
-            t.Text = CommonFunctions.UppercaseFirst(nodeList[next].SelectSingleNode("answer").InnerText);
-            p.Tag = nodeList[next].SelectSingleNode("answer").InnerText;
+            if (nodeList[next] != null)
+            {
+                p.Image = Image.FromFile(@"Images\" + nodeList[next].SelectSingleNode("answer").InnerText.Trim()+".png");
+                t.Text = CommonFunctions.UppercaseFirst(nodeList[next].SelectSingleNode("answer").InnerText);
+                p.Tag = nodeList[next].SelectSingleNode("answer").InnerText; // for pronounce
+            }
+            else
+            {
+                p.Image = null;
+                t.Text = "";
+            }
         }
 
         public void GenerateWords(int next)
@@ -133,12 +154,14 @@ namespace FunEngGames
             next++;
             GenerateWord(pictureBox5, textBox6, next);
             next++;
+            /*
             GenerateWord(pictureBox6, textBox7, next);
             next++;
             GenerateWord(pictureBox7, textBox8, next);
             next++;
             GenerateWord(pictureBox8, textBox9, next);
             next++;
+            */
     }
 
         private void label2_Click(object sender, EventArgs e)
@@ -149,7 +172,7 @@ namespace FunEngGames
         private void btnNext_Click(object sender, EventArgs e)
         {
             page++;
-            nextNode += 9;
+            nextNode += 6;
             GenerateWords(nextNode);
             
             if (page == lastPage) {
@@ -168,7 +191,7 @@ namespace FunEngGames
         private void btnPrevious_Click(object sender, EventArgs e)
         {
             page--;
-            nextNode -= 9;
+            nextNode -= 6;
             GenerateWords(nextNode);
 
             if (page < lastPage)
@@ -190,6 +213,54 @@ namespace FunEngGames
             var pic = (PictureBox)sender;
             CommonFunctions.Pronounce(pic.Tag.ToString());
 
+        }
+
+
+
+        public void loadCategory(string XMLTag)
+        {
+            try
+            {
+                //load XML file
+                // xmlDoc.Load("XML/"+XMLName+".xml");
+                nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + XMLTag + "/spelling");
+                page = 0;
+                nextNode = 0;
+                btnPrevious.Enabled = false;
+
+                GenerateWords(0);
+                page++;
+                lastPage = nodeList.Count / 6;
+                if (lastPage == 0) { lastPage = 1; }
+                lblPages.Text = "Page " + page + " out of " + lastPage;
+
+                if (lastPage > 1)
+                {
+                    btnNext.Enabled = true;
+                }
+                else
+                {
+                    btnNext.Enabled = false;
+                }
+
+                //Change the cursor for each picture to an audio icon
+                Cursor cur = new Cursor(Properties.Resources.audio.Handle);
+                GetSelfAndChildrenRecursive(this).OfType<PictureBox>().ToList().ForEach(b => b.Cursor = cur);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void radioButton2_Click(object sender, EventArgs e)
+        {
+            var RB = (RadioButton)sender;
+            if (RB.Checked == true)
+            {
+                CommonFunctions.Pronounce(RB.Text.ToLower().Trim());
+                loadCategory(RB.Text.ToLower().Trim().Replace(" ", ""));
+            }
         }
     }
 }

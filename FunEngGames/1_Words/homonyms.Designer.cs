@@ -101,7 +101,6 @@
             // 
             this.picCheckAnswers.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.picCheckAnswers.BackColor = System.Drawing.Color.Transparent;
-            this.picCheckAnswers.BackgroundImage = global::FunEngGames.Properties.Resources.checkYourAswers;
             this.picCheckAnswers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picCheckAnswers.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picCheckAnswers.Location = new System.Drawing.Point(450, 604);
@@ -117,7 +116,6 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::FunEngGames.Properties.Resources.def1;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Location = new System.Drawing.Point(73, 237);
@@ -131,7 +129,6 @@
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = global::FunEngGames.Properties.Resources.def2;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Location = new System.Drawing.Point(823, 237);
@@ -349,7 +346,6 @@
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = global::FunEngGames.Properties.Resources.answers;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Location = new System.Drawing.Point(439, 253);
@@ -444,7 +440,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::FunEngGames.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1216, 704);
             this.Controls.Add(this.lblPoints);

@@ -160,31 +160,33 @@ namespace FunEngGames
 
                 XmlDocument xmlDoc = new XmlDocument();
                 xmlDoc.Load("XML/spelling.xml");
-                XmlNodeList nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/spelling");
+                XmlNodeList nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/"+ "furniture" + "/spelling");
 
                 NewNumber(nodeList.Count);
                 int random = randomList.Last();
 
-                pic1 = nodeList[random].SelectSingleNode("pic").InnerText;
+                pic1 = nodeList[random].SelectSingleNode("answer").InnerText.Trim()+".png";
                 ans1 = nodeList[random].SelectSingleNode("answer").InnerText;
 
                 picWord.Image = Image.FromFile(@"Images\" + pic1);
                 lblAnswer.Text = ans1;
 
+                 nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "animals" + "/spelling");
 
                 NewNumber(nodeList.Count);
                 random = randomList.Last();
 
-                pic2 = nodeList[random].SelectSingleNode("pic").InnerText;
+                pic2 = nodeList[random].SelectSingleNode("answer").InnerText.Trim() + ".png";
                 ans2 = nodeList[random].SelectSingleNode("answer").InnerText;
                 //pictureBox2.Image = Image.FromFile(@"Images\" + pic);
                 label2.Text = ans2;
 
+                nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "fruits" + "/spelling");
 
                 NewNumber(nodeList.Count);
                 random = randomList.Last();
 
-                pic3 = nodeList[random].SelectSingleNode("pic").InnerText;
+                pic3 = nodeList[random].SelectSingleNode("answer").InnerText.Trim() + ".png";
                 ans3 = nodeList[random].SelectSingleNode("answer").InnerText;
                 //pictureBox3.Image = Image.FromFile(@"Images\" + pic);
                 label3.Text = ans3;
