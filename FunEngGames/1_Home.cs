@@ -1,18 +1,5 @@
-﻿using NAudio.Wave;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Net;
+﻿using System;
 using System.Speech.Synthesis;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FunEngGames
@@ -71,10 +58,10 @@ namespace FunEngGames
                 SpeechSynthesizer synthesizer = new SpeechSynthesizer();
                 synthesizer.Volume = 1;  // 0...100
                 synthesizer.Rate = -2;     // -10...10
-                synthesizer.Speak("test word");
+                synthesizer.SpeakAsync("test word");
             }catch(Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                //MessageBox.Show(ex.Message);
             }
         }
     }

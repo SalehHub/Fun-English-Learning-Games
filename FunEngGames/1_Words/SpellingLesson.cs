@@ -80,30 +80,6 @@ namespace FunEngGames
             try
             {
                 xmlDoc.Load("XML/spelling.xml");
-                /*
-                //Change the cursor for each picture to an audio icon
-                Cursor cur = new Cursor(Properties.Resources.audio.Handle);
-                GetSelfAndChildrenRecursive(this).OfType<PictureBox>().ToList().ForEach(b => b.Cursor = cur);
-
-                //load XML file
-                
-                nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/spelling");
-
-                GenerateWords(0);
-
-                page++;
-                lastPage = nodeList.Count / 6;
-                if (lastPage == 0) { lastPage = 1; }
-                lblPages.Text = "Page " + page + " out of " + lastPage;
-
-                if (lastPage > 1)
-                {
-                    btnNext.Enabled = true;
-                }else
-                {
-                    btnNext.Enabled = false;
-                }
-                */
                 loadCategory("animals");
             }
             catch (Exception ex)
@@ -127,7 +103,7 @@ namespace FunEngGames
 
         public void GenerateWord(PictureBox p, TextBox t, int next)
         {
-            if (nodeList[next] != null)
+            if (nodeList[next] != null && nodeList[next].SelectSingleNode("answer").InnerText.Trim() != "")
             {
                 p.Image = Image.FromFile(@"Images\" + nodeList[next].SelectSingleNode("answer").InnerText.Trim()+".png");
                 t.Text = CommonFunctions.UppercaseFirst(nodeList[next].SelectSingleNode("answer").InnerText);
@@ -164,11 +140,6 @@ namespace FunEngGames
             */
     }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnNext_Click(object sender, EventArgs e)
         {
             page++;
@@ -176,16 +147,12 @@ namespace FunEngGames
             GenerateWords(nextNode);
             
             if (page == lastPage) {
-
                 btnNext.Enabled = false;
-
             }
 
             btnPrevious.Enabled = true;
 
             lblPages.Text = "Page " + page + " out of " + lastPage;
-
-
         }
 
         private void btnPrevious_Click(object sender, EventArgs e)
@@ -208,11 +175,12 @@ namespace FunEngGames
             lblPages.Text = "Page " + page + " out of " + lastPage;
         }
 
+
+
         private void picAns1_Click(object sender, EventArgs e)
         {
             var pic = (PictureBox)sender;
             CommonFunctions.Pronounce(pic.Tag.ToString());
-
         }
 
 
@@ -253,7 +221,7 @@ namespace FunEngGames
             }
         }
 
-        private void radioButton2_Click(object sender, EventArgs e)
+        private void ChangeCategory_Click(object sender, EventArgs e)
         {
             var RB = (RadioButton)sender;
             if (RB.Checked == true)
@@ -262,5 +230,6 @@ namespace FunEngGames
                 loadCategory(RB.Text.ToLower().Trim().Replace(" ", ""));
             }
         }
+
     }
 }

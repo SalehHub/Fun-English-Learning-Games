@@ -186,13 +186,51 @@
 </nature>
 
 
+
+<shapes>
+
+	<spelling>
+		<answer>Square</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Triangle</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>circle</answer>
+	</spelling>	
+	
+	<spelling>
+		<answer>rectangle</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>oval</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>diamond</answer>
+	</spelling>
+	
+</shapes>
+
+
+
 <colors>
+
+	<spelling>
+		<answer></answer>
+	</spelling>	
 
 </colors>		
 		
 
 <professions>
 
+	<spelling>
+		<answer></answer>
+	</spelling>	
 
 </professions>		
 		
