@@ -71,11 +71,12 @@
 	<spelling>
 		<answer>Cat</answer>
 	</spelling>
-		<spelling>
+	
+	<spelling>
 		<answer>Bird</answer>
 	</spelling>	
 	
-		<spelling>
+	<spelling>
 		<answer>Snake</answer>
 	</spelling>
 	
@@ -125,12 +126,7 @@
 		
 	<spelling>
 		<answer></answer>
-	</spelling>
-		
-	<spelling>
-		<answer></answer>
-	</spelling>
-	
+	</spelling>	
 </animals>
 	
 <transportation>
@@ -489,7 +485,63 @@
 	</spelling>
 	
 </professions>		
+
+
+Football for example
+<sports>
+
+	<spelling>
+		<answer></answer>
+	</spelling>	
+	
+	<spelling>
+		<answer></answer>
+	</spelling>
 		
+	<spelling>
+		<answer></answer>
+	</spelling>
+		
+	<spelling>
+		<answer></answer>
+	</spelling>
+		
+	<spelling>
+		<answer></answer>
+	</spelling>
+		
+	<spelling>
+		<answer></answer>
+	</spelling>
+		
+	<spelling>
+		<answer></answer>
+	</spelling>
+		
+	<spelling>
+		<answer></answer>
+	</spelling>
+		
+	<spelling>
+		<answer></answer>
+	</spelling>
+		
+	<spelling>
+		<answer></answer>
+	</spelling>
+		
+	<spelling>
+		<answer></answer>
+	</spelling>
+		
+	<spelling>
+		<answer></answer>
+	</spelling>
+		
+	<spelling>
+		<answer></answer>
+	</spelling>
+</sports>		
 		
 		
 <others>	

@@ -23,6 +23,7 @@ namespace FunEngGames
         public string pic1 = "", ans1 = "";
         public string pic2 = "", ans2 = "";
         public string pic3 = "", ans3 = "";
+
         public int question=1;
         public int hints = 2;
         public int attempts = 3;
@@ -200,7 +201,7 @@ namespace FunEngGames
                 points = 0;
                 lblPoints.Text = "0";
 
-                hints = 0;
+                hints = 2;
 
                 lblAttempts.Text = "3";
                 attempts = 3;
@@ -247,6 +248,7 @@ namespace FunEngGames
                 picWord.Image = Image.FromFile(@"Images\" + pic3);
                 lblAnswer.Text = ans3;
             }
+
             picFeedback.Visible = false;
 
             lblAttempts.Text = "3";
