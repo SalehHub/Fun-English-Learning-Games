@@ -426,6 +426,8 @@ namespace FunEngGames
             picCheckAnswers.BackgroundImage = Properties.Resources.checkYourAswer;
         }
 
+
+        //Form closing function
         private void spelling_FormClosed(object sender, FormClosedEventArgs e)
         {
             try
