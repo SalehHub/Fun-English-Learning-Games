@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Drawing;
 using System.Windows.Forms;
 using System.Xml;
 
@@ -62,9 +64,6 @@ namespace FunEngGames
         private void SynonymsLesson_Load(object sender, EventArgs e)
         {
 
-
-
-
             xmlDoc.Load("XML/synonyms.xml");
             nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/synonyms");
 
@@ -75,6 +74,16 @@ namespace FunEngGames
             GenerateSynonyms(lastNode);
             page++;
             lblPages.Text = "Page " + page + " out of " + lastPage;
+
+            CommonFunctions.SortDataGridColumn(dataGridView1);
+
+            //((TextAndImageCell)dataGridView1.Rows[0].Cells[0]).Image = (Image)imageList1.Images[0];
+            //((TextAndImageCell)dataGridView1.Rows[0].Cells[1]).Image = (Image)imageList1.Images[0];
+            //((TextAndImageCell)dataGridView1.Rows[1].Cells[0]).Image = (Image)imageList1.Images[0];
+            //((TextAndImageCell)dataGridView1.Rows[1].Cells[1]).Image = (Image)imageList1.Images[0];
+
+            Cursor cur = new Cursor(Properties.Resources.audio.Handle);
+            //dataGridView1.Columns[0].DataGridView.Cursor = cur;
             //lastNode = 9;
 
             /*
@@ -172,7 +181,7 @@ namespace FunEngGames
 
             btnPrevious.Enabled = true;
 
-            lblPages.Text = "Page " + page + " out of " + lastPage + " l=" + lastNode;
+            lblPages.Text = "Page " + page + " out of " + lastPage;
 
 
         }
@@ -202,7 +211,7 @@ namespace FunEngGames
                 //lastNode -= 9;
 
             }
-            lblPages.Text = "Page " + page + " out of " + lastPage + " l=" + lastNode;
+            lblPages.Text = "Page " + page + " out of " + lastPage;
         }
 
 

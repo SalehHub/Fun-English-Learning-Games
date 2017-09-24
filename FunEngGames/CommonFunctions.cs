@@ -3,6 +3,7 @@
 using NAudio.Wave;
 using Newtonsoft.Json;
 using System;
+using System.ComponentModel;
 using System.IO;
 using System.Net;
 using System.Speech.Synthesis;
@@ -212,19 +213,32 @@ namespace FunEngGames
 
                 MoreInfo MoreInfo = new MoreInfo();
 
-                //hide antonyms column
-                if (a.Trim() == "")
-                {
-                    MoreInfo.lblAntTitle.Visible    = false;
-                    MoreInfo.lblAntonyms.Visible    = false;
-                    MoreInfo.txtAnt.Visible         = false;
-                }
-
                 MoreInfo.Text = "Fun English Learning Games: More information for: " + word.ToString();
                 MoreInfo.lblWord.Text = word.ToString();
                 MoreInfo.txtSyn.Text = s.Trim(); ;
                 MoreInfo.txtAnt.Text = a.Trim();
                 MoreInfo.txtDef.Text = w.Trim(); ;
+
+                //hide antonyms column
+                if (a.Trim() == "")
+                {
+                    // MoreInfo.lblAntTitle.Visible    = false;
+                    // MoreInfo.lblAntonyms.Visible    = false;
+                    // MoreInfo.txtAnt.Visible         = false;
+
+                    MoreInfo.txtAnt.Text = "None";
+                }
+
+                //hide synonyms column
+                if (s.Trim() == "")
+                {
+                    //MoreInfo.lblSynTitle.Visible    = false;
+                    // MoreInfo.lblSynTitle.Visible    = false;
+                    // MoreInfo.txtSyn.Visible         = false;
+
+                    MoreInfo.txtSyn.Text = "None";
+                }
+
                 MoreInfo.ShowDialog();
 
 
@@ -332,7 +346,7 @@ namespace FunEngGames
             catch (Exception ex)
             {
                // MessageBox.Show(ex.Message);
-                Console.Write(ex.Message);
+               // Console.Write(ex.Message);
                 
             }
 }
@@ -347,6 +361,12 @@ namespace FunEngGames
             }
             // Return char and concat substring.
             return char.ToUpper(s[0]) + s.Substring(1);
+        }
+
+        public void SortDataGridColumn(DataGridView DG)
+        {
+            DG.Columns[0].HeaderCell.SortGlyphDirection = SortOrder.Ascending;
+            DG.Sort(DG.Columns[0], ListSortDirection.Ascending);
         }
 
 

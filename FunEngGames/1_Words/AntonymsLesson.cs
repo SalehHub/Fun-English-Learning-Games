@@ -63,6 +63,7 @@ namespace FunEngGames
 
         private void SynonymsLesson_Load(object sender, EventArgs e)
         {
+
             xmlDoc.Load("XML/antonyms.xml");
             nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/antonyms");
 
@@ -73,6 +74,9 @@ namespace FunEngGames
             GenerateSynonyms(lastNode);
             page++;
             lblPages.Text = "Page " + page + " out of " + lastPage;
+
+            CommonFunctions.SortDataGridColumn(dataGridView1);
+
             /*
                         GenAntonym(textBox1,    textBox2,   nodeList);
                         GenAntonym(textBox3,    textBox4,   nodeList);

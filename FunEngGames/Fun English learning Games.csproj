@@ -220,6 +220,7 @@
     <Compile Include="2_Storyline.Designer.cs">
       <DependentUpon>2_Storyline.cs</DependentUpon>
     </Compile>
+    <Compile Include="TextAndImageColumn.cs" />
     <Compile Include="WordRoot.cs" />
     <EmbeddedResource Include="1_Words\Antonyms.resx">
       <DependentUpon>Antonyms.cs</DependentUpon>
