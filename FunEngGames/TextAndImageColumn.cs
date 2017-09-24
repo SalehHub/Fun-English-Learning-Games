@@ -7,6 +7,8 @@ using System.Drawing;
 
 namespace FunEngGames
 {
+    // this class just for test, not used in the game 
+
     public class TextAndImageColumn : DataGridViewTextBoxColumn
     {
         private Image imageValue;
