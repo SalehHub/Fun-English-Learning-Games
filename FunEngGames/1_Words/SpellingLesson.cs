@@ -213,6 +213,8 @@ namespace FunEngGames
         {
             var pic = (PictureBox)sender;
             CommonFunctions.Pronounce(pic.Tag.ToString());
+
+            //CommonFunctions.GenerateMoreInfo(pic.Tag.ToString(),"");
         }
 
 

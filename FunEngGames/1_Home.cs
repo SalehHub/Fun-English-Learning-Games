@@ -43,7 +43,7 @@ namespace FunEngGames
             {
                 SpeechSynthesizer synthesizer = new SpeechSynthesizer();
                 synthesizer.Volume = 1;  // 0...100
-                synthesizer.Rate = -2;     // -10...10
+                synthesizer.Rate = -10;     // -10...10
                 synthesizer.SpeakAsync("test word");
             }catch(Exception ex)
             {
@@ -53,7 +53,6 @@ namespace FunEngGames
 
         private void Home_Shown(object sender, EventArgs e)
         {
-
             //Zoom in animation
 
             /*
@@ -69,9 +68,6 @@ namespace FunEngGames
                 label2.Visible = true;
             animator1.EndUpdateSync(panel1);
             */
-
-
-
         }
 
     }

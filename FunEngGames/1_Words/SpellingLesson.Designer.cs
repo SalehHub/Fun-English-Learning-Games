@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            AnimatorNS.Animation animation1 = new AnimatorNS.Animation();
+            AnimatorNS.Animation animation2 = new AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(spellingLesson));
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -161,7 +161,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(1258, 31);
             this.label2.TabIndex = 14;
-            this.label2.Text = "Choose a category, memorize the words and learn how to spell them, click on any p" +
+            this.label2.Text = "Choose a category, memorize the words and learn how to spell them. Click on any p" +
     "icture to hear the pronunciation";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -248,9 +248,9 @@
             this.radioButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.radioButton1.ImageIndex = 0;
             this.radioButton1.ImageList = this.imageList1;
-            this.radioButton1.Location = new System.Drawing.Point(12, 85);
+            this.radioButton1.Location = new System.Drawing.Point(18, 85);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(105, 98);
+            this.radioButton1.Size = new System.Drawing.Size(99, 98);
             this.radioButton1.TabIndex = 20;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Animals";
@@ -644,7 +644,7 @@
             this.radioButton20.ImageList = this.imageList1;
             this.radioButton20.Location = new System.Drawing.Point(1183, 85);
             this.radioButton20.Name = "radioButton20";
-            this.radioButton20.Size = new System.Drawing.Size(90, 98);
+            this.radioButton20.Size = new System.Drawing.Size(87, 98);
             this.radioButton20.TabIndex = 40;
             this.radioButton20.Text = "Others";
             this.radioButton20.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -656,25 +656,27 @@
             // 
             this.animator1.AnimationType = AnimatorNS.AnimationType.Scale;
             this.animator1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.animator1.DefaultAnimation = animation1;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.animator1.DefaultAnimation = animation2;
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.textBox5);
             this.panel1.Controls.Add(this.textBox6);
@@ -708,7 +710,7 @@
             // 
             // textBox6
             // 
-            this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.animator1.SetDecoration(this.textBox6, AnimatorNS.DecorationType.None);
             this.textBox6.Enabled = false;
             this.textBox6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -720,7 +722,6 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -735,7 +736,6 @@
             // 
             // textBox4
             // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.animator1.SetDecoration(this.textBox4, AnimatorNS.DecorationType.None);
             this.textBox4.Enabled = false;
             this.textBox4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -747,7 +747,6 @@
             // 
             // picAns1
             // 
-            this.picAns1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.picAns1.BackColor = System.Drawing.Color.Transparent;
             this.picAns1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picAns1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -762,7 +761,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.animator1.SetDecoration(this.textBox3, AnimatorNS.DecorationType.None);
             this.textBox3.Enabled = false;
             this.textBox3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -789,7 +788,7 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -804,7 +803,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -846,7 +845,6 @@
             // 
             // textBox1
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.animator1.SetDecoration(this.textBox1, AnimatorNS.DecorationType.None);
             this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -897,7 +895,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
             this.animator1.SetDecoration(this, AnimatorNS.DecorationType.None);
-            this.MinimumSize = new System.Drawing.Size(1252, 796);
+            this.MinimumSize = new System.Drawing.Size(1300, 796);
             this.Name = "spellingLesson";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
