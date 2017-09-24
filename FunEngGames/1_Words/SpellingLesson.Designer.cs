@@ -29,20 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            AnimatorNS.Animation animation1 = new AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(spellingLesson));
-            this.picAns1 = new System.Windows.Forms.PictureBox();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -54,6 +42,7 @@
             this.lblPages = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
@@ -64,7 +53,6 @@
             this.radioButton9 = new System.Windows.Forms.RadioButton();
             this.radioButton10 = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.radioButton11 = new System.Windows.Forms.RadioButton();
             this.radioButton12 = new System.Windows.Forms.RadioButton();
             this.radioButton13 = new System.Windows.Forms.RadioButton();
@@ -75,234 +63,36 @@
             this.radioButton18 = new System.Windows.Forms.RadioButton();
             this.radioButton19 = new System.Windows.Forms.RadioButton();
             this.radioButton20 = new System.Windows.Forms.RadioButton();
-            ((System.ComponentModel.ISupportInitialize)(this.picAns1)).BeginInit();
-            this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.animator1 = new AnimatorNS.Animator(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.picAns1 = new System.Windows.Forms.PictureBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAns1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // picAns1
-            // 
-            this.picAns1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.picAns1.BackColor = System.Drawing.Color.Transparent;
-            this.picAns1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picAns1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picAns1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picAns1.Location = new System.Drawing.Point(3, 3);
-            this.picAns1.Name = "picAns1";
-            this.picAns1.Size = new System.Drawing.Size(413, 168);
-            this.picAns1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picAns1.TabIndex = 10;
-            this.picAns1.TabStop = false;
-            this.picAns1.Click += new System.EventHandler(this.picAns1_Click);
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33332F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel1.Controls.Add(this.textBox6, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox5, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox4, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox3, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox2, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.picAns1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox3, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox4, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox5, 2, 2);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 186);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1258, 428);
-            this.tableLayoutPanel1.TabIndex = 11;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox6.Enabled = false;
-            this.textBox6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(841, 391);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(414, 34);
-            this.textBox6.TabIndex = 24;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox5.Enabled = false;
-            this.textBox5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(422, 391);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(413, 34);
-            this.textBox5.TabIndex = 23;
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.Enabled = false;
-            this.textBox4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(3, 391);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(413, 34);
-            this.textBox4.TabIndex = 22;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Enabled = false;
-            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(841, 177);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(414, 34);
-            this.textBox3.TabIndex = 21;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Enabled = false;
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(422, 177);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(413, 34);
-            this.textBox2.TabIndex = 20;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Location = new System.Drawing.Point(841, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(414, 168);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 12;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.picAns1_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(3, 177);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(413, 34);
-            this.textBox1.TabIndex = 19;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(422, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(413, 168);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.picAns1_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 217);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(413, 168);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 13;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.picAns1_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Location = new System.Drawing.Point(422, 217);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(413, 168);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 14;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.picAns1_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox5.Location = new System.Drawing.Point(841, 217);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(414, 168);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 15;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.picAns1_Click);
             // 
             // textBox9
             // 
             this.textBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.animator1.SetDecoration(this.textBox9, AnimatorNS.DecorationType.None);
             this.textBox9.Enabled = false;
             this.textBox9.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox9.Location = new System.Drawing.Point(1894, 153);
@@ -321,6 +111,7 @@
             this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.animator1.SetDecoration(this.pictureBox8, AnimatorNS.DecorationType.None);
             this.pictureBox8.Location = new System.Drawing.Point(1894, 12);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(402, 65);
@@ -328,11 +119,12 @@
             this.pictureBox8.TabIndex = 18;
             this.pictureBox8.TabStop = false;
             this.pictureBox8.Visible = false;
-            this.pictureBox8.Click += new System.EventHandler(this.picAns1_Click);
+            this.pictureBox8.Click += new System.EventHandler(this.Picture_Click);
             // 
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.animator1.SetDecoration(this.button1, AnimatorNS.DecorationType.None);
             this.button1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(489, 685);
             this.button1.Name = "button1";
@@ -347,6 +139,7 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.animator1.SetDecoration(this.label1, AnimatorNS.DecorationType.None);
             this.label1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SeaGreen;
             this.label1.Location = new System.Drawing.Point(12, 4);
@@ -361,6 +154,7 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.animator1.SetDecoration(this.label2, AnimatorNS.DecorationType.None);
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(12, 55);
@@ -376,6 +170,7 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.animator1.SetDecoration(this.label3, AnimatorNS.DecorationType.None);
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(176, 654);
@@ -388,6 +183,7 @@
             // btnNext
             // 
             this.btnNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.animator1.SetDecoration(this.btnNext, AnimatorNS.DecorationType.None);
             this.btnNext.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNext.ForeColor = System.Drawing.Color.DarkGreen;
             this.btnNext.Location = new System.Drawing.Point(1119, 619);
@@ -400,6 +196,7 @@
             // 
             // btnPrevious
             // 
+            this.animator1.SetDecoration(this.btnPrevious, AnimatorNS.DecorationType.None);
             this.btnPrevious.Enabled = false;
             this.btnPrevious.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrevious.ForeColor = System.Drawing.Color.DarkGreen;
@@ -415,6 +212,7 @@
             // 
             this.lblPages.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblPages.BackColor = System.Drawing.Color.Transparent;
+            this.animator1.SetDecoration(this.lblPages, AnimatorNS.DecorationType.None);
             this.lblPages.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPages.ForeColor = System.Drawing.Color.DarkCyan;
             this.lblPages.Location = new System.Drawing.Point(190, 623);
@@ -427,6 +225,7 @@
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.animator1.SetDecoration(this.label4, AnimatorNS.DecorationType.None);
             this.label4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(8, 51);
@@ -443,6 +242,7 @@
             this.radioButton1.BackColor = System.Drawing.Color.Transparent;
             this.radioButton1.CheckAlign = System.Drawing.ContentAlignment.TopCenter;
             this.radioButton1.Checked = true;
+            this.animator1.SetDecoration(this.radioButton1, AnimatorNS.DecorationType.None);
             this.radioButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButton1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -452,17 +252,33 @@
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(105, 98);
             this.radioButton1.TabIndex = 20;
+            this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Animals";
             this.radioButton1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.radioButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.radioButton1.UseVisualStyleBackColor = false;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.ChangeCategory_Click);
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "cat.png");
+            this.imageList1.Images.SetKeyName(1, "orange.png");
+            this.imageList1.Images.SetKeyName(2, "carrot.png");
+            this.imageList1.Images.SetKeyName(3, "bus.png");
+            this.imageList1.Images.SetKeyName(4, "heart.png");
+            this.imageList1.Images.SetKeyName(5, "lamp.png");
+            this.imageList1.Images.SetKeyName(6, "tree.png");
+            this.imageList1.Images.SetKeyName(7, "scissor.png");
+            this.imageList1.Images.SetKeyName(8, "diamond.png");
+            // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.BackColor = System.Drawing.Color.Transparent;
             this.radioButton2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.animator1.SetDecoration(this.radioButton2, AnimatorNS.DecorationType.None);
             this.radioButton2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.radioButton2.Location = new System.Drawing.Point(1001, 4);
@@ -479,6 +295,7 @@
             this.radioButton3.AutoSize = true;
             this.radioButton3.BackColor = System.Drawing.Color.Transparent;
             this.radioButton3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.animator1.SetDecoration(this.radioButton3, AnimatorNS.DecorationType.None);
             this.radioButton3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.radioButton3.Location = new System.Drawing.Point(1001, 37);
@@ -495,6 +312,7 @@
             this.radioButton4.AutoSize = true;
             this.radioButton4.BackColor = System.Drawing.Color.Transparent;
             this.radioButton4.Cursor = System.Windows.Forms.Cursors.Default;
+            this.animator1.SetDecoration(this.radioButton4, AnimatorNS.DecorationType.None);
             this.radioButton4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.radioButton4.Location = new System.Drawing.Point(1087, 8);
@@ -511,6 +329,7 @@
             this.radioButton5.AutoSize = true;
             this.radioButton5.BackColor = System.Drawing.Color.Transparent;
             this.radioButton5.Cursor = System.Windows.Forms.Cursors.Default;
+            this.animator1.SetDecoration(this.radioButton5, AnimatorNS.DecorationType.None);
             this.radioButton5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.radioButton5.Location = new System.Drawing.Point(1071, 37);
@@ -527,6 +346,7 @@
             this.radioButton6.AutoSize = true;
             this.radioButton6.BackColor = System.Drawing.Color.Transparent;
             this.radioButton6.Cursor = System.Windows.Forms.Cursors.Default;
+            this.animator1.SetDecoration(this.radioButton6, AnimatorNS.DecorationType.None);
             this.radioButton6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.radioButton6.Location = new System.Drawing.Point(1175, 41);
@@ -543,6 +363,7 @@
             this.radioButton7.AutoSize = true;
             this.radioButton7.BackColor = System.Drawing.Color.Transparent;
             this.radioButton7.Cursor = System.Windows.Forms.Cursors.Default;
+            this.animator1.SetDecoration(this.radioButton7, AnimatorNS.DecorationType.None);
             this.radioButton7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.radioButton7.Location = new System.Drawing.Point(1130, 41);
@@ -559,6 +380,7 @@
             this.radioButton8.AutoSize = true;
             this.radioButton8.BackColor = System.Drawing.Color.Transparent;
             this.radioButton8.Cursor = System.Windows.Forms.Cursors.Default;
+            this.animator1.SetDecoration(this.radioButton8, AnimatorNS.DecorationType.None);
             this.radioButton8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.radioButton8.Location = new System.Drawing.Point(1166, 8);
@@ -575,6 +397,7 @@
             this.radioButton9.AutoSize = true;
             this.radioButton9.BackColor = System.Drawing.Color.Transparent;
             this.radioButton9.Cursor = System.Windows.Forms.Cursors.Default;
+            this.animator1.SetDecoration(this.radioButton9, AnimatorNS.DecorationType.None);
             this.radioButton9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.radioButton9.Location = new System.Drawing.Point(905, 34);
@@ -591,6 +414,7 @@
             this.radioButton10.AutoSize = true;
             this.radioButton10.BackColor = System.Drawing.Color.Transparent;
             this.radioButton10.Cursor = System.Windows.Forms.Cursors.Default;
+            this.animator1.SetDecoration(this.radioButton10, AnimatorNS.DecorationType.None);
             this.radioButton10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.radioButton10.Location = new System.Drawing.Point(905, 8);
@@ -608,6 +432,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.animator1.SetDecoration(this.label5, AnimatorNS.DecorationType.None);
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(12, 90);
@@ -617,25 +442,12 @@
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label5.Visible = false;
             // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "cat.png");
-            this.imageList1.Images.SetKeyName(1, "orange.png");
-            this.imageList1.Images.SetKeyName(2, "carrot.png");
-            this.imageList1.Images.SetKeyName(3, "bus.png");
-            this.imageList1.Images.SetKeyName(4, "heart.png");
-            this.imageList1.Images.SetKeyName(5, "lamp.png");
-            this.imageList1.Images.SetKeyName(6, "tree.png");
-            this.imageList1.Images.SetKeyName(7, "scissor.png");
-            this.imageList1.Images.SetKeyName(8, "diamond.png");
-            // 
             // radioButton11
             // 
             this.radioButton11.Appearance = System.Windows.Forms.Appearance.Button;
             this.radioButton11.BackColor = System.Drawing.Color.Transparent;
             this.radioButton11.CheckAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.animator1.SetDecoration(this.radioButton11, AnimatorNS.DecorationType.None);
             this.radioButton11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButton11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -656,6 +468,7 @@
             this.radioButton12.Appearance = System.Windows.Forms.Appearance.Button;
             this.radioButton12.BackColor = System.Drawing.Color.Transparent;
             this.radioButton12.CheckAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.animator1.SetDecoration(this.radioButton12, AnimatorNS.DecorationType.None);
             this.radioButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButton12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -676,6 +489,7 @@
             this.radioButton13.Appearance = System.Windows.Forms.Appearance.Button;
             this.radioButton13.BackColor = System.Drawing.Color.Transparent;
             this.radioButton13.CheckAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.animator1.SetDecoration(this.radioButton13, AnimatorNS.DecorationType.None);
             this.radioButton13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButton13.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -696,10 +510,11 @@
             this.radioButton14.Appearance = System.Windows.Forms.Appearance.Button;
             this.radioButton14.BackColor = System.Drawing.Color.Transparent;
             this.radioButton14.CheckAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.animator1.SetDecoration(this.radioButton14, AnimatorNS.DecorationType.None);
             this.radioButton14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButton14.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.radioButton14.ImageIndex = 5;
+            this.radioButton14.ImageIndex = 4;
             this.radioButton14.ImageList = this.imageList1;
             this.radioButton14.Location = new System.Drawing.Point(622, 85);
             this.radioButton14.Name = "radioButton14";
@@ -716,6 +531,7 @@
             this.radioButton15.Appearance = System.Windows.Forms.Appearance.Button;
             this.radioButton15.BackColor = System.Drawing.Color.Transparent;
             this.radioButton15.CheckAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.animator1.SetDecoration(this.radioButton15, AnimatorNS.DecorationType.None);
             this.radioButton15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButton15.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -736,10 +552,11 @@
             this.radioButton16.Appearance = System.Windows.Forms.Appearance.Button;
             this.radioButton16.BackColor = System.Drawing.Color.Transparent;
             this.radioButton16.CheckAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.animator1.SetDecoration(this.radioButton16, AnimatorNS.DecorationType.None);
             this.radioButton16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButton16.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.radioButton16.ImageIndex = 7;
+            this.radioButton16.ImageIndex = 6;
             this.radioButton16.ImageList = this.imageList1;
             this.radioButton16.Location = new System.Drawing.Point(358, 85);
             this.radioButton16.Name = "radioButton16";
@@ -756,6 +573,7 @@
             this.radioButton17.Appearance = System.Windows.Forms.Appearance.Button;
             this.radioButton17.BackColor = System.Drawing.Color.Transparent;
             this.radioButton17.CheckAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.animator1.SetDecoration(this.radioButton17, AnimatorNS.DecorationType.None);
             this.radioButton17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButton17.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -776,10 +594,11 @@
             this.radioButton18.Appearance = System.Windows.Forms.Appearance.Button;
             this.radioButton18.BackColor = System.Drawing.Color.Transparent;
             this.radioButton18.CheckAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.animator1.SetDecoration(this.radioButton18, AnimatorNS.DecorationType.None);
             this.radioButton18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButton18.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.radioButton18.ImageIndex = 6;
+            this.radioButton18.ImageIndex = 5;
             this.radioButton18.ImageList = this.imageList1;
             this.radioButton18.Location = new System.Drawing.Point(859, 85);
             this.radioButton18.Name = "radioButton18";
@@ -796,6 +615,7 @@
             this.radioButton19.Appearance = System.Windows.Forms.Appearance.Button;
             this.radioButton19.BackColor = System.Drawing.Color.Transparent;
             this.radioButton19.CheckAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.animator1.SetDecoration(this.radioButton19, AnimatorNS.DecorationType.None);
             this.radioButton19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButton19.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -816,10 +636,11 @@
             this.radioButton20.Appearance = System.Windows.Forms.Appearance.Button;
             this.radioButton20.BackColor = System.Drawing.Color.Transparent;
             this.radioButton20.CheckAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.animator1.SetDecoration(this.radioButton20, AnimatorNS.DecorationType.None);
             this.radioButton20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButton20.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.radioButton20.ImageIndex = 8;
+            this.radioButton20.ImageIndex = 7;
             this.radioButton20.ImageList = this.imageList1;
             this.radioButton20.Location = new System.Drawing.Point(1183, 85);
             this.radioButton20.Name = "radioButton20";
@@ -831,13 +652,219 @@
             this.radioButton20.UseVisualStyleBackColor = false;
             this.radioButton20.CheckedChanged += new System.EventHandler(this.ChangeCategory_Click);
             // 
+            // animator1
+            // 
+            this.animator1.AnimationType = AnimatorNS.AnimationType.Scale;
+            this.animator1.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.animator1.DefaultAnimation = animation1;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.textBox5);
+            this.panel1.Controls.Add(this.textBox6);
+            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.picAns1);
+            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.pictureBox4);
+            this.panel1.Controls.Add(this.pictureBox5);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.textBox1);
+            this.animator1.SetDecoration(this.panel1, AnimatorNS.DecorationType.None);
+            this.panel1.Location = new System.Drawing.Point(12, 189);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1264, 424);
+            this.panel1.TabIndex = 41;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.animator1.SetDecoration(this.textBox5, AnimatorNS.DecorationType.None);
+            this.textBox5.Enabled = false;
+            this.textBox5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(425, 388);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(413, 34);
+            this.textBox5.TabIndex = 35;
+            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.animator1.SetDecoration(this.textBox6, AnimatorNS.DecorationType.None);
+            this.textBox6.Enabled = false;
+            this.textBox6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.Location = new System.Drawing.Point(844, 388);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(414, 34);
+            this.textBox6.TabIndex = 36;
+            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.animator1.SetDecoration(this.pictureBox3, AnimatorNS.DecorationType.None);
+            this.pictureBox3.Location = new System.Drawing.Point(7, 213);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(412, 173);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 28;
+            this.pictureBox3.TabStop = false;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.animator1.SetDecoration(this.textBox4, AnimatorNS.DecorationType.None);
+            this.textBox4.Enabled = false;
+            this.textBox4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(6, 388);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(413, 34);
+            this.textBox4.TabIndex = 34;
+            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // picAns1
+            // 
+            this.picAns1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.picAns1.BackColor = System.Drawing.Color.Transparent;
+            this.picAns1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picAns1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picAns1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.animator1.SetDecoration(this.picAns1, AnimatorNS.DecorationType.None);
+            this.picAns1.Location = new System.Drawing.Point(6, 1);
+            this.picAns1.Name = "picAns1";
+            this.picAns1.Size = new System.Drawing.Size(413, 168);
+            this.picAns1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picAns1.TabIndex = 25;
+            this.picAns1.TabStop = false;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.animator1.SetDecoration(this.textBox3, AnimatorNS.DecorationType.None);
+            this.textBox3.Enabled = false;
+            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(844, 172);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(414, 34);
+            this.textBox3.TabIndex = 33;
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.animator1.SetDecoration(this.pictureBox4, AnimatorNS.DecorationType.None);
+            this.pictureBox4.Location = new System.Drawing.Point(425, 213);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(413, 173);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 29;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.animator1.SetDecoration(this.pictureBox5, AnimatorNS.DecorationType.None);
+            this.pictureBox5.Location = new System.Drawing.Point(844, 211);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(414, 175);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 30;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.animator1.SetDecoration(this.pictureBox2, AnimatorNS.DecorationType.None);
+            this.pictureBox2.Location = new System.Drawing.Point(844, 1);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(414, 168);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 27;
+            this.pictureBox2.TabStop = false;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.animator1.SetDecoration(this.textBox2, AnimatorNS.DecorationType.None);
+            this.textBox2.Enabled = false;
+            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(425, 172);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(413, 34);
+            this.textBox2.TabIndex = 32;
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.animator1.SetDecoration(this.pictureBox1, AnimatorNS.DecorationType.None);
+            this.pictureBox1.Location = new System.Drawing.Point(425, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(413, 168);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 26;
+            this.pictureBox1.TabStop = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.animator1.SetDecoration(this.textBox1, AnimatorNS.DecorationType.None);
+            this.textBox1.Enabled = false;
+            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(6, 172);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(413, 34);
+            this.textBox1.TabIndex = 31;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // spellingLesson
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SkyBlue;
             this.BackgroundImage = global::FunEngGames.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1282, 749);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.radioButton20);
             this.Controls.Add(this.radioButton6);
             this.Controls.Add(this.radioButton19);
@@ -868,8 +895,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label5);
+            this.animator1.SetDecoration(this, AnimatorNS.DecorationType.None);
             this.MinimumSize = new System.Drawing.Size(1252, 796);
             this.Name = "spellingLesson";
             this.ShowIcon = false;
@@ -877,37 +904,23 @@
             this.Text = "Fun English Learning Games: Words - Spelling lesson";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.spellingLesson_FormClosed);
             this.Load += new System.EventHandler(this.spellingLesson_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.picAns1)).EndInit();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAns1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox picAns1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -938,5 +951,19 @@
         private System.Windows.Forms.RadioButton radioButton18;
         private System.Windows.Forms.RadioButton radioButton19;
         private System.Windows.Forms.RadioButton radioButton20;
+        private AnimatorNS.Animator animator1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.PictureBox picAns1;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

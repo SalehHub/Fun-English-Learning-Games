@@ -50,5 +50,29 @@ namespace FunEngGames
                 //MessageBox.Show(ex.Message);
             }
         }
+
+        private void Home_Shown(object sender, EventArgs e)
+        {
+
+            //Zoom in animation
+
+            /*
+            pictureBox2.Visible = false;
+            label1.Visible = false;
+            pictureBox1.Visible = false;
+            label2.Visible = false;
+
+            animator1.BeginUpdate(panel1);
+                pictureBox2.Visible = true;
+                label1.Visible = true;
+                pictureBox1.Visible = true;
+                label2.Visible = true;
+            animator1.EndUpdateSync(panel1);
+            */
+
+
+
+        }
+
     }
 }

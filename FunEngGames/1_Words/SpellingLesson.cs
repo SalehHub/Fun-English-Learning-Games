@@ -79,8 +79,34 @@ namespace FunEngGames
         {
             try
             {
+                //panel1.Parent = this;
                 xmlDoc.Load("XML/spelling.xml");
-                loadCategory("animals");
+
+                nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/animals/spelling");
+                page = 0;
+                nextNode = 0;
+                btnPrevious.Enabled = false;
+
+                GenerateWords(0);
+                page++;
+                lastPage = nodeList.Count / 6;
+                if (lastPage == 0) { lastPage = 1; }
+                lblPages.Text = "Page " + page + " out of " + lastPage;
+
+                if (lastPage > 1)
+                {
+                    btnNext.Enabled = true;
+                }
+                else
+                {
+                    btnNext.Enabled = false;
+                }
+
+                //Change the cursor for each picture to an audio icon
+                Cursor cur = new Cursor(Properties.Resources.audio.Handle);
+                GetSelfAndChildrenRecursive(this).OfType<PictureBox>().ToList().ForEach(b => b.Cursor = cur);
+                GetSelfAndChildrenRecursive(this).OfType<PictureBox>().ToList().ForEach(b => b.Click += Picture_Click);
+
             }
             catch (Exception ex)
             {
@@ -105,19 +131,27 @@ namespace FunEngGames
         {
             if (nodeList[next] != null && nodeList[next].SelectSingleNode("answer").InnerText.Trim() != "")
             {
+                // p.Visible = false;
+                //animator1.BeginUpdate(p, false);
                 p.Image = Image.FromFile(@"Images\" + nodeList[next].SelectSingleNode("answer").InnerText.Trim()+".png");
                 t.Text = CommonFunctions.UppercaseFirst(nodeList[next].SelectSingleNode("answer").InnerText);
                 p.Tag = nodeList[next].SelectSingleNode("answer").InnerText; // for pronounce
+                //animator1.EndUpdateSync(p);
+                // p.Click -= new System.EventHandler(this.picAns1_Click);
+                //p.Visible = true;
             }
             else
             {
                 p.Image = null;
                 t.Text = "";
+                p.Tag = "";
             }
         }
 
         public void GenerateWords(int next)
         {
+
+
             GenerateWord(picAns1, textBox1, next);
             next++;
             GenerateWord(pictureBox1, textBox2, next);
@@ -130,22 +164,17 @@ namespace FunEngGames
             next++;
             GenerateWord(pictureBox5, textBox6, next);
             next++;
-            /*
-            GenerateWord(pictureBox6, textBox7, next);
-            next++;
-            GenerateWord(pictureBox7, textBox8, next);
-            next++;
-            GenerateWord(pictureBox8, textBox9, next);
-            next++;
-            */
-    }
+        }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
             page++;
             nextNode += 6;
+            animator1.AnimationType = AnimatorNS.AnimationType.Scale;
+            animator1.BeginUpdate(panel1, false);
             GenerateWords(nextNode);
-            
+            animator1.EndUpdateSync(panel1);
+
             if (page == lastPage) {
                 btnNext.Enabled = false;
             }
@@ -159,7 +188,10 @@ namespace FunEngGames
         {
             page--;
             nextNode -= 6;
+            animator1.AnimationType = AnimatorNS.AnimationType.Scale;
+            animator1.BeginUpdate(panel1, false);
             GenerateWords(nextNode);
+            animator1.EndUpdateSync(panel1);
 
             if (page < lastPage)
             {
@@ -177,7 +209,7 @@ namespace FunEngGames
 
 
 
-        private void picAns1_Click(object sender, EventArgs e)
+        private void Picture_Click(object sender, EventArgs e)
         {
             var pic = (PictureBox)sender;
             CommonFunctions.Pronounce(pic.Tag.ToString());
@@ -189,14 +221,19 @@ namespace FunEngGames
         {
             try
             {
+                //  panel1.Visible = false;
+                animator1.AnimationType = AnimatorNS.AnimationType.Scale;
+                animator1.BeginUpdate(panel1, false);
                 //load XML file
                 // xmlDoc.Load("XML/"+XMLName+".xml");
                 nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + XMLTag + "/spelling");
                 page = 0;
                 nextNode = 0;
                 btnPrevious.Enabled = false;
+                
 
-                GenerateWords(0);
+                GenerateWords(0);                
+
                 page++;
                 lastPage = nodeList.Count / 6;
                 if (lastPage == 0) { lastPage = 1; }
@@ -214,6 +251,11 @@ namespace FunEngGames
                 //Change the cursor for each picture to an audio icon
                 Cursor cur = new Cursor(Properties.Resources.audio.Handle);
                 GetSelfAndChildrenRecursive(this).OfType<PictureBox>().ToList().ForEach(b => b.Cursor = cur);
+
+                //animator1.SetDecoration(panel1,AnimatorNS.DecorationType.None);
+                // animator1.ShowSync(panel1, false, AnimatorNS.Animation.VertSlide);
+                animator1.EndUpdateSync(panel1);
+
             }
             catch (Exception ex)
             {
@@ -226,8 +268,10 @@ namespace FunEngGames
             var RB = (RadioButton)sender;
             if (RB.Checked == true)
             {
-                CommonFunctions.Pronounce(RB.Text.ToLower().Trim());
                 loadCategory(RB.Text.ToLower().Trim().Replace(" ", ""));
+
+                CommonFunctions.Pronounce(RB.Text.ToLower().Trim());
+
             }
         }
 
