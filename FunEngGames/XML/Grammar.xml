@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<Questions>
+  
+  <!--Grammmar questions-->
+  <!--Simple grammar questions-->
+<Grammar>
+<sentence>what kind of work do you do?</sentence>
+<answer>I'm a piano teacher</answer>
+<option>I work every day</option>
+<option>I worked for two hours</option> 
+</Grammar>  
+
+<Grammar>
+<sentence>John works______________ building downtown?</sentence>
+<answer>at the new office</answer>
+<option>in the new office</option>
+<option>on the new office</option> 
+</Grammar>  
+
+<!-- Simple Present tense question-->
+<Grammar>
+<sentence>There _____ about 200 countries in the world</sentence>
+<answer>are</answer>
+<option>am</option>
+<option>is</option> 
+</Grammar>
+
+<Grammar>
+<sentence>What _ your full name?</sentence>
+<answer>is</answer>
+<option>am</option>
+<option>are</option> 
+</Grammar>
+
+
+<!--'W/H Questions'-->
+<Grammar>
+<sentence>______ did you do yesterday?</sentence>
+<answer>What</answer>
+<option>Where</option>
+<option>Who</option> 
+</Grammar>
+
+<Grammar>
+<sentence>______ was that on the phone?</sentence>
+<answer>Who</answer>
+<option>Where</option>
+<option>Whom</option> 
+</Grammar>
+
+
+<!--Articles'A' 'An'and 'the' Questions'-->
+<Grammar>
+<sentence>My mother saw a nice dress in __ store. She decided to buy the dress</sentence>
+<answer>a</answer>
+<option>the</option>
+<option>an</option> 
+</Grammar>
+
+
+<Grammar>
+<sentence>My father always exercises for hour __ hour in the morning</sentence>
+<answer>an</answer>
+<option>a</option>
+<option>the</option> 
+</Grammar>
+
+<!-- Identify the Tense in which Senetence is it-->
+<Grammar>
+<sentence>Don't they live in San Antonio?</sentence>
+<answer>Simple Present</answer>
+<option>Simple Past</option>
+<option>Simple Future</option> 
+</Grammar>
+
+<Grammar>
+<sentence>Joina will come at six for the lecture of Advance Software Engineering</sentence>
+<answer>Simple Present</answer>
+<option>Simple Future</option>
+<option>Simple Past</option> 
+</Grammar>
+
+
+</Questions>
+  
+
+
+

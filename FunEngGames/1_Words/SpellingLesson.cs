@@ -277,5 +277,9 @@ namespace FunEngGames
             }
         }
 
+        private void lblPages_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
