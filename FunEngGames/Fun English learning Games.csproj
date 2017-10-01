@@ -550,6 +550,9 @@
     <None Include="Images\audio.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <Content Include="XML\PartOfSpeech.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="XML\Spelling.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

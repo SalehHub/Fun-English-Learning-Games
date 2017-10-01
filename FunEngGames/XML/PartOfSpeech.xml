@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<Questions>
+
+  <!--PartOfSpeech questions-->
+
+
+  <partOfSpeech>
+    <sentence>I bought a beautiful dress at the mall</sentence>
+    <word>beautiful</word>
+    <answer>Adjective</answer>
+  </partOfSpeech>
+
+  <partOfSpeech>
+    <sentence>What did she ask you to do?</sentence>
+    <word>she</word>
+    <answer>Pronoun</answer>
+  </partOfSpeech>
+
+  <partOfSpeech>
+    <sentence>I left my shoes under the kitchen table</sentence>
+    <word>under</word>
+    <answer>Preposition</answer>
+  </partOfSpeech>
+
+  <partOfSpeech>
+    <sentence>If we finish our work quickly we can go to the movies</sentence>
+    <word>quickly</word>
+    <answer>Adverb</answer>
+  </partOfSpeech>
+
+  <partOfSpeech>
+    <sentence>On Saturdays I work from nine to five</sentence>
+    <word>work</word>
+    <answer>Verb</answer>
+  </partOfSpeech>
+
+  <partOfSpeech>
+    <sentence>I want to go to a university in the United States</sentence>
+    <word>university</word>
+    <answer>Noun</answer>
+  </partOfSpeech>
+
+  <partOfSpeech>
+    <sentence>I'm sure I've met your girlfriend before</sentence>
+    <word>met</word>
+    <answer>Verb</answer>
+  </partOfSpeech>
+
+  <partOfSpeech>
+    <sentence>Well, I don't think I'll be home before</sentence>
+    <word>Well</word>
+    <answer>Interjection</answer>
+  </partOfSpeech>
+
+  <partOfSpeech>
+    <sentence>Andy knocked on the door but nobody answered</sentence>
+    <word>but</word>
+    <answer>Conjunction</answer>
+  </partOfSpeech>
+
+  <partOfSpeech>
+    <sentence>After lunch let's go out for a coffee</sentence>
+    <word>After</word>
+    <answer>Preposition</answer>
+  </partOfSpeech>
+
+  
+</Questions>

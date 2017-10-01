@@ -46,9 +46,10 @@
             // button1
             // 
             this.animator1.SetDecoration(this.button1, AnimatorNS.DecorationType.None);
-            this.button1.Location = new System.Drawing.Point(12, 462);
+            this.button1.Location = new System.Drawing.Point(9, 375);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 44);
+            this.button1.Size = new System.Drawing.Size(130, 36);
             this.button1.TabIndex = 4;
             this.button1.Text = "hidden:just for test";
             this.button1.UseVisualStyleBackColor = true;
@@ -86,10 +87,12 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.animator1.SetDecoration(this.panel1, AnimatorNS.DecorationType.None);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(9, 10);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1109, 637);
+            this.panel1.Size = new System.Drawing.Size(832, 518);
             this.panel1.TabIndex = 5;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label2
             // 
@@ -99,9 +102,10 @@
             this.animator1.SetDecoration(this.label2, AnimatorNS.DecorationType.None);
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label2.Location = new System.Drawing.Point(111, 499);
+            this.label2.Location = new System.Drawing.Point(83, 405);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(887, 131);
+            this.label2.Size = new System.Drawing.Size(665, 106);
             this.label2.TabIndex = 6;
             this.label2.Text = "Created by Saleh Alzahrani, Sarah Aljabri, Adriana Escobar, Girish Kontham, Sande" +
     "ep, Ronish Panjwani, Tony Ouyang \r\nCS6340 Advanced Software Engineering \r\nSt. Ma" +
@@ -117,9 +121,10 @@
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.animator1.SetDecoration(this.pictureBox2, AnimatorNS.DecorationType.None);
-            this.pictureBox2.Location = new System.Drawing.Point(18, 10);
+            this.pictureBox2.Location = new System.Drawing.Point(14, 8);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1072, 192);
+            this.pictureBox2.Size = new System.Drawing.Size(804, 156);
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
@@ -131,9 +136,10 @@
             this.animator1.SetDecoration(this.label1, AnimatorNS.DecorationType.None);
             this.label1.Font = new System.Drawing.Font("Impact", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Green;
-            this.label1.Location = new System.Drawing.Point(48, 238);
+            this.label1.Location = new System.Drawing.Point(36, 193);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1012, 142);
+            this.label1.Size = new System.Drawing.Size(759, 115);
             this.label1.TabIndex = 5;
             this.label1.Text = "Do you like learning English and having fun?\r\nYou’re in the right place \r\nTo begi" +
     "n, just click Start!";
@@ -147,23 +153,25 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.animator1.SetDecoration(this.pictureBox1, AnimatorNS.DecorationType.None);
-            this.pictureBox1.Location = new System.Drawing.Point(394, 396);
+            this.pictureBox1.Location = new System.Drawing.Point(296, 322);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(320, 89);
+            this.pictureBox1.Size = new System.Drawing.Size(240, 72);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FunEngGames.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1133, 661);
+            this.ClientSize = new System.Drawing.Size(850, 537);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.animator1.SetDecoration(this, AnimatorNS.DecorationType.None);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Home";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
