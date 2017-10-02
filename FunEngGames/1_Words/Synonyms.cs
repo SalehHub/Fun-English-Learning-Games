@@ -27,6 +27,14 @@ namespace FunEngGames
         public List<int> randomList = new List<int>();
         public List<string> synonyms = new List<string>();
         public List<string> antonyms = new List<string>();
+        public int attempt = 3;
+        public int points = 0;
+
+        public bool fq = false;
+        public bool sq = false;
+        public bool tq = false;
+
+        public int Questions = 3;
 
         int MyNumber = 0;
         private void NewNumber(int max)
@@ -49,7 +57,8 @@ namespace FunEngGames
             try
             {
                 this.mainLevelsForm.Show();
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
 
             }
@@ -74,6 +83,42 @@ namespace FunEngGames
             pictureBox5.LoadAsync(@"https://media.giphy.com/media/Bn6djQ6MgEWZi/giphy.gif");
 
 
+
+            attempt = 3;
+            points = 0;
+
+            fq = false;
+            sq = false;
+            tq = false;
+
+            randomList.Clear();
+            synonyms.Clear();
+            antonyms.Clear();
+
+            btnHint1.Enabled = true;
+            comboBox1.Enabled = true;
+            comboBox1.Items.Clear();
+            comboBox1.Text="";
+
+            btnHint2.Enabled = true;
+            comboBox2.Enabled = true;
+            comboBox2.Items.Clear();
+            comboBox2.Text = "";
+
+            btnHint3.Enabled = true;
+            comboBox3.Enabled = true;
+            comboBox3.Items.Clear();
+            comboBox3.Text = "";
+
+            picAns1.BackgroundImage = null;
+            picAns2.BackgroundImage = null;
+            picAns3.BackgroundImage = null;
+
+
+            btnCheckYourAnswer.Text = "Check your answers";
+            lblAttempts.Text = attempt.ToString();
+            lblPoints.Text = points.ToString();
+
             xmlDoc.Load("XML/synonyms.xml");
             this.GenerateSynonyms();
         }
@@ -93,11 +138,7 @@ namespace FunEngGames
                 word = nodeList[random].SelectSingleNode("word").InnerText;
                 synonym = nodeList[random].SelectSingleNode("synonym").InnerText;
                 synonyms.Add(synonym);
-                lblW1.Text = "1- " + word;
-
-
-
-
+                lblW1.Text = "" + word;
 
 
                 NewNumber(nodeList.Count);
@@ -106,11 +147,7 @@ namespace FunEngGames
                 word = nodeList[random].SelectSingleNode("word").InnerText;
                 synonym = nodeList[random].SelectSingleNode("synonym").InnerText;
                 synonyms.Add(synonym);
-                lblW2.Text = "2- " + word;
-
-
-
-
+                lblW2.Text = "" + word;
 
 
                 NewNumber(nodeList.Count);
@@ -119,7 +156,7 @@ namespace FunEngGames
                 word = nodeList[random].SelectSingleNode("word").InnerText;
                 synonym = nodeList[random].SelectSingleNode("synonym").InnerText;
                 synonyms.Add(synonym);
-                lblW3.Text = "3- " + word;
+                lblW3.Text = "" + word;
 
 
                 //comboBox1.Tag = synonyms[0];
@@ -132,15 +169,15 @@ namespace FunEngGames
 
                 Shuffle(synonyms);
                 //comboBox1.Items.Add("A-"); comboBox1.Items.Add("B-"); comboBox1.Items.Add("C-");
-                comboBox1.Items.Add("A- " + synonyms[0]); comboBox1.Items.Add("B- " + synonyms[1]); comboBox1.Items.Add("C- " + synonyms[2]);
-                comboBox2.Items.Add("A- " + synonyms[0]); comboBox2.Items.Add("B- " + synonyms[1]); comboBox2.Items.Add("C- " + synonyms[2]);
-                comboBox3.Items.Add("A- " + synonyms[0]); comboBox3.Items.Add("B- " + synonyms[1]); comboBox3.Items.Add("C- " + synonyms[2]);
+                comboBox1.Items.Add("" + synonyms[0]); comboBox1.Items.Add("" + synonyms[1]); comboBox1.Items.Add("" + synonyms[2]);
+                comboBox2.Items.Add("" + synonyms[0]); comboBox2.Items.Add("" + synonyms[1]); comboBox2.Items.Add("" + synonyms[2]);
+                comboBox3.Items.Add("" + synonyms[0]); comboBox3.Items.Add("" + synonyms[1]); comboBox3.Items.Add("" + synonyms[2]);
 
 
                 // Shuffle(synonyms);
-                lblS1.Text = "A- " + synonyms[0];
-                lblS2.Text = "B- " + synonyms[1];
-                lblS3.Text = "C- " + synonyms[2];
+                lblS1.Text = "" + synonyms[0];
+                lblS2.Text = "" + synonyms[1];
+                lblS3.Text = "" + synonyms[2];
 
 
             }
@@ -211,7 +248,7 @@ namespace FunEngGames
 
 
 
-           
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -220,6 +257,98 @@ namespace FunEngGames
             antonymsLesson.mainLevelsForm = this.mainLevelsForm;
             this.Hide();
             antonymsLesson.Show();
+        }
+
+
+
+        private void btnCheckYourAnswer_Click(object sender, EventArgs e)
+        {
+            if (btnCheckYourAnswer.Text == "Restart the level")
+            {
+
+                S_A_Load(sender,e);
+
+            }
+            else if (btnCheckYourAnswer.Text == "Go to Antonyms lesson")
+            {
+                AntonymsLesson antonymsLesson = new AntonymsLesson();
+                antonymsLesson.mainLevelsForm = this.mainLevelsForm;
+                this.Hide();
+                antonymsLesson.Show();
+            }
+            else
+            {
+
+
+                attempt--;
+                lblAttempts.Text = attempt.ToString();
+
+                //Synonyms check
+                if (fq == false && comboBox1.Text.Trim().ToLower().Contains(lblAns1.Text.Trim().ToLower()))
+                {
+                    picAns1.BackgroundImage = Properties.Resources.check;
+                    points++;
+                    btnHint1.Enabled = false;
+                    comboBox1.Enabled = false;
+                    Questions--;
+                    fq = true;
+
+                }
+                else if (fq == false && !comboBox1.Text.Trim().ToLower().Contains(lblAns1.Text.Trim().ToLower()))
+                {
+                    picAns1.BackgroundImage = Properties.Resources.cross;
+                }
+
+
+
+
+                if (sq == false && comboBox2.Text.Trim().ToLower().Contains(lblAns2.Text.Trim().ToLower()))
+                {
+                    picAns2.BackgroundImage = Properties.Resources.check;
+                    points++;
+                    btnHint2.Enabled = false;
+                    comboBox2.Enabled = false;
+                    Questions--;
+                    sq = true;
+                }
+                else if (sq == false && !comboBox2.Text.Trim().ToLower().Contains(lblAns2.Text.Trim().ToLower()))
+                {
+                    picAns2.BackgroundImage = Properties.Resources.cross;
+                }
+
+
+
+
+                if (tq == false && comboBox3.Text.Trim().ToLower().Contains(lblAns3.Text.Trim().ToLower()))
+                {
+                    picAns3.BackgroundImage = Properties.Resources.check;
+                    points++;
+                    btnHint3.Enabled = false;
+                    comboBox3.Enabled = false;
+                    Questions--;
+                    tq = false;
+                }
+                else if (tq == false && !comboBox3.Text.Trim().ToLower().Contains(lblAns3.Text.Trim().ToLower()))
+                {
+                    picAns3.BackgroundImage = Properties.Resources.cross;
+                }
+
+
+                if (Questions == 0)
+                {
+                    lblPoints.Text = points.ToString();
+                    btnCheckYourAnswer.Text = "Go to Antonyms lesson";
+                }
+
+
+
+                if (attempt == 0 && Questions != 0)
+                {
+                    btnCheckYourAnswer.Text = "Restart the level";
+                }
+
+
+            }
         }
     }
 }

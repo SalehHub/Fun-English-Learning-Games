@@ -32,9 +32,9 @@
             this.picCheckAnswers = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnHint3 = new System.Windows.Forms.Button();
+            this.btnHint2 = new System.Windows.Forms.Button();
+            this.btnHint1 = new System.Windows.Forms.Button();
             this.lblS1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
@@ -57,6 +57,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.lblAttempts = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.btnCheckYourAnswer = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picCheckAnswers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
@@ -87,7 +88,7 @@
             this.picCheckAnswers.BackgroundImage = global::FunEngGames.Properties.Resources.checkYourAswers;
             this.picCheckAnswers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picCheckAnswers.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picCheckAnswers.Location = new System.Drawing.Point(455, 622);
+            this.picCheckAnswers.Location = new System.Drawing.Point(19, 622);
             this.picCheckAnswers.Name = "picCheckAnswers";
             this.picCheckAnswers.Size = new System.Drawing.Size(317, 88);
             this.picCheckAnswers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -121,14 +122,14 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 86F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 87F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Controls.Add(this.button4, 4, 2);
-            this.tableLayoutPanel2.Controls.Add(this.button3, 4, 1);
-            this.tableLayoutPanel2.Controls.Add(this.button2, 4, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnHint3, 4, 2);
+            this.tableLayoutPanel2.Controls.Add(this.btnHint2, 4, 1);
+            this.tableLayoutPanel2.Controls.Add(this.btnHint1, 4, 0);
             this.tableLayoutPanel2.Controls.Add(this.lblS1, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.comboBox1, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.comboBox3, 1, 2);
@@ -150,38 +151,38 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(720, 153);
             this.tableLayoutPanel2.TabIndex = 22;
             // 
-            // button4
+            // btnHint3
             // 
-            this.button4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Green;
-            this.button4.Location = new System.Drawing.Point(638, 104);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(78, 40);
-            this.button4.TabIndex = 29;
-            this.button4.Text = "Hint";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnHint3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHint3.ForeColor = System.Drawing.Color.Green;
+            this.btnHint3.Location = new System.Drawing.Point(638, 104);
+            this.btnHint3.Name = "btnHint3";
+            this.btnHint3.Size = new System.Drawing.Size(78, 40);
+            this.btnHint3.TabIndex = 29;
+            this.btnHint3.Text = "Hint";
+            this.btnHint3.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnHint2
             // 
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Green;
-            this.button3.Location = new System.Drawing.Point(638, 54);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(78, 40);
-            this.button3.TabIndex = 28;
-            this.button3.Text = "Hint";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnHint2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHint2.ForeColor = System.Drawing.Color.Green;
+            this.btnHint2.Location = new System.Drawing.Point(638, 54);
+            this.btnHint2.Name = "btnHint2";
+            this.btnHint2.Size = new System.Drawing.Size(78, 40);
+            this.btnHint2.TabIndex = 28;
+            this.btnHint2.Text = "Hint";
+            this.btnHint2.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnHint1
             // 
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Green;
-            this.button2.Location = new System.Drawing.Point(638, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(78, 43);
-            this.button2.TabIndex = 27;
-            this.button2.Text = "Hint";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnHint1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHint1.ForeColor = System.Drawing.Color.Green;
+            this.btnHint1.Location = new System.Drawing.Point(638, 4);
+            this.btnHint1.Name = "btnHint1";
+            this.btnHint1.Size = new System.Drawing.Size(78, 43);
+            this.btnHint1.TabIndex = 27;
+            this.btnHint1.Text = "Hint";
+            this.btnHint1.UseVisualStyleBackColor = true;
             // 
             // lblS1
             // 
@@ -350,9 +351,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(810, 622);
+            this.button1.Location = new System.Drawing.Point(954, 622);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 71);
+            this.button1.Size = new System.Drawing.Size(206, 71);
             this.button1.TabIndex = 26;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -440,6 +441,17 @@
             this.pictureBox5.TabIndex = 32;
             this.pictureBox5.TabStop = false;
             // 
+            // btnCheckYourAnswer
+            // 
+            this.btnCheckYourAnswer.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckYourAnswer.Location = new System.Drawing.Point(462, 614);
+            this.btnCheckYourAnswer.Name = "btnCheckYourAnswer";
+            this.btnCheckYourAnswer.Size = new System.Drawing.Size(309, 74);
+            this.btnCheckYourAnswer.TabIndex = 34;
+            this.btnCheckYourAnswer.Text = "Check your answers";
+            this.btnCheckYourAnswer.UseVisualStyleBackColor = true;
+            this.btnCheckYourAnswer.Click += new System.EventHandler(this.btnCheckYourAnswer_Click);
+            // 
             // Synonyms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -447,6 +459,7 @@
             this.BackgroundImage = global::FunEngGames.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1227, 720);
+            this.Controls.Add(this.btnCheckYourAnswer);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.lblAttempts);
             this.Controls.Add(this.pictureBox5);
@@ -502,14 +515,15 @@
         private System.Windows.Forms.PictureBox picAns2;
         private System.Windows.Forms.PictureBox picAns3;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnHint3;
+        private System.Windows.Forms.Button btnHint2;
+        private System.Windows.Forms.Button btnHint1;
         private System.Windows.Forms.Label lblPoints;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblAttempts;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button btnCheckYourAnswer;
     }
 }
