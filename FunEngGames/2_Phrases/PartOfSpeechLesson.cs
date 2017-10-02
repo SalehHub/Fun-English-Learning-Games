@@ -41,7 +41,7 @@ namespace FunEngGames
 
         private void POSLesson_Load(object sender, EventArgs e)
         {
-            xmlDoc.Load("XML/questions.xml");
+            xmlDoc.Load("XML/partsofspeech.xml");
             nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/partOfSpeech");
 
             GenPOS(textBox1,  textBox2,  textBox3,  nodeList);
@@ -73,7 +73,7 @@ namespace FunEngGames
             NewNumber(nodeList.Count);
             t1.Text = nodeList[randomList.Last()].SelectSingleNode("sentence").InnerText;
             t2.Text = nodeList[randomList.Last()].SelectSingleNode("word").InnerText;
-            t3.Text = nodeList[randomList.Last()].SelectSingleNode("answer").InnerText;
+            t3.Text = nodeList[randomList.Last()].SelectSingleNode("answer1").InnerText;
 
         }
 

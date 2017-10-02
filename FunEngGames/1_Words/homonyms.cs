@@ -191,5 +191,10 @@ namespace FunEngGames
         {
             //speech(label1.Text);
         }
+
+        private void lbltitle_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
