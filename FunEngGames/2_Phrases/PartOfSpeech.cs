@@ -61,7 +61,7 @@ namespace FunEngGames
             XmlDocument xmlDoc = new XmlDocument();
             xmlDoc.Load("XML/questions.xml");
 
-            XmlNodeList nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/"+ "/ PartOfSpeech");
+            XmlNodeList nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/"+ "partOfSpeech");
 
             NewNumber(nodeList.Count);
             int random = randomList.Last();

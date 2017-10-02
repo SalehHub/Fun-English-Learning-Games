@@ -1,21 +1,19 @@
-<?xml version="1.0" encoding="utf-8" ?> 
+<?xml version="1.0" encoding="utf-8" ?>
 <Questions>
-  
-  <!--Grammmar questions-->
-  <!--Simple grammar questions-->
+
 <Grammar>
 <sentence>what kind of work do you do?</sentence>
 <answer>I'm a piano teacher</answer>
 <option>I work every day</option>
 <option>I worked for two hours</option> 
-</Grammar>  
+</Grammar>
 
 <Grammar>
 <sentence>John works______________ building downtown?</sentence>
 <answer>at the new office</answer>
 <option>in the new office</option>
 <option>on the new office</option> 
-</Grammar>  
+</Grammar>
 
 <!-- Simple Present tense question-->
 <Grammar>
@@ -82,7 +80,6 @@
 
 
 </Questions>
-  
 
 
 
