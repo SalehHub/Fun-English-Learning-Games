@@ -278,7 +278,7 @@ namespace FunEngGames
             }
             else
             {
-
+        
 
                 attempt--;
                 lblAttempts.Text = attempt.ToString();

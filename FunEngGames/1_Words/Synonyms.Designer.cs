@@ -94,6 +94,7 @@
             this.picCheckAnswers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picCheckAnswers.TabIndex = 20;
             this.picCheckAnswers.TabStop = false;
+            this.picCheckAnswers.Visible = false;
             this.picCheckAnswers.Click += new System.EventHandler(this.picCheckAnswers_Click);
             this.picCheckAnswers.MouseLeave += new System.EventHandler(this.picCheckAnswers_MouseLeave);
             this.picCheckAnswers.MouseHover += new System.EventHandler(this.picCheckAnswers_MouseHover);
@@ -477,7 +478,7 @@
             this.Name = "Synonyms";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Fun English Learning Games: Words - Synonyms level";
+            this.Text = " ";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.S_A_FormClosed);
             this.Load += new System.EventHandler(this.S_A_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picCheckAnswers)).EndInit();
