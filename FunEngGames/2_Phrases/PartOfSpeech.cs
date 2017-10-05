@@ -53,7 +53,7 @@ namespace FunEngGames
 
             // Load the image asynchronously.
             pictureBox5.LoadAsync(@"https://media.giphy.com/media/Bn6djQ6MgEWZi/giphy.gif");
-            xmlDoc.Load("XML/partsofspeech.xml");
+            xmlDoc.Load("XML/PartOfSpeech.xml");
             //this.Synonyms();
             this.GenPartsOfSpeech();
         }
