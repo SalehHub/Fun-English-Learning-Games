@@ -5,12 +5,13 @@ namespace FunEngGames
 {
     public partial class phrasesLevel : Form
     {
-        public Form mainLevelsForm;
 
         public phrasesLevel()
         {
             InitializeComponent();
         }
+
+        public mainLevels mainLevelsForm;
 
         private void picSpelling_MouseHover(object sender, EventArgs e)
         {
@@ -43,7 +44,8 @@ namespace FunEngGames
             spelling.Show();
             */
             POSLesson POSLesson = new POSLesson();
-            POSLesson.mainLevelsForm = this;
+            POSLesson.mainLevelsForm = this.mainLevelsForm;
+            POSLesson.phrasesLevelForm = this;
             this.Hide();
             POSLesson.Show();
         }
@@ -62,7 +64,8 @@ namespace FunEngGames
             homonyms.Show();
             */
             IdiomsLesson IdiomsLesson = new IdiomsLesson();
-            IdiomsLesson.mainLevelsForm = this;
+            IdiomsLesson.mainLevelsForm = this.mainLevelsForm;
+            IdiomsLesson.phrasesLevelForm = this;
             this.Hide();
             IdiomsLesson.Show();
         }

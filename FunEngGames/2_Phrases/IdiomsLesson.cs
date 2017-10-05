@@ -21,7 +21,8 @@ namespace FunEngGames
 
         public Random a = new Random();
         public List<int> randomList = new List<int>();
-        public phrasesLevel mainLevelsForm;
+        public phrasesLevel phrasesLevelForm;
+        public mainLevels mainLevelsForm;
 
         int MyNumber = 0;
         private void NewNumber(int max)
@@ -40,7 +41,7 @@ namespace FunEngGames
         private void IdiomsLesson_Load(object sender, EventArgs e)
         {
             XmlDocument xmlDoc = new XmlDocument();
-            xmlDoc.Load("XML/questions.xml");
+            xmlDoc.Load("XML/idioms.xml");
             XmlNodeList nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/idioms");
 
             GenIdiom(label1,label2, nodeList);
@@ -73,7 +74,7 @@ namespace FunEngGames
         {
             try
             {
-                this.mainLevelsForm.Show();
+                this.phrasesLevelForm.Show();
             }
             catch (Exception ex)
             {
@@ -90,6 +91,7 @@ namespace FunEngGames
         {
             Idioms Idioms = new Idioms();
             Idioms.mainLevelsForm = this.mainLevelsForm;
+            Idioms.phrasesLevelForm = this.phrasesLevelForm;
             this.Hide();
             Idioms.Show();
         }

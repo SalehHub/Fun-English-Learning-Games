@@ -21,7 +21,9 @@ namespace FunEngGames
 
         public Random a = new Random();
         public List<int> randomList = new List<int>();
-        public phrasesLevel mainLevelsForm;
+        public phrasesLevel phrasesLevelForm;
+        public mainLevels mainLevelsForm;
+
         XmlDocument xmlDoc = new XmlDocument();
         XmlNodeList nodeList;
 
@@ -59,7 +61,7 @@ namespace FunEngGames
         {
             try
             {
-                this.mainLevelsForm.Show();
+                this.phrasesLevelForm.Show();
             }
             catch (Exception ex)
             {
@@ -81,6 +83,7 @@ namespace FunEngGames
         {
             POS POS = new POS();
             POS.mainLevelsForm = this.mainLevelsForm;
+            POS.phrasesLevelForm = this.phrasesLevelForm;
             this.Hide();
             POS.Show();
         }

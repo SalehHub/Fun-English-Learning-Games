@@ -16,8 +16,8 @@ namespace FunEngGames
         {
             InitializeComponent();
         }
-        public phrasesLevel mainLevelsForm;
-
+        public phrasesLevel phrasesLevelForm;
+        public mainLevels mainLevelsForm;
         private void Idioms_Load(object sender, EventArgs e)
         {
             // Ensure WaitOnLoad is false.
@@ -31,7 +31,7 @@ namespace FunEngGames
         {
             try
             {
-                this.mainLevelsForm.Show();
+                this.phrasesLevelForm.Show();
             }
             catch (Exception ex)
             {
