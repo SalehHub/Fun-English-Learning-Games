@@ -450,6 +450,8 @@ namespace FunEngGames
 
             this.wordLevelsForm.lblSpellingPoints.Text = points.ToString();
             this.mainLevelsForm.lblSpellingPoints.Text = points.ToString();
+
+           mainLevelsForm.CF.spellingPoints = points;
         }
 
     }

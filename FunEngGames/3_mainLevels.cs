@@ -13,6 +13,7 @@ namespace FunEngGames
 
         public int spellingPoints = 0;
 
+         public CommonFunctions CF = new CommonFunctions();
 
         private void picWords_MouseHover(object sender, EventArgs e)
         {
@@ -66,7 +67,8 @@ namespace FunEngGames
         private void mainLevels_Load(object sender, EventArgs e)
         {
             //pictureBox1.ImageLocation = "Images\\circle.gif";
-            lblSpellingPoints.Text = this.spellingPoints.ToString();
+
+            //lblSpellingPoints.Text = this.spellingPoints.ToString();
 
         }
 
@@ -88,7 +90,7 @@ namespace FunEngGames
 
         private void mainLevels_Shown(object sender, EventArgs e)
         {
-            lblSpellingPoints.Text = this.spellingPoints.ToString();
+            lblSpellingPoints.Text = CF.spellingPoints.ToString();  //this.spellingPoints.ToString();
         }
     }
 }

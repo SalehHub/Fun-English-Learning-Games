@@ -12,8 +12,9 @@ using System.Windows.Forms;
 
 namespace FunEngGames
 {
-    class CommonFunctions
+   public class CommonFunctions
     {
+        public int spellingPoints = 0;
         
         //Get json from Oxford api
         public string GET2(string url)
