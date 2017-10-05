@@ -561,6 +561,7 @@
     </None>
     <Content Include="XML\PartOfSpeech.xml">
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="XML\Spelling.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

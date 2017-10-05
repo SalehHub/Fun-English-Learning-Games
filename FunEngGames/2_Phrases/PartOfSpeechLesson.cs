@@ -43,7 +43,7 @@ namespace FunEngGames
 
         private void POSLesson_Load(object sender, EventArgs e)
         {
-            xmlDoc.Load("XML/partsofspeech.xml");
+            xmlDoc.Load("XML/PartOfSpeech.xml");
             nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/partOfSpeech");
 
             GenPOS(textBox1,  textBox2,  textBox3,  nodeList);
