@@ -21,7 +21,9 @@ namespace FunEngGames
 
         public Random a = new Random();
         public List<int> randomList = new List<int>();
-        public phrasesLevel mainLevelsForm;
+        public phrasesLevel phrasesLevelForm;
+        public mainLevels mainLevelsForm;
+
         XmlDocument xmlDoc = new XmlDocument();
         XmlNodeList nodeList;
 
@@ -41,7 +43,7 @@ namespace FunEngGames
 
         private void POSLesson_Load(object sender, EventArgs e)
         {
-            xmlDoc.Load("XML/questions.xml");
+            xmlDoc.Load("XML/partsofspeech.xml");
             nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/partOfSpeech");
 
             GenPOS(textBox1,  textBox2,  textBox3,  nodeList);
@@ -59,7 +61,7 @@ namespace FunEngGames
         {
             try
             {
-                this.mainLevelsForm.Show();
+                this.phrasesLevelForm.Show();
             }
             catch (Exception ex)
             {
@@ -73,7 +75,7 @@ namespace FunEngGames
             NewNumber(nodeList.Count);
             t1.Text = nodeList[randomList.Last()].SelectSingleNode("sentence").InnerText;
             t2.Text = nodeList[randomList.Last()].SelectSingleNode("word").InnerText;
-            t3.Text = nodeList[randomList.Last()].SelectSingleNode("answer").InnerText;
+            t3.Text = nodeList[randomList.Last()].SelectSingleNode("answer1").InnerText;
 
         }
 
@@ -81,6 +83,7 @@ namespace FunEngGames
         {
             POS POS = new POS();
             POS.mainLevelsForm = this.mainLevelsForm;
+            POS.phrasesLevelForm = this.phrasesLevelForm;
             this.Hide();
             POS.Show();
         }
