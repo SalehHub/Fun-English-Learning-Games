@@ -47,6 +47,7 @@
             // 
             this.animator1.SetDecoration(this.button1, AnimatorNS.DecorationType.None);
             this.button1.Location = new System.Drawing.Point(12, 462);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(173, 44);
             this.button1.TabIndex = 4;
@@ -87,9 +88,11 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.animator1.SetDecoration(this.panel1, AnimatorNS.DecorationType.None);
             this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1109, 637);
+            this.panel1.Size = new System.Drawing.Size(1109, 638);
             this.panel1.TabIndex = 5;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label2
             // 
@@ -99,14 +102,15 @@
             this.animator1.SetDecoration(this.label2, AnimatorNS.DecorationType.None);
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label2.Location = new System.Drawing.Point(111, 499);
+            this.label2.Location = new System.Drawing.Point(111, 498);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(887, 131);
+            this.label2.Size = new System.Drawing.Size(887, 130);
             this.label2.TabIndex = 6;
             this.label2.Text = "Created by Saleh Alzahrani, Sarah Aljabri, Adriana Escobar, Girish Kontham, Sande" +
     "ep, Ronish Panjwani, Tony Ouyang \r\nCS6340 Advanced Software Engineering \r\nSt. Ma" +
     "ry\'s University\r\nFall 2017";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pictureBox2
             // 
@@ -117,7 +121,8 @@
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.animator1.SetDecoration(this.pictureBox2, AnimatorNS.DecorationType.None);
-            this.pictureBox2.Location = new System.Drawing.Point(18, 10);
+            this.pictureBox2.Location = new System.Drawing.Point(19, 10);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(1072, 192);
             this.pictureBox2.TabIndex = 4;
@@ -147,7 +152,8 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.animator1.SetDecoration(this.pictureBox1, AnimatorNS.DecorationType.None);
-            this.pictureBox1.Location = new System.Drawing.Point(394, 396);
+            this.pictureBox1.Location = new System.Drawing.Point(395, 396);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(320, 89);
             this.pictureBox1.TabIndex = 3;
@@ -164,6 +170,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.animator1.SetDecoration(this, AnimatorNS.DecorationType.None);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Home";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

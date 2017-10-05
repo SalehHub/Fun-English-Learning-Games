@@ -221,6 +221,7 @@
             this.lblPages.TabIndex = 18;
             this.lblPages.Text = "Page 1 out of 3";
             this.lblPages.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPages.Click += new System.EventHandler(this.lblPages_Click);
             // 
             // label4
             // 
@@ -272,6 +273,8 @@
             this.imageList1.Images.SetKeyName(6, "tree.png");
             this.imageList1.Images.SetKeyName(7, "scissor.png");
             this.imageList1.Images.SetKeyName(8, "diamond.png");
+            this.imageList1.Images.SetKeyName(9, "baseball.png");
+            this.imageList1.Images.SetKeyName(10, "Rainbow-Color-Wallpaper.png");
             // 
             // radioButton2
             // 
@@ -535,7 +538,7 @@
             this.radioButton15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButton15.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.radioButton15.ImageIndex = 8;
+            this.radioButton15.ImageIndex = 10;
             this.radioButton15.ImageList = this.imageList1;
             this.radioButton15.Location = new System.Drawing.Point(751, 85);
             this.radioButton15.Name = "radioButton15";
@@ -619,7 +622,7 @@
             this.radioButton19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButton19.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.radioButton19.ImageIndex = 5;
+            this.radioButton19.ImageIndex = 9;
             this.radioButton19.ImageList = this.imageList1;
             this.radioButton19.Location = new System.Drawing.Point(1088, 85);
             this.radioButton19.Name = "radioButton19";

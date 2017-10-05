@@ -169,7 +169,7 @@ namespace FunEngGames
                 NewNumber(nodeList.Count);
                 int random = randomList.Last();
 
-                pic1 = nodeList[random].SelectSingleNode("answer").InnerText.Trim()+".png";
+                pic1 = nodeList[random].SelectSingleNode("answer").InnerText.Trim()+".png"; 
                 ans1 = nodeList[random].SelectSingleNode("answer").InnerText;
 
                 picWord.Image = Image.FromFile(@"Images\" + pic1);
