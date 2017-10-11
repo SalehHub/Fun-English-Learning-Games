@@ -18,7 +18,20 @@ namespace FunEngGames
         public int synonymsPoints = 0;
         public int antonymsPoints = 0;
         public int homonymsPoints = 0;
-        
+
+
+
+        private void Download(string url,string fileName)
+        {
+            using (WebClient wc = new WebClient())
+            {
+                //wc.DownloadProgressChanged += wc_DownloadProgressChanged;
+                wc.DownloadFileAsync(new Uri(url),fileName);
+            }
+        }
+
+
+
         //Get json from Oxford api
         public string GET2(string url)
         {
@@ -32,26 +45,52 @@ namespace FunEngGames
 
             req.Method = WebRequestMethods.Http.Get;
             req.Accept = "application/json";
+            req.Timeout = 3000;
+            req.Proxy = null;
 
-            using (HttpWebResponse HWR_Response = (HttpWebResponse)req.GetResponse())
-            using (Stream respStream = HWR_Response.GetResponseStream())
-            using (StreamReader sr = new StreamReader(respStream, Encoding.UTF8))
+            try
             {
-                string theJson = sr.ReadToEnd();
+                using (HttpWebResponse HWR_Response = (HttpWebResponse)req.GetResponse())
+                {
 
-                return theJson;
+                    //HttpWebResponse HWR_Response = (HttpWebResponse)req.GetResponse();
+
+                    if (HWR_Response.StatusCode == HttpStatusCode.OK)
+                    {
+                        using (Stream respStream = HWR_Response.GetResponseStream())
+
+                        using (StreamReader sr = new StreamReader(respStream, Encoding.UTF8))
+                        {
+                            string theJson = sr.ReadToEnd();
+
+                            return theJson;
+                        }
+                    }
+                    else
+                    {
+                        HWR_Response.Close();
+                        throw new Exception("No connection");
+
+                        //return false;
+                    }
+                }
+              
+            }catch(Exception ex)
+            {
+                     throw new Exception("No connection");
+
             }
+            //}
         }
 
 
 
         //Paly online mp3 file
-        public static void PlayMp3FromUrl(string url)
+        public void PlayMp3FromUrl(string url)
         {
             using (Stream ms = new MemoryStream())
             {
-                using (Stream stream = WebRequest.Create(url)
-                    .GetResponse().GetResponseStream())
+                using (Stream stream = WebRequest.Create(url).GetResponse().GetResponseStream())
                 {
                     byte[] buffer = new byte[32768];
                     int read;
@@ -257,31 +296,54 @@ namespace FunEngGames
 
 
         //Pronounce specific word using Oxford api
-        public void Pronounce2(string word)
+        public void  Pronounce(string word)
         {
-            try
-            {
-                string json22 = GET2("https://od-api.oxforddictionaries.com:443/api/v1/entries/en/" + word.Trim().ToLower());
-                var wordss = JsonConvert.DeserializeObject<WordObject>(json22);
+            //if (CheckForInternetConnection()) {
+                try
+                {
 
-                if (wordss.results[0].lexicalEntries[0].pronunciations != null && wordss.results[0].lexicalEntries[0].pronunciations[0].audioFile != null)
+
+                if (!File.Exists("Audio\\"+word + ".mp3"))
                 {
-                    PlayMp3FromUrl(wordss.results[0].lexicalEntries[0].pronunciations[0].audioFile);
-                }
-                else
+                    string json22 = GET2("https://od-api.oxforddictionaries.com:443/api/v1/entries/en/" + word.Trim().ToLower());
+                    var wordss = JsonConvert.DeserializeObject<WordObject>(json22);
+
+                    if (wordss.results[0].lexicalEntries[0].pronunciations != null && wordss.results[0].lexicalEntries[0].pronunciations[0].audioFile != null)
+                    {
+                        PlayMp3FromUrl(wordss.results[0].lexicalEntries[0].pronunciations[0].audioFile);
+
+
+                        Download(wordss.results[0].lexicalEntries[0].pronunciations[0].audioFile, "Audio\\" + word + ".mp3");
+
+                    }
+                    else
+                    {
+                        //MessageBox.Show("No pronunciations found, Sorry");
+                        Pronounce2(word);
+                    }
+                }else
                 {
-                    MessageBox.Show("No pronunciations found, Sorry");
+                    IWavePlayer waveOutDevice = new WaveOut();
+                    AudioFileReader audioFileReader = new AudioFileReader("Audio\\" + word +".mp3");
+
+                    waveOutDevice.Init(audioFileReader);
+                    waveOutDevice.Play();
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+                }
+                catch (Exception ex)
+                {
+                    //MessageBox.Show(ex.Message);
+                    Pronounce2(word);
+                }
+           // }else
+           // {
+           //     Pronounce2(word);
+           // }
         }
 
 
         //Pronounce specific word using SpeechSynthesizer class
-        public void Pronounce(string word)
+        public void Pronounce2(string word)
         {
             try
             {
@@ -292,51 +354,51 @@ namespace FunEngGames
 
                 if (rand == 0)
                 {
-                    synthesizer.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Adult); // to change VoiceGender and VoiceAge check out those links below
+                    synthesizer.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Adult); 
                 }
                 if (rand == 1)
                 {
-                    synthesizer.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Child); // to change VoiceGender and VoiceAge check out those links below
+                    synthesizer.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Child); 
                 }
                 if (rand == 2)
                 {
-                    synthesizer.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Senior); // to change VoiceGender and VoiceAge check out those links below
+                    synthesizer.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Senior); 
                 }
                 if (rand == 3)
                 {
-                    synthesizer.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Teen); // to change VoiceGender and VoiceAge check out those links below
+                    synthesizer.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Teen); 
                 }
                 if (rand == 4)
                 {
-                    synthesizer.SelectVoiceByHints(VoiceGender.Male, VoiceAge.Adult); // to change VoiceGender and VoiceAge check out those links below
+                    synthesizer.SelectVoiceByHints(VoiceGender.Male, VoiceAge.Adult); 
                 }
                 if (rand == 5)
                 {
-                    synthesizer.SelectVoiceByHints(VoiceGender.Male, VoiceAge.Child); // to change VoiceGender and VoiceAge check out those links below
+                    synthesizer.SelectVoiceByHints(VoiceGender.Male, VoiceAge.Child); 
                 }
                 if (rand == 6)
                 {
-                    synthesizer.SelectVoiceByHints(VoiceGender.Male, VoiceAge.Senior); // to change VoiceGender and VoiceAge check out those links below
+                    synthesizer.SelectVoiceByHints(VoiceGender.Male, VoiceAge.Senior);
                 }
                 if (rand == 7)
                 {
-                    synthesizer.SelectVoiceByHints(VoiceGender.Male, VoiceAge.Teen); // to change VoiceGender and VoiceAge check out those links below
+                    synthesizer.SelectVoiceByHints(VoiceGender.Male, VoiceAge.Teen);
                 }
                 if (rand == 8)
                 {
-                    synthesizer.SelectVoiceByHints(VoiceGender.Neutral, VoiceAge.Adult); // to change VoiceGender and VoiceAge check out those links below
+                    synthesizer.SelectVoiceByHints(VoiceGender.Neutral, VoiceAge.Adult);
                 }
                 if (rand == 9)
                 {
-                    synthesizer.SelectVoiceByHints(VoiceGender.Neutral, VoiceAge.Child); // to change VoiceGender and VoiceAge check out those links below
+                    synthesizer.SelectVoiceByHints(VoiceGender.Neutral, VoiceAge.Child);
                 }
                 if (rand == 10)
                 {
-                    synthesizer.SelectVoiceByHints(VoiceGender.Neutral, VoiceAge.Senior); // to change VoiceGender and VoiceAge check out those links below
+                    synthesizer.SelectVoiceByHints(VoiceGender.Neutral, VoiceAge.Senior);
                 }
                 if (rand == 11)
                 {
-                    synthesizer.SelectVoiceByHints(VoiceGender.Neutral, VoiceAge.Teen); // to change VoiceGender and VoiceAge check out those links below
+                    synthesizer.SelectVoiceByHints(VoiceGender.Neutral, VoiceAge.Teen);
                 }
 
                 synthesizer.Volume = 100;  // 0...100
