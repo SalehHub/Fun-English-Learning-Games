@@ -1,6 +1,4 @@
-﻿
-
-using NAudio.Wave;
+﻿using NAudio.Wave;
 using Newtonsoft.Json;
 using System;
 using System.ComponentModel;
@@ -19,18 +17,13 @@ namespace FunEngGames
         public int antonymsPoints = 0;
         public int homonymsPoints = 0;
 
-
-
         private void Download(string url,string fileName)
         {
             using (WebClient wc = new WebClient())
             {
-                //wc.DownloadProgressChanged += wc_DownloadProgressChanged;
                 wc.DownloadFileAsync(new Uri(url),fileName);
             }
         }
-
-
 
         //Get json from Oxford api
         public string GET2(string url)
@@ -52,9 +45,6 @@ namespace FunEngGames
             {
                 using (HttpWebResponse HWR_Response = (HttpWebResponse)req.GetResponse())
                 {
-
-                    //HttpWebResponse HWR_Response = (HttpWebResponse)req.GetResponse();
-
                     if (HWR_Response.StatusCode == HttpStatusCode.OK)
                     {
                         using (Stream respStream = HWR_Response.GetResponseStream())
@@ -80,7 +70,6 @@ namespace FunEngGames
                      throw new Exception("No connection");
 
             }
-            //}
         }
 
 
@@ -118,8 +107,6 @@ namespace FunEngGames
                 }
             }
         }
-
-
 
 
         //Get url content 
@@ -298,7 +285,6 @@ namespace FunEngGames
         //Pronounce specific word using Oxford api
         public void  Pronounce(string word)
         {
-            //if (CheckForInternetConnection()) {
                 try
                 {
 
@@ -335,12 +321,7 @@ namespace FunEngGames
                     //MessageBox.Show(ex.Message);
                     Pronounce2(word);
                 }
-           // }else
-           // {
-           //     Pronounce2(word);
-           // }
         }
-
 
         //Pronounce specific word using SpeechSynthesizer class
         public void Pronounce2(string word)
@@ -430,14 +411,11 @@ namespace FunEngGames
             return char.ToUpper(s[0]) + s.Substring(1);
         }
 
+
         public void SortDataGridColumn(DataGridView DG)
         {
             DG.Columns[0].HeaderCell.SortGlyphDirection = SortOrder.Ascending;
             DG.Sort(DG.Columns[0], ListSortDirection.Ascending);
         }
-
-
-
-
     }
 }

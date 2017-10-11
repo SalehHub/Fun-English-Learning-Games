@@ -283,7 +283,7 @@ namespace FunEngGames
 
             if (comboBox1.Text.Trim()=="" || comboBox2.Text.Trim()=="" || comboBox3.Text.Trim()=="")
             {
-                showFeedBack("Please answer all the three questions first.", Color.Red);
+                showFeedBack("Please answer all the three questions first", Color.Red);
 
             }else if (btnCheckYourAnswer.Text == "Restart the level")
             {

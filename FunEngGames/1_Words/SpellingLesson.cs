@@ -224,11 +224,9 @@ namespace FunEngGames
         {
             try
             {
-                //  panel1.Visible = false;
-                animator1.AnimationType = AnimatorNS.AnimationType.Scale;
-                animator1.BeginUpdate(panel1, false);
-                //load XML file
-                // xmlDoc.Load("XML/"+XMLName+".xml");
+               // animator1.AnimationType = AnimatorNS.AnimationType.Scale;
+                //animator1.BeginUpdate(panel1, false);
+
                 nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + XMLTag + "/spelling");
                 page = 0;
                 nextNode = 0;
@@ -255,9 +253,7 @@ namespace FunEngGames
                 Cursor cur = new Cursor(Properties.Resources.audio.Handle);
                 GetSelfAndChildrenRecursive(this).OfType<PictureBox>().ToList().ForEach(b => b.Cursor = cur);
 
-                //animator1.SetDecoration(panel1,AnimatorNS.DecorationType.None);
-                // animator1.ShowSync(panel1, false, AnimatorNS.Animation.VertSlide);
-                animator1.EndUpdateSync(panel1);
+                //animator1.EndUpdateSync(panel1);
 
             }
             catch (Exception ex)

@@ -211,6 +211,30 @@
 	<spelling>
 		<answer>diamond</answer>
 	</spelling>
+
+  <spelling>
+    <answer>ellipse</answer>
+  </spelling>
+  
+  <spelling>
+    <answer>hexagon</answer>
+  </spelling>
+  
+  <spelling>
+    <answer>parallelogram</answer>
+  </spelling>
+  
+  <spelling>
+    <answer>pentagon</answer>
+  </spelling>
+  
+  <spelling>
+    <answer>trapezoid</answer>
+  </spelling>
+  
+  <spelling>
+    <answer>cube</answer>
+  </spelling>
 	
 </shapes>
 
