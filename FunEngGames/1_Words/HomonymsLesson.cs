@@ -20,7 +20,9 @@ namespace FunEngGames
 
         public Random a = new Random();
         public List<int> randomList = new List<int>();
-        public wordsLevel mainLevelsForm;
+
+        public wordsLevel wordLevelsForm;
+        public mainLevels mainLevelsForm;
 
         XmlDocument xmlDoc = new XmlDocument();
         XmlNodeList nodeList;

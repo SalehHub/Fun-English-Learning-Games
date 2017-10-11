@@ -21,5 +21,10 @@ namespace FunEngGames
         {
             this.Close();
         }
+
+        private void lblSource_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(lblSource.Text);
+        }
     }
 }

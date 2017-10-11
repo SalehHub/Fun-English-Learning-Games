@@ -33,14 +33,14 @@
             this.picPhrases = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblSpellingPoints = new System.Windows.Forms.Label();
+            this.lblWordsPoints = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblPhrasesPoints = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblSentencesPoints = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbltitle = new System.Windows.Forms.Label();
@@ -130,18 +130,18 @@
             this.label2.Text = "Words Points";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblSpellingPoints
+            // lblWordsPoints
             // 
-            this.lblSpellingPoints.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblSpellingPoints.BackColor = System.Drawing.Color.Transparent;
-            this.lblSpellingPoints.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSpellingPoints.ForeColor = System.Drawing.Color.Black;
-            this.lblSpellingPoints.Location = new System.Drawing.Point(37, 8);
-            this.lblSpellingPoints.Name = "lblSpellingPoints";
-            this.lblSpellingPoints.Size = new System.Drawing.Size(171, 37);
-            this.lblSpellingPoints.TabIndex = 9;
-            this.lblSpellingPoints.Text = "0";
-            this.lblSpellingPoints.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblWordsPoints.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblWordsPoints.BackColor = System.Drawing.Color.Transparent;
+            this.lblWordsPoints.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWordsPoints.ForeColor = System.Drawing.Color.Black;
+            this.lblWordsPoints.Location = new System.Drawing.Point(37, 8);
+            this.lblWordsPoints.Name = "lblWordsPoints";
+            this.lblWordsPoints.Size = new System.Drawing.Size(171, 37);
+            this.lblWordsPoints.TabIndex = 9;
+            this.lblWordsPoints.Text = "0";
+            this.lblWordsPoints.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
@@ -177,7 +177,7 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = global::FunEngGames.Properties.Resources.result;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel1.Controls.Add(this.lblSpellingPoints);
+            this.panel1.Controls.Add(this.lblWordsPoints);
             this.panel1.Location = new System.Drawing.Point(103, 543);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(243, 65);
@@ -189,24 +189,24 @@
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.BackgroundImage = global::FunEngGames.Properties.Resources.result;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.lblPhrasesPoints);
             this.panel2.Location = new System.Drawing.Point(489, 543);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(243, 65);
             this.panel2.TabIndex = 15;
             // 
-            // label4
+            // lblPhrasesPoints
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(35, 8);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(170, 37);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "0";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPhrasesPoints.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblPhrasesPoints.BackColor = System.Drawing.Color.Transparent;
+            this.lblPhrasesPoints.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPhrasesPoints.ForeColor = System.Drawing.Color.Black;
+            this.lblPhrasesPoints.Location = new System.Drawing.Point(35, 8);
+            this.lblPhrasesPoints.Name = "lblPhrasesPoints";
+            this.lblPhrasesPoints.Size = new System.Drawing.Size(170, 37);
+            this.lblPhrasesPoints.TabIndex = 9;
+            this.lblPhrasesPoints.Text = "0";
+            this.lblPhrasesPoints.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel3
             // 
@@ -214,24 +214,24 @@
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.BackgroundImage = global::FunEngGames.Properties.Resources.result;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.lblSentencesPoints);
             this.panel3.Location = new System.Drawing.Point(865, 543);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(243, 65);
             this.panel3.TabIndex = 16;
             // 
-            // label6
+            // lblSentencesPoints
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(37, 8);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(170, 37);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "0";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSentencesPoints.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblSentencesPoints.BackColor = System.Drawing.Color.Transparent;
+            this.lblSentencesPoints.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSentencesPoints.ForeColor = System.Drawing.Color.Black;
+            this.lblSentencesPoints.Location = new System.Drawing.Point(37, 8);
+            this.lblSentencesPoints.Name = "lblSentencesPoints";
+            this.lblSentencesPoints.Size = new System.Drawing.Size(170, 37);
+            this.lblSentencesPoints.TabIndex = 9;
+            this.lblSentencesPoints.Text = "0";
+            this.lblSentencesPoints.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox6
             // 
@@ -328,8 +328,8 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbltitle;
-        public System.Windows.Forms.Label lblSpellingPoints;
-        public System.Windows.Forms.Label label4;
-        public System.Windows.Forms.Label label6;
+        public System.Windows.Forms.Label lblWordsPoints;
+        public System.Windows.Forms.Label lblPhrasesPoints;
+        public System.Windows.Forms.Label lblSentencesPoints;
     }
 }

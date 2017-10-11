@@ -216,7 +216,8 @@ namespace FunEngGames
         public void GoToNextLevel()
         {
             SynonymsLesson SynonymsLesson = new SynonymsLesson();
-            SynonymsLesson.mainLevelsForm = wordLevelsForm;
+            SynonymsLesson.mainLevelsForm = mainLevelsForm;
+            SynonymsLesson.wordLevelsForm = wordLevelsForm;
             this.Hide();
             SynonymsLesson.Show();
         }
@@ -448,8 +449,8 @@ namespace FunEngGames
             this.mainLevelsForm.spellingPoints = points;
             this.wordLevelsForm.spellingPoints = points;
 
+            this.mainLevelsForm.lblWordsPoints.Text = points.ToString();
             this.wordLevelsForm.lblSpellingPoints.Text = points.ToString();
-            this.mainLevelsForm.lblSpellingPoints.Text = points.ToString();
 
            mainLevelsForm.CF.spellingPoints = points;
         }

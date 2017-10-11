@@ -37,9 +37,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblSandAPoints = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblHomonymsPoints = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -175,24 +175,24 @@
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.BackgroundImage = global::FunEngGames.Properties.Resources.result;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.lblSandAPoints);
             this.panel2.Location = new System.Drawing.Point(450, 524);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(243, 65);
             this.panel2.TabIndex = 15;
             // 
-            // label4
+            // lblSandAPoints
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(35, 8);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(170, 37);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "0";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSandAPoints.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblSandAPoints.BackColor = System.Drawing.Color.Transparent;
+            this.lblSandAPoints.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSandAPoints.ForeColor = System.Drawing.Color.Black;
+            this.lblSandAPoints.Location = new System.Drawing.Point(35, 8);
+            this.lblSandAPoints.Name = "lblSandAPoints";
+            this.lblSandAPoints.Size = new System.Drawing.Size(170, 37);
+            this.lblSandAPoints.TabIndex = 9;
+            this.lblSandAPoints.Text = "0";
+            this.lblSandAPoints.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel3
             // 
@@ -200,24 +200,24 @@
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.BackgroundImage = global::FunEngGames.Properties.Resources.result;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.lblHomonymsPoints);
             this.panel3.Location = new System.Drawing.Point(794, 524);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(243, 65);
             this.panel3.TabIndex = 16;
             // 
-            // label6
+            // lblHomonymsPoints
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(37, 8);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(170, 37);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "0";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblHomonymsPoints.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblHomonymsPoints.BackColor = System.Drawing.Color.Transparent;
+            this.lblHomonymsPoints.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHomonymsPoints.ForeColor = System.Drawing.Color.Black;
+            this.lblHomonymsPoints.Location = new System.Drawing.Point(37, 8);
+            this.lblHomonymsPoints.Name = "lblHomonymsPoints";
+            this.lblHomonymsPoints.Size = new System.Drawing.Size(170, 37);
+            this.lblHomonymsPoints.TabIndex = 9;
+            this.lblHomonymsPoints.Text = "0";
+            this.lblHomonymsPoints.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
@@ -312,8 +312,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox2;
-        public System.Windows.Forms.Label label4;
-        public System.Windows.Forms.Label label6;
+        public System.Windows.Forms.Label lblSandAPoints;
+        public System.Windows.Forms.Label lblHomonymsPoints;
         public System.Windows.Forms.Label lblSpellingPoints;
     }
 }

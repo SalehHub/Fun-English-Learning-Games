@@ -20,7 +20,8 @@ namespace FunEngGames
 
         XmlDocument xmlDoc = new XmlDocument();
 
-        public wordsLevel mainLevelsForm;
+        public mainLevels mainLevelsForm;
+        public wordsLevel wordLevelForm;
 
         public Random a = new Random();
 
@@ -263,7 +264,10 @@ namespace FunEngGames
 
         private void btnCheckYourAnswer_Click(object sender, EventArgs e)
         {
-            if (btnCheckYourAnswer.Text == "Restart the level")
+            if (comboBox1.Text.Trim()=="" || comboBox2.Text.Trim()=="" || comboBox3.Text.Trim()=="")
+            {
+
+            }else if (btnCheckYourAnswer.Text == "Restart the level")
             {
 
                 S_A_Load(sender,e);
@@ -283,7 +287,7 @@ namespace FunEngGames
                 attempt--;
                 lblAttempts.Text = attempt.ToString();
 
-                //Synonyms check
+                //Correct answer (fq: first question)
                 if (fq == false && comboBox1.Text.Trim().ToLower().Contains(lblAns1.Text.Trim().ToLower()))
                 {
                     picAns1.BackgroundImage = Properties.Resources.check;
@@ -293,7 +297,7 @@ namespace FunEngGames
                     Questions--;
                     fq = true;
 
-                }
+                }//incorrect answer
                 else if (fq == false && !comboBox1.Text.Trim().ToLower().Contains(lblAns1.Text.Trim().ToLower()))
                 {
                     picAns1.BackgroundImage = Properties.Resources.cross;
@@ -337,6 +341,8 @@ namespace FunEngGames
                 if (Questions == 0)
                 {
                     lblPoints.Text = points.ToString();
+
+                    SavePoints();
                     btnCheckYourAnswer.Text = "Go to Antonyms lesson";
                 }
 
@@ -349,6 +355,21 @@ namespace FunEngGames
 
 
             }
+
         }
+
+        public void SavePoints()
+        {
+            this.mainLevelsForm.synonymsPoints = points;
+            this.wordLevelForm.synonymsPoints = points;
+
+            this.mainLevelsForm.lblWordsPoints.Text = (this.mainLevelsForm.synonymsPoints+points).ToString();
+            this.wordLevelForm.lblSandAPoints.Text = points.ToString();
+
+
+            this.mainLevelsForm.CF.spellingPoints = points;
+        }
+
     }
+
 }

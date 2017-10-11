@@ -23,6 +23,7 @@ namespace FunEngGames
 
         public Random a = new Random();
         public List<int> randomList = new List<int>();
+
         public wordsLevel wordLevelsForm;
         public mainLevels mainLevelsForm;
 

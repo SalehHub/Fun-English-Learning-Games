@@ -123,7 +123,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 87F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 88F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
@@ -445,9 +445,9 @@
             // btnCheckYourAnswer
             // 
             this.btnCheckYourAnswer.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheckYourAnswer.Location = new System.Drawing.Point(462, 614);
+            this.btnCheckYourAnswer.Location = new System.Drawing.Point(429, 614);
             this.btnCheckYourAnswer.Name = "btnCheckYourAnswer";
-            this.btnCheckYourAnswer.Size = new System.Drawing.Size(309, 74);
+            this.btnCheckYourAnswer.Size = new System.Drawing.Size(369, 74);
             this.btnCheckYourAnswer.TabIndex = 34;
             this.btnCheckYourAnswer.Text = "Check your answers";
             this.btnCheckYourAnswer.UseVisualStyleBackColor = true;

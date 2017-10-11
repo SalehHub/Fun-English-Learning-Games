@@ -39,6 +39,8 @@
             this.txtSyn = new System.Windows.Forms.TextBox();
             this.txtAnt = new System.Windows.Forms.TextBox();
             this.txtDef = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblSource = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // lblSynonyms
@@ -132,7 +134,7 @@
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(497, 651);
+            this.button1.Location = new System.Drawing.Point(982, 648);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(180, 57);
             this.button1.TabIndex = 7;
@@ -176,6 +178,35 @@
             this.txtDef.Size = new System.Drawing.Size(732, 503);
             this.txtDef.TabIndex = 10;
             // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 682);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 20);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Source:";
+            // 
+            // lblSource
+            // 
+            this.lblSource.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblSource.AutoSize = true;
+            this.lblSource.BackColor = System.Drawing.Color.Transparent;
+            this.lblSource.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSource.LinkArea = new System.Windows.Forms.LinkArea(0, 100);
+            this.lblSource.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.lblSource.Location = new System.Drawing.Point(66, 682);
+            this.lblSource.Name = "lblSource";
+            this.lblSource.Size = new System.Drawing.Size(373, 23);
+            this.lblSource.TabIndex = 13;
+            this.lblSource.TabStop = true;
+            this.lblSource.Text = "https://en.oxforddictionaries.com/definition/week";
+            this.lblSource.UseCompatibleTextRendering = true;
+            this.lblSource.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblSource_LinkClicked);
+            // 
             // MoreInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -183,6 +214,8 @@
             this.BackgroundImage = global::FunEngGames.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1174, 711);
+            this.Controls.Add(this.lblSource);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtDef);
             this.Controls.Add(this.txtAnt);
             this.Controls.Add(this.txtSyn);
@@ -220,5 +253,7 @@
         public System.Windows.Forms.TextBox txtSyn;
         public System.Windows.Forms.TextBox txtAnt;
         public System.Windows.Forms.TextBox txtDef;
+        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.LinkLabel lblSource;
     }
 }

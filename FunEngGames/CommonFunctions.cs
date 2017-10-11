@@ -220,6 +220,7 @@ namespace FunEngGames
                 MoreInfo.txtAnt.Text = a.Trim();
                 MoreInfo.txtDef.Text = w.Trim(); ;
 
+                MoreInfo.lblSource.Text= "https://en.oxforddictionaries.com/definition/"+ word.ToString();
                 //hide antonyms column
                 if (a.Trim() == "")
                 {

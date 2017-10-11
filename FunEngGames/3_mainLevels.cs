@@ -12,6 +12,9 @@ namespace FunEngGames
 
 
         public int spellingPoints = 0;
+        public int synonymsPoints = 0;
+        public int antonymsPoints = 0;
+        public int homonymsPoints = 0;
 
          public CommonFunctions CF = new CommonFunctions();
 
@@ -33,6 +36,16 @@ namespace FunEngGames
 
             wordsLevel wordLevel = new wordsLevel();
             wordLevel.mainLevelsForm = this;
+
+            wordLevel.lblSpellingPoints.Text = this.spellingPoints.ToString();
+            wordLevel.lblSandAPoints.Text = (this.synonymsPoints + this.antonymsPoints).ToString();
+            wordLevel.lblHomonymsPoints.Text = this.homonymsPoints.ToString();
+
+            wordLevel.spellingPoints = this.spellingPoints;
+            wordLevel.synonymsPoints = this.synonymsPoints;
+            wordLevel.antonymsPoints =this.antonymsPoints;
+            wordLevel.antonymsPoints = this.homonymsPoints;
+
             this.Hide();
             wordLevel.Show();
 
@@ -90,7 +103,7 @@ namespace FunEngGames
 
         private void mainLevels_Shown(object sender, EventArgs e)
         {
-            lblSpellingPoints.Text = CF.spellingPoints.ToString();  //this.spellingPoints.ToString();
+            lblWordsPoints.Text = CF.spellingPoints.ToString();  //this.spellingPoints.ToString();
         }
     }
 }

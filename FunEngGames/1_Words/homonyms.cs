@@ -19,7 +19,8 @@ namespace FunEngGames
             InitializeComponent();
         }
 
-        public wordsLevel mainLevelsForm;
+        public wordsLevel wordLevelsForm;
+        public mainLevels mainLevelsForm;
 
         public Random a = new Random();
 

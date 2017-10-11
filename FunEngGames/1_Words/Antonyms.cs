@@ -20,7 +20,8 @@ namespace FunEngGames
 
         XmlDocument xmlDoc = new XmlDocument();
 
-        public wordsLevel mainLevelsForm;
+        public wordsLevel wordLevelsForm;
+        public mainLevels mainLevelsForm;
 
         public Random a = new Random();
 

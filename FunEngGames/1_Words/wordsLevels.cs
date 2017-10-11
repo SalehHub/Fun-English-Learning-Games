@@ -6,7 +6,11 @@ namespace FunEngGames
     public partial class wordsLevel : Form
     {
         public mainLevels mainLevelsForm;
+
         public int spellingPoints = 0;
+        public int synonymsPoints = 0;
+        public int antonymsPoints = 0;
+        public int homonymsPoints = 0;
 
         public wordsLevel()
         {
@@ -47,7 +51,8 @@ namespace FunEngGames
             S_A.Show();
             */
             SynonymsLesson SynonymsLesson = new SynonymsLesson();
-            SynonymsLesson.mainLevelsForm = this;
+            SynonymsLesson.wordLevelsForm = this;
+            SynonymsLesson.mainLevelsForm = this.mainLevelsForm;
             this.Hide();
             SynonymsLesson.Show();
         }
@@ -91,7 +96,8 @@ namespace FunEngGames
             homonyms.Show();
             */
             HomonymsLesson HomonymsLesson = new HomonymsLesson();
-            HomonymsLesson.mainLevelsForm = this;
+            HomonymsLesson.wordLevelsForm = this;
+            HomonymsLesson.mainLevelsForm = this.mainLevelsForm;
             this.Hide();
             HomonymsLesson.Show();
         }

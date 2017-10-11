@@ -16,7 +16,8 @@ namespace FunEngGames
 
         public Random a = new Random();
         public List<int> randomList = new List<int>();
-        public wordsLevel mainLevelsForm;
+        public wordsLevel wordLevelsForm;
+        public mainLevels mainLevelsForm;
         XmlDocument xmlDoc = new XmlDocument();
         public XmlNodeList nodeList;
 
@@ -45,6 +46,7 @@ namespace FunEngGames
         {
             Synonyms S_A = new Synonyms();
             S_A.mainLevelsForm = this.mainLevelsForm;
+            S_A.wordLevelForm = this.wordLevelsForm;
             this.Hide();
             S_A.Show();
         }
