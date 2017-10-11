@@ -29,13 +29,18 @@ namespace FunEngGames
 
         public List<int> randomList = new List<int>();
         public List<string> synonyms = new List<string>();
-        public List<string> antonyms = new List<string>();
+
         public int attempt = 3;
+        public int hints = 3;
         public int points = 0;
 
         public bool fq = false;
         public bool sq = false;
         public bool tq = false;
+
+        public string fHint = "";
+        public string sHint = "";
+        public string tHint = "";
 
         public int Questions = 3;
 
@@ -52,7 +57,6 @@ namespace FunEngGames
                 NewNumber(max);
             }
         }
-
 
 
         private void S_A_FormClosed(object sender, FormClosedEventArgs e)
@@ -88,6 +92,7 @@ namespace FunEngGames
 
 
             attempt = 3;
+            hints = 3;
             points = 0;
 
             fq = false;
@@ -96,7 +101,7 @@ namespace FunEngGames
 
             randomList.Clear();
             synonyms.Clear();
-            antonyms.Clear();
+            //antonyms.Clear();
 
             btnHint1.Enabled = true;
             comboBox1.Enabled = true;
@@ -140,6 +145,8 @@ namespace FunEngGames
 
                 word = nodeList[random].SelectSingleNode("word").InnerText;
                 synonym = nodeList[random].SelectSingleNode("synonym").InnerText;
+                fHint = nodeList[random].SelectSingleNode("hint").InnerText;
+
                 synonyms.Add(cf.UppercaseFirst(synonym));
                 lblW1.Text = "" + cf.UppercaseFirst(word);
 
@@ -149,6 +156,8 @@ namespace FunEngGames
 
                 word = nodeList[random].SelectSingleNode("word").InnerText;
                 synonym = nodeList[random].SelectSingleNode("synonym").InnerText;
+                sHint = nodeList[random].SelectSingleNode("hint").InnerText;
+
                 synonyms.Add(cf.UppercaseFirst(synonym));
                 lblW2.Text = "" + cf.UppercaseFirst(word);
 
@@ -158,6 +167,8 @@ namespace FunEngGames
 
                 word = nodeList[random].SelectSingleNode("word").InnerText;
                 synonym = nodeList[random].SelectSingleNode("synonym").InnerText;
+                tHint = nodeList[random].SelectSingleNode("hint").InnerText;
+
                 synonyms.Add( cf.UppercaseFirst(synonym));
                 lblW3.Text = "" + cf.UppercaseFirst(word);
 
@@ -350,7 +361,7 @@ namespace FunEngGames
                 {
                     showFeedBack("Good job, keep up the good work in the next level", Color.Green);
 
-                    lblPoints.Text = points.ToString();
+                    lblPoints.Text = (hints+points).ToString();
 
                     SavePoints();
                     btnCheckYourAnswer.Text = "Go to Antonyms lesson";
@@ -385,19 +396,43 @@ namespace FunEngGames
 
         public void SavePoints()
         {
-            this.mainLevelsForm.synonymsPoints = points;
-            this.wordLevelForm.synonymsPoints = points;
+            this.mainLevelsForm.synonymsPoints = hints+points;
+            this.wordLevelForm.synonymsPoints = hints + points;
 
-            this.mainLevelsForm.lblWordsPoints.Text = (this.mainLevelsForm.synonymsPoints+points).ToString();
-            this.wordLevelForm.lblSandAPoints.Text = points.ToString();
+            this.mainLevelsForm.lblWordsPoints.Text = (this.mainLevelsForm.synonymsPoints+ hints + points).ToString();
+            this.wordLevelForm.lblSandAPoints.Text = (hints + points).ToString();
 
 
-            this.mainLevelsForm.CF.spellingPoints = points;
+            this.mainLevelsForm.CF.synonymsPoints = hints + points;
         }
 
         private void lblFeedback_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnHint1_Click(object sender, EventArgs e)
+        {
+            lblHint.Visible = true;
+            lblHint.Text = cf.UppercaseFirst(fHint) + " is another synonym for the word you're looking for!";
+            btnHint1.Enabled = false;
+            hints--;
+        }
+
+        private void btnHint2_Click(object sender, EventArgs e)
+        {
+            lblHint.Visible = true;
+            lblHint.Text = cf.UppercaseFirst(sHint) + " is another synonym for the word you're looking for!";
+            btnHint2.Enabled = false;
+            hints--;
+        }
+
+        private void btnHint3_Click(object sender, EventArgs e)
+        {
+            lblHint.Visible = true;
+            lblHint.Text = cf.UppercaseFirst(tHint) + " is another synonym for the word you're looking for!";
+            btnHint3.Enabled = false;
+            hints--;
         }
     }
 

@@ -15,6 +15,9 @@ namespace FunEngGames
    public class CommonFunctions
     {
         public int spellingPoints = 0;
+        public int synonymsPoints = 0;
+        public int antonymsPoints = 0;
+        public int homonymsPoints = 0;
         
         //Get json from Oxford api
         public string GET2(string url)

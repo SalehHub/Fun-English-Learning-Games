@@ -59,6 +59,7 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.btnCheckYourAnswer = new System.Windows.Forms.Button();
             this.lblFeedback = new System.Windows.Forms.Label();
+            this.lblHint = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picCheckAnswers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
@@ -124,7 +125,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 88F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 89F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
@@ -163,6 +164,7 @@
             this.btnHint3.TabIndex = 29;
             this.btnHint3.Text = "Hint";
             this.btnHint3.UseVisualStyleBackColor = true;
+            this.btnHint3.Click += new System.EventHandler(this.btnHint3_Click);
             // 
             // btnHint2
             // 
@@ -174,6 +176,7 @@
             this.btnHint2.TabIndex = 28;
             this.btnHint2.Text = "Hint";
             this.btnHint2.UseVisualStyleBackColor = true;
+            this.btnHint2.Click += new System.EventHandler(this.btnHint2_Click);
             // 
             // btnHint1
             // 
@@ -185,6 +188,7 @@
             this.btnHint1.TabIndex = 27;
             this.btnHint1.Text = "Hint";
             this.btnHint1.UseVisualStyleBackColor = true;
+            this.btnHint1.Click += new System.EventHandler(this.btnHint1_Click);
             // 
             // lblS1
             // 
@@ -445,6 +449,7 @@
             // 
             // btnCheckYourAnswer
             // 
+            this.btnCheckYourAnswer.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnCheckYourAnswer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnCheckYourAnswer.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCheckYourAnswer.ForeColor = System.Drawing.Color.LightGreen;
@@ -471,6 +476,20 @@
             this.lblFeedback.Visible = false;
             this.lblFeedback.Click += new System.EventHandler(this.lblFeedback_Click);
             // 
+            // lblHint
+            // 
+            this.lblHint.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblHint.BackColor = System.Drawing.Color.Transparent;
+            this.lblHint.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHint.ForeColor = System.Drawing.Color.Maroon;
+            this.lblHint.Location = new System.Drawing.Point(253, 442);
+            this.lblHint.Name = "lblHint";
+            this.lblHint.Size = new System.Drawing.Size(716, 30);
+            this.lblHint.TabIndex = 36;
+            this.lblHint.Text = "Good job! Keep up the good work";
+            this.lblHint.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblHint.Visible = false;
+            // 
             // Synonyms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -478,6 +497,7 @@
             this.BackgroundImage = global::FunEngGames.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1227, 720);
+            this.Controls.Add(this.lblHint);
             this.Controls.Add(this.lblFeedback);
             this.Controls.Add(this.btnCheckYourAnswer);
             this.Controls.Add(this.label6);
@@ -546,5 +566,6 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button btnCheckYourAnswer;
         private System.Windows.Forms.Label lblFeedback;
+        private System.Windows.Forms.Label lblHint;
     }
 }
