@@ -139,7 +139,15 @@ namespace FunEngGames
 
         private void homonyms_FormClosed(object sender, FormClosedEventArgs e)
         {
-            this.mainLevelsForm.Show();
+            try
+            {
+
+                this.wordLevelsForm.Show();
+
+            }catch(Exception ex)
+            {
+
+            }
         }
 
         private void picCheckAnswers_Click(object sender, EventArgs e)

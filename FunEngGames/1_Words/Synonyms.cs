@@ -20,6 +20,8 @@ namespace FunEngGames
 
         XmlDocument xmlDoc = new XmlDocument();
 
+        CommonFunctions cf = new CommonFunctions();
+
         public mainLevels mainLevelsForm;
         public wordsLevel wordLevelForm;
 
@@ -57,7 +59,7 @@ namespace FunEngGames
         {
             try
             {
-                this.mainLevelsForm.Show();
+                this.wordLevelForm.Show();
             }
             catch (Exception ex)
             {
@@ -138,8 +140,8 @@ namespace FunEngGames
 
                 word = nodeList[random].SelectSingleNode("word").InnerText;
                 synonym = nodeList[random].SelectSingleNode("synonym").InnerText;
-                synonyms.Add(synonym);
-                lblW1.Text = "" + word;
+                synonyms.Add(cf.UppercaseFirst(synonym));
+                lblW1.Text = "" + cf.UppercaseFirst(word);
 
 
                 NewNumber(nodeList.Count);
@@ -147,8 +149,8 @@ namespace FunEngGames
 
                 word = nodeList[random].SelectSingleNode("word").InnerText;
                 synonym = nodeList[random].SelectSingleNode("synonym").InnerText;
-                synonyms.Add(synonym);
-                lblW2.Text = "" + word;
+                synonyms.Add(cf.UppercaseFirst(synonym));
+                lblW2.Text = "" + cf.UppercaseFirst(word);
 
 
                 NewNumber(nodeList.Count);
@@ -156,8 +158,8 @@ namespace FunEngGames
 
                 word = nodeList[random].SelectSingleNode("word").InnerText;
                 synonym = nodeList[random].SelectSingleNode("synonym").InnerText;
-                synonyms.Add(synonym);
-                lblW3.Text = "" + word;
+                synonyms.Add( cf.UppercaseFirst(synonym));
+                lblW3.Text = "" + cf.UppercaseFirst(word);
 
 
                 //comboBox1.Tag = synonyms[0];
@@ -168,14 +170,14 @@ namespace FunEngGames
                 lblAns2.Text = synonyms[1];
                 lblAns3.Text = synonyms[2];
 
-                Shuffle(synonyms);
+                 Shuffle(synonyms);
                 //comboBox1.Items.Add("A-"); comboBox1.Items.Add("B-"); comboBox1.Items.Add("C-");
                 comboBox1.Items.Add("" + synonyms[0]); comboBox1.Items.Add("" + synonyms[1]); comboBox1.Items.Add("" + synonyms[2]);
                 comboBox2.Items.Add("" + synonyms[0]); comboBox2.Items.Add("" + synonyms[1]); comboBox2.Items.Add("" + synonyms[2]);
                 comboBox3.Items.Add("" + synonyms[0]); comboBox3.Items.Add("" + synonyms[1]); comboBox3.Items.Add("" + synonyms[2]);
 
 
-                // Shuffle(synonyms);
+                Shuffle(synonyms);
                 lblS1.Text = "" + synonyms[0];
                 lblS2.Text = "" + synonyms[1];
                 lblS3.Text = "" + synonyms[2];
@@ -264,8 +266,13 @@ namespace FunEngGames
 
         private void btnCheckYourAnswer_Click(object sender, EventArgs e)
         {
+            hideFeedBack();
+
+
+
             if (comboBox1.Text.Trim()=="" || comboBox2.Text.Trim()=="" || comboBox3.Text.Trim()=="")
             {
+                showFeedBack("Please answer all the three questions first.", Color.Red);
 
             }else if (btnCheckYourAnswer.Text == "Restart the level")
             {
@@ -277,6 +284,7 @@ namespace FunEngGames
             {
                 AntonymsLesson antonymsLesson = new AntonymsLesson();
                 antonymsLesson.mainLevelsForm = this.mainLevelsForm;
+                antonymsLesson.wordLevelsForm = this.wordLevelForm;
                 this.Hide();
                 antonymsLesson.Show();
             }
@@ -337,9 +345,11 @@ namespace FunEngGames
                     picAns3.BackgroundImage = Properties.Resources.cross;
                 }
 
-
-                if (Questions == 0)
+                //solved all the questions
+                if (Questions == 0 && attempt >= 0)
                 {
+                    showFeedBack("Good job, keep up the good work in the next level", Color.Green);
+
                     lblPoints.Text = points.ToString();
 
                     SavePoints();
@@ -348,14 +358,29 @@ namespace FunEngGames
 
 
 
-                if (attempt == 0 && Questions != 0)
+                if (attempt == 0 && Questions >= 1)
                 {
+                    showFeedBack("Sorry, you need to solve at least two questions to pass this level", Color.Red);
+
                     btnCheckYourAnswer.Text = "Restart the level";
                 }
 
 
             }
 
+        }
+
+
+        public void showFeedBack(string txt,Color color)
+        {
+            lblFeedback.Visible = true;
+            lblFeedback.ForeColor = color;
+            lblFeedback.Text = txt;
+        }
+
+        public void hideFeedBack()
+        {
+            lblFeedback.Visible = false;
         }
 
         public void SavePoints()
@@ -370,6 +395,10 @@ namespace FunEngGames
             this.mainLevelsForm.CF.spellingPoints = points;
         }
 
+        private void lblFeedback_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

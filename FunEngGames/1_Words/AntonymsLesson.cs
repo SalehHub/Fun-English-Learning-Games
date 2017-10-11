@@ -48,6 +48,7 @@ namespace FunEngGames
         {
             Antonyms antonyms = new Antonyms();
             antonyms.mainLevelsForm = this.mainLevelsForm;
+            antonyms.wordLevelsForm = this.wordLevelsForm;
             this.Hide();
             antonyms.Show();
         }
@@ -56,7 +57,7 @@ namespace FunEngGames
         {
             try
             {
-                this.mainLevelsForm.Show();
+                this.wordLevelsForm.Show();
             }
             catch (Exception ex)
             {

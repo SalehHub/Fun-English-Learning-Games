@@ -58,6 +58,7 @@
             this.lblAttempts = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.btnCheckYourAnswer = new System.Windows.Forms.Button();
+            this.lblFeedback = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picCheckAnswers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
@@ -444,14 +445,31 @@
             // 
             // btnCheckYourAnswer
             // 
+            this.btnCheckYourAnswer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnCheckYourAnswer.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckYourAnswer.ForeColor = System.Drawing.Color.LightGreen;
             this.btnCheckYourAnswer.Location = new System.Drawing.Point(429, 614);
             this.btnCheckYourAnswer.Name = "btnCheckYourAnswer";
             this.btnCheckYourAnswer.Size = new System.Drawing.Size(369, 74);
             this.btnCheckYourAnswer.TabIndex = 34;
             this.btnCheckYourAnswer.Text = "Check your answers";
-            this.btnCheckYourAnswer.UseVisualStyleBackColor = true;
+            this.btnCheckYourAnswer.UseVisualStyleBackColor = false;
             this.btnCheckYourAnswer.Click += new System.EventHandler(this.btnCheckYourAnswer_Click);
+            // 
+            // lblFeedback
+            // 
+            this.lblFeedback.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.lblFeedback.BackColor = System.Drawing.Color.Transparent;
+            this.lblFeedback.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFeedback.ForeColor = System.Drawing.Color.Green;
+            this.lblFeedback.Location = new System.Drawing.Point(231, 571);
+            this.lblFeedback.Name = "lblFeedback";
+            this.lblFeedback.Size = new System.Drawing.Size(765, 30);
+            this.lblFeedback.TabIndex = 35;
+            this.lblFeedback.Text = "Good job! Keep up the good work";
+            this.lblFeedback.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblFeedback.Visible = false;
+            this.lblFeedback.Click += new System.EventHandler(this.lblFeedback_Click);
             // 
             // Synonyms
             // 
@@ -460,6 +478,7 @@
             this.BackgroundImage = global::FunEngGames.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1227, 720);
+            this.Controls.Add(this.lblFeedback);
             this.Controls.Add(this.btnCheckYourAnswer);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.lblAttempts);
@@ -526,5 +545,6 @@
         private System.Windows.Forms.Label lblAttempts;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button btnCheckYourAnswer;
+        private System.Windows.Forms.Label lblFeedback;
     }
 }

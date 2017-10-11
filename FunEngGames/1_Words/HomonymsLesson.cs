@@ -55,6 +55,7 @@ namespace FunEngGames
         {
             homonyms homonyms = new homonyms();
             homonyms.mainLevelsForm = this.mainLevelsForm;
+            homonyms.wordLevelsForm = this.wordLevelsForm;
             this.Hide();
             homonyms.Show();
         }
@@ -63,7 +64,7 @@ namespace FunEngGames
         {
             try
             {
-                this.mainLevelsForm.Show();
+                this.wordLevelsForm.Show();
             }
             catch (Exception ex)
             {
