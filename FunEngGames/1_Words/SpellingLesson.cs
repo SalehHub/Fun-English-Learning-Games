@@ -1,12 +1,15 @@
-﻿using System;
+﻿/*
+ * Project Name:    Fun Englisg learning Games
+ * File Name:       SpellingLessons.cs
+ * Coded By:        Saleh Alzahrani
+ * Coded On:        Fall 2017
+ * About this File: This file display and organize all spelling lesson questions, images, pagination and pronunciation 
+ */
+
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Speech.Synthesis;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 
@@ -19,40 +22,27 @@ namespace FunEngGames
             InitializeComponent();
         }
 
+        //CommonFunctions object
         CommonFunctions CommonFunctions = new CommonFunctions();
 
+        //Random integer variable
         public Random a = new Random();
-        public List<int> randomList = new List<int>();
 
+        //Variables wordLevelsForm and mainLevelsForm to store previous forms status        
         public wordsLevel wordLevelsForm;
         public mainLevels mainLevelsForm;
 
+        //Storing the xml content
         public XmlDocument xmlDoc = new XmlDocument();
         public XmlNodeList nodeList;
 
+        //setup lesson pages variables
         public int page = 0;
-
         public int lastPage = 0;
         public int nextNode = 0;
 
 
-        int MyNumber = 0;
-        private void NewNumber(int max)
-        {
-            
-            MyNumber = a.Next(0, max);
-           // if (!randomList.Contains(MyNumber))
-           // {
-                randomList.Add(MyNumber);
-          //  }
-          //  else
-          //  {
-          //      NewNumber(max);
-          //  }
-            
-        }
-
-
+       //Start spelling level
         private void button1_Click(object sender, EventArgs e)
         {
             Spelling Spelling = new Spelling();
@@ -62,6 +52,8 @@ namespace FunEngGames
             Spelling.Show();
         }
 
+
+        //This function get all components by specific type. I use it to set audio cursor to all pictures
         public IEnumerable<Control> GetSelfAndChildrenRecursive(Control parent)
         {
             List<Control> controls = new List<Control>();
@@ -76,6 +68,8 @@ namespace FunEngGames
             return controls;
         }
 
+
+        //Spelling lesson load event load all spelling questions from XML file
         private void spellingLesson_Load(object sender, EventArgs e)
         {
             try
@@ -115,6 +109,8 @@ namespace FunEngGames
             }
         }
 
+
+        //Form closed event function: show the words level form
         private void spellingLesson_FormClosed(object sender, FormClosedEventArgs e)
         {
             try
@@ -128,6 +124,7 @@ namespace FunEngGames
         }
 
 
+        //Generate word, picture and answer from spelling XML file
         public void GenerateWord(PictureBox p, TextBox t, int next)
         {
             if (nodeList[next] != null && nodeList[next].SelectSingleNode("answer").InnerText.Trim() != "")
@@ -149,6 +146,8 @@ namespace FunEngGames
             }
         }
 
+
+        //Generate all questions by calling GenerateWord;
         public void GenerateWords(int next)
         {
 
@@ -167,6 +166,8 @@ namespace FunEngGames
             next++;
         }
 
+
+        //Next page event if we have more than on page
         private void btnNext_Click(object sender, EventArgs e)
         {
             page++;
@@ -185,6 +186,8 @@ namespace FunEngGames
             lblPages.Text = "Page " + page + " out of " + lastPage;
         }
 
+
+        //Previous page event if we have more than on page and next page btn has been clicked
         private void btnPrevious_Click(object sender, EventArgs e)
         {
             page--;
@@ -209,7 +212,7 @@ namespace FunEngGames
         }
 
 
-
+        //pronounce the word after click on the picture
         private void Picture_Click(object sender, EventArgs e)
         {
             var pic = (PictureBox)sender;
@@ -219,7 +222,7 @@ namespace FunEngGames
         }
 
 
-
+        //Load specific category when clicking on any category button
         public void loadCategory(string XMLTag)
         {
             try
@@ -262,6 +265,8 @@ namespace FunEngGames
             }
         }
 
+
+        //Change category event for all caegory buttons
         private void ChangeCategory_Click(object sender, EventArgs e)
         {
             var RB = (RadioButton)sender;
@@ -274,9 +279,5 @@ namespace FunEngGames
             }
         }
 
-        private void lblPages_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

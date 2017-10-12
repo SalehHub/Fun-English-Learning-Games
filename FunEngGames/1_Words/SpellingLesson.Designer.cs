@@ -221,7 +221,6 @@
             this.lblPages.TabIndex = 18;
             this.lblPages.Text = "Page 1 out of 3";
             this.lblPages.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblPages.Click += new System.EventHandler(this.lblPages_Click);
             // 
             // label4
             // 

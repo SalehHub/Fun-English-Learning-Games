@@ -129,7 +129,6 @@
             this.txtAnswer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtAnswer.Enter += new System.EventHandler(this.txtAnswer_Enter);
             this.txtAnswer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtAnswer_KeyDown);
-            this.txtAnswer.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAnswer_KeyPress);
             this.txtAnswer.Leave += new System.EventHandler(this.txtAnswer_Leave);
             // 
             // textBox2
@@ -246,10 +245,6 @@
             this.picCheckAnswers.TabIndex = 12;
             this.picCheckAnswers.TabStop = false;
             this.picCheckAnswers.Visible = false;
-            this.picCheckAnswers.Click += new System.EventHandler(this.picCheckAnswers_Click);
-            this.picCheckAnswers.MouseEnter += new System.EventHandler(this.picCheckAnswers_MouseHover);
-            this.picCheckAnswers.MouseLeave += new System.EventHandler(this.picCheckAnswers_MouseLeave);
-            this.picCheckAnswers.MouseHover += new System.EventHandler(this.picCheckAnswers_MouseHover);
             // 
             // pictureBox4
             // 

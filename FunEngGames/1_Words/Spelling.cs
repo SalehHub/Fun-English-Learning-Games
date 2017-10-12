@@ -3,7 +3,7 @@
  * File Name:       Spelling.cs
  * Coded By:        Saleh Alzahrani
  * Coded On:        Fall 2017
- * Anout this File: This file handels all questions and gameplay login in spelling level
+ * About this File: This file handles all questions and gameplay logic in spelling level
  */
 
 
@@ -27,7 +27,7 @@ namespace FunEngGames
         public wordsLevel wordLevelsForm;
         public mainLevels mainLevelsForm;
 
-        //Stroing the xml contains
+        //Storing the xml content
         XmlDocument xmlDoc = new XmlDocument();
         XmlNodeList nodeList = null;
 
@@ -464,7 +464,7 @@ namespace FunEngGames
         }
 
 
-        //pronunce the word after click on the picture
+        //pronounce the word after click on the picture
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             CommonFunctions.Pronounce(lblAnswer.Text);
