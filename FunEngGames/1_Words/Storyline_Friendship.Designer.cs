@@ -62,7 +62,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(901, 68);
             this.label1.TabIndex = 59;
-            this.label1.Text = " Le and Megan are friend now";
+            this.label1.Text = " Le and Megan are friends now";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button3
@@ -121,7 +121,7 @@
             this.Name = "Storyline_Friendship";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = " Fun English Learning Games: Words - Le and Megan are friend now";
+            this.Text = " Fun English Learning Games: Words - Le and Megan are friends now";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Storyline_Friendship_FormClosed);
             this.Load += new System.EventHandler(this.Storyline_Friendship_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

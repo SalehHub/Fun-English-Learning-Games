@@ -77,15 +77,9 @@ namespace FunEngGames
         {
             dataGridView1.Rows.Add(
                 CommonFunctions.UppercaseFirst(nodeList[node].SelectSingleNode("def1").InnerText.Trim()), 
-                CommonFunctions.UppercaseFirst(nodeList[node].SelectSingleNode("answer").InnerText.Trim()),
+                nodeList[node].SelectSingleNode("answer").InnerText.Trim(),
                 CommonFunctions.UppercaseFirst(nodeList[node].SelectSingleNode("def2").InnerText.Trim())
                 );
-
-
-            /*l1.Text = CommonFunctions.UppercaseFirst(nodeList[node].SelectSingleNode("def1").InnerText.Trim());
-            l2.Text = CommonFunctions.UppercaseFirst(nodeList[node].SelectSingleNode("def2").InnerText.Trim());
-            t.Text = CommonFunctions.UppercaseFirst(nodeList[node].SelectSingleNode("answer").InnerText.Trim());
-            */
         }
 
 

@@ -125,7 +125,6 @@
             this.lblCorrectAns.TabIndex = 53;
             this.lblCorrectAns.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblCorrectAns.Visible = false;
-            this.lblCorrectAns.Click += new System.EventHandler(this.lblCorrectAns_Click);
             // 
             // lblHint
             // 

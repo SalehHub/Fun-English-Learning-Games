@@ -48,7 +48,7 @@ namespace FunEngGames
         {
             Synonyms S_A = new Synonyms();
             S_A.mainLevelsForm = this.mainLevelsForm;
-            S_A.wordLevelForm = this.wordLevelsForm;
+            S_A.wordLevelsForm = this.wordLevelsForm;
             this.Hide();
             S_A.Show();
         }

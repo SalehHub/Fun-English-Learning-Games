@@ -75,9 +75,9 @@ namespace FunEngGames
                 NewNumber(nodeList.Count);
                 int random = randomList.Last();
 
-                def1 = nodeList[random].SelectSingleNode("def1").InnerText;
-                def2 = nodeList[random].SelectSingleNode("def2").InnerText;
-                ans = nodeList[random].SelectSingleNode("answer").InnerText;
+                def1 = cf.UppercaseFirst(nodeList[random].SelectSingleNode("def1").InnerText.Trim());
+                def2 = cf.UppercaseFirst(nodeList[random].SelectSingleNode("def2").InnerText.Trim());
+                ans = nodeList[random].SelectSingleNode("answer").InnerText.Trim();
 
                 answers.Add(ans);
                 //comboBox1.Items.Add(ans); comboBox2.Items.Add(ans); comboBox3.Items.Add(ans);
@@ -92,9 +92,9 @@ namespace FunEngGames
                 NewNumber(nodeList.Count);
                 random = randomList.Last();
 
-                def1 = nodeList[random].SelectSingleNode("def1").InnerText;
-                def2 = nodeList[random].SelectSingleNode("def2").InnerText;
-                ans = nodeList[random].SelectSingleNode("answer").InnerText;
+                def1 = cf.UppercaseFirst(nodeList[random].SelectSingleNode("def1").InnerText.Trim());
+                def2 = cf.UppercaseFirst(nodeList[random].SelectSingleNode("def2").InnerText.Trim());
+                ans = nodeList[random].SelectSingleNode("answer").InnerText.Trim();
 
                 answers.Add(ans);
 
@@ -107,9 +107,9 @@ namespace FunEngGames
                 NewNumber(nodeList.Count);
                 random = randomList.Last();
 
-                def1 = nodeList[random].SelectSingleNode("def1").InnerText;
-                def2 = nodeList[random].SelectSingleNode("def2").InnerText;
-                ans = nodeList[random].SelectSingleNode("answer").InnerText;
+                def1 = cf.UppercaseFirst(nodeList[random].SelectSingleNode("def1").InnerText.Trim());
+                def2 = cf.UppercaseFirst(nodeList[random].SelectSingleNode("def2").InnerText.Trim());
+                ans = nodeList[random].SelectSingleNode("answer").InnerText.Trim();
 
                 answers.Add(ans);
 
@@ -117,6 +117,7 @@ namespace FunEngGames
                 label3.Text = def1;
                 label6.Text = def2;
 
+                Shuffle(answers);
                 Shuffle(answers);
                 comboBox1.Items.AddRange(answers.ToArray());
                 comboBox2.Items.AddRange(answers.ToArray());
@@ -165,6 +166,30 @@ namespace FunEngGames
             fHint = "";
             sHint = "";
             tHint = "";
+
+            lblCorrectAns.Visible = false;
+            lblCorrectAns.Text = "";
+
+            comboBox1.Enabled = true;
+            comboBox1.Items.Clear();
+            comboBox1.Text = "";
+
+            comboBox2.Enabled = true;
+            comboBox2.Items.Clear();
+            comboBox2.Text = "";
+
+            comboBox2.Enabled = true;
+            comboBox3.Items.Clear();
+            comboBox3.Text = "";
+
+            picAns1.BackgroundImage = null;
+            picAns2.BackgroundImage = null;
+            picAns3.BackgroundImage = null;
+
+
+            btnCheckYourAnswer.Text = "Check your answers";
+            lblAttempts.Text = attempt.ToString();
+            lblPoints.Text = points.ToString();
 
 
             xmlDoc.Load("XML/homonyms.xml");

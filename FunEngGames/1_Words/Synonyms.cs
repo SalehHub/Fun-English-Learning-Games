@@ -19,7 +19,7 @@ namespace FunEngGames
         CommonFunctions cf = new CommonFunctions();
 
         public mainLevels mainLevelsForm;
-        public wordsLevel wordLevelForm;
+        public wordsLevel wordLevelsForm;
 
         public Random a = new Random();
 
@@ -58,7 +58,7 @@ namespace FunEngGames
         {
             try
             {
-                this.wordLevelForm.Show();
+                this.wordLevelsForm.Show();
             }
             catch (Exception ex)
             {
@@ -290,7 +290,7 @@ namespace FunEngGames
             {
                 AntonymsLesson antonymsLesson = new AntonymsLesson();
                 antonymsLesson.mainLevelsForm = this.mainLevelsForm;
-                antonymsLesson.wordLevelsForm = this.wordLevelForm;
+                antonymsLesson.wordLevelsForm = this.wordLevelsForm;
                 this.Hide();
                 antonymsLesson.Show();
             }
@@ -375,7 +375,7 @@ namespace FunEngGames
 
                 if (attempt > 0 && Questions > 0)
                 {
-                    if (attempt ==2)
+                    if (attempt == 2)
                     {
                         showFeedBack("Try again you still have two attempts left", Color.Red);
                     }
@@ -390,7 +390,7 @@ namespace FunEngGames
                 if (attempt == 0 && Questions >= 2)
                 {
                     lblHint.Visible = false;
-                  
+
 
                     showFeedBack("Sorry, you need to solve at least two questions to pass this level", Color.Red);
 
@@ -398,7 +398,7 @@ namespace FunEngGames
                 }
 
 
-                if(attempt==0 && Questions > 0)
+                if (attempt == 0 && Questions > 0)
                 {
                     lblCorrectAns.Text = "";
 
@@ -438,14 +438,15 @@ namespace FunEngGames
 
         public void SavePoints()
         {
-            this.mainLevelsForm.synonymsPoints = attempt+1+ hints + points;
-            this.wordLevelForm.synonymsPoints = attempt + 1 + hints + points;
-
-            this.mainLevelsForm.lblWordsPoints.Text = (this.mainLevelsForm.spellingPoints + attempt + 1 + hints + points).ToString();
-            this.wordLevelForm.lblSandAPoints.Text = (attempt + 1 + hints + points).ToString();
-
-
+            this.mainLevelsForm.synonymsPoints = attempt + 1 + hints + points;
+            this.wordLevelsForm.synonymsPoints = attempt + 1 + hints + points;
             this.mainLevelsForm.CF.synonymsPoints = attempt + 1 + hints + points;
+
+
+            this.mainLevelsForm.lblWordsPoints.Text = (this.mainLevelsForm.spellingPoints + this.wordLevelsForm.synonymsPoints).ToString();
+            this.wordLevelsForm.lblSandAPoints.Text = (this.wordLevelsForm.synonymsPoints+ this.wordLevelsForm.antonymsPoints).ToString();
+
+
         }
 
         private void lblFeedback_Click(object sender, EventArgs e)

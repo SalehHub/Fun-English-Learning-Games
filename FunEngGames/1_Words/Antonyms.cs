@@ -233,14 +233,14 @@ namespace FunEngGames
 
         public void SavePoints()
         {
-            this.mainLevelsForm.antonymsPoints = hints + points;
-            this.wordLevelsForm.antonymsPoints = hints + points;
+            this.mainLevelsForm.antonymsPoints = attempt+1+ hints + points;
+            this.wordLevelsForm.antonymsPoints = attempt + 1 + hints + points;
+            this.mainLevelsForm.CF.antonymsPoints = attempt + 1 + hints + points;
 
             this.mainLevelsForm.lblWordsPoints.Text = (this.mainLevelsForm.spellingPoints + this.mainLevelsForm.synonymsPoints + this.mainLevelsForm.antonymsPoints).ToString();
             this.wordLevelsForm.lblSandAPoints.Text = (this.mainLevelsForm.synonymsPoints + this.mainLevelsForm.antonymsPoints).ToString();
 
 
-            this.mainLevelsForm.CF.antonymsPoints = hints + points;
         }
 
 
@@ -266,16 +266,6 @@ namespace FunEngGames
             lblHint.Text = cf.UppercaseFirst(tHint) + " is another antonym for the word you're looking for!";
             btnHint3.Enabled = false;
             hints--;
-        }
-
-        private void picCheckAnswers_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblCorrectAns_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnCheckYourAnswer_Click(object sender, EventArgs e)
@@ -365,7 +355,7 @@ namespace FunEngGames
                 {
                     showFeedBack("Good job, keep up the good work in the next level", Color.Green);
 
-                    lblPoints.Text = (hints + points).ToString();
+                    lblPoints.Text = (attempt + 1 + hints + points).ToString();
 
                     SavePoints();
                     btnCheckYourAnswer.Text = "Go to Homonyms lesson";
@@ -380,7 +370,7 @@ namespace FunEngGames
                 {
                     showFeedBack("Good job, keep up the good work in the next level", Color.Green);
 
-                    lblPoints.Text = (hints + points).ToString();
+                    lblPoints.Text = (attempt + 1 + hints + points).ToString();
 
                     SavePoints();
                     btnCheckYourAnswer.Text = "Go to Homonyms lesson";

@@ -236,7 +236,7 @@
             // 
             // picSALock
             // 
-            this.picSALock.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.picSALock.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picSALock.BackColor = System.Drawing.Color.Transparent;
             this.picSALock.BackgroundImage = global::FunEngGames.Properties.Resources._lock;
             this.picSALock.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -249,7 +249,7 @@
             // 
             // picHomonymsLock
             // 
-            this.picHomonymsLock.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.picHomonymsLock.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.picHomonymsLock.BackColor = System.Drawing.Color.Transparent;
             this.picHomonymsLock.BackgroundImage = global::FunEngGames.Properties.Resources._lock;
             this.picHomonymsLock.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;

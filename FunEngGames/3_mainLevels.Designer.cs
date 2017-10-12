@@ -236,7 +236,7 @@
             // 
             // picPhrasesLock
             // 
-            this.picPhrasesLock.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.picPhrasesLock.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picPhrasesLock.BackColor = System.Drawing.Color.Transparent;
             this.picPhrasesLock.BackgroundImage = global::FunEngGames.Properties.Resources._lock;
             this.picPhrasesLock.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -249,7 +249,7 @@
             // 
             // picSentencesLock
             // 
-            this.picSentencesLock.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.picSentencesLock.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.picSentencesLock.BackColor = System.Drawing.Color.Transparent;
             this.picSentencesLock.BackgroundImage = global::FunEngGames.Properties.Resources._lock;
             this.picSentencesLock.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
