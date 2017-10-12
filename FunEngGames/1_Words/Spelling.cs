@@ -20,6 +20,9 @@ namespace FunEngGames
         public wordsLevel wordLevelsForm;
         public mainLevels mainLevelsForm;
 
+        XmlDocument xmlDoc = new XmlDocument();
+        XmlNodeList nodeList = null;
+
         public string pic1 = "", ans1 = "";
         public string pic2 = "", ans2 = "";
         public string pic3 = "", ans3 = "";
@@ -38,6 +41,12 @@ namespace FunEngGames
         int MyNumber = 0;
         private void NewNumber(int max)
         {
+
+            if (randomList.Count >= nodeList.Count)
+            {
+                randomList.Clear();
+            }
+
             MyNumber = a.Next(0, max);
             if (!randomList.Contains(MyNumber))
             {
@@ -71,32 +80,68 @@ namespace FunEngGames
         }
 
 
+        public void randomCatogary()
+        {
+            int rand = a.Next(8);
+
+            if (rand == 0)
+            {
+                nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "animals" + "/spelling");
+
+            }
+            else if (rand == 1)
+            {
+                nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "furniture" + "/spelling");
+            }
+            else if (rand == 2)
+            {
+                nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "sports" + "/spelling");
+
+            }
+            else if (rand == 3)
+            {
+                nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "fruits" + "/spelling");
+            }
+            else if (rand == 4)
+            {
+                nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "vegetables" + "/spelling");
+            }
+            else if (rand == 5)
+            {
+                nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "transportation" + "/spelling");
+            }
+            else if (rand == 6)
+            {
+                nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "bodyparts" + "/spelling");
+            }
+            else if (rand == 7)
+            {
+                nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "others" + "/spelling");
+            }
+            else
+            {
+                nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "nature" + "/spelling");
+            }
+        }
+
 
         private void spelling_Load(object sender, EventArgs e)
         {
-            /*
-                XmlNode xmlquestions= xmlDoc.SelectSingleNode("/Questions");
-                XmlNode xmlRecordNo = xmlDoc.CreateNode(XmlNodeType.Element, "spelling", null);
-                XmlNode xmlpic      = xmlDoc.CreateNode(XmlNodeType.Element, "pic", null);
-                XmlNode xmlans      = xmlDoc.CreateNode(XmlNodeType.Element, "answer", null);
+            // Ensure WaitOnLoad is false.
+            pictureBox5.WaitOnLoad = false;
 
-                xmlpic.InnerText    = "7.png";
-                xmlans.InnerText    = "Spoon";
-
-                xmlRecordNo.AppendChild(xmlpic);
-                xmlRecordNo.AppendChild(xmlans);
-
-                xmlquestions.AppendChild(xmlRecordNo);
-                xmlDoc.Save("output.xml");
-                */
-
-
-
-            //foreach (XmlNode node in nodeList)
+            // Load the image asynchronously.
+            pictureBox5.LoadAsync(@"https://media.giphy.com/media/Bn6djQ6MgEWZi/giphy.gif");
 
 
             Cursor cur = new Cursor(Properties.Resources.audio.Handle);
             picWord.Cursor = cur;
+
+
+            xmlDoc.Load("XML/spelling.xml");
+
+
+           // randomCatogary();
 
             StartLevelAgain();
 
@@ -117,9 +162,6 @@ namespace FunEngGames
             {
                 picFeedback.BackgroundImage = Properties.Resources.cross;
             }
-
-
-
 
             if (textBox2.Text.Trim().ToLower() == label2.Text.Trim().ToLower())
             {
@@ -159,46 +201,45 @@ namespace FunEngGames
 
         public void StartLevelAgain()
         {
-            // Ensure WaitOnLoad is false.
-            pictureBox5.WaitOnLoad = false;
 
-            // Load the image asynchronously.
-            pictureBox5.LoadAsync(@"https://media.giphy.com/media/Bn6djQ6MgEWZi/giphy.gif");
 
-            XmlDocument xmlDoc = new XmlDocument();
-            xmlDoc.Load("XML/spelling.xml");
-            XmlNodeList nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "furniture" + "/spelling");
+            randomCatogary();
+
 
             NewNumber(nodeList.Count);
             int random = randomList.Last();
 
             pic1 = nodeList[random].SelectSingleNode("answer").InnerText.Trim() + ".png";
-            ans1 = nodeList[random].SelectSingleNode("answer").InnerText;
+            ans1 = nodeList[random].SelectSingleNode("answer").InnerText.Trim();
 
             picWord.Image = Image.FromFile(@"Images\" + pic1);
             lblAnswer.Text = ans1;
 
-            nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "animals" + "/spelling");
+            //nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "animals" + "/spelling");
+
+
+            randomCatogary();
 
             NewNumber(nodeList.Count);
             random = randomList.Last();
 
             pic2 = nodeList[random].SelectSingleNode("answer").InnerText.Trim() + ".png";
-            ans2 = nodeList[random].SelectSingleNode("answer").InnerText;
+            ans2 = nodeList[random].SelectSingleNode("answer").InnerText.Trim();
             //pictureBox2.Image = Image.FromFile(@"Images\" + pic);
             label2.Text = ans2;
 
-            nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "fruits" + "/spelling");
+            //nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "fruits" + "/spelling");
+            randomCatogary();
 
             NewNumber(nodeList.Count);
             random = randomList.Last();
 
             pic3 = nodeList[random].SelectSingleNode("answer").InnerText.Trim() + ".png";
-            ans3 = nodeList[random].SelectSingleNode("answer").InnerText;
+            ans3 = nodeList[random].SelectSingleNode("answer").InnerText.Trim();
             //pictureBox3.Image = Image.FromFile(@"Images\" + pic);
             label3.Text = ans3;
 
-            randomList.Clear();
+            //randomList.Clear();
 
             CorrectAnswers = 0;
             question = 1;
@@ -285,7 +326,7 @@ namespace FunEngGames
             SavePoints();
 
 
-            if (question == 4 && CorrectAnswers>=2)
+            if (question == 4 && CorrectAnswers >= 2)
             {
                 lblFeedback.Text = "Great job! Keep up the good work in the next level"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Green;
 
@@ -302,8 +343,8 @@ namespace FunEngGames
 
                 btnCheckAnswer.Text = "Start this level again";
 
-               // this.wordLevelsForm.picSA.Enabled = true;
-               // this.wordLevelsForm.picSALock.Visible = false;
+                // this.wordLevelsForm.picSA.Enabled = true;
+                // this.wordLevelsForm.picSALock.Visible = false;
             }
 
         }
@@ -335,7 +376,10 @@ namespace FunEngGames
             }
             else if (attempts == 0 && question == 3 && CorrectAnswers >= 2)    //last attepmt and last question
             {
-                lblFeedback.Text = "Great job! Keep up the good work in the next level"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Green;
+                lblCorrectAns.Visible = true;
+                lblCorrectAns.Text = "The correct answer is " + lblAnswer.Text;
+
+                lblFeedback.Text = "Great job! You correctly answered two questions, keep up the good work in the next level"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Green;
 
                 btnCheckAnswer.Text = "Go to the next level >>";
 

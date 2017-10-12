@@ -44,6 +44,12 @@ namespace FunEngGames
         int MyNumber = 0;
         private void NewNumber(int max)
         {
+
+            if (randomList.Count >= nodeList.Count)
+            {
+                randomList.Clear();
+            }
+
             MyNumber = a.Next(0, max);
             if (!randomList.Contains(MyNumber))
             {
@@ -95,7 +101,7 @@ namespace FunEngGames
             sq = false;
             tq = false;
 
-            randomList.Clear();
+            //randomList.Clear();
             antonyms.Clear();
             //antonyms.Clear();
 

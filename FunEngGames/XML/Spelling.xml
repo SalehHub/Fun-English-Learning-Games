@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?> 
 <Questions>
 
-	<!--Spellings questions-->
+<!--Spellings questions-->
 <furniture>
 	<spelling>
 		<answer>Table</answer>
@@ -51,9 +51,6 @@
 		<answer>Fan</answer>
 	</spelling>
 </furniture>
-
-
-
 
 <animals>
 	<spelling>
@@ -140,9 +137,6 @@
 	
 </transportation>	
 
-	
-	
-
 <fruits>
 		
 	<spelling>
@@ -154,15 +148,13 @@
 	</spelling>	
 		
 </fruits>
-	
-	
+		
 <vegetables>
 
 	<spelling>
 		<answer>Carrot</answer>
 	</spelling>	
 </vegetables>
-
 
 <bodyparts>
 		
@@ -171,7 +163,6 @@
 	</spelling>	
 	
 </bodyparts>
-
 
 <nature>
 	<spelling>
@@ -183,8 +174,6 @@
 	</spelling>
 	
 </nature>
-
-
 
 <shapes>
 
@@ -238,14 +227,11 @@
 	
 </shapes>
 
-
-
 <colors>
 
 	
 </colors>		
 		
-
 <professions>
 
 	<spelling>
@@ -302,7 +288,6 @@
 	
 </professions>		
 
-
 <sports>
 
 	<spelling>
@@ -310,8 +295,7 @@
 	</spelling>
 	
 </sports>		
-		
-		
+				
 <others>	
 	<spelling>
 		<answer>Computer</answer>
@@ -337,6 +321,5 @@
 		<answer>Hat</answer>
 	</spelling>	
 </others>
-	
-	
+		
 </Questions>

@@ -49,6 +49,11 @@ namespace FunEngGames
         int MyNumber = 0;
         private void NewNumber(int max)
         {
+            if (randomList.Count >= nodeList.Count)
+            {
+                randomList.Clear();
+            }
+
             MyNumber = a.Next(0, max);
             if (!randomList.Contains(MyNumber))
             {
@@ -186,6 +191,8 @@ namespace FunEngGames
             picAns2.BackgroundImage = null;
             picAns3.BackgroundImage = null;
 
+            //randomList.Clear();
+            answers.Clear();
 
             btnCheckYourAnswer.Text = "Check your answers";
             lblAttempts.Text = attempt.ToString();

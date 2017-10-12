@@ -222,7 +222,7 @@
             this.picFeedback.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.picFeedback.BackColor = System.Drawing.Color.Transparent;
             this.picFeedback.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picFeedback.Location = new System.Drawing.Point(313, 674);
+            this.picFeedback.Location = new System.Drawing.Point(183, 459);
             this.picFeedback.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picFeedback.Name = "picFeedback";
             this.picFeedback.Size = new System.Drawing.Size(63, 53);
@@ -436,9 +436,9 @@
             this.lblFeedback.BackColor = System.Drawing.Color.Transparent;
             this.lblFeedback.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFeedback.ForeColor = System.Drawing.Color.Green;
-            this.lblFeedback.Location = new System.Drawing.Point(145, 639);
+            this.lblFeedback.Location = new System.Drawing.Point(12, 639);
             this.lblFeedback.Name = "lblFeedback";
-            this.lblFeedback.Size = new System.Drawing.Size(765, 30);
+            this.lblFeedback.Size = new System.Drawing.Size(1032, 30);
             this.lblFeedback.TabIndex = 30;
             this.lblFeedback.Text = "Good job! Keep up the good work";
             this.lblFeedback.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
