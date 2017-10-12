@@ -1,9 +1,16 @@
-﻿using System;
+﻿/*
+ * Project Name:    Fun Englisg learning Games
+ * File Name:       Spelling.cs
+ * Coded By:        Saleh Alzahrani
+ * Coded On:        Fall 2017
+ * Anout this File: This file handels all questions and gameplay login in spelling level
+ */
+
+
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
-using System.Net;
-using System.Net.Mail;
 using System.Windows.Forms;
 using System.Xml;
 
@@ -16,28 +23,35 @@ namespace FunEngGames
             InitializeComponent();
         }
 
-
+        //Variables wordLevelsForm and mainLevelsForm to store previous forms status        
         public wordsLevel wordLevelsForm;
         public mainLevels mainLevelsForm;
 
+        //Stroing the xml contains
         XmlDocument xmlDoc = new XmlDocument();
         XmlNodeList nodeList = null;
 
+        //Storing questions pictures and answers
         public string pic1 = "", ans1 = "";
         public string pic2 = "", ans2 = "";
         public string pic3 = "", ans3 = "";
 
+        //Set game variables
         public int question = 1;
         public int CorrectAnswers = 0;
         public int hints = 2;
         public int attempts = 3;
         public int points = 0;
 
+        //CommonFunctions object
         CommonFunctions CommonFunctions = new CommonFunctions();
 
+        //Random integer variable
         public Random a = new Random();
         public List<int> randomList = new List<int>();
 
+
+        //Generate random node function to avoid questions duplications
         int MyNumber = 0;
         private void NewNumber(int max)
         {
@@ -59,7 +73,7 @@ namespace FunEngGames
         }
 
 
-
+        //hide "Type your answer here..." text when textbox is fouced
         public void RemoveText()
         {
             if (txtAnswer.Text == "Type your answer here...")
@@ -70,7 +84,7 @@ namespace FunEngGames
         }
 
 
-
+        //show "Type your answer here..." text when textbox not fouced and empty
         public void AddText()
         {
             if (String.IsNullOrWhiteSpace(txtAnswer.Text))
@@ -79,7 +93,7 @@ namespace FunEngGames
             }
         }
 
-
+        //Random categry function choose random spelling category
         public void randomCatogary()
         {
             int rand = a.Next(8);
@@ -124,7 +138,7 @@ namespace FunEngGames
             }
         }
 
-
+        //Form load fucntion generatre first question
         private void spelling_Load(object sender, EventArgs e)
         {
             // Ensure WaitOnLoad is false.
@@ -147,58 +161,19 @@ namespace FunEngGames
 
         }
 
-        private void picCheckAnswers_Click(object sender, EventArgs e)
-        {
-            lblAttempts.Text = (int.Parse(lblAttempts.Text) - 1).ToString();
-            if (txtAnswer.Text.Trim().ToLower() == lblAnswer.Text.Trim().ToLower())
-            {
-                picFeedback.BackgroundImage = Properties.Resources.check;
-                picFeedback.Left = picWord.Left;
-                picFeedback.Top = picWord.Top;
-
-
-            }
-            else
-            {
-                picFeedback.BackgroundImage = Properties.Resources.cross;
-            }
-
-            if (textBox2.Text.Trim().ToLower() == label2.Text.Trim().ToLower())
-            {
-                picAns2.BackgroundImage = Properties.Resources.check;
-            }
-            else
-            {
-                picAns2.BackgroundImage = Properties.Resources.cross;
-            }
-
-
-
-
-            if (textBox3.Text.Trim().ToLower() == label3.Text.Trim().ToLower())
-            {
-                picAns3.BackgroundImage = Properties.Resources.check;
-            }
-            else
-            {
-                picAns3.BackgroundImage = Properties.Resources.cross;
-            }
-
-        }
-
-
+        //hide "Type your answer here..." text when textbox is fouced
         private void txtAnswer_Enter(object sender, EventArgs e)
         {
             RemoveText();
         }
 
+        //show "Type your answer here..." text when textbox not fouced and empty
         private void txtAnswer_Leave(object sender, EventArgs e)
         {
             AddText();
         }
 
-
-
+        //Start the level again function: when the player did not answer at least two questions
         public void StartLevelAgain()
         {
 
@@ -258,7 +233,7 @@ namespace FunEngGames
             label5.Text = "Question " + question + " out of 3";
         }
 
-
+        //Done with all the questions go to next level
         public void GoToNextLevel()
         {
             SynonymsLesson SynonymsLesson = new SynonymsLesson();
@@ -268,6 +243,7 @@ namespace FunEngGames
             SynonymsLesson.Show();
         }
 
+        //Correct answer go to the next question function
         public void NextQuestion()
         {
             btnCheckAnswer.Text = "Check your answer";
@@ -304,6 +280,7 @@ namespace FunEngGames
             txtAnswer.Text = "Type your answer here...";
         }
 
+        //Try again function we still have attempts
         public void TryAgain()
         {
             btnCheckAnswer.Text = "Check your answer";
@@ -311,6 +288,7 @@ namespace FunEngGames
         }
 
 
+        //if the answer was correct function
         public void CorrectAnswer()
         {
             question++;
@@ -350,6 +328,7 @@ namespace FunEngGames
         }
 
 
+        //if the answer was incorrect function
         public void IncorrectAnswer()
         {
             attempts--;
@@ -398,6 +377,7 @@ namespace FunEngGames
         }
 
 
+        //check your answer function
         public void CheckYourAnswer()
         {
             picFeedback.Visible = true;
@@ -416,6 +396,7 @@ namespace FunEngGames
         }
 
 
+        //check your answer button click function: checking all the possible cases
         private void btnCheckAnswer_Click(object sender, EventArgs e)
         {
             try
@@ -459,14 +440,9 @@ namespace FunEngGames
             }
         }
 
-        private void picCheckAnswers_MouseHover(object sender, EventArgs e)
-        {
-            picCheckAnswers.BackgroundImage = Properties.Resources.checkYourAswer_hover;
-        }
 
 
-
-        //First hint function
+        //First hint function : show the hint text and decrement the hints variable
         private void btnFirstHint_Click(object sender, EventArgs e)
         {
             lblFirstHint.Text = "First hint:" + "The number of letters in this word = " + lblAnswer.Text.Length;
@@ -478,7 +454,7 @@ namespace FunEngGames
         }
 
 
-        //Second hint function
+        //Second hint function : show the hint text and decrement the hints variable
         private void btnSecondHint_Click(object sender, EventArgs e)
         {
             lblSecondHint.Text = "Second hint: The word start with " + CommonFunctions.UppercaseFirst(lblAnswer.Text.Substring(0, 1)) + " and ends with " + CommonFunctions.UppercaseFirst(lblAnswer.Text.Substring(lblAnswer.Text.Length - 1, 1));
@@ -487,21 +463,22 @@ namespace FunEngGames
             hints--;
         }
 
+
+        //pronunce the word after click on the picture
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             CommonFunctions.Pronounce(lblAnswer.Text);
         }
 
+        //Timer to hide feedback lable
         private void timer1_Tick(object sender, EventArgs e)
         {
             lblFeedback.Visible = false;
             timer1.Enabled = false;
         }
 
-        private void txtAnswer_KeyPress(object sender, KeyPressEventArgs e)
-        {
-        }
 
+        //when player hits enter on answer textbox call check answr function
         private void txtAnswer_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -512,13 +489,8 @@ namespace FunEngGames
             }
         }
 
-        private void picCheckAnswers_MouseLeave(object sender, EventArgs e)
-        {
-            picCheckAnswers.BackgroundImage = Properties.Resources.checkYourAswer;
-        }
 
-
-        //Form closing function
+        //Form closing function: show the words level form
         private void spelling_FormClosed(object sender, FormClosedEventArgs e)
         {
             try
@@ -533,6 +505,7 @@ namespace FunEngGames
         }
 
 
+        // save and pass points between main levels form and words levels form.
         public void SavePoints()
         {
             this.mainLevelsForm.spellingPoints = points;
