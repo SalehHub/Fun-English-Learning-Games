@@ -5,231 +5,231 @@
 
 	<antonyms>
 		<word>Fiction</word>
-		<antonym>Fact</antonym>
+		<antonym>Fact</antonym><hint></hint>
 	</antonyms>	
 	
 	<antonyms>
 		<word>Throw</word>
-		<antonym>Catch</antonym>
+		<antonym>Catch</antonym><hint></hint>
 	</antonyms>	
 	
 	<antonyms>
 		<word>Love</word>
-		<antonym>Hate</antonym>
+		<antonym>Hate</antonym><hint></hint>
 	</antonyms>	
 	
 	<antonyms>
 		<word>Smooth</word>
-		<antonym>Rough</antonym>
+		<antonym>Rough</antonym><hint></hint>
 	</antonyms>	
 	
 	<antonyms>
 		<word>Fast</word>
-		<antonym>Slow</antonym>
+		<antonym>Slow</antonym><hint></hint>
 	</antonyms>		
 	
 	
 	<antonyms>
 		<word>absent </word>
-		<antonym>present</antonym>
+		<antonym>present</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>accept </word>
-		<antonym>decline</antonym>
+		<antonym>decline</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>admit </word>
-		<antonym>deny</antonym>
+		<antonym>deny</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>advantage </word>
-		<antonym>disadvantage</antonym>
+		<antonym>disadvantage</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>agree </word>
-		<antonym>disagree</antonym>
+		<antonym>disagree</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>alive </word>
-		<antonym>dead</antonym>
+		<antonym>dead</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>all </word>
-		<antonym>none</antonym>
+		<antonym>none</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>always </word>
-		<antonym>never</antonym>
+		<antonym>never</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>ancient </word>
-		<antonym>modern</antonym>
+		<antonym>modern</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>apart </word>
-		<antonym>together</antonym>
+		<antonym>together</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>arrive </word>
-		<antonym>depart</antonym>
+		<antonym>depart</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>artificial </word>
-		<antonym>natural</antonym>
+		<antonym>natural</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>awake </word>
-		<antonym>asleep</antonym>
+		<antonym>asleep</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>backward </word>
-		<antonym>forward</antonym>
+		<antonym>forward</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>before </word>
-		<antonym>after</antonym>
+		<antonym>after</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>below </word>
-		<antonym>above</antonym>
+		<antonym>above</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>bottom </word>
-		<antonym>top</antonym>
+		<antonym>top</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>bitter </word>
-		<antonym>sweet</antonym>
+		<antonym>sweet</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>borrow </word>
-		<antonym>lend</antonym>
+		<antonym>lend</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>broad </word>
-		<antonym>narrow</antonym>
+		<antonym>narrow</antonym><hint></hint>
 	</antonyms>	
 	
 	<antonyms>
 		<word>Near</word>
-		<antonym>Remote</antonym>
+		<antonym>Remote</antonym><hint></hint>
 		<hint>Far is another antonym for the word you're looking for</hint>
 	</antonyms>
 
 	  <antonyms>
 		<word>Guilty</word>
-		<antonym>Innocent</antonym>
+		<antonym>Innocent</antonym><hint></hint>
 	  </antonyms>
 
 	  <antonyms>
 		<word>Negative</word>
-		<antonym>Positive</antonym>
+		<antonym>Positive</antonym><hint></hint>
 	  </antonyms>
 
 	  <antonyms>
 		<word>Fake</word>
-		<antonym>Real</antonym>
+		<antonym>Real</antonym><hint></hint>
 	  </antonyms>
   
   	
 	<antonyms>
 		<word>careful </word>
-		<antonym>careless</antonym>
+		<antonym>careless</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>cheap </word>
-		<antonym>expensive</antonym>
+		<antonym>expensive</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>dangerous </word>
-		<antonym>safe</antonym>
+		<antonym>safe</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>decrease </word>
-		<antonym>increase</antonym>
+		<antonym>increase</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>empty </word>
-		<antonym>full</antonym>
+		<antonym>full</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>enter </word>
-		<antonym>exit</antonym>
+		<antonym>exit</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>even </word>
-		<antonym>odd</antonym>
+		<antonym>odd</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>external </word>
-		<antonym>internal</antonym>
+		<antonym>internal</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>forget </word>
-		<antonym>remember</antonym>
+		<antonym>remember</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>give </word>
-		<antonym>receive</antonym>
+		<antonym>receive</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>guest </word>
-		<antonym>host</antonym>
+		<antonym>host</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>horizontal </word>
-		<antonym>vertical</antonym>
+		<antonym>vertical</antonym><hint></hint>
 	</antonyms>	
 	
 		
 	<antonyms>
 		<word>join</word>
-		<antonym>separate</antonym>
+		<antonym>separate</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>knowledge </word>
-		<antonym>ignorance</antonym>
+		<antonym>ignorance</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>laugh </word>
-		<antonym>cry</antonym>
+		<antonym>cry</antonym><hint></hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>long </word>
-		<antonym>short</antonym>
+		<antonym>short</antonym><hint></hint>
 	</antonyms>	
 	
 </Questions>

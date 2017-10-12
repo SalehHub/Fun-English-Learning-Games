@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 
@@ -30,6 +26,7 @@ namespace FunEngGames
         public List<int> randomList = new List<int>();
         public List<string> synonyms = new List<string>();
 
+        public int Questions = 3;
         public int attempt = 3;
         public int hints = 3;
         public int points = 0;
@@ -42,7 +39,6 @@ namespace FunEngGames
         public string sHint = "";
         public string tHint = "";
 
-        public int Questions = 3;
 
         int MyNumber = 0;
         private void NewNumber(int max)
@@ -57,7 +53,6 @@ namespace FunEngGames
                 NewNumber(max);
             }
         }
-
 
         private void S_A_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -90,7 +85,7 @@ namespace FunEngGames
             pictureBox5.LoadAsync(@"https://media.giphy.com/media/Bn6djQ6MgEWZi/giphy.gif");
 
 
-
+            Questions = 3;
             attempt = 3;
             hints = 3;
             points = 0;
@@ -205,9 +200,6 @@ namespace FunEngGames
             }
         }
 
-
-
-
         public static void Shuffle(List<string> list)
         {
             int n = list.Count;
@@ -276,8 +268,6 @@ namespace FunEngGames
             this.Hide();
             antonymsLesson.Show();
         }
-
-
 
         private void btnCheckYourAnswer_Click(object sender, EventArgs e)
         {
@@ -361,7 +351,17 @@ namespace FunEngGames
                     picAns3.BackgroundImage = Properties.Resources.cross;
                 }
 
-                //solved all the questions
+                if (Questions == 0)
+                {
+                    showFeedBack("Good job, keep up the good work in the next level", Color.Green);
+
+                    lblPoints.Text = (hints + points).ToString();
+
+                    SavePoints();
+                    btnCheckYourAnswer.Text = "Go to Antonyms lesson";
+                }
+
+                //solved 2 questions
                 if (Questions >= 1 && attempt == 0)
                 {
                     showFeedBack("Good job, keep up the good work in the next level", Color.Green);
@@ -423,7 +423,6 @@ namespace FunEngGames
             }
 
         }
-
 
         public void showFeedBack(string txt, Color color)
         {

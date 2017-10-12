@@ -41,8 +41,8 @@
             this.lblPhrasesPoints = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblSentencesPoints = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picPhrasesLock = new System.Windows.Forms.PictureBox();
+            this.picSentencesLock = new System.Windows.Forms.PictureBox();
             this.lbltitle = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picWords)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSentences)).BeginInit();
@@ -50,8 +50,8 @@
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPhrasesLock)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSentencesLock)).BeginInit();
             this.SuspendLayout();
             // 
             // picWords
@@ -233,31 +233,31 @@
             this.lblSentencesPoints.Text = "0";
             this.lblSentencesPoints.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox6
+            // picPhrasesLock
             // 
-            this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.BackgroundImage = global::FunEngGames.Properties.Resources._lock;
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox6.Location = new System.Drawing.Point(586, 614);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(48, 46);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 23;
-            this.pictureBox6.TabStop = false;
+            this.picPhrasesLock.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.picPhrasesLock.BackColor = System.Drawing.Color.Transparent;
+            this.picPhrasesLock.BackgroundImage = global::FunEngGames.Properties.Resources._lock;
+            this.picPhrasesLock.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picPhrasesLock.Location = new System.Drawing.Point(586, 614);
+            this.picPhrasesLock.Name = "picPhrasesLock";
+            this.picPhrasesLock.Size = new System.Drawing.Size(48, 46);
+            this.picPhrasesLock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picPhrasesLock.TabIndex = 23;
+            this.picPhrasesLock.TabStop = false;
             // 
-            // pictureBox1
+            // picSentencesLock
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::FunEngGames.Properties.Resources._lock;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(962, 615);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 46);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 24;
-            this.pictureBox1.TabStop = false;
+            this.picSentencesLock.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.picSentencesLock.BackColor = System.Drawing.Color.Transparent;
+            this.picSentencesLock.BackgroundImage = global::FunEngGames.Properties.Resources._lock;
+            this.picSentencesLock.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picSentencesLock.Location = new System.Drawing.Point(962, 615);
+            this.picSentencesLock.Name = "picSentencesLock";
+            this.picSentencesLock.Size = new System.Drawing.Size(48, 46);
+            this.picSentencesLock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picSentencesLock.TabIndex = 24;
+            this.picSentencesLock.TabStop = false;
             // 
             // lbltitle
             // 
@@ -280,8 +280,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1220, 673);
             this.Controls.Add(this.lbltitle);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.picSentencesLock);
+            this.Controls.Add(this.picPhrasesLock);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -306,8 +306,8 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPhrasesLock)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSentencesLock)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -325,8 +325,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picPhrasesLock;
+        private System.Windows.Forms.PictureBox picSentencesLock;
         private System.Windows.Forms.Label lbltitle;
         public System.Windows.Forms.Label lblWordsPoints;
         public System.Windows.Forms.Label lblPhrasesPoints;

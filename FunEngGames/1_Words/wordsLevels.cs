@@ -59,9 +59,15 @@ namespace FunEngGames
 
         private void mainLevels_FormClosed(object sender, FormClosedEventArgs e)
         {
-            this.mainLevelsForm.Show();
-        }
+            try
+            {
+                this.mainLevelsForm.Show();
+            }
+            catch (Exception ex)
+            {
 
+            }
+        }
         private void picPhrases_MouseHover(object sender, EventArgs e)
         {
             picSA.BackgroundImage = Properties.Resources.S_AMainPicHover;
@@ -84,13 +90,13 @@ namespace FunEngGames
 
         private void mainLevels_Load(object sender, EventArgs e)
         {
-            if (this.spellingPoints != 0)
+            if (this.mainLevelsForm.CF.spellingPoints != 0)
             {
                 picSA.Enabled = true;
                 picSALock.Visible = false;
             }
 
-            if (this.antonymsPoints != 0)
+            if (this.mainLevelsForm.CF.synonymsPoints!= 0 && this.mainLevelsForm.CF.antonymsPoints != 0)
             {
                 picHomonyms.Enabled = true;
                 picHomonymsLock.Visible = false;

@@ -94,6 +94,7 @@
             this.picSA.BackgroundImage = global::FunEngGames.Properties.Resources.S_AMainPic;
             this.picSA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picSA.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picSA.Enabled = false;
             this.picSA.Location = new System.Drawing.Point(402, 181);
             this.picSA.Name = "picSA";
             this.picSA.Size = new System.Drawing.Size(338, 282);

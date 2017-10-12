@@ -103,7 +103,7 @@ namespace FunEngGames
 
         private void mainLevels_Shown(object sender, EventArgs e)
         {
-            lblWordsPoints.Text = CF.spellingPoints.ToString();  //this.spellingPoints.ToString();
+            lblWordsPoints.Text = (CF.spellingPoints+CF.synonymsPoints+CF.antonymsPoints).ToString();
         }
     }
 }

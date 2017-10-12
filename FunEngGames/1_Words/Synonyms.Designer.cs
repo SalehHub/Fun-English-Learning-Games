@@ -451,9 +451,9 @@
             // btnCheckYourAnswer
             // 
             this.btnCheckYourAnswer.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnCheckYourAnswer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnCheckYourAnswer.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnCheckYourAnswer.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheckYourAnswer.ForeColor = System.Drawing.Color.LightGreen;
+            this.btnCheckYourAnswer.ForeColor = System.Drawing.Color.DarkRed;
             this.btnCheckYourAnswer.Location = new System.Drawing.Point(429, 612);
             this.btnCheckYourAnswer.Name = "btnCheckYourAnswer";
             this.btnCheckYourAnswer.Size = new System.Drawing.Size(369, 74);
@@ -532,7 +532,7 @@
             this.Name = "Synonyms";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = " ";
+            this.Text = " Fun English Learning Games: Words - Synonyms level";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.S_A_FormClosed);
             this.Load += new System.EventHandler(this.S_A_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picCheckAnswers)).EndInit();
