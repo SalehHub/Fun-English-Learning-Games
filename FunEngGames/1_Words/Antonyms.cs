@@ -15,6 +15,7 @@ namespace FunEngGames
         }
 
         XmlDocument xmlDoc = new XmlDocument();
+        XmlNodeList nodeList = null;
 
         CommonFunctions cf = new CommonFunctions();
 
@@ -127,6 +128,8 @@ namespace FunEngGames
             lblPoints.Text = points.ToString();
 
             xmlDoc.Load("XML/antonyms.xml");
+            nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/antonyms");
+
             this.GenerateAntonyms();
         }
 
@@ -136,7 +139,6 @@ namespace FunEngGames
         {
             try
             {
-                XmlNodeList nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/antonyms");
 
 
                 string word = "", antonym = "";
@@ -144,9 +146,9 @@ namespace FunEngGames
                 NewNumber(nodeList.Count);
                 int random = randomList.Last();
 
-                word = nodeList[random].SelectSingleNode("word").InnerText;
-                antonym = nodeList[random].SelectSingleNode("antonym").InnerText;
-                fHint = nodeList[random].SelectSingleNode("hint").InnerText;
+                word = nodeList[random].SelectSingleNode("word").InnerText.Trim();
+                antonym = nodeList[random].SelectSingleNode("antonym").InnerText.Trim();
+                fHint = nodeList[random].SelectSingleNode("hint").InnerText.Trim();
 
                 antonyms.Add(cf.UppercaseFirst(antonym));
                 lblW1.Text = "" + cf.UppercaseFirst(word);
@@ -155,9 +157,9 @@ namespace FunEngGames
                 NewNumber(nodeList.Count);
                 random = randomList.Last();
 
-                word = nodeList[random].SelectSingleNode("word").InnerText;
-                antonym = nodeList[random].SelectSingleNode("antonym").InnerText;
-                sHint = nodeList[random].SelectSingleNode("hint").InnerText;
+                word = nodeList[random].SelectSingleNode("word").InnerText.Trim();
+                antonym = nodeList[random].SelectSingleNode("antonym").InnerText.Trim();
+                sHint = nodeList[random].SelectSingleNode("hint").InnerText.Trim();
 
                 antonyms.Add(cf.UppercaseFirst(antonym));
                 lblW2.Text = "" + cf.UppercaseFirst(word);
@@ -166,9 +168,9 @@ namespace FunEngGames
                 NewNumber(nodeList.Count);
                 random = randomList.Last();
 
-                word = nodeList[random].SelectSingleNode("word").InnerText;
-                antonym = nodeList[random].SelectSingleNode("antonym").InnerText;
-                tHint = nodeList[random].SelectSingleNode("hint").InnerText;
+                word = nodeList[random].SelectSingleNode("word").InnerText.Trim();
+                antonym = nodeList[random].SelectSingleNode("antonym").InnerText.Trim();
+                tHint = nodeList[random].SelectSingleNode("hint").InnerText.Trim();
 
                 antonyms.Add(cf.UppercaseFirst(antonym));
                 lblW3.Text = "" + cf.UppercaseFirst(word);
@@ -198,7 +200,8 @@ namespace FunEngGames
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                //MessageBox.Show(ex.Message+"Error while loading antonyms");
+                GenerateAntonyms();
             }
         }
 

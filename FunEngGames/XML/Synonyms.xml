@@ -95,9 +95,8 @@
 
 
   <synonyms>
-    <word>Show </word>
+    <word>Show</word>
     <synonym>display</synonym>
-
     <hint></hint>
 
   </synonyms>
@@ -122,11 +121,9 @@
 
 
   <synonyms>
-    <word>Keep </word>
+    <word>Keep</word>
     <synonym>hold</synonym>
-
     <hint></hint>
-
   </synonyms>
 
 
@@ -199,17 +196,13 @@
   <synonyms>
     <word>Idea</word>
     <synonym>thought</synonym>
-
     <hint></hint>
-
   </synonyms>
 
   <synonyms>
     <word>Listen</word>
     <synonym>hear</synonym>
-
     <hint></hint>
-
   </synonyms>
 
   <synonyms>
