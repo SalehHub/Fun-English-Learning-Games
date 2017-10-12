@@ -16,5 +16,27 @@ namespace FunEngGames._1_Words
         {
             InitializeComponent();
         }
+
+        public wordsLevel wordLevelsForm;
+        public mainLevels mainLevelsForm;
+
+        private void Storyline_Friendship_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Storyline_Friendship_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            try
+            {
+
+                this.wordLevelsForm.Show();
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
     }
 }

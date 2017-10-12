@@ -43,11 +43,12 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(202, 572);
+            this.label2.Location = new System.Drawing.Point(130, 572);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(588, 23);
+            this.label2.Size = new System.Drawing.Size(732, 23);
             this.label2.TabIndex = 60;
-            this.label2.Text = "Click \"Next\" button to make them more then just friends";
+            this.label2.Text = "Click \"Next\" button to make them more than just friends by playing Phrases levels" +
+    "\r\n";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
@@ -79,8 +80,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.BackgroundImage = global::FunEngGames.Properties.Resources.sl1;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -122,6 +122,8 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " Fun English Learning Games: Words - Le and Megan are friend now";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Storyline_Friendship_FormClosed);
+            this.Load += new System.EventHandler(this.Storyline_Friendship_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 

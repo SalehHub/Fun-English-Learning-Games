@@ -355,7 +355,7 @@ namespace FunEngGames
                 {
                     showFeedBack("Good job, keep up the good work in the next level", Color.Green);
 
-                    lblPoints.Text = (hints + points).ToString();
+                    lblPoints.Text = (attempt + 1 + hints + points).ToString();
 
                     SavePoints();
                     btnCheckYourAnswer.Text = "Go to Antonyms lesson";
@@ -366,7 +366,7 @@ namespace FunEngGames
                 {
                     showFeedBack("Good job, keep up the good work in the next level", Color.Green);
 
-                    lblPoints.Text = (hints + points).ToString();
+                    lblPoints.Text = (attempt + 1 + hints + points).ToString();
 
                     SavePoints();
                     btnCheckYourAnswer.Text = "Go to Antonyms lesson";
@@ -438,14 +438,14 @@ namespace FunEngGames
 
         public void SavePoints()
         {
-            this.mainLevelsForm.synonymsPoints = hints + points;
-            this.wordLevelForm.synonymsPoints = hints + points;
+            this.mainLevelsForm.synonymsPoints = attempt+1+ hints + points;
+            this.wordLevelForm.synonymsPoints = attempt + 1 + hints + points;
 
-            this.mainLevelsForm.lblWordsPoints.Text = (this.mainLevelsForm.spellingPoints + hints + points).ToString();
-            this.wordLevelForm.lblSandAPoints.Text = (hints + points).ToString();
+            this.mainLevelsForm.lblWordsPoints.Text = (this.mainLevelsForm.spellingPoints + attempt + 1 + hints + points).ToString();
+            this.wordLevelForm.lblSandAPoints.Text = (attempt + 1 + hints + points).ToString();
 
 
-            this.mainLevelsForm.CF.synonymsPoints = hints + points;
+            this.mainLevelsForm.CF.synonymsPoints = attempt + 1 + hints + points;
         }
 
         private void lblFeedback_Click(object sender, EventArgs e)

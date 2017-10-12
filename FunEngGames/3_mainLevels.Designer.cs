@@ -93,6 +93,7 @@
             this.picPhrases.BackgroundImage = global::FunEngGames.Properties.Resources.phrasesTitle;
             this.picPhrases.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picPhrases.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picPhrases.Enabled = false;
             this.picPhrases.Location = new System.Drawing.Point(489, 153);
             this.picPhrases.Name = "picPhrases";
             this.picPhrases.Size = new System.Drawing.Size(243, 333);
@@ -269,7 +270,7 @@
             this.lbltitle.Name = "lbltitle";
             this.lbltitle.Size = new System.Drawing.Size(1119, 58);
             this.lbltitle.TabIndex = 25;
-            this.lbltitle.Text = "Play the Words level to unlock Phrases and Sentences levels";
+            this.lbltitle.Text = "Play all Words levels to unlock Phrases levels";
             this.lbltitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // mainLevels
@@ -316,8 +317,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox picWords;
-        private System.Windows.Forms.PictureBox picSentences;
-        private System.Windows.Forms.PictureBox picPhrases;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
@@ -325,11 +324,13 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox picPhrasesLock;
-        private System.Windows.Forms.PictureBox picSentencesLock;
-        private System.Windows.Forms.Label lbltitle;
         public System.Windows.Forms.Label lblWordsPoints;
         public System.Windows.Forms.Label lblPhrasesPoints;
         public System.Windows.Forms.Label lblSentencesPoints;
+        public System.Windows.Forms.PictureBox picSentences;
+        public System.Windows.Forms.PictureBox picPhrases;
+        public System.Windows.Forms.PictureBox picPhrasesLock;
+        public System.Windows.Forms.PictureBox picSentencesLock;
+        public System.Windows.Forms.Label lbltitle;
     }
 }
