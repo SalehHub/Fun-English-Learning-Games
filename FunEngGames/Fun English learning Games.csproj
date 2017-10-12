@@ -112,17 +112,11 @@
     <Compile Include="1_Words\MoreInfo.Designer.cs">
       <DependentUpon>MoreInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="ResultForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="testForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="testForm.Designer.cs">
-      <DependentUpon>testForm.cs</DependentUpon>
+    <Compile Include="ResultForm.Designer.cs">
+      <DependentUpon>ResultForm.cs</DependentUpon>
     </Compile>
     <Compile Include="3_Sentences\Grammar.cs">
       <SubType>Form</SubType>
@@ -260,11 +254,8 @@
     <EmbeddedResource Include="1_Words\Storyline_Friendship.resx">
       <DependentUpon>Storyline_Friendship.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="testForm.resx">
-      <DependentUpon>testForm.cs</DependentUpon>
+    <EmbeddedResource Include="ResultForm.resx">
+      <DependentUpon>ResultForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="3_Sentences\Grammar.resx">
       <DependentUpon>Grammar.cs</DependentUpon>
@@ -1363,6 +1354,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\1.jpg" />
+    <None Include="Resources\resultMainTitle.png" />
+    <None Include="Resources\resultPanel.png" />
+    <None Include="Resources\resultTitle2.png" />
+    <None Include="Resources\resultTitle1.png" />
     <Content Include="XML\Antonyms.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -272,6 +272,7 @@
             this.lbltitle.TabIndex = 25;
             this.lbltitle.Text = "Play all Words levels to unlock Phrases levels";
             this.lbltitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbltitle.Click += new System.EventHandler(this.lbltitle_Click);
             // 
             // mainLevels
             // 

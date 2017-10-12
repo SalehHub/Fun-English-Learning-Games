@@ -105,5 +105,13 @@ namespace FunEngGames
         {
             lblWordsPoints.Text = (CF.spellingPoints+CF.synonymsPoints+CF.antonymsPoints).ToString();
         }
+
+        private void lbltitle_Click(object sender, EventArgs e)
+        {
+            ResultForm rf = new ResultForm();
+            rf.mainLevelsForm = this;
+            rf.Show();
+            this.Hide();
+        }
     }
 }
