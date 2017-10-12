@@ -128,6 +128,8 @@
             this.txtAnswer.TabIndex = 3;
             this.txtAnswer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtAnswer.Enter += new System.EventHandler(this.txtAnswer_Enter);
+            this.txtAnswer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtAnswer_KeyDown);
+            this.txtAnswer.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAnswer_KeyPress);
             this.txtAnswer.Leave += new System.EventHandler(this.txtAnswer_Leave);
             // 
             // textBox2

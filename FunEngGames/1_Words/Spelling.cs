@@ -24,7 +24,8 @@ namespace FunEngGames
         public string pic2 = "", ans2 = "";
         public string pic3 = "", ans3 = "";
 
-        public int question=1;
+        public int question = 1;
+        public int CorrectAnswers = 0;
         public int hints = 2;
         public int attempts = 3;
         public int points = 0;
@@ -52,17 +53,19 @@ namespace FunEngGames
 
         public void RemoveText()
         {
-            if (txtAnswer.Text== "Type your answer here...") {
-                
-                    txtAnswer.Text = "";
-                }
+            if (txtAnswer.Text == "Type your answer here...")
+            {
+
+                txtAnswer.Text = "";
+            }
         }
 
 
 
         public void AddText()
         {
-            if (String.IsNullOrWhiteSpace(txtAnswer.Text)) { 
+            if (String.IsNullOrWhiteSpace(txtAnswer.Text))
+            {
                 txtAnswer.Text = "Type your answer here...";
             }
         }
@@ -101,7 +104,7 @@ namespace FunEngGames
 
         private void picCheckAnswers_Click(object sender, EventArgs e)
         {
-            lblAttempts.Text = (int.Parse(lblAttempts.Text)-1).ToString();
+            lblAttempts.Text = (int.Parse(lblAttempts.Text) - 1).ToString();
             if (txtAnswer.Text.Trim().ToLower() == lblAnswer.Text.Trim().ToLower())
             {
                 picFeedback.BackgroundImage = Properties.Resources.check;
@@ -156,60 +159,62 @@ namespace FunEngGames
 
         public void StartLevelAgain()
         {
-                // Ensure WaitOnLoad is false.
-                pictureBox5.WaitOnLoad = false;
+            // Ensure WaitOnLoad is false.
+            pictureBox5.WaitOnLoad = false;
 
-                // Load the image asynchronously.
-                pictureBox5.LoadAsync(@"https://media.giphy.com/media/Bn6djQ6MgEWZi/giphy.gif");
+            // Load the image asynchronously.
+            pictureBox5.LoadAsync(@"https://media.giphy.com/media/Bn6djQ6MgEWZi/giphy.gif");
 
-                XmlDocument xmlDoc = new XmlDocument();
-                xmlDoc.Load("XML/spelling.xml");
-                XmlNodeList nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/"+ "furniture" + "/spelling");
+            XmlDocument xmlDoc = new XmlDocument();
+            xmlDoc.Load("XML/spelling.xml");
+            XmlNodeList nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "furniture" + "/spelling");
 
-                NewNumber(nodeList.Count);
-                int random = randomList.Last();
+            NewNumber(nodeList.Count);
+            int random = randomList.Last();
 
-                pic1 = nodeList[random].SelectSingleNode("answer").InnerText.Trim()+".png"; 
-                ans1 = nodeList[random].SelectSingleNode("answer").InnerText;
+            pic1 = nodeList[random].SelectSingleNode("answer").InnerText.Trim() + ".png";
+            ans1 = nodeList[random].SelectSingleNode("answer").InnerText;
 
-                picWord.Image = Image.FromFile(@"Images\" + pic1);
-                lblAnswer.Text = ans1;
+            picWord.Image = Image.FromFile(@"Images\" + pic1);
+            lblAnswer.Text = ans1;
 
-                 nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "animals" + "/spelling");
+            nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "animals" + "/spelling");
 
-                NewNumber(nodeList.Count);
-                random = randomList.Last();
+            NewNumber(nodeList.Count);
+            random = randomList.Last();
 
-                pic2 = nodeList[random].SelectSingleNode("answer").InnerText.Trim() + ".png";
-                ans2 = nodeList[random].SelectSingleNode("answer").InnerText;
-                //pictureBox2.Image = Image.FromFile(@"Images\" + pic);
-                label2.Text = ans2;
+            pic2 = nodeList[random].SelectSingleNode("answer").InnerText.Trim() + ".png";
+            ans2 = nodeList[random].SelectSingleNode("answer").InnerText;
+            //pictureBox2.Image = Image.FromFile(@"Images\" + pic);
+            label2.Text = ans2;
 
-                nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "fruits" + "/spelling");
+            nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "fruits" + "/spelling");
 
-                NewNumber(nodeList.Count);
-                random = randomList.Last();
+            NewNumber(nodeList.Count);
+            random = randomList.Last();
 
-                pic3 = nodeList[random].SelectSingleNode("answer").InnerText.Trim() + ".png";
-                ans3 = nodeList[random].SelectSingleNode("answer").InnerText;
-                //pictureBox3.Image = Image.FromFile(@"Images\" + pic);
-                label3.Text = ans3;
+            pic3 = nodeList[random].SelectSingleNode("answer").InnerText.Trim() + ".png";
+            ans3 = nodeList[random].SelectSingleNode("answer").InnerText;
+            //pictureBox3.Image = Image.FromFile(@"Images\" + pic);
+            label3.Text = ans3;
 
-                randomList.Clear();
-                question = 1;
+            randomList.Clear();
 
-                points = 0;
-                lblPoints.Text = "0";
+            CorrectAnswers = 0;
+            question = 1;
 
-                hints = 2;
+            points = 0;
+            lblPoints.Text = "0";
 
-                lblAttempts.Text = "3";
-                attempts = 3;
+            hints = 2;
 
-                picFeedback.Visible = false;
+            lblAttempts.Text = "3";
+            attempts = 3;
 
-                btnCheckAnswer.Text = "Check your answer";
-                label5.Text = "Question " + question + " out of 3";           
+            picFeedback.Visible = false;
+
+            btnCheckAnswer.Text = "Check your answer";
+            label5.Text = "Question " + question + " out of 3";
         }
 
 
@@ -268,7 +273,7 @@ namespace FunEngGames
         public void CorrectAnswer()
         {
             question++;
-
+            CorrectAnswers++;
             picFeedback.BackgroundImage = Properties.Resources.check;
 
             lblFeedback.Text = "Good job! Keep up the good work"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Green;
@@ -280,7 +285,7 @@ namespace FunEngGames
             SavePoints();
 
 
-            if (question == 4)
+            if (question == 4 && CorrectAnswers>=2)
             {
                 lblFeedback.Text = "Great job! Keep up the good work in the next level"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Green;
 
@@ -289,6 +294,18 @@ namespace FunEngGames
                 this.wordLevelsForm.picSA.Enabled = true;
                 this.wordLevelsForm.picSALock.Visible = false;
             }
+
+
+            if (question == 4 && CorrectAnswers < 2)
+            {
+                lblFeedback.Text = "You need to answer atleast two questions to pass this level"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Red;
+
+                btnCheckAnswer.Text = "Start this level again";
+
+               // this.wordLevelsForm.picSA.Enabled = true;
+               // this.wordLevelsForm.picSALock.Visible = false;
+            }
+
         }
 
 
@@ -297,7 +314,7 @@ namespace FunEngGames
             attempts--;
             lblAttempts.Text = attempts.ToString();
 
-            
+
             if (attempts == 0 && question < 3)  //No more attempts
             {
                 question++;
@@ -311,15 +328,23 @@ namespace FunEngGames
 
                 btnCheckAnswer.Text = "Next Question";
             }
-            else if (attempts == 0 && question == 3)    //last attepmt and last question
+            else if (attempts == 0 && question == 3 && CorrectAnswers < 2)    //last attepmt and last question
             {
-                lblFeedback.Text = "Sorry this is incorrect answer try again from begining";
-                lblFeedback.Visible = true;
+                lblFeedback.Text = "You need to answer atleast two questions to pass this level"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Red;
                 btnCheckAnswer.Text = "Start this level again";
+            }
+            else if (attempts == 0 && question == 3 && CorrectAnswers >= 2)    //last attepmt and last question
+            {
+                lblFeedback.Text = "Great job! Keep up the good work in the next level"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Green;
+
+                btnCheckAnswer.Text = "Go to the next level >>";
+
+                this.wordLevelsForm.picSA.Enabled = true;
+                this.wordLevelsForm.picSALock.Visible = false;
             }
             else
             {
-                lblFeedback.Text = "Sorry this incorrect answer try again";
+                lblFeedback.Text = "Sorry this is not a correct answer try again";
                 lblFeedback.Visible = true;
                 lblFeedback.ForeColor = Color.Red;
 
@@ -332,15 +357,15 @@ namespace FunEngGames
         public void CheckYourAnswer()
         {
             picFeedback.Visible = true;
-           
+
             if (txtAnswer.Text.Trim().ToLower() == lblAnswer.Text.Trim().ToLower())
             {
                 /*correct answer*/
                 CorrectAnswer();
             }
-           
+
             else
-            { 
+            {
                 /*incorrect answer*/
                 IncorrectAnswer();
             }
@@ -353,7 +378,7 @@ namespace FunEngGames
             {
                 lblFeedback.Visible = false;
 
-                if (txtAnswer.Text.Trim()=="" || txtAnswer.Text.Trim()== "Type your answer here...")
+                if (txtAnswer.Text.Trim() == "" || txtAnswer.Text.Trim() == "Type your answer here...")
                 {
                     lblFeedback.Visible = true;
                     lblFeedback.ForeColor = Color.Red;
@@ -370,7 +395,9 @@ namespace FunEngGames
                 }
                 else if (btnCheckAnswer.Text == "Next Question")
                 {
+                    btnCheckAnswer.Focus();
                     NextQuestion();
+                    txtAnswer.Focus();
                 }
                 else if (btnCheckAnswer.Text == "Try Again")
                 {
@@ -381,7 +408,9 @@ namespace FunEngGames
                     CheckYourAnswer();
                 }
 
-            }catch(Exception ex){
+            }
+            catch (Exception ex)
+            {
                 MessageBox.Show(ex.Message);
             }
         }
@@ -408,7 +437,7 @@ namespace FunEngGames
         //Second hint function
         private void btnSecondHint_Click(object sender, EventArgs e)
         {
-            lblSecondHint.Text="Second hint: The word start with "+ CommonFunctions.UppercaseFirst(lblAnswer.Text.Substring(0, 1))+" and ends with "+ CommonFunctions.UppercaseFirst(lblAnswer.Text.Substring(lblAnswer.Text.Length - 1, 1));
+            lblSecondHint.Text = "Second hint: The word start with " + CommonFunctions.UppercaseFirst(lblAnswer.Text.Substring(0, 1)) + " and ends with " + CommonFunctions.UppercaseFirst(lblAnswer.Text.Substring(lblAnswer.Text.Length - 1, 1));
             lblSecondHint.Visible = true;
             btnSecondHint.Visible = false;
             hints--;
@@ -425,6 +454,20 @@ namespace FunEngGames
             timer1.Enabled = false;
         }
 
+        private void txtAnswer_KeyPress(object sender, KeyPressEventArgs e)
+        {
+        }
+
+        private void txtAnswer_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnCheckAnswer_Click(sender, e);
+                e.SuppressKeyPress = true;
+
+            }
+        }
+
         private void picCheckAnswers_MouseLeave(object sender, EventArgs e)
         {
             picCheckAnswers.BackgroundImage = Properties.Resources.checkYourAswer;
@@ -438,9 +481,10 @@ namespace FunEngGames
             {
                 this.wordLevelsForm.Show();
 
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
-                
+
             }
         }
 
@@ -453,7 +497,7 @@ namespace FunEngGames
             this.mainLevelsForm.lblWordsPoints.Text = points.ToString();
             this.wordLevelsForm.lblSpellingPoints.Text = points.ToString();
 
-           mainLevelsForm.CF.spellingPoints = points;
+            mainLevelsForm.CF.spellingPoints = points;
         }
 
     }
