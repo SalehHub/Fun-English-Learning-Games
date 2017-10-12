@@ -103,10 +103,14 @@ namespace FunEngGames
             synonyms.Clear();
             //antonyms.Clear();
 
+
+            lblCorrectAns.Visible = false;
+            lblHint.Visible = false;
+
             btnHint1.Enabled = true;
             comboBox1.Enabled = true;
             comboBox1.Items.Clear();
-            comboBox1.Text="";
+            comboBox1.Text = "";
 
             btnHint2.Enabled = true;
             comboBox2.Enabled = true;
@@ -169,7 +173,7 @@ namespace FunEngGames
                 synonym = nodeList[random].SelectSingleNode("synonym").InnerText;
                 tHint = nodeList[random].SelectSingleNode("hint").InnerText;
 
-                synonyms.Add( cf.UppercaseFirst(synonym));
+                synonyms.Add(cf.UppercaseFirst(synonym));
                 lblW3.Text = "" + cf.UppercaseFirst(word);
 
 
@@ -181,7 +185,7 @@ namespace FunEngGames
                 lblAns2.Text = synonyms[1];
                 lblAns3.Text = synonyms[2];
 
-                 Shuffle(synonyms);
+                Shuffle(synonyms);
                 //comboBox1.Items.Add("A-"); comboBox1.Items.Add("B-"); comboBox1.Items.Add("C-");
                 comboBox1.Items.Add("" + synonyms[0]); comboBox1.Items.Add("" + synonyms[1]); comboBox1.Items.Add("" + synonyms[2]);
                 comboBox2.Items.Add("" + synonyms[0]); comboBox2.Items.Add("" + synonyms[1]); comboBox2.Items.Add("" + synonyms[2]);
@@ -281,14 +285,15 @@ namespace FunEngGames
 
 
 
-            if (comboBox1.Text.Trim()=="" || comboBox2.Text.Trim()=="" || comboBox3.Text.Trim()=="")
+            if (comboBox1.Text.Trim() == "" || comboBox2.Text.Trim() == "" || comboBox3.Text.Trim() == "")
             {
                 showFeedBack("Please answer all the three questions first", Color.Red);
 
-            }else if (btnCheckYourAnswer.Text == "Restart the level")
+            }
+            else if (btnCheckYourAnswer.Text == "Restart the level")
             {
 
-                S_A_Load(sender,e);
+                S_A_Load(sender, e);
 
             }
             else if (btnCheckYourAnswer.Text == "Go to Antonyms lesson")
@@ -301,7 +306,7 @@ namespace FunEngGames
             }
             else
             {
-        
+
 
                 attempt--;
                 lblAttempts.Text = attempt.ToString();
@@ -349,7 +354,7 @@ namespace FunEngGames
                     btnHint3.Enabled = false;
                     comboBox3.Enabled = false;
                     Questions--;
-                    tq = false;
+                    tq = true;
                 }
                 else if (tq == false && !comboBox3.Text.Trim().ToLower().Contains(lblAns3.Text.Trim().ToLower()))
                 {
@@ -357,23 +362,61 @@ namespace FunEngGames
                 }
 
                 //solved all the questions
-                if (Questions == 0 && attempt >= 0)
+                if (Questions >= 1 && attempt == 0)
                 {
                     showFeedBack("Good job, keep up the good work in the next level", Color.Green);
 
-                    lblPoints.Text = (hints+points).ToString();
+                    lblPoints.Text = (hints + points).ToString();
 
                     SavePoints();
                     btnCheckYourAnswer.Text = "Go to Antonyms lesson";
                 }
 
 
-
-                if (attempt == 0 && Questions >= 1)
+                if (attempt > 0 && Questions > 0)
                 {
+                    if (attempt ==2)
+                    {
+                        showFeedBack("Try again you still have two attempts left", Color.Red);
+                    }
+                    else if (attempt == 1)
+                    {
+                        showFeedBack("Try again you still have one attempt left", Color.Red);
+                    }
+                }
+
+
+
+                if (attempt == 0 && Questions >= 2)
+                {
+                    lblHint.Visible = false;
+                  
+
                     showFeedBack("Sorry, you need to solve at least two questions to pass this level", Color.Red);
 
                     btnCheckYourAnswer.Text = "Restart the level";
+                }
+
+
+                if(attempt==0 && Questions > 0)
+                {
+                    lblCorrectAns.Text = "";
+
+                    if (fq == false)
+                    {
+                        lblCorrectAns.Visible = true;
+                        lblCorrectAns.Text = "The correct answer for the first question is " + lblAns1.Text;
+                    }
+                    if (sq == false)
+                    {
+                        lblCorrectAns.Visible = true;
+                        lblCorrectAns.Text = lblCorrectAns.Text + "\nThe correct answer for the second question is " + lblAns2.Text;
+                    }
+                    if (tq == false)
+                    {
+                        lblCorrectAns.Visible = true;
+                        lblCorrectAns.Text = lblCorrectAns.Text + "\nThe correct answer for the third question is " + lblAns3.Text;
+                    }
                 }
 
 
@@ -382,7 +425,7 @@ namespace FunEngGames
         }
 
 
-        public void showFeedBack(string txt,Color color)
+        public void showFeedBack(string txt, Color color)
         {
             lblFeedback.Visible = true;
             lblFeedback.ForeColor = color;
@@ -396,10 +439,10 @@ namespace FunEngGames
 
         public void SavePoints()
         {
-            this.mainLevelsForm.synonymsPoints = hints+points;
+            this.mainLevelsForm.synonymsPoints = hints + points;
             this.wordLevelForm.synonymsPoints = hints + points;
 
-            this.mainLevelsForm.lblWordsPoints.Text = (this.mainLevelsForm.synonymsPoints+ hints + points).ToString();
+            this.mainLevelsForm.lblWordsPoints.Text = (this.mainLevelsForm.spellingPoints + hints + points).ToString();
             this.wordLevelForm.lblSandAPoints.Text = (hints + points).ToString();
 
 

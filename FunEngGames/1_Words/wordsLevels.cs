@@ -84,7 +84,17 @@ namespace FunEngGames
 
         private void mainLevels_Load(object sender, EventArgs e)
         {
+            if (this.spellingPoints != 0)
+            {
+                picSA.Enabled = true;
+                picSALock.Visible = false;
+            }
 
+            if (this.antonymsPoints != 0)
+            {
+                picHomonyms.Enabled = true;
+                picHomonymsLock.Visible = false;
+            }
         }
 
         private void picHomonyms_Click(object sender, EventArgs e)

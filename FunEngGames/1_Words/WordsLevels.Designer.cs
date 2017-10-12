@@ -41,8 +41,8 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblHomonymsPoints = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.picSALock = new System.Windows.Forms.PictureBox();
+            this.picHomonymsLock = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picSpelling)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHomonyms)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSA)).BeginInit();
@@ -50,8 +50,8 @@
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSALock)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHomonymsLock)).BeginInit();
             this.SuspendLayout();
             // 
             // picSpelling
@@ -77,6 +77,7 @@
             this.picHomonyms.BackgroundImage = global::FunEngGames.Properties.Resources.HomonomysPic;
             this.picHomonyms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picHomonyms.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picHomonyms.Enabled = false;
             this.picHomonyms.Location = new System.Drawing.Point(746, 181);
             this.picHomonyms.Name = "picHomonyms";
             this.picHomonyms.Size = new System.Drawing.Size(338, 282);
@@ -164,7 +165,7 @@
             this.panel1.BackgroundImage = global::FunEngGames.Properties.Resources.result;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.lblSpellingPoints);
-            this.panel1.Location = new System.Drawing.Point(106, 524);
+            this.panel1.Location = new System.Drawing.Point(106, 530);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(243, 65);
             this.panel1.TabIndex = 14;
@@ -176,7 +177,7 @@
             this.panel2.BackgroundImage = global::FunEngGames.Properties.Resources.result;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.lblSandAPoints);
-            this.panel2.Location = new System.Drawing.Point(450, 524);
+            this.panel2.Location = new System.Drawing.Point(450, 530);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(243, 65);
             this.panel2.TabIndex = 15;
@@ -201,7 +202,7 @@
             this.panel3.BackgroundImage = global::FunEngGames.Properties.Resources.result;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Controls.Add(this.lblHomonymsPoints);
-            this.panel3.Location = new System.Drawing.Point(794, 524);
+            this.panel3.Location = new System.Drawing.Point(794, 530);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(243, 65);
             this.panel3.TabIndex = 16;
@@ -226,37 +227,37 @@
             this.pictureBox1.BackgroundImage = global::FunEngGames.Properties.Resources.wordsMainTitle;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(58, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(61, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1026, 109);
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox6
+            // picSALock
             // 
-            this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.BackgroundImage = global::FunEngGames.Properties.Resources._lock;
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox6.Location = new System.Drawing.Point(546, 604);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(48, 46);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 23;
-            this.pictureBox6.TabStop = false;
+            this.picSALock.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.picSALock.BackColor = System.Drawing.Color.Transparent;
+            this.picSALock.BackgroundImage = global::FunEngGames.Properties.Resources._lock;
+            this.picSALock.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picSALock.Location = new System.Drawing.Point(546, 604);
+            this.picSALock.Name = "picSALock";
+            this.picSALock.Size = new System.Drawing.Size(48, 46);
+            this.picSALock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picSALock.TabIndex = 23;
+            this.picSALock.TabStop = false;
             // 
-            // pictureBox2
+            // picHomonymsLock
             // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = global::FunEngGames.Properties.Resources._lock;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(896, 615);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 46);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 24;
-            this.pictureBox2.TabStop = false;
+            this.picHomonymsLock.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.picHomonymsLock.BackColor = System.Drawing.Color.Transparent;
+            this.picHomonymsLock.BackgroundImage = global::FunEngGames.Properties.Resources._lock;
+            this.picHomonymsLock.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picHomonymsLock.Location = new System.Drawing.Point(896, 604);
+            this.picHomonymsLock.Name = "picHomonymsLock";
+            this.picHomonymsLock.Size = new System.Drawing.Size(48, 46);
+            this.picHomonymsLock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picHomonymsLock.TabIndex = 24;
+            this.picHomonymsLock.TabStop = false;
             // 
             // wordsLevel
             // 
@@ -265,8 +266,8 @@
             this.BackgroundImage = global::FunEngGames.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1148, 673);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.picHomonymsLock);
+            this.Controls.Add(this.picSALock);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -291,18 +292,14 @@
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSALock)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHomonymsLock)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox picSpelling;
-        private System.Windows.Forms.PictureBox picHomonyms;
-        private System.Windows.Forms.PictureBox picSA;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
@@ -310,10 +307,13 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox2;
         public System.Windows.Forms.Label lblSandAPoints;
         public System.Windows.Forms.Label lblHomonymsPoints;
         public System.Windows.Forms.Label lblSpellingPoints;
+        public System.Windows.Forms.PictureBox picSpelling;
+        public System.Windows.Forms.PictureBox picHomonyms;
+        public System.Windows.Forms.PictureBox picSA;
+        public System.Windows.Forms.PictureBox picSALock;
+        public System.Windows.Forms.PictureBox picHomonymsLock;
     }
 }

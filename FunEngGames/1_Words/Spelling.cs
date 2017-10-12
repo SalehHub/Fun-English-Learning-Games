@@ -285,6 +285,9 @@ namespace FunEngGames
                 lblFeedback.Text = "Great job! Keep up the good work in the next level"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Green;
 
                 btnCheckAnswer.Text = "Go to the next level >>";
+
+                this.wordLevelsForm.picSA.Enabled = true;
+                this.wordLevelsForm.picSALock.Visible = false;
             }
         }
 
@@ -326,7 +329,6 @@ namespace FunEngGames
         }
 
 
-
         public void CheckYourAnswer()
         {
             picFeedback.Visible = true;
@@ -343,7 +345,6 @@ namespace FunEngGames
                 IncorrectAnswer();
             }
         }
-
 
 
         private void btnCheckAnswer_Click(object sender, EventArgs e)
