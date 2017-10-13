@@ -57,12 +57,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label1.ForeColor = System.Drawing.Color.DarkOrange;
             this.label1.Location = new System.Drawing.Point(46, 110);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(901, 68);
             this.label1.TabIndex = 59;
-            this.label1.Text = " Le and Megan are friends now";
+            this.label1.Text = " Le and Megan are friends now!";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button3
@@ -70,7 +70,7 @@
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button3.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.button3.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.DarkRed;
+            this.button3.ForeColor = System.Drawing.Color.OrangeRed;
             this.button3.Location = new System.Drawing.Point(343, 610);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(307, 68);
@@ -85,9 +85,9 @@
             this.pictureBox4.BackgroundImage = global::FunEngGames.Properties.Resources.sl1;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox4.Image = global::FunEngGames.Properties.Resources._1;
-            this.pictureBox4.Location = new System.Drawing.Point(263, 194);
+            this.pictureBox4.Location = new System.Drawing.Point(226, 194);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(432, 343);
+            this.pictureBox4.Size = new System.Drawing.Size(540, 343);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 57;
             this.pictureBox4.TabStop = false;

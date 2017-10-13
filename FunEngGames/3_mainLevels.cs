@@ -134,5 +134,10 @@ namespace FunEngGames
             rf.Show();
             this.Hide();
         }
+
+        private void mainLevels_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -300,6 +300,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fun English Learning Games: Main Levels";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.mainLevels_FormClosed);
+            this.Load += new System.EventHandler(this.mainLevels_Load);
             this.Shown += new System.EventHandler(this.mainLevels_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.picWords)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSentences)).EndInit();

@@ -486,6 +486,8 @@ namespace FunEngGames
         }
 
 
+
+
         //when player hits enter on answer textbox call check answr function
         private void txtAnswer_KeyDown(object sender, KeyEventArgs e)
         {
