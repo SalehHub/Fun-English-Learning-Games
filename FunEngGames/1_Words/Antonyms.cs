@@ -86,7 +86,7 @@ namespace FunEngGames
             }
             catch (Exception ex)
             {
-
+                System.Console.WriteLine(ex.Message);
             }
         }
 
@@ -215,6 +215,8 @@ namespace FunEngGames
             {
                 //MessageBox.Show(ex.Message+"Error while loading antonyms");
                 GenerateAntonyms();
+                System.Console.WriteLine(ex.Message);
+
             }
         }
 

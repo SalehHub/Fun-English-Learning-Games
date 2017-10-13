@@ -55,6 +55,7 @@ namespace FunEngGames
             }
             catch (Exception ex)
             {
+                System.Console.WriteLine(ex.Message);
 
             }
         }
@@ -108,78 +109,10 @@ namespace FunEngGames
                 lastPage = nodeList.Count / 9;
                 lblPages.Text = "Page " + page + " out of " + lastPage;
 
-                /*
-                string def1 = "", def2 = "", ans = "";
-                //foreach (XmlNode node in nodeList)
-
-                NewNumber(nodeList.Count);
-                int random = randomList.Last();
-                lbl1.Text = nodeList[random].SelectSingleNode("def1").InnerText;
-                lbl2.Text = nodeList[random].SelectSingleNode("def2").InnerText;
-                textBox1.Text = nodeList[random].SelectSingleNode("answer").InnerText;
-
-
-                NewNumber(nodeList.Count);
-                random = randomList.Last();
-                lbl3.Text = nodeList[random].SelectSingleNode("def1").InnerText;
-                lbl4.Text = nodeList[random].SelectSingleNode("def2").InnerText;
-                textBox2.Text = nodeList[random].SelectSingleNode("answer").InnerText;
-
-
-                NewNumber(nodeList.Count);
-                random = randomList.Last();
-                lbl5.Text = nodeList[random].SelectSingleNode("def1").InnerText;
-                lbl6.Text = nodeList[random].SelectSingleNode("def2").InnerText;
-                textBox3.Text = nodeList[random].SelectSingleNode("answer").InnerText;
-
-
-                NewNumber(nodeList.Count);
-                random = randomList.Last();
-                lbl7.Text = nodeList[random].SelectSingleNode("def1").InnerText;
-                lbl8.Text = nodeList[random].SelectSingleNode("def2").InnerText;
-                textBox4.Text = nodeList[random].SelectSingleNode("answer").InnerText;
-
-
-                NewNumber(nodeList.Count);
-                random = randomList.Last();
-                lbl9.Text = nodeList[random].SelectSingleNode("def1").InnerText;
-                lbl10.Text = nodeList[random].SelectSingleNode("def2").InnerText;
-                textBox5.Text = nodeList[random].SelectSingleNode("answer").InnerText;
-
-
-                NewNumber(nodeList.Count);
-                random = randomList.Last();
-                lbl11.Text = nodeList[random].SelectSingleNode("def1").InnerText;
-                lbl12.Text = nodeList[random].SelectSingleNode("def2").InnerText;
-                textBox6.Text = nodeList[random].SelectSingleNode("answer").InnerText;
-
-
-                NewNumber(nodeList.Count);
-                random = randomList.Last();
-                lbl13.Text = nodeList[random].SelectSingleNode("def1").InnerText;
-                lbl14.Text = nodeList[random].SelectSingleNode("def2").InnerText;
-                textBox7.Text = nodeList[random].SelectSingleNode("answer").InnerText;
-
-
-                NewNumber(nodeList.Count);
-                random = randomList.Last();
-                lbl15.Text = nodeList[random].SelectSingleNode("def1").InnerText;
-                lbl16.Text = nodeList[random].SelectSingleNode("def2").InnerText;
-                textBox8.Text = nodeList[random].SelectSingleNode("answer").InnerText;
-
-
-                NewNumber(nodeList.Count);
-                random = randomList.Last();
-                lbl17.Text = nodeList[random].SelectSingleNode("def1").InnerText;
-                lbl18.Text = nodeList[random].SelectSingleNode("def2").InnerText;
-                textBox9.Text = nodeList[random].SelectSingleNode("answer").InnerText;
-
-                 */
-
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                System.Console.WriteLine(ex.Message);
             }
         }
 

@@ -33,7 +33,7 @@ namespace FunEngGames._1_Words
             }
             catch (Exception ex)
             {
-
+                System.Console.WriteLine(ex.Message);
             }
         }
     }

@@ -86,7 +86,7 @@ namespace FunEngGames
             }
             catch (Exception ex)
             {
-
+                System.Console.WriteLine(ex.Message);
             }
         }
 
@@ -214,6 +214,7 @@ namespace FunEngGames
             {
                 // MessageBox.Show(ex.Message+" Error while load synonyms");
                 GenerateSynonyms();
+                System.Console.WriteLine(ex.Message);
             }
         }
 

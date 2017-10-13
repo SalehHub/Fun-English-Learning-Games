@@ -194,7 +194,7 @@ namespace FunEngGames
             comboBox2.Items.Clear();
             comboBox2.Text = "";
 
-            comboBox2.Enabled = true;
+            comboBox3.Enabled = true;
             comboBox3.Items.Clear();
             comboBox3.Text = "";
 
@@ -238,13 +238,11 @@ namespace FunEngGames
         {
             try
             {
-
                 this.wordLevelsForm.Show();
-
             }
             catch (Exception ex)
             {
-
+                System.Console.WriteLine(ex.Message);
             }
         }
 

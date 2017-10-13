@@ -78,7 +78,7 @@ namespace FunEngGames
             }
             catch (Exception ex)
             {
-
+                System.Console.WriteLine(ex.Message);
             }
         }
         
