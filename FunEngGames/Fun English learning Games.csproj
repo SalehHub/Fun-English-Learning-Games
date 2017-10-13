@@ -327,6 +327,7 @@
     <EmbeddedResource Include="2_Storyline.resx">
       <DependentUpon>2_Storyline.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="FunEngGames.licenseheader" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

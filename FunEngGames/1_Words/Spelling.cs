@@ -1,11 +1,10 @@
 ﻿/*
- * Project Name:    Fun Englisg learning Games
+ * Project Name:    Fun English learning Games
  * File Name:       Spelling.cs
  * Coded By:        Saleh Alzahrani
  * Coded On:        Fall 2017
  * About this File: This file handles all questions and gameplay logic in spelling level
  */
-
 
 using System;
 using System.Collections.Generic;
@@ -484,8 +483,6 @@ namespace FunEngGames
             lblFeedback.Visible = false;
             timer1.Enabled = false;
         }
-
-
 
 
         //when player hits enter on answer textbox call check answr function

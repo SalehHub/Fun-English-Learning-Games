@@ -1,5 +1,5 @@
 ﻿/*
- * Project Name:    Fun Englisg learning Games
+ * Project Name:    Fun English learning Games
  * File Name:       Synonyms.cs
  * Coded By:        Saleh Alzahrani
  * Coded On:        Fall 2017
@@ -61,7 +61,7 @@ namespace FunEngGames
         private void NewNumber(int max)
         {
 
-            if(randomList.Count >= nodeList.Count)
+            if (randomList.Count >= nodeList.Count)
             {
                 randomList.Clear();
             }
@@ -89,7 +89,7 @@ namespace FunEngGames
 
             }
         }
-        
+
         //Form load fucntion generate questions
         private void S_A_Load(object sender, EventArgs e)
         {
@@ -212,7 +212,7 @@ namespace FunEngGames
             }
             catch (Exception ex)
             {
-               // MessageBox.Show(ex.Message+" Error while load synonyms");
+                // MessageBox.Show(ex.Message+" Error while load synonyms");
                 GenerateSynonyms();
             }
         }
@@ -421,7 +421,7 @@ namespace FunEngGames
 
 
             this.mainLevelsForm.lblWordsPoints.Text = (this.mainLevelsForm.spellingPoints + this.wordLevelsForm.synonymsPoints).ToString();
-            this.wordLevelsForm.lblSandAPoints.Text = (this.wordLevelsForm.synonymsPoints+ this.wordLevelsForm.antonymsPoints).ToString();
+            this.wordLevelsForm.lblSandAPoints.Text = (this.wordLevelsForm.synonymsPoints + this.wordLevelsForm.antonymsPoints).ToString();
 
 
         }

@@ -1,5 +1,5 @@
 ﻿/*
- * Project Name:    Fun Englisg learning Games
+ * Project Name:    Fun English learning Games
  * File Name:       SpellingLessons.cs
  * Coded By:        Saleh Alzahrani
  * Coded On:        Fall 2017
