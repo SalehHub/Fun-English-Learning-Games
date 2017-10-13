@@ -1,7 +1,7 @@
 ﻿/*
  * Project Name:    Fun English learning Games
  * File Name:       SpellingLessons.cs
- * Coded By:        Saleh Alzahrani
+ * Coded By:        Saleh Alzahrani & Sarah Aljabri
  * Coded On:        Fall 2017
  * About this File: This file display and organize all spelling lesson questions, images, pagination and pronunciation 
  */

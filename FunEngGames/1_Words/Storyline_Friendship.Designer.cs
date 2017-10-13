@@ -123,7 +123,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " Fun English Learning Games: Words - Le and Megan are friends now";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Storyline_Friendship_FormClosed);
-            this.Load += new System.EventHandler(this.Storyline_Friendship_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 

@@ -1,7 +1,7 @@
 ﻿/*
  * Project Name:    Fun English learning Games
  * File Name:       SynonymsLesson.cs
- * Coded By:        Saleh Alzahrani
+ * Coded By:        Saleh Alzahrani  & Sarah Aljabri
  * Coded On:        Fall 2017
  * About this File: This file handles all of Synonym lesson logic, generate words with synonyms and pronunciations
  */
@@ -206,6 +206,6 @@ namespace FunEngGames
 
         }
 
-
+  
     }
 }

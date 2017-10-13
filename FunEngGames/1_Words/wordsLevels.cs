@@ -1,7 +1,7 @@
 ﻿/*
  * Project Name:    Fun English learning Games
  * File Name:       WordsLevels.cs
- * Coded By:        Saleh Alzahrani
+ * Coded By:        Saleh Alzahrani & Sarah Aljabri
  * Coded On:        Fall 2017
  * About this File: This file handles opening words levels and displaying words levels points
  */

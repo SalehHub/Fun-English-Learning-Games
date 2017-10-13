@@ -1,7 +1,7 @@
 ﻿/*
  * Project Name:    Fun English learning Games
  * File Name:       HomonymsLesson.cs
- * Coded By:        Saleh Alzahrani
+ * Coded By:        Saleh Alzahrani & Sarah Aljabri
  * Coded On:        Fall 2017
  * About this File: This file handles all of Homonyms lesson logic, generate words with definitions and pronunciations
  */
