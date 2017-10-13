@@ -147,7 +147,7 @@ namespace FunEngGames
         }
 
 
-        //Generate all questions by calling GenerateWord;
+        //Generate all questions by calling GenerateWord function;
         public void GenerateWords(int next)
         {
 
@@ -212,7 +212,7 @@ namespace FunEngGames
         }
 
 
-        //pronounce the word after click on the picture
+        //pronounce the word after clicking on the picture
         private void Picture_Click(object sender, EventArgs e)
         {
             var pic = (PictureBox)sender;

@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Project Name:    Fun Englisg learning Games
+ * File Name:       ResultForm.cs
+ * Coded By:        Saleh Alzahrani
+ * Coded On:        Fall 2017
+ * About this File: This file handles displaying the details results for the palyer for each levels
+ */
+
+using System;
 using System.Windows.Forms;
 
 namespace FunEngGames
@@ -10,10 +18,10 @@ namespace FunEngGames
             InitializeComponent();
         }
 
-
+        //Define main levels variable
         public mainLevels mainLevelsForm;
 
-
+        //Load event here we filling points labels with the palyer's points
         private void Result_Load(object sender, EventArgs e)
         {
             //Spelling Points
@@ -34,6 +42,7 @@ namespace FunEngGames
 
         }
 
+        //Play again button
         private void btnCheckAnswer_Click(object sender, EventArgs e)
         {
             try
@@ -48,6 +57,7 @@ namespace FunEngGames
 
         }
 
+        //CLose event, just go back to main levels
         private void ResultForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             try

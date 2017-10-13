@@ -98,9 +98,6 @@
             this.picCheckAnswers.TabIndex = 20;
             this.picCheckAnswers.TabStop = false;
             this.picCheckAnswers.Visible = false;
-            this.picCheckAnswers.Click += new System.EventHandler(this.picCheckAnswers_Click);
-            this.picCheckAnswers.MouseLeave += new System.EventHandler(this.picCheckAnswers_MouseLeave);
-            this.picCheckAnswers.MouseHover += new System.EventHandler(this.picCheckAnswers_MouseHover);
             // 
             // pictureBox4
             // 
@@ -365,7 +362,7 @@
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Visible = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            //this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // lblPoints
             // 
@@ -475,7 +472,6 @@
             this.lblFeedback.Text = "Good job! Keep up the good work";
             this.lblFeedback.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblFeedback.Visible = false;
-            this.lblFeedback.Click += new System.EventHandler(this.lblFeedback_Click);
             // 
             // lblHint
             // 

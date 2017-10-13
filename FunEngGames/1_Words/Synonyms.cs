@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Project Name:    Fun Englisg learning Games
+ * File Name:       Synonyms.cs
+ * Coded By:        Saleh Alzahrani
+ * Coded On:        Fall 2017
+ * About this File: This file handles all of Synonym level gameplay logic
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -14,33 +22,41 @@ namespace FunEngGames
             InitializeComponent();
         }
 
+        //Storing the xml content
         XmlDocument xmlDoc = new XmlDocument();
         XmlNodeList nodeList = null;
 
+        //CommonFunctions object
         CommonFunctions cf = new CommonFunctions();
 
+        //Variables wordLevelsForm and mainLevelsForm to store previous forms status        
         public mainLevels mainLevelsForm;
         public wordsLevel wordLevelsForm;
 
+        //Random integer variable
         public Random a = new Random();
 
+        //Lists to store XML nodes and generated synonyms
         public List<int> randomList = new List<int>();
         public List<string> synonyms = new List<string>();
 
+        //Set game variables
         public int Questions = 3;
         public int attempt = 3;
         public int hints = 3;
         public int points = 0;
 
+        //What answer has been answerd
         public bool fq = false;
         public bool sq = false;
         public bool tq = false;
 
+        //Hints content setup
         public string fHint = "";
         public string sHint = "";
         public string tHint = "";
 
-
+        //Generate random node function to avoid questions duplications
         int MyNumber = 0;
         private void NewNumber(int max)
         {
@@ -61,6 +77,7 @@ namespace FunEngGames
             }
         }
 
+        //Form closing function: show the words level form
         private void S_A_FormClosed(object sender, FormClosedEventArgs e)
         {
             try
@@ -72,17 +89,8 @@ namespace FunEngGames
 
             }
         }
-
-        private void picCheckAnswers_MouseHover(object sender, EventArgs e)
-        {
-            picCheckAnswers.BackgroundImage = Properties.Resources.checkYourAswers_hover;
-        }
-
-        private void picCheckAnswers_MouseLeave(object sender, EventArgs e)
-        {
-            picCheckAnswers.BackgroundImage = Properties.Resources.checkYourAswers;
-        }
-
+        
+        //Form load fucntion generate questions
         private void S_A_Load(object sender, EventArgs e)
         {
             // Ensure WaitOnLoad is false.
@@ -139,6 +147,7 @@ namespace FunEngGames
             this.GenerateSynonyms();
         }
 
+        //Generate all the Three synonyms questions
         public void GenerateSynonyms()
         {
             try
@@ -208,6 +217,7 @@ namespace FunEngGames
             }
         }
 
+        //This function will shuffle any given list I use it to shuffle the answers
         public static void Shuffle(List<string> list)
         {
             int n = list.Count;
@@ -222,61 +232,17 @@ namespace FunEngGames
             }
         }
 
-        private void picCheckAnswers_Click(object sender, EventArgs e)
-        {
-            AntonymsLesson at = new AntonymsLesson();
-            at.Show();
-
-            //Synonyms check
-            if (comboBox1.Text.Trim().ToLower().Contains(lblAns1.Text.Trim().ToLower()))
-            {
-                picAns1.BackgroundImage = Properties.Resources.check;
-            }
-            else
-            {
-                picAns1.BackgroundImage = Properties.Resources.cross;
-            }
-
-
-
-
-            if (comboBox2.Text.Trim().ToLower().Contains(lblAns2.Text.Trim().ToLower()))
-            {
-                picAns2.BackgroundImage = Properties.Resources.check;
-            }
-            else
-            {
-                picAns2.BackgroundImage = Properties.Resources.cross;
-            }
-
-
-
-
-            if (comboBox3.Text.Trim().ToLower().Contains(lblAns3.Text.Trim().ToLower()))
-            {
-                picAns3.BackgroundImage = Properties.Resources.check;
-            }
-            else
-            {
-                picAns3.BackgroundImage = Properties.Resources.cross;
-            }
-
-
-
-
-
-
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        //Open antonyms lesson level
+        /*private void button1_Click(object sender, EventArgs e)
         {
             AntonymsLesson antonymsLesson = new AntonymsLesson();
             antonymsLesson.mainLevelsForm = this.mainLevelsForm;
             this.Hide();
             antonymsLesson.Show();
         }
+        */
 
+        //Check your answer function
         private void btnCheckYourAnswer_Click(object sender, EventArgs e)
         {
             hideFeedBack();
@@ -432,6 +398,7 @@ namespace FunEngGames
 
         }
 
+        //Show feedback label 
         public void showFeedBack(string txt, Color color)
         {
             lblFeedback.Visible = true;
@@ -439,11 +406,13 @@ namespace FunEngGames
             lblFeedback.Text = txt;
         }
 
+        //Hide feedback label
         public void hideFeedBack()
         {
             lblFeedback.Visible = false;
         }
 
+        //Save and pass points between main levels form and words levels form.
         public void SavePoints()
         {
             this.mainLevelsForm.synonymsPoints = attempt + 1 + hints + points;
@@ -457,11 +426,7 @@ namespace FunEngGames
 
         }
 
-        private void lblFeedback_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        //Show first question hint
         private void btnHint1_Click(object sender, EventArgs e)
         {
             lblHint.Visible = true;
@@ -470,6 +435,7 @@ namespace FunEngGames
             hints--;
         }
 
+        //Show second question hint
         private void btnHint2_Click(object sender, EventArgs e)
         {
             lblHint.Visible = true;
@@ -478,6 +444,7 @@ namespace FunEngGames
             hints--;
         }
 
+        //Show third question hint
         private void btnHint3_Click(object sender, EventArgs e)
         {
             lblHint.Visible = true;

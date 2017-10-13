@@ -1,7 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
+﻿/*
+ * Project Name:    Fun Englisg learning Games
+ * File Name:       SynonymsLesson.cs
+ * Coded By:        Saleh Alzahrani
+ * Coded On:        Fall 2017
+ * About this File: This file handles all of Synonym lesson logic, generate words with synonyms and pronunciations
+ */
+
+using System;
 using System.Windows.Forms;
 using System.Xml;
 
@@ -14,36 +19,23 @@ namespace FunEngGames
             InitializeComponent();
         }
 
-        public Random a = new Random();
-        public List<int> randomList = new List<int>();
-
+        //Variables wordLevelsForm and mainLevelsForm to store previous forms status        
         public wordsLevel wordLevelsForm;
         public mainLevels mainLevelsForm;
 
+        //Storing XML content
         XmlDocument xmlDoc = new XmlDocument();
         public XmlNodeList nodeList;
 
+        //CommonFunctions object
         CommonFunctions CommonFunctions = new CommonFunctions();
 
+        //Setup lesson pages variables
         public int page = 0;
         public int lastPage = 0;
         public int lastNode = 0;
 
-
-        int MyNumber = 0;
-        private void NewNumber(int max)
-        {
-            MyNumber = a.Next(0, max);
-            if (!randomList.Contains(MyNumber))
-            {
-                randomList.Add(MyNumber);
-            }
-            else
-            {
-                NewNumber(max);
-            }
-        }
-
+        //Start synonym level
         private void button1_Click(object sender, EventArgs e)
         {
             Synonyms S_A = new Synonyms();
@@ -53,6 +45,7 @@ namespace FunEngGames
             S_A.Show();
         }
 
+        //Form closed event function: show the words level form
         private void SynonymsLesson_FormClosed(object sender, FormClosedEventArgs e)
         {
             try
@@ -65,6 +58,7 @@ namespace FunEngGames
             }
         }
 
+        //Synonym lesson load event load all spelling questions from XML file
         private void SynonymsLesson_Load(object sender, EventArgs e)
         {
 
@@ -81,81 +75,27 @@ namespace FunEngGames
 
             CommonFunctions.SortDataGridColumn(dataGridView1);
 
-            //((TextAndImageCell)dataGridView1.Rows[0].Cells[0]).Image = (Image)imageList1.Images[0];
-            //((TextAndImageCell)dataGridView1.Rows[0].Cells[1]).Image = (Image)imageList1.Images[0];
-            //((TextAndImageCell)dataGridView1.Rows[1].Cells[0]).Image = (Image)imageList1.Images[0];
-            //((TextAndImageCell)dataGridView1.Rows[1].Cells[1]).Image = (Image)imageList1.Images[0];
-
             Cursor cur = new Cursor(Properties.Resources.audio.Handle);
-            //dataGridView1.Columns[0].DataGridView.Cursor = cur;
-            //lastNode = 9;
-
-            /*
-            NewNumber(nodeList.Count);
-            int random = randomList.Last();
-            textBox1.Text = nodeList[random].SelectSingleNode("word").InnerText;
-            textBox2.Text = nodeList[random].SelectSingleNode("synonym").InnerText;
-
-            NewNumber(nodeList.Count);
-            random = randomList.Last();
-            textBox3.Text = nodeList[random].SelectSingleNode("word").InnerText;
-            textBox4.Text = nodeList[random].SelectSingleNode("synonym").InnerText;
-
-            NewNumber(nodeList.Count);
-            random = randomList.Last();
-            textBox5.Text = nodeList[random].SelectSingleNode("word").InnerText;
-            textBox6.Text = nodeList[random].SelectSingleNode("synonym").InnerText;
-
-            NewNumber(nodeList.Count);
-            random = randomList.Last();
-            textBox7.Text = nodeList[random].SelectSingleNode("word").InnerText;
-            textBox8.Text = nodeList[random].SelectSingleNode("synonym").InnerText;
-
-            NewNumber(nodeList.Count);
-            random = randomList.Last();
-            textBox9.Text = nodeList[random].SelectSingleNode("word").InnerText;
-            textBox10.Text = nodeList[random].SelectSingleNode("synonym").InnerText;
-
-            NewNumber(nodeList.Count);
-            random = randomList.Last();
-            textBox11.Text = nodeList[random].SelectSingleNode("word").InnerText;
-            textBox12.Text = nodeList[random].SelectSingleNode("synonym").InnerText;
-
-            NewNumber(nodeList.Count);
-            random = randomList.Last();
-            textBox13.Text = nodeList[random].SelectSingleNode("word").InnerText;
-            textBox14.Text = nodeList[random].SelectSingleNode("synonym").InnerText;
-
-            NewNumber(nodeList.Count);
-            random = randomList.Last();
-            textBox15.Text = nodeList[random].SelectSingleNode("word").InnerText;
-            textBox16.Text = nodeList[random].SelectSingleNode("synonym").InnerText;
-
-            NewNumber(nodeList.Count);
-            random = randomList.Last();
-            textBox17.Text = nodeList[random].SelectSingleNode("word").InnerText;
-            textBox18.Text = nodeList[random].SelectSingleNode("synonym").InnerText;
-            */
         }
 
-
-
-        public void GenerateSynonyms(int start) {
+        //Generate all questions by calling GenSynonym function;
+        public void GenerateSynonyms(int start)
+        {
 
             GenSynonym(start, textBox1, textBox2);//1
-            GenSynonym(start+1, textBox3, textBox4);//2
-            GenSynonym(start +2, textBox5, textBox6);//3
-            GenSynonym(start +3 ,textBox7, textBox8);//4
-            GenSynonym(start +4, textBox9, textBox10);//5
-            GenSynonym(start +5, textBox11, textBox12);//6
-            GenSynonym(start +6, textBox13, textBox14);//7
-            GenSynonym(start +7, textBox15, textBox16);//8
-            GenSynonym(start +8, textBox17, textBox18);//9
+            GenSynonym(start + 1, textBox3, textBox4);//2
+            GenSynonym(start + 2, textBox5, textBox6);//3
+            GenSynonym(start + 3, textBox7, textBox8);//4
+            GenSynonym(start + 4, textBox9, textBox10);//5
+            GenSynonym(start + 5, textBox11, textBox12);//6
+            GenSynonym(start + 6, textBox13, textBox14);//7
+            GenSynonym(start + 7, textBox15, textBox16);//8
+            GenSynonym(start + 8, textBox17, textBox18);//9
 
         }
 
-
-        public void GenSynonym(int start, TextBox t1,TextBox t2)
+        //Generate word, synonym from Synonym XML file
+        public void GenSynonym(int start, TextBox t1, TextBox t2)
         {
             //NewNumber(nodeList.Count);
             dataGridView1.Rows.Add(CommonFunctions.UppercaseFirst(nodeList[start].SelectSingleNode("word").InnerText), CommonFunctions.UppercaseFirst(nodeList[start].SelectSingleNode("synonym").InnerText));
@@ -164,7 +104,7 @@ namespace FunEngGames
             //t2.Text = UppercaseFirst(nodeList[start].SelectSingleNode("synonym").InnerText);
         }
 
-
+        //Next page event if we have more than on page
         private void btnNext_Click(object sender, EventArgs e)
         {
             page++;
@@ -179,7 +119,8 @@ namespace FunEngGames
 
                 btnNext.Enabled = false;
 
-            }else
+            }
+            else
             {
             }
 
@@ -190,6 +131,7 @@ namespace FunEngGames
 
         }
 
+        //Previous page event if we have more than on page and next page btn has been clicked
         private void btnPrevious_Click(object sender, EventArgs e)
         {
             page--;
@@ -209,7 +151,8 @@ namespace FunEngGames
             if (page == 1)
             {
                 btnPrevious.Enabled = false;
-            }else
+            }
+            else
             {
 
                 //lastNode -= 9;
@@ -219,20 +162,12 @@ namespace FunEngGames
         }
 
 
-
-
-
-
-
-
-
-
-
+        //Pronounce the word after clicking data grid cell
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             try
             {
-                
+
                 var senderGrid = (DataGridView)sender;
                 /*
                 if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
@@ -255,16 +190,16 @@ namespace FunEngGames
 
                 if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
                 {
-                    CommonFunctions.GenerateMoreInfo(senderGrid.Rows[e.RowIndex].Cells[0].Value.ToString(),  "synonyms");
+                    CommonFunctions.GenerateMoreInfo(senderGrid.Rows[e.RowIndex].Cells[0].Value.ToString(), "synonyms");
 
                 }
-                else if (e.RowIndex >= 0 && e.ColumnIndex>=0)
+                else if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
                 {
-                   CommonFunctions.Pronounce(senderGrid.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString().Trim().ToLower());
+                    CommonFunctions.Pronounce(senderGrid.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString().Trim().ToLower());
                 }
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }

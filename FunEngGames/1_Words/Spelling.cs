@@ -93,6 +93,7 @@ namespace FunEngGames
             }
         }
 
+
         //Random categry function choose random spelling category
         public void randomCatogary()
         {
@@ -138,7 +139,8 @@ namespace FunEngGames
             }
         }
 
-        //Form load fucntion generatre first question
+
+        //Form load fucntion generate first question
         private void spelling_Load(object sender, EventArgs e)
         {
             // Ensure WaitOnLoad is false.
@@ -161,17 +163,20 @@ namespace FunEngGames
 
         }
 
+
         //hide "Type your answer here..." text when textbox is fouced
         private void txtAnswer_Enter(object sender, EventArgs e)
         {
             RemoveText();
         }
 
+
         //show "Type your answer here..." text when textbox not fouced and empty
         private void txtAnswer_Leave(object sender, EventArgs e)
         {
             AddText();
         }
+
 
         //Start the level again function: when the player did not answer at least two questions
         public void StartLevelAgain()
@@ -233,6 +238,7 @@ namespace FunEngGames
             label5.Text = "Question " + question + " out of 3";
         }
 
+
         //Done with all the questions go to next level
         public void GoToNextLevel()
         {
@@ -242,6 +248,7 @@ namespace FunEngGames
             this.Hide();
             SynonymsLesson.Show();
         }
+
 
         //Correct answer go to the next question function
         public void NextQuestion()
@@ -279,6 +286,7 @@ namespace FunEngGames
 
             txtAnswer.Text = "Type your answer here...";
         }
+
 
         //Try again function we still have attempts
         public void TryAgain()
@@ -441,7 +449,6 @@ namespace FunEngGames
         }
 
 
-
         //First hint function : show the hint text and decrement the hints variable
         private void btnFirstHint_Click(object sender, EventArgs e)
         {
@@ -469,6 +476,7 @@ namespace FunEngGames
         {
             CommonFunctions.Pronounce(lblAnswer.Text);
         }
+
 
         //Timer to hide feedback lable
         private void timer1_Tick(object sender, EventArgs e)
@@ -505,7 +513,7 @@ namespace FunEngGames
         }
 
 
-        // save and pass points between main levels form and words levels form.
+        //Save and pass points between main levels form and words levels form.
         public void SavePoints()
         {
             this.mainLevelsForm.spellingPoints = points;

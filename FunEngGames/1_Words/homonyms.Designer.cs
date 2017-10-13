@@ -117,9 +117,6 @@
             this.picCheckAnswers.TabIndex = 17;
             this.picCheckAnswers.TabStop = false;
             this.picCheckAnswers.Visible = false;
-            this.picCheckAnswers.Click += new System.EventHandler(this.picCheckAnswers_Click);
-            this.picCheckAnswers.MouseLeave += new System.EventHandler(this.picCheckAnswers_MouseLeave);
-            this.picCheckAnswers.MouseHover += new System.EventHandler(this.picCheckAnswers_MouseHover);
             // 
             // pictureBox1
             // 

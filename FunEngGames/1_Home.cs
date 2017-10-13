@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Project Name:    Fun Englisg learning Games
+ * File Name:       Home.cs
+ * Coded By:        Saleh Alzahrani
+ * Coded On:        Fall 2017
+ * About this File: This file handles first form which is welcome form with one button to start the game
+ */
+
+using System;
 using System.Speech.Synthesis;
 using System.Windows.Forms;
 
@@ -11,16 +19,19 @@ namespace FunEngGames
             InitializeComponent();
         }
 
+        //Change image to hover image when mouse hover on the button 
         private void pictureBox1_MouseHover(object sender, EventArgs e)
         {
             pictureBox1.BackgroundImage = Properties.Resources.b2;
         }
 
+        //Change image bac when mouse leave the button 
         private void pictureBox1_MouseLeave(object sender, EventArgs e)
         {
             pictureBox1.BackgroundImage = Properties.Resources.b1;
         }
 
+        //Start the main levles form
         private void pictureBox1_Click(object sender, EventArgs e)
         {
              //show Main levels form
@@ -37,6 +48,7 @@ namespace FunEngGames
            // this.Hide();
         }
 
+        //Load event just setup speech object
         private void Home_Load(object sender, EventArgs e)
         {
             try
@@ -51,33 +63,5 @@ namespace FunEngGames
             }
         }
 
-        private void Home_Shown(object sender, EventArgs e)
-        {
-            //Zoom in animation
-
-            /*
-            pictureBox2.Visible = false;
-            label1.Visible = false;
-            pictureBox1.Visible = false;
-            label2.Visible = false;
-
-            animator1.BeginUpdate(panel1);
-                pictureBox2.Visible = true;
-                label1.Visible = true;
-                pictureBox1.Visible = true;
-                label2.Visible = true;
-            animator1.EndUpdateSync(panel1);
-            */
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

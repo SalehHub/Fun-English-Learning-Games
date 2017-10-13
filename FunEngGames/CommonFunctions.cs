@@ -1,4 +1,12 @@
-﻿using NAudio.Wave;
+﻿/*
+ * Project Name:    Fun Englisg learning Games
+ * File Name:       CommonFunctions.cs
+ * Coded By:        Saleh Alzahrani
+ * Coded On:        Fall 2017
+ * About this File: In this class we have common functions tha we used in all of our levels or lessons forms
+ */
+
+using NAudio.Wave;
 using Newtonsoft.Json;
 using System;
 using System.ComponentModel;
@@ -10,20 +18,36 @@ using System.Windows.Forms;
 
 namespace FunEngGames
 {
-   public class CommonFunctions
+    public class CommonFunctions
     {
+
+        //Words Levels Points
         public int spellingPoints = 0;
         public int synonymsPoints = 0;
         public int antonymsPoints = 0;
         public int homonymsPoints = 0;
 
-        private void Download(string url,string fileName)
+
+        //Phrases Levels Points
+        public int idiomsPoints = 0;
+        public int partsOfSpeechPoints = 0;
+
+
+        //Sentences Levels Points
+        public int grammerPoints = 0;
+        public int sentenceStructurePoints = 0;
+        public int ParagraphCoherencePoints = 0;
+
+
+        //Download any online file
+        private void Download(string url, string fileName)
         {
             using (WebClient wc = new WebClient())
             {
-                wc.DownloadFileAsync(new Uri(url),fileName);
+                wc.DownloadFileAsync(new Uri(url), fileName);
             }
         }
+
 
         //Get json from Oxford api
         public string GET2(string url)
@@ -64,14 +88,14 @@ namespace FunEngGames
                         //return false;
                     }
                 }
-              
-            }catch(Exception ex)
+
+            }
+            catch (Exception ex)
             {
-                     throw new Exception("No connection");
+                throw new Exception("No connection");
 
             }
         }
-
 
 
         //Paly online mp3 file
@@ -109,7 +133,7 @@ namespace FunEngGames
         }
 
 
-        //Get url content 
+        //Get any url content 
         public string GET(string url)
         {
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
@@ -136,8 +160,6 @@ namespace FunEngGames
         }
 
 
-
-
         //Genterate synonyms, antonyms and defintions with example to a give word using Oxford api
         public void GenerateMoreInfo(string word, string category)
         {
@@ -150,26 +172,26 @@ namespace FunEngGames
 
 
                 string s = "";
-               // if (category == "synonyms")
+                // if (category == "synonyms")
                 //{
-                    if (words.results[0].lexicalEntries[0].entries[0].senses[0].subsenses != null && words.results[0].lexicalEntries[0].entries[0].senses[0].subsenses[0].synonyms!=null)
+                if (words.results[0].lexicalEntries[0].entries[0].senses[0].subsenses != null && words.results[0].lexicalEntries[0].entries[0].senses[0].subsenses[0].synonyms != null)
+                {
+
+                    foreach (Synonym text in words.results[0].lexicalEntries[0].entries[0].senses[0].subsenses[0].synonyms)
                     {
-
-                        foreach (Synonym text in words.results[0].lexicalEntries[0].entries[0].senses[0].subsenses[0].synonyms)
-                        {
-                            s = s + UppercaseFirst(text.text) + "\r\n";
-                        }
+                        s = s + UppercaseFirst(text.text) + "\r\n";
                     }
-                     if (words.results[0].lexicalEntries[0].entries[0].senses != null && words.results[0].lexicalEntries[0].entries[0].senses[0].synonyms != null)
+                }
+                if (words.results[0].lexicalEntries[0].entries[0].senses != null && words.results[0].lexicalEntries[0].entries[0].senses[0].synonyms != null)
 
+                {
+                    foreach (Synonym text in words.results[0].lexicalEntries[0].entries[0].senses[0].synonyms)
                     {
-                        foreach (Synonym text in words.results[0].lexicalEntries[0].entries[0].senses[0].synonyms)
-                        {
-                            s = s + UppercaseFirst(text.text) + "\r\n";
-                        }
-
-
+                        s = s + UppercaseFirst(text.text) + "\r\n";
                     }
+
+
+                }
 
                 //if (s.Trim() != "") { s = "Synonyms:\n\t" + s; }
 
@@ -180,21 +202,21 @@ namespace FunEngGames
 
                 //w += "\rAntonyms:\n\t";
 
-                if (words.results[0].lexicalEntries[0].entries[0].senses[0].subsenses != null && words.results[0].lexicalEntries[0].entries[0].senses[0].subsenses[0].antonyms !=null)
+                if (words.results[0].lexicalEntries[0].entries[0].senses[0].subsenses != null && words.results[0].lexicalEntries[0].entries[0].senses[0].subsenses[0].antonyms != null)
+                {
+                    foreach (Antonym text in words.results[0].lexicalEntries[0].entries[0].senses[0].subsenses[0].antonyms)
                     {
-                        foreach (Antonym text in words.results[0].lexicalEntries[0].entries[0].senses[0].subsenses[0].antonyms)
-                        {
-                            a = a + UppercaseFirst(text.text) + "\r\n";
-                        }
+                        a = a + UppercaseFirst(text.text) + "\r\n";
                     }
-                     if (words.results[0].lexicalEntries[0].entries[0].senses != null && words.results[0].lexicalEntries[0].entries[0].senses[0].antonyms != null)
+                }
+                if (words.results[0].lexicalEntries[0].entries[0].senses != null && words.results[0].lexicalEntries[0].entries[0].senses[0].antonyms != null)
 
+                {
+                    foreach (Antonym2 text in words.results[0].lexicalEntries[0].entries[0].senses[0].antonyms)
                     {
-                        foreach (Antonym2 text in words.results[0].lexicalEntries[0].entries[0].senses[0].antonyms)
-                        {
-                            a = a + UppercaseFirst(text.text) + "\r\n";
-                        }
+                        a = a + UppercaseFirst(text.text) + "\r\n";
                     }
+                }
 
                 //if (a.Trim() != "") { a = "\rAntonyms:\n\t" + a; }
 
@@ -217,20 +239,21 @@ namespace FunEngGames
                     w += "\r\n" + UppercaseFirst(def) + "\r\n\tExample: " + UppercaseFirst(exa) + "\r\n\r\n";
 
                 }
-                else{
+                else
+                {
                     w += "\n\n" + UppercaseFirst(def) + "\r\n\n";
 
                 }
 
 
-               // w += "\nDefinitions:\n " + UppercaseFirst(def) + "\n\tExample: " + UppercaseFirst(exa) + "\n\n";
+                // w += "\nDefinitions:\n " + UppercaseFirst(def) + "\n\tExample: " + UppercaseFirst(exa) + "\n\n";
                 if (wordss.results[0].lexicalEntries[0].entries[0].senses[0].subsenses != null)
                 {
                     foreach (Subsens text in wordss.results[0].lexicalEntries[0].entries[0].senses[0].subsenses)
                     {
                         if (text.definitions != null)
                         {
-                            w = w + "----------------------\r\n"+ UppercaseFirst(text.definitions[0]) + "\r\n\t";
+                            w = w + "----------------------\r\n" + UppercaseFirst(text.definitions[0]) + "\r\n\t";
                         }
                         if (text.examples != null)
                         {
@@ -249,7 +272,7 @@ namespace FunEngGames
                 MoreInfo.txtAnt.Text = a.Trim();
                 MoreInfo.txtDef.Text = w.Trim(); ;
 
-                MoreInfo.lblSource.Text= "https://en.oxforddictionaries.com/definition/"+ word.ToString();
+                MoreInfo.lblSource.Text = "https://en.oxforddictionaries.com/definition/" + word.ToString();
                 //hide antonyms column
                 if (a.Trim() == "")
                 {
@@ -281,15 +304,14 @@ namespace FunEngGames
         }
 
 
-
         //Pronounce specific word using Oxford api
-        public void  Pronounce(string word)
+        public void Pronounce(string word)
         {
-                try
-                {
+            try
+            {
 
 
-                if (!File.Exists("Audio\\"+word + ".mp3"))
+                if (!File.Exists("Audio\\" + word + ".mp3"))
                 {
                     string json22 = GET2("https://od-api.oxforddictionaries.com:443/api/v1/entries/en/" + word.Trim().ToLower());
                     var wordss = JsonConvert.DeserializeObject<WordObject>(json22);
@@ -307,21 +329,23 @@ namespace FunEngGames
                         //MessageBox.Show("No pronunciations found, Sorry");
                         Pronounce2(word);
                     }
-                }else
+                }
+                else
                 {
                     IWavePlayer waveOutDevice = new WaveOut();
-                    AudioFileReader audioFileReader = new AudioFileReader("Audio\\" + word +".mp3");
+                    AudioFileReader audioFileReader = new AudioFileReader("Audio\\" + word + ".mp3");
 
                     waveOutDevice.Init(audioFileReader);
                     waveOutDevice.Play();
                 }
-                }
-                catch (Exception ex)
-                {
-                    //MessageBox.Show(ex.Message);
-                    Pronounce2(word);
-                }
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show(ex.Message);
+                Pronounce2(word);
+            }
         }
+
 
         //Pronounce specific word using SpeechSynthesizer class
         public void Pronounce2(string word)
@@ -335,27 +359,27 @@ namespace FunEngGames
 
                 if (rand == 0)
                 {
-                    synthesizer.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Adult); 
+                    synthesizer.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Adult);
                 }
                 if (rand == 1)
                 {
-                    synthesizer.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Child); 
+                    synthesizer.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Child);
                 }
                 if (rand == 2)
                 {
-                    synthesizer.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Senior); 
+                    synthesizer.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Senior);
                 }
                 if (rand == 3)
                 {
-                    synthesizer.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Teen); 
+                    synthesizer.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Teen);
                 }
                 if (rand == 4)
                 {
-                    synthesizer.SelectVoiceByHints(VoiceGender.Male, VoiceAge.Adult); 
+                    synthesizer.SelectVoiceByHints(VoiceGender.Male, VoiceAge.Adult);
                 }
                 if (rand == 5)
                 {
-                    synthesizer.SelectVoiceByHints(VoiceGender.Male, VoiceAge.Child); 
+                    synthesizer.SelectVoiceByHints(VoiceGender.Male, VoiceAge.Child);
                 }
                 if (rand == 6)
                 {
@@ -393,11 +417,12 @@ namespace FunEngGames
             }
             catch (Exception ex)
             {
-               // MessageBox.Show(ex.Message);
-               // Console.Write(ex.Message);
-                
+                // MessageBox.Show(ex.Message);
+                // Console.Write(ex.Message);
+
             }
-}
+        }
+
 
         //Change the first letter of a word or a sentense to uppercase
         public string UppercaseFirst(string s)
@@ -412,10 +437,12 @@ namespace FunEngGames
         }
 
 
+        //Sort any data grid using a spectific column
         public void SortDataGridColumn(DataGridView DG)
         {
             DG.Columns[0].HeaderCell.SortGlyphDirection = SortOrder.Ascending;
             DG.Sort(DG.Columns[0], ListSortDirection.Ascending);
         }
+
     }
 }

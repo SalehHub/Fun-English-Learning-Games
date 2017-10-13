@@ -1,11 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*
+ * Project Name:    Fun Englisg learning Games
+ * File Name:       HomonymsLesson.cs
+ * Coded By:        Saleh Alzahrani
+ * Coded On:        Fall 2017
+ * About this File: This file handles all of Homonyms lesson logic, generate words with definitions and pronunciations
+ */
+
+using System;
 using System.Windows.Forms;
 using System.Xml;
 
@@ -18,39 +19,24 @@ namespace FunEngGames
             InitializeComponent();
         }
 
-        public Random a = new Random();
-        public List<int> randomList = new List<int>();
-
+        //Variables wordLevelsForm and mainLevelsForm to store previous forms status        
         public wordsLevel wordLevelsForm;
         public mainLevels mainLevelsForm;
 
+        //Storing XML content
         XmlDocument xmlDoc = new XmlDocument();
         XmlNodeList nodeList;
 
+        //CommonFunctions object
         CommonFunctions CommonFunctions = new CommonFunctions();
 
 
-
+        //Setup lesson pages variables
         public int page = 0;
-
         public int lastPage = 0;
         public int nextNode = 0;
 
-
-        int MyNumber = 0;
-        private void NewNumber(int max)
-        {
-            MyNumber = a.Next(0, max);
-            if (!randomList.Contains(MyNumber))
-            {
-                randomList.Add(MyNumber);
-            }
-            else
-            {
-                NewNumber(max);
-            }
-        }
-
+        //Start Homonyms level
         private void button1_Click(object sender, EventArgs e)
         {
             homonyms homonyms = new homonyms();
@@ -60,6 +46,7 @@ namespace FunEngGames
             homonyms.Show();
         }
 
+        //Form closed event function: show the words level form
         private void HomonymsLesson_FormClosed(object sender, FormClosedEventArgs e)
         {
             try
@@ -72,7 +59,7 @@ namespace FunEngGames
             }
         }
 
-
+        //Generate word, synonym from Homonym XML file
         public void GenerateHomonym(Label l1,Label l2,TextBox t,int node)
         {
             dataGridView1.Rows.Add(
@@ -82,7 +69,7 @@ namespace FunEngGames
                 );
         }
 
-
+        //Generate all questions by calling GenerateHomonym function;
         public void GenerateHomonyms(int nextNode)
         {
             GenerateHomonym(lbl1, lbl2, textBox1, nextNode);
@@ -105,6 +92,8 @@ namespace FunEngGames
             nextNode++;
 
         }
+
+        //Form closed event function: show the words level form
         private void HomonymsLesson_Load(object sender, EventArgs e)
         {
             try
@@ -194,6 +183,7 @@ namespace FunEngGames
             }
         }
 
+        //Next page event if we have more than on page
         private void btnNext_Click(object sender, EventArgs e)
         {
             page++;
@@ -215,6 +205,7 @@ namespace FunEngGames
 
         }
 
+        //Previous page event if we have more than on page and next page btn has been clicked
         private void btnPrevious_Click(object sender, EventArgs e)
         {
             page--;
@@ -236,8 +227,7 @@ namespace FunEngGames
             lblPages.Text = "Page " + page + " out of " + lastPage;
         }
 
-
-
+        //Pronounce the word after clicking data grid cell
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             var senderGrid = (DataGridView)sender;
@@ -254,5 +244,6 @@ namespace FunEngGames
             }
 
         }
+
     }
 }

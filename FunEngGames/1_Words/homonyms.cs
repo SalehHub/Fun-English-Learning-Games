@@ -1,4 +1,12 @@
-﻿using FunEngGames._1_Words;
+﻿/*
+ * Project Name:    Fun Englisg learning Games
+ * File Name:       Homonyms.cs
+ * Coded By:        Saleh Alzahrani
+ * Coded On:        Fall 2017
+ * About this File: This file handles all of Homonyms level gameplay logic, Generating homonyms with definitions and calculating points
+ */
+
+using FunEngGames._1_Words;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -15,37 +23,42 @@ namespace FunEngGames
             InitializeComponent();
         }
 
-
+        //Storing the xml content
         XmlDocument xmlDoc = new XmlDocument();
         XmlNodeList nodeList = null;
 
+        //CommonFunctions object
         CommonFunctions cf = new CommonFunctions();
 
+        //Variables wordLevelsForm and mainLevelsForm to store previous forms status        
         public wordsLevel wordLevelsForm;
         public mainLevels mainLevelsForm;
 
+        //Random integer variable
         public Random a = new Random();
 
+        //Lists to store XML nodes and generated synonyms
         public List<int> randomList = new List<int>();
         public List<string> answers = new List<string>();
 
 
-
+        //Set game variables
         public int Questions = 3;
         public int attempt = 3;
         //public int hints = 3;
         public int points = 0;
 
+        //What answer has been answerd        
         public bool fq = false;
         public bool sq = false;
         public bool tq = false;
 
+        //Hints content setup
         public string fHint = "";
         public string sHint = "";
         public string tHint = "";
 
-
-
+        //Generate random node function to avoid questions duplications
         int MyNumber = 0;
         private void NewNumber(int max)
         {
@@ -65,15 +78,11 @@ namespace FunEngGames
             }
         }
 
-        public void GenerateNewQuestion()
+        //Genearte new questions if the player needs to play again
+        public void GenerateNewQuestions()
         {
-
-
-
             try
             {
-
-
                 string def1 = "", def2 = "", ans = "";
                 //foreach (XmlNode node in nodeList)
 
@@ -135,6 +144,7 @@ namespace FunEngGames
             }
         }
 
+        //Save and pass points between main levels form and words levels form.
         public void SavePoints()
         {
             this.mainLevelsForm.homonymsPoints = attempt+1 + points;
@@ -151,6 +161,7 @@ namespace FunEngGames
             this.mainLevelsForm.CF.homonymsPoints = attempt+1 + points;
         }
 
+        //Form load fucntion generate questions
         private void homonyms_Load(object sender, EventArgs e)
         {
             // Ensure WaitOnLoad is false.
@@ -203,10 +214,11 @@ namespace FunEngGames
             nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/homonyms");
 
 
-            GenerateNewQuestion();
+            GenerateNewQuestions();
 
         }
 
+        //This function will shuffle any given list I use it to shuffle the answers
         public static void Shuffle(List<string> list)
         {
             int n = list.Count;
@@ -221,6 +233,7 @@ namespace FunEngGames
             }
         }
 
+        //Form closing function: show the words level form
         private void homonyms_FormClosed(object sender, FormClosedEventArgs e)
         {
             try
@@ -235,52 +248,7 @@ namespace FunEngGames
             }
         }
 
-        private void picCheckAnswers_Click(object sender, EventArgs e)
-        {
-            if (comboBox1.Text.Trim().ToLower() == lblAns1.Text.Trim().ToLower())
-            {
-                picAns1.BackgroundImage = Properties.Resources.check;
-            }
-            else
-            {
-                picAns1.BackgroundImage = Properties.Resources.cross;
-            }
-
-
-
-
-            if (comboBox2.Text.Trim().ToLower() == lblAns2.Text.Trim().ToLower())
-            {
-                picAns2.BackgroundImage = Properties.Resources.check;
-            }
-            else
-            {
-                picAns2.BackgroundImage = Properties.Resources.cross;
-            }
-
-
-
-
-            if (comboBox3.Text.Trim().ToLower() == lblAns3.Text.Trim().ToLower())
-            {
-                picAns3.BackgroundImage = Properties.Resources.check;
-            }
-            else
-            {
-                picAns3.BackgroundImage = Properties.Resources.cross;
-            }
-        }
-
-        private void picCheckAnswers_MouseHover(object sender, EventArgs e)
-        {
-            picCheckAnswers.BackgroundImage = Properties.Resources.checkYourAswers_hover;
-        }
-
-        private void picCheckAnswers_MouseLeave(object sender, EventArgs e)
-        {
-            picCheckAnswers.BackgroundImage = Properties.Resources.checkYourAswers;
-        }
-
+        //Show feedback label 
         public void showFeedBack(string txt, Color color)
         {
             lblFeedback.Visible = true;
@@ -288,13 +256,13 @@ namespace FunEngGames
             lblFeedback.Text = txt;
         }
 
+        //Hide feedback label
         public void hideFeedBack()
         {
             lblFeedback.Visible = false;
         }
 
-
-
+        //Unlock phrases level
         public void unlockPhrases()
         {
             this.mainLevelsForm.picPhrases.Enabled = true;
@@ -303,6 +271,7 @@ namespace FunEngGames
 
         }
 
+        //Check your answer function
         private void btnCheckYourAnswer_Click(object sender, EventArgs e)
         {
             hideFeedBack();
