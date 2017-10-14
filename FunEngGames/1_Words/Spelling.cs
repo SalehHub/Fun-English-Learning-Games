@@ -48,6 +48,7 @@ namespace FunEngGames
         //Random integer variable
         public Random a = new Random();
         public List<int> randomList = new List<int>();
+        public int rand = 0;
 
 
         //Generate random node function to avoid questions duplications
@@ -96,7 +97,6 @@ namespace FunEngGames
         //Random categry function choose random spelling category
         public void randomCatogary()
         {
-            int rand = a.Next(8);
 
             if (rand == 0)
             {
@@ -181,6 +181,7 @@ namespace FunEngGames
         public void StartLevelAgain()
         {
 
+            rand = a.Next(0,2);
 
             randomCatogary();
 
@@ -196,7 +197,7 @@ namespace FunEngGames
 
             //nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "animals" + "/spelling");
 
-
+            rand = a.Next(2, 5);
             randomCatogary();
 
             NewNumber(nodeList.Count);
@@ -208,6 +209,7 @@ namespace FunEngGames
             label2.Text = ans2;
 
             //nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "fruits" + "/spelling");
+            rand = a.Next(6, 8);
             randomCatogary();
 
             NewNumber(nodeList.Count);

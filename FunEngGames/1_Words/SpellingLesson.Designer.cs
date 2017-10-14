@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            AnimatorNS.Animation animation1 = new AnimatorNS.Animation();
+            AnimatorNS.Animation animation6 = new AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(spellingLesson));
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -43,16 +43,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
-            this.label5 = new System.Windows.Forms.Label();
             this.radioButton11 = new System.Windows.Forms.RadioButton();
             this.radioButton12 = new System.Windows.Forms.RadioButton();
             this.radioButton13 = new System.Windows.Forms.RadioButton();
@@ -77,6 +67,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -97,7 +88,7 @@
             this.textBox9.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox9.Location = new System.Drawing.Point(1894, 153);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(402, 34);
+            this.textBox9.Size = new System.Drawing.Size(535, 34);
             this.textBox9.TabIndex = 27;
             this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox9.Visible = false;
@@ -114,7 +105,7 @@
             this.animator1.SetDecoration(this.pictureBox8, AnimatorNS.DecorationType.None);
             this.pictureBox8.Location = new System.Drawing.Point(1894, 12);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(402, 65);
+            this.pictureBox8.Size = new System.Drawing.Size(535, 65);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 18;
             this.pictureBox8.TabStop = false;
@@ -126,7 +117,7 @@
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.animator1.SetDecoration(this.button1, AnimatorNS.DecorationType.None);
             this.button1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(489, 685);
+            this.button1.Location = new System.Drawing.Point(555, 685);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(299, 56);
             this.button1.TabIndex = 12;
@@ -144,7 +135,7 @@
             this.label1.ForeColor = System.Drawing.Color.SeaGreen;
             this.label1.Location = new System.Drawing.Point(12, 4);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1258, 47);
+            this.label1.Size = new System.Drawing.Size(1391, 47);
             this.label1.TabIndex = 13;
             this.label1.Text = "Words you may see in the game";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -159,7 +150,7 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(12, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1258, 31);
+            this.label2.Size = new System.Drawing.Size(1391, 31);
             this.label2.TabIndex = 14;
             this.label2.Text = "Choose a category, memorize the words and learn how to spell them. Click on any p" +
     "icture to hear the pronunciation";
@@ -175,7 +166,7 @@
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(176, 654);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(930, 29);
+            this.label3.Size = new System.Drawing.Size(1063, 29);
             this.label3.TabIndex = 15;
             this.label3.Text = "Click this button to start the spelling level if you think you are ready";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -186,7 +177,7 @@
             this.animator1.SetDecoration(this.btnNext, AnimatorNS.DecorationType.None);
             this.btnNext.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNext.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btnNext.Location = new System.Drawing.Point(1119, 619);
+            this.btnNext.Location = new System.Drawing.Point(1252, 619);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(151, 44);
             this.btnNext.TabIndex = 16;
@@ -215,7 +206,7 @@
             this.animator1.SetDecoration(this.lblPages, AnimatorNS.DecorationType.None);
             this.lblPages.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPages.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lblPages.Location = new System.Drawing.Point(190, 623);
+            this.lblPages.Location = new System.Drawing.Point(256, 623);
             this.lblPages.Name = "lblPages";
             this.lblPages.Size = new System.Drawing.Size(896, 31);
             this.lblPages.TabIndex = 18;
@@ -274,175 +265,7 @@
             this.imageList1.Images.SetKeyName(8, "diamond.png");
             this.imageList1.Images.SetKeyName(9, "baseball.png");
             this.imageList1.Images.SetKeyName(10, "Rainbow-Color-Wallpaper.png");
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.animator1.SetDecoration(this.radioButton2, AnimatorNS.DecorationType.None);
-            this.radioButton2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.radioButton2.Location = new System.Drawing.Point(1001, 4);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(80, 27);
-            this.radioButton2.TabIndex = 21;
-            this.radioButton2.Text = "Fruits";
-            this.radioButton2.UseVisualStyleBackColor = false;
-            this.radioButton2.Visible = false;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.ChangeCategory_Click);
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.animator1.SetDecoration(this.radioButton3, AnimatorNS.DecorationType.None);
-            this.radioButton3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.radioButton3.Location = new System.Drawing.Point(1001, 37);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(123, 27);
-            this.radioButton3.TabIndex = 22;
-            this.radioButton3.Text = "Vegetables";
-            this.radioButton3.UseVisualStyleBackColor = false;
-            this.radioButton3.Visible = false;
-            this.radioButton3.CheckedChanged += new System.EventHandler(this.ChangeCategory_Click);
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.animator1.SetDecoration(this.radioButton4, AnimatorNS.DecorationType.None);
-            this.radioButton4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.radioButton4.Location = new System.Drawing.Point(1087, 8);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(156, 27);
-            this.radioButton4.TabIndex = 23;
-            this.radioButton4.Text = "Transportation";
-            this.radioButton4.UseVisualStyleBackColor = false;
-            this.radioButton4.Visible = false;
-            this.radioButton4.CheckedChanged += new System.EventHandler(this.ChangeCategory_Click);
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton5.Cursor = System.Windows.Forms.Cursors.Default;
-            this.animator1.SetDecoration(this.radioButton5, AnimatorNS.DecorationType.None);
-            this.radioButton5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.radioButton5.Location = new System.Drawing.Point(1071, 37);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(124, 27);
-            this.radioButton5.TabIndex = 24;
-            this.radioButton5.Text = "Body Parts";
-            this.radioButton5.UseVisualStyleBackColor = false;
-            this.radioButton5.Visible = false;
-            this.radioButton5.CheckedChanged += new System.EventHandler(this.ChangeCategory_Click);
-            // 
-            // radioButton6
-            // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton6.Cursor = System.Windows.Forms.Cursors.Default;
-            this.animator1.SetDecoration(this.radioButton6, AnimatorNS.DecorationType.None);
-            this.radioButton6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.radioButton6.Location = new System.Drawing.Point(1175, 41);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(86, 27);
-            this.radioButton6.TabIndex = 25;
-            this.radioButton6.Text = "Colors";
-            this.radioButton6.UseVisualStyleBackColor = false;
-            this.radioButton6.Visible = false;
-            this.radioButton6.CheckedChanged += new System.EventHandler(this.ChangeCategory_Click);
-            // 
-            // radioButton7
-            // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton7.Cursor = System.Windows.Forms.Cursors.Default;
-            this.animator1.SetDecoration(this.radioButton7, AnimatorNS.DecorationType.None);
-            this.radioButton7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.radioButton7.Location = new System.Drawing.Point(1130, 41);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(90, 27);
-            this.radioButton7.TabIndex = 26;
-            this.radioButton7.Text = "Nature";
-            this.radioButton7.UseVisualStyleBackColor = false;
-            this.radioButton7.Visible = false;
-            this.radioButton7.CheckedChanged += new System.EventHandler(this.ChangeCategory_Click);
-            // 
-            // radioButton8
-            // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton8.Cursor = System.Windows.Forms.Cursors.Default;
-            this.animator1.SetDecoration(this.radioButton8, AnimatorNS.DecorationType.None);
-            this.radioButton8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.radioButton8.Location = new System.Drawing.Point(1166, 8);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(110, 27);
-            this.radioButton8.TabIndex = 27;
-            this.radioButton8.Text = "Furniture";
-            this.radioButton8.UseVisualStyleBackColor = false;
-            this.radioButton8.Visible = false;
-            this.radioButton8.CheckedChanged += new System.EventHandler(this.ChangeCategory_Click);
-            // 
-            // radioButton9
-            // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton9.Cursor = System.Windows.Forms.Cursors.Default;
-            this.animator1.SetDecoration(this.radioButton9, AnimatorNS.DecorationType.None);
-            this.radioButton9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.radioButton9.Location = new System.Drawing.Point(905, 34);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(90, 27);
-            this.radioButton9.TabIndex = 28;
-            this.radioButton9.Text = "Shapes";
-            this.radioButton9.UseVisualStyleBackColor = false;
-            this.radioButton9.Visible = false;
-            this.radioButton9.CheckedChanged += new System.EventHandler(this.ChangeCategory_Click);
-            // 
-            // radioButton10
-            // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton10.Cursor = System.Windows.Forms.Cursors.Default;
-            this.animator1.SetDecoration(this.radioButton10, AnimatorNS.DecorationType.None);
-            this.radioButton10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.radioButton10.Location = new System.Drawing.Point(905, 8);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(90, 27);
-            this.radioButton10.TabIndex = 29;
-            this.radioButton10.Text = "Others";
-            this.radioButton10.UseVisualStyleBackColor = false;
-            this.radioButton10.Visible = false;
-            this.radioButton10.Click += new System.EventHandler(this.ChangeCategory_Click);
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.animator1.SetDecoration(this.label5, AnimatorNS.DecorationType.None);
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(12, 90);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(1258, 39);
-            this.label5.TabIndex = 30;
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label5.Visible = false;
+            this.imageList1.Images.SetKeyName(11, "Engineer.png");
             // 
             // radioButton11
             // 
@@ -499,7 +322,7 @@
             this.radioButton13.ImageList = this.imageList1;
             this.radioButton13.Location = new System.Drawing.Point(459, 85);
             this.radioButton13.Name = "radioButton13";
-            this.radioButton13.Size = new System.Drawing.Size(158, 98);
+            this.radioButton13.Size = new System.Drawing.Size(163, 98);
             this.radioButton13.TabIndex = 33;
             this.radioButton13.Text = "Transportation";
             this.radioButton13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -518,9 +341,9 @@
             this.radioButton14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.radioButton14.ImageIndex = 4;
             this.radioButton14.ImageList = this.imageList1;
-            this.radioButton14.Location = new System.Drawing.Point(622, 85);
+            this.radioButton14.Location = new System.Drawing.Point(628, 85);
             this.radioButton14.Name = "radioButton14";
-            this.radioButton14.Size = new System.Drawing.Size(124, 98);
+            this.radioButton14.Size = new System.Drawing.Size(128, 98);
             this.radioButton14.TabIndex = 34;
             this.radioButton14.Text = "Body Parts";
             this.radioButton14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -539,9 +362,9 @@
             this.radioButton15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.radioButton15.ImageIndex = 10;
             this.radioButton15.ImageList = this.imageList1;
-            this.radioButton15.Location = new System.Drawing.Point(751, 85);
+            this.radioButton15.Location = new System.Drawing.Point(762, 85);
             this.radioButton15.Name = "radioButton15";
-            this.radioButton15.Size = new System.Drawing.Size(103, 98);
+            this.radioButton15.Size = new System.Drawing.Size(87, 98);
             this.radioButton15.TabIndex = 35;
             this.radioButton15.Text = "Colors";
             this.radioButton15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -581,9 +404,9 @@
             this.radioButton17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.radioButton17.ImageIndex = 8;
             this.radioButton17.ImageList = this.imageList1;
-            this.radioButton17.Location = new System.Drawing.Point(978, 85);
+            this.radioButton17.Location = new System.Drawing.Point(975, 85);
             this.radioButton17.Name = "radioButton17";
-            this.radioButton17.Size = new System.Drawing.Size(105, 98);
+            this.radioButton17.Size = new System.Drawing.Size(91, 98);
             this.radioButton17.TabIndex = 37;
             this.radioButton17.Text = "Shapes";
             this.radioButton17.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -602,7 +425,7 @@
             this.radioButton18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.radioButton18.ImageIndex = 5;
             this.radioButton18.ImageList = this.imageList1;
-            this.radioButton18.Location = new System.Drawing.Point(859, 85);
+            this.radioButton18.Location = new System.Drawing.Point(855, 85);
             this.radioButton18.Name = "radioButton18";
             this.radioButton18.Size = new System.Drawing.Size(114, 98);
             this.radioButton18.TabIndex = 38;
@@ -623,9 +446,9 @@
             this.radioButton19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.radioButton19.ImageIndex = 9;
             this.radioButton19.ImageList = this.imageList1;
-            this.radioButton19.Location = new System.Drawing.Point(1088, 85);
+            this.radioButton19.Location = new System.Drawing.Point(1072, 85);
             this.radioButton19.Name = "radioButton19";
-            this.radioButton19.Size = new System.Drawing.Size(90, 98);
+            this.radioButton19.Size = new System.Drawing.Size(84, 98);
             this.radioButton19.TabIndex = 39;
             this.radioButton19.Text = "Sports";
             this.radioButton19.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -644,7 +467,7 @@
             this.radioButton20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.radioButton20.ImageIndex = 7;
             this.radioButton20.ImageList = this.imageList1;
-            this.radioButton20.Location = new System.Drawing.Point(1183, 85);
+            this.radioButton20.Location = new System.Drawing.Point(1312, 85);
             this.radioButton20.Name = "radioButton20";
             this.radioButton20.Size = new System.Drawing.Size(87, 98);
             this.radioButton20.TabIndex = 40;
@@ -658,22 +481,22 @@
             // 
             this.animator1.AnimationType = AnimatorNS.AnimationType.Scale;
             this.animator1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.animator1.DefaultAnimation = animation1;
+            animation6.AnimateOnlyDifferences = true;
+            animation6.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.BlindCoeff")));
+            animation6.LeafCoeff = 0F;
+            animation6.MaxTime = 1F;
+            animation6.MinTime = 0F;
+            animation6.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicCoeff")));
+            animation6.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicShift")));
+            animation6.MosaicSize = 0;
+            animation6.Padding = new System.Windows.Forms.Padding(0);
+            animation6.RotateCoeff = 0F;
+            animation6.RotateLimit = 0F;
+            animation6.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.ScaleCoeff")));
+            animation6.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.SlideCoeff")));
+            animation6.TimeCoeff = 0F;
+            animation6.TransparencyCoeff = 0F;
+            this.animator1.DefaultAnimation = animation6;
             // 
             // panel1
             // 
@@ -695,7 +518,7 @@
             this.animator1.SetDecoration(this.panel1, AnimatorNS.DecorationType.None);
             this.panel1.Location = new System.Drawing.Point(12, 189);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1264, 424);
+            this.panel1.Size = new System.Drawing.Size(1397, 424);
             this.panel1.TabIndex = 41;
             // 
             // textBox5
@@ -704,7 +527,7 @@
             this.animator1.SetDecoration(this.textBox5, AnimatorNS.DecorationType.None);
             this.textBox5.Enabled = false;
             this.textBox5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(425, 388);
+            this.textBox5.Location = new System.Drawing.Point(491, 388);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(413, 34);
             this.textBox5.TabIndex = 35;
@@ -716,7 +539,7 @@
             this.animator1.SetDecoration(this.textBox6, AnimatorNS.DecorationType.None);
             this.textBox6.Enabled = false;
             this.textBox6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(844, 388);
+            this.textBox6.Location = new System.Drawing.Point(977, 388);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(414, 34);
             this.textBox6.TabIndex = 36;
@@ -767,7 +590,7 @@
             this.animator1.SetDecoration(this.textBox3, AnimatorNS.DecorationType.None);
             this.textBox3.Enabled = false;
             this.textBox3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(844, 170);
+            this.textBox3.Location = new System.Drawing.Point(977, 170);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(414, 34);
             this.textBox3.TabIndex = 33;
@@ -781,7 +604,7 @@
             this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.animator1.SetDecoration(this.pictureBox4, AnimatorNS.DecorationType.None);
-            this.pictureBox4.Location = new System.Drawing.Point(425, 213);
+            this.pictureBox4.Location = new System.Drawing.Point(491, 213);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(413, 173);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -796,7 +619,7 @@
             this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.animator1.SetDecoration(this.pictureBox5, AnimatorNS.DecorationType.None);
-            this.pictureBox5.Location = new System.Drawing.Point(844, 213);
+            this.pictureBox5.Location = new System.Drawing.Point(977, 213);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(414, 173);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -811,7 +634,7 @@
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.animator1.SetDecoration(this.pictureBox2, AnimatorNS.DecorationType.None);
-            this.pictureBox2.Location = new System.Drawing.Point(844, 1);
+            this.pictureBox2.Location = new System.Drawing.Point(977, 1);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(414, 168);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -824,7 +647,7 @@
             this.animator1.SetDecoration(this.textBox2, AnimatorNS.DecorationType.None);
             this.textBox2.Enabled = false;
             this.textBox2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(425, 170);
+            this.textBox2.Location = new System.Drawing.Point(491, 170);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(413, 34);
             this.textBox2.TabIndex = 32;
@@ -838,7 +661,7 @@
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.animator1.SetDecoration(this.pictureBox1, AnimatorNS.DecorationType.None);
-            this.pictureBox1.Location = new System.Drawing.Point(425, 1);
+            this.pictureBox1.Location = new System.Drawing.Point(491, 1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(413, 168);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -856,6 +679,27 @@
             this.textBox1.TabIndex = 31;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // radioButton2
+            // 
+            this.radioButton2.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton2.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton2.CheckAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.animator1.SetDecoration(this.radioButton2, AnimatorNS.DecorationType.None);
+            this.radioButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioButton2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.radioButton2.ImageIndex = 11;
+            this.radioButton2.ImageList = this.imageList1;
+            this.radioButton2.Location = new System.Drawing.Point(1162, 85);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(144, 98);
+            this.radioButton2.TabIndex = 42;
+            this.radioButton2.Text = "Professions";
+            this.radioButton2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.radioButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.radioButton2.UseVisualStyleBackColor = false;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.ChangeCategory_Click);
+            // 
             // spellingLesson
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -863,10 +707,10 @@
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.BackgroundImage = global::FunEngGames.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1282, 749);
+            this.ClientSize = new System.Drawing.Size(1415, 749);
+            this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.radioButton20);
-            this.Controls.Add(this.radioButton6);
             this.Controls.Add(this.radioButton19);
             this.Controls.Add(this.radioButton18);
             this.Controls.Add(this.radioButton17);
@@ -876,15 +720,7 @@
             this.Controls.Add(this.radioButton13);
             this.Controls.Add(this.radioButton12);
             this.Controls.Add(this.radioButton11);
-            this.Controls.Add(this.radioButton10);
             this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.radioButton9);
-            this.Controls.Add(this.radioButton8);
-            this.Controls.Add(this.radioButton7);
-            this.Controls.Add(this.radioButton5);
-            this.Controls.Add(this.radioButton4);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblPages);
@@ -895,9 +731,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label5);
             this.animator1.SetDecoration(this, AnimatorNS.DecorationType.None);
-            this.MinimumSize = new System.Drawing.Size(1300, 796);
+            this.MinimumSize = new System.Drawing.Size(1433, 796);
             this.Name = "spellingLesson";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -930,16 +765,6 @@
         private System.Windows.Forms.Label lblPages;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton8;
-        private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.RadioButton radioButton10;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.RadioButton radioButton11;
         private System.Windows.Forms.RadioButton radioButton12;
@@ -965,5 +790,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.RadioButton radioButton2;
     }
 }
