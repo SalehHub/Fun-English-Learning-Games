@@ -104,6 +104,26 @@
 	<spelling>
 		<answer>Frog</answer>
 	</spelling>	
+	
+		<spelling>
+		<answer>cow</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>crocodile</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>deer</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>monkey</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>wolf</answer>
+	</spelling>	
 </animals>
 	
 <transportation>
@@ -146,7 +166,57 @@
 	<spelling>
 		<answer>Orange</answer>
 	</spelling>	
-		
+	
+	<spelling>
+		<answer>Strawberry</answer>
+	</spelling>
+	<spelling>
+		<answer>Pear</answer>
+	</spelling>
+	<spelling>
+		<answer>Banana</answer>
+	</spelling>
+	<spelling>
+		<answer>Raspberry</answer>
+	</spelling>
+	<spelling>
+		<answer>Grapes</answer>
+	</spelling>
+	<spelling>
+		<answer>Watermelon</answer>
+	</spelling>
+	<spelling>
+		<answer>Peach</answer>
+	</spelling>
+	<spelling>
+		<answer>Cherry</answer>
+	</spelling>
+	<spelling>
+		<answer>Mango</answer>
+	</spelling>
+	<spelling>
+		<answer>Pineapple</answer>
+	</spelling>
+	<spelling>
+		<answer>Kiwi</answer>
+	</spelling>
+	<spelling>
+		<answer>Pomegranate</answer>
+	</spelling>
+	<spelling>
+		<answer>Blueberry</answer>
+	</spelling>
+	<spelling>
+		<answer>Apricot</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Fig</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Papaya</answer>
+	</spelling>	
 </fruits>
 		
 <vegetables>
@@ -154,6 +224,75 @@
 	<spelling>
 		<answer>Carrot</answer>
 	</spelling>	
+	
+		
+	<spelling>
+		<answer>Broccoli</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Onion</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Garlic</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Potato</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Beet</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Corn</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Mushroom</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Cabbage</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Eggplant</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Zucchini</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>cucumber</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Cauliflower</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Tomato</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Spinach</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Lettuce</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Okra</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Kale</answer>
+	</spelling>
 </vegetables>
 
 <bodyparts>
@@ -161,7 +300,73 @@
 	<spelling>
 		<answer>heart</answer>
 	</spelling>	
+		<spelling>
+		<answer>Lung</answer>
+	</spelling>
 	
+	<spelling>
+		<answer>Liver</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Stomach</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Eye</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Ear</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Nose</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Mouth</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Hand</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Knee</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Foot</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Brain</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Kidney</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Thyroid</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Intestines</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Tongue</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Hair</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Pancreas</answer>
+	</spelling>
 </bodyparts>
 
 <nature>
@@ -172,7 +377,78 @@
 	<spelling>
 		<answer>Tree</answer>
 	</spelling>
+			
+	<spelling>
+		<answer>Sky</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>River</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Lake</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Sea</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Sand</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Grass</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Mountain</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Desert</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Island</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Forest</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Waterfall</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Volcano</answer>
+	</spelling>
 	
+	<spelling>
+		<answer>Rainbow</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Cave</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Rain</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Tornado</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Leaf</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Lightning</answer>
+	</spelling>
 </nature>
 
 <shapes>
@@ -229,69 +505,188 @@
 
 <colors>
 
+	<spelling>
+		<answer>Black</answer>
+	</spelling>	
+	
+	<spelling>
+		<answer>White</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Orange</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Red</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Blue</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Maroon</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Green</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Yellow</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Pink</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Brown</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Beige </answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Purple</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Golden</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Silver</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Magenta</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Teal</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Coral</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>Violet</answer>
+	</spelling>
 	
 </colors>		
 		
 <professions>
-
 	<spelling>
-		<answer></answer>
+		<answer>Doctor</answer>
 	</spelling>	
 	
 	<spelling>
-		<answer></answer>
+		<answer>Teacher</answer>
 	</spelling>
 		
 	<spelling>
-		<answer></answer>
+		<answer>Policeman</answer>
 	</spelling>
 		
 	<spelling>
-		<answer></answer>
+		<answer>Firefighter</answer>
 	</spelling>
 		
 	<spelling>
-		<answer></answer>
+		<answer>Surgeon</answer>
 	</spelling>
 		
 	<spelling>
-		<answer></answer>
+		<answer>Programmer</answer>
 	</spelling>
 		
 	<spelling>
-		<answer></answer>
+		<answer>Chef</answer>
 	</spelling>
 		
 	<spelling>
-		<answer></answer>
+		<answer>Engineer</answer>
 	</spelling>
 		
 	<spelling>
-		<answer></answer>
+		<answer>Lawyer</answer>
 	</spelling>
 		
 	<spelling>
-		<answer></answer>
+		<answer>Pilot</answer>
 	</spelling>
 		
 	<spelling>
-		<answer></answer>
+		<answer>Architect</answer>
 	</spelling>
 		
 	<spelling>
-		<answer></answer>
+		<answer>Mechanic</answer>
 	</spelling>
 		
 	<spelling>
-		<answer></answer>
+		<answer>Nurse</answer>
 	</spelling>
 	
 </professions>		
 
 <sports>
 
+
+	<spelling>
+		<answer>Football</answer>
+	</spelling>	
+	
+	<spelling>
+		<answer>Basketball</answer>
+	</spelling>
+		
 	<spelling>
 		<answer>Baseball</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Volleyball</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Soccer</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Hockey</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Tennis</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Boxing</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Badminton</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Swimming</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Rugby</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Golf</answer>
+	</spelling>
+		
+	<spelling>
+		<answer>Archery</answer>
 	</spelling>
 	
 </sports>		
