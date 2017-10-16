@@ -247,6 +247,7 @@ namespace FunEngGames
             SynonymsLesson.mainLevelsForm = mainLevelsForm;
             SynonymsLesson.wordLevelsForm = wordLevelsForm;
             this.Hide();
+            wordLevelsForm.lblhelp.Text = "Good job, now you have to play Synonyms && Antonyms Levels to unlock Homonyms level";
             SynonymsLesson.Show();
         }
 

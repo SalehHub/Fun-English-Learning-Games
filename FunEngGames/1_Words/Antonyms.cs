@@ -314,6 +314,7 @@ namespace FunEngGames
                 HomonymsLesson.mainLevelsForm = this.mainLevelsForm;
                 HomonymsLesson.wordLevelsForm = this.wordLevelsForm;
                 this.Hide();
+               wordLevelsForm.lblhelp.Text = "You successfully unlocked all the levels";
                 HomonymsLesson.Show();
             }
             else
@@ -384,6 +385,8 @@ namespace FunEngGames
 
                     this.wordLevelsForm.picHomonyms.Enabled = true;
                     this.wordLevelsForm.picHomonymsLock.Visible = false;
+                    wordLevelsForm.lblhelp.Text = "You successfully unlocked all the levels";
+
                 }
 
 
@@ -399,6 +402,8 @@ namespace FunEngGames
 
                     this.wordLevelsForm.picHomonyms.Enabled = true;
                     this.wordLevelsForm.picHomonymsLock.Visible = false;
+                    wordLevelsForm.lblhelp.Text = "You successfully unlocked all the levels";
+
                 }
 
 

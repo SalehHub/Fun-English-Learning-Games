@@ -35,13 +35,13 @@ namespace FunEngGames
         private void pictureBox1_Click(object sender, EventArgs e)
         {
              //show Main levels form
-            mainLevels ml = new mainLevels();
-            ml.Show();
-            this.Hide();
+           // mainLevels ml = new mainLevels();
+            //ml.Show();
+            //this.Hide();
 
             _storyline m2 = new _storyline();
-           // m2.Show();
-           // this.Hide();
+            m2.Show();
+            this.Hide();
 
             _levelUP LevelUP = new _levelUP();
            // LevelUP.Show();

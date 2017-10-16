@@ -36,5 +36,13 @@ namespace FunEngGames._1_Words
                 System.Console.WriteLine(ex.Message);
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            phrasesLevel phrasesLevel = new phrasesLevel();
+            phrasesLevel.mainLevelsForm = this.mainLevelsForm;
+            this.Hide();
+            phrasesLevel.Show();
+        }
     }
 }

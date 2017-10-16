@@ -43,9 +43,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(130, 572);
+            this.label2.Location = new System.Drawing.Point(49, 572);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(732, 23);
+            this.label2.Size = new System.Drawing.Size(894, 23);
             this.label2.TabIndex = 60;
             this.label2.Text = "Click \"Next\" button to make them more than just friends by playing Phrases levels" +
     "\r\n";
@@ -77,6 +77,7 @@
             this.button3.TabIndex = 58;
             this.button3.Text = "Next";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // pictureBox4
             // 

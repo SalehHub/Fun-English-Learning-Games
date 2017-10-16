@@ -77,6 +77,7 @@
             this.picSentences.BackgroundImage = global::FunEngGames.Properties.Resources.sentencesTitle;
             this.picSentences.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picSentences.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picSentences.Enabled = false;
             this.picSentences.Location = new System.Drawing.Point(865, 153);
             this.picSentences.Name = "picSentences";
             this.picSentences.Size = new System.Drawing.Size(243, 333);

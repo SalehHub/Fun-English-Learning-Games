@@ -101,12 +101,15 @@ namespace FunEngGames
             {
                 picSA.Enabled = true;
                 picSALock.Visible = false;
+                lblhelp.Text = "Good job, now you have to play Synonyms && Antonyms Levels to unlock Homonyms level";
             }
 
             if (this.mainLevelsForm.CF.synonymsPoints!= 0 && this.mainLevelsForm.CF.antonymsPoints != 0)
             {
                 picHomonyms.Enabled = true;
                 picHomonymsLock.Visible = false;
+                lblhelp.Text = "You successfully unlocked all the levels";
+
             }
         }
 

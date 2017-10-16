@@ -36,8 +36,18 @@ namespace FunEngGames
 
             else if (pictureBox4.Image == _3)
             {
+                button3.Text = "Start learning English and playing fun games";
+
+
                 label1.Text = "Le decided to join Fun English Learning Games institution to learn English language";
                 pictureBox4.Image = _4;
+                label2.Visible = false;
+
+            }else if(pictureBox4.Image == _4)
+            {
+                mainLevels mainLevels = new mainLevels();
+                mainLevels.Show();
+                this.Close();
             }
         }
 

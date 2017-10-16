@@ -477,29 +477,29 @@
 		<answer>diamond</answer>
 	</spelling>
 
-  <spelling>
-    <answer>ellipse</answer>
-  </spelling>
-  
-  <spelling>
-    <answer>hexagon</answer>
-  </spelling>
-  
-  <spelling>
-    <answer>parallelogram</answer>
-  </spelling>
-  
-  <spelling>
-    <answer>pentagon</answer>
-  </spelling>
-  
-  <spelling>
-    <answer>trapezoid</answer>
-  </spelling>
-  
-  <spelling>
-    <answer>cube</answer>
-  </spelling>
+	<spelling>
+		<answer>ellipse</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>hexagon</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>parallelogram</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>pentagon</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>trapezoid</answer>
+	</spelling>
+	
+	<spelling>
+		<answer>cube</answer>
+	</spelling>
 	
 </shapes>
 
@@ -514,67 +514,24 @@
 	</spelling>
 		
 	<spelling>
-		<answer>Orange</answer>
-	</spelling>
-		
-	<spelling>
 		<answer>Red</answer>
 	</spelling>
 		
 	<spelling>
 		<answer>Blue</answer>
 	</spelling>
-		
-	<spelling>
-		<answer>Maroon</answer>
-	</spelling>
-		
+
+
 	<spelling>
 		<answer>Green</answer>
 	</spelling>
-		
+
 	<spelling>
 		<answer>Yellow</answer>
 	</spelling>
-		
+
 	<spelling>
 		<answer>Pink</answer>
-	</spelling>
-		
-	<spelling>
-		<answer>Brown</answer>
-	</spelling>
-		
-	<spelling>
-		<answer>Beige </answer>
-	</spelling>
-		
-	<spelling>
-		<answer>Purple</answer>
-	</spelling>
-	
-	<spelling>
-		<answer>Golden</answer>
-	</spelling>
-	
-	<spelling>
-		<answer>Silver</answer>
-	</spelling>
-	
-	<spelling>
-		<answer>Magenta</answer>
-	</spelling>
-	
-	<spelling>
-		<answer>Teal</answer>
-	</spelling>
-	
-	<spelling>
-		<answer>Coral</answer>
-	</spelling>
-	
-	<spelling>
-		<answer>Violet</answer>
 	</spelling>
 	
 </colors>		
