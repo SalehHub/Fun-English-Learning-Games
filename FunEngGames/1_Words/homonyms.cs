@@ -94,7 +94,6 @@ namespace FunEngGames
                 ans = nodeList[random].SelectSingleNode("answer").InnerText.Trim();
 
                 answers.Add(ans);
-                //comboBox1.Items.Add(ans); comboBox2.Items.Add(ans); comboBox3.Items.Add(ans);
                 lblAns1.Text = ans;
                 label1.Text = def1;
                 label4.Text = def2;
@@ -133,8 +132,11 @@ namespace FunEngGames
 
                 Shuffle(answers);
                 Shuffle(answers);
+                Shuffle(answers);
                 comboBox1.Items.AddRange(answers.ToArray());
+                Shuffle(answers);
                 comboBox2.Items.AddRange(answers.ToArray());
+                Shuffle(answers);
                 comboBox3.Items.AddRange(answers.ToArray());
 
             }
@@ -354,7 +356,7 @@ namespace FunEngGames
 
                 if (Questions == 0)
                 {
-                    showFeedBack("Good job, keep up the good work in the next level", Color.Green);
+                    showFeedBack("Good job, keep up the good work in the next levels", Color.Green);
 
                     lblPoints.Text = (attempt+1 + points).ToString();
 
@@ -366,7 +368,7 @@ namespace FunEngGames
                 //solved 2 questions
                 if (Questions >= 1 && attempt == 0)
                 {
-                    showFeedBack("Good job, keep up the good work in the next level", Color.Green);
+                    showFeedBack("Good job, keep up the good work in the next levels", Color.Green);
 
                     lblPoints.Text = (attempt + 1 + points).ToString();
 
