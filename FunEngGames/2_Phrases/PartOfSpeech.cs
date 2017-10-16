@@ -140,6 +140,7 @@ namespace FunEngGames
             else if (btnCheckAnswer.Text == "Next Question")
 
             {
+                lblCorrectAns.Visible = false;
                // question++;
                 picFeedback.Visible = false;
                 //lblFeedback.Visible = false;
@@ -265,7 +266,11 @@ namespace FunEngGames
                 lblFeedback.Visible = true;
                 lblFeedback.ForeColor = Color.Red;
                 lblNoOfQuestion.Text = "Question " + question.ToString() + " of 3";
-               // btnCheckAnswer.Text = "Next Question";
+
+                attempts = 3;
+                lblAttempts.Text = attempts.ToString();
+                lblFeedback.Visible = false;
+                btnCheckAnswer.Text = "Next Question";
             }
             else if (attempts == 0 && question == 3)    //last attepmt and last question
             {
