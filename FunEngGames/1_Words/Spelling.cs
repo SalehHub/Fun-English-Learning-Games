@@ -118,7 +118,7 @@ namespace FunEngGames
             }
             else if (rand == 4)
             {
-                nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "vegetables" + "/spelling");
+                nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "nature" + "/spelling");
             }
             else if (rand == 5)
             {
@@ -132,10 +132,10 @@ namespace FunEngGames
             {
                 nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "others" + "/spelling");
             }
-            else
-            {
-                nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "nature" + "/spelling");
-            }
+            //else
+            //{
+            //    nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "vegetables" + "/spelling");
+            //}
         }
 
 
@@ -209,7 +209,7 @@ namespace FunEngGames
             label2.Text = ans2;
 
             //nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "fruits" + "/spelling");
-            rand = a.Next(6, 8);
+            rand = a.Next(6, 7);
             randomCatogary();
 
             NewNumber(nodeList.Count);

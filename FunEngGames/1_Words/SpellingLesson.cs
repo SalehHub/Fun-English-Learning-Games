@@ -172,10 +172,7 @@ namespace FunEngGames
         {
             page++;
             nextNode += 6;
-            animator1.AnimationType = AnimatorNS.AnimationType.Scale;
-            animator1.BeginUpdate(panel1, false);
             GenerateWords(nextNode);
-            animator1.EndUpdateSync(panel1);
 
             if (page == lastPage) {
                 btnNext.Enabled = false;
@@ -192,10 +189,7 @@ namespace FunEngGames
         {
             page--;
             nextNode -= 6;
-            animator1.AnimationType = AnimatorNS.AnimationType.Scale;
-            animator1.BeginUpdate(panel1, false);
             GenerateWords(nextNode);
-            animator1.EndUpdateSync(panel1);
 
             if (page < lastPage)
             {
@@ -274,7 +268,7 @@ namespace FunEngGames
             {
                 loadCategory(RB.Text.ToLower().Trim().Replace(" ", ""));
 
-                CommonFunctions.Pronounce(RB.Text.ToLower().Trim());
+                //CommonFunctions.Pronounce(RB.Text.ToLower().Trim().Replace(" ","_"));
 
             }
         }

@@ -401,10 +401,10 @@
             this.btnCheckAnswer.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnCheckAnswer.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCheckAnswer.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnCheckAnswer.Location = new System.Drawing.Point(393, 670);
+            this.btnCheckAnswer.Location = new System.Drawing.Point(372, 670);
             this.btnCheckAnswer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCheckAnswer.Name = "btnCheckAnswer";
-            this.btnCheckAnswer.Size = new System.Drawing.Size(271, 59);
+            this.btnCheckAnswer.Size = new System.Drawing.Size(312, 59);
             this.btnCheckAnswer.TabIndex = 28;
             this.btnCheckAnswer.Text = "Check your answer";
             this.btnCheckAnswer.UseVisualStyleBackColor = false;
