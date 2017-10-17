@@ -514,7 +514,7 @@ namespace FunEngGames
                 {
                     lblFeedback.Visible = true;
                     lblFeedback.ForeColor = Color.Red;
-                    lblFeedback.Text = "Type an answer first";
+                    lblFeedback.Text = "Please type an answer first!";
                     timer1.Start();
                 }
                 else if (btnCheckAnswer.Text == "Start this level again")

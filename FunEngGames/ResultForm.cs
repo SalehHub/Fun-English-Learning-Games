@@ -1,6 +1,4 @@
-﻿// Copyright (c) 2011 rubicon IT GmbH
-
-/*
+﻿/*
  * Project Name:    Fun English learning Games
  * File Name:       ResultForm.cs
  * Coded By:        Saleh Alzahrani
