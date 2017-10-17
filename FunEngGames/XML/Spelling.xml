@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?> 
 <Questions>
-
 <!--Spellings questions-->
 <furniture>
 	<spelling>
@@ -669,5 +668,4 @@
 		<answer>Hat</answer>
 	</spelling>	
 </others>
-		
 </Questions>

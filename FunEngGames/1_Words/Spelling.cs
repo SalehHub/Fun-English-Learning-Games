@@ -206,8 +206,7 @@ namespace FunEngGames
 
             pic2 = nodeList[random].SelectSingleNode("answer").InnerText.Trim() + ".png";
             ans2 = nodeList[random].SelectSingleNode("answer").InnerText.Trim();
-            //pictureBox2.Image = Image.FromFile(@"Images\" + pic);
-            //label2.Text = ans2;
+
 
             rand = a.Next(6, 7);
             randomCatogary();
@@ -217,8 +216,7 @@ namespace FunEngGames
 
             pic3 = nodeList[random].SelectSingleNode("answer").InnerText.Trim() + ".png";
             ans3 = nodeList[random].SelectSingleNode("answer").InnerText.Trim();
-            //pictureBox3.Image = Image.FromFile(@"Images\" + pic);
-            //label3.Text = ans3;
+
 
 
             rand = a.Next(0, 3);
@@ -229,8 +227,7 @@ namespace FunEngGames
 
             pic4 = nodeList[random].SelectSingleNode("answer").InnerText.Trim() + ".png";
             ans4 = nodeList[random].SelectSingleNode("answer").InnerText.Trim();
-            //pictureBox3.Image = Image.FromFile(@"Images\" + pic);
-            //label3.Text = ans3;
+
 
 
 
@@ -242,8 +239,7 @@ namespace FunEngGames
 
             pic5 = nodeList[random].SelectSingleNode("answer").InnerText.Trim() + ".png";
             ans5 = nodeList[random].SelectSingleNode("answer").InnerText.Trim();
-            //pictureBox3.Image = Image.FromFile(@"Images\" + pic);
-            //label3.Text = ans3;
+
 
 
 
@@ -424,7 +420,7 @@ namespace FunEngGames
                 picFeedback.Visible = false;
                 lblCorrectAns.Text = "The correct answer is " + lblAnswer.Text;
 
-                lblFeedback.Text = "Sorry this is incorrect answer try again in the next question";
+                lblFeedback.Text = "Sorry, this is incorrect answer try again in the next question,";
                 lblFeedback.Visible = true;
                 lblFeedback.ForeColor = Color.Red;
 
@@ -433,7 +429,7 @@ namespace FunEngGames
             //last attepmt and last question, the correct answers is less than 3
             else if (attempts == 0 && question == 5 && CorrectAnswers < 3)    
             {
-                lblFeedback.Text = "You need to answer at least three questions to pass this level"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Red;
+                lblFeedback.Text = "You need to answer at least three questions to pass this level."; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Red;
                 btnCheckAnswer.Text = "Start this level again";
             }
 
@@ -450,7 +446,7 @@ namespace FunEngGames
                 lblCorrectAns.Visible = true;
                 lblCorrectAns.Text = "The correct answer is " + lblAnswer.Text;
 
-                lblFeedback.Text = "Great job! You correctly answered more than two questions, keep up the good work in the next level"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Green;
+                lblFeedback.Text = "Great job! You correctly answered more than two questions, keep up the good work in the next level."; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Green;
 
                 btnCheckAnswer.Text = "Go to the next level >>";
 
