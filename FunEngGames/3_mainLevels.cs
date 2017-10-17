@@ -139,5 +139,14 @@ namespace FunEngGames
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            phrasesLevel ph = new phrasesLevel();
+            ph.mainLevelsForm = this;
+
+            ph.Show();
+            this.Hide();
+        }
     }
 }
