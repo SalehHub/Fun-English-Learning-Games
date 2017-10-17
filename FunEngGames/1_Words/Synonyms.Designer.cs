@@ -88,7 +88,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbltitle.BackColor = System.Drawing.Color.Transparent;
             this.lbltitle.Font = new System.Drawing.Font("Impact", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltitle.Location = new System.Drawing.Point(12, 138);
+            this.lbltitle.Location = new System.Drawing.Point(12, 115);
             this.lbltitle.Name = "lbltitle";
             this.lbltitle.Size = new System.Drawing.Size(1203, 62);
             this.lbltitle.TabIndex = 19;
@@ -102,9 +102,9 @@
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.BackgroundImage = global::FunEngGames.Properties.Resources.synonymsTitle;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox4.Location = new System.Drawing.Point(115, -3);
+            this.pictureBox4.Location = new System.Drawing.Point(138, -7);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(998, 146);
+            this.pictureBox4.Size = new System.Drawing.Size(950, 119);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 18;
             this.pictureBox4.TabStop = false;
@@ -145,7 +145,7 @@
             this.tableLayoutPanel2.Controls.Add(this.lblW5, 2, 4);
             this.tableLayoutPanel2.Controls.Add(this.lblS5, 3, 4);
             this.tableLayoutPanel2.Controls.Add(this.btnHint5, 4, 4);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(253, 205);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(253, 178);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 5;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -153,16 +153,16 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(720, 221);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(720, 220);
             this.tableLayoutPanel2.TabIndex = 22;
             // 
             // btnHint3
             // 
             this.btnHint3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHint3.ForeColor = System.Drawing.Color.Green;
-            this.btnHint3.Location = new System.Drawing.Point(638, 92);
+            this.btnHint3.Location = new System.Drawing.Point(638, 90);
             this.btnHint3.Name = "btnHint3";
-            this.btnHint3.Size = new System.Drawing.Size(78, 37);
+            this.btnHint3.Size = new System.Drawing.Size(78, 36);
             this.btnHint3.TabIndex = 29;
             this.btnHint3.Text = "Hint";
             this.btnHint3.UseVisualStyleBackColor = true;
@@ -172,9 +172,9 @@
             // 
             this.btnHint2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHint2.ForeColor = System.Drawing.Color.Green;
-            this.btnHint2.Location = new System.Drawing.Point(638, 48);
+            this.btnHint2.Location = new System.Drawing.Point(638, 47);
             this.btnHint2.Name = "btnHint2";
-            this.btnHint2.Size = new System.Drawing.Size(78, 37);
+            this.btnHint2.Size = new System.Drawing.Size(78, 36);
             this.btnHint2.TabIndex = 28;
             this.btnHint2.Text = "Hint";
             this.btnHint2.UseVisualStyleBackColor = true;
@@ -186,7 +186,7 @@
             this.btnHint1.ForeColor = System.Drawing.Color.Green;
             this.btnHint1.Location = new System.Drawing.Point(638, 4);
             this.btnHint1.Name = "btnHint1";
-            this.btnHint1.Size = new System.Drawing.Size(78, 37);
+            this.btnHint1.Size = new System.Drawing.Size(78, 36);
             this.btnHint1.TabIndex = 27;
             this.btnHint1.Text = "Hint";
             this.btnHint1.UseVisualStyleBackColor = true;
@@ -197,7 +197,7 @@
             this.lblS1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblS1.Location = new System.Drawing.Point(454, 1);
             this.lblS1.Name = "lblS1";
-            this.lblS1.Size = new System.Drawing.Size(177, 43);
+            this.lblS1.Size = new System.Drawing.Size(177, 42);
             this.lblS1.TabIndex = 10;
             this.lblS1.Text = "label3";
             this.lblS1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -224,7 +224,7 @@
             this.comboBox3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBox3.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(61, 92);
+            this.comboBox3.Location = new System.Drawing.Point(61, 90);
             this.comboBox3.MaxDropDownItems = 4;
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(202, 39);
@@ -238,7 +238,7 @@
             this.comboBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBox2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(61, 48);
+            this.comboBox2.Location = new System.Drawing.Point(61, 47);
             this.comboBox2.MaxDropDownItems = 4;
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(202, 39);
@@ -247,9 +247,9 @@
             // lblW2
             // 
             this.lblW2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblW2.Location = new System.Drawing.Point(270, 45);
+            this.lblW2.Location = new System.Drawing.Point(270, 44);
             this.lblW2.Name = "lblW2";
-            this.lblW2.Size = new System.Drawing.Size(177, 43);
+            this.lblW2.Size = new System.Drawing.Size(177, 42);
             this.lblW2.TabIndex = 8;
             this.lblW2.Text = "label3";
             this.lblW2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -257,9 +257,9 @@
             // lblW3
             // 
             this.lblW3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblW3.Location = new System.Drawing.Point(270, 89);
+            this.lblW3.Location = new System.Drawing.Point(270, 87);
             this.lblW3.Name = "lblW3";
-            this.lblW3.Size = new System.Drawing.Size(177, 43);
+            this.lblW3.Size = new System.Drawing.Size(177, 42);
             this.lblW3.TabIndex = 9;
             this.lblW3.Text = "label3";
             this.lblW3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -267,9 +267,9 @@
             // lblS2
             // 
             this.lblS2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblS2.Location = new System.Drawing.Point(454, 45);
+            this.lblS2.Location = new System.Drawing.Point(454, 44);
             this.lblS2.Name = "lblS2";
-            this.lblS2.Size = new System.Drawing.Size(177, 43);
+            this.lblS2.Size = new System.Drawing.Size(177, 42);
             this.lblS2.TabIndex = 11;
             this.lblS2.Text = "label3";
             this.lblS2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -277,9 +277,9 @@
             // lblS3
             // 
             this.lblS3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblS3.Location = new System.Drawing.Point(454, 89);
+            this.lblS3.Location = new System.Drawing.Point(454, 87);
             this.lblS3.Name = "lblS3";
-            this.lblS3.Size = new System.Drawing.Size(177, 43);
+            this.lblS3.Size = new System.Drawing.Size(177, 42);
             this.lblS3.TabIndex = 12;
             this.lblS3.Text = "label3";
             this.lblS3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -290,7 +290,7 @@
             this.picAns1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picAns1.Location = new System.Drawing.Point(4, 4);
             this.picAns1.Name = "picAns1";
-            this.picAns1.Size = new System.Drawing.Size(50, 37);
+            this.picAns1.Size = new System.Drawing.Size(50, 36);
             this.picAns1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picAns1.TabIndex = 13;
             this.picAns1.TabStop = false;
@@ -299,9 +299,9 @@
             // 
             this.picAns2.BackColor = System.Drawing.Color.Transparent;
             this.picAns2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picAns2.Location = new System.Drawing.Point(4, 48);
+            this.picAns2.Location = new System.Drawing.Point(4, 47);
             this.picAns2.Name = "picAns2";
-            this.picAns2.Size = new System.Drawing.Size(50, 37);
+            this.picAns2.Size = new System.Drawing.Size(50, 36);
             this.picAns2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picAns2.TabIndex = 14;
             this.picAns2.TabStop = false;
@@ -310,9 +310,9 @@
             // 
             this.picAns3.BackColor = System.Drawing.Color.Transparent;
             this.picAns3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picAns3.Location = new System.Drawing.Point(4, 92);
+            this.picAns3.Location = new System.Drawing.Point(4, 90);
             this.picAns3.Name = "picAns3";
-            this.picAns3.Size = new System.Drawing.Size(50, 37);
+            this.picAns3.Size = new System.Drawing.Size(50, 36);
             this.picAns3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picAns3.TabIndex = 15;
             this.picAns3.TabStop = false;
@@ -322,7 +322,7 @@
             this.lblW1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblW1.Location = new System.Drawing.Point(270, 1);
             this.lblW1.Name = "lblW1";
-            this.lblW1.Size = new System.Drawing.Size(177, 43);
+            this.lblW1.Size = new System.Drawing.Size(177, 42);
             this.lblW1.TabIndex = 7;
             this.lblW1.Text = "label3";
             this.lblW1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -363,9 +363,9 @@
             this.lblPoints.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblPoints.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPoints.ForeColor = System.Drawing.Color.Black;
-            this.lblPoints.Location = new System.Drawing.Point(71, 287);
+            this.lblPoints.Location = new System.Drawing.Point(71, 260);
             this.lblPoints.Name = "lblPoints";
-            this.lblPoints.Size = new System.Drawing.Size(58, 49);
+            this.lblPoints.Size = new System.Drawing.Size(58, 48);
             this.lblPoints.TabIndex = 28;
             this.lblPoints.Text = "0";
             this.lblPoints.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -375,9 +375,9 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(12, 205);
+            this.label7.Location = new System.Drawing.Point(12, 178);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(175, 29);
+            this.label7.Size = new System.Drawing.Size(175, 28);
             this.label7.TabIndex = 30;
             this.label7.Text = "Points";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -389,9 +389,9 @@
             this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox7.ImageLocation = "Images\\\\circle.gif";
-            this.pictureBox7.Location = new System.Drawing.Point(12, 237);
+            this.pictureBox7.Location = new System.Drawing.Point(12, 210);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(175, 153);
+            this.pictureBox7.Size = new System.Drawing.Size(175, 152);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 29;
             this.pictureBox7.TabStop = false;
@@ -402,9 +402,9 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(1040, 205);
+            this.label6.Location = new System.Drawing.Point(1040, 178);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(175, 29);
+            this.label6.Size = new System.Drawing.Size(175, 28);
             this.label6.TabIndex = 33;
             this.label6.Text = "Attempts";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -416,9 +416,9 @@
             this.lblAttempts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblAttempts.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAttempts.ForeColor = System.Drawing.Color.Black;
-            this.lblAttempts.Location = new System.Drawing.Point(1111, 300);
+            this.lblAttempts.Location = new System.Drawing.Point(1111, 273);
             this.lblAttempts.Name = "lblAttempts";
-            this.lblAttempts.Size = new System.Drawing.Size(36, 36);
+            this.lblAttempts.Size = new System.Drawing.Size(36, 35);
             this.lblAttempts.TabIndex = 31;
             this.lblAttempts.Text = "3";
             this.lblAttempts.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -431,9 +431,9 @@
             this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.ImageLocation = "Images\\\\circle.gif";
-            this.pictureBox5.Location = new System.Drawing.Point(1040, 237);
+            this.pictureBox5.Location = new System.Drawing.Point(1040, 210);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(175, 153);
+            this.pictureBox5.Size = new System.Drawing.Size(175, 152);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 32;
             this.pictureBox5.TabStop = false;
@@ -444,7 +444,7 @@
             this.btnCheckYourAnswer.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnCheckYourAnswer.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCheckYourAnswer.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnCheckYourAnswer.Location = new System.Drawing.Point(429, 625);
+            this.btnCheckYourAnswer.Location = new System.Drawing.Point(429, 636);
             this.btnCheckYourAnswer.Name = "btnCheckYourAnswer";
             this.btnCheckYourAnswer.Size = new System.Drawing.Size(369, 74);
             this.btnCheckYourAnswer.TabIndex = 34;
@@ -458,7 +458,7 @@
             this.lblFeedback.BackColor = System.Drawing.Color.Transparent;
             this.lblFeedback.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFeedback.ForeColor = System.Drawing.Color.Green;
-            this.lblFeedback.Location = new System.Drawing.Point(231, 580);
+            this.lblFeedback.Location = new System.Drawing.Point(231, 596);
             this.lblFeedback.Name = "lblFeedback";
             this.lblFeedback.Size = new System.Drawing.Size(765, 30);
             this.lblFeedback.TabIndex = 35;
@@ -472,7 +472,7 @@
             this.lblHint.BackColor = System.Drawing.Color.Transparent;
             this.lblHint.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHint.ForeColor = System.Drawing.Color.Maroon;
-            this.lblHint.Location = new System.Drawing.Point(257, 432);
+            this.lblHint.Location = new System.Drawing.Point(255, 409);
             this.lblHint.Name = "lblHint";
             this.lblHint.Size = new System.Drawing.Size(716, 30);
             this.lblHint.TabIndex = 36;
@@ -484,20 +484,20 @@
             // 
             this.lblCorrectAns.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblCorrectAns.BackColor = System.Drawing.Color.Transparent;
-            this.lblCorrectAns.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCorrectAns.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCorrectAns.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblCorrectAns.Location = new System.Drawing.Point(253, 477);
+            this.lblCorrectAns.Location = new System.Drawing.Point(253, 439);
             this.lblCorrectAns.Name = "lblCorrectAns";
-            this.lblCorrectAns.Size = new System.Drawing.Size(720, 88);
+            this.lblCorrectAns.Size = new System.Drawing.Size(720, 157);
             this.lblCorrectAns.TabIndex = 37;
-            this.lblCorrectAns.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCorrectAns.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblCorrectAns.Visible = false;
             // 
             // picAns4
             // 
             this.picAns4.BackColor = System.Drawing.Color.Transparent;
             this.picAns4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picAns4.Location = new System.Drawing.Point(4, 136);
+            this.picAns4.Location = new System.Drawing.Point(4, 133);
             this.picAns4.Name = "picAns4";
             this.picAns4.Size = new System.Drawing.Size(50, 36);
             this.picAns4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -512,7 +512,7 @@
             this.comboBox4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBox4.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(61, 136);
+            this.comboBox4.Location = new System.Drawing.Point(61, 133);
             this.comboBox4.MaxDropDownItems = 4;
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(202, 39);
@@ -521,7 +521,7 @@
             // lblW4
             // 
             this.lblW4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblW4.Location = new System.Drawing.Point(270, 133);
+            this.lblW4.Location = new System.Drawing.Point(270, 130);
             this.lblW4.Name = "lblW4";
             this.lblW4.Size = new System.Drawing.Size(177, 42);
             this.lblW4.TabIndex = 32;
@@ -531,7 +531,7 @@
             // lblS4
             // 
             this.lblS4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblS4.Location = new System.Drawing.Point(454, 133);
+            this.lblS4.Location = new System.Drawing.Point(454, 130);
             this.lblS4.Name = "lblS4";
             this.lblS4.Size = new System.Drawing.Size(177, 42);
             this.lblS4.TabIndex = 33;
@@ -542,7 +542,7 @@
             // 
             this.btnHint4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHint4.ForeColor = System.Drawing.Color.Green;
-            this.btnHint4.Location = new System.Drawing.Point(638, 136);
+            this.btnHint4.Location = new System.Drawing.Point(638, 133);
             this.btnHint4.Name = "btnHint4";
             this.btnHint4.Size = new System.Drawing.Size(78, 36);
             this.btnHint4.TabIndex = 34;
@@ -554,7 +554,7 @@
             // 
             this.picAns5.BackColor = System.Drawing.Color.Transparent;
             this.picAns5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picAns5.Location = new System.Drawing.Point(4, 180);
+            this.picAns5.Location = new System.Drawing.Point(4, 176);
             this.picAns5.Name = "picAns5";
             this.picAns5.Size = new System.Drawing.Size(50, 36);
             this.picAns5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -569,7 +569,7 @@
             this.comboBox5.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBox5.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(61, 180);
+            this.comboBox5.Location = new System.Drawing.Point(61, 176);
             this.comboBox5.MaxDropDownItems = 4;
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(202, 39);
@@ -578,7 +578,7 @@
             // lblW5
             // 
             this.lblW5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblW5.Location = new System.Drawing.Point(270, 177);
+            this.lblW5.Location = new System.Drawing.Point(270, 173);
             this.lblW5.Name = "lblW5";
             this.lblW5.Size = new System.Drawing.Size(177, 42);
             this.lblW5.TabIndex = 37;
@@ -588,7 +588,7 @@
             // lblS5
             // 
             this.lblS5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblS5.Location = new System.Drawing.Point(454, 177);
+            this.lblS5.Location = new System.Drawing.Point(454, 173);
             this.lblS5.Name = "lblS5";
             this.lblS5.Size = new System.Drawing.Size(177, 42);
             this.lblS5.TabIndex = 38;
@@ -599,7 +599,7 @@
             // 
             this.btnHint5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHint5.ForeColor = System.Drawing.Color.Green;
-            this.btnHint5.Location = new System.Drawing.Point(638, 180);
+            this.btnHint5.Location = new System.Drawing.Point(638, 176);
             this.btnHint5.Name = "btnHint5";
             this.btnHint5.Size = new System.Drawing.Size(78, 36);
             this.btnHint5.TabIndex = 39;

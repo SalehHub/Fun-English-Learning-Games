@@ -1779,7 +1779,7 @@
     <Content Include="Images\Liver.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Lungs.png">
+    <Content Include="Images\Lung.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\Magenta.png">

@@ -282,6 +282,10 @@ namespace FunEngGames
         //Correct answer go to the next question function
         public void NextQuestion()
         {
+            txtAnswer.Enabled = true;
+
+
+
             btnCheckAnswer.Text = "Check your answer";
 
             //reset hints buttons
@@ -330,6 +334,10 @@ namespace FunEngGames
         //Try again function we still have attempts
         public void TryAgain()
         {
+            txtAnswer.Enabled = true;
+
+
+
             btnCheckAnswer.Text = "Check your answer";
             picFeedback.Visible = false;
         }
@@ -338,6 +346,12 @@ namespace FunEngGames
         //if the answer was correct function
         public void CorrectAnswer()
         {
+            txtAnswer.Enabled = false;
+            btnFirstHint.Visible = false;
+            btnSecondHint.Visible = false;
+            picLock.Visible = false;
+
+
             question++;
             CorrectAnswers++;
             picFeedback.BackgroundImage = Properties.Resources.check;
@@ -354,7 +368,12 @@ namespace FunEngGames
 
             if (question == 6 && CorrectAnswers >= 3)
             {
-                lblFeedback.Text = "Great job! Keep up the good work in the next level"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Green;
+                txtAnswer.Enabled = false;
+                btnFirstHint.Visible = false;
+                btnSecondHint.Visible = false;
+                picLock.Visible = false;
+
+                lblFeedback.Text = "Great job! You correctly answered more than two questions, keep up the good work in the next level"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Green;
 
                 btnCheckAnswer.Text = "Go to the next level >>";
 
@@ -379,12 +398,27 @@ namespace FunEngGames
         //if the answer was incorrect function
         public void IncorrectAnswer()
         {
+            txtAnswer.Enabled = false;
+
+
+
             attempts--;
             lblAttempts.Text = attempts.ToString();
 
-
-            if (attempts == 0 && question < 5)  //No more attempts
+            //Not the last question and No more attempts
+            if (attempts == 0 && question < 5)  
             {
+
+                txtAnswer.Enabled = false;
+                btnFirstHint.Visible = false;
+                btnSecondHint.Visible = false;
+                picLock.Visible = false;
+
+                lblFirstHint.Visible = false;
+                lblSecondHint.Visible = false;
+
+
+
                 question++;
                 lblCorrectAns.Visible = true;
                 picFeedback.Visible = false;
@@ -396,17 +430,27 @@ namespace FunEngGames
 
                 btnCheckAnswer.Text = "Next Question";
             }
-            else if (attempts == 0 && question == 5 && CorrectAnswers < 3)    //last attepmt and last question
+            //last attepmt and last question, the correct answers is less than 3
+            else if (attempts == 0 && question == 5 && CorrectAnswers < 3)    
             {
                 lblFeedback.Text = "You need to answer at least three questions to pass this level"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Red;
                 btnCheckAnswer.Text = "Start this level again";
             }
-            else if (attempts == 0 && question == 5 && CorrectAnswers >= 3)    //last attepmt and last question
+
+            //last attepmt and last question, the correct answers is more than or = 3
+            else if (attempts == 0 && question == 5 && CorrectAnswers >= 3)
             {
+
+                txtAnswer.Enabled = false;
+                btnFirstHint.Visible = false;
+                btnSecondHint.Visible = false;
+                picLock.Visible = false;
+               
+
                 lblCorrectAns.Visible = true;
                 lblCorrectAns.Text = "The correct answer is " + lblAnswer.Text;
 
-                lblFeedback.Text = "Great job! You correctly answered two questions, keep up the good work in the next level"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Green;
+                lblFeedback.Text = "Great job! You correctly answered more than two questions, keep up the good work in the next level"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Green;
 
                 btnCheckAnswer.Text = "Go to the next level >>";
 
@@ -415,7 +459,26 @@ namespace FunEngGames
             }
             else
             {
-                lblFeedback.Text = "Sorry this is not a correct answer try again";
+
+                if (attempts == 4)
+                {
+                    lblFeedback.Text = "Sorry, this is not a correct answer. Try again you still have four attempts left.";
+                }
+                else if (attempts == 3)
+                {
+                    lblFeedback.Text = "Sorry, this is not a correct answer. Try again you still have three attempts left.";
+                }
+                else if (attempts == 2)
+                {
+                    lblFeedback.Text = "Sorry, this is not a correct answer. Try again you still have two attempts left.";
+                }
+                else if (attempts == 1)
+                {
+                    lblFeedback.Text = "Sorry, this is not a correct answer. Try again you still have one attempt left.";
+                }
+
+
+                //lblFeedback.Text = "Sorry, this is not a correct answer. try again";
                 lblFeedback.Visible = true;
                 lblFeedback.ForeColor = Color.Red;
 

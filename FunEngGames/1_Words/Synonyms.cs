@@ -225,10 +225,6 @@ namespace FunEngGames
                 lblW5.Text = "" + cf.UppercaseFirst(word);
 
 
-                //comboBox1.Tag = synonyms[0];
-                //comboBox2.Tag = synonyms[1];
-                //comboBox3.Tag = synonyms[2];
-
                 lblAns1.Text = synonyms[0];
                 lblAns2.Text = synonyms[1];
                 lblAns3.Text = synonyms[2];
@@ -409,7 +405,7 @@ namespace FunEngGames
                 }
 
                 //solved 3 or more questions
-                if (Questions >= 2 && attempt == 0)
+                if (Questions >= 3 && attempt == 0)
                 {
                     showFeedBack("Good job, keep up the good work in the next level.", Color.Green);
 
@@ -441,8 +437,8 @@ namespace FunEngGames
                 }
 
 
-
-                if (attempt == 0 && Questions >= 4)
+                //no more attempts and we still have 2 or more incorrect questions
+                if (attempt == 0 && Questions >= 3)
                 {
                     lblHint.Visible = false;
 
@@ -480,7 +476,7 @@ namespace FunEngGames
                     if (fiq == false)
                     {
                         lblCorrectAns.Visible = true;
-                        lblCorrectAns.Text = lblCorrectAns.Text + "\nThe correct answer for the fifth question is " + lblAns4.Text;
+                        lblCorrectAns.Text = lblCorrectAns.Text + "\nThe correct answer for the fifth question is " + lblAns5.Text;
                     }
                 }
 
