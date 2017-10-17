@@ -34,6 +34,8 @@ namespace FunEngGames
         public string pic1 = "", ans1 = "";
         public string pic2 = "", ans2 = "";
         public string pic3 = "", ans3 = "";
+        public string pic4 = "", ans4 = "";
+        public string pic5 = "", ans5 = "";
 
         //Set game variables
         public int question = 1;
@@ -195,7 +197,6 @@ namespace FunEngGames
             picWord.Image = Image.FromFile(@"Images\" + pic1);
             lblAnswer.Text = ans1;
 
-            //nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "animals" + "/spelling");
 
             rand = a.Next(2, 5);
             randomCatogary();
@@ -206,9 +207,8 @@ namespace FunEngGames
             pic2 = nodeList[random].SelectSingleNode("answer").InnerText.Trim() + ".png";
             ans2 = nodeList[random].SelectSingleNode("answer").InnerText.Trim();
             //pictureBox2.Image = Image.FromFile(@"Images\" + pic);
-            label2.Text = ans2;
+            //label2.Text = ans2;
 
-            //nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "fruits" + "/spelling");
             rand = a.Next(6, 7);
             randomCatogary();
 
@@ -218,7 +218,34 @@ namespace FunEngGames
             pic3 = nodeList[random].SelectSingleNode("answer").InnerText.Trim() + ".png";
             ans3 = nodeList[random].SelectSingleNode("answer").InnerText.Trim();
             //pictureBox3.Image = Image.FromFile(@"Images\" + pic);
-            label3.Text = ans3;
+            //label3.Text = ans3;
+
+
+            rand = a.Next(0, 3);
+            randomCatogary();
+
+            NewNumber(nodeList.Count);
+            random = randomList.Last();
+
+            pic4 = nodeList[random].SelectSingleNode("answer").InnerText.Trim() + ".png";
+            ans4 = nodeList[random].SelectSingleNode("answer").InnerText.Trim();
+            //pictureBox3.Image = Image.FromFile(@"Images\" + pic);
+            //label3.Text = ans3;
+
+
+
+            rand = a.Next(4, 6);
+            randomCatogary();
+
+            NewNumber(nodeList.Count);
+            random = randomList.Last();
+
+            pic5 = nodeList[random].SelectSingleNode("answer").InnerText.Trim() + ".png";
+            ans5 = nodeList[random].SelectSingleNode("answer").InnerText.Trim();
+            //pictureBox3.Image = Image.FromFile(@"Images\" + pic);
+            //label3.Text = ans3;
+
+
 
             //randomList.Clear();
 
@@ -236,7 +263,7 @@ namespace FunEngGames
             picFeedback.Visible = false;
 
             btnCheckAnswer.Text = "Check your answer";
-            label5.Text = "Question " + question + " out of 3";
+            label5.Text = "Question " + question + " out of 5";
         }
 
 
@@ -268,7 +295,7 @@ namespace FunEngGames
 
             // question++;
             lblCorrectAns.Visible = false;
-            label5.Text = "Question " + question + " out of 3";
+            label5.Text = "Question " + question + " out of 5";
 
             if (question == 2)
             {
@@ -279,6 +306,16 @@ namespace FunEngGames
             {
                 picWord.Image = Image.FromFile(@"Images\" + pic3);
                 lblAnswer.Text = ans3;
+            }
+            else if (question == 4)
+            {
+                picWord.Image = Image.FromFile(@"Images\" + pic4);
+                lblAnswer.Text = ans4;
+            }
+            else if (question == 5)
+            {
+                picWord.Image = Image.FromFile(@"Images\" + pic5);
+                lblAnswer.Text = ans5;
             }
 
             picFeedback.Visible = false;
@@ -308,13 +345,14 @@ namespace FunEngGames
             lblFeedback.Text = "Good job! Keep up the good work"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Green;
             btnCheckAnswer.Text = "Next Question";
 
-            points += hints + attempts;
             /*calculate points*/
-            lblPoints.Text = points.ToString();//(int.Parse(lblPoints.Text) + 3).ToString();
+            points += hints + attempts;
+
+            lblPoints.Text = points.ToString();
             SavePoints();
 
 
-            if (question == 4 && CorrectAnswers >= 2)
+            if (question == 6 && CorrectAnswers >= 3)
             {
                 lblFeedback.Text = "Great job! Keep up the good work in the next level"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Green;
 
@@ -325,9 +363,9 @@ namespace FunEngGames
             }
 
 
-            if (question == 4 && CorrectAnswers < 2)
+            if (question == 6 && CorrectAnswers < 3)
             {
-                lblFeedback.Text = "You need to answer atleast two questions to pass this level"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Red;
+                lblFeedback.Text = "You need to answer at least three questions to pass this level"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Red;
 
                 btnCheckAnswer.Text = "Start this level again";
 
@@ -345,7 +383,7 @@ namespace FunEngGames
             lblAttempts.Text = attempts.ToString();
 
 
-            if (attempts == 0 && question < 3)  //No more attempts
+            if (attempts == 0 && question < 5)  //No more attempts
             {
                 question++;
                 lblCorrectAns.Visible = true;
@@ -358,12 +396,12 @@ namespace FunEngGames
 
                 btnCheckAnswer.Text = "Next Question";
             }
-            else if (attempts == 0 && question == 3 && CorrectAnswers < 2)    //last attepmt and last question
+            else if (attempts == 0 && question == 5 && CorrectAnswers < 3)    //last attepmt and last question
             {
-                lblFeedback.Text = "You need to answer atleast two questions to pass this level"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Red;
+                lblFeedback.Text = "You need to answer at least three questions to pass this level"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Red;
                 btnCheckAnswer.Text = "Start this level again";
             }
-            else if (attempts == 0 && question == 3 && CorrectAnswers >= 2)    //last attepmt and last question
+            else if (attempts == 0 && question == 5 && CorrectAnswers >= 3)    //last attepmt and last question
             {
                 lblCorrectAns.Visible = true;
                 lblCorrectAns.Text = "The correct answer is " + lblAnswer.Text;
@@ -394,13 +432,13 @@ namespace FunEngGames
 
             if (txtAnswer.Text.Trim().ToLower() == lblAnswer.Text.Trim().ToLower())
             {
-                /*correct answer*/
+                /*correct answer function*/
                 CorrectAnswer();
             }
 
             else
             {
-                /*incorrect answer*/
+                /*incorrect answer function*/
                 IncorrectAnswer();
             }
         }
@@ -442,7 +480,6 @@ namespace FunEngGames
                 {
                     CheckYourAnswer();
                 }
-
             }
             catch (Exception ex)
             {

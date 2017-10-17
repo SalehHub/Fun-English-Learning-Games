@@ -41,20 +41,24 @@ namespace FunEngGames
         public List<string> synonyms = new List<string>();
 
         //Set game variables
-        public int Questions = 3;
-        public int attempt = 3;
-        public int hints = 3;
+        public int Questions = 5;
+        public int attempt = 5;
+        public int hints = 5;
         public int points = 0;
 
         //What answer has been answerd
         public bool fq = false;
         public bool sq = false;
         public bool tq = false;
+        public bool foq = false;
+        public bool fiq = false;
 
         //Hints content setup
         public string fHint = "";
         public string sHint = "";
         public string tHint = "";
+        public string foHint = "";
+        public string fiHint = "";
 
         //Generate random node function to avoid questions duplications
         int MyNumber = 0;
@@ -100,14 +104,16 @@ namespace FunEngGames
             pictureBox5.LoadAsync(@"https://media.giphy.com/media/Bn6djQ6MgEWZi/giphy.gif");
 
 
-            Questions = 3;
-            attempt = 3;
-            hints = 3;
+            Questions = 5;
+            attempt = 5;
+            hints = 5;
             points = 0;
 
             fq = false;
             sq = false;
             tq = false;
+            foq = false;
+            fiq = false;
 
             //randomList.Clear();
             synonyms.Clear();
@@ -132,9 +138,21 @@ namespace FunEngGames
             comboBox3.Items.Clear();
             comboBox3.Text = "";
 
+            btnHint4.Enabled = true;
+            comboBox4.Enabled = true;
+            comboBox4.Items.Clear();
+            comboBox4.Text = "";
+
+            btnHint5.Enabled = true;
+            comboBox5.Enabled = true;
+            comboBox5.Items.Clear();
+            comboBox5.Text = "";
+
             picAns1.BackgroundImage = null;
             picAns2.BackgroundImage = null;
             picAns3.BackgroundImage = null;
+            picAns4.BackgroundImage = null;
+            picAns5.BackgroundImage = null;
 
 
             btnCheckYourAnswer.Text = "Check your answers";
@@ -188,6 +206,25 @@ namespace FunEngGames
                 lblW3.Text = "" + cf.UppercaseFirst(word);
 
 
+                NewNumber(nodeList.Count);
+                random = randomList.Last();
+
+                word = nodeList[random].SelectSingleNode("word").InnerText.Trim();
+                synonym = nodeList[random].SelectSingleNode("synonym").InnerText.Trim();
+                tHint = nodeList[random].SelectSingleNode("hint").InnerText.Trim();
+
+                synonyms.Add(cf.UppercaseFirst(synonym));
+                lblW4.Text = "" + cf.UppercaseFirst(word); NewNumber(nodeList.Count);
+                random = randomList.Last();
+
+                word = nodeList[random].SelectSingleNode("word").InnerText.Trim();
+                synonym = nodeList[random].SelectSingleNode("synonym").InnerText.Trim();
+                tHint = nodeList[random].SelectSingleNode("hint").InnerText.Trim();
+
+                synonyms.Add(cf.UppercaseFirst(synonym));
+                lblW5.Text = "" + cf.UppercaseFirst(word);
+
+
                 //comboBox1.Tag = synonyms[0];
                 //comboBox2.Tag = synonyms[1];
                 //comboBox3.Tag = synonyms[2];
@@ -195,18 +232,24 @@ namespace FunEngGames
                 lblAns1.Text = synonyms[0];
                 lblAns2.Text = synonyms[1];
                 lblAns3.Text = synonyms[2];
+                lblAns4.Text = synonyms[3];
+                lblAns5.Text = synonyms[4];
 
                 Shuffle(synonyms);
                 //comboBox1.Items.Add("A-"); comboBox1.Items.Add("B-"); comboBox1.Items.Add("C-");
-                comboBox1.Items.Add("" + synonyms[0]); comboBox1.Items.Add("" + synonyms[1]); comboBox1.Items.Add("" + synonyms[2]);
-                comboBox2.Items.Add("" + synonyms[0]); comboBox2.Items.Add("" + synonyms[1]); comboBox2.Items.Add("" + synonyms[2]);
-                comboBox3.Items.Add("" + synonyms[0]); comboBox3.Items.Add("" + synonyms[1]); comboBox3.Items.Add("" + synonyms[2]);
+                comboBox1.Items.Add("" + synonyms[0]); comboBox1.Items.Add("" + synonyms[1]); comboBox1.Items.Add("" + synonyms[2]); comboBox1.Items.Add("" + synonyms[3]); comboBox1.Items.Add("" + synonyms[4]);
+                comboBox2.Items.Add("" + synonyms[0]); comboBox2.Items.Add("" + synonyms[1]); comboBox2.Items.Add("" + synonyms[2]); comboBox2.Items.Add("" + synonyms[3]); comboBox2.Items.Add("" + synonyms[4]);
+                comboBox3.Items.Add("" + synonyms[0]); comboBox3.Items.Add("" + synonyms[1]); comboBox3.Items.Add("" + synonyms[2]); comboBox3.Items.Add("" + synonyms[3]); comboBox3.Items.Add("" + synonyms[4]);
+                comboBox4.Items.Add("" + synonyms[0]); comboBox4.Items.Add("" + synonyms[1]); comboBox4.Items.Add("" + synonyms[2]); comboBox4.Items.Add("" + synonyms[3]); comboBox4.Items.Add("" + synonyms[4]);
+                comboBox5.Items.Add("" + synonyms[0]); comboBox5.Items.Add("" + synonyms[1]); comboBox5.Items.Add("" + synonyms[2]); comboBox5.Items.Add("" + synonyms[3]); comboBox5.Items.Add("" + synonyms[4]);
 
 
                 Shuffle(synonyms);
                 lblS1.Text = "" + synonyms[0];
                 lblS2.Text = "" + synonyms[1];
                 lblS3.Text = "" + synonyms[2];
+                lblS4.Text = "" + synonyms[3];
+                lblS5.Text = "" + synonyms[4];
 
 
             }
@@ -233,16 +276,6 @@ namespace FunEngGames
             }
         }
 
-        //Open antonyms lesson level
-        /*private void button1_Click(object sender, EventArgs e)
-        {
-            AntonymsLesson antonymsLesson = new AntonymsLesson();
-            antonymsLesson.mainLevelsForm = this.mainLevelsForm;
-            this.Hide();
-            antonymsLesson.Show();
-        }
-        */
-
         //Check your answer function
         private void btnCheckYourAnswer_Click(object sender, EventArgs e)
         {
@@ -250,9 +283,9 @@ namespace FunEngGames
 
 
 
-            if (comboBox1.Text.Trim() == "" || comboBox2.Text.Trim() == "" || comboBox3.Text.Trim() == "")
+            if (comboBox1.Text.Trim() == "" || comboBox2.Text.Trim() == "" || comboBox3.Text.Trim() == "" || comboBox4.Text.Trim() == "" || comboBox5.Text.Trim() == "")
             {
-                showFeedBack("Please answer all the three questions first", Color.Red);
+                showFeedBack("Please answer all the five questions first.", Color.Red);
 
             }
             else if (btnCheckYourAnswer.Text == "Restart the level")
@@ -326,6 +359,45 @@ namespace FunEngGames
                     picAns3.BackgroundImage = Properties.Resources.cross;
                 }
 
+
+
+
+
+                if (foq == false && comboBox4.Text.Trim().ToLower().Contains(lblAns4.Text.Trim().ToLower()))
+                {
+                    picAns4.BackgroundImage = Properties.Resources.check;
+                    points++;
+                    btnHint4.Enabled = false;
+                    comboBox4.Enabled = false;
+                    Questions--;
+                    foq = true;
+                }
+                else if (foq == false && !comboBox4.Text.Trim().ToLower().Contains(lblAns4.Text.Trim().ToLower()))
+                {
+                    picAns4.BackgroundImage = Properties.Resources.cross;
+                }
+
+
+
+
+                if (fiq == false && comboBox5.Text.Trim().ToLower().Contains(lblAns5.Text.Trim().ToLower()))
+                {
+                    picAns5.BackgroundImage = Properties.Resources.check;
+                    points++;
+                    btnHint5.Enabled = false;
+                    comboBox5.Enabled = false;
+                    Questions--;
+                    fiq = true;
+                }
+                else if (fiq == false && !comboBox5.Text.Trim().ToLower().Contains(lblAns5.Text.Trim().ToLower()))
+                {
+                    picAns5.BackgroundImage = Properties.Resources.cross;
+                }
+
+
+
+
+
                 if (Questions == 0)
                 {
                     showFeedBack("Good job, keep up the good work in the next level", Color.Green);
@@ -336,10 +408,10 @@ namespace FunEngGames
                     btnCheckYourAnswer.Text = "Go to Antonyms lesson";
                 }
 
-                //solved 2 questions
-                if (Questions >= 1 && attempt == 0)
+                //solved 3 or more questions
+                if (Questions >= 2 && attempt == 0)
                 {
-                    showFeedBack("Good job, keep up the good work in the next level", Color.Green);
+                    showFeedBack("Good job, keep up the good work in the next level.", Color.Green);
 
                     lblPoints.Text = (attempt + 1 + hints + points).ToString();
 
@@ -350,24 +422,32 @@ namespace FunEngGames
 
                 if (attempt > 0 && Questions > 0)
                 {
-                    if (attempt == 2)
+                    if (attempt == 4)
                     {
-                        showFeedBack("Try again you still have two attempts left", Color.Red);
+                        showFeedBack("Try again you still have four attempts left.", Color.Red);
+                    }
+                    else if(attempt == 3)
+                    {
+                        showFeedBack("Try again you still have three attempts left.", Color.Red);
+                    }
+                    else if(attempt == 2)
+                    {
+                        showFeedBack("Try again you still have two attempts left.", Color.Red);
                     }
                     else if (attempt == 1)
                     {
-                        showFeedBack("Try again you still have one attempt left", Color.Red);
+                        showFeedBack("Try again you still have one attempt left.", Color.Red);
                     }
                 }
 
 
 
-                if (attempt == 0 && Questions >= 2)
+                if (attempt == 0 && Questions >= 4)
                 {
                     lblHint.Visible = false;
 
 
-                    showFeedBack("Sorry, you need to solve at least two questions to pass this level", Color.Red);
+                    showFeedBack("Sorry, you need to solve at least three questions to pass this level.", Color.Red);
 
                     btnCheckYourAnswer.Text = "Restart the level";
                 }
@@ -391,6 +471,16 @@ namespace FunEngGames
                     {
                         lblCorrectAns.Visible = true;
                         lblCorrectAns.Text = lblCorrectAns.Text + "\nThe correct answer for the third question is " + lblAns3.Text;
+                    }
+                    if (foq == false)
+                    {
+                        lblCorrectAns.Visible = true;
+                        lblCorrectAns.Text = lblCorrectAns.Text + "\nThe correct answer for the fourth question is " + lblAns4.Text;
+                    }
+                    if (fiq == false)
+                    {
+                        lblCorrectAns.Visible = true;
+                        lblCorrectAns.Text = lblCorrectAns.Text + "\nThe correct answer for the fifth question is " + lblAns4.Text;
                     }
                 }
 
@@ -451,6 +541,24 @@ namespace FunEngGames
             lblHint.Visible = true;
             lblHint.Text = cf.UppercaseFirst(tHint) + " is another synonym for the word you're looking for!";
             btnHint3.Enabled = false;
+            hints--;
+        }
+
+        //Show fourth question hint
+        private void btnHint4_Click(object sender, EventArgs e)
+        {
+            lblHint.Visible = true;
+            lblHint.Text = cf.UppercaseFirst(tHint) + " is another synonym for the word you're looking for!";
+            btnHint4.Enabled = false;
+            hints--;
+        }
+
+        //Show fifth question hint
+        private void btnHint5_Click(object sender, EventArgs e)
+        {
+            lblHint.Visible = true;
+            lblHint.Text = cf.UppercaseFirst(tHint) + " is another synonym for the word you're looking for!";
+            btnHint5.Enabled = false;
             hints--;
         }
     }
