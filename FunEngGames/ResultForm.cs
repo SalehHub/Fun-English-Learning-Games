@@ -70,11 +70,10 @@ namespace FunEngGames
             }
             catch (Exception ex)
             {
-
+                Console.WriteLine(ex.Message);
             }
 
         }
-
 
 
         //Close event, just go back to main levels
@@ -86,7 +85,7 @@ namespace FunEngGames
             }
             catch (Exception ex)
             {
-
+                Console.WriteLine(ex.Message);
             }
         }
     }

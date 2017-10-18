@@ -55,5 +55,10 @@ namespace FunEngGames
         {
             pictureBox4.Image = _1;
         }
+
+        private void _storyline_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //Application.Exit();
+        }
     }
 }

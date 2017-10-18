@@ -73,6 +73,7 @@ namespace FunEngGames
             GenerateAntonyms(lastNode);
             page++;
             lblPages.Text = "Page " + page + " out of " + lastPage;
+            lblWordsCount.Text = nodeList.Count + " words";
 
             CommonFunctions.SortDataGridColumn(dataGridView1);
         }
@@ -80,23 +81,24 @@ namespace FunEngGames
         //Generate all questions by calling GenAntonym function;
         public void GenerateAntonyms(int start)
         {
-
-            GenAntonym(start, textBox1, textBox2);//1
-            GenAntonym(start + 1, textBox3, textBox4);//2
-            GenAntonym(start + 2, textBox5, textBox6);//3
-            GenAntonym(start + 3, textBox7, textBox8);//4
-            GenAntonym(start + 4, textBox9, textBox10);//5
-            GenAntonym(start + 5, textBox11, textBox12);//6
-            GenAntonym(start + 6, textBox13, textBox14);//7
-            GenAntonym(start + 7, textBox15, textBox16);//8
-            GenAntonym(start + 8, textBox17, textBox18);//9
-
+            GenAntonym(start);
+            GenAntonym(start + 1);
+            GenAntonym(start + 2);
+            GenAntonym(start + 3);
+            GenAntonym(start + 4);
+            GenAntonym(start + 5);
+            GenAntonym(start + 6);
+            GenAntonym(start + 7);
+            GenAntonym(start + 8);
         }
 
         //Generate word, synonym from Antonym XML file
-        public void GenAntonym(int start, TextBox t1, TextBox t2)
+        public void GenAntonym(int start)
         {
-            dataGridView1.Rows.Add(CommonFunctions.UppercaseFirst(nodeList[start].SelectSingleNode("word").InnerText), CommonFunctions.UppercaseFirst(nodeList[start].SelectSingleNode("antonym").InnerText));
+            dataGridView1.Rows.Add(
+                nodeList[start].SelectSingleNode("word").InnerText.Trim().ToLower(), 
+                nodeList[start].SelectSingleNode("antonym").InnerText.Trim().ToLower()
+                );
         }
 
         //Next page event if we have more than on page
@@ -160,12 +162,7 @@ namespace FunEngGames
             else if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
             {
                 CommonFunctions.Pronounce(senderGrid.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString().Trim().ToLower());
-
-
             }
-
         }
-
-
     }
 }

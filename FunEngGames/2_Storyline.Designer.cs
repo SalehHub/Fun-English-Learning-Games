@@ -49,8 +49,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.BackgroundImage = global::FunEngGames.Properties.Resources.sl1;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -72,7 +71,8 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(901, 26);
             this.label1.TabIndex = 55;
-            this.label1.Text = "This is Le he likes this girl Megan, the problem is that Le can\'t speak English";
+            this.label1.Text = "This is Le, he likes this girl Megan. The problem is that Le can\'t speak English." +
+    "";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
@@ -104,6 +104,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fun English Learning Games: Le and Megan";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this._storyline_FormClosing);
             this.Load += new System.EventHandler(this._storyline_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);

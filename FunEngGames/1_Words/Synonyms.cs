@@ -394,18 +394,19 @@ namespace FunEngGames
 
 
 
-                if (Questions == 0)
-                {
-                    showFeedBack("Good job, keep up the good work in the next level", Color.Green);
+                /* if (Questions == 0)
+                 {
+                     showFeedBack("Good job, keep up the good work in the next level.", Color.Green);
 
-                    lblPoints.Text = (attempt + 1 + hints + points).ToString();
+                     lblPoints.Text = (attempt + 1 + hints + points).ToString();
 
-                    SavePoints();
-                    btnCheckYourAnswer.Text = "Go to Antonyms lesson";
-                }
+                     SavePoints();
+                     btnCheckYourAnswer.Text = "Go to Antonyms lesson";
+                 }
+                 */
 
                 //solved 3 or more questions
-                if (Questions >= 3 && attempt == 0)
+                if ((Questions <= 2 && attempt == 0) || (Questions == 0))
                 {
                     showFeedBack("Good job, keep up the good work in the next level.", Color.Green);
 

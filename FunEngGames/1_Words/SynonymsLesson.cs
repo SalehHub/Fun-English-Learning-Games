@@ -73,6 +73,7 @@ namespace FunEngGames
             page++;
             lblPages.Text = "Page " + page + " out of " + lastPage;
 
+            lblWordsCount.Text = nodeList.Count + " words";
             CommonFunctions.SortDataGridColumn(dataGridView1);
 
             Cursor cur = new Cursor(Properties.Resources.audio.Handle);
@@ -81,27 +82,24 @@ namespace FunEngGames
         //Generate all questions by calling GenSynonym function;
         public void GenerateSynonyms(int start)
         {
-
-            GenSynonym(start, textBox1, textBox2);//1
-            GenSynonym(start + 1, textBox3, textBox4);//2
-            GenSynonym(start + 2, textBox5, textBox6);//3
-            GenSynonym(start + 3, textBox7, textBox8);//4
-            GenSynonym(start + 4, textBox9, textBox10);//5
-            GenSynonym(start + 5, textBox11, textBox12);//6
-            GenSynonym(start + 6, textBox13, textBox14);//7
-            GenSynonym(start + 7, textBox15, textBox16);//8
-            GenSynonym(start + 8, textBox17, textBox18);//9
-
+            GenSynonym(start);
+            GenSynonym(start + 1);
+            GenSynonym(start + 2);
+            GenSynonym(start + 3);
+            GenSynonym(start + 4);
+            GenSynonym(start + 5);
+            GenSynonym(start + 6);
+            GenSynonym(start + 7);
+            GenSynonym(start + 8);
         }
 
         //Generate word, synonym from Synonym XML file
-        public void GenSynonym(int start, TextBox t1, TextBox t2)
+        public void GenSynonym(int start)
         {
-            //NewNumber(nodeList.Count);
-            dataGridView1.Rows.Add(CommonFunctions.UppercaseFirst(nodeList[start].SelectSingleNode("word").InnerText), CommonFunctions.UppercaseFirst(nodeList[start].SelectSingleNode("synonym").InnerText));
-
-            //t1.Text = UppercaseFirst(nodeList[start].SelectSingleNode("word").InnerText);
-            //t2.Text = UppercaseFirst(nodeList[start].SelectSingleNode("synonym").InnerText);
+            dataGridView1.Rows.Add(
+                nodeList[start].SelectSingleNode("word").InnerText.Trim().ToLower(),
+                nodeList[start].SelectSingleNode("synonym").InnerText.Trim().ToLower()
+            );
         }
 
         //Next page event if we have more than on page
@@ -127,8 +125,6 @@ namespace FunEngGames
             btnPrevious.Enabled = true;
 
             lblPages.Text = "Page " + page + " out of " + lastPage;
-
-
         }
 
         //Previous page event if we have more than on page and next page btn has been clicked
@@ -167,26 +163,7 @@ namespace FunEngGames
         {
             try
             {
-
                 var senderGrid = (DataGridView)sender;
-                /*
-                if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
-                {
-                    string json = GET("https://api.datamuse.com/words?rel_syn=" + senderGrid.Rows[e.RowIndex].Cells[0].Value.ToString().Trim() + "&max=5");
-                    var words = JsonConvert.DeserializeObject<List<Word>>(json);
-
-                    string w = "";
-                    foreach (var s in words)
-                    {
-                        if (s.word.Trim().ToLower() != senderGrid.Rows[e.RowIndex].Cells[1].Value.ToString().Trim().ToLower()) {
-                            w = w  + UppercaseFirst(s.word) + "\n\n";
-                        }
-                    }
-
-                    MessageBox.Show(w,"Other synonyms for: "+senderGrid.Rows[e.RowIndex].Cells[0].Value.ToString());
-                }
-                */
-
 
                 if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
                 {
@@ -203,9 +180,6 @@ namespace FunEngGames
             {
                 MessageBox.Show(ex.Message);
             }
-
         }
-
-  
     }
 }

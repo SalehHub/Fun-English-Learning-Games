@@ -394,7 +394,7 @@ namespace FunEngGames
                 }
 
 
-                if (Questions == 0)
+                /*if (Questions == 0)
                 {
                     showFeedBack("Good job, keep up the good work in the next level.", Color.Green);
 
@@ -408,10 +408,10 @@ namespace FunEngGames
                     wordLevelsForm.lblhelp.Text = "You successfully unlocked all the levels.";
 
                 }
-
+                */
 
                 //solved 3 or more questions
-                if (Questions >= 3 && attempt == 0)
+                if ((Questions <= 2 && attempt == 0) || (Questions == 0))
                 {
                     showFeedBack("Good job, keep up the good work in the next level.", Color.Green);
 
@@ -454,7 +454,7 @@ namespace FunEngGames
                     lblHint.Visible = false;
 
 
-                    showFeedBack("Sorry, you need to solve at least three questions to pass this level", Color.Red);
+                    showFeedBack("Sorry, you need to answer at least three questions to pass this level", Color.Red);
 
                     btnCheckYourAnswer.Text = "Restart the level";
                 }
