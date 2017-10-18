@@ -120,6 +120,27 @@ namespace FunEngGames
             //antonyms.Clear();
 
 
+            picAns1.BackgroundImage = null;
+            picAns2.BackgroundImage = null;
+            picAns3.BackgroundImage = null;
+            picAns4.BackgroundImage = null;
+            picAns5.BackgroundImage = null;
+
+
+            btnCheckYourAnswer.Text = "Check your answers";
+            lblAttempts.Text = attempt.ToString();
+            lblPoints.Text = points.ToString();
+
+            xmlDoc.Load("XML/antonyms.xml");
+            nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/antonyms");
+
+            this.GenerateAntonyms();
+        }
+
+        //Generate all the Three antonyms questions
+        public void GenerateAntonyms()
+        {
+
             lblCorrectAns.Visible = false;
             lblHint.Visible = false;
 
@@ -148,30 +169,9 @@ namespace FunEngGames
             comboBox5.Items.Clear();
             comboBox5.Text = "";
 
-            picAns1.BackgroundImage = null;
-            picAns2.BackgroundImage = null;
-            picAns3.BackgroundImage = null;
-            picAns4.BackgroundImage = null;
-            picAns5.BackgroundImage = null;
 
-
-            btnCheckYourAnswer.Text = "Check your answers";
-            lblAttempts.Text = attempt.ToString();
-            lblPoints.Text = points.ToString();
-
-            xmlDoc.Load("XML/antonyms.xml");
-            nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/antonyms");
-
-            this.GenerateAntonyms();
-        }
-
-        //Generate all the Three antonyms questions
-        public void GenerateAntonyms()
-        {
             try
             {
-
-
                 string word = "", antonym = "";
 
                 NewNumber(nodeList.Count);
@@ -181,8 +181,8 @@ namespace FunEngGames
                 antonym = nodeList[random].SelectSingleNode("antonym").InnerText.Trim();
                 fHint = nodeList[random].SelectSingleNode("hint").InnerText.Trim();
 
-                antonyms.Add(cf.UppercaseFirst(antonym));
-                lblW1.Text = "" + cf.UppercaseFirst(word);
+                antonyms.Add(antonym.ToLower());
+                lblW1.Text = "" + word.ToLower();
 
 
                 NewNumber(nodeList.Count);
@@ -192,8 +192,8 @@ namespace FunEngGames
                 antonym = nodeList[random].SelectSingleNode("antonym").InnerText.Trim();
                 sHint = nodeList[random].SelectSingleNode("hint").InnerText.Trim();
 
-                antonyms.Add(cf.UppercaseFirst(antonym));
-                lblW2.Text = "" + cf.UppercaseFirst(word);
+                antonyms.Add(antonym.ToLower());
+                lblW2.Text = "" + word.ToLower();
 
 
                 NewNumber(nodeList.Count);
@@ -203,8 +203,8 @@ namespace FunEngGames
                 antonym = nodeList[random].SelectSingleNode("antonym").InnerText.Trim();
                 tHint = nodeList[random].SelectSingleNode("hint").InnerText.Trim();
 
-                antonyms.Add(cf.UppercaseFirst(antonym));
-                lblW3.Text = "" + cf.UppercaseFirst(word);
+                antonyms.Add(antonym.ToLower());
+                lblW3.Text = "" + word.ToLower();
 
 
                 NewNumber(nodeList.Count);
@@ -214,16 +214,18 @@ namespace FunEngGames
                 antonym = nodeList[random].SelectSingleNode("antonym").InnerText.Trim();
                 tHint = nodeList[random].SelectSingleNode("hint").InnerText.Trim();
 
-                antonyms.Add(cf.UppercaseFirst(antonym));
-                lblW4.Text = "" + cf.UppercaseFirst(word); NewNumber(nodeList.Count);
+                antonyms.Add(antonym.ToLower());
+                lblW4.Text = "" + word.ToLower();
+
+                NewNumber(nodeList.Count);
                 random = randomList.Last();
 
                 word = nodeList[random].SelectSingleNode("word").InnerText.Trim();
                 antonym = nodeList[random].SelectSingleNode("antonym").InnerText.Trim();
                 tHint = nodeList[random].SelectSingleNode("hint").InnerText.Trim();
 
-                antonyms.Add(cf.UppercaseFirst(antonym));
-                lblW5.Text = "" + cf.UppercaseFirst(word);
+                antonyms.Add(antonym.ToLower());
+                lblW5.Text = "" + word.ToLower();
 
                 lblAns1.Text = antonyms[0];
                 lblAns2.Text = antonyms[1];
@@ -251,7 +253,6 @@ namespace FunEngGames
             }
             catch (Exception ex)
             {
-                //MessageBox.Show(ex.Message+"Error while loading antonyms");
                 GenerateAntonyms();
                 System.Console.WriteLine(ex.Message);
 

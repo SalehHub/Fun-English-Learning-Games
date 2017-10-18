@@ -38,6 +38,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Word = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Synonym = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.lblPages = new System.Windows.Forms.Label();
             this.btnPrevious = new System.Windows.Forms.Button();
@@ -48,8 +50,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Word = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Synonym = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -159,6 +159,20 @@
             this.dataGridView1.TabIndex = 28;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // Word
+            // 
+            this.Word.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Word.HeaderText = "Word";
+            this.Word.Name = "Word";
+            this.Word.ReadOnly = true;
+            // 
+            // Synonym
+            // 
+            this.Synonym.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Synonym.HeaderText = "Antonym";
+            this.Synonym.Name = "Synonym";
+            this.Synonym.ReadOnly = true;
+            // 
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
@@ -246,7 +260,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Blue;
-            this.label6.Location = new System.Drawing.Point(563, 62);
+            this.label6.Location = new System.Drawing.Point(575, 62);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(427, 31);
             this.label6.TabIndex = 32;
@@ -259,11 +273,11 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(80, 62);
+            this.label2.Location = new System.Drawing.Point(92, 62);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(489, 31);
             this.label2.TabIndex = 31;
-            this.label2.Text = "Be familiar these words and learn their synonyms,";
+            this.label2.Text = "Be familiar with these words and learn their synonyms,";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // dataGridViewTextBoxColumn1
@@ -279,20 +293,6 @@
             this.dataGridViewTextBoxColumn2.HeaderText = "Antonym";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // Word
-            // 
-            this.Word.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Word.HeaderText = "Word";
-            this.Word.Name = "Word";
-            this.Word.ReadOnly = true;
-            // 
-            // Synonym
-            // 
-            this.Synonym.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Synonym.HeaderText = "Antonym";
-            this.Synonym.Name = "Synonym";
-            this.Synonym.ReadOnly = true;
             // 
             // AntonymsLesson
             // 

@@ -120,6 +120,31 @@ namespace FunEngGames
             //antonyms.Clear();
 
 
+
+
+            picAns1.BackgroundImage = null;
+            picAns2.BackgroundImage = null;
+            picAns3.BackgroundImage = null;
+            picAns4.BackgroundImage = null;
+            picAns5.BackgroundImage = null;
+
+
+            btnCheckYourAnswer.Text = "Check your answers";
+            lblAttempts.Text = attempt.ToString();
+            lblPoints.Text = points.ToString();
+
+            xmlDoc.Load("XML/synonyms.xml");
+            nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/synonyms");
+
+            this.GenerateSynonyms();
+        }
+
+        //Generate all the Three synonyms questions
+        public void GenerateSynonyms()
+        {
+
+            //synonyms.Clear();
+
             lblCorrectAns.Visible = false;
             lblHint.Visible = false;
 
@@ -148,29 +173,9 @@ namespace FunEngGames
             comboBox5.Items.Clear();
             comboBox5.Text = "";
 
-            picAns1.BackgroundImage = null;
-            picAns2.BackgroundImage = null;
-            picAns3.BackgroundImage = null;
-            picAns4.BackgroundImage = null;
-            picAns5.BackgroundImage = null;
 
-
-            btnCheckYourAnswer.Text = "Check your answers";
-            lblAttempts.Text = attempt.ToString();
-            lblPoints.Text = points.ToString();
-
-            xmlDoc.Load("XML/synonyms.xml");
-            nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/synonyms");
-
-            this.GenerateSynonyms();
-        }
-
-        //Generate all the Three synonyms questions
-        public void GenerateSynonyms()
-        {
             try
             {
-
                 string word = "", synonym = "";
 
                 NewNumber(nodeList.Count);
@@ -180,8 +185,8 @@ namespace FunEngGames
                 synonym = nodeList[random].SelectSingleNode("synonym").InnerText.Trim();
                 fHint = nodeList[random].SelectSingleNode("hint").InnerText.Trim();
 
-                synonyms.Add(cf.UppercaseFirst(synonym));
-                lblW1.Text = "" + cf.UppercaseFirst(word);
+                synonyms.Add(synonym.ToLower());
+                lblW1.Text = "" + word.ToLower();
 
 
                 NewNumber(nodeList.Count);
@@ -191,8 +196,8 @@ namespace FunEngGames
                 synonym = nodeList[random].SelectSingleNode("synonym").InnerText.Trim();
                 sHint = nodeList[random].SelectSingleNode("hint").InnerText.Trim();
 
-                synonyms.Add(cf.UppercaseFirst(synonym));
-                lblW2.Text = "" + cf.UppercaseFirst(word);
+                synonyms.Add(synonym.ToLower());
+                lblW2.Text = "" + word.ToLower();
 
 
                 NewNumber(nodeList.Count);
@@ -202,8 +207,8 @@ namespace FunEngGames
                 synonym = nodeList[random].SelectSingleNode("synonym").InnerText.Trim();
                 tHint = nodeList[random].SelectSingleNode("hint").InnerText.Trim();
 
-                synonyms.Add(cf.UppercaseFirst(synonym));
-                lblW3.Text = "" + cf.UppercaseFirst(word);
+                synonyms.Add(synonym.ToLower());
+                lblW3.Text = "" + word.ToLower();
 
 
                 NewNumber(nodeList.Count);
@@ -213,16 +218,18 @@ namespace FunEngGames
                 synonym = nodeList[random].SelectSingleNode("synonym").InnerText.Trim();
                 tHint = nodeList[random].SelectSingleNode("hint").InnerText.Trim();
 
-                synonyms.Add(cf.UppercaseFirst(synonym));
-                lblW4.Text = "" + cf.UppercaseFirst(word); NewNumber(nodeList.Count);
+                synonyms.Add(synonym.ToLower());
+                lblW4.Text = "" + word.ToLower();
+
+                NewNumber(nodeList.Count);
                 random = randomList.Last();
 
                 word = nodeList[random].SelectSingleNode("word").InnerText.Trim();
                 synonym = nodeList[random].SelectSingleNode("synonym").InnerText.Trim();
                 tHint = nodeList[random].SelectSingleNode("hint").InnerText.Trim();
 
-                synonyms.Add(cf.UppercaseFirst(synonym));
-                lblW5.Text = "" + cf.UppercaseFirst(word);
+                synonyms.Add(synonym.ToLower());
+                lblW5.Text = "" + word.ToLower();
 
 
                 lblAns1.Text = synonyms[0];
@@ -248,10 +255,13 @@ namespace FunEngGames
                 lblS5.Text = "" + synonyms[4];
 
 
+
+                
+
+
             }
             catch (Exception ex)
             {
-                // MessageBox.Show(ex.Message+" Error while load synonyms");
                 GenerateSynonyms();
                 System.Console.WriteLine(ex.Message);
             }

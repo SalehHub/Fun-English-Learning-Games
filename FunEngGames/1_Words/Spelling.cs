@@ -134,10 +134,10 @@ namespace FunEngGames
             {
                 nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "others" + "/spelling");
             }
-            //else
-            //{
-            //    nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "vegetables" + "/spelling");
-            //}
+            else
+            {
+                nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/" + "professions" + "/spelling");
+            }
         }
 
 
@@ -231,7 +231,7 @@ namespace FunEngGames
 
 
 
-            rand = a.Next(4, 6);
+            rand = a.Next(4, 8);
             randomCatogary();
 
             NewNumber(nodeList.Count);
@@ -331,7 +331,7 @@ namespace FunEngGames
         public void TryAgain()
         {
             txtAnswer.Enabled = true;
-
+            txtAnswer.Focus();
 
 
             btnCheckAnswer.Text = "Check your answer";
@@ -420,7 +420,7 @@ namespace FunEngGames
                 picFeedback.Visible = false;
                 lblCorrectAns.Text = "The correct answer is " + lblAnswer.Text;
 
-                lblFeedback.Text = "Sorry, this is incorrect answer try again in the next question,";
+                lblFeedback.Text = "Sorry, your answer was incorrect. Try again in the next question.";
                 lblFeedback.Visible = true;
                 lblFeedback.ForeColor = Color.Red;
 
@@ -458,19 +458,19 @@ namespace FunEngGames
 
                 if (attempts == 4)
                 {
-                    lblFeedback.Text = "Sorry, this is not a correct answer. Try again you still have four attempts left.";
+                    lblFeedback.Text = "Sorry, your answer was incorrect. Try again you still have four attempts left.";
                 }
                 else if (attempts == 3)
                 {
-                    lblFeedback.Text = "Sorry, this is not a correct answer. Try again you still have three attempts left.";
+                    lblFeedback.Text = "Sorry, your answer was incorrect. Try again you still have three attempts left.";
                 }
                 else if (attempts == 2)
                 {
-                    lblFeedback.Text = "Sorry, this is not a correct answer. Try again you still have two attempts left.";
+                    lblFeedback.Text = "Sorry, your answer was incorrect. Try again you still have two attempts left.";
                 }
                 else if (attempts == 1)
                 {
-                    lblFeedback.Text = "Sorry, this is not a correct answer. Try again you still have one attempt left.";
+                    lblFeedback.Text = "Sorry, your answer was incorrect. Try again you still have one attempt left.";
                 }
 
 
@@ -480,6 +480,7 @@ namespace FunEngGames
 
                 picFeedback.BackgroundImage = Properties.Resources.cross;
                 btnCheckAnswer.Text = "Try Again";
+                btnCheckAnswer.Focus();
             }
         }
 

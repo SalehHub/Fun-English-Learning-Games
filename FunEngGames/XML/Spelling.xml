@@ -372,10 +372,6 @@
 	<spelling>
 		<answer>Tree</answer>
 	</spelling>
-			
-	<spelling>
-		<answer>Sky</answer>
-	</spelling>
 		
 	<spelling>
 		<answer>River</answer>
@@ -427,10 +423,6 @@
 	
 	<spelling>
 		<answer>Cave</answer>
-	</spelling>
-	
-	<spelling>
-		<answer>Rain</answer>
 	</spelling>
 	
 	<spelling>
@@ -524,10 +516,6 @@
 	<spelling>
 		<answer>Yellow</answer>
 	</spelling>
-
-	<spelling>
-		<answer>Pink</answer>
-	</spelling>
 	
 </colors>		
 		
@@ -579,10 +567,6 @@
 	<spelling>
 		<answer>Mechanic</answer>
 	</spelling>
-		
-	<spelling>
-		<answer>Nurse</answer>
-	</spelling>
 	
 </professions>		
 
@@ -619,10 +603,6 @@
 		
 	<spelling>
 		<answer>Boxing</answer>
-	</spelling>
-		
-	<spelling>
-		<answer>Badminton</answer>
 	</spelling>
 		
 	<spelling>

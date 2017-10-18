@@ -133,10 +133,10 @@
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(982, 648);
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(1015, 658);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(180, 57);
+            this.button1.Size = new System.Drawing.Size(147, 45);
             this.button1.TabIndex = 7;
             this.button1.Text = "Close";
             this.button1.UseVisualStyleBackColor = true;
@@ -184,7 +184,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 682);
+            this.label1.Location = new System.Drawing.Point(3, 673);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 20);
             this.label1.TabIndex = 12;
@@ -198,7 +198,7 @@
             this.lblSource.Font = new System.Drawing.Font("Trebuchet MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSource.LinkArea = new System.Windows.Forms.LinkArea(0, 100);
             this.lblSource.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.lblSource.Location = new System.Drawing.Point(66, 682);
+            this.lblSource.Location = new System.Drawing.Point(66, 676);
             this.lblSource.Name = "lblSource";
             this.lblSource.Size = new System.Drawing.Size(373, 23);
             this.lblSource.TabIndex = 13;

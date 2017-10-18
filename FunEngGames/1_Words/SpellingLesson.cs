@@ -234,6 +234,11 @@ namespace FunEngGames
 
                 page++;
                 lastPage = nodeList.Count / 6;
+
+
+                lblWordsCount.Text = nodeList.Count+" words";
+
+
                 if (lastPage == 0) { lastPage = 1; }
                 lblPages.Text = "Page " + page + " out of " + lastPage;
 
@@ -267,11 +272,8 @@ namespace FunEngGames
             if (RB.Checked == true)
             {
                 loadCategory(RB.Text.ToLower().Trim().Replace(" ", ""));
-
                 //CommonFunctions.Pronounce(RB.Text.ToLower().Trim().Replace(" ","_"));
-
             }
         }
-
     }
 }
