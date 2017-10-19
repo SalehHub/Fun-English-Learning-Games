@@ -43,8 +43,8 @@ namespace FunEngGames
 
 
         //Set game variables
-        public int Questions = 3;
-        public int attempt = 3;
+        public int Questions = 5;
+        public int attempt = 5;
         //public int hints = 3;
         public int points = 0;
 
@@ -52,6 +52,8 @@ namespace FunEngGames
         public bool fq = false;
         public bool sq = false;
         public bool tq = false;
+        public bool foq = false;
+        public bool fiq = false;
 
         //Hints content setup
         public string fHint = "";
@@ -95,8 +97,8 @@ namespace FunEngGames
 
                 answers.Add(ans);
                 lblAns1.Text = ans;
-                label1.Text = def1;
-                label4.Text = def2;
+                lblDef1_1.Text = def1;
+                lblDef1_2.Text = def2;
 
 
 
@@ -112,8 +114,8 @@ namespace FunEngGames
                 answers.Add(ans);
 
                 lblAns2.Text = ans;
-                label2.Text = def1;
-                label5.Text = def2;
+                lblDef2_1.Text = def1;
+                lblDef2_2.Text = def2;
 
 
 
@@ -127,10 +129,43 @@ namespace FunEngGames
                 answers.Add(ans);
 
                 lblAns3.Text = ans;
-                label3.Text = def1;
-                label6.Text = def2;
+                lblDef3_1.Text = def1;
+                lblDef3_2.Text = def2;
 
-                Shuffle(answers);
+
+
+
+
+                NewNumber(nodeList.Count);
+                random = randomList.Last();
+
+                def1 = cf.UppercaseFirst(nodeList[random].SelectSingleNode("def1").InnerText.Trim());
+                def2 = cf.UppercaseFirst(nodeList[random].SelectSingleNode("def2").InnerText.Trim());
+                ans = nodeList[random].SelectSingleNode("answer").InnerText.Trim();
+
+                answers.Add(ans);
+
+                lblAns4.Text = ans;
+                lblDef4_1.Text = def1;
+                lblDef4_2.Text = def2;
+
+
+
+                NewNumber(nodeList.Count);
+                random = randomList.Last();
+
+                def1 = cf.UppercaseFirst(nodeList[random].SelectSingleNode("def1").InnerText.Trim());
+                def2 = cf.UppercaseFirst(nodeList[random].SelectSingleNode("def2").InnerText.Trim());
+                ans = nodeList[random].SelectSingleNode("answer").InnerText.Trim();
+
+                answers.Add(ans);
+
+                lblAns5.Text = ans;
+                lblDef5_1.Text = def1;
+                lblDef5_2.Text = def2;
+
+
+
                 Shuffle(answers);
                 Shuffle(answers);
                 comboBox1.Items.AddRange(answers.ToArray());
@@ -138,6 +173,8 @@ namespace FunEngGames
                 comboBox2.Items.AddRange(answers.ToArray());
                 Shuffle(answers);
                 comboBox3.Items.AddRange(answers.ToArray());
+                comboBox4.Items.AddRange(answers.ToArray());
+                comboBox5.Items.AddRange(answers.ToArray());
 
             }
             catch (Exception ex)
@@ -172,14 +209,16 @@ namespace FunEngGames
             // Load the image asynchronously.
             pictureBox5.LoadAsync(@"https://media.giphy.com/media/Bn6djQ6MgEWZi/giphy.gif");
 
-            Questions = 3;
-            attempt = 3;
+            Questions = 5;
+            attempt = 5;
             //hints = 3;
             points = 0;
 
             fq = false;
             sq = false;
             tq = false;
+            foq = false;
+            fiq = false;
 
             fHint = "";
             sHint = "";
@@ -200,9 +239,19 @@ namespace FunEngGames
             comboBox3.Items.Clear();
             comboBox3.Text = "";
 
+            comboBox4.Enabled = true;
+            comboBox4.Items.Clear();
+            comboBox4.Text = "";
+
+            comboBox5.Enabled = true;
+            comboBox5.Items.Clear();
+            comboBox5.Text = "";
+
             picAns1.BackgroundImage = null;
             picAns2.BackgroundImage = null;
             picAns3.BackgroundImage = null;
+            picAns4.BackgroundImage = null;
+            picAns5.BackgroundImage = null;
 
             //randomList.Clear();
             answers.Clear();
@@ -276,18 +325,13 @@ namespace FunEngGames
         {
             hideFeedBack();
 
-
-
-            if (comboBox1.Text.Trim() == "" || comboBox2.Text.Trim() == "" || comboBox3.Text.Trim() == "")
+            if (comboBox1.Text.Trim() == "" || comboBox2.Text.Trim() == "" || comboBox3.Text.Trim() == "" || comboBox4.Text.Trim() == "" || comboBox5.Text.Trim() == "")
             {
-                showFeedBack("Please answer all the three questions first", Color.Red);
-
+                showFeedBack("Please answer all the five questions first.", Color.Red);
             }
             else if (btnCheckYourAnswer.Text == "Restart the level")
             {
-
                 homonyms_Load(sender, e);
-
             }
             else if (btnCheckYourAnswer.Text == "View your reward")
             {
@@ -299,8 +343,6 @@ namespace FunEngGames
             }
             else
             {
-
-
                 attempt--;
                 lblAttempts.Text = attempt.ToString();
 
@@ -344,7 +386,7 @@ namespace FunEngGames
                 {
                     picAns3.BackgroundImage = Properties.Resources.check;
                     points++;
-                   // btnHint3.Enabled = false;
+                    // btnHint3.Enabled = false;
                     comboBox3.Enabled = false;
                     Questions--;
                     tq = true;
@@ -354,21 +396,45 @@ namespace FunEngGames
                     picAns3.BackgroundImage = Properties.Resources.cross;
                 }
 
-                if (Questions == 0)
+
+                if (foq == false && comboBox4.Text.Trim().ToLower().Contains(lblAns4.Text.Trim().ToLower()))
                 {
-                    showFeedBack("Good job, keep up the good work in the next levels", Color.Green);
-
-                    lblPoints.Text = (attempt+1 + points).ToString();
-
-                    SavePoints();
-                    btnCheckYourAnswer.Text = "View your reward";
-                    unlockPhrases();
+                    picAns4.BackgroundImage = Properties.Resources.check;
+                    points++;
+                    // btnHint3.Enabled = false;
+                    comboBox4.Enabled = false;
+                    Questions--;
+                    foq = true;
+                }
+                else if (foq == false && !comboBox4.Text.Trim().ToLower().Contains(lblAns4.Text.Trim().ToLower()))
+                {
+                    picAns4.BackgroundImage = Properties.Resources.cross;
                 }
 
-                //solved 2 questions
-                if (Questions >= 1 && attempt == 0)
+
+
+
+
+                if (fiq == false && comboBox5.Text.Trim().ToLower().Contains(lblAns5.Text.Trim().ToLower()))
                 {
-                    showFeedBack("Good job, keep up the good work in the next levels", Color.Green);
+                    picAns5.BackgroundImage = Properties.Resources.check;
+                    points++;
+                    // btnHint3.Enabled = false;
+                    comboBox5.Enabled = false;
+                    Questions--;
+                    fiq = true;
+                }
+                else if (fiq == false && !comboBox5.Text.Trim().ToLower().Contains(lblAns5.Text.Trim().ToLower()))
+                {
+                    picAns5.BackgroundImage = Properties.Resources.cross;
+                }
+
+
+
+                //solved 3 questions or all questions and no more attempts
+                if ((Questions <= 2 && attempt == 0) || (Questions == 0))
+                {
+                    showFeedBack("Good job, keep up the good work in the next levels.", Color.Green);
 
                     lblPoints.Text = (attempt + 1 + points).ToString();
 
@@ -382,7 +448,16 @@ namespace FunEngGames
 
                 if (attempt > 0 && Questions > 0)
                 {
-                    if (attempt == 2)
+                    if (attempt == 4)
+                    {
+
+                        showFeedBack("Try again you still have four attempts left.", Color.Red);
+                    }
+                    else if (attempt == 3)
+                    {
+                        showFeedBack("Try again you still have three attempts left.", Color.Red);
+                    }
+                    else if (attempt == 2)
                     {
                         showFeedBack("Try again you still have two attempts left", Color.Red);
                     }
@@ -394,20 +469,30 @@ namespace FunEngGames
 
 
 
-                if (attempt == 0 && Questions >= 2)
+                //no more attempts and we still have 3 or more incorrect questions
+                if (attempt == 0 && Questions >= 3)
                 {
                     lblHint.Visible = false;
-
-
-                    showFeedBack("Sorry, you need to solve at least two questions to pass this level", Color.Red);
+                    
+                    showFeedBack("Sorry, you need to solve at least three questions to pass this level", Color.Red);
 
                     btnCheckYourAnswer.Text = "Restart the level";
                 }
 
 
+
+                //no more attempts show the correct answers
                 if (attempt == 0 && Questions > 0)
                 {
                     lblCorrectAns.Text = "";
+
+
+                    comboBox1.Enabled = false;
+                    comboBox2.Enabled = false;
+                    comboBox3.Enabled = false;
+                    comboBox4.Enabled = false;
+                    comboBox5.Enabled = false;
+
 
                     if (fq == false)
                     {
@@ -423,6 +508,16 @@ namespace FunEngGames
                     {
                         lblCorrectAns.Visible = true;
                         lblCorrectAns.Text = lblCorrectAns.Text + "\nThe correct answer for the third question is " + lblAns3.Text;
+                    }
+                    if (foq == false)
+                    {
+                        lblCorrectAns.Visible = true;
+                        lblCorrectAns.Text = lblCorrectAns.Text + "\nThe correct answer for the fourth question is " + lblAns4.Text;
+                    }
+                    if (fiq == false)
+                    {
+                        lblCorrectAns.Visible = true;
+                        lblCorrectAns.Text = lblCorrectAns.Text + "\nThe correct answer for the fifth question is " + lblAns5.Text;
                     }
                 }
             }
