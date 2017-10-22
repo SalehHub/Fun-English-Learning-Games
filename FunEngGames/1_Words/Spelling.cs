@@ -260,6 +260,25 @@ namespace FunEngGames
 
             btnCheckAnswer.Text = "Check your answer";
             label5.Text = "Question " + question + " out of 5";
+
+
+            txtAnswer.Enabled = true;
+            txtAnswer.Text = "Type your answer here...";
+
+            lblCorrectAns.Visible = false;
+
+            lblFirstHint.Visible = false;
+            lblSecondHint.Visible = false;
+
+            btnFirstHint.Visible = true;
+            btnFirstHint.Enabled = true;
+            btnSecondHint.Visible = true;
+            btnSecondHint.Enabled = false;
+            picLock.Visible = true;
+
+            txtAnswer.Focus();
+
+
         }
 
 
@@ -427,8 +446,18 @@ namespace FunEngGames
                 btnCheckAnswer.Text = "Next Question";
             }
             //last attepmt and last question, the correct answers is less than 3
-            else if (attempts == 0 && question == 5 && CorrectAnswers < 3)    
+            else if (attempts == 0 && question == 5 && CorrectAnswers < 3)
             {
+                question++;
+                lblCorrectAns.Visible = true;
+                lblCorrectAns.Text = "The correct answer is " + lblAnswer.Text;
+                txtAnswer.Enabled = false;
+
+                btnFirstHint.Visible = false;
+                picLock.Visible = false;
+                btnSecondHint.Visible = false;
+
+
                 lblFeedback.Text = "You need to answer at least three questions to pass this level."; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Red;
                 btnCheckAnswer.Text = "Start this level again";
             }
