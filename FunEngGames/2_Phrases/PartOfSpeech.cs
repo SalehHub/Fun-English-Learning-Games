@@ -50,6 +50,8 @@ namespace FunEngGames
         {
 
             attempts = 3;
+            picFeedback.Visible = false;
+            lblNoOfQuestion.Text = "Question 1 of 3";
             question = 1;
             lblAttempts.Text = attempts.ToString();
             points = 0;
@@ -150,6 +152,7 @@ namespace FunEngGames
 
             {
                 attempts = 3;
+                lblAttempts.Text = attempts.ToString();
                 lblCorrectAns.Visible = false;
                 // question++;
                 picFeedback.Visible = false;
@@ -282,7 +285,7 @@ namespace FunEngGames
                 lblFeedback.ForeColor = Color.Red;
                 lblNoOfQuestion.Text = "Question " + question.ToString() + " of 3";
 
-                attempts = 3;
+                //attempts = 3;
                 lblAttempts.Text = attempts.ToString();
                 lblFeedback.Visible = false;
                 btnCheckAnswer.Text = "Next Question";
