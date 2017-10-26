@@ -48,6 +48,17 @@ namespace FunEngGames
         }
         private void POS_Load(object sender, EventArgs e)
         {
+
+            attempts = 3;
+            picFeedback.Visible = false;
+            lblNoOfQuestion.Text = "Question 1 of 3";
+            question = 1;
+            lblAttempts.Text = attempts.ToString();
+            points = 0;
+            lblPoints.Text = points.ToString();
+            picFeedback.Image = null;
+            btnCheckAnswer.Text = "Check your answer";
+
             // Ensure WaitOnLoad is false.
             pictureBox5.WaitOnLoad = false;
 
@@ -82,7 +93,7 @@ namespace FunEngGames
                 answers.Add(ans2);
                 answers.Add(ans3);
 
-              
+
                 Shuffle(answers);
                 sentenceLable.Text = sentence;
                 wordLabel.Text = word;
@@ -140,8 +151,10 @@ namespace FunEngGames
             else if (btnCheckAnswer.Text == "Next Question")
 
             {
+                attempts = 3;
+                lblAttempts.Text = attempts.ToString();
                 lblCorrectAns.Visible = false;
-               // question++;
+                // question++;
                 picFeedback.Visible = false;
                 //lblFeedback.Visible = false;
 
@@ -155,6 +168,11 @@ namespace FunEngGames
             else if (btnCheckAnswer.Text == "Go to the next level >>")
             {
                 GoToNextLevel();
+            }
+            else if (btnCheckAnswer.Text == "Start this level again")
+            {
+
+                POS_Load(sender, e);
             }
             else
             {
@@ -267,13 +285,15 @@ namespace FunEngGames
                 lblFeedback.ForeColor = Color.Red;
                 lblNoOfQuestion.Text = "Question " + question.ToString() + " of 3";
 
-                attempts = 3;
+                //attempts = 3;
                 lblAttempts.Text = attempts.ToString();
                 lblFeedback.Visible = false;
                 btnCheckAnswer.Text = "Next Question";
             }
             else if (attempts == 0 && question == 3)    //last attepmt and last question
             {
+                attempts = 3;
+                //question = 3;
                 lblFeedback.Text = "Sorry this is incorrect answer try again from begining";
                 lblFeedback.Visible = true;
                 btnCheckAnswer.Text = "Start this level again";
@@ -293,17 +313,17 @@ namespace FunEngGames
         public void CorrectAnswer()
         {
             question++;
-           
+
 
             picFeedback.BackgroundImage = Properties.Resources.check;
 
             lblFeedback.Text = "Good job! Keep up the good work"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Green;
             btnCheckAnswer.Text = "Next Question";
 
-           points +=attempts+2;
+            points += attempts + 2;
             /*calculate points*/
             lblPoints.Text = points.ToString();//(int.Parse(lblPoints.Text) + 3).ToString();
-           // SavePoints();
+                                               // SavePoints();
 
 
             if (question == 4)
