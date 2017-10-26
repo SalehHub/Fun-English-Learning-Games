@@ -242,7 +242,6 @@ namespace FunEngGames
 
 
 
-
             //randomList.Clear();
 
             CorrectAnswers = 0;

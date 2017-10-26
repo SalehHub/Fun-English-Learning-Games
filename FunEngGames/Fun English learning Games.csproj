@@ -53,14 +53,6 @@
     <StartupObject>FunEngGames.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HtmlAgilityPack, Version=1.6.0.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
-      <HintPath>..\packages\HtmlAgilityPack.1.6.0\lib\Net45\HtmlAgilityPack.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="NAudio, Version=1.8.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NAudio.1.8.3\lib\net35\NAudio.dll</HintPath>
       <Private>True</Private>
