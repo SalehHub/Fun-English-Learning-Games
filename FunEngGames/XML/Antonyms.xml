@@ -30,13 +30,15 @@
 	
 	
 	<antonyms>
-		<word>absent </word>
-		<antonym>present</antonym><hint></hint>
+		<word>absent</word>
+		<antonym>present</antonym>
+		<hint>Away</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>accept </word>
-		<antonym>decline</antonym><hint></hint>
+		<antonym>decline</antonym>
+		<hint>Reject</hint>
 	</antonyms>	
 		
 	<antonyms>

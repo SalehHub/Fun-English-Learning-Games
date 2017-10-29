@@ -120,7 +120,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
             this.tableLayoutPanel2.Controls.Add(this.picAns5, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.picAns4, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.btnHint3, 4, 2);
@@ -450,6 +450,7 @@
             this.lblAns1.Size = new System.Drawing.Size(46, 17);
             this.lblAns1.TabIndex = 23;
             this.lblAns1.Text = "label3";
+            this.lblAns1.Visible = false;
             // 
             // lblAns2
             // 
@@ -459,6 +460,7 @@
             this.lblAns2.Size = new System.Drawing.Size(46, 17);
             this.lblAns2.TabIndex = 24;
             this.lblAns2.Text = "label3";
+            this.lblAns2.Visible = false;
             // 
             // lblAns3
             // 
@@ -468,6 +470,7 @@
             this.lblAns3.Size = new System.Drawing.Size(46, 17);
             this.lblAns3.TabIndex = 25;
             this.lblAns3.Text = "label3";
+            this.lblAns3.Visible = false;
             // 
             // lblPoints
             // 
@@ -613,6 +616,7 @@
             this.lblAns4.Size = new System.Drawing.Size(46, 17);
             this.lblAns4.TabIndex = 38;
             this.lblAns4.Text = "label3";
+            this.lblAns4.Visible = false;
             // 
             // lblAns5
             // 
@@ -622,6 +626,7 @@
             this.lblAns5.Size = new System.Drawing.Size(46, 17);
             this.lblAns5.TabIndex = 39;
             this.lblAns5.Text = "label3";
+            this.lblAns5.Visible = false;
             // 
             // label1
             // 

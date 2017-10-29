@@ -216,7 +216,7 @@ namespace FunEngGames
 
                 word = nodeList[random].SelectSingleNode("word").InnerText.Trim();
                 synonym = nodeList[random].SelectSingleNode("synonym").InnerText.Trim();
-                tHint = nodeList[random].SelectSingleNode("hint").InnerText.Trim();
+                foHint = nodeList[random].SelectSingleNode("hint").InnerText.Trim();
 
                 synonyms.Add(synonym.ToLower());
                 lblW4.Text = "" + word.ToLower();
@@ -226,7 +226,7 @@ namespace FunEngGames
 
                 word = nodeList[random].SelectSingleNode("word").InnerText.Trim();
                 synonym = nodeList[random].SelectSingleNode("synonym").InnerText.Trim();
-                tHint = nodeList[random].SelectSingleNode("hint").InnerText.Trim();
+                fiHint = nodeList[random].SelectSingleNode("hint").InnerText.Trim();
 
                 synonyms.Add(synonym.ToLower());
                 lblW5.Text = "" + word.ToLower();
@@ -528,7 +528,7 @@ namespace FunEngGames
         private void btnHint1_Click(object sender, EventArgs e)
         {
             lblHint.Visible = true;
-            lblHint.Text = cf.UppercaseFirst(fHint) + " is another synonym for the word you're looking for!";
+            lblHint.Text = "\"" + cf.UppercaseFirst(fHint) + "\" is another synonym for the word you're looking for!";
             btnHint1.Enabled = false;
             hints--;
         }
@@ -537,7 +537,7 @@ namespace FunEngGames
         private void btnHint2_Click(object sender, EventArgs e)
         {
             lblHint.Visible = true;
-            lblHint.Text = cf.UppercaseFirst(sHint) + " is another synonym for the word you're looking for!";
+            lblHint.Text = "\"" + cf.UppercaseFirst(sHint) + "\" is another synonym for the word you're looking for!";
             btnHint2.Enabled = false;
             hints--;
         }
@@ -546,7 +546,7 @@ namespace FunEngGames
         private void btnHint3_Click(object sender, EventArgs e)
         {
             lblHint.Visible = true;
-            lblHint.Text = cf.UppercaseFirst(tHint) + " is another synonym for the word you're looking for!";
+            lblHint.Text = "\"" + cf.UppercaseFirst(tHint) + "\" is another synonym for the word you're looking for!";
             btnHint3.Enabled = false;
             hints--;
         }
@@ -555,7 +555,7 @@ namespace FunEngGames
         private void btnHint4_Click(object sender, EventArgs e)
         {
             lblHint.Visible = true;
-            lblHint.Text = cf.UppercaseFirst(tHint) + " is another synonym for the word you're looking for!";
+            lblHint.Text ="\""+ cf.UppercaseFirst(foHint) + "\" is another synonym for the word you're looking for!";
             btnHint4.Enabled = false;
             hints--;
         }
@@ -564,7 +564,7 @@ namespace FunEngGames
         private void btnHint5_Click(object sender, EventArgs e)
         {
             lblHint.Visible = true;
-            lblHint.Text = cf.UppercaseFirst(tHint) + " is another synonym for the word you're looking for!";
+            lblHint.Text = "\"" + cf.UppercaseFirst(fiHint) + "\" is another synonym for the word you're looking for!";
             btnHint5.Enabled = false;
             hints--;
         }

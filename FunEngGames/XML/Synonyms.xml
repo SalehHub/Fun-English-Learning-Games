@@ -39,7 +39,7 @@
     <word>Wrong</word>
     <synonym>Incorrect</synonym>
 
-    <hint></hint>
+    <hint>Invalid</hint>
 
   </synonyms>
 
@@ -47,7 +47,7 @@
     <word>Informal</word>
     <synonym>Casual</synonym>
 
-    <hint></hint>
+    <hint>Unofficial</hint>
 
   </synonyms>
 
@@ -55,7 +55,7 @@
   <synonyms>
     <word>Necessary</word>
     <synonym>Required</synonym>
-    <hint></hint>
+    <hint>Obligatory</hint>
   </synonyms>
 
 
@@ -63,7 +63,7 @@
     <word>Worth</word>
     <synonym>Value</synonym>
 
-    <hint></hint>
+    <hint>Cost</hint>
 
   </synonyms>
 
@@ -72,7 +72,7 @@
     <word>Help </word>
     <synonym>assist</synonym>
 
-    <hint></hint>
+    <hint>Aid</hint>
 
   </synonyms>
 
@@ -81,158 +81,130 @@
     <word>Mark </word>
     <synonym>tag</synonym>
 
-    <hint></hint>
+    <hint>Dent</hint>
 
   </synonyms>
 
 
   <synonyms>
-    <word>Plan </word>
+    <word>Plan</word>
     <synonym>scheme</synonym>
+	<hint>Idea</hint>
   </synonyms>
 
 
   <synonyms>
     <word>Show</word>
     <synonym>display</synonym>
-    <hint></hint>
-
+    <hint>Appear</hint>
   </synonyms>
 
 
   <synonyms>
     <word>Destroy </word>
     <synonym>ruin</synonym>
-
-    <hint></hint>
-
+    <hint>Crash</hint>
   </synonyms>
 
 
   <synonyms>
     <word>Break </word>
     <synonym>smash</synonym>
-
-    <hint></hint>
-
+    <hint>Shatter</hint>
   </synonyms>
 
 
   <synonyms>
     <word>Keep</word>
     <synonym>hold</synonym>
-    <hint></hint>
+    <hint>Save</hint>
   </synonyms>
 
 
   <synonyms>
     <word>Get </word>
     <synonym>obtain</synonym>
-
-    <hint></hint>
-
+    <hint>Acquire</hint>
   </synonyms>
 
 
   <synonyms>
-    <word>Hurry </word>
+    <word>Hurry</word>
     <synonym>rush</synonym>
-
-    <hint></hint>
-
+    <hint>Run</hint>
   </synonyms>
 
 
   <synonyms>
     <word>Many</word>
     <synonym>Few</synonym>
-
-    <hint></hint>
-
+    <hint>Several</hint>
   </synonyms>
 
   <synonyms>
     <word>Afraid</word>
     <synonym>scared</synonym>
-
-    <hint></hint>
-
+    <hint>Intimidated</hint>
   </synonyms>
 
   <synonyms>
     <word>Big</word>
     <synonym>large</synonym>
-
-    <hint></hint>
-
+    <hint>Huge</hint>
   </synonyms>
 
   <synonyms>
     <word>Garbage</word>
     <synonym>trash</synonym>
-
-    <hint></hint>
-
+    <hint>Filth</hint>
   </synonyms>
 
   <synonyms>
     <word>Happy</word>
     <synonym>joyful</synonym>
-
-    <hint></hint>
-
+    <hint>Cheerful</hint>
   </synonyms>
 
   <synonyms>
     <word>Hide</word>
     <synonym>cover</synonym>
-
-    <hint></hint>
-
+    <hint>Conceal</hint>
   </synonyms>
 
   <synonyms>
     <word>Idea</word>
     <synonym>thought</synonym>
-    <hint></hint>
+    <hint>Concept</hint>
   </synonyms>
 
   <synonyms>
     <word>Listen</word>
     <synonym>hear</synonym>
-    <hint></hint>
+    <hint>Pay attention</hint>
   </synonyms>
 
   <synonyms>
     <word>Little</word>
     <synonym>small</synonym>
-
-    <hint></hint>
-
+    <hint>Mini</hint>
   </synonyms>
 
   <synonyms>
     <word>Look</word>
     <synonym>see</synonym>
-
-    <hint></hint>
-
+    <hint>Peek</hint>
   </synonyms>
 
   <synonyms>
     <word>Mad</word>
     <synonym>angry</synonym>
-
-    <hint></hint>
-
+    <hint>Insane</hint>
   </synonyms>
 
   <synonyms>
     <word>Rest</word>
     <synonym>relax</synonym>
-
-    <hint></hint>
-
+    <hint>Snooze</hint>
   </synonyms>
 
   <synonyms>
@@ -246,127 +218,90 @@
   <synonyms>
     <word>Strange</word>
     <synonym>odd</synonym>
-
-    <hint></hint>
-
+    <hint>Suspicious</hint>
   </synonyms>
 
   <synonyms>
     <word>True</word>
     <synonym>correct</synonym>
-
-    <hint></hint>
-
+    <hint>Accurate</hint>
   </synonyms>
 
   <synonyms>
     <word>Under</word>
     <synonym>below</synonym>
-
-    <hint></hint>
-
+    <hint>Beneath</hint>
   </synonyms>
 
   <synonyms>
     <word>Yell</word>
     <synonym>shout</synonym>
-
-    <hint></hint>
-
+    <hint>Scream</hint>
   </synonyms>
 
   <synonyms>
     <word>Jog</word>
     <synonym>run</synonym>
-
-    <hint></hint>
-
+    <hint>Trot</hint>
   </synonyms>
 
   <synonyms>
     <word>Quiet</word>
     <synonym>calm</synonym>
-
-    <hint></hint>
-
+    <hint>Noiseless</hint>
   </synonyms>
 
   <synonyms>
     <word>abandon</word>
     <synonym>discard</synonym>
-
-    <hint></hint>
-
+    <hint>Disown</hint>
   </synonyms>
 
   <synonyms>
     <word>avoid</word>
     <synonym>ignore</synonym>
-
-    <hint></hint>
-
+    <hint>Stay away from</hint>
   </synonyms>
 
 
   <synonyms>
     <word>blend</word>
     <synonym>combine</synonym>
-
-    <hint></hint>
-
+    <hint>Unify</hint>
   </synonyms>
 
 
   <synonyms>
     <word>brilliant</word>
     <synonym>clever</synonym>
-
-    <hint></hint>
-
+    <hint>Intelligent</hint>
   </synonyms>
 
 
   <synonyms>
     <word>craving</word>
     <synonym>desire</synonym>
-
-    <hint></hint>
-
+    <hint>Thirst</hint>
   </synonyms>
 
 
   <synonyms>
     <word>dare</word>
     <synonym>challenge</synonym>
-
-    <hint></hint>
-
+    <hint>Have the nerve</hint>
   </synonyms>
 
 
   <synonyms>
     <word>estimate</word>
-    <synonym>predict</synonym>
-  
-    <hint></hint>
-	
+    <synonym>predict</synonym> 
+   <hint>Guess</hint>
   </synonyms>
 
   <synonyms>
     <word>feud</word>
     <synonym>argument</synonym>
-
-    <hint></hint>
-
-  </synonyms>
-
-
-  <synonyms>
-    <word>filth</word>
-    <synonym>dirt</synonym>
-
-    <hint></hint>
-
+    <hint>Conflict</hint>
   </synonyms>
 
 </Questions>
