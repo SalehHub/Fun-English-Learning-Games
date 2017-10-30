@@ -43,7 +43,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(49, 572);
+            this.label2.Location = new System.Drawing.Point(49, 590);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(894, 23);
             this.label2.TabIndex = 60;
@@ -58,9 +58,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label1.Location = new System.Drawing.Point(46, 110);
+            this.label1.Location = new System.Drawing.Point(46, 93);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(901, 68);
+            this.label1.Size = new System.Drawing.Size(901, 50);
             this.label1.TabIndex = 59;
             this.label1.Text = " Le and Megan are friends now!";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -71,7 +71,7 @@
             this.button3.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.button3.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.OrangeRed;
-            this.button3.Location = new System.Drawing.Point(343, 610);
+            this.button3.Location = new System.Drawing.Point(343, 618);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(307, 68);
             this.button3.TabIndex = 58;
@@ -85,10 +85,10 @@
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.BackgroundImage = global::FunEngGames.Properties.Resources.sl1;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox4.Image = global::FunEngGames.Properties.Resources._1;
-            this.pictureBox4.Location = new System.Drawing.Point(226, 194);
+            this.pictureBox4.Image = global::FunEngGames.Properties.Resources.sl_friends;
+            this.pictureBox4.Location = new System.Drawing.Point(60, 146);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(540, 343);
+            this.pictureBox4.Size = new System.Drawing.Size(873, 437);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 57;
             this.pictureBox4.TabStop = false;

@@ -313,4 +313,19 @@
   <data name="resultTitle1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\resultTitle1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="sl_friends" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sl_friends.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sl_learn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sl_learn1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sl_learn2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sl_learn2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sl_sad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sl_sad.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sl_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sl_start.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

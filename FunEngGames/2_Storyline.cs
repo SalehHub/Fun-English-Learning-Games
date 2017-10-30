@@ -15,10 +15,10 @@ namespace FunEngGames
         {
             InitializeComponent();
 
-            _1 = Properties.Resources.sl1;
-            _2 = Properties.Resources.sl2;
-            _3 = Properties.Resources.sl3;
-            _4 = Properties.Resources.sl4;
+            _1 = Properties.Resources.sl_start;
+            _2 = Properties.Resources.sl_sad;
+            _3 = Properties.Resources.sl_learn1;
+            _4 = Properties.Resources.sl_learn2;
 
         }
 
@@ -58,7 +58,10 @@ namespace FunEngGames
 
         private void _storyline_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //Application.Exit();
+           // Application.Exit();
+           Home home = new Home();
+            home.Show();
+            this.Close;
         }
     }
 }

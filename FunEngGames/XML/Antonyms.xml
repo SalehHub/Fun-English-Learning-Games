@@ -5,27 +5,32 @@
 
 	<antonyms>
 		<word>Fiction</word>
-		<antonym>Fact</antonym><hint></hint>
+		<antonym>Fact</antonym>
+		<hint></hint>
 	</antonyms>	
 	
 	<antonyms>
 		<word>Throw</word>
-		<antonym>Catch</antonym><hint></hint>
+		<antonym>Catch</antonym>
+		<hint></hint>
 	</antonyms>	
 	
 	<antonyms>
 		<word>Love</word>
-		<antonym>Hate</antonym><hint></hint>
+		<antonym>Hate</antonym>
+		<hint></hint>
 	</antonyms>	
 	
 	<antonyms>
 		<word>Smooth</word>
-		<antonym>Rough</antonym><hint></hint>
+		<antonym>Rough</antonym>
+		<hint></hint>
 	</antonyms>	
 	
 	<antonyms>
 		<word>Fast</word>
-		<antonym>Slow</antonym><hint></hint>
+		<antonym>Slow</antonym>
+		<hint></hint>
 	</antonyms>		
 	
 	

@@ -53,9 +53,10 @@
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.BackgroundImage = global::FunEngGames.Properties.Resources.sl1;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox4.Location = new System.Drawing.Point(243, 133);
+            this.pictureBox4.Image = global::FunEngGames.Properties.Resources.sl_start;
+            this.pictureBox4.Location = new System.Drawing.Point(66, 98);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(574, 427);
+            this.pictureBox4.Size = new System.Drawing.Size(929, 462);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 35;
             this.pictureBox4.TabStop = false;

@@ -2013,6 +2013,11 @@
     <Content Include="Images\Zucchini.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\sl_learn2.gif" />
+    <None Include="Resources\sl_learn1.gif" />
+    <None Include="Resources\sl_friends.gif" />
+    <None Include="Resources\sl_sad.gif" />
+    <None Include="Resources\sl_start.gif" />
     <Content Include="XML\Antonyms.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

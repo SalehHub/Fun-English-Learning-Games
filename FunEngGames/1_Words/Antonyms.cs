@@ -3,7 +3,7 @@
  * File Name:       Antonyms.cs
  * Coded By:        Saleh Alzahrani & Sarah Aljabri
  * Coded On:        Fall 2017
- * About this File: This file handles all of Synonym level gameplay logic
+ * About this File: This file handles Synonym level gameplay logic
  */
 
 using System;
