@@ -522,7 +522,7 @@
             this.lblat.Name = "lblat";
             this.lblat.Size = new System.Drawing.Size(175, 29);
             this.lblat.TabIndex = 42;
-            this.lblat.Text = "Attempts";
+            this.lblat.Text = "Attempts left";
             this.lblat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblAttempts

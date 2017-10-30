@@ -208,7 +208,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(175, 29);
             this.label6.TabIndex = 24;
-            this.label6.Text = "Attempts";
+            this.label6.Text = "Attempts left";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
