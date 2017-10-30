@@ -10,6 +10,7 @@ namespace FunEngGames
         private Image _2;
         private Image _3;
         private Image _4;
+        public Home home;
 
         public _storyline()
         {
@@ -31,6 +32,8 @@ namespace FunEngGames
 
             else if (pictureBox4.Image == _2)
             {
+                label1.Text = "Le decided to join Fun English Learning Games institution to learn English language";
+
                 pictureBox4.Image = _3;
             }
 
@@ -47,7 +50,7 @@ namespace FunEngGames
             {
                 mainLevels mainLevels = new mainLevels();
                 mainLevels.Show();
-                this.Close();
+                this.Hide();
             }
         }
 
@@ -59,9 +62,9 @@ namespace FunEngGames
         private void _storyline_FormClosing(object sender, FormClosingEventArgs e)
         {
            // Application.Exit();
-           Home home = new Home();
-            home.Show();
-            this.Close;
+           //Home home = new Home();
+            this.home.Show();
+            //this.Close();
         }
     }
 }

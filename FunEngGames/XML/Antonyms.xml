@@ -6,31 +6,31 @@
 	<antonyms>
 		<word>Fiction</word>
 		<antonym>Fact</antonym>
-		<hint></hint>
+		<hint>Imaginative</hint>
 	</antonyms>	
 	
 	<antonyms>
 		<word>Throw</word>
 		<antonym>Catch</antonym>
-		<hint></hint>
+		<hint>lost</hint>
 	</antonyms>	
 	
 	<antonyms>
 		<word>Love</word>
 		<antonym>Hate</antonym>
-		<hint></hint>
+		<hint>Adoration</hint>
 	</antonyms>	
 	
 	<antonyms>
 		<word>Smooth</word>
 		<antonym>Rough</antonym>
-		<hint></hint>
+		<hint>Sleek</hint>
 	</antonyms>	
 	
 	<antonyms>
 		<word>Fast</word>
 		<antonym>Slow</antonym>
-		<hint></hint>
+		<hint>Quick</hint>
 	</antonyms>		
 	
 	
@@ -43,108 +43,127 @@
 	<antonyms>
 		<word>accept </word>
 		<antonym>decline</antonym>
-		<hint>Reject</hint>
+		<hint>Take</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>admit </word>
-		<antonym>deny</antonym><hint></hint>
+		<antonym>deny</antonym>
+		<hint>Allow</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>advantage </word>
-		<antonym>disadvantage</antonym><hint></hint>
+		<antonym>disadvantage</antonym>
+		<hint>Benefits</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>agree </word>
-		<antonym>disagree</antonym><hint></hint>
+		<antonym>disagree</antonym>
+		<hint>Admit</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>alive </word>
-		<antonym>dead</antonym><hint></hint>
+		<antonym>dead</antonym>
+		<hint>Live</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>all </word>
-		<antonym>none</antonym><hint></hint>
+		<antonym>none</antonym>
+		<hint>Every</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>always </word>
-		<antonym>never</antonym><hint></hint>
+		<antonym>never</antonym>
+		<hint>Consistently</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>ancient </word>
-		<antonym>modern</antonym><hint></hint>
+		<antonym>modern</antonym>
+		<hint>Prehistoric</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>apart </word>
-		<antonym>together</antonym><hint></hint>
+		<antonym>together</antonym>
+		<hint>Away from each other</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>arrive </word>
-		<antonym>depart</antonym><hint></hint>
+		<antonym>depart</antonym>
+		<hint>Approach</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>artificial </word>
-		<antonym>natural</antonym><hint></hint>
+		<antonym>natural</antonym>
+		<hint>Synthetic</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>awake </word>
-		<antonym>asleep</antonym><hint></hint>
+		<antonym>asleep</antonym>
+		<hint>Wake up</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>backward </word>
-		<antonym>forward</antonym><hint></hint>
+		<antonym>forward</antonym>
+		<hint>Reverse</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>before </word>
-		<antonym>after</antonym><hint></hint>
+		<antonym>after</antonym>
+		<hint>Ahead of</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>below </word>
-		<antonym>above</antonym><hint></hint>
+		<antonym>above</antonym>
+		<hint>Beneath</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>bottom </word>
-		<antonym>top</antonym><hint></hint>
+		<antonym>top</antonym>
+		<hint>Lowest part</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>bitter </word>
-		<antonym>sweet</antonym><hint></hint>
+		<antonym>sweet</antonym>
+		<hint>Sour</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>borrow </word>
-		<antonym>lend</antonym><hint></hint>
+		<antonym>lend</antonym>
+		<hint>Lease</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>broad </word>
-		<antonym>narrow</antonym><hint></hint>
+		<antonym>narrow</antonym>
+		<hint>Wide</hint>
 	</antonyms>	
 	
 	<antonyms>
 		<word>Near</word>
-		<antonym>Remote</antonym><hint></hint>
-		<hint>Far is another antonym for the word you're looking for</hint>
+		<antonym>Remote</antonym>
+		<hint>away</hint>
 	</antonyms>
 
 	  <antonyms>
 		<word>Guilty</word>
-		<antonym>Innocent</antonym><hint></hint>
+		<antonym>Innocent</antonym>
+		<hint>Criminal</hint>
 	  </antonyms>
 
 	  <antonyms>

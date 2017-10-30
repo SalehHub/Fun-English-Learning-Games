@@ -41,6 +41,7 @@ namespace FunEngGames
 
             _storyline m2 = new _storyline();
             m2.Show();
+            m2.home = this;
             this.Hide();
 
             //_levelUP LevelUP = new _levelUP();
@@ -56,12 +57,16 @@ namespace FunEngGames
                 SpeechSynthesizer synthesizer = new SpeechSynthesizer();
                 synthesizer.Volume = 1;  // 0...100
                 synthesizer.Rate = -10;     // -10...10
-                synthesizer.SpeakAsync("test word");
+                synthesizer.SpeakAsync("Hello");
             }catch(Exception ex)
             {
                 //MessageBox.Show(ex.Message);
             }
         }
 
+        private void Home_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
