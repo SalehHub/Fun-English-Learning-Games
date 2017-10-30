@@ -83,7 +83,7 @@ namespace FunEngGames
                     else
                     {
                         HWR_Response.Close();
-                        throw new Exception("No connection");
+                        throw new Exception("No internet connection");
 
                         //return false;
                     }
@@ -92,7 +92,7 @@ namespace FunEngGames
             }
             catch (Exception ex)
             {
-                throw new Exception("No connection");
+                throw new Exception("No internet connection");
 
             }
         }

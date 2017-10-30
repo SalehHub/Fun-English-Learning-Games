@@ -588,7 +588,7 @@
             this.lblHint.BackColor = System.Drawing.Color.Transparent;
             this.lblHint.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHint.ForeColor = System.Drawing.Color.Maroon;
-            this.lblHint.Location = new System.Drawing.Point(255, 415);
+            this.lblHint.Location = new System.Drawing.Point(255, 412);
             this.lblHint.Name = "lblHint";
             this.lblHint.Size = new System.Drawing.Size(716, 30);
             this.lblHint.TabIndex = 36;
