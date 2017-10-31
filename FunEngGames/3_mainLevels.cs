@@ -66,9 +66,9 @@ namespace FunEngGames
             wordLevel.synonymsPoints = this.synonymsPoints;
             wordLevel.antonymsPoints =this.antonymsPoints;
             wordLevel.antonymsPoints = this.homonymsPoints;
+            wordLevel.Show();
 
             this.Hide();
-            wordLevel.Show();
 
         }
 
@@ -107,8 +107,9 @@ namespace FunEngGames
         {
             phrasesLevel phrasesLevel = new phrasesLevel();
             phrasesLevel.mainLevelsForm = this;
-            this.Hide();
             phrasesLevel.Show();
+
+            this.Hide();
         }
 
         //Start Sentences levels form
@@ -116,8 +117,9 @@ namespace FunEngGames
         {
             sentenceLevels sentenceLevels = new sentenceLevels();
             sentenceLevels.mainLevelsForm = this;
-            this.Hide();
             sentenceLevels.Show();
+       
+            this.Hide();
         }
 
         //Update points labels

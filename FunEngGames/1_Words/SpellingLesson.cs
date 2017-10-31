@@ -48,8 +48,9 @@ namespace FunEngGames
             Spelling Spelling = new Spelling();
             Spelling.wordLevelsForm = this.wordLevelsForm;
             Spelling.mainLevelsForm = this.mainLevelsForm;
-            this.Hide();
             Spelling.Show();
+
+            this.Hide();
         }
 
 

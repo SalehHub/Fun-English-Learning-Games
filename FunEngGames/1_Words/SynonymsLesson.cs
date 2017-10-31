@@ -41,8 +41,9 @@ namespace FunEngGames
             Synonyms S_A = new Synonyms();
             S_A.mainLevelsForm = this.mainLevelsForm;
             S_A.wordLevelsForm = this.wordLevelsForm;
-            this.Hide();
             S_A.Show();
+            this.Hide();
+
         }
 
         //Form closed event function: show the words level form

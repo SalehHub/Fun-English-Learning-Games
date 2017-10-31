@@ -45,8 +45,8 @@ namespace FunEngGames
             spellingLesson spellingLesson = new spellingLesson();
             spellingLesson.wordLevelsForm = this;
             spellingLesson.mainLevelsForm = this.mainLevelsForm;
-            this.Hide();
             spellingLesson.Show();
+            this.Hide();
         }
 
         //Open Synonyms lesson form
@@ -55,8 +55,9 @@ namespace FunEngGames
             SynonymsLesson SynonymsLesson = new SynonymsLesson();
             SynonymsLesson.wordLevelsForm = this;
             SynonymsLesson.mainLevelsForm = this.mainLevelsForm;
-            this.Hide();
             SynonymsLesson.Show();
+
+            this.Hide();
         }
 
         //Open Homonyms lesson form
@@ -65,8 +66,8 @@ namespace FunEngGames
             HomonymsLesson HomonymsLesson = new HomonymsLesson();
             HomonymsLesson.wordLevelsForm = this;
             HomonymsLesson.mainLevelsForm = this.mainLevelsForm;
-            this.Hide();
             HomonymsLesson.Show();
+            this.Hide();
         }
 
         //Show main levels form after closing this form
