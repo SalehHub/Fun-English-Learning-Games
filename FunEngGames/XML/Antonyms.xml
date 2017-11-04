@@ -168,12 +168,14 @@
 
 	  <antonyms>
 		<word>Negative</word>
-		<antonym>Positive</antonym><hint></hint>
+		<antonym>Positive</antonym>
+		<hint></hint>
 	  </antonyms>
 
 	  <antonyms>
 		<word>Fake</word>
-		<antonym>Real</antonym><hint></hint>
+		<antonym>Real</antonym>
+		<hint></hint>
 	  </antonyms>
   
   	

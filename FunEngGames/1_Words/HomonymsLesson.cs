@@ -42,8 +42,9 @@ namespace FunEngGames
             homonyms homonyms = new homonyms();
             homonyms.mainLevelsForm = this.mainLevelsForm;
             homonyms.wordLevelsForm = this.wordLevelsForm;
-            this.Hide();
             homonyms.Show();
+            this.Hide();
+
         }
 
         //Form closed event function: show the words level form

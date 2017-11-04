@@ -67,6 +67,7 @@ namespace FunEngGames
             HomonymsLesson.wordLevelsForm = this;
             HomonymsLesson.mainLevelsForm = this.mainLevelsForm;
             HomonymsLesson.Show();
+            
             this.Hide();
         }
 
