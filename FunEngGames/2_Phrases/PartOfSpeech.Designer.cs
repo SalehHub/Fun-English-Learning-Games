@@ -298,10 +298,10 @@
             // 
             this.btnCheckAnswer.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnCheckAnswer.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheckAnswer.Location = new System.Drawing.Point(461, 651);
+            this.btnCheckAnswer.Location = new System.Drawing.Point(443, 651);
             this.btnCheckAnswer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCheckAnswer.Name = "btnCheckAnswer";
-            this.btnCheckAnswer.Size = new System.Drawing.Size(259, 53);
+            this.btnCheckAnswer.Size = new System.Drawing.Size(294, 53);
             this.btnCheckAnswer.TabIndex = 53;
             this.btnCheckAnswer.Text = "Check your answer";
             this.btnCheckAnswer.UseVisualStyleBackColor = true;
@@ -328,7 +328,7 @@
             this.picFeedback.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.picFeedback.BackColor = System.Drawing.Color.Transparent;
             this.picFeedback.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picFeedback.Location = new System.Drawing.Point(393, 650);
+            this.picFeedback.Location = new System.Drawing.Point(377, 650);
             this.picFeedback.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picFeedback.Name = "picFeedback";
             this.picFeedback.Size = new System.Drawing.Size(63, 53);

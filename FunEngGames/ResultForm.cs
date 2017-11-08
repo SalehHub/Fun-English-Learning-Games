@@ -54,6 +54,22 @@ namespace FunEngGames
 
             //1-Phrases Points
 
+            var phrasestotal = 30;
+            var phrasesplayerTotal = this.mainLevelsForm.CF.partsOfSpeechPoints
+                + this.mainLevelsForm.CF.idiomsPoints;
+
+            pbPhrases.Maximum = phrasestotal;
+            pbPhrases.Value = phrasesplayerTotal;
+
+            //calculating player precent in words levels
+            decimal phrasesPrecent = Math.Round(((decimal)phrasesplayerTotal / (decimal)phrasestotal) * 100m, 2);
+
+            lblPrasesPrecent.Text = "You have completed " + phrasesPrecent + "%";
+
+
+            lblPhrasesResults.Text =
+                    "Parts of speech:" + this.mainLevelsForm.CF.partsOfSpeechPoints + " out of 15"
+                + "\nIdioms:   " + this.mainLevelsForm.CF.idiomsPoints + " out of 15";
             //2-Sentences Points
 
 

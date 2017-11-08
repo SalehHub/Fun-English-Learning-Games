@@ -341,6 +341,20 @@ namespace FunEngGames
 
                 btnCheckAnswer.Text = "Go to the next level >>";
             }
+
+            SavePoints();
+        }
+
+        //Save and pass points between main levels form and words levels form.
+        public void SavePoints()
+        {
+            this.mainLevelsForm.partsOfSpeechPoints = points;
+            this.phrasesLevelForm.partsOfSpeechPoints = points;
+
+            this.mainLevelsForm.lblPhrasesPoints.Text = points.ToString();
+            this.phrasesLevelForm.lblPartOfSpeechPoints.Text = points.ToString();
+
+            mainLevelsForm.CF.partsOfSpeechPoints = points;
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)

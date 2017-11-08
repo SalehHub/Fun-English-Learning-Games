@@ -66,5 +66,12 @@ namespace FunEngGames
             this.home.Show();
             //this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            mainLevels mainLevels = new mainLevels();
+            mainLevels.Show();
+            this.Hide();
+        }
     }
 }
