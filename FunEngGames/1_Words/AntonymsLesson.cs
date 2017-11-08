@@ -41,8 +41,8 @@ namespace FunEngGames
             Antonyms antonyms = new Antonyms();
             antonyms.mainLevelsForm = this.mainLevelsForm;
             antonyms.wordLevelsForm = this.wordLevelsForm;
-            this.Hide();
             antonyms.Show();
+            this.Hide();
         }
 
         //Form closed event function: show the words level form

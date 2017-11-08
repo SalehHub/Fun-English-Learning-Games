@@ -33,6 +33,7 @@ namespace FunEngGames
         //Variables wordLevelsForm and mainLevelsForm to store previous forms status        
         public wordsLevel wordLevelsForm;
         public mainLevels mainLevelsForm;
+        //public HomonymsLesson HomonymsLesson;
 
         //Random integer variable
         public Random a = new Random();
@@ -521,6 +522,11 @@ namespace FunEngGames
                     }
                 }
             }
+        }
+
+        private void homonyms_Shown(object sender, EventArgs e)
+        {
+            //HomonymsLesson.Hide();
         }
     }
 }
