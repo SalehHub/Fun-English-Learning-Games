@@ -49,6 +49,8 @@ namespace FunEngGames
         private void POS_Load(object sender, EventArgs e)
         {
 
+            radioButton1.Checked = false;
+
             attempts = 3;
             picFeedback.Visible = false;
             lblNoOfQuestion.Text = "Question 1 of 5";
@@ -161,6 +163,12 @@ namespace FunEngGames
                 GenPartsOfSpeech();
 
                 lblNoOfQuestion.Text = "Question " + question.ToString() + " of 5";
+
+                radioButton1.Checked = false;
+                radioButton2.Checked = false;
+                radioButton3.Checked = false;
+
+
                 btnCheckAnswer.Text = "Check your answer";
 
 
