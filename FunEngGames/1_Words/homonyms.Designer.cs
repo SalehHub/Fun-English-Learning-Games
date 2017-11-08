@@ -126,7 +126,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(12, 169);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(421, 73);
+            this.pictureBox1.Size = new System.Drawing.Size(474, 73);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
@@ -138,10 +138,10 @@
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox2.Image = global::FunEngGames.Properties.Resources.def2;
-            this.pictureBox2.Location = new System.Drawing.Point(850, 169);
+            this.pictureBox2.Location = new System.Drawing.Point(837, 169);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(420, 73);
+            this.pictureBox2.Size = new System.Drawing.Size(433, 73);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 19;
             this.pictureBox2.TabStop = false;
