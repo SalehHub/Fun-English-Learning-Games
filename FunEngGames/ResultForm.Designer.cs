@@ -45,6 +45,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pbSpelling = new System.Windows.Forms.ProgressBar();
             this.lblPrecent = new System.Windows.Forms.Label();
+            this.lblPrasesPrecent = new System.Windows.Forms.Label();
+            this.pbPhrases = new System.Windows.Forms.ProgressBar();
+            this.label4 = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -171,13 +175,13 @@
             // 
             this.lblPhrasesResults.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblPhrasesResults.BackColor = System.Drawing.Color.Transparent;
-            this.lblPhrasesResults.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPhrasesResults.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPhrasesResults.ForeColor = System.Drawing.Color.OrangeRed;
             this.lblPhrasesResults.Location = new System.Drawing.Point(24, 29);
             this.lblPhrasesResults.Name = "lblPhrasesResults";
             this.lblPhrasesResults.Size = new System.Drawing.Size(280, 155);
             this.lblPhrasesResults.TabIndex = 9;
-            this.lblPhrasesResults.Text = "Level:0\r\nLevel:0\r\nLevel:0\r\nLevel:0";
+            this.lblPhrasesResults.Text = "Parts of speech:30 out of 30";
             this.lblPhrasesResults.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnCheckAnswer
@@ -263,6 +267,42 @@
             this.lblPrecent.TabIndex = 35;
             this.lblPrecent.Text = "You completed";
             // 
+            // lblPrasesPrecent
+            // 
+            this.lblPrasesPrecent.AutoSize = true;
+            this.lblPrasesPrecent.BackColor = System.Drawing.Color.Transparent;
+            this.lblPrasesPrecent.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrasesPrecent.Location = new System.Drawing.Point(467, 584);
+            this.lblPrasesPrecent.Name = "lblPrasesPrecent";
+            this.lblPrasesPrecent.Size = new System.Drawing.Size(104, 17);
+            this.lblPrasesPrecent.TabIndex = 37;
+            this.lblPrasesPrecent.Text = "You completed";
+            // 
+            // pbPhrases
+            // 
+            this.pbPhrases.Location = new System.Drawing.Point(470, 604);
+            this.pbPhrases.Name = "pbPhrases";
+            this.pbPhrases.Size = new System.Drawing.Size(316, 23);
+            this.pbPhrases.TabIndex = 36;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(913, 584);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(104, 17);
+            this.label4.TabIndex = 39;
+            this.label4.Text = "You completed";
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(916, 604);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(316, 23);
+            this.progressBar1.TabIndex = 38;
+            // 
             // ResultForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -270,6 +310,10 @@
             this.BackgroundImage = global::FunEngGames.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1382, 716);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.lblPrasesPrecent);
+            this.Controls.Add(this.pbPhrases);
             this.Controls.Add(this.lblPrecent);
             this.Controls.Add(this.pbSpelling);
             this.Controls.Add(this.panel6);
@@ -318,5 +362,9 @@
         public System.Windows.Forms.Label label3;
         private System.Windows.Forms.ProgressBar pbSpelling;
         private System.Windows.Forms.Label lblPrecent;
+        private System.Windows.Forms.Label lblPrasesPrecent;
+        private System.Windows.Forms.ProgressBar pbPhrases;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }

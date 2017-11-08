@@ -13,6 +13,9 @@ namespace FunEngGames
 
         public mainLevels mainLevelsForm;
 
+        public int partsOfSpeechPoints;
+        public int idiomsPoints;
+
         private void picSpelling_MouseHover(object sender, EventArgs e)
         {
             picSpelling.BackgroundImage = Properties.Resources.posTitleHover;
@@ -70,5 +73,9 @@ namespace FunEngGames
             IdiomsLesson.Show();
         }
 
+        private void phrasesLevel_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

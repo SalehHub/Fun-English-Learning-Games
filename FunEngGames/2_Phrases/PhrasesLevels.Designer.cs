@@ -31,11 +31,11 @@
             this.picSpelling = new System.Windows.Forms.PictureBox();
             this.picIdioms = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblSpellingRes = new System.Windows.Forms.Label();
+            this.lblPartOfSpeechPoints = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblIdiomsPoints = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picSpelling)).BeginInit();
@@ -92,18 +92,18 @@
             this.label2.Text = "Part of speech Points";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblSpellingRes
+            // lblPartOfSpeechPoints
             // 
-            this.lblSpellingRes.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblSpellingRes.BackColor = System.Drawing.Color.Transparent;
-            this.lblSpellingRes.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSpellingRes.ForeColor = System.Drawing.Color.Black;
-            this.lblSpellingRes.Location = new System.Drawing.Point(37, 8);
-            this.lblSpellingRes.Name = "lblSpellingRes";
-            this.lblSpellingRes.Size = new System.Drawing.Size(171, 37);
-            this.lblSpellingRes.TabIndex = 9;
-            this.lblSpellingRes.Text = "0";
-            this.lblSpellingRes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPartOfSpeechPoints.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblPartOfSpeechPoints.BackColor = System.Drawing.Color.Transparent;
+            this.lblPartOfSpeechPoints.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPartOfSpeechPoints.ForeColor = System.Drawing.Color.Black;
+            this.lblPartOfSpeechPoints.Location = new System.Drawing.Point(37, 8);
+            this.lblPartOfSpeechPoints.Name = "lblPartOfSpeechPoints";
+            this.lblPartOfSpeechPoints.Size = new System.Drawing.Size(171, 37);
+            this.lblPartOfSpeechPoints.TabIndex = 9;
+            this.lblPartOfSpeechPoints.Text = "0";
+            this.lblPartOfSpeechPoints.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
             // 
@@ -125,7 +125,7 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = global::FunEngGames.Properties.Resources.result;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.lblSpellingRes);
+            this.panel1.Controls.Add(this.lblPartOfSpeechPoints);
             this.panel1.Location = new System.Drawing.Point(109, 524);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(243, 65);
@@ -137,24 +137,24 @@
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.BackgroundImage = global::FunEngGames.Properties.Resources.result;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.lblIdiomsPoints);
             this.panel3.Location = new System.Drawing.Point(797, 524);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(243, 65);
             this.panel3.TabIndex = 16;
             // 
-            // label6
+            // lblIdiomsPoints
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(37, 8);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(170, 37);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "0";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblIdiomsPoints.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblIdiomsPoints.BackColor = System.Drawing.Color.Transparent;
+            this.lblIdiomsPoints.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIdiomsPoints.ForeColor = System.Drawing.Color.Black;
+            this.lblIdiomsPoints.Location = new System.Drawing.Point(37, 8);
+            this.lblIdiomsPoints.Name = "lblIdiomsPoints";
+            this.lblIdiomsPoints.Size = new System.Drawing.Size(170, 37);
+            this.lblIdiomsPoints.TabIndex = 9;
+            this.lblIdiomsPoints.Text = "0";
+            this.lblIdiomsPoints.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
@@ -203,6 +203,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fun English Learning Games: Phrases Levels";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.mainLevels_FormClosed);
+            this.Load += new System.EventHandler(this.phrasesLevel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picSpelling)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picIdioms)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -222,9 +223,9 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lblSpellingRes;
         private System.Windows.Forms.PictureBox pictureBox2;
+        public System.Windows.Forms.Label lblPartOfSpeechPoints;
+        public System.Windows.Forms.Label lblIdiomsPoints;
     }
 }
