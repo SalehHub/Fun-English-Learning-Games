@@ -51,7 +51,7 @@ namespace FunEngGames
 
             attempts = 3;
             picFeedback.Visible = false;
-            lblNoOfQuestion.Text = "Question 1 of 3";
+            lblNoOfQuestion.Text = "Question 1 of 5";
             question = 1;
             lblAttempts.Text = attempts.ToString();
             points = 0;
@@ -160,7 +160,7 @@ namespace FunEngGames
 
                 GenPartsOfSpeech();
 
-                lblNoOfQuestion.Text = "Question " + question.ToString() + " of 3";
+                lblNoOfQuestion.Text = "Question " + question.ToString() + " of 5";
                 btnCheckAnswer.Text = "Check your answer";
 
 
@@ -273,7 +273,7 @@ namespace FunEngGames
             lblAttempts.Text = attempts.ToString();
 
 
-            if (attempts == 0 && question < 3)  //No more attempts
+            if (attempts == 0 && question < 5)  //No more attempts
             {
                 question++;
                 lblCorrectAns.Visible = true;
@@ -290,7 +290,7 @@ namespace FunEngGames
                 lblFeedback.Visible = false;
                 btnCheckAnswer.Text = "Next Question";
             }
-            else if (attempts == 0 && question == 3)    //last attepmt and last question
+            else if (attempts == 0 && question == 5)    //last attepmt and last question
             {
                 attempts = 3;
                 //question = 3;
@@ -320,13 +320,13 @@ namespace FunEngGames
             lblFeedback.Text = "Good job! Keep up the good work"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Green;
             btnCheckAnswer.Text = "Next Question";
 
-            points += attempts + 2;
+            points += attempts + 0;
             /*calculate points*/
             lblPoints.Text = points.ToString();//(int.Parse(lblPoints.Text) + 3).ToString();
                                                // SavePoints();
 
 
-            if (question == 4)
+            if (question == 6)
             {
                 lblFeedback.Text = "Great job! Keep up the good work in the next level"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Green;
 

@@ -68,7 +68,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(132, 24);
             this.label6.TabIndex = 42;
-            this.label6.Text = "Attempts";
+            this.label6.Text = "Attempts left";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblAttempts
@@ -186,7 +186,7 @@
             this.lblNoOfQuestion.Name = "lblNoOfQuestion";
             this.lblNoOfQuestion.Size = new System.Drawing.Size(417, 24);
             this.lblNoOfQuestion.TabIndex = 43;
-            this.lblNoOfQuestion.Text = "Question 1 out of 3";
+            this.lblNoOfQuestion.Text = "Question 1 out of 5";
             this.lblNoOfQuestion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // sentenceLable
