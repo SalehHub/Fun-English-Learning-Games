@@ -26,6 +26,7 @@ namespace FunEngGames
         public string sentence = "", word = "", ans1 = "", ans2 = "", ans3 = "";
         public int attempts = 3;
         public int question = 1;
+
         string playerAnswer = "";
         public Random a = new Random();
         public int points = 0;
@@ -52,6 +53,7 @@ namespace FunEngGames
 
             radioButton1.Checked = false;
 
+            noOfCorrectAns = 0;
             attempts = 3;
             picFeedback.Visible = false;
             lblNoOfQuestion.Text = "Question 1 of 5";
@@ -140,10 +142,20 @@ namespace FunEngGames
 
         private void button3_Click(object sender, EventArgs e)
         {
-            lblFeedback.Visible = false;
+            radioButton1.ForeColor = Color.Black;
+            radioButton2.ForeColor = Color.Black;
+            radioButton3.ForeColor = Color.Black;
 
-            if (btnCheckAnswer.Text == "Try Again")
+            lblFeedback.Visible = false;
+            if (radioButton1.Checked == false && radioButton2.Checked == false && radioButton3.Checked == false)
             {
+                lblFeedback.Visible = true;
+                lblFeedback.ForeColor = Color.Red;
+                lblFeedback.Text = "Please select atleast one answer";
+            }
+            else if (btnCheckAnswer.Text == "Try Again")
+            {
+                //panel1.Enabled = true;
                 btnCheckAnswer.Text = "Check your answer";
 
                 picFeedback.Visible = false;
@@ -154,6 +166,8 @@ namespace FunEngGames
             else if (btnCheckAnswer.Text == "Next Question")
 
             {
+                //panel1.Enabled = true;
+
                 attempts = 3;
                 lblAttempts.Text = attempts.ToString();
                 lblCorrectAns.Visible = false;
@@ -174,17 +188,20 @@ namespace FunEngGames
 
 
             }
-            else if (btnCheckAnswer.Text == "Go to the next level >>")
+            else if (btnCheckAnswer.Text == "Go to idioms level")
             {
                 GoToNextLevel();
-            }
+            }          
             else if (btnCheckAnswer.Text == "Start this level again")
             {
+                //panel1.Enabled = true;
 
                 POS_Load(sender, e);
             }
             else
             {
+              //  panel1.Enabled = false;
+
                 if (radioButton1.Checked)
                 {
                     playerAnswer = radioButton1.Text;
@@ -223,6 +240,7 @@ namespace FunEngGames
                 else
                 {
                     IncorrectAnswer();
+
                 }
             }
         }
@@ -231,8 +249,9 @@ namespace FunEngGames
         {
             IdiomsLesson IdiomsLesson = new IdiomsLesson();
             IdiomsLesson.phrasesLevelForm = this.phrasesLevelForm;
-            this.Hide();
             IdiomsLesson.Show();
+            this.Hide();
+
         }
 
         private void POS_FormClosed(object sender, FormClosedEventArgs e)
@@ -292,12 +311,13 @@ namespace FunEngGames
                 lblFeedback.Text = "Sorry this is incorrect answer try the next question";
                 lblFeedback.Visible = true;
                 lblFeedback.ForeColor = Color.Red;
-                lblNoOfQuestion.Text = "Question " + question.ToString() + " of 3";
+                lblNoOfQuestion.Text = "Question " + question.ToString() + " of 5";
 
                 //attempts = 3;
                 lblAttempts.Text = attempts.ToString();
                 lblFeedback.Visible = false;
                 btnCheckAnswer.Text = "Next Question";
+                colorRadiobuttons(ans1.Trim());
             }
             else if (attempts == 0 && question == 5 && noOfCorrectAns < 3)    //last attepmt and last question
             {
@@ -306,7 +326,21 @@ namespace FunEngGames
                 lblFeedback.Text = "Sorry this is incorrect answer try again from begining. You have to answer atleast 3 out 5 question correctly to go to next level";
                 lblFeedback.Visible = true;
                 btnCheckAnswer.Text = "Start this level again";
+                colorRadiobuttons(ans1.Trim());
             }
+            else if (attempts == 0 && question == 5 && noOfCorrectAns >= 3)    //last attepmt and last question
+            {
+               // colorRadiobuttons();
+                attempts = 3;
+                //question = 3;
+                lblCorrectAns.Text = "The correct answer is " + ans1;
+                lblCorrectAns.Visible = true;
+                lblFeedback.Text = "Sorry this is incorrect answer.You have finished this level successfully";
+                lblFeedback.Visible = true;
+                btnCheckAnswer.Text = "Go to idioms level";
+                colorRadiobuttons(ans1.Trim());
+            }
+
             else
             {
                 lblFeedback.Text = "Sorry this incorrect answer try again";
@@ -321,6 +355,7 @@ namespace FunEngGames
 
         public void CorrectAnswer()
         {
+            colorRadiobuttons(playerAnswer.Trim());
             question++;
 
             noOfCorrectAns++;
@@ -335,11 +370,22 @@ namespace FunEngGames
                                                // SavePoints();
 
 
-            if (question == 6)
+            if (question == 6 && noOfCorrectAns >= 3)
             {
-                lblFeedback.Text = "Great job! Keep up the good work in the next level"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Green;
+                lblFeedback.Text = "Great job! Keep up the good work in the next level";
+                lblFeedback.Visible = true;
+                lblFeedback.ForeColor = Color.Green;
 
-                btnCheckAnswer.Text = "Go to the next level >>";
+                btnCheckAnswer.Text = "Go to idioms level";
+            }
+             else if (question == 6 && noOfCorrectAns < 3)
+            {
+                attempts = 3;
+                //question = 3;
+                lblFeedback.Text = "Sorry this is incorrect answer try again from begining. You have to answer atleast 3 out 5 question correctly to go to next level";
+                lblFeedback.Visible = true;
+                lblFeedback.ForeColor = Color.Red;
+                btnCheckAnswer.Text = "Start this level again";
             }
 
             SavePoints();
@@ -369,6 +415,31 @@ namespace FunEngGames
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        public void colorRadiobuttons(string correctAns)
+        {
+
+            if (radioButton1.Text == correctAns)
+            {   
+
+                radioButton1.ForeColor = Color.Green;
+                radioButton2.ForeColor = Color.Red;
+                radioButton3.ForeColor = Color.Red;
+            }
+           else if (radioButton2.Text == correctAns)
+            {
+                radioButton1.ForeColor = Color.Red;
+                radioButton2.ForeColor = Color.Green;
+                radioButton3.ForeColor = Color.Red;
+            }
+           else if (radioButton3.Text == correctAns)
+            {
+                radioButton1.ForeColor = Color.Red;
+                radioButton2.ForeColor = Color.Red;
+                radioButton3.ForeColor = Color.Green;
+            }
 
         }
     }
