@@ -29,6 +29,7 @@ namespace FunEngGames
         string playerAnswer = "";
         public Random a = new Random();
         public int points = 0;
+        public int noOfCorrectAns = 0;
         public List<int> randomList = new List<int>();
         public List<string> answers = new List<string>();
 
@@ -288,7 +289,7 @@ namespace FunEngGames
                 picFeedback.Visible = false;
                 lblCorrectAns.Text = "The correct answer is " + ans1;
 
-                lblFeedback.Text = "Sorry this is incorrect answer try again in the next question";
+                lblFeedback.Text = "Sorry this is incorrect answer try the next question";
                 lblFeedback.Visible = true;
                 lblFeedback.ForeColor = Color.Red;
                 lblNoOfQuestion.Text = "Question " + question.ToString() + " of 3";
@@ -298,11 +299,11 @@ namespace FunEngGames
                 lblFeedback.Visible = false;
                 btnCheckAnswer.Text = "Next Question";
             }
-            else if (attempts == 0 && question == 5)    //last attepmt and last question
+            else if (attempts == 0 && question == 5 && noOfCorrectAns < 3)    //last attepmt and last question
             {
                 attempts = 3;
                 //question = 3;
-                lblFeedback.Text = "Sorry this is incorrect answer try again from begining";
+                lblFeedback.Text = "Sorry this is incorrect answer try again from begining. You have to answer atleast 3 out 5 question correctly to go to next level";
                 lblFeedback.Visible = true;
                 btnCheckAnswer.Text = "Start this level again";
             }
@@ -322,7 +323,7 @@ namespace FunEngGames
         {
             question++;
 
-
+            noOfCorrectAns++;
             picFeedback.BackgroundImage = Properties.Resources.check;
 
             lblFeedback.Text = "Good job! Keep up the good work"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Green;
