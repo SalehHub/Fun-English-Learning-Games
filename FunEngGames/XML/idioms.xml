@@ -1,85 +1,85 @@
-﻿<?xml version="1.0" encoding="utf-8" ?> 
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Questions>
- 
+
   <!-- Idioms questions-->
-<idioms>
-	<idiom>A bitter pill</idiom>
-	<meaning>A situation or information that is unpleasant but must be accepted</meaning>
-</idioms>
-	  
   <idioms>
-	<idiom>All ears</idiom>
-	<meaning>Listening intently; fully focused or awaiting an explanation</meaning>
+    <idiom>A bitter pill</idiom>
+    <meaning>A situation or information that is unpleasant but must be accepted</meaning>
   </idioms>
-	  
+
   <idioms>
-	<idiom>Beat around the bush</idiom>
-	<meaning>To treat a topic, but omit its main points, often intentionally or to delay or avoid talking about something difficult or unpleasant</meaning>
+    <idiom>All ears</idiom>
+    <meaning>Listening intently; fully focused or awaiting an explanation</meaning>
   </idioms>
-	  
+
   <idioms>
-	<idiom>Burn the midnight oil</idiom>
-	<meaning>To work late into the night, alluding to the time before electric lighting</meaning>
-  </idioms>	  
-  
-  <idioms>
-	<idiom>Call it a day</idiom>
-	<meaning>To declare the end of a task</meaning>
+    <idiom>Beat around the bush</idiom>
+    <meaning>To treat a topic, but omit its main points, often intentionally or to delay or avoid talking about something difficult or unpleasant</meaning>
   </idioms>
-	  
+
   <idioms>
-	<idiom>Cold shoulder</idiom>
-	<meaning>To display aloofness and disdain</meaning>
+    <idiom>Burn the midnight oil</idiom>
+    <meaning>To work late into the night, alluding to the time before electric lighting</meaning>
   </idioms>
-	  
+
   <idioms>
-	<idiom>From scratch / to make from scratch</idiom>
-	<meaning>Make from original ingredients; start from the beginning with no prior preparation</meaning>
+    <idiom>Call it a day</idiom>
+    <meaning>To declare the end of a task</meaning>
   </idioms>
-	  
+
   <idioms>
-	<idiom>Hit the road</idiom>
-	<meaning>To leave</meaning>
+    <idiom>Cold shoulder</idiom>
+    <meaning>To display aloofness and disdain</meaning>
   </idioms>
-	  
+
   <idioms>
-	<idiom>It takes two to tango</idiom>
-	<meaning>A particular action or communication requires more than one person</meaning>
+    <idiom>From scratch / to make from scratch</idiom>
+    <meaning>Make from original ingredients; start from the beginning with no prior preparation</meaning>
   </idioms>
-	  
+
   <idioms>
-	<idiom>Kill two birds with one stone</idiom>
-	<meaning>To accomplish two different tasks at the same time and/or with a single action</meaning>
+    <idiom>Hit the road</idiom>
+    <meaning>To leave</meaning>
   </idioms>
-	  
+
   <idioms>
-	<idiom>Piece of cake</idiom>
-	<meaning>A job, task or other activity that is pleasant or easy or simple</meaning>
+    <idiom>It takes two to tango</idiom>
+    <meaning>A particular action or communication requires more than one person</meaning>
   </idioms>
-	  
+
   <idioms>
-	<idiom>Spill the beans</idiom>
-	<meaning>Reveal someone's secret</meaning>
+    <idiom>Kill two birds with one stone</idiom>
+    <meaning>To accomplish two different tasks at the same time and/or with a single action</meaning>
   </idioms>
-	  
+
   <idioms>
-	<idiom>To steal someone's thunder</idiom>
-	<meaning>To take credit for something someone else did</meaning>
+    <idiom>Piece of cake</idiom>
+    <meaning>A job, task or other activity that is pleasant or easy or simple</meaning>
   </idioms>
-	  
+
   <idioms>
-	<idiom>You bet</idiom>
-	<meaning>Equivalent of saying "that's for sure" or "of course". May also be used sarcastically</meaning>
+    <idiom>Spill the beans</idiom>
+    <meaning>Reveal someone's secret</meaning>
   </idioms>
-	  
+
   <idioms>
-	<idiom>A hot potato</idiom>
-	<meaning>Something that is difficult or dangerous to deal with</meaning>
-  </idioms>	
-  
+    <idiom>To steal someone's thunder</idiom>
+    <meaning>To take credit for something someone else did</meaning>
+  </idioms>
+
   <idioms>
-	<idiom>Don't cry over spilt milk</idiom>
-	<meaning>When you complain about a loss from the past</meaning>
+    <idiom>You bet</idiom>
+    <meaning>Equivalent of saying "that's for sure" or "of course". May also be used sarcastically</meaning>
+  </idioms>
+
+  <idioms>
+    <idiom>A hot potato</idiom>
+    <meaning>Something that is difficult or dangerous to deal with</meaning>
+  </idioms>
+
+  <idioms>
+    <idiom>Don't cry over spilt milk</idiom>
+    <meaning>When you complain about a loss from the past</meaning>
   </idioms>
 
 </Questions>
