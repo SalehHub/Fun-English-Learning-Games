@@ -201,7 +201,7 @@
             this.btnHint5.ForeColor = System.Drawing.Color.Green;
             this.btnHint5.Location = new System.Drawing.Point(733, 185);
             this.btnHint5.Name = "btnHint5";
-            this.btnHint5.Size = new System.Drawing.Size(69, 38);
+            this.btnHint5.Size = new System.Drawing.Size(74, 38);
             this.btnHint5.TabIndex = 57;
             this.btnHint5.Text = "Hint";
             this.btnHint5.UseVisualStyleBackColor = true;
