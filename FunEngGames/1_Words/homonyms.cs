@@ -46,7 +46,7 @@ namespace FunEngGames
         //Set game variables
         public int Questions = 5;
         public int attempt = 5;
-        //public int hints = 3;
+        public int hints = 5;
         public int points = 0;
 
         //What answer has been answerd        
@@ -212,7 +212,7 @@ namespace FunEngGames
 
             Questions = 5;
             attempt = 5;
-            //hints = 3;
+            hints = 5;
             points = 0;
 
             fq = false;
@@ -224,6 +224,13 @@ namespace FunEngGames
             fHint = "";
             sHint = "";
             tHint = "";
+
+            btnHint1.Enabled = true;
+            btnHint2.Enabled = true;
+            btnHint3.Enabled = true;
+            btnHint4.Enabled = true;
+            btnHint5.Enabled = true;
+            lblHint.Visible = false;
 
             lblCorrectAns.Visible = false;
             lblCorrectAns.Text = "";
@@ -310,6 +317,7 @@ namespace FunEngGames
         public void hideFeedBack()
         {
             lblFeedback.Visible = false;
+            lblHint.Visible = false;
         }
 
         //Unlock phrases level
@@ -352,7 +360,7 @@ namespace FunEngGames
                 {
                     picAns1.BackgroundImage = Properties.Resources.check;
                     points++;
-                    //btnHint1.Enabled = false;
+                    btnHint1.Enabled = false;
                     comboBox1.Enabled = false;
                     Questions--;
                     fq = true;
@@ -370,7 +378,7 @@ namespace FunEngGames
                 {
                     picAns2.BackgroundImage = Properties.Resources.check;
                     points++;
-                   // btnHint2.Enabled = false;
+                    btnHint2.Enabled = false;
                     comboBox2.Enabled = false;
                     Questions--;
                     sq = true;
@@ -387,7 +395,7 @@ namespace FunEngGames
                 {
                     picAns3.BackgroundImage = Properties.Resources.check;
                     points++;
-                    // btnHint3.Enabled = false;
+                    btnHint3.Enabled = false;
                     comboBox3.Enabled = false;
                     Questions--;
                     tq = true;
@@ -402,7 +410,7 @@ namespace FunEngGames
                 {
                     picAns4.BackgroundImage = Properties.Resources.check;
                     points++;
-                    // btnHint3.Enabled = false;
+                    btnHint4.Enabled = false;
                     comboBox4.Enabled = false;
                     Questions--;
                     foq = true;
@@ -420,7 +428,7 @@ namespace FunEngGames
                 {
                     picAns5.BackgroundImage = Properties.Resources.check;
                     points++;
-                    // btnHint3.Enabled = false;
+                    btnHint5.Enabled = false;
                     comboBox5.Enabled = false;
                     Questions--;
                     fiq = true;
@@ -527,6 +535,139 @@ namespace FunEngGames
         private void homonyms_Shown(object sender, EventArgs e)
         {
             //HomonymsLesson.Hide();
+        }
+
+        private void hint(object sender, EventArgs e)
+        {
+            var btn = (Button)sender;
+            var text = " is not a correct answer!";
+            if (btn.Name == "btnHint1")
+            {
+                btnHint1.Enabled = false;
+                if (lblAns1.Text != comboBox1.Items[0].ToString())
+                {
+                    lblHint.Text = comboBox1.Items[0] + text;
+                }
+                else if (lblAns1.Text != comboBox1.Items[1].ToString())
+                {
+                    lblHint.Text = comboBox1.Items[1] + text;
+                }
+                else if (lblAns1.Text != comboBox1.Items[2].ToString())
+                {
+                    lblHint.Text = comboBox1.Items[2] + text;
+                }
+                else if (lblAns1.Text != comboBox1.Items[3].ToString())
+                {
+                    lblHint.Text = comboBox1.Items[3] + text;
+                }
+                else if (lblAns1.Text != comboBox1.Items[4].ToString())
+                {
+                    lblHint.Text = comboBox1.Items[4] + text;
+                }
+            }
+
+            if (btn.Name == "btnHint2")
+            {
+                btnHint2.Enabled = false;
+                if (lblAns2.Text != comboBox2.Items[0].ToString())
+                {
+                    lblHint.Text = comboBox2.Items[0] + text;
+                }
+                else if (lblAns2.Text != comboBox2.Items[1].ToString())
+                {
+                    lblHint.Text = comboBox2.Items[1] + text;
+                }
+                else if (lblAns2.Text != comboBox2.Items[2].ToString())
+                {
+                    lblHint.Text = comboBox2.Items[2] + text;
+                }
+                else if (lblAns2.Text != comboBox2.Items[3].ToString())
+                {
+                    lblHint.Text = comboBox2.Items[3] + text;
+                }
+                else if (lblAns2.Text != comboBox2.Items[4].ToString())
+                {
+                    lblHint.Text = comboBox2.Items[4] + text;
+                }
+            }
+
+            if (btn.Name == "btnHint3")
+            {
+                btnHint3.Enabled = false;
+                if (lblAns3.Text != comboBox3.Items[0].ToString())
+                {
+                    lblHint.Text = comboBox3.Items[0] + text;
+                }
+                else if (lblAns3.Text != comboBox3.Items[1].ToString())
+                {
+                    lblHint.Text = comboBox3.Items[1] + text;
+                }
+                else if (lblAns3.Text != comboBox3.Items[2].ToString())
+                {
+                    lblHint.Text = comboBox3.Items[2] + text;
+                }
+                else if (lblAns3.Text != comboBox3.Items[3].ToString())
+                {
+                    lblHint.Text = comboBox3.Items[3] + text;
+                }
+                else if (lblAns3.Text != comboBox3.Items[4].ToString())
+                {
+                    lblHint.Text = comboBox3.Items[4] + text;
+                }
+            }
+
+            if (btn.Name == "btnHint4")
+            {
+                btnHint4.Enabled = false;
+                if (lblAns4.Text != comboBox4.Items[0].ToString())
+                {
+                    lblHint.Text = comboBox4.Items[0] + text;
+                }
+                else if (lblAns4.Text != comboBox4.Items[1].ToString())
+                {
+                    lblHint.Text = comboBox4.Items[1] + text;
+                }
+                else if (lblAns4.Text != comboBox4.Items[2].ToString())
+                {
+                    lblHint.Text = comboBox4.Items[2] + text;
+                }
+                else if (lblAns4.Text != comboBox4.Items[3].ToString())
+                {
+                    lblHint.Text = comboBox4.Items[3] + text;
+                }
+                else if (lblAns4.Text != comboBox4.Items[4].ToString())
+                {
+                    lblHint.Text = comboBox4.Items[4] + text;
+                }
+            }
+            if (btn.Name == "btnHint5")
+            {
+                btnHint5.Enabled = false;
+                if (lblAns5.Text != comboBox5.Items[0].ToString())
+                {
+                    lblHint.Text = comboBox5.Items[0] + text;
+                }
+                else if (lblAns5.Text != comboBox5.Items[1].ToString())
+                {
+                    lblHint.Text = comboBox5.Items[1] + text;
+                }
+                else if (lblAns5.Text != comboBox5.Items[2].ToString())
+                {
+                    lblHint.Text = comboBox5.Items[2] + text;
+                }
+                else if (lblAns5.Text != comboBox5.Items[3].ToString())
+                {
+                    lblHint.Text = comboBox5.Items[3] + text;
+                }
+                else if (lblAns5.Text != comboBox5.Items[4].ToString())
+                {
+                    lblHint.Text = comboBox5.Items[4] + text;
+                }
+            }
+
+
+            lblHint.Visible = true;
+            hints--;
         }
     }
 }

@@ -33,10 +33,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnHint5 = new System.Windows.Forms.Button();
+            this.btnHint4 = new System.Windows.Forms.Button();
+            this.btnHint3 = new System.Windows.Forms.Button();
+            this.btnHint2 = new System.Windows.Forms.Button();
             this.btnHint1 = new System.Windows.Forms.Button();
             this.lblDef5_1 = new System.Windows.Forms.Label();
             this.lblDef3_2 = new System.Windows.Forms.Label();
@@ -158,10 +158,10 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.36895F));
-            this.tableLayoutPanel1.Controls.Add(this.button4, 3, 4);
-            this.tableLayoutPanel1.Controls.Add(this.button3, 3, 3);
-            this.tableLayoutPanel1.Controls.Add(this.button2, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnHint5, 3, 4);
+            this.tableLayoutPanel1.Controls.Add(this.btnHint4, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btnHint3, 3, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnHint2, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnHint1, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.lblDef5_1, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.lblDef3_2, 4, 2);
@@ -195,52 +195,56 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1258, 238);
             this.tableLayoutPanel1.TabIndex = 20;
             // 
-            // button4
+            // btnHint5
             // 
-            this.button4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Green;
-            this.button4.Location = new System.Drawing.Point(733, 185);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(69, 38);
-            this.button4.TabIndex = 57;
-            this.button4.Text = "Hint";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnHint5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHint5.ForeColor = System.Drawing.Color.Green;
+            this.btnHint5.Location = new System.Drawing.Point(733, 185);
+            this.btnHint5.Name = "btnHint5";
+            this.btnHint5.Size = new System.Drawing.Size(69, 38);
+            this.btnHint5.TabIndex = 57;
+            this.btnHint5.Text = "Hint";
+            this.btnHint5.UseVisualStyleBackColor = true;
+            this.btnHint5.Click += new System.EventHandler(this.hint);
             // 
-            // button3
+            // btnHint4
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Green;
-            this.button3.Location = new System.Drawing.Point(733, 140);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(74, 38);
-            this.button3.TabIndex = 56;
-            this.button3.Text = "Hint";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnHint4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnHint4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHint4.ForeColor = System.Drawing.Color.Green;
+            this.btnHint4.Location = new System.Drawing.Point(733, 140);
+            this.btnHint4.Name = "btnHint4";
+            this.btnHint4.Size = new System.Drawing.Size(74, 38);
+            this.btnHint4.TabIndex = 56;
+            this.btnHint4.Text = "Hint";
+            this.btnHint4.UseVisualStyleBackColor = true;
+            this.btnHint4.Click += new System.EventHandler(this.hint);
             // 
-            // button2
+            // btnHint3
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Green;
-            this.button2.Location = new System.Drawing.Point(733, 95);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(74, 38);
-            this.button2.TabIndex = 55;
-            this.button2.Text = "Hint";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnHint3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnHint3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHint3.ForeColor = System.Drawing.Color.Green;
+            this.btnHint3.Location = new System.Drawing.Point(733, 95);
+            this.btnHint3.Name = "btnHint3";
+            this.btnHint3.Size = new System.Drawing.Size(74, 38);
+            this.btnHint3.TabIndex = 55;
+            this.btnHint3.Text = "Hint";
+            this.btnHint3.UseVisualStyleBackColor = true;
+            this.btnHint3.Click += new System.EventHandler(this.hint);
             // 
-            // button1
+            // btnHint2
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Green;
-            this.button1.Location = new System.Drawing.Point(733, 50);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(74, 38);
-            this.button1.TabIndex = 54;
-            this.button1.Text = "Hint";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnHint2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnHint2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHint2.ForeColor = System.Drawing.Color.Green;
+            this.btnHint2.Location = new System.Drawing.Point(733, 50);
+            this.btnHint2.Name = "btnHint2";
+            this.btnHint2.Size = new System.Drawing.Size(74, 38);
+            this.btnHint2.TabIndex = 54;
+            this.btnHint2.Text = "Hint";
+            this.btnHint2.UseVisualStyleBackColor = true;
+            this.btnHint2.Click += new System.EventHandler(this.hint);
             // 
             // btnHint1
             // 
@@ -252,6 +256,7 @@
             this.btnHint1.TabIndex = 53;
             this.btnHint1.Text = "Hint";
             this.btnHint1.UseVisualStyleBackColor = true;
+            this.btnHint1.Click += new System.EventHandler(this.hint);
             // 
             // lblDef5_1
             // 
@@ -812,10 +817,10 @@
         private System.Windows.Forms.Label lblAns4;
         private System.Windows.Forms.Label lblAns5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnHint5;
+        private System.Windows.Forms.Button btnHint4;
+        private System.Windows.Forms.Button btnHint3;
+        private System.Windows.Forms.Button btnHint2;
         private System.Windows.Forms.Button btnHint1;
     }
 }

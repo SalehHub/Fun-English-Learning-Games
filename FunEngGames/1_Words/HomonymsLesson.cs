@@ -62,7 +62,7 @@ namespace FunEngGames
         }
 
         //Generate word, synonym from Homonym XML file
-        public void GenerateHomonym(Label l1,Label l2,TextBox t,int node)
+        public void GenerateHomonym(int node)
         {
             dataGridView1.Rows.Add(
                 CommonFunctions.UppercaseFirst(nodeList[node].SelectSingleNode("def1").InnerText.Trim()), 
@@ -74,25 +74,24 @@ namespace FunEngGames
         //Generate all questions by calling GenerateHomonym function;
         public void GenerateHomonyms(int nextNode)
         {
-            GenerateHomonym(lbl1, lbl2, textBox1, nextNode);
+            GenerateHomonym(nextNode);
             nextNode++;
-            GenerateHomonym(lbl3, lbl4, textBox2, nextNode);
+            GenerateHomonym(nextNode);
             nextNode++;
-            GenerateHomonym(lbl5, lbl6, textBox3, nextNode);
+            GenerateHomonym(nextNode);
             nextNode++;
-            GenerateHomonym(lbl7, lbl8, textBox4, nextNode);
+            GenerateHomonym(nextNode);
             nextNode++;
-            GenerateHomonym(lbl9, lbl10, textBox5, nextNode);
+            GenerateHomonym(nextNode);
             nextNode++;
-            GenerateHomonym(lbl11, lbl12, textBox6, nextNode);
+            GenerateHomonym(nextNode);
             nextNode++;
-            GenerateHomonym(lbl13, lbl14, textBox7, nextNode);
+            GenerateHomonym(nextNode);
             nextNode++;
-            GenerateHomonym(lbl15, lbl16, textBox8, nextNode);
+            GenerateHomonym(nextNode);
             nextNode++;
-            GenerateHomonym(lbl17, lbl18, textBox9, nextNode);
+            GenerateHomonym(nextNode);
             nextNode++;
-
         }
 
         //Form closed event function: show the words level form
@@ -105,10 +104,11 @@ namespace FunEngGames
 
 
                 dataGridView1.Rows.Clear();
-                GenerateHomonyms(0);
+               GenerateHomonyms(0);
                 page++;
                 lastPage = nodeList.Count / 9;
                 lblPages.Text = "Page " + page + " out of " + lastPage;
+                lblWordsCount.Text = nodeList.Count + " words";
 
             }
             catch (Exception ex)
