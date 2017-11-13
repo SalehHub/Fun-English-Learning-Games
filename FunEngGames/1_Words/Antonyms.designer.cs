@@ -669,7 +669,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(725, 29);
             this.label3.TabIndex = 58;
-            this.label3.Text = "A point will be decremented! if a hint is used.";
+            this.label3.Text = "if you answer correctly the first time with no hints you get 15 points.";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Antonyms

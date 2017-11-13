@@ -536,7 +536,7 @@
             this.lblAttempts.Name = "lblAttempts";
             this.lblAttempts.Size = new System.Drawing.Size(36, 35);
             this.lblAttempts.TabIndex = 31;
-            this.lblAttempts.Text = "3";
+            this.lblAttempts.Text = "5";
             this.lblAttempts.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox5
@@ -654,7 +654,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(725, 29);
             this.label2.TabIndex = 41;
-            this.label2.Text = "A point will be decremented! if a hint is used.";
+            this.label2.Text = "if you answer correctly the first time with no hints you get 15 points.";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Synonyms

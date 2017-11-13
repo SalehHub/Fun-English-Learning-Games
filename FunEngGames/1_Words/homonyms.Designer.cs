@@ -75,6 +75,7 @@
             this.lblAns4 = new System.Windows.Forms.Label();
             this.lblAns5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -95,7 +96,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbltitle.BackColor = System.Drawing.Color.Transparent;
             this.lbltitle.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltitle.Location = new System.Drawing.Point(11, 89);
+            this.lbltitle.Location = new System.Drawing.Point(11, 87);
             this.lbltitle.Name = "lbltitle";
             this.lbltitle.Size = new System.Drawing.Size(1261, 38);
             this.lbltitle.TabIndex = 16;
@@ -109,7 +110,7 @@
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.BackgroundImage = global::FunEngGames.Properties.Resources.homonymsTitle;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox4.Location = new System.Drawing.Point(194, 9);
+            this.pictureBox4.Location = new System.Drawing.Point(194, 8);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(895, 80);
@@ -123,10 +124,10 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox1.Image = global::FunEngGames.Properties.Resources.def1;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 169);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 184);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(474, 73);
+            this.pictureBox1.Size = new System.Drawing.Size(480, 58);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
@@ -138,10 +139,10 @@
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox2.Image = global::FunEngGames.Properties.Resources.def2;
-            this.pictureBox2.Location = new System.Drawing.Point(837, 169);
+            this.pictureBox2.Location = new System.Drawing.Point(837, 184);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(433, 73);
+            this.pictureBox2.Size = new System.Drawing.Size(433, 58);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 19;
             this.pictureBox2.TabStop = false;
@@ -538,10 +539,10 @@
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox3.Image = global::FunEngGames.Properties.Resources.answers;
-            this.pictureBox3.Location = new System.Drawing.Point(492, 169);
+            this.pictureBox3.Location = new System.Drawing.Point(492, 184);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(339, 71);
+            this.pictureBox3.Size = new System.Drawing.Size(339, 56);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 24;
             this.pictureBox3.TabStop = false;
@@ -610,7 +611,7 @@
             this.lblAttempts.Name = "lblAttempts";
             this.lblAttempts.Size = new System.Drawing.Size(36, 36);
             this.lblAttempts.TabIndex = 40;
-            this.lblAttempts.Text = "3";
+            this.lblAttempts.Text = "5";
             this.lblAttempts.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox5
@@ -711,12 +712,26 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Navy;
-            this.label1.Location = new System.Drawing.Point(39, 131);
+            this.label1.Location = new System.Drawing.Point(39, 128);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1205, 29);
             this.label1.TabIndex = 52;
             this.label1.Text = "You need to answer at least three questions to pass this level.";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label3.Location = new System.Drawing.Point(279, 155);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(725, 29);
+            this.label3.TabIndex = 59;
+            this.label3.Text = "if you answer correctly the first time with no hints you get 15 points.";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // homonyms
             // 
@@ -745,8 +760,9 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.lbltitle);
             this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lbltitle);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinimumSize = new System.Drawing.Size(1151, 724);
             this.Name = "homonyms";
@@ -822,5 +838,6 @@
         private System.Windows.Forms.Button btnHint3;
         private System.Windows.Forms.Button btnHint2;
         private System.Windows.Forms.Button btnHint1;
+        private System.Windows.Forms.Label label3;
     }
 }
