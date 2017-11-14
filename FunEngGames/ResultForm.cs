@@ -51,9 +51,8 @@ namespace FunEngGames
 
 
 
-            //TODO//
 
-            //1-Phrases Points
+            //Phrases Points
 
             var phraseTotal = 30;
             var phrasesplayerTotal = this.mainLevelsForm.CF.partsOfSpeechPoints
@@ -73,11 +72,12 @@ namespace FunEngGames
                 + "\nIdioms:   " + this.mainLevelsForm.CF.idiomsPoints + " out of 15";
 
 
-            //2-Sentences Points
+            //Sentences Points
 
             var sentencesTotal = 30;
-            var sentencesPlayerTotal = this.mainLevelsForm.CF.partsOfSpeechPoints
-                + this.mainLevelsForm.CF.idiomsPoints;
+            var sentencesPlayerTotal = this.mainLevelsForm.CF.grammarPoints
+                + this.mainLevelsForm.CF.sentenceStructurePoints
+            +this.mainLevelsForm.CF.ParagraphCoherencePoints;
 
             pbSentences.Maximum = sentencesTotal;
             pbSentences.Value = sentencesPlayerTotal;
@@ -88,10 +88,10 @@ namespace FunEngGames
             lblSentencesPrecent.Text = "You have completed " + sentencesPrecent + "%";
 
 
-            lblPhrasesResults.Text =
-                    "Grammar:" + this.mainLevelsForm.CF.grammarPoints + " out of 15"
-                + "\nSentence structure:   " + this.mainLevelsForm.CF.sentenceStructurePoints + " out of 15"
-                + "\nParagraph coherence:   " + this.mainLevelsForm.CF.ParagraphCoherencePoints + " out of 15";
+            lblSentencesResults.Text =
+                    "Grammar: " + this.mainLevelsForm.CF.grammarPoints + " out of 15"
+                + "\nSentence structure: " + this.mainLevelsForm.CF.sentenceStructurePoints + " out of 15"
+                + "\nParagraph coherence: " + this.mainLevelsForm.CF.ParagraphCoherencePoints + " out of 15";
 
 
         }
