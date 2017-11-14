@@ -35,11 +35,12 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.Image = global::FunEngGames.Properties.Resources.Sentence_Structure_Png;
-            this.pictureBox1.Location = new System.Drawing.Point(11, 11);
+            this.pictureBox1.Location = new System.Drawing.Point(121, 9);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1050, 615);
+            this.pictureBox1.Size = new System.Drawing.Size(678, 488);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -48,9 +49,10 @@
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(363, 652);
+            this.button1.Location = new System.Drawing.Point(280, 530);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(480, 56);
+            this.button1.Size = new System.Drawing.Size(360, 46);
             this.button1.TabIndex = 21;
             this.button1.Text = "Start the sentence structure level";
             this.button1.UseVisualStyleBackColor = true;
@@ -58,16 +60,17 @@
             // 
             // SS_lesson
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FunEngGames.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1227, 720);
+            this.ClientSize = new System.Drawing.Size(920, 585);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Location = new System.Drawing.Point(0, 9);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "SS_lesson";
+            this.ShowIcon = false;
             this.Text = "SS_lesson";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

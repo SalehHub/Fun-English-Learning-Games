@@ -96,6 +96,12 @@
     <Compile Include="1_Words\Storyline_Friendship.Designer.cs">
       <DependentUpon>Storyline_Friendship.cs</DependentUpon>
     </Compile>
+    <Compile Include="2_Phrases\Storyline_Couple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2_Phrases\Storyline_Couple.designer.cs">
+      <DependentUpon>Storyline_Couple.cs</DependentUpon>
+    </Compile>
     <Compile Include="3_Sentences\Grammar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,12 @@
     </Compile>
     <Compile Include="3_Sentences\SS_lesson.designer.cs">
       <DependentUpon>SS_lesson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3_Sentences\Storyline_Married.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3_Sentences\Storyline_Married.designer.cs">
+      <DependentUpon>Storyline_Married.cs</DependentUpon>
     </Compile>
     <Compile Include="CommonFunctions.cs" />
     <Compile Include="1_Words\MoreInfo.cs">
@@ -263,6 +275,9 @@
     <EmbeddedResource Include="1_Words\Storyline_Friendship.resx">
       <DependentUpon>Storyline_Friendship.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="2_Phrases\Storyline_Couple.resx">
+      <DependentUpon>Storyline_Couple.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="3_Sentences\Grammar.resx">
       <DependentUpon>Grammar.cs</DependentUpon>
     </EmbeddedResource>
@@ -274,6 +289,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="3_Sentences\SS_lesson.resx">
       <DependentUpon>SS_lesson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3_Sentences\Storyline_Married.resx">
+      <DependentUpon>Storyline_Married.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ResultForm.resx">
       <DependentUpon>ResultForm.cs</DependentUpon>
@@ -2056,6 +2074,8 @@
     <None Include="Resources\addInfo.png" />
     <None Include="Resources\clarify.png" />
     <None Include="Resources\showContr.png" />
+    <None Include="Resources\sl_couple.gif" />
+    <None Include="Resources\sl_marrige.gif" />
     <Content Include="Resources\theirthere.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -2073,7 +2093,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <Content Include="XML\idioms.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="XML\PartOfSpeech.xml">
       <SubType>Designer</SubType>

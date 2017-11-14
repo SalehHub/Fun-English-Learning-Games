@@ -49,8 +49,9 @@ namespace FunEngGames
             POSLesson POSLesson = new POSLesson();
             POSLesson.mainLevelsForm = this.mainLevelsForm;
             POSLesson.phrasesLevelForm = this;
-            this.Hide();
             POSLesson.Show();
+            this.Hide();
+
         }
 
         private void mainLevels_FormClosed(object sender, FormClosedEventArgs e)
@@ -69,8 +70,9 @@ namespace FunEngGames
             IdiomsLesson IdiomsLesson = new IdiomsLesson();
             IdiomsLesson.mainLevelsForm = this.mainLevelsForm;
             IdiomsLesson.phrasesLevelForm = this;
-            this.Hide();
             IdiomsLesson.Show();
+            this.Hide();
+
         }
 
         private void phrasesLevel_Load(object sender, EventArgs e)

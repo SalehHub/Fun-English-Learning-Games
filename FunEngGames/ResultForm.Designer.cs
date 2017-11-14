@@ -47,8 +47,8 @@
             this.lblPrecent = new System.Windows.Forms.Label();
             this.lblPrasesPrecent = new System.Windows.Forms.Label();
             this.pbPhrases = new System.Windows.Forms.ProgressBar();
-            this.label4 = new System.Windows.Forms.Label();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.lblSentencesPrecent = new System.Windows.Forms.Label();
+            this.pbSentences = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -66,10 +66,10 @@
             this.pictureBox2.BackgroundImage = global::FunEngGames.Properties.Resources.resultMainTitle;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Location = new System.Drawing.Point(43, 24);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(32, 20);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1296, 103);
+            this.pictureBox2.Size = new System.Drawing.Size(972, 84);
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
             // 
@@ -79,9 +79,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Green;
-            this.label1.Location = new System.Drawing.Point(352, 134);
+            this.label1.Location = new System.Drawing.Point(264, 109);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(678, 60);
+            this.label1.Size = new System.Drawing.Size(508, 49);
             this.label1.TabIndex = 6;
             this.label1.Text = "Your Results";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -93,9 +94,10 @@
             this.panel1.BackgroundImage = global::FunEngGames.Properties.Resources.resultTitle2;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.lblPhrasesTitle);
-            this.panel1.Location = new System.Drawing.Point(462, 232);
+            this.panel1.Location = new System.Drawing.Point(346, 188);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(356, 134);
+            this.panel1.Size = new System.Drawing.Size(267, 109);
             this.panel1.TabIndex = 15;
             // 
             // lblPhrasesTitle
@@ -104,9 +106,10 @@
             this.lblPhrasesTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblPhrasesTitle.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPhrasesTitle.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblPhrasesTitle.Location = new System.Drawing.Point(52, 46);
+            this.lblPhrasesTitle.Location = new System.Drawing.Point(39, 37);
+            this.lblPhrasesTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPhrasesTitle.Name = "lblPhrasesTitle";
-            this.lblPhrasesTitle.Size = new System.Drawing.Size(252, 46);
+            this.lblPhrasesTitle.Size = new System.Drawing.Size(189, 37);
             this.lblPhrasesTitle.TabIndex = 9;
             this.lblPhrasesTitle.Text = "Phrases";
             this.lblPhrasesTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -117,9 +120,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkRed;
-            this.label2.Location = new System.Drawing.Point(52, 46);
+            this.label2.Location = new System.Drawing.Point(39, 37);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(252, 46);
+            this.label2.Size = new System.Drawing.Size(189, 37);
             this.label2.TabIndex = 9;
             this.label2.Text = "Words";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -130,9 +134,10 @@
             this.panel2.BackgroundImage = global::FunEngGames.Properties.Resources.resultTitle2;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(12, 232);
+            this.panel2.Location = new System.Drawing.Point(9, 188);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(356, 134);
+            this.panel2.Size = new System.Drawing.Size(267, 109);
             this.panel2.TabIndex = 16;
             // 
             // panel4
@@ -141,9 +146,10 @@
             this.panel4.BackgroundImage = global::FunEngGames.Properties.Resources.resultPanel;
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel4.Controls.Add(this.lblWordsResults);
-            this.panel4.Location = new System.Drawing.Point(12, 372);
+            this.panel4.Location = new System.Drawing.Point(9, 302);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(440, 207);
+            this.panel4.Size = new System.Drawing.Size(330, 168);
             this.panel4.TabIndex = 17;
             // 
             // lblWordsResults
@@ -152,9 +158,10 @@
             this.lblWordsResults.BackColor = System.Drawing.Color.Transparent;
             this.lblWordsResults.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWordsResults.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lblWordsResults.Location = new System.Drawing.Point(24, 29);
+            this.lblWordsResults.Location = new System.Drawing.Point(18, 24);
+            this.lblWordsResults.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblWordsResults.Name = "lblWordsResults";
-            this.lblWordsResults.Size = new System.Drawing.Size(307, 155);
+            this.lblWordsResults.Size = new System.Drawing.Size(230, 126);
             this.lblWordsResults.TabIndex = 9;
             this.lblWordsResults.Text = "Level:0\r\nLevel:0\r\nLevel:0\r\nLevel:0";
             this.lblWordsResults.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -166,9 +173,10 @@
             this.panel5.BackgroundImage = global::FunEngGames.Properties.Resources.resultPanel;
             this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel5.Controls.Add(this.lblPhrasesResults);
-            this.panel5.Location = new System.Drawing.Point(462, 372);
+            this.panel5.Location = new System.Drawing.Point(346, 302);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(440, 207);
+            this.panel5.Size = new System.Drawing.Size(330, 168);
             this.panel5.TabIndex = 18;
             // 
             // lblPhrasesResults
@@ -177,9 +185,10 @@
             this.lblPhrasesResults.BackColor = System.Drawing.Color.Transparent;
             this.lblPhrasesResults.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPhrasesResults.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lblPhrasesResults.Location = new System.Drawing.Point(24, 29);
+            this.lblPhrasesResults.Location = new System.Drawing.Point(18, 24);
+            this.lblPhrasesResults.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPhrasesResults.Name = "lblPhrasesResults";
-            this.lblPhrasesResults.Size = new System.Drawing.Size(280, 155);
+            this.lblPhrasesResults.Size = new System.Drawing.Size(210, 126);
             this.lblPhrasesResults.TabIndex = 9;
             this.lblPhrasesResults.Text = "Parts of speech:30 out of 30";
             this.lblPhrasesResults.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -190,10 +199,10 @@
             this.btnCheckAnswer.BackColor = System.Drawing.Color.DarkOrange;
             this.btnCheckAnswer.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCheckAnswer.ForeColor = System.Drawing.Color.Green;
-            this.btnCheckAnswer.Location = new System.Drawing.Point(564, 635);
-            this.btnCheckAnswer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCheckAnswer.Location = new System.Drawing.Point(423, 516);
+            this.btnCheckAnswer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCheckAnswer.Name = "btnCheckAnswer";
-            this.btnCheckAnswer.Size = new System.Drawing.Size(254, 72);
+            this.btnCheckAnswer.Size = new System.Drawing.Size(190, 58);
             this.btnCheckAnswer.TabIndex = 29;
             this.btnCheckAnswer.Text = "Play again";
             this.btnCheckAnswer.UseVisualStyleBackColor = false;
@@ -206,9 +215,10 @@
             this.panel6.BackgroundImage = global::FunEngGames.Properties.Resources.resultPanel;
             this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel6.Controls.Add(this.lblSentencesResults);
-            this.panel6.Location = new System.Drawing.Point(908, 372);
+            this.panel6.Location = new System.Drawing.Point(681, 302);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(440, 207);
+            this.panel6.Size = new System.Drawing.Size(330, 168);
             this.panel6.TabIndex = 33;
             // 
             // lblSentencesResults
@@ -217,9 +227,10 @@
             this.lblSentencesResults.BackColor = System.Drawing.Color.Transparent;
             this.lblSentencesResults.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSentencesResults.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lblSentencesResults.Location = new System.Drawing.Point(24, 29);
+            this.lblSentencesResults.Location = new System.Drawing.Point(18, 24);
+            this.lblSentencesResults.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSentencesResults.Name = "lblSentencesResults";
-            this.lblSentencesResults.Size = new System.Drawing.Size(290, 155);
+            this.lblSentencesResults.Size = new System.Drawing.Size(218, 126);
             this.lblSentencesResults.TabIndex = 9;
             this.lblSentencesResults.Text = "Level:0\r\nLevel:0\r\nLevel:0\r\nLevel:0";
             this.lblSentencesResults.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -231,9 +242,10 @@
             this.panel3.BackgroundImage = global::FunEngGames.Properties.Resources.resultTitle2;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(908, 232);
+            this.panel3.Location = new System.Drawing.Point(681, 188);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(356, 134);
+            this.panel3.Size = new System.Drawing.Size(267, 109);
             this.panel3.TabIndex = 32;
             // 
             // label3
@@ -242,18 +254,20 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkRed;
-            this.label3.Location = new System.Drawing.Point(52, 46);
+            this.label3.Location = new System.Drawing.Point(39, 37);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(252, 46);
+            this.label3.Size = new System.Drawing.Size(189, 37);
             this.label3.TabIndex = 9;
             this.label3.Text = "Sentences";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pbSpelling
             // 
-            this.pbSpelling.Location = new System.Drawing.Point(27, 604);
+            this.pbSpelling.Location = new System.Drawing.Point(20, 491);
+            this.pbSpelling.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbSpelling.Name = "pbSpelling";
-            this.pbSpelling.Size = new System.Drawing.Size(316, 23);
+            this.pbSpelling.Size = new System.Drawing.Size(237, 19);
             this.pbSpelling.TabIndex = 34;
             // 
             // lblPrecent
@@ -261,9 +275,10 @@
             this.lblPrecent.AutoSize = true;
             this.lblPrecent.BackColor = System.Drawing.Color.Transparent;
             this.lblPrecent.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecent.Location = new System.Drawing.Point(24, 584);
+            this.lblPrecent.Location = new System.Drawing.Point(18, 474);
+            this.lblPrecent.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPrecent.Name = "lblPrecent";
-            this.lblPrecent.Size = new System.Drawing.Size(104, 17);
+            this.lblPrecent.Size = new System.Drawing.Size(83, 15);
             this.lblPrecent.TabIndex = 35;
             this.lblPrecent.Text = "You completed";
             // 
@@ -272,46 +287,50 @@
             this.lblPrasesPrecent.AutoSize = true;
             this.lblPrasesPrecent.BackColor = System.Drawing.Color.Transparent;
             this.lblPrasesPrecent.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrasesPrecent.Location = new System.Drawing.Point(467, 584);
+            this.lblPrasesPrecent.Location = new System.Drawing.Point(350, 474);
+            this.lblPrasesPrecent.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPrasesPrecent.Name = "lblPrasesPrecent";
-            this.lblPrasesPrecent.Size = new System.Drawing.Size(104, 17);
+            this.lblPrasesPrecent.Size = new System.Drawing.Size(83, 15);
             this.lblPrasesPrecent.TabIndex = 37;
             this.lblPrasesPrecent.Text = "You completed";
             // 
             // pbPhrases
             // 
-            this.pbPhrases.Location = new System.Drawing.Point(470, 604);
+            this.pbPhrases.Location = new System.Drawing.Point(352, 491);
+            this.pbPhrases.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbPhrases.Name = "pbPhrases";
-            this.pbPhrases.Size = new System.Drawing.Size(316, 23);
+            this.pbPhrases.Size = new System.Drawing.Size(237, 19);
             this.pbPhrases.TabIndex = 36;
             // 
-            // label4
+            // lblSentencesPrecent
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(913, 584);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(104, 17);
-            this.label4.TabIndex = 39;
-            this.label4.Text = "You completed";
+            this.lblSentencesPrecent.AutoSize = true;
+            this.lblSentencesPrecent.BackColor = System.Drawing.Color.Transparent;
+            this.lblSentencesPrecent.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSentencesPrecent.Location = new System.Drawing.Point(685, 474);
+            this.lblSentencesPrecent.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSentencesPrecent.Name = "lblSentencesPrecent";
+            this.lblSentencesPrecent.Size = new System.Drawing.Size(83, 15);
+            this.lblSentencesPrecent.TabIndex = 39;
+            this.lblSentencesPrecent.Text = "You completed";
             // 
-            // progressBar1
+            // pbSentences
             // 
-            this.progressBar1.Location = new System.Drawing.Point(916, 604);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(316, 23);
-            this.progressBar1.TabIndex = 38;
+            this.pbSentences.Location = new System.Drawing.Point(687, 491);
+            this.pbSentences.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbSentences.Name = "pbSentences";
+            this.pbSentences.Size = new System.Drawing.Size(237, 19);
+            this.pbSentences.TabIndex = 38;
             // 
             // ResultForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FunEngGames.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1382, 716);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.progressBar1);
+            this.ClientSize = new System.Drawing.Size(1036, 582);
+            this.Controls.Add(this.lblSentencesPrecent);
+            this.Controls.Add(this.pbSentences);
             this.Controls.Add(this.lblPrasesPrecent);
             this.Controls.Add(this.pbPhrases);
             this.Controls.Add(this.lblPrecent);
@@ -325,6 +344,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ResultForm";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -364,7 +384,7 @@
         private System.Windows.Forms.Label lblPrecent;
         private System.Windows.Forms.Label lblPrasesPrecent;
         private System.Windows.Forms.ProgressBar pbPhrases;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label lblSentencesPrecent;
+        private System.Windows.Forms.ProgressBar pbSentences;
     }
 }

@@ -613,6 +613,16 @@ namespace FunEngGames.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap sl_couple {
+            get {
+                object obj = ResourceManager.GetObject("sl_couple", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sl_friends {
             get {
                 object obj = ResourceManager.GetObject("sl_friends", resourceCulture);
@@ -636,6 +646,16 @@ namespace FunEngGames.Properties {
         internal static System.Drawing.Bitmap sl_learn2 {
             get {
                 object obj = ResourceManager.GetObject("sl_learn2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sl_marrige {
+            get {
+                object obj = ResourceManager.GetObject("sl_marrige", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

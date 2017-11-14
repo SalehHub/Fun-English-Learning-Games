@@ -20,6 +20,7 @@ namespace FunEngGames
 
         //Define main levels variable
         public mainLevels mainLevelsForm;
+        public sentenceLevels sentenceLevelsForm;
 
         //Load event here we filling points labels with the palyer's points
         private void Result_Load(object sender, EventArgs e)
@@ -54,15 +55,15 @@ namespace FunEngGames
 
             //1-Phrases Points
 
-            var phrasestotal = 30;
+            var phraseTotal = 30;
             var phrasesplayerTotal = this.mainLevelsForm.CF.partsOfSpeechPoints
                 + this.mainLevelsForm.CF.idiomsPoints;
 
-            pbPhrases.Maximum = phrasestotal;
+            pbPhrases.Maximum = phraseTotal;
             pbPhrases.Value = phrasesplayerTotal;
 
             //calculating player precent in words levels
-            decimal phrasesPrecent = Math.Round(((decimal)phrasesplayerTotal / (decimal)phrasestotal) * 100m, 2);
+            decimal phrasesPrecent = Math.Round(((decimal)phrasesplayerTotal / (decimal)phraseTotal) * 100m, 2);
 
             lblPrasesPrecent.Text = "You have completed " + phrasesPrecent + "%";
 
@@ -70,7 +71,27 @@ namespace FunEngGames
             lblPhrasesResults.Text =
                     "Parts of speech:" + this.mainLevelsForm.CF.partsOfSpeechPoints + " out of 15"
                 + "\nIdioms:   " + this.mainLevelsForm.CF.idiomsPoints + " out of 15";
+
+
             //2-Sentences Points
+
+            var sentencesTotal = 30;
+            var sentencesPlayerTotal = this.mainLevelsForm.CF.partsOfSpeechPoints
+                + this.mainLevelsForm.CF.idiomsPoints;
+
+            pbSentences.Maximum = sentencesTotal;
+            pbSentences.Value = sentencesPlayerTotal;
+
+            //calculating player precent in words levels
+            decimal sentencesPrecent = Math.Round(((decimal)sentencesPlayerTotal / (decimal)sentencesTotal) * 100m, 2);
+
+            lblSentencesPrecent.Text = "You have completed " + sentencesPrecent + "%";
+
+
+            lblPhrasesResults.Text =
+                    "Grammar:" + this.mainLevelsForm.CF.grammarPoints + " out of 15"
+                + "\nSentence structure:   " + this.mainLevelsForm.CF.sentenceStructurePoints + " out of 15"
+                + "\nParagraph coherence:   " + this.mainLevelsForm.CF.ParagraphCoherencePoints + " out of 15";
 
 
         }
@@ -97,7 +118,7 @@ namespace FunEngGames
         {
             try
             {
-                this.mainLevelsForm.Show();
+                this.sentenceLevelsForm.Show();
             }
             catch (Exception ex)
             {

@@ -16,7 +16,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
-
+using FunEngGames._3_Sentences;
 namespace FunEngGames
 {
     public partial class PC : Form
@@ -203,7 +203,7 @@ namespace FunEngGames
                     if (question == 6 &&CorrectAnswers >=3)
                     {
                         lblFeedback.Text = "Great job! Keep up the good work in the next level"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Green;
-                        button3.Text = "Go to the next level >>";
+                        button3.Text = "View your reward";
                     }
                     if (question == 6 && CorrectAnswers < 3)
                     {
@@ -223,7 +223,7 @@ namespace FunEngGames
             {
                 NextQuestion();
             }
-            else if (button3.Text == "Go to the next level >>")
+            else if (button3.Text == "View your reward")
             {
                 GoToNextLevel();
             }
@@ -320,9 +320,18 @@ namespace FunEngGames
 
         public void GoToNextLevel()
         {
-            // mainLevelsForm;
+
+            // this.Hide();
+            //sentenceLevelsForm.Show();
+
+            Storyline_Married sm = new Storyline_Married();
+
+            sm.mainLevelsForm = this.mainLevelsForm;
+            sm.sentenceLevelsForm = this.sentenceLevelsForm;
+
+            sm.Show();
             this.Hide();
-            sentenceLevelsForm.Show();
+            
         }
 
         public void TryAgain()
@@ -348,7 +357,7 @@ namespace FunEngGames
         {
             try
             {
-                this.mainLevelsForm.Show();
+                this.sentenceLevelsForm.Show();
             }
             catch (Exception ex)
             {

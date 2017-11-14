@@ -65,6 +65,7 @@ namespace FunEngGames._3_Sentences
             PC PC = new PC();
             PC.sentenceLevelsForm = this.sentenceLevelsForm;
             PC.mainLevelsForm = this.mainLevelsForm;
+            PC.sentenceLevelsForm = this.sentenceLevelsForm;
             this.Hide();
             PC.Show();
         }

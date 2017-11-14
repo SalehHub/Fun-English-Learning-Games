@@ -299,7 +299,7 @@ namespace FunEngGames
         {
             try
             {
-                this.mainLevelsForm.Show();
+                this.sentenceLevelsForm.Show();
             }
             catch (Exception ex)
             {

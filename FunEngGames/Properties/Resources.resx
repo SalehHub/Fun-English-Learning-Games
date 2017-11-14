@@ -118,241 +118,247 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="PCLevelTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PCLevelTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="phrasesTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\phrasesTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="S_AMainTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\S&amp;AMainTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="HomonomysPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HomonomysTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sl7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sl7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="def1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\def1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="spellingMainPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\spellingMainTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GrammarLevelTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GrammarLevelTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="POSlevelTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\POSlevelTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="answers" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\answers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="wordsTitleHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bb2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mainScreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Copy of A New Design (6).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="def2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\def2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GrammerTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GrammerTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="b1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\b1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Copy of A New Design1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cross" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sl5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sl5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Gametitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Gametitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="posTitleHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\posTitleHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sl4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sl4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="spellingMainPicHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\spellingMainTitleHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sl6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sl6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sl1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sl1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SSLevelTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SSLevelTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="synonymsTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\synonymsTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="S_AMainPicHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\S&amp;ATitleHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="checkYourAswer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\checkYourAswer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sentencesTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sentencesTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="homonymsTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\homonymsTitle1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sl3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sl3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="phrasesMainTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\phrasesMainTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SSTitleHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SSTitleHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="IdiomslevelTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IdiomslevelTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="checkYourAswers" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\checkYourAswers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PCTitleHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PCTitleHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="idiomsTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\idiomsTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="wordsMainTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wordsTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GrammerTitleHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GrammerTitleHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="phrasesTitleHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\phrasesTitleHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="antonymsTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\antonymsTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="S_ATitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\S_ATitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PCTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PCTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="checkYourAswer_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\checkYourAswer_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SSTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SSTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\audio.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="spellingTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\spellingTitle3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="idiomsTitleHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\idiomsTitleHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="b2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\b2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="wordsTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Screen Shot 2017-09-02 at 12.23.10 AM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sentencesTitleHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sentencesTitleHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="result" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\result.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="posTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\posTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="S_AMainPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\S&amp;ATitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="checkYourAswers_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\checkYourAswers_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sentencesMainTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sentencesMainTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="check" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sl2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sl2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="HomonomysPicHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HomonomysTitleHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="resultMainTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\resultMainTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="resultPanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\resultPanel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="resultTitle2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\resultTitle2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="resultTitle1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\resultTitle1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sl_friends" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sl_friends.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sl_learn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sl_learn1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sl_learn2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sl_learn2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sl_sad" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sl_sad.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sl_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sl_start.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="addInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\addInfo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="clarify" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clarify.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="expressResult" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\expressResult.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ExpressSequence" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ExpressSequence.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="checkYourAswers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\checkYourAswers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sentence_Structure_Png" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sentence_Structure_Png.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="showContr" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\showContr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="b1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\b1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="b2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\b2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="answers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\answers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sl3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sl3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HomonomysPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HomonomysTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sl4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sl4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PCTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PCTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="POSlevelTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\POSlevelTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sl_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sl_start.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IdiomslevelTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IdiomslevelTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="def1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\def1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="def2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\def2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="showSimi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\showSimi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="synonymsTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\synonymsTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spellingMainPicHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\spellingMainTitleHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="phrasesMainTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\phrasesMainTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sentencesMainTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sentencesMainTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PCLevelTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PCLevelTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="homonymsTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\homonymsTitle1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Copy of A New Design1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spellingMainPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\spellingMainTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\audio.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S_AMainPicHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S&amp;ATitleHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="check" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sl6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sl6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="addInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\addInfo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="phrasesTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\phrasesTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SSLevelTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SSLevelTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="idiomsTitleHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\idiomsTitleHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gametitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gametitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S_ATitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S_ATitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="posTitleHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\posTitleHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sl_learn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sl_learn1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wordsTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screen Shot 2017-09-02 at 12.23.10 AM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HomonomysPicHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HomonomysTitleHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="checkYourAswer_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\checkYourAswer_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="antonymsTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\antonymsTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="result" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\result.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="expressResult" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\expressResult.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sl5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sl5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sentencesTitleHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sentencesTitleHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="resultMainTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\resultMainTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sentencesTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sentencesTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="resultPanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\resultPanel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PCTitleHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PCTitleHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cross" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mainScreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Copy of A New Design (6).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GrammarLevelTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GrammarLevelTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sl_learn2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sl_learn2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wordsTitleHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bb2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExpressSequence" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExpressSequence.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S_AMainPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S&amp;ATitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="checkYourAswer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\checkYourAswer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="resultTitle2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\resultTitle2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sl_couple" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sl_couple.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="resultTitle1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\resultTitle1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sl1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sl1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sl_friends" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sl_friends.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="showContr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\showContr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sl2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sl2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SSTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SSTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sl7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sl7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SSTitleHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SSTitleHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="theirthere" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\theirthere.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="this_that_these_those" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\this-that-these-those.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GrammerTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GrammerTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="posTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\posTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sl_sad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sl_sad.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="idiomsTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\idiomsTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S_AMainTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S&amp;AMainTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="phrasesTitleHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\phrasesTitleHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GrammerTitleHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GrammerTitleHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="checkYourAswers_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\checkYourAswers_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wordsMainTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wordsTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sl_marrige" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sl_marrige.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

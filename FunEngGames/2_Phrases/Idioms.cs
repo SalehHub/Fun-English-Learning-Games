@@ -17,6 +17,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+
+using FunEngGames._2_Phrases;
+
 namespace FunEngGames
 {
     public partial class Idioms : Form
@@ -161,7 +164,7 @@ namespace FunEngGames
         public void GoToNextLevel()
         {
 
-           // Storyline_Friendship Storyline_Friendship = new Storyline_Friendship();
+            // Storyline_Friendship Storyline_Friendship = new Storyline_Friendship();
             //Storyline_Friendship.mainLevelsForm = this.mainLevelsForm;
             //Storyline_Friendship.wordLevelsForm = this.wordLevelsForm;
             //this.Hide();
@@ -175,6 +178,13 @@ namespace FunEngGames
             //IdiomsLesson.Show();
             //this.Hide(); 
 
+            Storyline_Couple sc = new Storyline_Couple();
+
+            sc.mainLevelsForm = this.mainLevelsForm;
+
+            sc.Show();
+            this.Hide();
+
 
         }
 
@@ -186,7 +196,7 @@ namespace FunEngGames
             }
             catch (Exception ex)
             {
-
+               // MessageBox.Show(ex.Message);
             }
         }
 
@@ -255,7 +265,7 @@ namespace FunEngGames
                 lblCorrectAns.Visible = true;
                 lblFeedback.Text = "Sorry this is incorrect answer.You have finished this level successfully";
                 lblFeedback.Visible = true;
-                btnCheckAnswer.Text = "Go to idioms level";
+                btnCheckAnswer.Text = "View your reward";
                 colorRadiobuttons(ans1.Trim());
             }
 
@@ -294,7 +304,7 @@ namespace FunEngGames
                 lblFeedback.Visible = true;
                 lblFeedback.ForeColor = Color.Green;
 
-                btnCheckAnswer.Text = "Go to Sentence level";
+                btnCheckAnswer.Text = "View your reward";
             }
             else if (question == 6 && noOfCorrectAns < 3)
             {
@@ -376,7 +386,7 @@ namespace FunEngGames
                     sl.Show();
                 }
             }
-            else if (btnCheckAnswer.Text == "Go to Sentences level")
+            else if (btnCheckAnswer.Text == "View your reward")
             {
                 GoToNextLevel();
 
@@ -418,16 +428,6 @@ namespace FunEngGames
 
                 }
             }
-        }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void button1_Click(object sender, EventArgs e)

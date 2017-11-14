@@ -1,85 +1,116 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Questions>
 
-  <!-- Idioms questions-->
   <idioms>
-    <idiom>A bitter pill</idiom>
-    <meaning>A situation or information that is unpleasant but must be accepted</meaning>
+    <answer1>A bitter pill</answer1>
+    <answer2>A bad pill</answer2>
+    <answer3>A worst pill</answer3>
+    <sentence>A situation or information that is unpleasant but must be accepted</sentence>
   </idioms>
 
   <idioms>
-    <idiom>All ears</idiom>
-    <meaning>Listening intently; fully focused or awaiting an explanation</meaning>
+    <answer1>All ears</answer1>
+    <answer2>All eyes</answer2>
+    <answer3>All sentences</answer3>
+    <sentence>Listening intently; fully focused or awaiting an explanation</sentence>
   </idioms>
 
   <idioms>
-    <idiom>Beat around the bush</idiom>
-    <meaning>To treat a topic, but omit its main points, often intentionally or to delay or avoid talking about something difficult or unpleasant</meaning>
+    <answer1>Beat around the bush</answer1>
+    <answer2>Beat around the plants</answer2>
+    <answer3>Beat around the meat</answer3>
+    <sentence>To treat a topic, but omit its main points, often intentionally or to delay or avoid talking about something difficult or unpleasant</sentence>
   </idioms>
 
   <idioms>
-    <idiom>Burn the midnight oil</idiom>
-    <meaning>To work late into the night, alluding to the time before electric lighting</meaning>
+    <answer1>Burn the midnight oil</answer1>
+    <answer2>Burn the midnight water</answer2>
+    <answer3>Burn the midnight paper</answer3>
+    <sentence>To work late into the night, alluding to the time before electric lighting</sentence>
   </idioms>
 
   <idioms>
-    <idiom>Call it a day</idiom>
-    <meaning>To declare the end of a task</meaning>
+    <answer1>Call it a day</answer1>
+    <answer2>Call it a night</answer2>
+    <answer3>Call it a evening</answer3>
+    <sentence>To declare the end of a task</sentence>
   </idioms>
 
   <idioms>
-    <idiom>Cold shoulder</idiom>
-    <meaning>To display aloofness and disdain</meaning>
+    <answer1>Cold shoulder</answer1>
+    <answer2>Call it a night</answer2>
+    <answer3>Call it a morning</answer3>
+    <sentence>To display aloofness and disdain</sentence>
   </idioms>
 
   <idioms>
-    <idiom>From scratch / to make from scratch</idiom>
-    <meaning>Make from original ingredients; start from the beginning with no prior preparation</meaning>
+    <answer1>From scratch / to make from scratch</answer1>
+    <answer2>From middle / to make from middle</answer2>
+    <answer3>From end / to make from end</answer3>
+    <sentence>Make from original ingredients; start from the beginning with no prior preparation</sentence>
   </idioms>
 
   <idioms>
-    <idiom>Hit the road</idiom>
-    <meaning>To leave</meaning>
+    <answer1>Hit the road</answer1>
+    <answer2>Hit the path</answer2>
+    <answer3>Hit the person</answer3>
+    <sentence>To leave</sentence>
   </idioms>
 
   <idioms>
-    <idiom>It takes two to tango</idiom>
-    <meaning>A particular action or communication requires more than one person</meaning>
+    <answer1>It takes two to tango</answer1>
+    <answer2>It takes three to tango</answer2>
+    <answer3>It takes four to tango</answer3>
+    <sentence>A particular action or communication requires more than one person</sentence>
   </idioms>
 
   <idioms>
-    <idiom>Kill two birds with one stone</idiom>
-    <meaning>To accomplish two different tasks at the same time and/or with a single action</meaning>
+    <answer1>Kill two birds with one stone</answer1>
+    <answer2>Kill two birds with two stone</answer2>
+    <answer3>Kill two birds with three stone</answer3>
+    <sentence>To accomplish two different tasks at the same time and/or with a single action</sentence>
   </idioms>
 
   <idioms>
-    <idiom>Piece of cake</idiom>
-    <meaning>A job, task or other activity that is pleasant or easy or simple</meaning>
+    <answer1>Piece of cake</answer1>
+    <answer2>Piece of chocolate</answer2>
+    <answer3>Piece of Icecream</answer3>
+    <sentence>A job, task or other activity that is pleasant or easy or simple</sentence>
   </idioms>
 
   <idioms>
-    <idiom>Spill the beans</idiom>
-    <meaning>Reveal someone's secret</meaning>
+    <answer1>Spill the beans</answer1>
+    <answer2>Spill the rice</answer2>
+    <answer3>Spill the wheat</answer3>
+    <sentence>Reveal someone's secret</sentence>
   </idioms>
 
   <idioms>
-    <idiom>To steal someone's thunder</idiom>
-    <meaning>To take credit for something someone else did</meaning>
+    <answer1>To steal someone's thunder</answer1>
+    <answer2>To steal someone's water</answer2>
+    <answer3>To steal someone's food</answer3>
+    <sentence>To take credit for something someone else did</sentence>
   </idioms>
 
   <idioms>
-    <idiom>You bet</idiom>
-    <meaning>Equivalent of saying "that's for sure" or "of course". May also be used sarcastically</meaning>
+    <answer1>You bet</answer1>
+    <answer2>I bet</answer2>
+    <answer3>He bet</answer3>
+    <sentence>Equivalent of saying "that's for sure" or "of course". May also be used sarcastically</sentence>
   </idioms>
 
   <idioms>
-    <idiom>A hot potato</idiom>
-    <meaning>Something that is difficult or dangerous to deal with</meaning>
+    <answer1>A hot potato</answer1>
+    <answer2>A hot banana</answer2>
+    <answer3>A hot chip</answer3>
+    <sentence>Something that is difficult or dangerous to deal with</sentence>
   </idioms>
 
   <idioms>
-    <idiom>Don't cry over spilt milk</idiom>
-    <meaning>When you complain about a loss from the past</meaning>
+    <answer1>Cry over spilt milk</answer1>
+    <answer2>Cry over spilt water</answer2>
+    <answer3>Cry over spilt drink</answer3>
+    <sentence>When you complain about a loss from the past</sentence>
   </idioms>
-
+  
 </Questions>

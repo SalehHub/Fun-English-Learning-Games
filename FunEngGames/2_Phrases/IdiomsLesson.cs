@@ -54,8 +54,6 @@ namespace FunEngGames
             GenIdiom(label15,label16, nodeList);
             GenIdiom(label17,label18, nodeList);
             GenIdiom(label19,label20, nodeList);
-
-
         }
 
 
@@ -63,10 +61,8 @@ namespace FunEngGames
         public void GenIdiom(Label t1, Label t2, XmlNodeList nodeList)
         {
             NewNumber(nodeList.Count);
-            t1.Text = nodeList[randomList.Last()].SelectSingleNode("idiom").InnerText;
-            t2.Text = nodeList[randomList.Last()].SelectSingleNode("meaning").InnerText;
-
-
+            t1.Text = nodeList[randomList.Last()].SelectSingleNode("answer1").InnerText;
+            t2.Text = nodeList[randomList.Last()].SelectSingleNode("sentence").InnerText;
         }
 
 
@@ -92,8 +88,9 @@ namespace FunEngGames
             Idioms Idioms = new Idioms();
             Idioms.mainLevelsForm = this.mainLevelsForm;
             Idioms.phrasesLevelForm = this.phrasesLevelForm;
-            this.Hide();
             Idioms.Show();
+            this.Hide();
+
         }
     }
 }
