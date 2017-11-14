@@ -5,14 +5,11 @@
  * Coded On:        Fall 2017
  * About this File: This file handles all questions and logic in the sentence structure level
  */
+
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 

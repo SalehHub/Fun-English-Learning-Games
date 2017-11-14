@@ -52,6 +52,9 @@
   <PropertyGroup>
     <StartupObject>FunEngGames.Program</StartupObject>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="NAudio, Version=1.8.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NAudio.1.8.3\lib\net35\NAudio.dll</HintPath>
@@ -394,6 +397,7 @@
     <None Include="Resources\Screen Shot 2017-09-02 at 12.23.10 AM.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="1.ico" />
     <Content Include="Audio\abandon.mp3">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

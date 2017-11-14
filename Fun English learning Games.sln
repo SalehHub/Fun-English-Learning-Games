@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fun English learning Games", "FunEngGames\Fun English learning Games.csproj", "{745FC019-C91B-4893-9A65-78CAB5867E3C}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "FELG_Setup", "FELG_Setup\FELG_Setup.vdproj", "{FC77BBBC-6C28-46D2-B759-2D2447EBEC14}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{745FC019-C91B-4893-9A65-78CAB5867E3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{745FC019-C91B-4893-9A65-78CAB5867E3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{745FC019-C91B-4893-9A65-78CAB5867E3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC77BBBC-6C28-46D2-B759-2D2447EBEC14}.Debug|Any CPU.ActiveCfg = Debug
+		{FC77BBBC-6C28-46D2-B759-2D2447EBEC14}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
