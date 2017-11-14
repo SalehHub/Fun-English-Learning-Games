@@ -283,12 +283,13 @@ namespace FunEngGames._3_Sentences
         public void GoToNextLevel()
         {
 
-           // SSLesson SSLesson = new SSLesson();
+            // SSLesson SSLesson = new SSLesson();
             //SSLesson.mainLevelsForm = mainLevelsForm;
             //SSLesson.sentenceLevelsForm = sentenceLevelsForm;
-            this.Hide();
             sentenceLevelsForm.lblhelp.Text = "Good job, now you have to play Sentence Structure Level to unlock Paragraph Coherence level";
+        
             sentenceLevelsForm.Show();
+            this.Hide();
             //SSLesson.Show();
         }
 
@@ -307,7 +308,7 @@ namespace FunEngGames._3_Sentences
         {
             try
             {
-                this.mainLevelsForm.Show();
+                this.sentenceLevelsForm.Show();
             }
             catch(Exception ex) 
             { 
