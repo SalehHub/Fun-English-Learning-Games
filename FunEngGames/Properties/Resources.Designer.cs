@@ -83,6 +83,16 @@ namespace FunEngGames.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap addInfo {
+            get {
+                object obj = ResourceManager.GetObject("addInfo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap answers {
             get {
                 object obj = ResourceManager.GetObject("answers", resourceCulture);
@@ -193,6 +203,16 @@ namespace FunEngGames.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap clarify {
+            get {
+                object obj = ResourceManager.GetObject("clarify", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cross {
             get {
                 object obj = ResourceManager.GetObject("cross", resourceCulture);
@@ -216,6 +236,26 @@ namespace FunEngGames.Properties {
         internal static System.Drawing.Bitmap def2 {
             get {
                 object obj = ResourceManager.GetObject("def2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap expressResult {
+            get {
+                object obj = ResourceManager.GetObject("expressResult", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ExpressSequence {
+            get {
+                object obj = ResourceManager.GetObject("ExpressSequence", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -513,6 +553,16 @@ namespace FunEngGames.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Sentence_Structure_Png {
+            get {
+                object obj = ResourceManager.GetObject("Sentence_Structure_Png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sentencesMainTitle {
             get {
                 object obj = ResourceManager.GetObject("sentencesMainTitle", resourceCulture);
@@ -536,6 +586,26 @@ namespace FunEngGames.Properties {
         internal static System.Drawing.Bitmap sentencesTitleHover {
             get {
                 object obj = ResourceManager.GetObject("sentencesTitleHover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap showContr {
+            get {
+                object obj = ResourceManager.GetObject("showContr", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap showSimi {
+            get {
+                object obj = ResourceManager.GetObject("showSimi", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -726,6 +796,26 @@ namespace FunEngGames.Properties {
         internal static System.Drawing.Bitmap synonymsTitle {
             get {
                 object obj = ResourceManager.GetObject("synonymsTitle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap theirthere {
+            get {
+                object obj = ResourceManager.GetObject("theirthere", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap this_that_these_those {
+            get {
+                object obj = ResourceManager.GetObject("this_that_these_those", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

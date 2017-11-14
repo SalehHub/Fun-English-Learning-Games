@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<Questions>
+  
+  <!--Paragraph Coherence questions-->
+  
+<PC>
+	<one>First Lee and Michael had a nice inner.</one>
+	<two>Then they went on a walk to the park.</two>
+	<three>Finally Michael picked up the courage to kiss Lee goodnight</three>	
+</PC>  
+
+<PC>	<one>Lee and Michael had only been going out for a short time</one>
+	<two>And their time together had been amazing</two>
+	<three>Therefore Michael decided to buy an engagement ring</three>	
+</PC>  
+
+<PC>
+	<one>Although Lee and Michael had just gone out the night before</one>
+	<two>Michael decided to ask her out again</two>
+	<three>However Lee had to work late tonight </three>		
+</PC>  
+
+<PC>
+	<one>After their first date Michael felt different</one>
+	<two>He knew he had never felt like this way before</two>
+	<three>In other words, Michael thought we was in love</three>	
+</PC>  
+
+<PC>
+	<one>Michael planned the perfect date with Lee</one>
+	<two>First he would take her out for dinner</two>
+	<three>Then he would walk her home. </three>	
+</PC>  
+
+<PC>
+	<one>Michael wanted to plan a future with Lee.</one>
+	<two>Additionally he wanted to take things slow and get to know her,</two>
+	<three>But on the other hand he was falling in love with her</three>		
+</PC>  
+
+</Questions>

@@ -28,79 +28,80 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.picSpelling = new System.Windows.Forms.PictureBox();
-            this.picHomonyms = new System.Windows.Forms.PictureBox();
-            this.picSA = new System.Windows.Forms.PictureBox();
+            this.picGrammar = new System.Windows.Forms.PictureBox();
+            this.picPC = new System.Windows.Forms.PictureBox();
+            this.picSS = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblSpellingRes = new System.Windows.Forms.Label();
+            this.lblGrammarPts = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblPCPts = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.picSpelling)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picHomonyms)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picSA)).BeginInit();
+            this.picSSLock = new System.Windows.Forms.PictureBox();
+            this.picPCLock = new System.Windows.Forms.PictureBox();
+            this.lblhelp = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.picGrammar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSS)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSSLock)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPCLock)).BeginInit();
             this.SuspendLayout();
             // 
-            // picSpelling
+            // picGrammar
             // 
-            this.picSpelling.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.picSpelling.BackColor = System.Drawing.Color.Transparent;
-            this.picSpelling.BackgroundImage = global::FunEngGames.Properties.Resources.GrammerTitle;
-            this.picSpelling.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picSpelling.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picSpelling.Location = new System.Drawing.Point(58, 181);
-            this.picSpelling.Name = "picSpelling";
-            this.picSpelling.Size = new System.Drawing.Size(338, 282);
-            this.picSpelling.TabIndex = 1;
-            this.picSpelling.TabStop = false;
-            this.picSpelling.Click += new System.EventHandler(this.picSpelling_Click);
-            this.picSpelling.MouseLeave += new System.EventHandler(this.picSpelling_MouseLeave);
-            this.picSpelling.MouseHover += new System.EventHandler(this.picSpelling_MouseHover);
+            this.picGrammar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.picGrammar.BackColor = System.Drawing.Color.Transparent;
+            this.picGrammar.BackgroundImage = global::FunEngGames.Properties.Resources.GrammerTitle;
+            this.picGrammar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picGrammar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picGrammar.Location = new System.Drawing.Point(58, 181);
+            this.picGrammar.Name = "picGrammar";
+            this.picGrammar.Size = new System.Drawing.Size(338, 282);
+            this.picGrammar.TabIndex = 1;
+            this.picGrammar.TabStop = false;
+            this.picGrammar.Click += new System.EventHandler(this.picGrammar_Click);
+            this.picGrammar.MouseLeave += new System.EventHandler(this.picGrammar_MouseLeave);
+            this.picGrammar.MouseHover += new System.EventHandler(this.picGrammar_MouseHover);
             // 
-            // picHomonyms
+            // picPC
             // 
-            this.picHomonyms.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.picHomonyms.BackColor = System.Drawing.Color.Transparent;
-            this.picHomonyms.BackgroundImage = global::FunEngGames.Properties.Resources.PCTitle;
-            this.picHomonyms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picHomonyms.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picHomonyms.Location = new System.Drawing.Point(752, 181);
-            this.picHomonyms.Name = "picHomonyms";
-            this.picHomonyms.Size = new System.Drawing.Size(338, 282);
-            this.picHomonyms.TabIndex = 2;
-            this.picHomonyms.TabStop = false;
-            this.picHomonyms.Click += new System.EventHandler(this.picHomonyms_Click);
-            this.picHomonyms.MouseLeave += new System.EventHandler(this.picSentences_MouseLeave);
-            this.picHomonyms.MouseHover += new System.EventHandler(this.picSentences_MouseHover);
+            this.picPC.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.picPC.BackColor = System.Drawing.Color.Transparent;
+            this.picPC.BackgroundImage = global::FunEngGames.Properties.Resources.PCTitle;
+            this.picPC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picPC.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picPC.Location = new System.Drawing.Point(752, 181);
+            this.picPC.Name = "picPC";
+            this.picPC.Size = new System.Drawing.Size(338, 282);
+            this.picPC.TabIndex = 2;
+            this.picPC.TabStop = false;
+            this.picPC.Click += new System.EventHandler(this.picPC_Click);
+            this.picPC.MouseLeave += new System.EventHandler(this.picPC_MouseLeave);
+            this.picPC.MouseHover += new System.EventHandler(this.picPC_MouseHover);
             // 
-            // picSA
+            // picSS
             // 
-            this.picSA.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.picSA.BackColor = System.Drawing.Color.Transparent;
-            this.picSA.BackgroundImage = global::FunEngGames.Properties.Resources.SSTitle;
-            this.picSA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picSA.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picSA.Location = new System.Drawing.Point(405, 181);
-            this.picSA.Name = "picSA";
-            this.picSA.Size = new System.Drawing.Size(338, 282);
-            this.picSA.TabIndex = 3;
-            this.picSA.TabStop = false;
-            this.picSA.Click += new System.EventHandler(this.pictureBox3_Click);
-            this.picSA.MouseLeave += new System.EventHandler(this.picPhrases_MouseLeave);
-            this.picSA.MouseHover += new System.EventHandler(this.picPhrases_MouseHover);
+            this.picSS.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picSS.BackColor = System.Drawing.Color.Transparent;
+            this.picSS.BackgroundImage = global::FunEngGames.Properties.Resources.SSTitle;
+            this.picSS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picSS.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picSS.Location = new System.Drawing.Point(405, 181);
+            this.picSS.Name = "picSS";
+            this.picSS.Size = new System.Drawing.Size(338, 282);
+            this.picSS.TabIndex = 3;
+            this.picSS.TabStop = false;
+            this.picSS.Click += new System.EventHandler(this.picSS_Click);
+            this.picSS.MouseLeave += new System.EventHandler(this.picSS_MouseLeave);
+            this.picSS.MouseHover += new System.EventHandler(this.picSS_MouseHover);
             // 
             // label2
             // 
@@ -116,18 +117,18 @@
             this.label2.Text = "Grammer Points";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblSpellingRes
+            // lblGrammarPts
             // 
-            this.lblSpellingRes.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblSpellingRes.BackColor = System.Drawing.Color.Transparent;
-            this.lblSpellingRes.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSpellingRes.ForeColor = System.Drawing.Color.Black;
-            this.lblSpellingRes.Location = new System.Drawing.Point(37, 8);
-            this.lblSpellingRes.Name = "lblSpellingRes";
-            this.lblSpellingRes.Size = new System.Drawing.Size(171, 37);
-            this.lblSpellingRes.TabIndex = 9;
-            this.lblSpellingRes.Text = "0";
-            this.lblSpellingRes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblGrammarPts.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblGrammarPts.BackColor = System.Drawing.Color.Transparent;
+            this.lblGrammarPts.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGrammarPts.ForeColor = System.Drawing.Color.Black;
+            this.lblGrammarPts.Location = new System.Drawing.Point(37, 8);
+            this.lblGrammarPts.Name = "lblGrammarPts";
+            this.lblGrammarPts.Size = new System.Drawing.Size(171, 37);
+            this.lblGrammarPts.TabIndex = 9;
+            this.lblGrammarPts.Text = "0";
+            this.lblGrammarPts.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
@@ -164,7 +165,7 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = global::FunEngGames.Properties.Resources.result;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.lblSpellingRes);
+            this.panel1.Controls.Add(this.lblGrammarPts);
             this.panel1.Location = new System.Drawing.Point(106, 524);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(243, 65);
@@ -201,24 +202,24 @@
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.BackgroundImage = global::FunEngGames.Properties.Resources.result;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.lblPCPts);
             this.panel3.Location = new System.Drawing.Point(800, 524);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(243, 65);
             this.panel3.TabIndex = 16;
             // 
-            // label6
+            // lblPCPts
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(37, 8);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(170, 37);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "0";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPCPts.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblPCPts.BackColor = System.Drawing.Color.Transparent;
+            this.lblPCPts.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPCPts.ForeColor = System.Drawing.Color.Black;
+            this.lblPCPts.Location = new System.Drawing.Point(37, 8);
+            this.lblPCPts.Name = "lblPCPts";
+            this.lblPCPts.Size = new System.Drawing.Size(170, 37);
+            this.lblPCPts.TabIndex = 9;
+            this.lblPCPts.Text = "0";
+            this.lblPCPts.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
@@ -233,31 +234,44 @@
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox6
+            // picSSLock
             // 
-            this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.BackgroundImage = global::FunEngGames.Properties.Resources._lock;
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox6.Location = new System.Drawing.Point(549, 604);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(48, 46);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 23;
-            this.pictureBox6.TabStop = false;
+            this.picSSLock.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picSSLock.BackColor = System.Drawing.Color.Transparent;
+            this.picSSLock.BackgroundImage = global::FunEngGames.Properties.Resources._lock;
+            this.picSSLock.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picSSLock.Location = new System.Drawing.Point(549, 604);
+            this.picSSLock.Name = "picSSLock";
+            this.picSSLock.Size = new System.Drawing.Size(48, 46);
+            this.picSSLock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picSSLock.TabIndex = 23;
+            this.picSSLock.TabStop = false;
             // 
-            // pictureBox2
+            // picPCLock
             // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = global::FunEngGames.Properties.Resources._lock;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(897, 615);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 46);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 24;
-            this.pictureBox2.TabStop = false;
+            this.picPCLock.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.picPCLock.BackColor = System.Drawing.Color.Transparent;
+            this.picPCLock.BackgroundImage = global::FunEngGames.Properties.Resources._lock;
+            this.picPCLock.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picPCLock.Location = new System.Drawing.Point(897, 615);
+            this.picPCLock.Name = "picPCLock";
+            this.picPCLock.Size = new System.Drawing.Size(48, 46);
+            this.picPCLock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picPCLock.TabIndex = 24;
+            this.picPCLock.TabStop = false;
+            // 
+            // lblhelp
+            // 
+            this.lblhelp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblhelp.BackColor = System.Drawing.Color.Transparent;
+            this.lblhelp.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblhelp.Location = new System.Drawing.Point(15, 119);
+            this.lblhelp.Name = "lblhelp";
+            this.lblhelp.Size = new System.Drawing.Size(1119, 58);
+            this.lblhelp.TabIndex = 27;
+            this.lblhelp.Text = "Play Spelling level to unlock Synonyms && Antonyms levels";
+            this.lblhelp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // sentenceLevels
             // 
@@ -266,8 +280,9 @@
             this.BackgroundImage = global::FunEngGames.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1148, 673);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.lblhelp);
+            this.Controls.Add(this.picPCLock);
+            this.Controls.Add(this.picSSLock);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -275,9 +290,9 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.picSA);
-            this.Controls.Add(this.picHomonyms);
-            this.Controls.Add(this.picSpelling);
+            this.Controls.Add(this.picSS);
+            this.Controls.Add(this.picPC);
+            this.Controls.Add(this.picGrammar);
             this.MinimumSize = new System.Drawing.Size(1166, 720);
             this.Name = "sentenceLevels";
             this.ShowIcon = false;
@@ -285,15 +300,15 @@
             this.Text = "Fun English Learning Games: Sentences Levels";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.mainLevels_FormClosed);
             this.Load += new System.EventHandler(this.mainLevels_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.picSpelling)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picHomonyms)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picSA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picGrammar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSS)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSSLock)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPCLock)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -301,20 +316,21 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox picSpelling;
-        private System.Windows.Forms.PictureBox picHomonyms;
-        private System.Windows.Forms.PictureBox picSA;
+        private System.Windows.Forms.PictureBox picGrammar;
+        private System.Windows.Forms.PictureBox picPC;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lblSpellingRes;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox picPCLock;
+        public System.Windows.Forms.Label lblPCPts;
+        public System.Windows.Forms.Label lblGrammarPts;
+        public System.Windows.Forms.Label lblhelp;
+        public System.Windows.Forms.PictureBox picSS;
+        public System.Windows.Forms.PictureBox picSSLock;
+        public System.Windows.Forms.Label label4;
     }
 }

@@ -32,7 +32,7 @@ namespace FunEngGames
 
 
         //Sentences Levels Points
-        public int grammerPoints = 0;
+        public int grammarPoints = 0;
         public int sentenceStructurePoints = 0;
         public int ParagraphCoherencePoints = 0;
 
@@ -148,6 +148,24 @@ namespace FunEngGames
             ph.mainLevelsForm = this;
 
             ph.Show();
+            this.Hide();
+        }
+
+        private void picPhrasesLock_Click(object sender, EventArgs e)
+        {
+            phrasesLevel phrasesLevel = new phrasesLevel();
+            phrasesLevel.mainLevelsForm = this;
+            phrasesLevel.Show();
+
+            this.Hide();
+        }
+
+        private void picSentencesLock_Click(object sender, EventArgs e)
+        {
+            sentenceLevels sentenceLevels = new sentenceLevels();
+            sentenceLevels.mainLevelsForm = this;
+            sentenceLevels.Show();
+
             this.Hide();
         }
     }

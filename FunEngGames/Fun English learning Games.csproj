@@ -93,6 +93,30 @@
     <Compile Include="1_Words\Storyline_Friendship.Designer.cs">
       <DependentUpon>Storyline_Friendship.cs</DependentUpon>
     </Compile>
+    <Compile Include="3_Sentences\Grammar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3_Sentences\Grammar.designer.cs">
+      <DependentUpon>Grammar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3_Sentences\GrammarLesson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3_Sentences\GrammarLesson.designer.cs">
+      <DependentUpon>GrammarLesson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3_Sentences\PCLesson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3_Sentences\PCLesson.designer.cs">
+      <DependentUpon>PCLesson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3_Sentences\SS_lesson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3_Sentences\SS_lesson.designer.cs">
+      <DependentUpon>SS_lesson.cs</DependentUpon>
+    </Compile>
     <Compile Include="CommonFunctions.cs" />
     <Compile Include="1_Words\MoreInfo.cs">
       <SubType>Form</SubType>
@@ -105,12 +129,6 @@
     </Compile>
     <Compile Include="ResultForm.Designer.cs">
       <DependentUpon>ResultForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="3_Sentences\Grammar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="3_Sentences\Grammar.designer.cs">
-      <DependentUpon>Grammar.cs</DependentUpon>
     </Compile>
     <Compile Include="1_Home.cs">
       <SubType>Form</SubType>
@@ -242,11 +260,20 @@
     <EmbeddedResource Include="1_Words\Storyline_Friendship.resx">
       <DependentUpon>Storyline_Friendship.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ResultForm.resx">
-      <DependentUpon>ResultForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="3_Sentences\Grammar.resx">
       <DependentUpon>Grammar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3_Sentences\GrammarLesson.resx">
+      <DependentUpon>GrammarLesson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3_Sentences\PCLesson.resx">
+      <DependentUpon>PCLesson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3_Sentences\SS_lesson.resx">
+      <DependentUpon>SS_lesson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultForm.resx">
+      <DependentUpon>ResultForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="1_Home.resx">
       <DependentUpon>1_Home.cs</DependentUpon>
@@ -2018,10 +2045,23 @@
     <None Include="Resources\sl_friends.gif" />
     <None Include="Resources\sl_sad.gif" />
     <None Include="Resources\sl_start.gif" />
+    <None Include="Resources\Sentence_Structure_Png.PNG" />
+    <None Include="Resources\showSimi.png" />
+    <None Include="Resources\ExpressSequence.png" />
+    <None Include="Resources\expressResult.png" />
+    <None Include="Resources\addInfo.png" />
+    <None Include="Resources\clarify.png" />
+    <None Include="Resources\showContr.png" />
+    <Content Include="Resources\theirthere.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\this-that-these-those.png" />
     <Content Include="XML\Antonyms.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="XML\Grammar.xml" />
+    <Content Include="XML\Grammar.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="XML\Homonyms.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -2035,7 +2075,13 @@
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="XML\PC.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="XML\Spelling.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XML\SS.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="XML\Synonyms.xml">

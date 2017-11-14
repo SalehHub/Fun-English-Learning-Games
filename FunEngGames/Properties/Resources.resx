@@ -328,4 +328,31 @@
   <data name="sl_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sl_start.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="addInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\addInfo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clarify" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clarify.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="expressResult" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\expressResult.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExpressSequence" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExpressSequence.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sentence_Structure_Png" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sentence_Structure_Png.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="showContr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\showContr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="showSimi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\showSimi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="theirthere" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\theirthere.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="this_that_these_those" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\this-that-these-those.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

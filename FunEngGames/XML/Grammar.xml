@@ -1,85 +1,76 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?> 
 <Questions>
-
+  
+  <!--Grammmar questions-->
+  
 <Grammar>
-<sentence>what kind of work do you do?</sentence>
-<answer>I'm a piano teacher</answer>
-<option>I work every day</option>
-<option>I worked for two hours</option> 
+<sentence>We get together _____ Christmas Day</sentence>
+<answer>on</answer>
+<optionA>at</optionA>
+<optionB>in</optionB>
 </Grammar>
-
+  
 <Grammar>
-<sentence>John works______________ building downtown?</sentence>
+<sentence>John works _______ building downtown?</sentence>
 <answer>at the new office</answer>
-<option>in the new office</option>
-<option>on the new office</option> 
-</Grammar>
-
-<!-- Simple Present tense question-->
-<Grammar>
-<sentence>There _____ about 200 countries in the world</sentence>
-<answer>are</answer>
-<option>am</option>
-<option>is</option> 
-</Grammar>
+<optionA>in the new office</optionA>
+<optionB>on the new office</optionB>
+</Grammar>  
 
 <Grammar>
-<sentence>What _ your full name?</sentence>
-<answer>is</answer>
-<option>am</option>
-<option>are</option> 
+<sentence>I will be ready _____ 20 minutes </sentence>
+<answer>in</answer>
+<optionA>on</optionA>
+<optionB>at</optionB>
 </Grammar>
 
-
-<!--'W/H Questions'-->
 <Grammar>
 <sentence>______ did you do yesterday?</sentence>
 <answer>What</answer>
-<option>Where</option>
-<option>Who</option> 
+<optionA>Where</optionA>
+<optionB>Who</optionB>
 </Grammar>
 
 <Grammar>
 <sentence>______ was that on the phone?</sentence>
 <answer>Who</answer>
-<option>Where</option>
-<option>Whom</option> 
+<optionA>Where</optionA>
+<optionB>Whom</optionB>
 </Grammar>
 
-
-<!--Articles'A' 'An'and 'the' Questions'-->
 <Grammar>
-<sentence>My mother saw a nice dress in __ store. She decided to buy the dress</sentence>
+<sentence>My mother saw a nice dress in ____ store. She decided to buy the dress</sentence>
 <answer>a</answer>
-<option>the</option>
-<option>an</option> 
+<optionA>any</optionA>
+<optionB>an</optionB>
 </Grammar>
 
-
 <Grammar>
-<sentence>My father always exercises for hour __ hour in the morning</sentence>
+<sentence>My father always exercises for ____ hour in the morning</sentence>
 <answer>an</answer>
-<option>a</option>
-<option>the</option> 
-</Grammar>
-
-<!-- Identify the Tense in which Senetence is it-->
-<Grammar>
-<sentence>Don't they live in San Antonio?</sentence>
-<answer>Simple Present</answer>
-<option>Simple Past</option>
-<option>Simple Future</option> 
+<optionA>a</optionA>
+<optionB>the</optionB>
 </Grammar>
 
 <Grammar>
-<sentence>Joina will come at six for the lecture of Advance Software Engineering</sentence>
-<answer>Simple Present</answer>
-<option>Simple Future</option>
-<option>Simple Past</option> 
+<sentence> _____ dress is new</sentence>
+<answer>This</answer>
+<optionA>There</optionA>
+<optionB>These</optionB>
 </Grammar>
 
+<Grammar>
+<sentence> _____ cookies are delicious</sentence>
+<answer>These</answer>
+<optionA>That</optionA>
+<optionB>This</optionB>
+</Grammar>
+
+<Grammar>
+<sentence> _____ person on the other side of street is my uncle</sentence>
+<answer>That</answer>
+<optionA>This</optionA>
+<optionB>These</optionB>
+</Grammar>
 
 </Questions>
-
-
-

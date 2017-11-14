@@ -34,7 +34,7 @@ namespace FunEngGames
 
 
         //Sentences Levels Points
-        public int grammerPoints = 0;
+        public int grammarPoints = 0;
         public int sentenceStructurePoints = 0;
         public int ParagraphCoherencePoints = 0;
 

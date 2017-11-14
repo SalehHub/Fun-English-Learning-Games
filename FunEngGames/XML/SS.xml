@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Questions>
+
+<SS>
+<sentence>Jay went to Adv Software Engineering Lecture today, but Aleena remained at Graduate Center </sentence>
+<answer>Compound Sentence</answer>
+<optionA>Simple Sentence</optionA>
+<optionB>Complex Sentence</optionB>
+</SS>
+
+<SS>
+<sentence>Saleh and Sandeep explained and displayed project all meeting.</sentence>
+<answer>Simple Sentence</answer>
+<optionA>Compound Sentence</optionA>
+<optionB>Complex Sentence</optionB>
+</SS>
+
+<SS>
+<sentence>We decided go fishing and camp out at the lake</sentence>
+<answer>Simple Sentence</answer>
+<optionA>Compound Sentence</optionA>
+<optionB>Complex Sentence</optionB> 
+</SS>
+
+<SS>
+<sentence>Those clouds promise rain, so we should hurry up and leave before we get caught in a flah flood</sentence>
+<answer>Compound-complex Sentence</answer>
+<optionA>Simple Sentence</optionA>
+<optionB>Complex Sentence</optionB>
+</SS>
+
+<SS>
+<sentence>After the Hurricane harvey hit, my uncle's house was completely destroyed</sentence>
+<answer>Complex Sentence</answer>
+<optionA>Simple Sentence</optionA>
+<optionB>Compound Sentence</optionB>
+</SS>
+
+<SS>
+<sentence>This Christmas our vacations should be both exciting and restful</sentence>
+<answer>Simple Sentence</answer>
+<optionA>Compound Sentence</optionA>
+<optionB>Complex Sentence</optionB>
+</SS>
+
+<SS>
+<sentence>Older television sets had tubes; the newest models, which take less space, are digital televisions.</sentence>
+<answer>Compound-complex Sentence</answer>
+<optionA>Simple Sentence</optionA>
+<optionB>Complex Sentence</optionB>
+</SS>
+</Questions>
+
