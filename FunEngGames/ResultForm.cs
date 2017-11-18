@@ -125,5 +125,11 @@ namespace FunEngGames
                 Console.WriteLine(ex.Message);
             }
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(this.Size.Width+" _ "+this.Size.Height);
+            
+        }
     }
 }
