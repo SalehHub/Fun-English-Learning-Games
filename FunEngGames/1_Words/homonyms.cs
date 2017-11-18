@@ -187,18 +187,20 @@ namespace FunEngGames
         //Save and pass points between main levels form and words levels form.
         public void SavePoints()
         {
-            this.mainLevelsForm.homonymsPoints = attempt+1 + points;
-            this.wordLevelsForm.homonymsPoints = attempt+1 + points;
+            lblPoints.Text = (attempt + hints + points).ToString();
+
+            this.mainLevelsForm.homonymsPoints = attempt+hints + points;
+            this.wordLevelsForm.homonymsPoints = attempt+ hints + points;
 
             this.mainLevelsForm.lblWordsPoints.Text = (this.mainLevelsForm.spellingPoints +
                                                         this.mainLevelsForm.synonymsPoints +
                                                         this.mainLevelsForm.antonymsPoints +
-                                                        attempt+1 + points).ToString();
+                                                        attempt+ hints + points).ToString();
 
-            this.wordLevelsForm.lblHomonymsPoints.Text = (attempt+1 + points).ToString();
+            this.wordLevelsForm.lblHomonymsPoints.Text = (attempt+ hints + points).ToString();
 
 
-            this.mainLevelsForm.CF.homonymsPoints = attempt+1 + points;
+            this.mainLevelsForm.CF.homonymsPoints = attempt+ hints + points;
         }
 
         //Form load fucntion generate questions
@@ -352,8 +354,6 @@ namespace FunEngGames
             }
             else
             {
-                attempt--;
-                lblAttempts.Text = attempt.ToString();
 
                 //Correct answer (fq: first question)
                 if (fq == false && comboBox1.Text.Trim().ToLower().Contains(lblAns1.Text.Trim().ToLower()))
@@ -370,9 +370,7 @@ namespace FunEngGames
                 {
                     picAns1.BackgroundImage = Properties.Resources.cross;
                 }
-
-
-
+                
 
                 if (sq == false && comboBox2.Text.Trim().ToLower().Contains(lblAns2.Text.Trim().ToLower()))
                 {
@@ -387,9 +385,7 @@ namespace FunEngGames
                 {
                     picAns2.BackgroundImage = Properties.Resources.cross;
                 }
-
-
-
+                
 
                 if (tq == false && comboBox3.Text.Trim().ToLower().Contains(lblAns3.Text.Trim().ToLower()))
                 {
@@ -419,10 +415,7 @@ namespace FunEngGames
                 {
                     picAns4.BackgroundImage = Properties.Resources.cross;
                 }
-
-
-
-
+                
 
                 if (fiq == false && comboBox5.Text.Trim().ToLower().Contains(lblAns5.Text.Trim().ToLower()))
                 {
@@ -445,13 +438,11 @@ namespace FunEngGames
                 {
                     showFeedBack("Good job, keep up the good work in the next levels.", Color.Green);
 
-                    lblPoints.Text = (attempt + 1 + points).ToString();
+                    //lblPoints.Text = (attempt + hints + points).ToString();
 
                     SavePoints();
                     btnCheckYourAnswer.Text = "View your reward";
                     unlockPhrases();
-
-
                 }
 
 
@@ -459,7 +450,6 @@ namespace FunEngGames
                 {
                     if (attempt == 4)
                     {
-
                         showFeedBack("Try again you still have four attempts left.", Color.Red);
                     }
                     else if (attempt == 3)
@@ -529,6 +519,10 @@ namespace FunEngGames
                         lblCorrectAns.Text = lblCorrectAns.Text + "\nThe correct answer for the fifth question is " + lblAns5.Text;
                     }
                 }
+
+                attempt--;
+                lblAttempts.Text = attempt.ToString();
+
             }
         }
 

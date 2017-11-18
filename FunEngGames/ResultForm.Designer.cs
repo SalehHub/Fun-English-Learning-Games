@@ -338,7 +338,7 @@
             this.Name = "ResultForm";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Fun English Learning Games: Your results";
+            this.Text = "Fun English Learning Games: Your Results";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ResultForm_FormClosed);
             this.Load += new System.EventHandler(this.Result_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
