@@ -274,7 +274,7 @@
             this.lblhelp.Name = "lblhelp";
             this.lblhelp.Size = new System.Drawing.Size(1119, 58);
             this.lblhelp.TabIndex = 27;
-            this.lblhelp.Text = "Play Spelling level to unlock Synonyms && Antonyms levels";
+            this.lblhelp.Text = "Play Grammar level to unlock Sentence structure level";
             this.lblhelp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // sentenceLevels

@@ -57,7 +57,7 @@ namespace FunEngGames
                 SpeechSynthesizer synthesizer = new SpeechSynthesizer();
                 synthesizer.Volume = 1;  // 0...100
                 synthesizer.Rate = -10;     // -10...10
-                synthesizer.SpeakAsync("Hello");
+                synthesizer.SpeakAsync("H");
             }catch(Exception ex)
             {
                 //MessageBox.Show(ex.Message);
