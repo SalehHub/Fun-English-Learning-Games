@@ -69,6 +69,7 @@
             this.picIdioms.BackgroundImage = global::FunEngGames.Properties.Resources.idiomsTitle;
             this.picIdioms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picIdioms.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picIdioms.Enabled = false;
             this.picIdioms.Location = new System.Drawing.Point(749, 181);
             this.picIdioms.Name = "picIdioms";
             this.picIdioms.Size = new System.Drawing.Size(338, 282);
@@ -181,6 +182,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 24;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.picHomonyms_Click);
             // 
             // phrasesLevel
             // 

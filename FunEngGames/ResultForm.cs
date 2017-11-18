@@ -73,7 +73,7 @@ namespace FunEngGames
 
 
             //Sentences Points
-
+        
             var sentencesTotal = 30;
             var sentencesPlayerTotal = this.mainLevelsForm.CF.grammarPoints
                 + this.mainLevelsForm.CF.sentenceStructurePoints

@@ -32,7 +32,7 @@ namespace FunEngGames
 
             else if (pictureBox4.Image == _2)
             {
-                label1.Text = "Le decided to join Fun English Learning Games institution to learn English language";
+                label1.Text = "Lee decided to join Fun English Learning Games institution to learn English language";
 
                 pictureBox4.Image = _3;
             }
@@ -42,7 +42,7 @@ namespace FunEngGames
                 button3.Text = "Start learning English and playing fun games";
 
 
-                label1.Text = "Le decided to join Fun English Learning Games institution to learn English language";
+                label1.Text = "Lee decided to join Fun English Learning Games institution to learn English language";
                 pictureBox4.Image = _4;
                 label2.Visible = false;
 

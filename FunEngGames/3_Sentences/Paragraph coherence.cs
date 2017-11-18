@@ -1,4 +1,6 @@
-﻿/*
+﻿// Copyright (c) 2011 rubicon IT GmbH
+
+/*
  * Project Name:    Fun English learning Games
  * File Name:       Paragraph coherence.cs
  * Coded By:        Adriana Escobar
@@ -6,17 +8,13 @@
  * About this File: This file handles all questions and logic in paragraph coherence level
  */
 
+using FunEngGames._3_Sentences;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
-using FunEngGames._3_Sentences;
 namespace FunEngGames
 {
     public partial class PC : Form
@@ -39,7 +37,7 @@ namespace FunEngGames
 
         //Set game variables
         public int question = 1;
-        public int attempts = 2;
+        public int attempts = 3;
         public int points = 0;
         public int CorrectAnswers = 0;
         public String answer = "";
@@ -92,6 +90,9 @@ namespace FunEngGames
         public void GeneratePC(){
             try
             {
+                listBox1.Items.Clear();
+                listBox2.Items.Clear();
+
                 XmlNodeList nodeList = xmlDoc.DocumentElement.SelectNodes("/Questions/PC");
                 string oneS = "", twoS = "", threeS = "";
 
@@ -188,14 +189,15 @@ namespace FunEngGames
 
                 if (answer.Equals(answerNow))
                 {
-                    question++;
+                    CorrectAnswer();
+                    /*question++;
                     lblFeedback.Visible = true;
                     picFeedback.Visible = true;
                     picFeedback.BackgroundImage = Properties.Resources.check;
 
                     CorrectAnswers++;
                     points += attempts;
-                    /*calculate points*/
+                    /*calculate points
                     lblPoints.Text = points.ToString();//(int.Parse(lblPoints.Text) + 3).ToString();
                     SavePoints();
                     button3.Text = "Next Question";
@@ -211,6 +213,7 @@ namespace FunEngGames
 
                         button3.Text = "Start this level again";
                     }
+                    */
                 } 
                 else
                 {
@@ -231,22 +234,104 @@ namespace FunEngGames
             {
                 TryAgain();
             }
+            else if (button3.Text == "Start this level again")
+            {
+                randomList.Clear();
+                //Set game variables
+                question = 1;
+                attempts = 3;
+                points = 0;
+                CorrectAnswers = 0;
+                answer = "";
+                answerNow = "";
+                listBox1.Items.Clear();
+                listBox2.Visible = false;
+                button3.Text = "Check your answer";
+                lblFeedback.Visible = false;
+                picFeedback.Visible = false;
+                lblCorrectAns.Visible = false;
+                listBox2.Visible = false;
+                lblAttempts.Text = attempts.ToString();
+                lblPoints.Text = points.ToString();
+                label5.Text = "Question " + "1" + " out of 5";
+                POS_Load(sender,e);
+
+    }
 
         }
+
         public void NextQuestion()
         {
+
             button3.Text = "Check your answer";
             lblFeedback.Visible = false;
             picFeedback.Visible = false;
-            listBox1.Items.RemoveAt(0);
-            listBox1.Items.RemoveAt(0);
-            listBox1.Items.RemoveAt(0);
+            lblCorrectAns.Visible = false;
+            listBox2.Visible = false;
+
+            listBox1.Items.Clear();
+
             lblAttempts.Text = "3";
             attempts = 3;
             label5.Text = "Question " + question + " out of 5";
             GeneratePC();
 
         }
+
+        //if the answer was correct function
+        public void CorrectAnswer()
+        {
+            //txtAnswer.Enabled = false;
+            //btnFirstHint.Visible = false;
+            //btnSecondHint.Visible = false;
+            //picLock.Visible = false;
+
+
+            question++;
+            CorrectAnswers++;
+            picFeedback.BackgroundImage = Properties.Resources.check;
+
+            lblFeedback.Text = "Good job! Keep up the good work";
+            lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Green;
+            button3.Text = "Next Question";
+
+            /*calculate points*/
+            points += attempts;
+
+            lblPoints.Text = points.ToString();
+            SavePoints();
+
+
+            if (question == 6 && CorrectAnswers >= 3)
+            {
+                //txtAnswer.Enabled = false;
+                //btnFirstHint.Visible = false;
+                //btnSecondHint.Visible = false;
+                //picLock.Visible = false;
+
+                lblFeedback.Text = "Great job! You correctly answered more than two questions.";
+                lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Green;
+          
+                button3.Text = "View your reward";
+
+                //this.wordLevelsForm.picSA.Enabled = true;
+                //this.wordLevelsForm.picSALock.Visible = false;
+            }
+
+
+            if (question == 6 && CorrectAnswers < 3)
+            {
+                lblFeedback.Text = "You need to answer at least three questions to pass this level"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Red;
+
+                button3.Text = "Start this level again";
+
+                // this.wordLevelsForm.picSA.Enabled = true;
+                // this.wordLevelsForm.picSALock.Visible = false;
+            }
+
+        }
+
+
 
         public void IncorrectAnswer(String ans)
         {

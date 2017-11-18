@@ -62,20 +62,20 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(901, 50);
             this.label1.TabIndex = 59;
-            this.label1.Text = " Le and Megan got married!";
+            this.label1.Text = " Lee and Megan got married!";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button3
             // 
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button3.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.button3.BackColor = System.Drawing.Color.MediumTurquoise;
             this.button3.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.OrangeRed;
             this.button3.Location = new System.Drawing.Point(343, 648);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(307, 68);
             this.button3.TabIndex = 58;
-            this.button3.Text = "Your Result";
+            this.button3.Text = "Your Results";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -109,8 +109,7 @@
             // 
             // label4
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
@@ -137,7 +136,7 @@
             this.Name = "Storyline_Married";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = " Fun English Learning Games: Words - Le and Megan are friends now";
+            this.Text = " Fun English Learning Games: Words - Lee and Megan got married!";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Storyline_Friendship_FormClosed);
             this.Load += new System.EventHandler(this.Storyline_Married_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

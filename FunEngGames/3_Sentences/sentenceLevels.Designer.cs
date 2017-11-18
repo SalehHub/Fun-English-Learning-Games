@@ -78,6 +78,7 @@
             this.picPC.BackgroundImage = global::FunEngGames.Properties.Resources.PCTitle;
             this.picPC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picPC.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picPC.Enabled = false;
             this.picPC.Location = new System.Drawing.Point(752, 181);
             this.picPC.Name = "picPC";
             this.picPC.Size = new System.Drawing.Size(338, 282);
@@ -94,6 +95,7 @@
             this.picSS.BackgroundImage = global::FunEngGames.Properties.Resources.SSTitle;
             this.picSS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picSS.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picSS.Enabled = false;
             this.picSS.Location = new System.Drawing.Point(405, 181);
             this.picSS.Name = "picSS";
             this.picSS.Size = new System.Drawing.Size(338, 282);
@@ -246,6 +248,7 @@
             this.picSSLock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picSSLock.TabIndex = 23;
             this.picSSLock.TabStop = false;
+            this.picSSLock.Click += new System.EventHandler(this.picSS_Click);
             // 
             // picPCLock
             // 
@@ -259,6 +262,7 @@
             this.picPCLock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picPCLock.TabIndex = 24;
             this.picPCLock.TabStop = false;
+            this.picPCLock.Click += new System.EventHandler(this.picPC_Click);
             // 
             // lblhelp
             // 
