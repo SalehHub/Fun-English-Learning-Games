@@ -383,7 +383,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(725, 29);
             this.label2.TabIndex = 34;
-            this.label2.Text = "if you answer correctly the first time with no hints you get five points.";
+            this.label2.Text = "If you answer correctly the first time with no hints you get five points.";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Spelling

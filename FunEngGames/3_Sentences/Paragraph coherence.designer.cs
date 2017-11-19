@@ -47,6 +47,7 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -175,7 +176,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.ForeColor = System.Drawing.Color.Green;
             this.label5.Location = new System.Drawing.Point(262, 238);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(709, 29);
@@ -189,10 +190,10 @@
             this.button3.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.button3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.DarkRed;
-            this.button3.Location = new System.Drawing.Point(488, 768);
+            this.button3.Location = new System.Drawing.Point(470, 768);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(259, 53);
+            this.button3.Size = new System.Drawing.Size(293, 53);
             this.button3.TabIndex = 53;
             this.button3.Text = "Check your answer";
             this.button3.UseVisualStyleBackColor = false;
@@ -218,7 +219,7 @@
             this.picFeedback.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.picFeedback.BackColor = System.Drawing.Color.Transparent;
             this.picFeedback.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picFeedback.Location = new System.Drawing.Point(419, 768);
+            this.picFeedback.Location = new System.Drawing.Point(401, 769);
             this.picFeedback.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picFeedback.Name = "picFeedback";
             this.picFeedback.Size = new System.Drawing.Size(63, 53);
@@ -273,7 +274,7 @@
             this.lblCorrectAns.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCorrectAns.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCorrectAns.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblCorrectAns.Location = new System.Drawing.Point(262, 434);
+            this.lblCorrectAns.Location = new System.Drawing.Point(262, 440);
             this.lblCorrectAns.Name = "lblCorrectAns";
             this.lblCorrectAns.Size = new System.Drawing.Size(709, 29);
             this.lblCorrectAns.TabIndex = 64;
@@ -285,13 +286,13 @@
             // 
             this.listBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.listBox1.BackColor = System.Drawing.Color.White;
-            this.listBox1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 19;
+            this.listBox1.ItemHeight = 25;
             this.listBox1.Location = new System.Drawing.Point(262, 269);
             this.listBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(709, 118);
+            this.listBox1.Size = new System.Drawing.Size(709, 154);
             this.listBox1.TabIndex = 65;
             this.listBox1.DragDrop += new System.Windows.Forms.DragEventHandler(this.listBox1_DragDrop);
             this.listBox1.DragOver += new System.Windows.Forms.DragEventHandler(this.listBox1_DragOver);
@@ -301,13 +302,13 @@
             // 
             this.listBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.listBox2.BackColor = System.Drawing.Color.White;
-            this.listBox2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 19;
-            this.listBox2.Location = new System.Drawing.Point(262, 466);
+            this.listBox2.ItemHeight = 25;
+            this.listBox2.Location = new System.Drawing.Point(262, 472);
             this.listBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(709, 137);
+            this.listBox2.Size = new System.Drawing.Size(709, 129);
             this.listBox2.TabIndex = 66;
             this.listBox2.Visible = false;
             // 
@@ -325,6 +326,20 @@
             this.label1.Text = "You need to answer at least three questions to pass this level.";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label2.Location = new System.Drawing.Point(254, 208);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(725, 29);
+            this.label2.TabIndex = 68;
+            this.label2.Text = "If you answer correctly the first time with no hints you get three points.";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // PC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -332,6 +347,7 @@
             this.BackgroundImage = global::FunEngGames.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1232, 833);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.listBox1);
@@ -390,5 +406,6 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

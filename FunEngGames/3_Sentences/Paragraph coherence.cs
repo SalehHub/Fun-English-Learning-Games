@@ -297,7 +297,7 @@ namespace FunEngGames
             button3.Text = "Next Question";
 
             /*calculate points*/
-            points += attempts;
+            points += attempts+1;
 
             lblPoints.Text = points.ToString();
             SavePoints();
@@ -357,7 +357,14 @@ namespace FunEngGames
             //last attepmt and last question, the correct answers is less than 3
             else if (attempts == 0 && question == 5 && CorrectAnswers < 3)
             {
+
                 question++;
+
+                lblCorrectAns.Visible = true;
+                picFeedback.Visible = false;
+                lblCorrectAns.Text = "The correct answer is " + ans;
+                listBox2.Visible = true;
+
                 lblFeedback.Text = "You need to answer at least three questions to pass this level."; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Red;
                 button3.Text = "Start this level again";
             }
@@ -368,8 +375,9 @@ namespace FunEngGames
                 lblCorrectAns.Visible = true;
                 picFeedback.Visible = false;
                 lblCorrectAns.Text = "The correct answer is " + ans;
+                listBox2.Visible = true;
                 lblFeedback.Text = "Great job! You correctly answered more than two questions, keep up the good work in the next level."; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Green;
-                button3.Text = "Go to the next level >>";
+                button3.Text = "View your reward";
 
                 //this.sentenceLevelsForm.picSS.Enabled = true;
                 //this.sentenceLevelsForm.picSSLock.Visible = false;

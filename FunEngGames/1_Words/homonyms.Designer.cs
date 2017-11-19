@@ -730,7 +730,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(725, 29);
             this.label3.TabIndex = 59;
-            this.label3.Text = "if you answer correctly the first time with no hints you get 15 points.";
+            this.label3.Text = "If you answer correctly the first time with no hints you get 15 points.";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // homonyms
