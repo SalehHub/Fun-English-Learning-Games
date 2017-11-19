@@ -37,7 +37,7 @@ namespace FunEngGames
 
         //Set game variables
         public int question = 1;
-        public int attempts = 3;
+        public int attempts = 2;
         public int points = 0;
         public int CorrectAnswers = 0;
         public String answer = "";
@@ -239,7 +239,7 @@ namespace FunEngGames
                 randomList.Clear();
                 //Set game variables
                 question = 1;
-                attempts = 3;
+                attempts = 2;
                 points = 0;
                 CorrectAnswers = 0;
                 answer = "";
@@ -271,8 +271,9 @@ namespace FunEngGames
 
             listBox1.Items.Clear();
 
-            lblAttempts.Text = "3";
-            attempts = 3;
+            attempts = 2;
+            lblAttempts.Text = attempts.ToString();
+
             label5.Text = "Question " + question + " out of 5";
             GeneratePC();
 

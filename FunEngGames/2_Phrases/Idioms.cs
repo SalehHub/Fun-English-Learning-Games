@@ -251,7 +251,7 @@ namespace FunEngGames
             {
                 attempts = 3;
                 //question = 3;
-                lblFeedback.Text = "Sorry this is incorrect answer try again from begining. You have to answer atleast 3 out 5 question correctly to go to next level";
+                lblFeedback.Text = "Sorry this is incorrect answer try again from begining. You have to answer at least 3 out 5 question correctly to go to next level";
                 lblFeedback.Visible = true;
                 btnCheckAnswer.Text = "Start this level again";
                 colorRadiobuttons(ans1.Trim());
@@ -310,7 +310,7 @@ namespace FunEngGames
             {
                 attempts = 3;
                 //question = 3;
-                lblFeedback.Text = "Sorry this is incorrect answer try again from begining. You have to answer atleast 3 out 5 question correctly to go to next level";
+                lblFeedback.Text = "Sorry this is incorrect answer try again from begining. You have to answer at least 3 out 5 question correctly to go to next level";
                 lblFeedback.Visible = true;
                 lblFeedback.ForeColor = Color.Red;
                 btnCheckAnswer.Text = "Start this level again";
@@ -342,7 +342,7 @@ namespace FunEngGames
             {
                 lblFeedback.Visible = true;
                 lblFeedback.ForeColor = Color.Red;
-                lblFeedback.Text = "Please select atleast one answer";
+                lblFeedback.Text = "Please select at least one answer";
             }
             else if (btnCheckAnswer.Text == "Try Again")
             {
