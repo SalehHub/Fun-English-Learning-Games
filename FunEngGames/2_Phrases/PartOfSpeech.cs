@@ -115,15 +115,12 @@ namespace FunEngGames
                     radioButton2.Text = ans1;
                     radioButton1.Text = ans2;
                     radioButton3.Text = ans3;
-
                 }
                 else
                 {
                     radioButton1.Text = ans2;
                     radioButton3.Text = ans1;
                     radioButton2.Text = ans3;
-
-
                 }
 
 
