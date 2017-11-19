@@ -74,9 +74,11 @@ namespace FunEngGames._3_Sentences
             if (page == 1)
             {
                 this.dataGridView2.Visible = false;
-                Size size = new Size(345, 400);
-                pictureBox1.Size = size;
-                pictureBox1.Image = FunEngGames.Properties.Resources.theirthere;
+                //Size size = new Size(345, 400);
+                //pictureBox1.Size = size;
+                //pictureBox1.Image = FunEngGames.Properties.Resources.theirthere;
+                pictureBox1.Visible = false;
+                pictureBox2.Visible = true;
                 label1.Text = "Difference between There - Their - They're";
                 btnNext.Enabled = false;
                 btnPrevious.Enabled = true;
@@ -91,9 +93,11 @@ namespace FunEngGames._3_Sentences
             if (page == 1)
             {
                 this.dataGridView2.Visible = false;
-                Size size = new Size(345, 400);
-                pictureBox1.Size = size;
-                pictureBox1.Image = FunEngGames.Properties.Resources.theirthere;
+                //Size size = new Size(345, 400);
+                //pictureBox1.Size = size;
+                //pictureBox1.Image = FunEngGames.Properties.Resources.theirthere;
+                pictureBox1.Visible = false;
+                pictureBox2.Visible = true;
                 label1.Text = "Difference between There - Their - They're";
                 btnNext.Enabled = false;
                 btnPrevious.Enabled = true;
@@ -101,9 +105,11 @@ namespace FunEngGames._3_Sentences
             else if (page == 0)
             {
                 this.dataGridView2.Visible = true;
-                Size size = new Size(676, 184);
-                pictureBox1.Size = size;
-                pictureBox1.Image = FunEngGames.Properties.Resources.this_that_these_those;
+                //Size size = new Size(676, 184);
+                //pictureBox1.Size = size;
+                //pictureBox1.Image = FunEngGames.Properties.Resources.this_that_these_those;
+                pictureBox2.Visible = false;
+                pictureBox1.Visible = true;
                 label1.Text = "Difference between This - These - That - Those";
                 btnNext.Enabled = true;
                 btnPrevious.Enabled = false;

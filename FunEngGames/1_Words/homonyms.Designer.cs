@@ -638,7 +638,7 @@
             this.lblCorrectAns.ForeColor = System.Drawing.Color.DodgerBlue;
             this.lblCorrectAns.Location = new System.Drawing.Point(285, 521);
             this.lblCorrectAns.Name = "lblCorrectAns";
-            this.lblCorrectAns.Size = new System.Drawing.Size(720, 146);
+            this.lblCorrectAns.Size = new System.Drawing.Size(720, 154);
             this.lblCorrectAns.TabIndex = 49;
             this.lblCorrectAns.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblCorrectAns.Visible = false;

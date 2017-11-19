@@ -176,7 +176,7 @@
             this.lblNoOfQuestion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblNoOfQuestion.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNoOfQuestion.ForeColor = System.Drawing.Color.Green;
-            this.lblNoOfQuestion.Location = new System.Drawing.Point(312, 238);
+            this.lblNoOfQuestion.Location = new System.Drawing.Point(313, 238);
             this.lblNoOfQuestion.Name = "lblNoOfQuestion";
             this.lblNoOfQuestion.Size = new System.Drawing.Size(555, 29);
             this.lblNoOfQuestion.TabIndex = 43;
@@ -189,7 +189,7 @@
             this.sentenceLable.BackColor = System.Drawing.Color.Transparent;
             this.sentenceLable.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.sentenceLable.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sentenceLable.Location = new System.Drawing.Point(312, 320);
+            this.sentenceLable.Location = new System.Drawing.Point(313, 319);
             this.sentenceLable.Name = "sentenceLable";
             this.sentenceLable.Size = new System.Drawing.Size(555, 29);
             this.sentenceLable.TabIndex = 44;
@@ -203,7 +203,7 @@
             this.senLbl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.senLbl.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.senLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.senLbl.Location = new System.Drawing.Point(312, 290);
+            this.senLbl.Location = new System.Drawing.Point(313, 289);
             this.senLbl.Name = "senLbl";
             this.senLbl.Size = new System.Drawing.Size(162, 29);
             this.senLbl.TabIndex = 45;
@@ -217,7 +217,7 @@
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label3.Location = new System.Drawing.Point(312, 357);
+            this.label3.Location = new System.Drawing.Point(313, 356);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(162, 29);
             this.label3.TabIndex = 47;
@@ -230,7 +230,7 @@
             this.wordLabel.BackColor = System.Drawing.Color.Transparent;
             this.wordLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.wordLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wordLabel.Location = new System.Drawing.Point(471, 357);
+            this.wordLabel.Location = new System.Drawing.Point(472, 356);
             this.wordLabel.Name = "wordLabel";
             this.wordLabel.Size = new System.Drawing.Size(262, 29);
             this.wordLabel.TabIndex = 46;
@@ -243,7 +243,7 @@
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label8.Location = new System.Drawing.Point(312, 394);
+            this.label8.Location = new System.Drawing.Point(313, 393);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(162, 29);
             this.label8.TabIndex = 48;
@@ -316,7 +316,7 @@
             this.lblFeedback.BackColor = System.Drawing.Color.Transparent;
             this.lblFeedback.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFeedback.ForeColor = System.Drawing.Color.Green;
-            this.lblFeedback.Location = new System.Drawing.Point(75, 601);
+            this.lblFeedback.Location = new System.Drawing.Point(76, 601);
             this.lblFeedback.Name = "lblFeedback";
             this.lblFeedback.Size = new System.Drawing.Size(1029, 30);
             this.lblFeedback.TabIndex = 54;
@@ -362,7 +362,7 @@
             this.panel1.Controls.Add(this.radioButton1);
             this.panel1.Controls.Add(this.radioButton2);
             this.panel1.Controls.Add(this.radioButton3);
-            this.panel1.Location = new System.Drawing.Point(312, 426);
+            this.panel1.Location = new System.Drawing.Point(313, 425);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(199, 100);

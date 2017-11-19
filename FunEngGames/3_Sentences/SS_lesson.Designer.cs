@@ -37,10 +37,10 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.Image = global::FunEngGames.Properties.Resources.Sentence_Structure_Png;
-            this.pictureBox1.Location = new System.Drawing.Point(162, 47);
+            this.pictureBox1.Location = new System.Drawing.Point(162, 11);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(904, 601);
+            this.pictureBox1.Size = new System.Drawing.Size(904, 637);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -71,7 +71,10 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "SS_lesson";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SS_lesson";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PCLesson_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SS_lesson_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

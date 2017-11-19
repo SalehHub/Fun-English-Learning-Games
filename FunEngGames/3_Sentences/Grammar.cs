@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FunEngGames._3_Sentences;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -163,6 +164,8 @@ namespace FunEngGames
                     {
                         lblFeedback.Text = "Great job! Keep up the good work in the next level"; lblFeedback.Visible = true; lblFeedback.ForeColor = Color.Green;
                         button3.Text = "Go to the next level >>";
+                        this.sentenceLevelsForm.picSS.Enabled = true;
+                        this.sentenceLevelsForm.picSSLock.Visible = false;
                     }
                     if (question == 6 && CorrectAnswers < 3)
                     {
@@ -280,12 +283,14 @@ namespace FunEngGames
         public void GoToNextLevel()
         {
 
-           // SSLesson SSLesson = new SSLesson();
-            //SSLesson.mainLevelsForm = mainLevelsForm;
-            //SSLesson.sentenceLevelsForm = sentenceLevelsForm;
-            this.Hide();
+            SS_lesson SSLesson = new SS_lesson();
+            SSLesson.mainLevelsForm = mainLevelsForm;
+            SSLesson.sentenceLevelsForm = sentenceLevelsForm;
             sentenceLevelsForm.lblhelp.Text = "Good job, now you have to play Sentence Structure Level to unlock Paragraph Coherence level";
-            sentenceLevelsForm.Show();
+            //sentenceLevelsForm.Show();
+            SSLesson.Show();
+            this.Hide();
+
             //SSLesson.Show();
         }
 

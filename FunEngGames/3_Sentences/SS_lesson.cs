@@ -54,5 +54,10 @@ namespace FunEngGames._3_Sentences
             this.Hide();
             SS.Show();
         }
+
+        private void SS_lesson_FormClosed(object sender, FormClosedEventArgs e)
+        {
+
+        }
     }
 }
