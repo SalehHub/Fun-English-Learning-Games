@@ -251,7 +251,7 @@ namespace FunEngGames
             {
                 attempts = 3;
                 //question = 3;
-                lblFeedback.Text = "Sorry this is incorrect answer try again from begining. You have to answer at least 3 out 5 question correctly to go to next level";
+                lblFeedback.Text = "Sorry this is incorrect answer try again from begining. You have to answer at least three questions";
                 lblFeedback.Visible = true;
                 btnCheckAnswer.Text = "Start this level again";
                 colorRadiobuttons(ans1.Trim());

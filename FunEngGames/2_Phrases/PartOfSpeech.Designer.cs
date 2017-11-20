@@ -83,7 +83,6 @@
             this.lblAttempts.TabIndex = 40;
             this.lblAttempts.Text = "3";
             this.lblAttempts.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblAttempts.Click += new System.EventHandler(this.lblAttempts_Click);
             // 
             // pictureBox5
             // 
@@ -194,7 +193,6 @@
             this.sentenceLable.Size = new System.Drawing.Size(555, 29);
             this.sentenceLable.TabIndex = 44;
             this.sentenceLable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.sentenceLable.Click += new System.EventHandler(this.label1_Click);
             // 
             // senLbl
             // 
@@ -263,7 +261,6 @@
             this.radioButton1.TabIndex = 49;
             this.radioButton1.TabStop = true;
             this.radioButton1.UseVisualStyleBackColor = false;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton2
             // 
@@ -278,7 +275,6 @@
             this.radioButton2.TabIndex = 50;
             this.radioButton2.TabStop = true;
             this.radioButton2.UseVisualStyleBackColor = false;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioButton3
             // 
@@ -323,7 +319,6 @@
             this.lblFeedback.Text = "Good job! Keep up the good work";
             this.lblFeedback.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblFeedback.Visible = false;
-            this.lblFeedback.Click += new System.EventHandler(this.lblFeedback_Click);
             // 
             // picFeedback
             // 
@@ -352,7 +347,6 @@
             this.lblCorrectAns.TabIndex = 57;
             this.lblCorrectAns.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblCorrectAns.Visible = false;
-            this.lblCorrectAns.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // panel1
             // 

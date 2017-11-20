@@ -321,7 +321,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox picGrammar;
-        private System.Windows.Forms.PictureBox picPC;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
@@ -329,12 +328,13 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox picPCLock;
         public System.Windows.Forms.Label lblPCPts;
         public System.Windows.Forms.Label lblGrammarPts;
         public System.Windows.Forms.Label lblhelp;
         public System.Windows.Forms.PictureBox picSS;
         public System.Windows.Forms.PictureBox picSSLock;
         public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.PictureBox picPC;
+        public System.Windows.Forms.PictureBox picPCLock;
     }
 }

@@ -132,10 +132,7 @@ namespace FunEngGames
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -277,21 +274,6 @@ namespace FunEngGames
             }
         }
 
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblAttempts_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblFeedback_Click(object sender, EventArgs e)
-        {
-
-        }
-
         public void IncorrectAnswer()
         {
             attempts--;
@@ -320,7 +302,7 @@ namespace FunEngGames
             {
                 attempts = 3;
                 //question = 3;
-                lblFeedback.Text = "Sorry this is incorrect answer try again from begining. You have to answer at least 3 out 5 question correctly to go to next level";
+                lblFeedback.Text = "Sorry this is incorrect answer try again from begining. You have to answer at least three questions";
                 lblFeedback.Visible = true;
                 btnCheckAnswer.Text = "Start this level again";
                 colorRadiobuttons(ans1.Trim());
@@ -398,21 +380,6 @@ namespace FunEngGames
             this.phrasesLevelForm.lblPartOfSpeechPoints.Text = points.ToString();
 
             mainLevelsForm.CF.partsOfSpeechPoints = points;
-        }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
 
         public void colorRadiobuttons(string correctAns)
