@@ -238,6 +238,7 @@ namespace FunEngGames
         public void GoToNextLevel()
         {
             IdiomsLesson IdiomsLesson = new IdiomsLesson();
+            IdiomsLesson.mainLevelsForm = this.mainLevelsForm;
             IdiomsLesson.phrasesLevelForm = this.phrasesLevelForm;
             IdiomsLesson.Show();
             this.Hide();

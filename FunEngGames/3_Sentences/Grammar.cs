@@ -35,8 +35,8 @@ namespace FunEngGames
         String answerNow;
         public int question = 1;
         public int CorrectAnswers = 0;
-        public int hints = 2;
-        public int attempts = 3;
+        public int hints = 0;
+        public int attempts = 2;
         public int points = 0;
         public List<int> randomList = new List<int>();
         

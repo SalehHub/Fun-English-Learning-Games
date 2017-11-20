@@ -225,7 +225,7 @@
             this.lblSentencesResults.ForeColor = System.Drawing.Color.OrangeRed;
             this.lblSentencesResults.Location = new System.Drawing.Point(24, 30);
             this.lblSentencesResults.Name = "lblSentencesResults";
-            this.lblSentencesResults.Size = new System.Drawing.Size(313, 155);
+            this.lblSentencesResults.Size = new System.Drawing.Size(340, 155);
             this.lblSentencesResults.TabIndex = 9;
             this.lblSentencesResults.Text = "Level:0\r\nLevel:0\r\nLevel:0\r\nLevel:0";
             this.lblSentencesResults.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
