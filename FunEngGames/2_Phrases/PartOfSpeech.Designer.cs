@@ -50,6 +50,8 @@
             this.picFeedback = new System.Windows.Forms.PictureBox();
             this.lblCorrectAns = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -63,9 +65,10 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(993, 238);
+            this.label6.Location = new System.Drawing.Point(745, 193);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(175, 29);
+            this.label6.Size = new System.Drawing.Size(132, 24);
             this.label6.TabIndex = 42;
             this.label6.Text = "Attempts left";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -77,9 +80,10 @@
             this.lblAttempts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblAttempts.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAttempts.ForeColor = System.Drawing.Color.Black;
-            this.lblAttempts.Location = new System.Drawing.Point(1063, 334);
+            this.lblAttempts.Location = new System.Drawing.Point(797, 271);
+            this.lblAttempts.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAttempts.Name = "lblAttempts";
-            this.lblAttempts.Size = new System.Drawing.Size(36, 36);
+            this.lblAttempts.Size = new System.Drawing.Size(27, 29);
             this.lblAttempts.TabIndex = 40;
             this.lblAttempts.Text = "3";
             this.lblAttempts.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -92,10 +96,10 @@
             this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.ImageLocation = "Images\\\\circle.gif";
-            this.pictureBox5.Location = new System.Drawing.Point(993, 270);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox5.Location = new System.Drawing.Point(745, 219);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(175, 153);
+            this.pictureBox5.Size = new System.Drawing.Size(132, 125);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 41;
             this.pictureBox5.TabStop = false;
@@ -106,9 +110,10 @@
             this.lblPoints.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblPoints.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPoints.ForeColor = System.Drawing.Color.Black;
-            this.lblPoints.Location = new System.Drawing.Point(71, 320);
+            this.lblPoints.Location = new System.Drawing.Point(53, 260);
+            this.lblPoints.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPoints.Name = "lblPoints";
-            this.lblPoints.Size = new System.Drawing.Size(59, 49);
+            this.lblPoints.Size = new System.Drawing.Size(44, 40);
             this.lblPoints.TabIndex = 37;
             this.lblPoints.Text = "0";
             this.lblPoints.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -118,9 +123,10 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(12, 238);
+            this.label7.Location = new System.Drawing.Point(9, 193);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(175, 29);
+            this.label7.Size = new System.Drawing.Size(132, 24);
             this.label7.TabIndex = 39;
             this.label7.Text = "Points";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -132,10 +138,10 @@
             this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox7.ImageLocation = "Images\\\\circle.gif";
-            this.pictureBox7.Location = new System.Drawing.Point(12, 270);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox7.Location = new System.Drawing.Point(9, 219);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(175, 153);
+            this.pictureBox7.Size = new System.Drawing.Size(132, 125);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 38;
             this.pictureBox7.TabStop = false;
@@ -146,9 +152,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbltitle.BackColor = System.Drawing.Color.Transparent;
             this.lbltitle.Font = new System.Drawing.Font("Impact", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltitle.Location = new System.Drawing.Point(16, 130);
+            this.lbltitle.Location = new System.Drawing.Point(12, 95);
+            this.lbltitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbltitle.Name = "lbltitle";
-            this.lbltitle.Size = new System.Drawing.Size(1148, 62);
+            this.lbltitle.Size = new System.Drawing.Size(861, 50);
             this.lbltitle.TabIndex = 35;
             this.lbltitle.Text = "Choose the right part of speech answer using the three options down below";
             this.lbltitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -160,10 +167,10 @@
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.BackgroundImage = global::FunEngGames.Properties.Resources.POSlevelTitle;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox4.Location = new System.Drawing.Point(119, 7);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox4.Location = new System.Drawing.Point(89, 6);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(943, 113);
+            this.pictureBox4.Size = new System.Drawing.Size(707, 92);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 34;
             this.pictureBox4.TabStop = false;
@@ -175,9 +182,10 @@
             this.lblNoOfQuestion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblNoOfQuestion.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNoOfQuestion.ForeColor = System.Drawing.Color.Green;
-            this.lblNoOfQuestion.Location = new System.Drawing.Point(313, 238);
+            this.lblNoOfQuestion.Location = new System.Drawing.Point(235, 193);
+            this.lblNoOfQuestion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNoOfQuestion.Name = "lblNoOfQuestion";
-            this.lblNoOfQuestion.Size = new System.Drawing.Size(555, 29);
+            this.lblNoOfQuestion.Size = new System.Drawing.Size(417, 24);
             this.lblNoOfQuestion.TabIndex = 43;
             this.lblNoOfQuestion.Text = "Question 1 out of 5";
             this.lblNoOfQuestion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -188,9 +196,10 @@
             this.sentenceLable.BackColor = System.Drawing.Color.Transparent;
             this.sentenceLable.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.sentenceLable.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sentenceLable.Location = new System.Drawing.Point(313, 319);
+            this.sentenceLable.Location = new System.Drawing.Point(235, 259);
+            this.sentenceLable.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sentenceLable.Name = "sentenceLable";
-            this.sentenceLable.Size = new System.Drawing.Size(555, 29);
+            this.sentenceLable.Size = new System.Drawing.Size(417, 24);
             this.sentenceLable.TabIndex = 44;
             this.sentenceLable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -201,9 +210,10 @@
             this.senLbl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.senLbl.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.senLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.senLbl.Location = new System.Drawing.Point(313, 289);
+            this.senLbl.Location = new System.Drawing.Point(235, 235);
+            this.senLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.senLbl.Name = "senLbl";
-            this.senLbl.Size = new System.Drawing.Size(162, 29);
+            this.senLbl.Size = new System.Drawing.Size(122, 24);
             this.senLbl.TabIndex = 45;
             this.senLbl.Text = "Sentence";
             this.senLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -215,9 +225,10 @@
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label3.Location = new System.Drawing.Point(313, 356);
+            this.label3.Location = new System.Drawing.Point(235, 289);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(162, 29);
+            this.label3.Size = new System.Drawing.Size(122, 24);
             this.label3.TabIndex = 47;
             this.label3.Text = "Word";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -228,9 +239,10 @@
             this.wordLabel.BackColor = System.Drawing.Color.Transparent;
             this.wordLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.wordLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wordLabel.Location = new System.Drawing.Point(472, 356);
+            this.wordLabel.Location = new System.Drawing.Point(354, 289);
+            this.wordLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.wordLabel.Name = "wordLabel";
-            this.wordLabel.Size = new System.Drawing.Size(262, 29);
+            this.wordLabel.Size = new System.Drawing.Size(197, 24);
             this.wordLabel.TabIndex = 46;
             this.wordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -241,9 +253,10 @@
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label8.Location = new System.Drawing.Point(313, 393);
+            this.label8.Location = new System.Drawing.Point(235, 319);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(162, 29);
+            this.label8.Size = new System.Drawing.Size(122, 24);
             this.label8.TabIndex = 48;
             this.label8.Text = "Part of speech";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -254,10 +267,10 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.BackColor = System.Drawing.Color.Transparent;
             this.radioButton1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(11, 12);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.radioButton1.Location = new System.Drawing.Point(8, 10);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(17, 16);
+            this.radioButton1.Size = new System.Drawing.Size(14, 13);
             this.radioButton1.TabIndex = 49;
             this.radioButton1.TabStop = true;
             this.radioButton1.UseVisualStyleBackColor = false;
@@ -268,10 +281,10 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.BackColor = System.Drawing.Color.Transparent;
             this.radioButton2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(11, 41);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.radioButton2.Location = new System.Drawing.Point(8, 33);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(17, 16);
+            this.radioButton2.Size = new System.Drawing.Size(14, 13);
             this.radioButton2.TabIndex = 50;
             this.radioButton2.TabStop = true;
             this.radioButton2.UseVisualStyleBackColor = false;
@@ -282,10 +295,10 @@
             this.radioButton3.AutoSize = true;
             this.radioButton3.BackColor = System.Drawing.Color.Transparent;
             this.radioButton3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(11, 71);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.radioButton3.Location = new System.Drawing.Point(8, 58);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(17, 16);
+            this.radioButton3.Size = new System.Drawing.Size(14, 13);
             this.radioButton3.TabIndex = 51;
             this.radioButton3.TabStop = true;
             this.radioButton3.UseVisualStyleBackColor = false;
@@ -296,10 +309,10 @@
             this.btnCheckAnswer.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnCheckAnswer.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCheckAnswer.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnCheckAnswer.Location = new System.Drawing.Point(443, 651);
-            this.btnCheckAnswer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCheckAnswer.Location = new System.Drawing.Point(332, 529);
+            this.btnCheckAnswer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCheckAnswer.Name = "btnCheckAnswer";
-            this.btnCheckAnswer.Size = new System.Drawing.Size(293, 53);
+            this.btnCheckAnswer.Size = new System.Drawing.Size(220, 43);
             this.btnCheckAnswer.TabIndex = 53;
             this.btnCheckAnswer.Text = "Check your answer";
             this.btnCheckAnswer.UseVisualStyleBackColor = false;
@@ -312,9 +325,10 @@
             this.lblFeedback.BackColor = System.Drawing.Color.Transparent;
             this.lblFeedback.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFeedback.ForeColor = System.Drawing.Color.Green;
-            this.lblFeedback.Location = new System.Drawing.Point(76, 601);
+            this.lblFeedback.Location = new System.Drawing.Point(12, 488);
+            this.lblFeedback.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFeedback.Name = "lblFeedback";
-            this.lblFeedback.Size = new System.Drawing.Size(1029, 30);
+            this.lblFeedback.Size = new System.Drawing.Size(860, 24);
             this.lblFeedback.TabIndex = 54;
             this.lblFeedback.Text = "Good job! Keep up the good work";
             this.lblFeedback.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -325,10 +339,10 @@
             this.picFeedback.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.picFeedback.BackColor = System.Drawing.Color.Transparent;
             this.picFeedback.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picFeedback.Location = new System.Drawing.Point(377, 650);
-            this.picFeedback.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picFeedback.Location = new System.Drawing.Point(283, 528);
+            this.picFeedback.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picFeedback.Name = "picFeedback";
-            this.picFeedback.Size = new System.Drawing.Size(63, 53);
+            this.picFeedback.Size = new System.Drawing.Size(47, 43);
             this.picFeedback.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picFeedback.TabIndex = 56;
             this.picFeedback.TabStop = false;
@@ -341,9 +355,10 @@
             this.lblCorrectAns.BackColor = System.Drawing.Color.Transparent;
             this.lblCorrectAns.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCorrectAns.ForeColor = System.Drawing.Color.Green;
-            this.lblCorrectAns.Location = new System.Drawing.Point(75, 571);
+            this.lblCorrectAns.Location = new System.Drawing.Point(56, 464);
+            this.lblCorrectAns.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCorrectAns.Name = "lblCorrectAns";
-            this.lblCorrectAns.Size = new System.Drawing.Size(1029, 30);
+            this.lblCorrectAns.Size = new System.Drawing.Size(772, 24);
             this.lblCorrectAns.TabIndex = 57;
             this.lblCorrectAns.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblCorrectAns.Visible = false;
@@ -356,19 +371,51 @@
             this.panel1.Controls.Add(this.radioButton1);
             this.panel1.Controls.Add(this.radioButton2);
             this.panel1.Controls.Add(this.radioButton3);
-            this.panel1.Location = new System.Drawing.Point(313, 425);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(235, 345);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(199, 100);
+            this.panel1.Size = new System.Drawing.Size(150, 82);
             this.panel1.TabIndex = 59;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label4.Location = new System.Drawing.Point(180, 167);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(544, 24);
+            this.label4.TabIndex = 82;
+            this.label4.Text = "If you answer correctly the first time with no hints you get three points.";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Navy;
+            this.label5.Location = new System.Drawing.Point(15, 143);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(854, 24);
+            this.label5.TabIndex = 81;
+            this.label5.Text = "You need to answer at least three questions to pass this level.";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // POS
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FunEngGames.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1180, 716);
+            this.ClientSize = new System.Drawing.Size(885, 582);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblCorrectAns);
             this.Controls.Add(this.picFeedback);
@@ -388,7 +435,7 @@
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.lbltitle);
             this.Controls.Add(this.pictureBox4);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "POS";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -429,5 +476,7 @@
         private System.Windows.Forms.PictureBox picFeedback;
         private System.Windows.Forms.Label lblCorrectAns;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
