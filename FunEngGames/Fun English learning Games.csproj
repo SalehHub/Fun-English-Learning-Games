@@ -1592,7 +1592,7 @@
     <Content Include="Images\Blue.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Blueberries.png">
+    <Content Include="Images\Blueberry.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\bookshelf.png">
@@ -1748,7 +1748,7 @@
     <Content Include="Images\Golf.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Grape.png">
+    <Content Include="Images\Grapes.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\Grass.png">
