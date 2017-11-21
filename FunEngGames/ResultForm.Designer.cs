@@ -49,6 +49,7 @@
             this.pbPhrases = new System.Windows.Forms.ProgressBar();
             this.lblSentencesPrecent = new System.Windows.Forms.Label();
             this.pbSentences = new System.Windows.Forms.ProgressBar();
+            this.btnSaveYourResults = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -191,11 +192,11 @@
             // 
             // btnCheckAnswer
             // 
-            this.btnCheckAnswer.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnCheckAnswer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnCheckAnswer.BackColor = System.Drawing.Color.DarkOrange;
             this.btnCheckAnswer.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCheckAnswer.ForeColor = System.Drawing.Color.Green;
-            this.btnCheckAnswer.Location = new System.Drawing.Point(564, 635);
+            this.btnCheckAnswer.Location = new System.Drawing.Point(12, 634);
             this.btnCheckAnswer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCheckAnswer.Name = "btnCheckAnswer";
             this.btnCheckAnswer.Size = new System.Drawing.Size(253, 71);
@@ -317,6 +318,21 @@
             this.pbSentences.Size = new System.Drawing.Size(316, 23);
             this.pbSentences.TabIndex = 38;
             // 
+            // btnSaveYourResults
+            // 
+            this.btnSaveYourResults.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSaveYourResults.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnSaveYourResults.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveYourResults.ForeColor = System.Drawing.Color.Green;
+            this.btnSaveYourResults.Location = new System.Drawing.Point(1019, 634);
+            this.btnSaveYourResults.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSaveYourResults.Name = "btnSaveYourResults";
+            this.btnSaveYourResults.Size = new System.Drawing.Size(320, 71);
+            this.btnSaveYourResults.TabIndex = 40;
+            this.btnSaveYourResults.Text = "Save Your Results";
+            this.btnSaveYourResults.UseVisualStyleBackColor = false;
+            this.btnSaveYourResults.Click += new System.EventHandler(this.btnSaveYourResults_Click);
+            // 
             // ResultForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -325,6 +341,7 @@
             this.BackgroundImage = global::FunEngGames.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1381, 716);
+            this.Controls.Add(this.btnSaveYourResults);
             this.Controls.Add(this.lblSentencesPrecent);
             this.Controls.Add(this.pbSentences);
             this.Controls.Add(this.lblPrasesPrecent);
@@ -383,5 +400,6 @@
         private System.Windows.Forms.ProgressBar pbPhrases;
         private System.Windows.Forms.Label lblSentencesPrecent;
         private System.Windows.Forms.ProgressBar pbSentences;
+        private System.Windows.Forms.Button btnSaveYourResults;
     }
 }

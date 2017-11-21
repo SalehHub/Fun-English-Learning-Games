@@ -7,6 +7,7 @@
  */
 
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace FunEngGames
@@ -118,7 +119,8 @@ namespace FunEngGames
         {
             try
             {
-                this.sentenceLevelsForm.Show();
+                //this.sentenceLevelsForm.Show();
+                Application.Exit();
             }
             catch (Exception ex)
             {
@@ -130,6 +132,31 @@ namespace FunEngGames
         {
             MessageBox.Show(this.Size.Width+" _ "+this.Size.Height);
             
+        }
+
+        private void btnSaveYourResults_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog savefile = new SaveFileDialog();
+            // set a default file name
+            savefile.FileName = "FELG_YourResults.png";
+            // set filters - this can be done in properties as well
+            savefile.Filter = "PNG files (*.png)|*.png";
+
+            if (savefile.ShowDialog() == DialogResult.OK)
+            {
+                this.FormBorderStyle = FormBorderStyle.None;
+                btnCheckAnswer.Visible = false;
+                btnSaveYourResults.Visible = false;
+                var frm = Form.ActiveForm;
+                using (var bmp = new Bitmap(frm.Width, frm.Height))
+                {
+                    frm.DrawToBitmap(bmp, new Rectangle(0, 0, bmp.Width, bmp.Height));
+                    bmp.Save(savefile.FileName);
+                }
+                btnCheckAnswer.Visible = true;
+                btnSaveYourResults.Visible = true;
+                this.FormBorderStyle = FormBorderStyle.Sizable;
+            }
         }
     }
 }
