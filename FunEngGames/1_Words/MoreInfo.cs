@@ -31,5 +31,9 @@ namespace FunEngGames
             System.Diagnostics.Process.Start(lblSource.Text);
         }
 
+        private void MoreInfo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

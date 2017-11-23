@@ -22,21 +22,21 @@ namespace FunEngGames
     {
 
         //Words Levels Points
-        public int spellingPoints = 0;
-        public int synonymsPoints = 0;
-        public int antonymsPoints = 0;
-        public int homonymsPoints = 0;
+        public int spellingPoints = 20;
+        public int synonymsPoints = 5;
+        public int antonymsPoints = 4;
+        public int homonymsPoints = 5;
 
 
         //Phrases Levels Points
-        public int idiomsPoints = 0;
-        public int partsOfSpeechPoints = 0;
+        public int idiomsPoints = 10;
+        public int partsOfSpeechPoints = 10;
 
 
         //Sentences Levels Points
-        public int grammarPoints = 0;
-        public int sentenceStructurePoints = 0;
-        public int ParagraphCoherencePoints = 0;
+        public int grammarPoints = 10;
+        public int sentenceStructurePoints = 15;
+        public int ParagraphCoherencePoints = 15;
 
 
         //Download any online file

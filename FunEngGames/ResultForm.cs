@@ -138,7 +138,7 @@ namespace FunEngGames
         {
             SaveFileDialog savefile = new SaveFileDialog();
             // set a default file name
-            savefile.FileName = "FELG_YourResults.png";
+            savefile.FileName = "FELG_Your_Results.png";
             // set filters - this can be done in properties as well
             savefile.Filter = "PNG files (*.png)|*.png";
 

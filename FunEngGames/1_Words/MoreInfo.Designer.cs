@@ -235,6 +235,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fun English Learning Games: MoreInfo";
+            this.Load += new System.EventHandler(this.MoreInfo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
