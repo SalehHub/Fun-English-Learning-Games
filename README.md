@@ -23,3 +23,8 @@ In this level the player can learn about **Grammar**, **Sentence Structure** and
 The game starts by showing the story of Le and Lee. Lee really likes Megan and wants to talk to her but he doesn’t know how to speak English, so he decides to go to the institute and learn so he can talk to her. 
 
 The game follows their relationship, when someone completes the **Words** level Megan and Lee become **friends**, after they complete the **Phrases** level Megan and Lee become a **couple**, and after someone completes the **Sentences** level Megan and Lee get **married**.
+
+
+# License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
