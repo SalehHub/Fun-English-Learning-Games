@@ -37,4 +37,4 @@ The game follows their relationship, when someone completes the **Words** level 
 
 # License
 
-Fun English Learning Games licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Fun English Learning Games is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
