@@ -3,6 +3,8 @@
 The Fun English Learning Game is a computer desktop application developed for Windows users. 
 It was implemented in **C#** using **Visual Studio 2015**.
 
+![VS2015](http://i65.tinypic.com/2wmqrlw.png)
+
 Fun English Learning Games is useful for all the people who want to learn English as a Second Language as well as kids of ages 8 and up who have English as their native Language. 
 
 The game has three levels that address different areas of the English language. 
