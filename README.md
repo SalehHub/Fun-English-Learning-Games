@@ -27,4 +27,4 @@ The game follows their relationship, when someone completes the **Words** level 
 
 # License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Fun English Learning Games licensed under the [MIT license](https://opensource.org/licenses/MIT).
