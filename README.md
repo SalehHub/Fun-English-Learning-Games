@@ -3,7 +3,7 @@
 The Fun English Learning Game is a computer desktop application developed for Windows users. 
 It was implemented in **C#** using **Visual Studio 2015**.
 
-Fun English Learning Game is useful for all the people who want to learn English as a Second Language as well as kids of ages 8 and up who have English as their native Language. 
+Fun English Learning Games is useful for all the people who want to learn English as a Second Language as well as kids of ages 8 and up who have English as their native Language. 
 
 The game has three levels that address different areas of the English language. 
 
@@ -22,4 +22,4 @@ In this level the player can learn about **Grammar**, **Sentence Structure** and
 
 The game starts by showing the story of Le and Lee. Lee really likes Megan and wants to talk to her but he doesn’t know how to speak English, so he decides to go to the institute and learn so he can talk to her. 
 
-The game follows their relationship, when someone completes the **Words** level Megan and Lee become **friends**, after they complete the **Phrases** level Megan and Lee become a **couple**, and after someone completes the **Sentences** level Megan and Lee get **engaged**.
+The game follows their relationship, when someone completes the **Words** level Megan and Lee become **friends**, after they complete the **Phrases** level Megan and Lee become a **couple**, and after someone completes the **Sentences** level Megan and Lee get **married**.
