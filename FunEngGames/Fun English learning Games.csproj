@@ -175,12 +175,6 @@
     <Compile Include="2_Phrases\IdiomsLesson.Designer.cs">
       <DependentUpon>IdiomsLesson.cs</DependentUpon>
     </Compile>
-    <Compile Include="1_Words\_levelUP.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="1_Words\_levelUP.Designer.cs">
-      <DependentUpon>_levelUP.cs</DependentUpon>
-    </Compile>
     <Compile Include="3_mainLevels.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -310,9 +304,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="2_Phrases\IdiomsLesson.resx">
       <DependentUpon>IdiomsLesson.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="1_Words\_levelUP.resx">
-      <DependentUpon>_levelUP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="3_mainLevels.resx">
       <DependentUpon>3_mainLevels.cs</DependentUpon>

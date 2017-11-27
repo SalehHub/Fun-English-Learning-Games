@@ -130,9 +130,9 @@
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.54546F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.72727F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.72727F));
             this.tableLayoutPanel1.Controls.Add(this.textBox24, 2, 8);
             this.tableLayoutPanel1.Controls.Add(this.textBox23, 1, 8);
             this.tableLayoutPanel1.Controls.Add(this.textBox22, 0, 8);
@@ -183,10 +183,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox24.Enabled = false;
             this.textBox24.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox24.Location = new System.Drawing.Point(814, 322);
+            this.textBox24.Location = new System.Drawing.Point(839, 322);
             this.textBox24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(265, 34);
+            this.textBox24.Size = new System.Drawing.Size(240, 34);
             this.textBox24.TabIndex = 54;
             this.textBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -197,10 +197,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox23.Enabled = false;
             this.textBox23.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox23.Location = new System.Drawing.Point(544, 322);
+            this.textBox23.Location = new System.Drawing.Point(593, 322);
             this.textBox23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(263, 34);
+            this.textBox23.Size = new System.Drawing.Size(239, 34);
             this.textBox23.TabIndex = 53;
             this.textBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -214,7 +214,7 @@
             this.textBox22.Location = new System.Drawing.Point(4, 322);
             this.textBox22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(533, 34);
+            this.textBox22.Size = new System.Drawing.Size(582, 34);
             this.textBox22.TabIndex = 52;
             // 
             // label10
@@ -224,9 +224,9 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Impact", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Maroon;
-            this.label10.Location = new System.Drawing.Point(814, 1);
+            this.label10.Location = new System.Drawing.Point(839, 1);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(265, 44);
+            this.label10.Size = new System.Drawing.Size(240, 44);
             this.label10.TabIndex = 48;
             this.label10.Text = "Part of speech";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -238,9 +238,9 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Impact", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Maroon;
-            this.label9.Location = new System.Drawing.Point(544, 1);
+            this.label9.Location = new System.Drawing.Point(593, 1);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(263, 44);
+            this.label9.Size = new System.Drawing.Size(239, 44);
             this.label9.TabIndex = 47;
             this.label9.Text = "Word";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -254,7 +254,7 @@
             this.label8.ForeColor = System.Drawing.Color.Maroon;
             this.label8.Location = new System.Drawing.Point(4, 1);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(533, 44);
+            this.label8.Size = new System.Drawing.Size(582, 44);
             this.label8.TabIndex = 29;
             this.label8.Text = "Sentence";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -266,10 +266,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox18.Enabled = false;
             this.textBox18.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox18.Location = new System.Drawing.Point(814, 243);
+            this.textBox18.Location = new System.Drawing.Point(839, 243);
             this.textBox18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(265, 34);
+            this.textBox18.Size = new System.Drawing.Size(240, 34);
             this.textBox18.TabIndex = 46;
             this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -283,7 +283,7 @@
             this.textBox16.Location = new System.Drawing.Point(4, 243);
             this.textBox16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(533, 34);
+            this.textBox16.Size = new System.Drawing.Size(582, 34);
             this.textBox16.TabIndex = 44;
             // 
             // textBox15
@@ -293,10 +293,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox15.Enabled = false;
             this.textBox15.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.Location = new System.Drawing.Point(814, 204);
+            this.textBox15.Location = new System.Drawing.Point(839, 204);
             this.textBox15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(265, 34);
+            this.textBox15.Size = new System.Drawing.Size(240, 34);
             this.textBox15.TabIndex = 43;
             this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -307,10 +307,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox14.Enabled = false;
             this.textBox14.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(544, 204);
+            this.textBox14.Location = new System.Drawing.Point(593, 204);
             this.textBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(263, 34);
+            this.textBox14.Size = new System.Drawing.Size(239, 34);
             this.textBox14.TabIndex = 42;
             this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -324,7 +324,7 @@
             this.textBox13.Location = new System.Drawing.Point(4, 204);
             this.textBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(533, 34);
+            this.textBox13.Size = new System.Drawing.Size(582, 34);
             this.textBox13.TabIndex = 41;
             // 
             // textBox12
@@ -334,10 +334,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox12.Enabled = false;
             this.textBox12.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(814, 165);
+            this.textBox12.Location = new System.Drawing.Point(839, 165);
             this.textBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(265, 34);
+            this.textBox12.Size = new System.Drawing.Size(240, 34);
             this.textBox12.TabIndex = 40;
             this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -348,10 +348,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox11.Enabled = false;
             this.textBox11.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(544, 165);
+            this.textBox11.Location = new System.Drawing.Point(593, 165);
             this.textBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(263, 34);
+            this.textBox11.Size = new System.Drawing.Size(239, 34);
             this.textBox11.TabIndex = 39;
             this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -365,7 +365,7 @@
             this.textBox10.Location = new System.Drawing.Point(4, 165);
             this.textBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(533, 34);
+            this.textBox10.Size = new System.Drawing.Size(582, 34);
             this.textBox10.TabIndex = 38;
             // 
             // textBox9
@@ -375,10 +375,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox9.Enabled = false;
             this.textBox9.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(814, 126);
+            this.textBox9.Location = new System.Drawing.Point(839, 126);
             this.textBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(265, 34);
+            this.textBox9.Size = new System.Drawing.Size(240, 34);
             this.textBox9.TabIndex = 37;
             this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -389,10 +389,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox8.Enabled = false;
             this.textBox8.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(544, 126);
+            this.textBox8.Location = new System.Drawing.Point(593, 126);
             this.textBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(263, 34);
+            this.textBox8.Size = new System.Drawing.Size(239, 34);
             this.textBox8.TabIndex = 36;
             this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -406,7 +406,7 @@
             this.textBox7.Location = new System.Drawing.Point(4, 126);
             this.textBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(533, 34);
+            this.textBox7.Size = new System.Drawing.Size(582, 34);
             this.textBox7.TabIndex = 35;
             // 
             // textBox6
@@ -416,10 +416,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox6.Enabled = false;
             this.textBox6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(814, 87);
+            this.textBox6.Location = new System.Drawing.Point(839, 87);
             this.textBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(265, 34);
+            this.textBox6.Size = new System.Drawing.Size(240, 34);
             this.textBox6.TabIndex = 34;
             this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -430,10 +430,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox5.Enabled = false;
             this.textBox5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(544, 87);
+            this.textBox5.Location = new System.Drawing.Point(593, 87);
             this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(263, 34);
+            this.textBox5.Size = new System.Drawing.Size(239, 34);
             this.textBox5.TabIndex = 33;
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -447,7 +447,7 @@
             this.textBox4.Location = new System.Drawing.Point(4, 87);
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(533, 34);
+            this.textBox4.Size = new System.Drawing.Size(582, 34);
             this.textBox4.TabIndex = 32;
             // 
             // textBox3
@@ -457,10 +457,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox3.Enabled = false;
             this.textBox3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(814, 48);
+            this.textBox3.Location = new System.Drawing.Point(839, 48);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(265, 34);
+            this.textBox3.Size = new System.Drawing.Size(240, 34);
             this.textBox3.TabIndex = 31;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -471,10 +471,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox2.Enabled = false;
             this.textBox2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(544, 48);
+            this.textBox2.Location = new System.Drawing.Point(593, 48);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(263, 34);
+            this.textBox2.Size = new System.Drawing.Size(239, 34);
             this.textBox2.TabIndex = 30;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -488,7 +488,7 @@
             this.textBox1.Location = new System.Drawing.Point(4, 48);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(533, 34);
+            this.textBox1.Size = new System.Drawing.Size(582, 34);
             this.textBox1.TabIndex = 29;
             // 
             // textBox19
@@ -501,7 +501,7 @@
             this.textBox19.Location = new System.Drawing.Point(4, 282);
             this.textBox19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(533, 34);
+            this.textBox19.Size = new System.Drawing.Size(582, 34);
             this.textBox19.TabIndex = 49;
             // 
             // textBox20
@@ -511,10 +511,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox20.Enabled = false;
             this.textBox20.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox20.Location = new System.Drawing.Point(544, 243);
+            this.textBox20.Location = new System.Drawing.Point(593, 243);
             this.textBox20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(263, 34);
+            this.textBox20.Size = new System.Drawing.Size(239, 34);
             this.textBox20.TabIndex = 50;
             this.textBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -525,10 +525,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox17.Enabled = false;
             this.textBox17.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox17.Location = new System.Drawing.Point(544, 282);
+            this.textBox17.Location = new System.Drawing.Point(593, 282);
             this.textBox17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(263, 34);
+            this.textBox17.Size = new System.Drawing.Size(239, 34);
             this.textBox17.TabIndex = 45;
             this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -539,10 +539,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox21.Enabled = false;
             this.textBox21.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox21.Location = new System.Drawing.Point(814, 282);
+            this.textBox21.Location = new System.Drawing.Point(839, 282);
             this.textBox21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(265, 34);
+            this.textBox21.Size = new System.Drawing.Size(240, 34);
             this.textBox21.TabIndex = 51;
             this.textBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 

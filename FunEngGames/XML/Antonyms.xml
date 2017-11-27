@@ -181,83 +181,83 @@
   	
 	<antonyms>
 		<word>careful </word>
-		<antonym>careless</antonym><hint></hint>
+		<antonym>careless</antonym><hint>Watchful</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>cheap </word>
-		<antonym>expensive</antonym><hint></hint>
+		<antonym>expensive</antonym><hint>Affordable</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>dangerous </word>
-		<antonym>safe</antonym><hint></hint>
+		<antonym>safe</antonym><hint>Threatening</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>decrease </word>
-		<antonym>increase</antonym><hint></hint>
+		<antonym>increase</antonym><hint>Reduce</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>empty </word>
-		<antonym>full</antonym><hint></hint>
+		<antonym>full</antonym><hint>Unoccupied</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>enter </word>
-		<antonym>exit</antonym><hint></hint>
+		<antonym>exit</antonym><hint>Get into</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>even </word>
-		<antonym>odd</antonym><hint></hint>
+		<antonym>odd</antonym><hint>Smooth</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>external </word>
-		<antonym>internal</antonym><hint></hint>
+		<antonym>internal</antonym><hint>Outside</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>forget </word>
-		<antonym>remember</antonym><hint></hint>
+		<antonym>remember</antonym><hint>Fail to recall</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>give </word>
-		<antonym>receive</antonym><hint></hint>
+		<antonym>receive</antonym><hint>Provide </hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>guest </word>
-		<antonym>host</antonym><hint></hint>
+		<antonym>host</antonym><hint>Visitor</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>horizontal </word>
-		<antonym>vertical</antonym><hint></hint>
+		<antonym>vertical</antonym><hint>Even</hint>
 	</antonyms>	
 	
 		
 	<antonyms>
 		<word>join</word>
-		<antonym>separate</antonym><hint></hint>
+		<antonym>separate</antonym><hint>Unite</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>knowledge </word>
-		<antonym>ignorance</antonym><hint></hint>
+		<antonym>ignorance</antonym><hint>Expertise</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>laugh </word>
-		<antonym>cry</antonym><hint></hint>
+		<antonym>cry</antonym><hint>Chuckle</hint>
 	</antonyms>	
 		
 	<antonyms>
 		<word>long </word>
-		<antonym>short</antonym><hint></hint>
+		<antonym>short</antonym><hint>Lengthy</hint>
 	</antonyms>	
 	
 </Questions>
