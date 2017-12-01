@@ -72,7 +72,7 @@
             this.Name = "SS_lesson";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SS_lesson";
+            this.Text = "Fun English Learning Games: Sentences - Sentence Structure Lesson";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PCLesson_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SS_lesson_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

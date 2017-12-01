@@ -147,7 +147,7 @@ namespace FunEngGames
                 this.FormBorderStyle = FormBorderStyle.None;
                 btnCheckAnswer.Visible = false;
                 btnSaveYourResults.Visible = false;
-                var frm = Form.ActiveForm;
+                var frm = this;
                 using (var bmp = new Bitmap(frm.Width, frm.Height))
                 {
                     frm.DrawToBitmap(bmp, new Rectangle(0, 0, bmp.Width, bmp.Height));
