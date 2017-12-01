@@ -246,8 +246,8 @@ namespace FunEngGames
                 lblS1.Text = "" + antonyms[0];
                 lblS2.Text = "" + antonyms[1];
                 lblS3.Text = "" + antonyms[2];
-                lblS4.Text = "" + antonyms[2];
-                lblS5.Text = "" + antonyms[2];
+                lblS4.Text = "" + antonyms[3];
+                lblS5.Text = "" + antonyms[4];
 
 
             }
