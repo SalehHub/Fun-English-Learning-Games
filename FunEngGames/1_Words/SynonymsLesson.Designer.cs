@@ -39,7 +39,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.lblPages = new System.Windows.Forms.Label();
@@ -48,9 +47,11 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.lblWordsCount = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Word = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,6 +59,7 @@
             this.textAndImageColumn1 = new FunEngGames.TextAndImageColumn();
             this.textAndImageColumn2 = new FunEngGames.TextAndImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label3
@@ -67,25 +69,12 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(49, 654);
+            this.label3.Location = new System.Drawing.Point(37, 578);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(990, 31);
+            this.label3.Size = new System.Drawing.Size(1014, 26);
             this.label3.TabIndex = 19;
             this.label3.Text = "Click this button to start the Synonyms level if you think you are ready!";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(12, 67);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(578, 31);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Be familiar with these words and learn their synonyms,";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label1
             // 
@@ -94,9 +83,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label1.Location = new System.Drawing.Point(51, 9);
+            this.label1.Location = new System.Drawing.Point(12, -6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(986, 47);
+            this.label1.Size = new System.Drawing.Size(1065, 54);
             this.label1.TabIndex = 17;
             this.label1.Text = "Words and synonyms you may see in the game";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -105,9 +94,9 @@
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(366, 688);
+            this.button1.Location = new System.Drawing.Point(366, 602);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(356, 68);
+            this.button1.Size = new System.Drawing.Size(356, 47);
             this.button1.TabIndex = 16;
             this.button1.Text = "Start the Synonyms Level";
             this.button1.UseVisualStyleBackColor = true;
@@ -119,7 +108,7 @@
             this.lblPages.BackColor = System.Drawing.Color.Transparent;
             this.lblPages.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPages.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lblPages.Location = new System.Drawing.Point(330, 575);
+            this.lblPages.Location = new System.Drawing.Point(329, 492);
             this.lblPages.Name = "lblPages";
             this.lblPages.Size = new System.Drawing.Size(429, 31);
             this.lblPages.TabIndex = 23;
@@ -131,9 +120,9 @@
             this.btnPrevious.Enabled = false;
             this.btnPrevious.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrevious.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btnPrevious.Location = new System.Drawing.Point(89, 569);
+            this.btnPrevious.Location = new System.Drawing.Point(74, 492);
             this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.Size = new System.Drawing.Size(142, 44);
+            this.btnPrevious.Size = new System.Drawing.Size(142, 35);
             this.btnPrevious.TabIndex = 22;
             this.btnPrevious.Text = "<< Previous";
             this.btnPrevious.UseVisualStyleBackColor = true;
@@ -144,9 +133,9 @@
             this.btnNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNext.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNext.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btnNext.Location = new System.Drawing.Point(860, 569);
+            this.btnNext.Location = new System.Drawing.Point(872, 492);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(142, 44);
+            this.btnNext.Size = new System.Drawing.Size(142, 35);
             this.btnNext.TabIndex = 21;
             this.btnNext.Text = "Next >>";
             this.btnNext.UseVisualStyleBackColor = true;
@@ -187,16 +176,16 @@
             this.Column1});
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(3);
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.White;
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.Location = new System.Drawing.Point(89, 131);
+            this.dataGridView1.Location = new System.Drawing.Point(76, 96);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -216,7 +205,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.dataGridView1.ShowEditingIcon = false;
-            this.dataGridView1.Size = new System.Drawing.Size(913, 431);
+            this.dataGridView1.Size = new System.Drawing.Size(937, 394);
             this.dataGridView1.TabIndex = 24;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -240,18 +229,40 @@
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList1.Images.SetKeyName(0, "audio.ico");
             // 
-            // label6
+            // lblWordsCount
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Blue;
-            this.label6.Location = new System.Drawing.Point(584, 67);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(493, 31);
-            this.label6.TabIndex = 25;
-            this.label6.Text = "click on any word to hear its pronunciation.";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblWordsCount.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblWordsCount.BackColor = System.Drawing.Color.Transparent;
+            this.lblWordsCount.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWordsCount.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lblWordsCount.Location = new System.Drawing.Point(329, 521);
+            this.lblWordsCount.Name = "lblWordsCount";
+            this.lblWordsCount.Size = new System.Drawing.Size(429, 31);
+            this.lblWordsCount.TabIndex = 27;
+            this.lblWordsCount.Text = "40 words";
+            this.lblWordsCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel1
+            // 
+            this.panel1.AutoSize = true;
+            this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.lblWordsCount);
+            this.panel1.Controls.Add(this.lblPages);
+            this.panel1.Controls.Add(this.btnPrevious);
+            this.panel1.Controls.Add(this.btnNext);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1089, 653);
+            this.panel1.TabIndex = 28;
             // 
             // label4
             // 
@@ -260,26 +271,39 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Maroon;
-            this.label4.Location = new System.Drawing.Point(16, 97);
+            this.label4.Location = new System.Drawing.Point(12, 66);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(1061, 31);
-            this.label4.TabIndex = 26;
+            this.label4.Size = new System.Drawing.Size(1065, 33);
+            this.label4.TabIndex = 29;
             this.label4.Text = "Click the More button to see details about each word from the Oxford dictionary. " +
     "This feature requires an internet connection.";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblWordsCount
+            // label6
             // 
-            this.lblWordsCount.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lblWordsCount.BackColor = System.Drawing.Color.Transparent;
-            this.lblWordsCount.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWordsCount.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lblWordsCount.Location = new System.Drawing.Point(330, 608);
-            this.lblWordsCount.Name = "lblWordsCount";
-            this.lblWordsCount.Size = new System.Drawing.Size(429, 31);
-            this.lblWordsCount.TabIndex = 27;
-            this.lblWordsCount.Text = "40 words";
-            this.lblWordsCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Blue;
+            this.label6.Location = new System.Drawing.Point(580, 44);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(493, 31);
+            this.label6.TabIndex = 28;
+            this.label6.Text = "click on any word to hear its pronunciation.";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(8, 44);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(578, 31);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Be familiar with these words and learn their synonyms,";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -340,20 +364,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::FunEngGames.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1089, 760);
-            this.Controls.Add(this.lblWordsCount);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.lblPages);
-            this.Controls.Add(this.btnPrevious);
-            this.Controls.Add(this.btnNext);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1089, 653);
+            this.Controls.Add(this.panel1);
             this.Name = "SynonymsLesson";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -361,14 +377,15 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SynonymsLesson_FormClosed);
             this.Load += new System.EventHandler(this.SynonymsLesson_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lblPages;
@@ -383,8 +400,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Word;
         private System.Windows.Forms.DataGridViewTextBoxColumn Synonym;
         private System.Windows.Forms.DataGridViewButtonColumn Column1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblWordsCount;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label2;
     }
 }
