@@ -64,7 +64,7 @@
             this.picSpelling.BackgroundImage = global::FunEngGames.Properties.Resources.spellingMainPic;
             this.picSpelling.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picSpelling.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picSpelling.Location = new System.Drawing.Point(3, 199);
+            this.picSpelling.Location = new System.Drawing.Point(12, 199);
             this.picSpelling.Name = "picSpelling";
             this.picSpelling.Size = new System.Drawing.Size(338, 282);
             this.picSpelling.TabIndex = 1;
@@ -81,7 +81,7 @@
             this.picHomonyms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picHomonyms.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picHomonyms.Enabled = false;
-            this.picHomonyms.Location = new System.Drawing.Point(839, 199);
+            this.picHomonyms.Location = new System.Drawing.Point(830, 199);
             this.picHomonyms.Name = "picHomonyms";
             this.picHomonyms.Size = new System.Drawing.Size(338, 282);
             this.picHomonyms.TabIndex = 2;
@@ -114,7 +114,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Teal;
-            this.label2.Location = new System.Drawing.Point(74, 488);
+            this.label2.Location = new System.Drawing.Point(83, 488);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(196, 32);
             this.label2.TabIndex = 8;
@@ -155,7 +155,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Teal;
-            this.label7.Location = new System.Drawing.Point(892, 489);
+            this.label7.Location = new System.Drawing.Point(883, 489);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(233, 32);
             this.label7.TabIndex = 12;
@@ -169,7 +169,7 @@
             this.panel1.BackgroundImage = global::FunEngGames.Properties.Resources.result;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.lblSpellingPoints);
-            this.panel1.Location = new System.Drawing.Point(51, 527);
+            this.panel1.Location = new System.Drawing.Point(60, 527);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(243, 65);
             this.panel1.TabIndex = 14;
@@ -206,7 +206,7 @@
             this.panel3.BackgroundImage = global::FunEngGames.Properties.Resources.result;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Controls.Add(this.lblHomonymsPoints);
-            this.panel3.Location = new System.Drawing.Point(887, 529);
+            this.panel3.Location = new System.Drawing.Point(878, 529);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(243, 65);
             this.panel3.TabIndex = 16;
@@ -256,7 +256,7 @@
             this.picHomonymsLock.BackColor = System.Drawing.Color.Transparent;
             this.picHomonymsLock.BackgroundImage = global::FunEngGames.Properties.Resources._lock;
             this.picHomonymsLock.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picHomonymsLock.Location = new System.Drawing.Point(984, 602);
+            this.picHomonymsLock.Location = new System.Drawing.Point(975, 602);
             this.picHomonymsLock.Name = "picHomonymsLock";
             this.picHomonymsLock.Size = new System.Drawing.Size(48, 46);
             this.picHomonymsLock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
