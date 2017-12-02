@@ -52,18 +52,18 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.AutoSize = true;
+            this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1109, 638);
+            this.panel1.Size = new System.Drawing.Size(1133, 661);
             this.panel1.TabIndex = 5;
             // 
             // label2
@@ -73,9 +73,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label2.Location = new System.Drawing.Point(111, 498);
+            this.label2.Location = new System.Drawing.Point(111, 521);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(887, 130);
+            this.label2.Size = new System.Drawing.Size(911, 130);
             this.label2.TabIndex = 6;
             this.label2.Text = "Created by Saleh Alzahrani, Sarah Aljabri, Adriana Escobar, Girish Kontham, Sande" +
     "ep, Ronish Panjwani, Tony Ouyang \r\nCS6340 Advanced Software Engineering \r\nSt. Ma" +
@@ -93,7 +93,8 @@
             this.pictureBox2.Location = new System.Drawing.Point(19, 10);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1072, 192);
+            this.pictureBox2.Size = new System.Drawing.Size(1096, 192);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
@@ -106,7 +107,7 @@
             this.label1.ForeColor = System.Drawing.Color.Green;
             this.label1.Location = new System.Drawing.Point(48, 238);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1012, 142);
+            this.label1.Size = new System.Drawing.Size(1036, 142);
             this.label1.TabIndex = 5;
             this.label1.Text = "Do you like learning English and having fun?\r\nYou’re in the right place \r\nTo begi" +
     "n, just click Start!";
@@ -119,7 +120,7 @@
             this.pictureBox1.BackgroundImage = global::FunEngGames.Properties.Resources.b1;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(395, 396);
+            this.pictureBox1.Location = new System.Drawing.Point(407, 419);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(320, 89);
@@ -129,8 +130,9 @@
             // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::FunEngGames.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1133, 661);
@@ -147,6 +149,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
