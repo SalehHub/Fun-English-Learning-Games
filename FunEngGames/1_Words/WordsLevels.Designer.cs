@@ -44,6 +44,7 @@
             this.picSALock = new System.Windows.Forms.PictureBox();
             this.picHomonymsLock = new System.Windows.Forms.PictureBox();
             this.lblhelp = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.picSpelling)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHomonyms)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSA)).BeginInit();
@@ -53,6 +54,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSALock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHomonymsLock)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // picSpelling
@@ -62,7 +64,7 @@
             this.picSpelling.BackgroundImage = global::FunEngGames.Properties.Resources.spellingMainPic;
             this.picSpelling.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picSpelling.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picSpelling.Location = new System.Drawing.Point(58, 181);
+            this.picSpelling.Location = new System.Drawing.Point(3, 199);
             this.picSpelling.Name = "picSpelling";
             this.picSpelling.Size = new System.Drawing.Size(338, 282);
             this.picSpelling.TabIndex = 1;
@@ -79,7 +81,7 @@
             this.picHomonyms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picHomonyms.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picHomonyms.Enabled = false;
-            this.picHomonyms.Location = new System.Drawing.Point(778, 181);
+            this.picHomonyms.Location = new System.Drawing.Point(839, 199);
             this.picHomonyms.Name = "picHomonyms";
             this.picHomonyms.Size = new System.Drawing.Size(338, 282);
             this.picHomonyms.TabIndex = 2;
@@ -96,7 +98,7 @@
             this.picSA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picSA.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picSA.Enabled = false;
-            this.picSA.Location = new System.Drawing.Point(418, 181);
+            this.picSA.Location = new System.Drawing.Point(421, 199);
             this.picSA.Name = "picSA";
             this.picSA.Size = new System.Drawing.Size(338, 282);
             this.picSA.TabIndex = 3;
@@ -112,7 +114,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Teal;
-            this.label2.Location = new System.Drawing.Point(129, 489);
+            this.label2.Location = new System.Drawing.Point(74, 488);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(196, 32);
             this.label2.TabIndex = 8;
@@ -139,7 +141,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Teal;
-            this.label5.Location = new System.Drawing.Point(510, 489);
+            this.label5.Location = new System.Drawing.Point(513, 489);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(155, 32);
             this.label5.TabIndex = 10;
@@ -153,7 +155,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Teal;
-            this.label7.Location = new System.Drawing.Point(831, 489);
+            this.label7.Location = new System.Drawing.Point(892, 489);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(233, 32);
             this.label7.TabIndex = 12;
@@ -167,7 +169,7 @@
             this.panel1.BackgroundImage = global::FunEngGames.Properties.Resources.result;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.lblSpellingPoints);
-            this.panel1.Location = new System.Drawing.Point(106, 530);
+            this.panel1.Location = new System.Drawing.Point(51, 527);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(243, 65);
             this.panel1.TabIndex = 14;
@@ -179,7 +181,7 @@
             this.panel2.BackgroundImage = global::FunEngGames.Properties.Resources.result;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.lblSandAPoints);
-            this.panel2.Location = new System.Drawing.Point(466, 530);
+            this.panel2.Location = new System.Drawing.Point(469, 529);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(243, 65);
             this.panel2.TabIndex = 15;
@@ -204,20 +206,19 @@
             this.panel3.BackgroundImage = global::FunEngGames.Properties.Resources.result;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Controls.Add(this.lblHomonymsPoints);
-            this.panel3.Location = new System.Drawing.Point(826, 530);
+            this.panel3.Location = new System.Drawing.Point(887, 529);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(243, 65);
             this.panel3.TabIndex = 16;
             // 
             // lblHomonymsPoints
             // 
-            this.lblHomonymsPoints.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblHomonymsPoints.BackColor = System.Drawing.Color.Transparent;
             this.lblHomonymsPoints.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHomonymsPoints.ForeColor = System.Drawing.Color.Black;
             this.lblHomonymsPoints.Location = new System.Drawing.Point(37, 8);
             this.lblHomonymsPoints.Name = "lblHomonymsPoints";
-            this.lblHomonymsPoints.Size = new System.Drawing.Size(170, 37);
+            this.lblHomonymsPoints.Size = new System.Drawing.Size(166, 37);
             this.lblHomonymsPoints.TabIndex = 9;
             this.lblHomonymsPoints.Text = "0";
             this.lblHomonymsPoints.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -229,7 +230,7 @@
             this.pictureBox1.BackgroundImage = global::FunEngGames.Properties.Resources.wordsMainTitle;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(77, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(77, 6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1026, 109);
             this.pictureBox1.TabIndex = 17;
@@ -241,7 +242,7 @@
             this.picSALock.BackColor = System.Drawing.Color.Transparent;
             this.picSALock.BackgroundImage = global::FunEngGames.Properties.Resources._lock;
             this.picSALock.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picSALock.Location = new System.Drawing.Point(562, 604);
+            this.picSALock.Location = new System.Drawing.Point(566, 602);
             this.picSALock.Name = "picSALock";
             this.picSALock.Size = new System.Drawing.Size(48, 46);
             this.picSALock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -255,7 +256,7 @@
             this.picHomonymsLock.BackColor = System.Drawing.Color.Transparent;
             this.picHomonymsLock.BackgroundImage = global::FunEngGames.Properties.Resources._lock;
             this.picHomonymsLock.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picHomonymsLock.Location = new System.Drawing.Point(928, 604);
+            this.picHomonymsLock.Location = new System.Drawing.Point(984, 602);
             this.picHomonymsLock.Name = "picHomonymsLock";
             this.picHomonymsLock.Size = new System.Drawing.Size(48, 46);
             this.picHomonymsLock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -269,33 +270,47 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblhelp.BackColor = System.Drawing.Color.Transparent;
             this.lblhelp.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblhelp.Location = new System.Drawing.Point(12, 120);
+            this.lblhelp.Location = new System.Drawing.Point(131, 114);
             this.lblhelp.Name = "lblhelp";
-            this.lblhelp.Size = new System.Drawing.Size(1170, 58);
+            this.lblhelp.Size = new System.Drawing.Size(918, 58);
             this.lblhelp.TabIndex = 26;
             this.lblhelp.Text = "Play Spelling level to unlock Synonyms && Antonyms levels";
             this.lblhelp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel4
+            // 
+            this.panel4.AutoSize = true;
+            this.panel4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.Controls.Add(this.picSpelling);
+            this.panel4.Controls.Add(this.label7);
+            this.panel4.Controls.Add(this.lblhelp);
+            this.panel4.Controls.Add(this.picHomonyms);
+            this.panel4.Controls.Add(this.picHomonymsLock);
+            this.panel4.Controls.Add(this.picSA);
+            this.panel4.Controls.Add(this.picSALock);
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Controls.Add(this.pictureBox1);
+            this.panel4.Controls.Add(this.label5);
+            this.panel4.Controls.Add(this.panel2);
+            this.panel4.Controls.Add(this.panel1);
+            this.panel4.Controls.Add(this.panel3);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1180, 673);
+            this.panel4.TabIndex = 27;
             // 
             // wordsLevel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::FunEngGames.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1180, 673);
-            this.Controls.Add(this.lblhelp);
-            this.Controls.Add(this.picHomonymsLock);
-            this.Controls.Add(this.picSALock);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.picSA);
-            this.Controls.Add(this.picHomonyms);
-            this.Controls.Add(this.picSpelling);
+            this.Controls.Add(this.panel4);
             this.MinimumSize = new System.Drawing.Size(1166, 720);
             this.Name = "wordsLevel";
             this.ShowIcon = false;
@@ -312,6 +327,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSALock)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHomonymsLock)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -334,5 +351,6 @@
         public System.Windows.Forms.PictureBox picSALock;
         public System.Windows.Forms.PictureBox picHomonymsLock;
         public System.Windows.Forms.Label lblhelp;
+        private System.Windows.Forms.Panel panel4;
     }
 }
