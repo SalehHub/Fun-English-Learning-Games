@@ -73,5 +73,15 @@ namespace FunEngGames
             mainLevels.Show();
             this.Hide();
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
