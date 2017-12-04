@@ -67,6 +67,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.lblWordsCount = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -75,6 +76,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox9
@@ -84,9 +86,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox9.Enabled = false;
             this.textBox9.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(1894, 153);
+            this.textBox9.Location = new System.Drawing.Point(1420, 124);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(418, 34);
+            this.textBox9.Size = new System.Drawing.Size(345, 29);
             this.textBox9.TabIndex = 27;
             this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox9.Visible = false;
@@ -100,9 +103,10 @@
             this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox8.Location = new System.Drawing.Point(1894, 12);
+            this.pictureBox8.Location = new System.Drawing.Point(1420, 10);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(418, 84);
+            this.pictureBox8.Size = new System.Drawing.Size(345, 69);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 18;
             this.pictureBox8.TabStop = false;
@@ -113,11 +117,12 @@
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(497, 707);
+            this.button1.Location = new System.Drawing.Point(390, 576);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(299, 56);
+            this.button1.Size = new System.Drawing.Size(224, 46);
             this.button1.TabIndex = 12;
-            this.button1.Text = "Start the spelling level";
+            this.button1.Text = "Start The Spelling Level";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -128,9 +133,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label1.Location = new System.Drawing.Point(12, 4);
+            this.label1.Location = new System.Drawing.Point(68, 3);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1274, 47);
+            this.label1.Size = new System.Drawing.Size(868, 38);
             this.label1.TabIndex = 13;
             this.label1.Text = "Words you may see in the game";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -142,13 +148,14 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(57, 51);
+            this.label2.Location = new System.Drawing.Point(92, 38);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1184, 31);
+            this.label2.Size = new System.Drawing.Size(904, 25);
             this.label2.TabIndex = 14;
             this.label2.Text = "Choose a category, Be familiar with these words and learn how to spell them. Clic" +
     "k on any picture to hear the pronunciation";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label3
             // 
@@ -157,9 +164,10 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(176, 676);
+            this.label3.Location = new System.Drawing.Point(120, 552);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(946, 29);
+            this.label3.Size = new System.Drawing.Size(764, 24);
             this.label3.TabIndex = 15;
             this.label3.Text = "Click this button to start the spelling level if you think you are ready!";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -169,9 +177,10 @@
             this.btnNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNext.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNext.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btnNext.Location = new System.Drawing.Point(1135, 615);
+            this.btnNext.Location = new System.Drawing.Point(887, 501);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(151, 44);
+            this.btnNext.Size = new System.Drawing.Size(113, 36);
             this.btnNext.TabIndex = 16;
             this.btnNext.Text = "Next >>";
             this.btnNext.UseVisualStyleBackColor = true;
@@ -182,9 +191,10 @@
             this.btnPrevious.Enabled = false;
             this.btnPrevious.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrevious.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btnPrevious.Location = new System.Drawing.Point(12, 615);
+            this.btnPrevious.Location = new System.Drawing.Point(5, 501);
+            this.btnPrevious.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.Size = new System.Drawing.Size(151, 44);
+            this.btnPrevious.Size = new System.Drawing.Size(113, 36);
             this.btnPrevious.TabIndex = 17;
             this.btnPrevious.Text = "<< Previous";
             this.btnPrevious.UseVisualStyleBackColor = true;
@@ -196,9 +206,10 @@
             this.lblPages.BackColor = System.Drawing.Color.Transparent;
             this.lblPages.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPages.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lblPages.Location = new System.Drawing.Point(201, 619);
+            this.lblPages.Location = new System.Drawing.Point(166, 501);
+            this.lblPages.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPages.Name = "lblPages";
-            this.lblPages.Size = new System.Drawing.Size(896, 31);
+            this.lblPages.Size = new System.Drawing.Size(672, 25);
             this.lblPages.TabIndex = 18;
             this.lblPages.Text = "Page 1 out of 3";
             this.lblPages.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -208,9 +219,10 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(8, 47);
+            this.label4.Location = new System.Drawing.Point(-1, 35);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(132, 31);
+            this.label4.Size = new System.Drawing.Size(99, 25);
             this.label4.TabIndex = 19;
             this.label4.Text = "Category:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -227,9 +239,10 @@
             this.radioButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.radioButton1.ImageIndex = 0;
             this.radioButton1.ImageList = this.imageList1;
-            this.radioButton1.Location = new System.Drawing.Point(18, 81);
+            this.radioButton1.Location = new System.Drawing.Point(4, 71);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(99, 98);
+            this.radioButton1.Size = new System.Drawing.Size(74, 80);
             this.radioButton1.TabIndex = 20;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Animals";
@@ -265,9 +278,10 @@
             this.radioButton11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.radioButton11.ImageIndex = 1;
             this.radioButton11.ImageList = this.imageList1;
-            this.radioButton11.Location = new System.Drawing.Point(122, 81);
+            this.radioButton11.Location = new System.Drawing.Point(90, 71);
+            this.radioButton11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(79, 98);
+            this.radioButton11.Size = new System.Drawing.Size(59, 80);
             this.radioButton11.TabIndex = 31;
             this.radioButton11.Text = "Fruits";
             this.radioButton11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -285,9 +299,10 @@
             this.radioButton12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.radioButton12.ImageIndex = 2;
             this.radioButton12.ImageList = this.imageList1;
-            this.radioButton12.Location = new System.Drawing.Point(207, 81);
+            this.radioButton12.Location = new System.Drawing.Point(155, 71);
+            this.radioButton12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(129, 98);
+            this.radioButton12.Size = new System.Drawing.Size(97, 80);
             this.radioButton12.TabIndex = 32;
             this.radioButton12.Text = "Vegetables";
             this.radioButton12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -305,9 +320,10 @@
             this.radioButton13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.radioButton13.ImageIndex = 3;
             this.radioButton13.ImageList = this.imageList1;
-            this.radioButton13.Location = new System.Drawing.Point(442, 81);
+            this.radioButton13.Location = new System.Drawing.Point(336, 71);
+            this.radioButton13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton13.Name = "radioButton13";
-            this.radioButton13.Size = new System.Drawing.Size(163, 98);
+            this.radioButton13.Size = new System.Drawing.Size(122, 80);
             this.radioButton13.TabIndex = 33;
             this.radioButton13.Text = "Transportation";
             this.radioButton13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -326,9 +342,10 @@
             this.radioButton14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.radioButton14.ImageIndex = 4;
             this.radioButton14.ImageList = this.imageList1;
-            this.radioButton14.Location = new System.Drawing.Point(611, 81);
+            this.radioButton14.Location = new System.Drawing.Point(478, 71);
+            this.radioButton14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton14.Name = "radioButton14";
-            this.radioButton14.Size = new System.Drawing.Size(128, 98);
+            this.radioButton14.Size = new System.Drawing.Size(96, 80);
             this.radioButton14.TabIndex = 34;
             this.radioButton14.Text = "Body Parts";
             this.radioButton14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -347,9 +364,10 @@
             this.radioButton15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.radioButton15.ImageIndex = 10;
             this.radioButton15.ImageList = this.imageList1;
-            this.radioButton15.Location = new System.Drawing.Point(745, 81);
+            this.radioButton15.Location = new System.Drawing.Point(592, 71);
+            this.radioButton15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton15.Name = "radioButton15";
-            this.radioButton15.Size = new System.Drawing.Size(87, 98);
+            this.radioButton15.Size = new System.Drawing.Size(65, 80);
             this.radioButton15.TabIndex = 35;
             this.radioButton15.Text = "Colors";
             this.radioButton15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -367,9 +385,10 @@
             this.radioButton16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.radioButton16.ImageIndex = 6;
             this.radioButton16.ImageList = this.imageList1;
-            this.radioButton16.Location = new System.Drawing.Point(341, 81);
+            this.radioButton16.Location = new System.Drawing.Point(258, 71);
+            this.radioButton16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton16.Name = "radioButton16";
-            this.radioButton16.Size = new System.Drawing.Size(96, 98);
+            this.radioButton16.Size = new System.Drawing.Size(72, 80);
             this.radioButton16.TabIndex = 36;
             this.radioButton16.Text = "Nature";
             this.radioButton16.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -388,9 +407,10 @@
             this.radioButton17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.radioButton17.ImageIndex = 8;
             this.radioButton17.ImageList = this.imageList1;
-            this.radioButton17.Location = new System.Drawing.Point(958, 81);
+            this.radioButton17.Location = new System.Drawing.Point(755, 71);
+            this.radioButton17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton17.Name = "radioButton17";
-            this.radioButton17.Size = new System.Drawing.Size(91, 98);
+            this.radioButton17.Size = new System.Drawing.Size(68, 80);
             this.radioButton17.TabIndex = 37;
             this.radioButton17.Text = "Shapes";
             this.radioButton17.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -409,9 +429,10 @@
             this.radioButton18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.radioButton18.ImageIndex = 5;
             this.radioButton18.ImageList = this.imageList1;
-            this.radioButton18.Location = new System.Drawing.Point(838, 81);
+            this.radioButton18.Location = new System.Drawing.Point(663, 71);
+            this.radioButton18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton18.Name = "radioButton18";
-            this.radioButton18.Size = new System.Drawing.Size(114, 98);
+            this.radioButton18.Size = new System.Drawing.Size(86, 80);
             this.radioButton18.TabIndex = 38;
             this.radioButton18.Text = "Furniture";
             this.radioButton18.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -430,9 +451,10 @@
             this.radioButton19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.radioButton19.ImageIndex = 9;
             this.radioButton19.ImageList = this.imageList1;
-            this.radioButton19.Location = new System.Drawing.Point(1055, 81);
+            this.radioButton19.Location = new System.Drawing.Point(829, 71);
+            this.radioButton19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton19.Name = "radioButton19";
-            this.radioButton19.Size = new System.Drawing.Size(84, 98);
+            this.radioButton19.Size = new System.Drawing.Size(63, 80);
             this.radioButton19.TabIndex = 39;
             this.radioButton19.Text = "Sports";
             this.radioButton19.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -450,9 +472,10 @@
             this.radioButton20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.radioButton20.ImageIndex = 7;
             this.radioButton20.ImageList = this.imageList1;
-            this.radioButton20.Location = new System.Drawing.Point(1286, 81);
+            this.radioButton20.Location = new System.Drawing.Point(946, 70);
+            this.radioButton20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton20.Name = "radioButton20";
-            this.radioButton20.Size = new System.Drawing.Size(88, 98);
+            this.radioButton20.Size = new System.Drawing.Size(66, 80);
             this.radioButton20.TabIndex = 40;
             this.radioButton20.Text = "Others";
             this.radioButton20.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -478,9 +501,10 @@
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Location = new System.Drawing.Point(12, 185);
+            this.panel1.Location = new System.Drawing.Point(3, 154);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1274, 424);
+            this.panel1.Size = new System.Drawing.Size(999, 346);
             this.panel1.TabIndex = 41;
             // 
             // textBox5
@@ -488,9 +512,10 @@
             this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox5.Enabled = false;
             this.textBox5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(430, 388);
+            this.textBox5.Location = new System.Drawing.Point(344, 315);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(413, 34);
+            this.textBox5.Size = new System.Drawing.Size(311, 29);
             this.textBox5.TabIndex = 35;
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -499,9 +524,10 @@
             this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox6.Enabled = false;
             this.textBox6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(854, 388);
+            this.textBox6.Location = new System.Drawing.Point(685, 315);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(414, 34);
+            this.textBox6.Size = new System.Drawing.Size(312, 29);
             this.textBox6.TabIndex = 36;
             this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -511,9 +537,10 @@
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Location = new System.Drawing.Point(7, 213);
+            this.pictureBox3.Location = new System.Drawing.Point(3, 173);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(412, 173);
+            this.pictureBox3.Size = new System.Drawing.Size(310, 141);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 28;
             this.pictureBox3.TabStop = false;
@@ -522,9 +549,10 @@
             // 
             this.textBox4.Enabled = false;
             this.textBox4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(6, 388);
+            this.textBox4.Location = new System.Drawing.Point(3, 315);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(413, 34);
+            this.textBox4.Size = new System.Drawing.Size(310, 29);
             this.textBox4.TabIndex = 34;
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -534,9 +562,10 @@
             this.picAns1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picAns1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picAns1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picAns1.Location = new System.Drawing.Point(6, 1);
+            this.picAns1.Location = new System.Drawing.Point(2, 1);
+            this.picAns1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picAns1.Name = "picAns1";
-            this.picAns1.Size = new System.Drawing.Size(413, 168);
+            this.picAns1.Size = new System.Drawing.Size(310, 137);
             this.picAns1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picAns1.TabIndex = 25;
             this.picAns1.TabStop = false;
@@ -546,9 +575,10 @@
             this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox3.Enabled = false;
             this.textBox3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(854, 170);
+            this.textBox3.Location = new System.Drawing.Point(685, 138);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(414, 34);
+            this.textBox3.Size = new System.Drawing.Size(312, 29);
             this.textBox3.TabIndex = 33;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -559,9 +589,10 @@
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Location = new System.Drawing.Point(430, 213);
+            this.pictureBox4.Location = new System.Drawing.Point(344, 173);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(413, 173);
+            this.pictureBox4.Size = new System.Drawing.Size(310, 141);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 29;
             this.pictureBox4.TabStop = false;
@@ -573,9 +604,10 @@
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox5.Location = new System.Drawing.Point(854, 213);
+            this.pictureBox5.Location = new System.Drawing.Point(685, 173);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(414, 173);
+            this.pictureBox5.Size = new System.Drawing.Size(311, 141);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 30;
             this.pictureBox5.TabStop = false;
@@ -587,9 +619,10 @@
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Location = new System.Drawing.Point(854, 1);
+            this.pictureBox2.Location = new System.Drawing.Point(685, 1);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(414, 168);
+            this.pictureBox2.Size = new System.Drawing.Size(311, 137);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 27;
             this.pictureBox2.TabStop = false;
@@ -599,9 +632,10 @@
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox2.Enabled = false;
             this.textBox2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(430, 170);
+            this.textBox2.Location = new System.Drawing.Point(344, 138);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(413, 34);
+            this.textBox2.Size = new System.Drawing.Size(311, 29);
             this.textBox2.TabIndex = 32;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -612,9 +646,10 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(430, 1);
+            this.pictureBox1.Location = new System.Drawing.Point(344, 1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(413, 168);
+            this.pictureBox1.Size = new System.Drawing.Size(310, 137);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
@@ -623,9 +658,10 @@
             // 
             this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(6, 170);
+            this.textBox1.Location = new System.Drawing.Point(2, 138);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(413, 34);
+            this.textBox1.Size = new System.Drawing.Size(311, 29);
             this.textBox1.TabIndex = 31;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -640,9 +676,10 @@
             this.radioButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.radioButton2.ImageIndex = 11;
             this.radioButton2.ImageList = this.imageList1;
-            this.radioButton2.Location = new System.Drawing.Point(1145, 81);
+            this.radioButton2.Location = new System.Drawing.Point(898, 71);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(135, 98);
+            this.radioButton2.Size = new System.Drawing.Size(101, 80);
             this.radioButton2.TabIndex = 42;
             this.radioButton2.Text = "Professions";
             this.radioButton2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -656,46 +693,61 @@
             this.lblWordsCount.BackColor = System.Drawing.Color.Transparent;
             this.lblWordsCount.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWordsCount.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lblWordsCount.Location = new System.Drawing.Point(498, 649);
+            this.lblWordsCount.Location = new System.Drawing.Point(389, 528);
+            this.lblWordsCount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblWordsCount.Name = "lblWordsCount";
-            this.lblWordsCount.Size = new System.Drawing.Size(303, 31);
+            this.lblWordsCount.Size = new System.Drawing.Size(227, 25);
             this.lblWordsCount.TabIndex = 43;
             this.lblWordsCount.Text = "18 Words";
             this.lblWordsCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panel2
+            // 
+            this.panel2.AutoSize = true;
+            this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.lblWordsCount);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Controls.Add(this.lblPages);
+            this.panel2.Controls.Add(this.radioButton2);
+            this.panel2.Controls.Add(this.btnPrevious);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.btnNext);
+            this.panel2.Controls.Add(this.radioButton13);
+            this.panel2.Controls.Add(this.radioButton16);
+            this.panel2.Controls.Add(this.radioButton1);
+            this.panel2.Controls.Add(this.radioButton14);
+            this.panel2.Controls.Add(this.radioButton20);
+            this.panel2.Controls.Add(this.radioButton15);
+            this.panel2.Controls.Add(this.radioButton17);
+            this.panel2.Controls.Add(this.radioButton11);
+            this.panel2.Controls.Add(this.radioButton18);
+            this.panel2.Controls.Add(this.radioButton12);
+            this.panel2.Controls.Add(this.radioButton19);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1005, 624);
+            this.panel2.TabIndex = 44;
+            // 
             // spellingLesson
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.BackgroundImage = global::FunEngGames.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1298, 768);
-            this.Controls.Add(this.lblWordsCount);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.radioButton20);
-            this.Controls.Add(this.radioButton19);
-            this.Controls.Add(this.radioButton18);
-            this.Controls.Add(this.radioButton17);
-            this.Controls.Add(this.radioButton16);
-            this.Controls.Add(this.radioButton15);
-            this.Controls.Add(this.radioButton14);
-            this.Controls.Add(this.radioButton13);
-            this.Controls.Add(this.radioButton12);
-            this.Controls.Add(this.radioButton11);
+            this.ClientSize = new System.Drawing.Size(1005, 624);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.lblPages);
-            this.Controls.Add(this.btnPrevious);
-            this.Controls.Add(this.btnNext);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "spellingLesson";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -711,6 +763,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -754,5 +807,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Label lblWordsCount;
+        private System.Windows.Forms.Panel panel2;
     }
 }
